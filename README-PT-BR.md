@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="./assets/frontier-models-hero-v2.svg" alt="Frontier Models — arquivo de benchmarks de modelos frontier" width="100%" />
+<img src="./assets/frontier-models-hero-v3.svg" alt="Frontier Models — arquivo de benchmarks de modelos frontier" width="100%" />
 
 <br/>
 
 [![Benchmark](https://img.shields.io/badge/benchmark-frontier%20models-7C3AED?style=for-the-badge)](./benchmarks)
-[![Arena](https://img.shields.io/badge/Frontier%20V2-4%20modelos-2563EB?style=for-the-badge)](./benchmarks/solar-system/RUNS.json)
-[![Arquivo](https://img.shields.io/badge/arquivo-5%20snapshots-DB2777?style=for-the-badge)](./benchmarks/solar-system/RUNS.json)
+[![Arena](https://img.shields.io/badge/Frontier%20V2-5%20modelos-2563EB?style=for-the-badge)](./benchmarks/solar-system/RUNS.json)
+[![Arquivo](https://img.shields.io/badge/arquivo-5%20snapshots%20%2B%201%20fonte%20fixada-DB2777?style=for-the-badge)](./benchmarks/solar-system/RUNS.json)
 
 # Frontier Models
 
@@ -20,21 +20,22 @@
 
 ## ⚔️ Arena Frontier V2 atual
 
-| Modelo | Execução / esforço | Projeto ao vivo | Execução arquivada |
+| Modelo | Execução / esforço | Projeto ao vivo | Execução arquivada / fixada |
 | --- | --- | --- | --- |
 | ☀️ **GPT-5.6 Sun Max** | Frontier V2 / Max | [Abrir Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | [`runs/gpt-5.6-sun-max/rebuild`](./benchmarks/solar-system/runs/gpt-5.6-sun-max/rebuild/) |
 | ✦ **GPT-6 Astra Max** | Frontier V2 / Max | [Abrir Astra](https://gpt-6-astra.biel.dev.br) | [`runs/gpt-6-astra-max/frontier-v2`](./benchmarks/solar-system/runs/gpt-6-astra-max/frontier-v2/) |
 | 𝕏 **Grok 4.6** | Frontier V2 / **XHIGH** | [Abrir Grok 4.6](https://grok-4-6-solar-system.vercel.app) | [`runs/grok-4.6/frontier-v2`](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) |
 | ◆ **Fable 5.1** | Frontier V2 / **Max** | [Abrir Fable 5.1](https://fable-solar-system.vercel.app) | [`runs/fable/frontier-v2`](./benchmarks/solar-system/runs/fable/frontier-v2/) |
+| ◈ **Gemini 3.8 Flash** | Frontier V2 / **High** | [Abrir Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | [`runs/gemini-3.8-flash/frontier-v2`](./benchmarks/solar-system/runs/gemini-3.8-flash/frontier-v2/) |
 
-Os quatro concorrentes atuais usam **exatamente o mesmo prompt mestre Frontier V2**. Os rótulos de raciocínio são preservados como metadados da execução e não são normalizados entre fornecedores.
+Os cinco concorrentes atuais usam **exatamente o mesmo prompt mestre Frontier V2**. Os rótulos de raciocínio são preservados como metadados da execução e não são normalizados entre fornecedores.
 
 ## O que é Frontier Models?
 
-**Frontier Models** é um arquivo independente de benchmarks para comparar sistemas de IA frontier em projetos completos e inspecionáveis, em vez de capturas isoladas ou pontuações sintéticas.
+**Frontier Models** é um arquivo de benchmarks para comparar sistemas de IA frontier em projetos completos e inspecionáveis, em vez de capturas isoladas ou pontuações sintéticas.
 
 ```text
-PROMPT → EXECUÇÃO DO MODELO → SNAPSHOT DO PROJETO → EVIDÊNCIAS → SCORECARD → VEREDITO
+PROMPT → EXECUÇÃO DO MODELO → SNAPSHOT / FONTE FIXADA → EVIDÊNCIAS → SCORECARD → VEREDITO
 ```
 
 ## Benchmark 001 — Sistema Solar / Orbitário
@@ -49,16 +50,17 @@ O primeiro benchmark pede a cada modelo que construa um produto completo e inter
 | GPT-6 Astra Max | commit `fca2ef51b4…` | arquivado |
 | Grok 4.6 XHIGH | SHA-256 do ZIP `5d77eeb509…` | arquivado |
 | Fable 5.1 Max | commit `7e079669e41b…` | arquivado |
+| Gemini 3.8 Flash High | commit `805cfe87a…` em `bielxdh3/gemini` | fonte fixada |
 
 O prompt compartilhado exato é [`frontier-v2.md`](./benchmarks/solar-system/prompts/frontier-v2.md), SHA-256 `7c2833a0486938c38671139807bd4a8c16371c3740175376ad02a6c0c3c06d65`.
 
 ## Pontuações Frontier V2
 
-> **Avaliação preliminar:** as notas atuais foram feitas principalmente por um único avaliador e em poucos dispositivos/ambientes. Devem ser tratadas como resultados comparativos do benchmark, não como medições profissionais definitivas.
+> **Avaliação preliminar:** as notas atuais foram feitas principalmente por um único avaliador e em poucos dispositivos/ambientes. O Gemini 3.8 Flash High entrou na arena, mas **ainda não foi pontuado**.
 
 <div align="center">
 
-<img src="./assets/frontier-v2-scores-v2.svg" alt="Gráfico geral Frontier V2 de 0 a 100: Astra Max 95,25; Fable 5.1 Max 93,30; Sun Max V2 71,20; Grok 4.6 XHIGH 33,80" width="100%" />
+<img src="./assets/frontier-v2-scores-v3.svg" alt="Gráfico geral Frontier V2: Astra Max 95,25; Fable 5.1 Max 93,30; Sun Max V2 71,20; Grok 4.6 XHIGH 33,80; Gemini 3.8 Flash High com avaliação pendente" width="100%" />
 
 </div>
 
@@ -68,6 +70,7 @@ O prompt compartilhado exato é [`frontier-v2.md`](./benchmarks/solar-system/pro
 | **2** | Fable 5.1 Max | **93,30/100** |
 | **3** | GPT-5.6 Sun Max V2 | **71,20/100** |
 | **4** | Grok 4.6 XHIGH | **33,80/100** |
+| — | Gemini 3.8 Flash High | **Pendente** |
 
 ## Critérios de avaliação — resumo
 
@@ -86,11 +89,12 @@ Veja as evidências detalhadas e notas por categoria em [`SCORECARD.md`](./bench
 
 ## Política do arquivo
 
-- resultados dos modelos permanecem intocados dentro de `runs/`;
-- material do avaliador fica fora dos snapshots;
+- resultados dos modelos permanecem intocados dentro dos snapshots arquivados em `runs/`;
+- material do avaliador fica fora dos resultados dos modelos;
 - prompts exatos são arquivados separadamente e sem alterações;
 - commits Git são usados quando existem metadados Git da fonte;
 - hashes criptográficos são usados quando não existem;
+- uma fonte pode ficar fixada por commit enquanto o snapshot vendorizado ainda estiver pendente;
 - execuções históricas continuam preservadas sem poluir a arena atual.
 
 ---
