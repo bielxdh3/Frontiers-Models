@@ -1,19 +1,20 @@
 # Solar System benchmark scorecard
 
-> Status: the four current Frontier V2 contenders are fully archived and now have complete preliminary weighted evaluations recorded.
+> Status: five Frontier V2 contenders are in the current arena. Four have complete preliminary weighted evaluations; Gemini 3.8 Flash High is registered and awaiting hands-on scoring.
 
 ## Current arena
 
-| Model | Effort | Snapshot | Prompt | Evaluation state |
+| Model | Effort | Snapshot / source | Prompt | Evaluation state |
 | --- | --- | --- | --- | --- |
 | GPT-5.6 Sun Max | Max | `93d43ae…` | [`frontier-v2.md`](../prompts/frontier-v2.md) | Preliminary scored |
 | GPT-6 Astra Max | Max | `fca2ef51…` | [`frontier-v2.md`](../prompts/frontier-v2.md) | Preliminary scored |
 | Grok 4.6 | **XHIGH** | archive `5d77eeb509…` | [`frontier-v2.md`](../prompts/frontier-v2.md) | Preliminary scored |
 | Fable 5.1 | **Max** | `7e079669e41b…` | [`frontier-v2.md`](../prompts/frontier-v2.md) | Preliminary scored |
+| Gemini 3.8 Flash | **High** | source commit `805cfe87a…` | [`frontier-v2.md`](../prompts/frontier-v2.md) | **Pending evaluation** |
 
-The four current runs use the exact same archived prompt. SHA-256: `7c2833a0486938c38671139807bd4a8c16371c3740175376ad02a6c0c3c06d65`.
+The five current runs use the exact same archived prompt. SHA-256: `7c2833a0486938c38671139807bd4a8c16371c3740175376ad02a6c0c3c06d65`.
 
-Reasoning labels are recorded as run metadata and are not normalized across vendors. Grok 4.6 is the XHIGH run; Fable 5.1 is the Max run.
+Reasoning labels are recorded as run metadata and are not normalized across vendors. Grok 4.6 is the XHIGH run; Fable 5.1 is the Max run; Gemini 3.8 Flash is the High run.
 
 <details>
 <summary><strong>Historical baseline</strong></summary>
@@ -32,9 +33,11 @@ Required benchmark behavior drives **Feature completeness**. Optional extras can
 
 Cells show the raw 0–10 rating followed by the weighted contribution.
 
-> ***AVALIAÇÃO PESSOAL NÃO 100% CONFIÁVEL E NÃO PROFUNDA SUFICIENTE.*** As notas atuais dos quatro modelos foram feitas principalmente por **um único usuário**, em **poucos dispositivos/ambientes**, e carregam inevitavelmente **viés pessoal e subjetividade**. Elas devem ser tratadas como avaliações preliminares, não como medições definitivas ou revisões profissionais exaustivas.
+> ***AVALIAÇÃO PESSOAL NÃO 100% CONFIÁVEL E NÃO PROFUNDA SUFICIENTE.*** As notas atuais dos quatro modelos já pontuados foram feitas principalmente por **um único usuário**, em **poucos dispositivos/ambientes**, e carregam inevitavelmente **viés pessoal e subjetividade**. Elas devem ser tratadas como avaliações preliminares, não como medições definitivas ou revisões profissionais exaustivas.
 
-## Weighted score — current Frontier V2 arena
+## Weighted score — currently scored contenders
+
+Gemini 3.8 Flash High is intentionally excluded from the numeric table until the same hands-on evaluation is performed. **Pending is not zero** and does not affect the existing ordering.
 
 | Dimension | Weight | Sun Max V2 | Astra Max | Grok 4.6 XHIGH | Fable 5.1 Max |
 | --- | ---: | ---: | ---: | ---: | ---: |
@@ -162,6 +165,13 @@ A feature receives credit only when the requested behavior is actually present a
 
 **Critical defects:** basic breakages materially affected robustness despite the very high overall score
 
-## Final ranking
+### Gemini 3.8 Flash — High
+**Evaluation state:** pending hands-on scoring under the same Frontier V2 rubric.
 
-The complete preliminary weighted ranking for the current Frontier V2 arena is **1. Astra Max — 96.25/100**, **2. Fable 5.1 Max — 93.3/100**, **3. Sun Max V2 — 71.2/100**, **4. Grok 4.6 XHIGH — 33.8/100**.
+**Source:** pinned to `bielxdh3/gemini` commit `805cfe87a6b4dcc64961130d4f9d2738f1005790`.
+
+No numeric or qualitative verdict is assigned before the run is evaluated.
+
+## Current scored ranking
+
+Among contenders with completed preliminary scores: **1. Astra Max — 95.25/100**, **2. Fable 5.1 Max — 93.3/100**, **3. Sun Max V2 — 71.2/100**, **4. Grok 4.6 XHIGH — 33.8/100**. **Gemini 3.8 Flash High is pending and is not ranked yet.**
