@@ -12,16 +12,17 @@
 
 ## ⚔️ Arena Frontier V2 atual
 
-| Modelo | Esforço | Projeto ao vivo | Snapshot |
+| Modelo | Esforço | Projeto ao vivo | Snapshot / fonte |
 | --- | --- | --- | --- |
 | ☀️ **GPT-5.6 Sun Max** | Max | [Abrir Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | `93d43ae62f…` |
 | ✦ **GPT-6 Astra Max** | Max | [Abrir Astra](https://gpt-6-astra.biel.dev.br) | `fca2ef51b4…` |
 | 𝕏 **Grok 4.6** | **XHIGH** | [Abrir Grok 4.6](https://grok-4-6-solar-system.vercel.app) | arquivo `5d77eeb509…` |
 | ◆ **Fable 5.1** | **Max** | [Abrir Fable 5.1](https://fable-solar-system.vercel.app) | `7e079669e41b…` |
+| ◈ **Gemini 3.8 Flash** | **High** | [Abrir Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | commit fonte `805cfe87a…` |
 
-Os quatro concorrentes atuais usam exatamente o mesmo [`frontier-v2.md`](./prompts/frontier-v2.md).
+Os cinco concorrentes atuais usam exatamente o mesmo [`frontier-v2.md`](./prompts/frontier-v2.md).
 
-> Os rótulos de raciocínio são preservados exatamente como metadados da execução. `Max` e `XHIGH` são configurações do fornecedor/execução e não são tratados como escalas de computação diretamente equivalentes.
+> Os rótulos de raciocínio são preservados exatamente como metadados da execução. `Max`, `XHIGH` e `High` são configurações do fornecedor/execução e não são tratados como escalas de computação diretamente equivalentes.
 
 <details>
 <summary><strong>Baseline histórico — GPT-5.6 Sun Max V1</strong></summary>
@@ -55,16 +56,17 @@ Linhas   1.153
 | Frontier V2 | GPT-6 Astra Max | `frontier-v2.md` | commit `fca2ef51b4…` | atual |
 | Frontier V2 / XHIGH | Grok 4.6 | `frontier-v2.md` | SHA-256 do arquivo `5d77eeb509…` | atual |
 | Frontier V2 / Max | Fable 5.1 | `frontier-v2.md` | commit `7e079669e41b…` | atual |
+| Frontier V2 / High | Gemini 3.8 Flash | `frontier-v2.md` | commit fonte `805cfe87a…` | atual |
 
-A proveniência legível por máquina fica em [`RUNS.json`](./RUNS.json).
+A proveniência legível por máquina fica em [`RUNS.json`](./RUNS.json). O registro detalhado do Gemini está em [`GEMINI-3.8-FLASH-PROVENANCE.md`](./GEMINI-3.8-FLASH-PROVENANCE.md).
 
 ## Pontuações Frontier V2
 
-> **Avaliação preliminar:** as notas foram feitas principalmente por um único avaliador e em poucos dispositivos/ambientes.
+> **Avaliação preliminar:** as notas foram feitas principalmente por um único avaliador e em poucos dispositivos/ambientes. O Gemini 3.8 Flash High está na arena, mas sua **avaliação prática está pendente**.
 
 <div align="center">
 
-<img src="../../assets/frontier-v2-scores.svg" alt="Gráfico geral Frontier V2 de 0 a 100: Astra Max 95,25; Fable 5.1 Max 93,30; Sun Max V2 71,20; Grok 4.6 XHIGH 33,80" width="100%" />
+<img src="../../assets/frontier-v2-scores-v3.svg" alt="Gráfico geral Frontier V2 de 0 a 100: Astra Max 95,25; Fable 5.1 Max 93,30; Sun Max V2 71,20; Grok 4.6 XHIGH 33,80; Gemini 3.8 Flash High com avaliação pendente" width="100%" />
 
 </div>
 
@@ -74,6 +76,7 @@ A proveniência legível por máquina fica em [`RUNS.json`](./RUNS.json).
 | **2** | Fable 5.1 Max | **93,30/100** |
 | **3** | GPT-5.6 Sun Max V2 | **71,20/100** |
 | **4** | Grok 4.6 XHIGH | **33,80/100** |
+| — | Gemini 3.8 Flash High | **Pendente** |
 
 ## Critérios de avaliação — resumo
 
@@ -92,7 +95,7 @@ Veja [`comparison/SCORECARD.md`](./comparison/SCORECARD.md) para evidências det
 
 ## Política de snapshots
 
-Arquivos produzidos pelos modelos são preservados dentro de `runs/` sem edições do avaliador. Material escrito pelo avaliador permanece fora desses snapshots.
+Arquivos produzidos pelos modelos são preservados dentro dos snapshots vendorizados em `runs/` sem edições do avaliador. Material escrito pelo avaliador permanece fora do resultado do modelo. Uma execução recém-adicionada pode ficar fixada em um commit Git exato enquanto o snapshot vendorizado completo ainda estiver pendente; esse estado fica explícito em `RUNS.json` em vez de ser apresentado como arquivo completo.
 
 ## Justiça da comparação
 
