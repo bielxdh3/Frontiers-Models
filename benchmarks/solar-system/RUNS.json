@@ -1,6 +1,6 @@
 {
   "benchmark": "solar-system",
-  "schema_version": 5,
+  "schema_version": 6,
   "prompts": {
     "sun-original": {
       "path": "prompts/sun-original.md",
@@ -89,14 +89,30 @@
       "notes": "Fable 5.1 was run at Max and uses the exact shared Frontier V2 prompt archived and SHA-256 verified in this benchmark.",
       "legacy_source_repository": "JouberthAlves/fable-solar-system",
       "archive_status": "self-contained"
+    },
+    {
+      "id": "gemini-3.8-flash-high-frontier-v2",
+      "model": "Gemini 3.8 Flash",
+      "role": "frontier-run",
+      "reasoning_effort": "High",
+      "source_commit": "805cfe87a6b4dcc64961130d4f9d2738f1005790",
+      "prompt": "prompts/frontier-v2.md",
+      "target_path": "runs/gemini-3.8-flash/frontier-v2",
+      "status": "source-pinned",
+      "arena_visibility": "current",
+      "live_url": "https://gemini-3.8-flash.biel.dev.br",
+      "notes": "Gemini 3.8 Flash was run at High. The generated project is pinned to the exact source Git commit in bielxdh3/gemini and is awaiting a hands-on benchmark score.",
+      "legacy_source_repository": "bielxdh3/gemini",
+      "archive_status": "source-repository-pinned"
     }
   ],
   "current_arena": [
     "gpt-5.6-sun-max-frontier-v2",
     "gpt-6-astra-max-frontier-v2",
     "grok-4.6-frontier-v2",
-    "fable-5.1-frontier-v2"
+    "fable-5.1-frontier-v2",
+    "gemini-3.8-flash-high-frontier-v2"
   ],
-  "repository_mode": "self-contained",
-  "external_source_dependency": false
+  "repository_mode": "hybrid-pinned",
+  "external_source_dependency": true
 }
