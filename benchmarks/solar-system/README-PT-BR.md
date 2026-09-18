@@ -30,7 +30,7 @@ Estes projetos continuam visíveis fora da arena frontier atual e do SVG princip
 | Modelo | Classificação | Projeto / fonte | Proveniência | Situação da nota |
 | --- | --- | --- | --- | --- |
 | ☀️ **GPT-5.6 Sun Max V2** | Frontier desatualizado | [Abrir Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | commit `93d43ae62f…` · [`runs/gpt-5.6-sun-max/rebuild`](./runs/gpt-5.6-sun-max/rebuild/) | **71,20/100** histórica |
-| 🌙 **GPT-5.6 Luna Max** | Non-frontier | [Repositório fonte](https://github.com/bielxdh3/orbitario-luna) | commit fonte [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) | **Avaliação pendente** |
+| 🌙 **GPT-5.6 Luna Max** | Non-frontier | [Abrir Luna](https://gpt-5.6-luna.biel.dev.br) · [Repositório fonte](https://github.com/bielxdh3/orbitario-luna) | commit fonte [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) | **Avaliação pendente** |
 
 O Luna Max está, por enquanto, apenas com a fonte fixada; a proveniência do prompt ainda não foi arquivada aqui.
 
