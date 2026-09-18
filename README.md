@@ -5,8 +5,8 @@
 <br/>
 
 [![Benchmark](https://img.shields.io/badge/benchmark-frontier%20models-7C3AED?style=for-the-badge)](./benchmarks)
-[![Arena](https://img.shields.io/badge/Frontier%20V2-5%20current%20contenders-2563EB?style=for-the-badge)](./benchmarks/solar-system/RUNS.json)
-[![Archive](https://img.shields.io/badge/archive-5%20snapshots%20%2B%201%20pinned%20source-DB2777?style=for-the-badge)](./benchmarks/solar-system/RUNS.json)
+[![Arena](https://img.shields.io/badge/Frontier%20V2-4%20current%20contenders-2563EB?style=for-the-badge)](./benchmarks/solar-system/RUNS.json)
+[![Archive](https://img.shields.io/badge/archive-5%20snapshots%20%2B%202%20pinned%20sources-DB2777?style=for-the-badge)](./benchmarks/solar-system/RUNS.json)
 
 # Frontier Models
 
@@ -22,13 +22,23 @@
 
 | Model | Run / effort | Live project | Archived / pinned run |
 | --- | --- | --- | --- |
-| ☀️ **GPT-5.6 Sun Max** | Frontier V2 / Max | [Open Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | [`runs/gpt-5.6-sun-max/rebuild`](./benchmarks/solar-system/runs/gpt-5.6-sun-max/rebuild/) |
 | ✦ **GPT-6 Astra Max** | Frontier V2 / Max | [Open Astra](https://gpt-6-astra.biel.dev.br) | [`runs/gpt-6-astra-max/frontier-v2`](./benchmarks/solar-system/runs/gpt-6-astra-max/frontier-v2/) |
 | 𝕏 **Grok 4.6** | Frontier V2 / **XHIGH** | [Open Grok 4.6](https://grok-4-6-solar-system.vercel.app) | [`runs/grok-4.6/frontier-v2`](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) |
 | ◆ **Fable 5.1** | Frontier V2 / **Max** | [Open Fable 5.1](https://fable-solar-system.vercel.app) | [`runs/fable/frontier-v2`](./benchmarks/solar-system/runs/fable/frontier-v2/) |
 | ◈ **Gemini 3.8 Flash** | Frontier V2 / **High** | [Open Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | [`runs/gemini-3.8-flash/frontier-v2`](./benchmarks/solar-system/runs/gemini-3.8-flash/frontier-v2/) |
 
-All five current contenders use the **same exact Frontier V2 master prompt**. Reasoning labels are preserved as run metadata and are not normalized across vendors.
+All four current contenders use the **same exact Frontier V2 master prompt**. Reasoning labels are preserved as run metadata and are not normalized across vendors.
+
+## 🗂️ Non-frontier or outdated models
+
+These runs stay visible for reference, but they are intentionally separated from the current frontier arena, hero graphic and main ranking.
+
+| Model | Classification | Project / source | Provenance | Score status |
+| --- | --- | --- | --- | --- |
+| ☀️ **GPT-5.6 Sun Max V2** | Outdated frontier run | [Open Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | [`runs/gpt-5.6-sun-max/rebuild`](./benchmarks/solar-system/runs/gpt-5.6-sun-max/rebuild/) · commit `93d43ae62f…` | **71.20/100** historical |
+| 🌙 **GPT-5.6 Luna Max** | Non-frontier | [Source repository](https://github.com/bielxdh3/orbitario-luna) | commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) | Not included in the main ranking |
+
+Luna Max is currently source-pinned only; its prompt provenance is not archived in this repository.
 
 ## What is Frontier Models?
 
@@ -46,7 +56,6 @@ The first benchmark asks each model to build a complete interactive Solar System
 
 | Model | Provenance | Status |
 | --- | --- | --- |
-| GPT-5.6 Sun Max V2 | commit `93d43ae62f…` | archived |
 | GPT-6 Astra Max | commit `fca2ef51b4…` | archived |
 | Grok 4.6 XHIGH | source ZIP SHA-256 `5d77eeb509…` | archived |
 | Fable 5.1 Max | commit `7e079669e41b…` | archived |
@@ -60,7 +69,7 @@ The exact shared prompt is [`frontier-v2.md`](./benchmarks/solar-system/prompts/
 
 <div align="center">
 
-<img src="./assets/frontier-v2-scores-v3.svg" alt="Frontier V2 score chart: Astra Max 95.25, Fable 5.1 Max 93.30, Sun Max V2 71.20, Grok 4.6 XHIGH 33.80; Gemini 3.8 Flash High pending evaluation" width="100%" />
+<img src="./assets/frontier-v2-scores-v3.svg" alt="Frontier V2 score chart: Astra Max 95.25, Fable 5.1 Max 93.30, Grok 4.6 XHIGH 33.80; Gemini 3.8 Flash High pending evaluation" width="100%" />
 
 </div>
 
@@ -68,8 +77,7 @@ The exact shared prompt is [`frontier-v2.md`](./benchmarks/solar-system/prompts/
 | ---: | --- | ---: |
 | **1** | GPT-6 Astra Max | **95.25/100** |
 | **2** | Fable 5.1 Max | **93.30/100** |
-| **3** | GPT-5.6 Sun Max V2 | **71.20/100** |
-| **4** | Grok 4.6 XHIGH | **33.80/100** |
+| **3** | Grok 4.6 XHIGH | **33.80/100** |
 | — | Gemini 3.8 Flash High | **Pending** |
 
 ## Evaluation criteria — summary
