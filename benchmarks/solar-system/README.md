@@ -25,12 +25,12 @@ All four current contenders use the exact same [`frontier-v2.md`](./prompts/fron
 
 ## 🗂️ Non-frontier or outdated models
 
-These projects remain visible, but they are outside the current frontier arena and are not shown in the main hero or ranking.
+These projects remain visible outside the current frontier arena and main hero. Active non-frontier runs can still appear in the score overview, unranked until evaluated.
 
 | Model | Classification | Project / source | Provenance | Score status |
 | --- | --- | --- | --- | --- |
 | ☀️ **GPT-5.6 Sun Max V2** | Outdated frontier run | [Open Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | commit `93d43ae62f…` · [`runs/gpt-5.6-sun-max/rebuild`](./runs/gpt-5.6-sun-max/rebuild/) | **71.20/100** historical |
-| 🌙 **GPT-5.6 Luna Max** | Non-frontier | [Source repository](https://github.com/bielxdh3/orbitario-luna) | source commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) | Not in main ranking |
+| 🌙 **GPT-5.6 Luna Max** | Non-frontier | [Source repository](https://github.com/bielxdh3/orbitario-luna) | source commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) | **Pending evaluation** |
 
 Luna Max is source-pinned only for now; its prompt provenance is not archived here.
 
@@ -71,13 +71,13 @@ Lines    1,153
 
 Machine-readable provenance lives in [`RUNS.json`](./RUNS.json). Gemini's detailed source record is in [`GEMINI-3.8-FLASH-PROVENANCE.md`](./GEMINI-3.8-FLASH-PROVENANCE.md).
 
-## Frontier V2 scores
+## Benchmark scores
 
-> **Preliminary evaluation:** the scores are mainly based on one evaluator and a limited number of devices/environments. Gemini 3.8 Flash High is in the arena but is **pending hands-on evaluation**.
+> **Preliminary evaluation:** the scores are mainly based on one evaluator and a limited number of devices/environments. Gemini 3.8 Flash High and GPT-5.6 Luna Max are **pending hands-on evaluation**. Pending is not zero; outdated Sun Max V2 is excluded from the active score overview.
 
 <div align="center">
 
-<img src="../../assets/frontier-v2-scores-v3.svg" alt="Frontier V2 overall score chart from 0 to 100: Astra Max 95.25, Fable 5.1 Max 93.30, Grok 4.6 XHIGH 33.80; Gemini 3.8 Flash High pending evaluation" width="100%" />
+<img src="../../assets/frontier-v2-scores-v3.svg" alt="Frontier Models overall score chart from 0 to 100: Astra Max 95.25, Fable 5.1 Max 93.30, Grok 4.6 XHIGH 33.80; Gemini 3.8 Flash High and GPT-5.6 Luna Max pending evaluation" width="100%" />
 
 </div>
 
@@ -87,6 +87,7 @@ Machine-readable provenance lives in [`RUNS.json`](./RUNS.json). Gemini's detail
 | **2** | Fable 5.1 Max | **93.30/100** |
 | **3** | Grok 4.6 XHIGH | **33.80/100** |
 | — | Gemini 3.8 Flash High | **Pending** |
+| — | GPT-5.6 Luna Max | **Pending** |
 
 ## Evaluation criteria — summary
 
