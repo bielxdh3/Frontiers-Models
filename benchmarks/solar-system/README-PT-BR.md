@@ -14,15 +14,25 @@
 
 | Modelo | Esforço | Projeto ao vivo | Snapshot / fonte |
 | --- | --- | --- | --- |
-| ☀️ **GPT-5.6 Sun Max** | Max | [Abrir Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | `93d43ae62f…` |
 | ✦ **GPT-6 Astra Max** | Max | [Abrir Astra](https://gpt-6-astra.biel.dev.br) | `fca2ef51b4…` |
 | 𝕏 **Grok 4.6** | **XHIGH** | [Abrir Grok 4.6](https://grok-4-6-solar-system.vercel.app) | arquivo `5d77eeb509…` |
 | ◆ **Fable 5.1** | **Max** | [Abrir Fable 5.1](https://fable-solar-system.vercel.app) | `7e079669e41b…` |
 | ◈ **Gemini 3.8 Flash** | **High** | [Abrir Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | commit fonte `805cfe87a…` |
 
-Os cinco concorrentes atuais usam exatamente o mesmo [`frontier-v2.md`](./prompts/frontier-v2.md).
+Os quatro concorrentes atuais usam exatamente o mesmo [`frontier-v2.md`](./prompts/frontier-v2.md).
 
 > Os rótulos de raciocínio são preservados exatamente como metadados da execução. `Max`, `XHIGH` e `High` são configurações do fornecedor/execução e não são tratados como escalas de computação diretamente equivalentes.
+
+## 🗂️ Modelos non-frontier ou desatualizados
+
+Estes projetos continuam visíveis, mas ficam fora da arena frontier atual e não aparecem no SVG nem no ranking principal.
+
+| Modelo | Classificação | Projeto / fonte | Proveniência | Situação da nota |
+| --- | --- | --- | --- | --- |
+| ☀️ **GPT-5.6 Sun Max V2** | Frontier desatualizado | [Abrir Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | commit `93d43ae62f…` · [`runs/gpt-5.6-sun-max/rebuild`](./runs/gpt-5.6-sun-max/rebuild/) | **71,20/100** histórica |
+| 🌙 **GPT-5.6 Luna Max** | Non-frontier | [Repositório fonte](https://github.com/bielxdh3/orbitario-luna) | commit fonte [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) | Fora do ranking principal |
+
+O Luna Max está, por enquanto, apenas com a fonte fixada; a proveniência do prompt ainda não foi arquivada aqui.
 
 <details>
 <summary><strong>Baseline histórico — GPT-5.6 Sun Max V1</strong></summary>
@@ -52,7 +62,8 @@ Linhas   1.153
 | Execução | Modelo | Prompt | Proveniência | Arena |
 | --- | --- | --- | --- | --- |
 | Baseline histórico | GPT-5.6 Sun Max V1 | `sun-original.md` | commit `67eb9fc51f…` | oculto |
-| Frontier V2 | GPT-5.6 Sun Max | `frontier-v2.md` | commit `93d43ae62f…` | atual |
+| Frontier V2 | GPT-5.6 Sun Max | `frontier-v2.md` | commit `93d43ae62f…` | non-frontier / desatualizado |
+| Referência com fonte fixada | GPT-5.6 Luna Max | não arquivado aqui | commit fonte `5fdc036884…` | non-frontier |
 | Frontier V2 | GPT-6 Astra Max | `frontier-v2.md` | commit `fca2ef51b4…` | atual |
 | Frontier V2 / XHIGH | Grok 4.6 | `frontier-v2.md` | SHA-256 do arquivo `5d77eeb509…` | atual |
 | Frontier V2 / Max | Fable 5.1 | `frontier-v2.md` | commit `7e079669e41b…` | atual |
@@ -66,7 +77,7 @@ A proveniência legível por máquina fica em [`RUNS.json`](./RUNS.json). O regi
 
 <div align="center">
 
-<img src="../../assets/frontier-v2-scores-v3.svg" alt="Gráfico geral Frontier V2 de 0 a 100: Astra Max 95,25; Fable 5.1 Max 93,30; Sun Max V2 71,20; Grok 4.6 XHIGH 33,80; Gemini 3.8 Flash High com avaliação pendente" width="100%" />
+<img src="../../assets/frontier-v2-scores-v3.svg" alt="Gráfico geral Frontier V2 de 0 a 100: Astra Max 95,25; Fable 5.1 Max 93,30; Grok 4.6 XHIGH 33,80; Gemini 3.8 Flash High com avaliação pendente" width="100%" />
 
 </div>
 
@@ -74,8 +85,7 @@ A proveniência legível por máquina fica em [`RUNS.json`](./RUNS.json). O regi
 | ---: | --- | ---: |
 | **1** | GPT-6 Astra Max | **95,25/100** |
 | **2** | Fable 5.1 Max | **93,30/100** |
-| **3** | GPT-5.6 Sun Max V2 | **71,20/100** |
-| **4** | Grok 4.6 XHIGH | **33,80/100** |
+| **3** | Grok 4.6 XHIGH | **33,80/100** |
 | — | Gemini 3.8 Flash High | **Pendente** |
 
 ## Critérios de avaliação — resumo

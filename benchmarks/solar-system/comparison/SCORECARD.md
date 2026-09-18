@@ -1,18 +1,17 @@
 # Solar System benchmark scorecard
 
-> Status: five Frontier V2 contenders are in the current arena. Four have complete preliminary weighted evaluations; Gemini 3.8 Flash High is registered and awaiting hands-on scoring.
+> Status: four Frontier V2 contenders are in the current arena. Three have complete preliminary weighted evaluations; Gemini 3.8 Flash High is registered and awaiting hands-on scoring.
 
 ## Current arena
 
 | Model | Effort | Snapshot / source | Prompt | Evaluation state |
 | --- | --- | --- | --- | --- |
-| GPT-5.6 Sun Max | Max | `93d43ae…` | [`frontier-v2.md`](../prompts/frontier-v2.md) | Preliminary scored |
 | GPT-6 Astra Max | Max | `fca2ef51…` | [`frontier-v2.md`](../prompts/frontier-v2.md) | Preliminary scored |
 | Grok 4.6 | **XHIGH** | archive `5d77eeb509…` | [`frontier-v2.md`](../prompts/frontier-v2.md) | Preliminary scored |
 | Fable 5.1 | **Max** | `7e079669e41b…` | [`frontier-v2.md`](../prompts/frontier-v2.md) | Preliminary scored |
 | Gemini 3.8 Flash | **High** | source commit `805cfe87a…` | [`frontier-v2.md`](../prompts/frontier-v2.md) | **Pending evaluation** |
 
-The five current runs use the exact same archived prompt. SHA-256: `7c2833a0486938c38671139807bd4a8c16371c3740175376ad02a6c0c3c06d65`.
+The four current runs use the exact same archived prompt. SHA-256: `7c2833a0486938c38671139807bd4a8c16371c3740175376ad02a6c0c3c06d65`.
 
 Reasoning labels are recorded as run metadata and are not normalized across vendors. Grok 4.6 is the XHIGH run; Fable 5.1 is the Max run; Gemini 3.8 Flash is the High run.
 
@@ -22,6 +21,15 @@ Reasoning labels are recorded as run metadata and are not normalized across vend
 GPT-5.6 Sun Max V1 (`67eb9fc…`) is preserved for prompt-leverage analysis, but it is excluded from the current weighted Frontier V2 arena because it used `sun-original.md`.
 
 </details>
+
+## Non-frontier or outdated models
+
+| Model | Classification | Provenance | Evaluation state |
+| --- | --- | --- | --- |
+| GPT-5.6 Sun Max V2 | Outdated frontier run | commit `93d43ae…` | Historical preliminary score: **71.2/100** |
+| GPT-5.6 Luna Max | Non-frontier | source commit `5fdc036884…` in `bielxdh3/orbitario-luna` | Not in main ranking |
+
+Sun Max V2 remains fully documented below as a historical scored run. Luna Max is source-pinned only and has no main-arena score.
 
 ## Scoring scale
 
@@ -39,19 +47,21 @@ Cells show the raw 0–10 rating followed by the weighted contribution.
 
 Gemini 3.8 Flash High is intentionally excluded from the numeric table until the same hands-on evaluation is performed. **Pending is not zero** and does not affect the existing ordering.
 
-| Dimension | Weight | Sun Max V2 | Astra Max | Grok 4.6 XHIGH | Fable 5.1 Max |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| Feature completeness | 20 | **8.6/10 → 17.2/20** | **9.6/10 → 19.2/20** | **1.0/10 → 2.0/20** | **10/10 → 20/20** |
-| Interaction / UX | 15 | **8.0/10 → 12.0/15** | **9.8/10 → 14.7/15** | **0.3/10 → 0.45/15** | **10/10 → 15/15** |
-| Visual execution | 15 | **6.0/10 → 9.0/15** | **9.7/10 → 14.55/15** | **1.1/10 → 1.65/15** | **9.9/10 → 14.85/15** |
-| Scientific / simulation fidelity | 15 | **4.0/10 → 6.0/15** | **10/10 → 15/15** | **5.0/10 → 7.5/15** | **10/10 → 15/15** |
-| Robustness | 10 | **8.0/10 → 8.0/10** | **9/10 → 9/10** | **2.0/10 → 2.0/10** | **5.0/10 → 5.0/10** |
-| Performance | 10 | **7.5/10 → 7.5/10** | **9.3/10 → 9.3/10** | **8.0/10 → 8.0/10** | **10/10 → 10/10** |
-| Code / architecture | 10 | **8.0/10 → 8.0/10*** | **9.2/10 → 9.2/10*** | **8.7/10 → 8.7/10*** | **9.1/10 → 9.1/10*** |
-| Accessibility / responsive behavior | 5 | **7.0/10 → 3.5/5** | **8.6/10 → 4.3/5** | **7.0/10 → 3.5/5** | **8.7/10 → 4.35/5** |
-| **Total** | **100** | **71.2/100** | **95.25/100** | **33.8/100** | **93.3/100** |
+| Dimension | Weight | Astra Max | Grok 4.6 XHIGH | Fable 5.1 Max |
+| --- | ---: | ---: | ---: | ---: |
+| Feature completeness | 20 | **9.6/10 → 19.2/20** | **1.0/10 → 2.0/20** | **10/10 → 20/20** |
+| Interaction / UX | 15 | **9.8/10 → 14.7/15** | **0.3/10 → 0.45/15** | **10/10 → 15/15** |
+| Visual execution | 15 | **9.7/10 → 14.55/15** | **1.1/10 → 1.65/15** | **9.9/10 → 14.85/15** |
+| Scientific / simulation fidelity | 15 | **10/10 → 15/15** | **5.0/10 → 7.5/15** | **10/10 → 15/15** |
+| Robustness | 10 | **9/10 → 9/10** | **2.0/10 → 2.0/10** | **5.0/10 → 5.0/10** |
+| Performance | 10 | **9.3/10 → 9.3/10** | **8.0/10 → 8.0/10** | **10/10 → 10/10** |
+| Code / architecture | 10 | **9.2/10 → 9.2/10*** | **8.7/10 → 8.7/10*** | **9.1/10 → 9.1/10*** |
+| Accessibility / responsive behavior | 5 | **8.6/10 → 4.3/5** | **7.0/10 → 3.5/5** | **8.7/10 → 4.35/5** |
+| **Total** | **100** | **95.25/100** | **33.8/100** | **93.3/100** |
 
-\* `Code / architecture` uses provisional technical evaluator scores rather than user-entered hands-on ratings. Sun Max V2 scores **8.0/10**: it has clear separation between data, science, tests and browser QA with reproducible validation, but much application/UI/rendering logic is concentrated in a very large `app.js`. Astra Max scores **9.2/10**: its implementation is split across dedicated data, model, scene, materials, tools, UI, content and storage modules and includes multiple automated test/acceptance/recovery/control paths; some major modules remain relatively large, so the architecture is strong rather than perfect. Grok 4.6 XHIGH scores **8.7/10**: its TypeScript implementation is cleanly separated across core, data, rendering, simulation, state and UI layers, but `ui/app.ts` still concentrates a substantial amount of logic and its automated test coverage is more limited than Astra's. Fable 5.1 Max scores **9.1/10**: it has a strong TypeScript/Preact modular split across app, content, data, i18n, rendering and simulation layers, plus dedicated Vitest coverage; however, some renderer/controller modules remain large and its automated validation surface is less extensive than Astra's.
+\* `Code / architecture` uses provisional technical evaluator scores rather than user-entered hands-on ratings. Astra Max scores **9.2/10**: its implementation is split across dedicated data, model, scene, materials, tools, UI, content and storage modules and includes multiple automated test/acceptance/recovery/control paths; some major modules remain relatively large, so the architecture is strong rather than perfect. Grok 4.6 XHIGH scores **8.7/10**: its TypeScript implementation is cleanly separated across core, data, rendering, simulation, state and UI layers, but `ui/app.ts` still concentrates a substantial amount of logic and its automated test coverage is more limited than Astra's. Fable 5.1 Max scores **9.1/10**: it has a strong TypeScript/Preact modular split across app, content, data, i18n, rendering and simulation layers, plus dedicated Vitest coverage; however, some renderer/controller modules remain large and its automated validation surface is less extensive than Astra's.
+
+### Historical scored run — Sun Max V2
 
 The Sun Max V2 user-entered ratings currently recorded are: Feature completeness **8.6/10**, Interaction / UX **8.0/10**, Visual execution **6.0/10**, Scientific / simulation fidelity **4.0/10**, Robustness **8.0/10**, Performance **7.5/10**, and Accessibility / responsive behavior **7.0/10**. `Code / architecture` is evaluator-provisional.
 

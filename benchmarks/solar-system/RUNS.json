@@ -1,6 +1,6 @@
 {
   "benchmark": "solar-system",
-  "schema_version": 6,
+  "schema_version": 7,
   "prompts": {
     "sun-original": {
       "path": "prompts/sun-original.md",
@@ -33,14 +33,14 @@
     {
       "id": "gpt-5.6-sun-max-frontier-v2",
       "model": "GPT-5.6 Sun Max",
-      "role": "frontier-run",
+      "role": "outdated-frontier-run",
       "source_commit": "93d43ae62f615a37672c0d1936912160d0475ca1",
       "prompt": "prompts/frontier-v2.md",
       "target_path": "runs/gpt-5.6-sun-max/rebuild",
       "status": "imported",
-      "arena_visibility": "current",
+      "arena_visibility": "non-frontier-or-outdated",
       "live_url": "https://gpt-5.6-sun-v2.biel.dev.br",
-      "notes": "Current Frontier V2 Sun run; historical V1 is excluded from the main arena.",
+      "notes": "Frontier V2 Sun run preserved as an outdated reference and excluded from the current frontier arena.",
       "legacy_source_repository": "bielxdh3/GPT5.6-SUN-MAX-SOLAR-SYSTEM",
       "archive_status": "self-contained"
     },
@@ -104,15 +104,32 @@
       "notes": "Gemini 3.8 Flash was run at High. The generated project is pinned to the exact source Git commit in bielxdh3/gemini and is awaiting a hands-on benchmark score.",
       "legacy_source_repository": "bielxdh3/gemini",
       "archive_status": "source-repository-pinned"
+    },
+    {
+      "id": "gpt-5.6-luna-max-orbitario",
+      "model": "GPT-5.6 Luna Max",
+      "role": "non-frontier-run",
+      "source_commit": "5fdc036884bbeb712eb015c76db1b1eaf83c9e42",
+      "prompt": null,
+      "target_path": null,
+      "status": "source-pinned",
+      "arena_visibility": "non-frontier-or-outdated",
+      "live_url": null,
+      "notes": "Non-frontier reference kept visible outside the main arena. The source repository is pinned; prompt provenance is not archived in Frontier Models.",
+      "legacy_source_repository": "bielxdh3/orbitario-luna",
+      "archive_status": "source-repository-pinned"
     }
   ],
   "current_arena": [
-    "gpt-5.6-sun-max-frontier-v2",
     "gpt-6-astra-max-frontier-v2",
     "grok-4.6-frontier-v2",
     "fable-5.1-frontier-v2",
     "gemini-3.8-flash-high-frontier-v2"
   ],
   "repository_mode": "hybrid-pinned",
-  "external_source_dependency": true
+  "external_source_dependency": true,
+  "non_frontier_or_outdated": [
+    "gpt-5.6-sun-max-frontier-v2",
+    "gpt-5.6-luna-max-orbitario"
+  ]
 }
