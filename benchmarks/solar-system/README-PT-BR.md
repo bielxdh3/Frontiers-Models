@@ -25,12 +25,12 @@ Os quatro concorrentes atuais usam exatamente o mesmo [`frontier-v2.md`](./promp
 
 ## 🗂️ Modelos non-frontier ou desatualizados
 
-Estes projetos continuam visíveis, mas ficam fora da arena frontier atual e não aparecem no SVG nem no ranking principal.
+Estes projetos continuam visíveis fora da arena frontier atual e do SVG principal. Execuções non-frontier ativas ainda podem aparecer no quadro de pontuações, sem posição até serem avaliadas.
 
 | Modelo | Classificação | Projeto / fonte | Proveniência | Situação da nota |
 | --- | --- | --- | --- | --- |
 | ☀️ **GPT-5.6 Sun Max V2** | Frontier desatualizado | [Abrir Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | commit `93d43ae62f…` · [`runs/gpt-5.6-sun-max/rebuild`](./runs/gpt-5.6-sun-max/rebuild/) | **71,20/100** histórica |
-| 🌙 **GPT-5.6 Luna Max** | Non-frontier | [Repositório fonte](https://github.com/bielxdh3/orbitario-luna) | commit fonte [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) | Fora do ranking principal |
+| 🌙 **GPT-5.6 Luna Max** | Non-frontier | [Repositório fonte](https://github.com/bielxdh3/orbitario-luna) | commit fonte [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) | **Avaliação pendente** |
 
 O Luna Max está, por enquanto, apenas com a fonte fixada; a proveniência do prompt ainda não foi arquivada aqui.
 
@@ -71,13 +71,13 @@ Linhas   1.153
 
 A proveniência legível por máquina fica em [`RUNS.json`](./RUNS.json). O registro detalhado do Gemini está em [`GEMINI-3.8-FLASH-PROVENANCE.md`](./GEMINI-3.8-FLASH-PROVENANCE.md).
 
-## Pontuações Frontier V2
+## Pontuações do benchmark
 
-> **Avaliação preliminar:** as notas foram feitas principalmente por um único avaliador e em poucos dispositivos/ambientes. O Gemini 3.8 Flash High está na arena, mas sua **avaliação prática está pendente**.
+> **Avaliação preliminar:** as notas foram feitas principalmente por um único avaliador e em poucos dispositivos/ambientes. Gemini 3.8 Flash High e GPT-5.6 Luna Max estão com **avaliação prática pendente**. Pendente não significa zero; o Sun Max V2 desatualizado fica fora do quadro ativo.
 
 <div align="center">
 
-<img src="../../assets/frontier-v2-scores-v3.svg" alt="Gráfico geral Frontier V2 de 0 a 100: Astra Max 95,25; Fable 5.1 Max 93,30; Grok 4.6 XHIGH 33,80; Gemini 3.8 Flash High com avaliação pendente" width="100%" />
+<img src="../../assets/frontier-v2-scores-v3.svg" alt="Gráfico geral Frontier Models de 0 a 100: Astra Max 95,25; Fable 5.1 Max 93,30; Grok 4.6 XHIGH 33,80; Gemini 3.8 Flash High e GPT-5.6 Luna Max com avaliação pendente" width="100%" />
 
 </div>
 
@@ -87,6 +87,7 @@ A proveniência legível por máquina fica em [`RUNS.json`](./RUNS.json). O regi
 | **2** | Fable 5.1 Max | **93,30/100** |
 | **3** | Grok 4.6 XHIGH | **33,80/100** |
 | — | Gemini 3.8 Flash High | **Pendente** |
+| — | GPT-5.6 Luna Max | **Pendente** |
 
 ## Critérios de avaliação — resumo
 

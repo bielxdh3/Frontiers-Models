@@ -1,85 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
   <title id="title">Frontier Models</title>
-  <desc id="desc">Frontier Models benchmark banner showing the four current Frontier V2 contenders precisely aligned on the evaluation orbit.</desc>
+  <desc id="desc">Frontier Models benchmark banner showing the four current Frontier V2 contenders aligned around the evaluation orbit.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#070B14"/>
-      <stop offset="0.55" stop-color="#0B1020"/>
-      <stop offset="1" stop-color="#15102A"/>
-    </linearGradient>
-    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#FBBF24"/>
-      <stop offset="0.34" stop-color="#7C3AED"/>
-      <stop offset="0.67" stop-color="#111827"/>
-      <stop offset="1" stop-color="#F97316"/>
-    </linearGradient>
-    <radialGradient id="core" cx="50%" cy="45%" r="60%">
-      <stop offset="0" stop-color="#C4B5FD" stop-opacity="0.95"/>
-      <stop offset="0.38" stop-color="#7C3AED" stop-opacity="0.62"/>
-      <stop offset="1" stop-color="#111827" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur stdDeviation="8" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070B14"/><stop offset="0.55" stop-color="#0B1020"/><stop offset="1" stop-color="#15102A"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F97316"/><stop offset="0.33" stop-color="#7C3AED"/><stop offset="0.66" stop-color="#4285F4"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <radialGradient id="core" cx="50%" cy="45%" r="60%"><stop offset="0" stop-color="#C4B5FD" stop-opacity="0.95"/><stop offset="0.38" stop-color="#7C3AED" stop-opacity="0.62"/><stop offset="1" stop-color="#111827" stop-opacity="0"/></radialGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
-
   <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
-
-  <g opacity="0.22" stroke="#94A3B8" stroke-width="1">
-    <path d="M0 84H1200M0 168H1200M0 252H1200M0 336H1200"/>
-    <path d="M120 0V420M240 0V420M360 0V420M480 0V420M600 0V420M720 0V420M840 0V420M960 0V420M1080 0V420"/>
-  </g>
-
-  <g fill="#E2E8F0" opacity="0.7">
-    <circle cx="90" cy="72" r="1.5"/><circle cx="177" cy="327" r="1"/><circle cx="306" cy="106" r="1"/><circle cx="415" cy="349" r="1.2"/><circle cx="752" cy="91" r="1.3"/><circle cx="903" cy="337" r="1"/><circle cx="1090" cy="72" r="1.4"/><circle cx="1030" cy="208" r="0.9"/>
-  </g>
-
+  <g opacity="0.22" stroke="#94A3B8" stroke-width="1"><path d="M0 84H1200M0 168H1200M0 252H1200M0 336H1200"/><path d="M120 0V420M240 0V420M360 0V420M480 0V420M600 0V420M720 0V420M840 0V420M960 0V420M1080 0V420"/></g>
+  <g fill="#E2E8F0" opacity="0.7"><circle cx="90" cy="72" r="1.5"/><circle cx="177" cy="327" r="1"/><circle cx="306" cy="106" r="1"/><circle cx="415" cy="349" r="1.2"/><circle cx="752" cy="91" r="1.3"/><circle cx="903" cy="337" r="1"/><circle cx="1090" cy="72" r="1.4"/><circle cx="1030" cy="208" r="0.9"/></g>
   <g transform="translate(0 3)">
-    <!-- Evaluation orbit -->
     <ellipse cx="930" cy="205" rx="188" ry="112" fill="none" stroke="#475569" stroke-width="4" opacity="0.52"/>
     <ellipse cx="930" cy="205" rx="188" ry="112" fill="none" stroke="url(#line)" stroke-width="2.4" opacity="0.95"/>
     <ellipse cx="930" cy="205" rx="136" ry="76" fill="none" stroke="#64748B" stroke-width="1" stroke-dasharray="5 8" opacity="0.65"/>
-
-    <!-- Evaluation core -->
     <circle cx="930" cy="205" r="102" fill="url(#core)"/>
     <circle cx="930" cy="205" r="30" fill="#111827" stroke="#C4B5FD" stroke-width="2" filter="url(#glow)"/>
     <circle cx="930" cy="205" r="8" fill="#EDE9FE"/>
-
-    <!-- Marker centers lie exactly on the outer ellipse -->
     <g>
-      <circle cx="786" cy="133" r="12" fill="#FBBF24" stroke="#FDE68A" stroke-width="2"/>
-      <circle cx="1063" cy="126" r="12" fill="#7C3AED" stroke="#C4B5FD" stroke-width="2"/>
-      <circle cx="1084" cy="269" r="12" fill="#111827" stroke="#E5E7EB" stroke-width="2.5"/>
-      <circle cx="776" cy="269" r="12" fill="#F97316" stroke="#FED7AA" stroke-width="2"/>
+      <circle cx="786" cy="133" r="13" fill="#F97316" stroke="#FED7AA" stroke-width="2"/>
+      <circle cx="1063" cy="126" r="13" fill="#7C3AED" stroke="#C4B5FD" stroke-width="2"/>
+      <circle cx="1084" cy="269" r="13" fill="#4285F4" stroke="#AECBFA" stroke-width="2"/>
+      <circle cx="776" cy="269" r="13" fill="#111827" stroke="#F8FAFC" stroke-width="2.5"/>
     </g>
-
-    <!-- Crisp model labels: neutral text, model color carried by the marker -->
-    <g font-family="Segoe UI, Arial, sans-serif" fill="#F8FAFC" text-anchor="middle">
-      <text x="786" y="96" font-size="17" font-weight="700">SUN MAX V2</text>
-      <text x="786" y="115" font-size="12" font-weight="500" fill="#CBD5E1">GPT-5.6</text>
-
-      <text x="1063" y="89" font-size="17" font-weight="700">ASTRA MAX</text>
-      <text x="1063" y="108" font-size="12" font-weight="500" fill="#CBD5E1">GPT-6</text>
-
-      <text x="1084" y="307" font-size="17" font-weight="700">GROK 4.6</text>
-      <text x="1084" y="326" font-size="12" font-weight="500" fill="#CBD5E1">XHIGH</text>
-
-      <text x="776" y="307" font-size="17" font-weight="700">FABLE 5.1</text>
-      <text x="776" y="326" font-size="12" font-weight="500" fill="#CBD5E1">MAX</text>
+    <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" fill="#F8FAFC" text-anchor="middle">
+      <text x="786" y="91" font-size="22" font-weight="700">FABLE 5.1</text><text x="786" y="113" font-size="14" font-weight="600" fill="#CBD5E1">MAX</text>
+      <text x="1063" y="84" font-size="22" font-weight="700">ASTRA MAX</text><text x="1063" y="106" font-size="14" font-weight="600" fill="#CBD5E1">GPT-6</text>
+      <text x="1084" y="313" font-size="18" font-weight="700">GEMINI 3.8</text><text x="1084" y="335" font-size="13" font-weight="600" fill="#AECBFA">FLASH · HIGH</text>
+      <text x="776" y="313" font-size="22" font-weight="700">GROK 4.6</text><text x="776" y="335" font-size="14" font-weight="600" fill="#CBD5E1">XHIGH</text>
     </g>
   </g>
-
-  <g font-family="Segoe UI, Arial, sans-serif">
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
     <text x="72" y="126" fill="#F8FAFC" font-size="56" font-weight="800" letter-spacing="-2">FRONTIER MODELS</text>
     <text x="74" y="167" fill="#94A3B8" font-size="20" font-weight="500">MODEL OUTPUTS • PROMPTS • EVIDENCE • COMPARISONS</text>
     <rect x="74" y="205" width="468" height="2" fill="url(#line)"/>
     <text x="74" y="249" fill="#E2E8F0" font-size="18">One repository. Reproducible runs. Zero benchmark contamination.</text>
     <text x="74" y="281" fill="#94A3B8" font-size="16">A living archive for testing frontier models on complete, inspectable projects.</text>
-    <g transform="translate(74 323)" font-size="13" font-weight="700">
-      <rect width="128" height="34" rx="17" fill="#172554" stroke="#3B82F6"/><text x="20" y="22" fill="#BFDBFE">SOLAR SYSTEM</text>
-      <rect x="142" width="132" height="34" rx="17" fill="#2E1065" stroke="#8B5CF6"/><text x="163" y="22" fill="#DDD6FE">FRONTIER V2</text>
-      <rect x="288" width="126" height="34" rx="17" fill="#3B0A2A" stroke="#EC4899"/><text x="311" y="22" fill="#FBCFE8">AUDIT READY</text>
-    </g>
+    <g transform="translate(74 323)" font-size="13" font-weight="700"><rect width="128" height="34" rx="17" fill="#172554" stroke="#3B82F6"/><text x="20" y="22" fill="#BFDBFE">SOLAR SYSTEM</text><rect x="142" width="132" height="34" rx="17" fill="#2E1065" stroke="#8B5CF6"/><text x="163" y="22" fill="#DDD6FE">FRONTIER V2</text><rect x="288" width="126" height="34" rx="17" fill="#3B0A2A" stroke="#EC4899"/><text x="311" y="22" fill="#FBCFE8">AUDIT READY</text></g>
   </g>
 </svg>
