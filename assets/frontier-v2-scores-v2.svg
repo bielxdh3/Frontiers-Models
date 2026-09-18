@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1080" height="520" viewBox="0 0 1080 520" role="img" aria-labelledby="title desc">
   <title id="title">Frontier Models benchmark scores</title>
-  <desc id="desc">Active benchmark score overview from zero to one hundred. Astra Max 95.25, Fable 5.1 Max 93.30, Grok 4.6 XHIGH 33.80. Gemini 3.8 Flash High and GPT-5.6 Luna Max are pending evaluation. Outdated Sun Max V2 is excluded from this active overview.</desc>
+  <desc id="desc">Active benchmark score overview from zero to one hundred. Astra Max 95.25, Fable 5.1 Max 93.30, Grok 4.6 XHIGH 33.80. Gemini 3.8 Flash High and GPT-5.6 Luna Max are pending evaluation.</desc>
   <rect width="1080" height="520" fill="#ffffff" rx="16"/>
   <g font-family="Segoe UI, Arial, sans-serif">
     <text x="540" y="42" text-anchor="middle" font-size="24" font-weight="700" fill="#111827">Frontier Models — Scores / 100</text>
