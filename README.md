@@ -31,12 +31,12 @@ All four current contenders use the **same exact Frontier V2 master prompt**. Re
 
 ## 🗂️ Non-frontier or outdated models
 
-These runs stay visible for reference, but they are intentionally separated from the current frontier arena, hero graphic and main ranking.
+These runs stay visible for reference, but they are intentionally separated from the current frontier arena and hero graphic. Active non-frontier runs can still appear in the score overview while remaining unranked until evaluated.
 
 | Model | Classification | Project / source | Provenance | Score status |
 | --- | --- | --- | --- | --- |
 | ☀️ **GPT-5.6 Sun Max V2** | Outdated frontier run | [Open Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | [`runs/gpt-5.6-sun-max/rebuild`](./benchmarks/solar-system/runs/gpt-5.6-sun-max/rebuild/) · commit `93d43ae62f…` | **71.20/100** historical |
-| 🌙 **GPT-5.6 Luna Max** | Non-frontier | [Source repository](https://github.com/bielxdh3/orbitario-luna) | commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) | Not included in the main ranking |
+| 🌙 **GPT-5.6 Luna Max** | Non-frontier | [Source repository](https://github.com/bielxdh3/orbitario-luna) | commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) | **Pending evaluation** |
 
 Luna Max is currently source-pinned only; its prompt provenance is not archived in this repository.
 
@@ -63,13 +63,13 @@ The first benchmark asks each model to build a complete interactive Solar System
 
 The exact shared prompt is [`frontier-v2.md`](./benchmarks/solar-system/prompts/frontier-v2.md), SHA-256 `7c2833a0486938c38671139807bd4a8c16371c3740175376ad02a6c0c3c06d65`.
 
-## Frontier V2 scores
+## Benchmark scores
 
-> **Preliminary evaluation:** the current scores are mainly based on one evaluator and a limited number of devices/environments. Gemini 3.8 Flash High has joined the arena but is **not scored yet**.
+> **Preliminary evaluation:** the current scores are mainly based on one evaluator and a limited number of devices/environments. Gemini 3.8 Flash High and GPT-5.6 Luna Max are **not scored yet**. Pending is not zero; outdated Sun Max V2 is excluded from the active score overview.
 
 <div align="center">
 
-<img src="./assets/frontier-v2-scores-v3.svg" alt="Frontier V2 score chart: Astra Max 95.25, Fable 5.1 Max 93.30, Grok 4.6 XHIGH 33.80; Gemini 3.8 Flash High pending evaluation" width="100%" />
+<img src="./assets/frontier-v2-scores-v3.svg" alt="Frontier Models score chart: Astra Max 95.25, Fable 5.1 Max 93.30, Grok 4.6 XHIGH 33.80; Gemini 3.8 Flash High and GPT-5.6 Luna Max pending evaluation" width="100%" />
 
 </div>
 
@@ -79,6 +79,7 @@ The exact shared prompt is [`frontier-v2.md`](./benchmarks/solar-system/prompts/
 | **2** | Fable 5.1 Max | **93.30/100** |
 | **3** | Grok 4.6 XHIGH | **33.80/100** |
 | — | Gemini 3.8 Flash High | **Pending** |
+| — | GPT-5.6 Luna Max | **Pending** |
 
 ## Evaluation criteria — summary
 
