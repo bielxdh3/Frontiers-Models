@@ -25,7 +25,7 @@ All four current contenders use the exact same [`frontier-v2.md`](./prompts/fron
 
 ## 🗂️ Non-frontier or outdated models
 
-These projects remain visible outside the current frontier arena and main hero. Active non-frontier runs can still appear in the score overview, unranked until evaluated.
+These projects remain visible outside the current frontier arena and main hero. Arena classification is separate from the score overview: scored historical/outdated runs remain visible there, while unevaluated runs stay unranked.
 
 | Model | Classification | Project / source | Provenance | Score status |
 | --- | --- | --- | --- | --- |
@@ -73,11 +73,11 @@ Machine-readable provenance lives in [`RUNS.json`](./RUNS.json). Gemini's detail
 
 ## Benchmark scores
 
-> **Preliminary evaluation:** the scores are mainly based on one evaluator and a limited number of devices/environments. Gemini 3.8 Flash High and GPT-5.6 Luna Max are **pending hands-on evaluation**. Pending is not zero; outdated Sun Max V2 is excluded from the active score overview.
+> **Preliminary evaluation:** the scores are mainly based on one evaluator and a limited number of devices/environments. Gemini 3.8 Flash High and GPT-5.6 Luna Max are **pending hands-on evaluation**. Pending is not zero; Sun Max V2 remains visible with its historical score even though it is outside the current frontier arena.
 
 <div align="center">
 
-<img src="../../assets/frontier-v2-scores-v3.svg" alt="Frontier Models overall score chart from 0 to 100: Astra Max 95.25, Fable 5.1 Max 93.30, Grok 4.6 XHIGH 33.80; Gemini 3.8 Flash High and GPT-5.6 Luna Max pending evaluation" width="100%" />
+<img src="../../assets/frontier-v2-scores-v3.svg" alt="Frontier Models overall score chart from 0 to 100: Astra Max 95.25, Fable 5.1 Max 93.30, Sun Max V2 71.20, Grok 4.6 XHIGH 33.80; Gemini 3.8 Flash High and GPT-5.6 Luna Max pending evaluation" width="100%" />
 
 </div>
 
@@ -85,7 +85,8 @@ Machine-readable provenance lives in [`RUNS.json`](./RUNS.json). Gemini's detail
 | ---: | --- | ---: |
 | **1** | GPT-6 Astra Max | **95.25/100** |
 | **2** | Fable 5.1 Max | **93.30/100** |
-| **3** | Grok 4.6 XHIGH | **33.80/100** |
+| **3** | GPT-5.6 Sun Max V2 | **71.20/100** |
+| **4** | Grok 4.6 XHIGH | **33.80/100** |
 | — | Gemini 3.8 Flash High | **Pending** |
 | — | GPT-5.6 Luna Max | **Pending** |
 

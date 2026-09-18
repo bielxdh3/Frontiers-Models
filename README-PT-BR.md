@@ -31,7 +31,7 @@ Os quatro concorrentes atuais usam **exatamente o mesmo prompt mestre Frontier V
 
 ## 🗂️ Modelos non-frontier ou desatualizados
 
-Estas execuções continuam visíveis como referência, mas ficam intencionalmente separadas da arena frontier atual e do SVG principal. Execuções non-frontier ativas ainda podem aparecer no quadro de pontuações, permanecendo sem posição até serem avaliadas.
+Estas execuções continuam visíveis como referência, mas ficam intencionalmente separadas da arena frontier atual e do SVG principal. A classificação da arena é separada do quadro de pontuações: execuções históricas/desatualizadas já avaliadas continuam visíveis nele, enquanto as ainda não avaliadas ficam sem posição.
 
 | Modelo | Classificação | Projeto / fonte | Proveniência | Situação da nota |
 | --- | --- | --- | --- | --- |
@@ -65,11 +65,11 @@ O prompt compartilhado exato é [`frontier-v2.md`](./benchmarks/solar-system/pro
 
 ## Pontuações do benchmark
 
-> **Avaliação preliminar:** as notas atuais foram feitas principalmente por um único avaliador e em poucos dispositivos/ambientes. Gemini 3.8 Flash High e GPT-5.6 Luna Max **ainda não foram pontuados**. Pendente não significa zero; o Sun Max V2 desatualizado fica fora do quadro ativo.
+> **Avaliação preliminar:** as notas atuais foram feitas principalmente por um único avaliador e em poucos dispositivos/ambientes. Gemini 3.8 Flash High e GPT-5.6 Luna Max **ainda não foram pontuados**. Pendente não significa zero; o Sun Max V2 continua visível com sua nota histórica mesmo não fazendo mais parte da arena frontier.
 
 <div align="center">
 
-<img src="./assets/frontier-v2-scores-v3.svg" alt="Gráfico geral Frontier Models: Astra Max 95,25; Fable 5.1 Max 93,30; Grok 4.6 XHIGH 33,80; Gemini 3.8 Flash High e GPT-5.6 Luna Max com avaliação pendente" width="100%" />
+<img src="./assets/frontier-v2-scores-v3.svg" alt="Gráfico geral Frontier Models: Astra Max 95,25; Fable 5.1 Max 93,30; Sun Max V2 71,20; Grok 4.6 XHIGH 33,80; Gemini 3.8 Flash High e GPT-5.6 Luna Max com avaliação pendente" width="100%" />
 
 </div>
 
@@ -77,7 +77,8 @@ O prompt compartilhado exato é [`frontier-v2.md`](./benchmarks/solar-system/pro
 | ---: | --- | ---: |
 | **1** | GPT-6 Astra Max | **95,25/100** |
 | **2** | Fable 5.1 Max | **93,30/100** |
-| **3** | Grok 4.6 XHIGH | **33,80/100** |
+| **3** | GPT-5.6 Sun Max V2 | **71,20/100** |
+| **4** | Grok 4.6 XHIGH | **33,80/100** |
 | — | Gemini 3.8 Flash High | **Pendente** |
 | — | GPT-5.6 Luna Max | **Pendente** |
 
