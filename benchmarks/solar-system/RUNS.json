@@ -114,7 +114,7 @@
       "target_path": null,
       "status": "source-pinned",
       "arena_visibility": "non-frontier-or-outdated",
-      "live_url": null,
+      "live_url": "https://gpt-5.6-luna.biel.dev.br",
       "notes": "Non-frontier reference kept visible outside the main arena. The source repository is pinned; prompt provenance is not archived in Frontier Models.",
       "legacy_source_repository": "bielxdh3/orbitario-luna",
       "archive_status": "source-repository-pinned"
