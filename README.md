@@ -36,7 +36,7 @@ These runs stay visible for reference, but they are intentionally separated from
 | Model | Classification | Project / source | Provenance | Score status |
 | --- | --- | --- | --- | --- |
 | ☀️ **GPT-5.6 Sun Max V2** | Outdated frontier run | [Open Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | [`runs/gpt-5.6-sun-max/rebuild`](./benchmarks/solar-system/runs/gpt-5.6-sun-max/rebuild/) · commit `93d43ae62f…` | **71.20/100** historical |
-| 🌙 **GPT-5.6 Luna Max** | Non-frontier | [Source repository](https://github.com/bielxdh3/orbitario-luna) | commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) | **Pending evaluation** |
+| 🌙 **GPT-5.6 Luna Max** | Non-frontier | [Open Luna](https://gpt-5.6-luna.biel.dev.br) · [Source repository](https://github.com/bielxdh3/orbitario-luna) | commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) | **Pending evaluation** |
 
 Luna Max is currently source-pinned only; its prompt provenance is not archived in this repository.
 
