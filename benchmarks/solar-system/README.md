@@ -15,7 +15,7 @@
 | Model | Effort | Live project | Snapshot / source |
 | --- | --- | --- | --- |
 | ✦ **GPT-6 Astra Max** | Max | [Open Astra](https://gpt-6-astra.biel.dev.br) | `fca2ef51b4…` |
-| 𝕏 **Grok 4.6** | **XHIGH** | [Open Grok 4.6](https://grok-4-6-solar-system.vercel.app) | archive `5d77eeb509…` |
+| 𝕏 **Grok 4.7 Solar** | Source-pinned | [Open source repository](https://github.com/JouberthAlves/grok-4.7-solar) | commit `bcb1e82012…` |
 | ◆ **Fable 5.1** | **Max** | [Open Fable 5.1](https://fable-solar-system.vercel.app) | `7e079669e41b…` |
 | ◈ **Gemini 3.8 Flash** | **High** | [Open Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | source commit `805cfe87a…` |
 
@@ -31,6 +31,7 @@ These projects remain visible outside the current frontier arena and main hero. 
 | --- | --- | --- | --- | --- |
 | ☀️ **GPT-5.6 Sun Max V2** | Outdated frontier run | [Open Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | commit `93d43ae62f…` · [`runs/gpt-5.6-sun-max/rebuild`](./runs/gpt-5.6-sun-max/rebuild/) | **71.20/100** historical |
 | 🌙 **GPT-5.6 Luna Max** | Non-frontier | [Open Luna](https://gpt-5.6-luna.biel.dev.br) · [Source repository](https://github.com/bielxdh3/orbitario-luna) | source commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) | **Pending evaluation** |
+| 𝕏 **Grok 4.6** | Archived frontier run | [Open Grok 4.6](https://grok-4-6-solar-system.vercel.app) | [`runs/grok-4.6/frontier-v2`](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) | **33.80/100** historical |
 
 Luna Max is source-pinned only for now; its prompt provenance is not archived here.
 
@@ -65,7 +66,7 @@ Lines    1,153
 | Frontier V2 | GPT-5.6 Sun Max | `frontier-v2.md` | commit `93d43ae62f…` | non-frontier / outdated |
 | Source-pinned reference | GPT-5.6 Luna Max | not archived here | source commit `5fdc036884…` | non-frontier |
 | Frontier V2 | GPT-6 Astra Max | `frontier-v2.md` | commit `fca2ef51b4…` | current |
-| Frontier V2 / XHIGH | Grok 4.6 | `frontier-v2.md` | archive SHA-256 `5d77eeb509…` | current |
+| Source-pinned | Grok 4.7 Solar | not archived here | commit `bcb1e82012…` | current |
 | Frontier V2 / Max | Fable 5.1 | `frontier-v2.md` | commit `7e079669e41b…` | current |
 | Frontier V2 / High | Gemini 3.8 Flash | `frontier-v2.md` | source commit `805cfe87a…` | current |
 
@@ -77,7 +78,7 @@ Machine-readable provenance lives in [`RUNS.json`](./RUNS.json). Gemini's detail
 
 <div align="center">
 
-<img src="../../assets/frontier-v2-scores-v3.svg" alt="Frontier Models overall score chart from 0 to 100: Astra Max 95.25, Fable 5.1 Max 93.30, Sun Max V2 71.20, Grok 4.6 XHIGH 33.80; Gemini 3.8 Flash High and GPT-5.6 Luna Max pending evaluation" width="100%" />
+<img src="../../assets/frontier-v2-scores-v4.svg" alt="Frontier Models overall score chart from 0 to 100: Astra Max 95.25, Fable 5.1 Max 93.30, Sun Max V2 71.20, Grok 4.6 XHIGH 33.80; Gemini 3.8 Flash High and GPT-5.6 Luna Max pending evaluation" width="100%" />
 
 </div>
 
@@ -87,6 +88,7 @@ Machine-readable provenance lives in [`RUNS.json`](./RUNS.json). Gemini's detail
 | **2** | Fable 5.1 Max | **93.30/100** |
 | **3** | GPT-5.6 Sun Max V2 | **71.20/100** |
 | **4** | Grok 4.6 XHIGH | **33.80/100** |
+| — | Grok 4.7 Solar | **Pending** |
 | — | Gemini 3.8 Flash High | **Pending** |
 | — | GPT-5.6 Luna Max | **Pending** |
 

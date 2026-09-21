@@ -61,7 +61,7 @@
     {
       "id": "grok-4.6-frontier-v2",
       "model": "Grok 4.6",
-      "role": "frontier-run",
+      "role": "archived-frontier-run",
       "reasoning_effort": "XHIGH",
       "source_commit": null,
       "source_archive_sha256": "5d77eeb509e147e40701fa7a72d7009c1a81ed3eca8f0c992d3dd6fa454cd1aa",
@@ -70,9 +70,23 @@
       "prompt": "prompts/frontier-v2.md",
       "target_path": "runs/grok-4.6/frontier-v2",
       "status": "imported",
-      "arena_visibility": "current",
+      "arena_visibility": "non-frontier-or-archived",
       "live_url": "https://grok-4-6-solar-system.vercel.app",
-      "notes": "Grok 4.6 was run at XHIGH, its highest available reasoning level for this run. The supplied ZIP contained no Git metadata, so provenance is pinned by the verified source-archive SHA-256.",
+      "notes": "Grok 4.6 is preserved as a scored historical reference outside the current arena. Its supplied ZIP and XHIGH provenance remain unchanged.",
+      "archive_status": "self-contained"
+    },
+    {
+      "id": "grok-4.7-solar-source",
+      "model": "Grok 4.7 Solar",
+      "role": "frontier-reference",
+      "source_commit": "bcb1e820121754f434fa08568c04854c5dc80ab6",
+      "prompt": null,
+      "target_path": "runs/grok-4.7/source",
+      "status": "source-pinned",
+      "arena_visibility": "current",
+      "live_url": null,
+      "notes": "Public source repository snapshot imported from JouberthAlves/grok-4.7-solar. The source commit is pinned, but prompt provenance and a benchmark score are not archived yet.",
+      "legacy_source_repository": "JouberthAlves/grok-4.7-solar",
       "archive_status": "self-contained"
     },
     {
@@ -122,7 +136,7 @@
   ],
   "current_arena": [
     "gpt-6-astra-max-frontier-v2",
-    "grok-4.6-frontier-v2",
+    "grok-4.7-solar-source",
     "fable-5.1-frontier-v2",
     "gemini-3.8-flash-high-frontier-v2"
   ],
@@ -130,6 +144,7 @@
   "external_source_dependency": true,
   "non_frontier_or_outdated": [
     "gpt-5.6-sun-max-frontier-v2",
-    "gpt-5.6-luna-max-orbitario"
+    "gpt-5.6-luna-max-orbitario",
+    "grok-4.6-frontier-v2"
   ]
 }
