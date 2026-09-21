@@ -4,15 +4,15 @@
 
 <br/>
 
-[![Benchmark](https://img.shields.io/badge/benchmark-frontier%20models-7C3AED?style=for-the-badge)](./benchmarks)
-[![Arena](https://img.shields.io/badge/Frontier%20V2-4%20current%20contenders-2563EB?style=for-the-badge)](./benchmarks/solar-system/RUNS.json)
-[![Archive](https://img.shields.io/badge/archive-6%20snapshots%20%2B%202%20pinned%20sources-DB2777?style=for-the-badge)](./benchmarks/solar-system/RUNS.json)
+[![Benchmark](https://img.shields.io/badge/benchmark-frontier%20models-7C3AED?style=flat)](./benchmarks)
+[![Arena](https://img.shields.io/badge/Frontier%20V2-4%20current%20contenders-2563EB?style=flat)](./benchmarks/solar-system/RUNS.json)
+[![Archive](https://img.shields.io/badge/archive-6%20snapshots%20%2B%202%20pinned%20sources-DB2777?style=flat)](./benchmarks/solar-system/RUNS.json)
 
 # Frontier Models
 
 **Exact prompts. Pinned provenance. Complete project snapshots. Explicit evidence.**
 
-[![Português (Brasil)](https://img.shields.io/badge/Idioma-Portugu%C3%AAs%20(BR)-2563EB?style=for-the-badge)](./README-PT-BR.md)
+[![Português (Brasil)](https://img.shields.io/badge/Idioma-Portugu%C3%AAs%20(BR)-2563EB?style=flat)](./README-PT-BR.md)
 
 [Open benchmark](./benchmarks/solar-system/) · [Methodology](./docs/METHODOLOGY.md)
 
@@ -23,7 +23,7 @@
 | Model | Run / effort | Live project | Archived / pinned run |
 | --- | --- | --- | --- |
 | ✦ **GPT-6 Astra Max** | Frontier V2 / Max | [Open Astra](https://gpt-6-astra.biel.dev.br) | [`runs/gpt-6-astra-max/frontier-v2`](./benchmarks/solar-system/runs/gpt-6-astra-max/frontier-v2/) |
-| 𝕏 **Grok 4.7 Solar** | Source-pinned reference | [Open source repository](https://github.com/JouberthAlves/grok-4.7-solar) | [`runs/grok-4.7/source`](./benchmarks/solar-system/runs/grok-4.7/source/) |
+| 𝕏 **Grok 4.7 Solar** | Source-pinned reference | [Open Solar System Observatory](https://grok-4.7.biel.dev.br/) | [`runs/grok-4.7/source`](./benchmarks/solar-system/runs/grok-4.7/source/) |
 | ◆ **Fable 5.1** | Frontier V2 / **Max** | [Open Fable 5.1](https://fable-solar-system.vercel.app) | [`runs/fable/frontier-v2`](./benchmarks/solar-system/runs/fable/frontier-v2/) |
 | ◈ **Gemini 3.8 Flash** | Frontier V2 / **High** | [Open Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | [`runs/gemini-3.8-flash/frontier-v2`](./benchmarks/solar-system/runs/gemini-3.8-flash/frontier-v2/) |
 
