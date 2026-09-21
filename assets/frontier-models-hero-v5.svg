@@ -67,7 +67,7 @@
       <circle r="13" fill="#c084fc" opacity=".24" filter="url(#bubble-glow)"/>
       <circle r="7.5" fill="#e9d5ff"/>
       <circle cx="-2" cy="-2" r="2.2" fill="#faf5ff" opacity=".9"/>
-      <text x="-66" y="4" text-anchor="end" fill="#e9d5ff">GROK 4.7</text>
+      <text x="-18" y="4" text-anchor="end" fill="#e9d5ff">GROK 4.7</text>
     </g>
 
     <g transform="translate(1193 326)">
