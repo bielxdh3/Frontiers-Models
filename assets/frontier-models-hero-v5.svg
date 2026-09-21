@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 520" role="img" aria-labelledby="title desc">
+  <title id="title">Frontier Models — current frontier references</title>
+  <desc id="desc">A dark orbital visualization listing GPT-6 Astra Max, Fable 5.1 Max, Grok 4.7 Solar and Gemini 3.8 Flash in a balanced two-by-two reference grid.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#070b1b"/>
+      <stop offset=".55" stop-color="#11133b"/>
+      <stop offset="1" stop-color="#061d2e"/>
+    </linearGradient>
+    <radialGradient id="sun">
+      <stop stop-color="#fff5bd"/>
+      <stop offset=".45" stop-color="#ffb84d"/>
+      <stop offset="1" stop-color="#ff6b3d" stop-opacity=".12"/>
+    </radialGradient>
+    <linearGradient id="line">
+      <stop stop-color="#6ee7ff"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bubble-glow">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1440" height="520" rx="34" fill="url(#bg)"/>
+
+  <!-- Four clean, centered orbit paths — one per current model. -->
+  <g fill="none" stroke-width="1.6">
+    <ellipse cx="1235" cy="258" rx="150" ry="70"
+      transform="rotate(18 1235 258)"
+      stroke="#60a5fa" stroke-opacity=".52"/>
+    <ellipse cx="1235" cy="258" rx="126" ry="82"
+      transform="rotate(-24 1235 258)"
+      stroke="#34d399" stroke-opacity=".46"/>
+    <ellipse cx="1235" cy="258" rx="160" ry="56"
+      transform="rotate(-12 1235 258)"
+      stroke="#c084fc" stroke-opacity=".48"/>
+    <ellipse cx="1235" cy="258" rx="140" ry="80"
+      transform="rotate(32 1235 258)"
+      stroke="#38bdf8" stroke-opacity=".44"/>
+  </g>
+
+  <circle cx="1235" cy="258" r="43" fill="url(#sun)" filter="url(#glow)"/>
+  <circle cx="1235" cy="258" r="10" fill="#fff7c2"/>
+
+  <!-- Planet markers sit directly on their corresponding orbit paths. -->
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing=".4">
+    <g transform="translate(1115 188)">
+      <circle r="13" fill="#3b82f6" opacity=".22" filter="url(#bubble-glow)"/>
+      <circle r="7.5" fill="#93c5fd"/>
+      <circle cx="-2" cy="-2" r="2.2" fill="#dbeafe" opacity=".9"/>
+      <text x="18" y="4" fill="#bfdbfe">ASTRA</text>
+    </g>
+
+    <g transform="translate(1233 172)">
+      <circle r="13" fill="#34d399" opacity=".22" filter="url(#bubble-glow)"/>
+      <circle r="7.5" fill="#a7f3d0"/>
+      <circle cx="-2" cy="-2" r="2.2" fill="#ecfdf5" opacity=".9"/>
+      <text x="18" y="4" fill="#a7f3d0">FABLE</text>
+    </g>
+
+    <g transform="translate(1389 240)">
+      <circle r="13" fill="#c084fc" opacity=".24" filter="url(#bubble-glow)"/>
+      <circle r="7.5" fill="#e9d5ff"/>
+      <circle cx="-2" cy="-2" r="2.2" fill="#faf5ff" opacity=".9"/>
+      <text x="-18" y="4" text-anchor="end" fill="#e9d5ff">GROK 4.7</text>
+    </g>
+
+    <g transform="translate(1193 326)">
+      <circle r="13" fill="#38bdf8" opacity=".24" filter="url(#bubble-glow)"/>
+      <circle r="7.5" fill="#bae6fd"/>
+      <circle cx="-2" cy="-2" r="2.2" fill="#f0f9ff" opacity=".9"/>
+      <text x="-18" y="4" text-anchor="end" fill="#bae6fd">GEMINI</text>
+    </g>
+  </g>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" fill="#f8fafc">
+    <text x="76" y="92" font-size="18" letter-spacing="4" fill="#67e8f9">BENCHMARK ARCHIVE · FRONTIER V2</text>
+    <text x="72" y="166" font-size="64" font-weight="800">FRONTIER MODELS</text>
+    <text x="76" y="212" font-size="22" fill="#b9c6e4">Inspectable projects · pinned sources · explicit evidence</text>
+
+    <g transform="translate(76 278)">
+      <rect width="300" height="66" rx="14" fill="#151a45" stroke="#3b82f6"/>
+      <text x="20" y="28" font-size="15" fill="#93c5fd">✦ CURRENT REFERENCE</text>
+      <text x="20" y="51" font-size="19" font-weight="700">GPT-6 Astra Max</text>
+
+      <rect x="320" width="300" height="66" rx="14" fill="#152d35" stroke="#34d399"/>
+      <text x="340" y="28" font-size="15" fill="#a7f3d0">◆ CURRENT REFERENCE</text>
+      <text x="340" y="51" font-size="19" font-weight="700">Fable 5.1 Max</text>
+
+      <rect y="82" width="300" height="66" rx="14" fill="#251447" stroke="#c084fc"/>
+      <text x="20" y="110" font-size="15" fill="#e9d5ff">𝕏 CURRENT REFERENCE</text>
+      <text x="20" y="133" font-size="19" font-weight="700">Grok 4.7 Solar</text>
+
+      <rect x="320" y="82" width="300" height="66" rx="14" fill="#132840" stroke="#38bdf8"/>
+      <text x="340" y="110" font-size="15" fill="#bae6fd">◈ CURRENT REFERENCE</text>
+      <text x="340" y="133" font-size="19" font-weight="700">Gemini 3.8 Flash</text>
+    </g>
+  </g>
+
+  <text x="76" y="474" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" fill="#91a4c8">Same repository · four current references · archive classification stays separate</text>
+</svg>

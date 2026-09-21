@@ -1,19 +1,19 @@
 # Solar System benchmark scorecard
 
-> Status: four Frontier V2 contenders are in the current arena. Three have complete preliminary weighted evaluations; Gemini 3.8 Flash High is registered and awaiting hands-on scoring.
+> Status: Four frontier references are in the current arena. Astra Max and Fable 5.1 have complete preliminary weighted evaluations; Gemini 3.8 Flash High is pending hands-on scoring, while Grok 4.7 Solar is source-pinned and unevaluated.
 
 ## Current arena
 
 | Model | Effort | Snapshot / source | Prompt | Evaluation state |
 | --- | --- | --- | --- | --- |
 | GPT-6 Astra Max | Max | `fca2ef51…` | [`frontier-v2.md`](../prompts/frontier-v2.md) | Preliminary scored |
-| Grok 4.6 | **XHIGH** | archive `5d77eeb509…` | [`frontier-v2.md`](../prompts/frontier-v2.md) | Preliminary scored |
+| Grok 4.7 Solar | Source-pinned | commit `bcb1e820…` | — | **Pending source review** |
 | Fable 5.1 | **Max** | `7e079669e41b…` | [`frontier-v2.md`](../prompts/frontier-v2.md) | Preliminary scored |
 | Gemini 3.8 Flash | **High** | source commit `805cfe87a…` | [`frontier-v2.md`](../prompts/frontier-v2.md) | **Pending evaluation** |
 
-The four current runs use the exact same archived prompt. SHA-256: `7c2833a0486938c38671139807bd4a8c16371c3740175376ad02a6c0c3c06d65`.
+The current arena mixes scored Frontier V2 runs with source-pinned references. Grok 4.7 Solar has no archived prompt provenance and is not numerically ranked.
 
-Reasoning labels are recorded as run metadata and are not normalized across vendors. Grok 4.6 is the XHIGH run; Fable 5.1 is the Max run; Gemini 3.8 Flash is the High run.
+Reasoning labels are recorded as run metadata and are not normalized across vendors. Fable 5.1 is the Max run; Gemini 3.8 Flash is the High run.
 
 <details>
 <summary><strong>Historical baseline</strong></summary>
@@ -28,6 +28,7 @@ GPT-5.6 Sun Max V1 (`67eb9fc…`) is preserved for prompt-leverage analysis, but
 | --- | --- | --- | --- |
 | GPT-5.6 Sun Max V2 | Outdated frontier run | commit `93d43ae…` | Historical preliminary score: **71.2/100** |
 | GPT-5.6 Luna Max | Non-frontier | source commit `5fdc036884…` in `bielxdh3/orbitario-luna` | Not in main ranking |
+| Grok 4.6 | Archived frontier run | archive SHA-256 `5d77eeb509…` | Historical score: **33.8/100** |
 
 Sun Max V2 remains fully documented below as a historical scored run. Luna Max is source-pinned only and has no main-arena score.
 
@@ -45,7 +46,7 @@ Cells show the raw 0–10 rating followed by the weighted contribution.
 
 ## Weighted score — currently scored contenders
 
-Gemini 3.8 Flash High is intentionally excluded from the numeric table until the same hands-on evaluation is performed. **Pending is not zero** and does not affect the existing ordering.
+Grok 4.7 Solar and Gemini 3.8 Flash High are intentionally excluded from the numeric table until comparable hands-on evaluation is performed. **Pending is not zero** and does not affect the existing ordering.
 
 | Dimension | Weight | Astra Max | Grok 4.6 XHIGH | Fable 5.1 Max |
 | --- | ---: | ---: | ---: | ---: |
@@ -184,4 +185,4 @@ No numeric or qualitative verdict is assigned before the run is evaluated.
 
 ## Current scored ranking
 
-Among contenders with completed preliminary scores: **1. Astra Max — 95.25/100**, **2. Fable 5.1 Max — 93.3/100**, **3. Sun Max V2 — 71.2/100**, **4. Grok 4.6 XHIGH — 33.8/100**. **Gemini 3.8 Flash High is pending and is not ranked yet.**
+Among contenders with completed preliminary scores: **1. Astra Max — 95.25/100**, **2. Fable 5.1 Max — 93.3/100**, **3. Sun Max V2 — 71.2/100**, **4. Grok 4.6 XHIGH — 33.8/100**. **Grok 4.7 Solar and Gemini 3.8 Flash High are pending and are not ranked yet.**

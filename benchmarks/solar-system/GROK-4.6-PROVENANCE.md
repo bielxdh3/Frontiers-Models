@@ -1,6 +1,6 @@
-# Grok 4.6 Frontier V2 provenance
+# Grok 4.6 archived Frontier V2 provenance
 
-The Grok 4.6 Solar System run is archived at `runs/grok-4.6/frontier-v2/` as an immutable copy of the supplied project ZIP.
+The Grok 4.6 Solar System run is preserved as an archived historical reference outside the current arena. at `runs/grok-4.6/frontier-v2/` as an immutable copy of the supplied project ZIP.
 
 - Model: **Grok 4.6**
 - Reasoning effort: **XHIGH**
