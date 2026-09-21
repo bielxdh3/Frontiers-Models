@@ -1,1 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc"><title id="title">Frontier Models score overview</title><desc id="desc">Preliminary scores: GPT-6 Astra Max 95.25, Fable 5.1 Max 93.30, Sun Max V2 71.20 and archived Grok 4.6 33.80. Grok 4.7 Solar, Gemini 3.8 Flash and Luna Max are pending.</desc><defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#38bdf8"/><stop offset="1" stop-color="#a78bfa"/></linearGradient><linearGradient id="p" x1="0" x2="1"><stop stop-color="#fb7185"/><stop offset="1" stop-color="#f97316"/></linearGradient></defs><rect width="1200" height="520" rx="28" fill="#080b18"/><g font-family="Inter,Segoe UI,Arial,sans-serif"><text x="60" y="62" fill="#f8fafc" font-size="28" font-weight="800">Frontier Models · score overview</text><text x="60" y="92" fill="#94a3b8" font-size="15">Preliminary historical scores remain visible; pending references are not ranked.</text><g transform="translate(60 125)" font-size="16" fill="#dbeafe"><text y="24">GPT-6 Astra Max</text><rect x="250" y="6" width="760" height="24" rx="12" fill="#172554"/><rect x="250" y="6" width="724" height="24" rx="12" fill="url(#g)"/><text x="1032" y="25" fill="#93c5fd">95.25</text><text y="90">Fable 5.1 Max</text><rect x="250" y="72" width="760" height="24" rx="12" fill="#172554"/><rect x="250" y="72" width="709" height="24" rx="12" fill="#34d399"/><text x="1032" y="91" fill="#a7f3d0">93.30</text><text y="156">GPT-5.6 Sun Max V2</text><rect x="250" y="138" width="760" height="24" rx="12" fill="#172554"/><rect x="250" y="138" width="542" height="24" rx="12" fill="#f59e0b"/><text x="1032" y="157" fill="#fde68a">71.20</text><text y="222">Grok 4.6 XHIGH · archived</text><rect x="250" y="204" width="760" height="24" rx="12" fill="#24121b"/><rect x="250" y="204" width="257" height="24" rx="12" fill="url(#p)"/><text x="1032" y="223" fill="#fecdd3">33.80</text><text y="288">Grok 4.7 Solar</text><rect x="250" y="270" width="760" height="24" rx="12" fill="#1e1b4b" stroke="#818cf8" stroke-dasharray="6 6"/><text x="1032" y="289" fill="#c4b5fd">PENDING</text><text y="354">Gemini 3.8 Flash High</text><rect x="250" y="336" width="760" height="24" rx="12" fill="#1e1b4b" stroke="#818cf8" stroke-dasharray="6 6"/><text x="1032" y="355" fill="#c4b5fd">PENDING</text><text y="420">GPT-5.6 Luna Max</text><rect x="250" y="402" width="760" height="24" rx="12" fill="#1e1b4b" stroke="#818cf8" stroke-dasharray="6 6"/><text x="1032" y="421" fill="#c4b5fd">PENDING</text></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Frontier Models — Scores / 100</title>
+  <desc id="desc">Historical benchmark scores for Astra Max, Fable 5.1 Max, Sun Max V2 and Grok 4.6; Gemini 3.8 Flash and Luna Max are pending.</desc>
+  <rect width="1200" height="520" rx="28" fill="#ffffff"/>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <text x="600" y="48" text-anchor="middle" fill="#172033" font-size="28" font-weight="800">Frontier Models — Scores / 100</text>
+    <text x="600" y="72" text-anchor="middle" fill="#64748b" font-size="15">All benchmark runs · pending evaluations are unranked</text>
+
+    <g stroke="#d9e0ea" stroke-width="1">
+      <line x1="72" y1="104" x2="1128" y2="104"/>
+      <line x1="72" y1="168" x2="1128" y2="168"/>
+      <line x1="72" y1="232" x2="1128" y2="232"/>
+      <line x1="72" y1="296" x2="1128" y2="296"/>
+      <line x1="72" y1="360" x2="1128" y2="360"/>
+    </g>
+    <g fill="#475569" font-size="12" text-anchor="end">
+      <text x="62" y="108">100</text>
+      <text x="62" y="172">80</text>
+      <text x="62" y="236">60</text>
+      <text x="62" y="300">40</text>
+      <text x="62" y="364">20</text>
+      <text x="62" y="404">0</text>
+    </g>
+    <line x1="72" y1="400" x2="1128" y2="400" stroke="#64748b"/>
+
+    <g>
+      <rect x="125" y="119" width="100" height="281" rx="5" fill="#7c3aed"/>
+      <text x="175" y="108" text-anchor="middle" fill="#172033" font-size="16" font-weight="800">95.25</text>
+      <text x="175" y="431" text-anchor="middle" fill="#172033" font-size="13" font-weight="700">Astra Max</text>
+      <text x="175" y="454" text-anchor="middle" fill="#64748b" font-size="12">GPT-6</text>
+
+      <rect x="300" y="125" width="100" height="275" rx="5" fill="#f97316"/>
+      <text x="350" y="114" text-anchor="middle" fill="#172033" font-size="16" font-weight="800">93.30</text>
+      <text x="350" y="431" text-anchor="middle" fill="#172033" font-size="13" font-weight="700">Fable 5.1</text>
+      <text x="350" y="454" text-anchor="middle" fill="#64748b" font-size="12">Max</text>
+
+      <rect x="475" y="190" width="100" height="210" rx="5" fill="#fbbd24"/>
+      <text x="525" y="179" text-anchor="middle" fill="#172033" font-size="16" font-weight="800">71.20</text>
+      <text x="525" y="431" text-anchor="middle" fill="#172033" font-size="13" font-weight="700">Sun Max V2</text>
+      <text x="525" y="454" text-anchor="middle" fill="#f97316" font-size="12">GPT-5.6 outdated</text>
+
+      <rect x="650" y="300" width="100" height="100" rx="5" fill="#111827"/>
+      <text x="700" y="289" text-anchor="middle" fill="#172033" font-size="16" font-weight="800">33.80</text>
+      <text x="700" y="431" text-anchor="middle" fill="#172033" font-size="13" font-weight="700">Grok 4.6</text>
+      <text x="700" y="454" text-anchor="middle" fill="#64748b" font-size="12">XHIGH · archived</text>
+
+      <rect x="825" y="104" width="100" height="296" rx="5" fill="#ffffff" stroke="#4f8cff" stroke-width="3" stroke-dasharray="8 7"/>
+      <text x="875" y="246" text-anchor="middle" fill="#4f8cff" font-size="17" font-weight="800">PENDING</text>
+      <text x="875" y="273" text-anchor="middle" fill="#64748b" font-size="12">not scored yet</text>
+      <text x="875" y="431" text-anchor="middle" fill="#172033" font-size="13" font-weight="700">Gemini 3.8 Flash</text>
+      <text x="875" y="454" text-anchor="middle" fill="#2563eb" font-size="12">High</text>
+
+      <rect x="1000" y="104" width="100" height="296" rx="5" fill="#ffffff" stroke="#38bdf8" stroke-width="3" stroke-dasharray="8 7"/>
+      <text x="1050" y="246" text-anchor="middle" fill="#0284c7" font-size="17" font-weight="800">PENDING</text>
+      <text x="1050" y="273" text-anchor="middle" fill="#64748b" font-size="12">not scored yet</text>
+      <text x="1050" y="431" text-anchor="middle" fill="#172033" font-size="13" font-weight="700">Luna Max</text>
+      <text x="1050" y="454" text-anchor="middle" fill="#0284c7" font-size="12">GPT-5.6 non-frontier</text>
+    </g>
+  </g>
+</svg>
