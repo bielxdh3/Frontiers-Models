@@ -35,6 +35,7 @@ These runs stay visible for reference, but they are intentionally separated from
 
 | Model | Classification | Project / source | Provenance | Score status |
 | --- | --- | --- | --- | --- |
+| ☀️ **GPT-5.6 Sun Max V1** | Historical baseline | [Open Sun V1](https://gpt-5.6-sun-v1.biel.dev.br) | [`runs/gpt-5.6-sun-max/original`](./benchmarks/solar-system/runs/gpt-5.6-sun-max/original/) · commit `67eb9fc51f…` | **Not ranked** · different prompt |
 | ☀️ **GPT-5.6 Sun Max V2** | Outdated frontier run | [Open Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | [`runs/gpt-5.6-sun-max/rebuild`](./benchmarks/solar-system/runs/gpt-5.6-sun-max/rebuild/) · commit `93d43ae62f…` | **71.20/100** historical |
 | 🌙 **GPT-5.6 Luna Max** | Non-frontier | [Open Luna](https://gpt-5.6-luna.biel.dev.br) · [Source repository](https://github.com/bielxdh3/orbitario-luna) | commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) | **Pending evaluation** |
 | 𝕏 **Grok 4.6** | Archived frontier run | [Open Grok 4.6](https://grok-4-6-solar-system.vercel.app) | [`runs/grok-4.6/frontier-v2`](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) | **33.80/100** historical |
@@ -61,6 +62,7 @@ The first benchmark asks each model to build a complete interactive Solar System
 | Grok 4.7 Solar | commit `bcb1e82012…` in `JouberthAlves/grok-4.7-solar` | Current frontier | Source pinned |
 | Fable 5.1 Max | commit `7e079669e41b…` | Current frontier | Archived |
 | Gemini 3.8 Flash High | commit `805cfe87a…` in `bielxdh3/gemini` | Current frontier | Source pinned |
+| GPT-5.6 Sun Max V1 | commit `67eb9fc51f…` | Historical baseline | Archived |
 | GPT-5.6 Sun Max V2 | commit `93d43ae62f…` | Outdated | Archived |
 | Grok 4.6 XHIGH | source ZIP SHA-256 `5d77eeb509…` | Archived frontier | Archived |
 | GPT-5.6 Luna Max | commit `5fdc036884…` in `bielxdh3/orbitario-luna` | Non-frontier | Source pinned |
