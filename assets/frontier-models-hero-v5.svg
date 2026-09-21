@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 520" role="img" aria-labelledby="title desc">
   <title id="title">Frontier Models — current frontier references</title>
-  <desc id="desc">A dark orbital visualization listing GPT-6 Astra Max, Grok 4.7 Solar, Fable 5.1 Max and Gemini 3.8 Flash.</desc>
+  <desc id="desc">A dark orbital visualization listing GPT-6 Astra Max, Fable 5.1 Max, Grok 4.7 Solar and Gemini 3.8 Flash in a balanced two-by-two reference grid.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#070b1b"/>
@@ -28,7 +28,6 @@
 
   <rect width="1440" height="520" rx="34" fill="url(#bg)"/>
 
-  <!-- The orbital system is deliberately contained in the right-side panel. -->
   <g opacity=".38" fill="none" stroke="url(#line)" stroke-width="1.5">
     <ellipse cx="1235" cy="258" rx="164" ry="64" transform="rotate(-18 1235 258)"/>
     <ellipse cx="1235" cy="258" rx="122" ry="46" transform="rotate(22 1235 258)"/>
@@ -38,22 +37,21 @@
   <circle cx="1235" cy="258" r="43" fill="url(#sun)" filter="url(#glow)"/>
   <circle cx="1235" cy="258" r="10" fill="#fff7c2"/>
 
-  <!-- One visible model bubble per current reference, kept away from the cards. -->
   <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing=".4">
     <g transform="translate(1092 188)">
       <circle r="12" fill="#3b82f6" opacity=".28" filter="url(#bubble-glow)"/>
       <circle r="7" fill="#93c5fd"/>
       <text x="17" y="4" fill="#bfdbfe">ASTRA</text>
     </g>
+    <g transform="translate(1188 164)">
+      <circle r="12" fill="#34d399" opacity=".28" filter="url(#bubble-glow)"/>
+      <circle r="7" fill="#a7f3d0"/>
+      <text x="17" y="4" fill="#a7f3d0">FABLE</text>
+    </g>
     <g transform="translate(1362 226)">
       <circle r="12" fill="#c084fc" opacity=".3" filter="url(#bubble-glow)"/>
       <circle r="7" fill="#e9d5ff"/>
       <text x="-58" y="4" fill="#e9d5ff">GROK 4.7</text>
-    </g>
-    <g transform="translate(1300 376)">
-      <circle r="12" fill="#34d399" opacity=".28" filter="url(#bubble-glow)"/>
-      <circle r="7" fill="#a7f3d0"/>
-      <text x="17" y="4" fill="#a7f3d0">FABLE</text>
     </g>
     <g transform="translate(1158 354)">
       <circle r="12" fill="#38bdf8" opacity=".3" filter="url(#bubble-glow)"/>
@@ -72,17 +70,17 @@
       <text x="20" y="28" font-size="15" fill="#93c5fd">✦ CURRENT REFERENCE</text>
       <text x="20" y="51" font-size="19" font-weight="700">GPT-6 Astra Max</text>
 
-      <rect x="320" width="300" height="66" rx="14" fill="#251447" stroke="#c084fc"/>
-      <text x="340" y="28" font-size="15" fill="#e9d5ff">𝕏 CURRENT REFERENCE</text>
-      <text x="340" y="51" font-size="19" font-weight="700">Grok 4.7 Solar</text>
+      <rect x="320" width="300" height="66" rx="14" fill="#152d35" stroke="#34d399"/>
+      <text x="340" y="28" font-size="15" fill="#a7f3d0">◆ CURRENT REFERENCE</text>
+      <text x="340" y="51" font-size="19" font-weight="700">Fable 5.1 Max</text>
 
-      <rect x="640" width="300" height="66" rx="14" fill="#152d35" stroke="#34d399"/>
-      <text x="660" y="28" font-size="15" fill="#a7f3d0">◆ CURRENT REFERENCE</text>
-      <text x="660" y="51" font-size="19" font-weight="700">Fable 5.1 Max</text>
+      <rect y="82" width="300" height="66" rx="14" fill="#251447" stroke="#c084fc"/>
+      <text x="20" y="110" font-size="15" fill="#e9d5ff">𝕏 CURRENT REFERENCE</text>
+      <text x="20" y="133" font-size="19" font-weight="700">Grok 4.7 Solar</text>
 
-      <rect y="82" width="300" height="66" rx="14" fill="#132840" stroke="#38bdf8"/>
-      <text x="20" y="110" font-size="15" fill="#bae6fd">◈ CURRENT REFERENCE</text>
-      <text x="20" y="133" font-size="19" font-weight="700">Gemini 3.8 Flash</text>
+      <rect x="320" y="82" width="300" height="66" rx="14" fill="#132840" stroke="#38bdf8"/>
+      <text x="340" y="110" font-size="15" fill="#bae6fd">◈ CURRENT REFERENCE</text>
+      <text x="340" y="133" font-size="19" font-weight="700">Gemini 3.8 Flash</text>
     </g>
   </g>
 

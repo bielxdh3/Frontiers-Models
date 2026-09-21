@@ -53,15 +53,17 @@ PROMPT → MODEL RUN → PROJECT SNAPSHOT / PINNED SOURCE → EVIDENCE → SCORE
 
 The first benchmark asks each model to build a complete interactive Solar System product from a dense product specification. It stresses product design, simulation and orbital logic, camera/navigation, time state, accessibility, performance, robustness, scientific honesty, learning tools and QA.
 
-## Current run provenance
+## Run provenance
 
-| Model | Provenance | Status |
-| --- | --- | --- |
-| GPT-6 Astra Max | commit `fca2ef51b4…` | archived |
-| Grok 4.7 Solar | commit `bcb1e82012…` in `JouberthAlves/grok-4.7-solar` | source pinned |
-| Grok 4.6 XHIGH | source ZIP SHA-256 `5d77eeb509…` | archived |
-| Fable 5.1 Max | commit `7e079669e41b…` | archived |
-| Gemini 3.8 Flash High | commit `805cfe87a…` in `bielxdh3/gemini` | source pinned |\n| GPT-5.6 Sun Max V2 | commit `93d43ae62f…` | archived / outdated |\n| GPT-5.6 Luna Max | commit `5fdc036884…` in `bielxdh3/orbitario-luna` | non-frontier / source pinned |
+| Model | Provenance | Classification | Source status |
+| --- | --- | --- | --- |
+| GPT-6 Astra Max | commit `fca2ef51b4…` | Current frontier | Archived |
+| Grok 4.7 Solar | commit `bcb1e82012…` in `JouberthAlves/grok-4.7-solar` | Current frontier | Source pinned |
+| Fable 5.1 Max | commit `7e079669e41b…` | Current frontier | Archived |
+| Gemini 3.8 Flash High | commit `805cfe87a…` in `bielxdh3/gemini` | Current frontier | Source pinned |
+| GPT-5.6 Sun Max V2 | commit `93d43ae62f…` | Outdated | Archived |
+| Grok 4.6 XHIGH | source ZIP SHA-256 `5d77eeb509…` | Archived frontier | Archived |
+| GPT-5.6 Luna Max | commit `5fdc036884…` in `bielxdh3/orbitario-luna` | Non-frontier | Source pinned |
 
 The exact shared prompt is [`frontier-v2.md`](./benchmarks/solar-system/prompts/frontier-v2.md), SHA-256 `7c2833a0486938c38671139807bd4a8c16371c3740175376ad02a6c0c3c06d65`.
 
@@ -71,7 +73,7 @@ The exact shared prompt is [`frontier-v2.md`](./benchmarks/solar-system/prompts/
 
 <div align="center">
 
-<img src="./assets/frontier-v2-scores-v4.svg" alt="Frontier Models score chart: Astra Max 95.25, Fable 5.1 Max 93.30, Sun Max V2 71.20, Grok 4.6 XHIGH 33.80; Gemini 3.8 Flash High and GPT-5.6 Luna Max pending evaluation" width="100%" />
+<img src="./assets/frontier-v2-scores-v4.svg" alt="Frontier Models score chart: Astra Max 95.25, Fable 5.1 Max 93.30, Sun Max V2 71.20, Grok 4.6 XHIGH 33.80; Grok 4.7 Solar, Gemini 3.8 Flash High and GPT-5.6 Luna Max pending evaluation" width="100%" />
 
 </div>
 

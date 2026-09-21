@@ -53,15 +53,17 @@ PROMPT → EXECUÇÃO DO MODELO → SNAPSHOT / FONTE FIXADA → EVIDÊNCIAS → 
 
 O primeiro benchmark pede a cada modelo que construa um produto completo e interativo do Sistema Solar a partir de uma especificação extensa. Ele testa design de produto, simulação e lógica orbital, câmera/navegação, estado temporal, acessibilidade, desempenho, robustez, honestidade científica, ferramentas educacionais e QA.
 
-## Proveniência das execuções atuais
+## Proveniência das execuções
 
-| Modelo | Proveniência | Status |
-| --- | --- | --- |
-| GPT-6 Astra Max | commit `fca2ef51b4…` | arquivado |
-| Grok 4.7 Solar | commit `bcb1e82012…` em `JouberthAlves/grok-4.7-solar` | fonte fixada |
-| Grok 4.6 XHIGH | SHA-256 do ZIP `5d77eeb509…` | arquivado |
-| Fable 5.1 Max | commit `7e079669e41b…` | arquivado |
-| Gemini 3.8 Flash High | commit `805cfe87a…` em `bielxdh3/gemini` | fonte fixada |\n| GPT-5.6 Sun Max V2 | commit `93d43ae62f…` | arquivado / desatualizado |\n| GPT-5.6 Luna Max | commit `5fdc036884…` em `bielxdh3/orbitario-luna` | non-frontier / fonte fixada |
+| Modelo | Proveniência | Classificação | Status da fonte |
+| --- | --- | --- | --- |
+| GPT-6 Astra Max | commit `fca2ef51b4…` | Frontier atual | Arquivado |
+| Grok 4.7 Solar | commit `bcb1e82012…` em `JouberthAlves/grok-4.7-solar` | Frontier atual | Fonte fixada |
+| Fable 5.1 Max | commit `7e079669e41b…` | Frontier atual | Arquivado |
+| Gemini 3.8 Flash High | commit `805cfe87a…` em `bielxdh3/gemini` | Frontier atual | Fonte fixada |
+| GPT-5.6 Sun Max V2 | commit `93d43ae62f…` | Desatualizado | Arquivado |
+| Grok 4.6 XHIGH | SHA-256 do ZIP `5d77eeb509…` | Frontier arquivado | Arquivado |
+| GPT-5.6 Luna Max | commit `5fdc036884…` em `bielxdh3/orbitario-luna` | Non-frontier | Fonte fixada |
 
 O prompt compartilhado exato é [`frontier-v2.md`](./benchmarks/solar-system/prompts/frontier-v2.md), SHA-256 `7c2833a0486938c38671139807bd4a8c16371c3740175376ad02a6c0c3c06d65`.
 
@@ -71,7 +73,7 @@ O prompt compartilhado exato é [`frontier-v2.md`](./benchmarks/solar-system/pro
 
 <div align="center">
 
-<img src="./assets/frontier-v2-scores-v4.svg" alt="Gráfico geral Frontier Models: Astra Max 95,25; Fable 5.1 Max 93,30; Sun Max V2 71,20; Grok 4.6 XHIGH 33,80; Gemini 3.8 Flash High e GPT-5.6 Luna Max com avaliação pendente" width="100%" />
+<img src="./assets/frontier-v2-scores-v4.svg" alt="Gráfico geral Frontier Models: Astra Max 95,25; Fable 5.1 Max 93,30; Sun Max V2 71,20; Grok 4.6 XHIGH 33,80; Grok 4.7 Solar, Gemini 3.8 Flash High e GPT-5.6 Luna Max com avaliação pendente" width="100%" />
 
 </div>
 
