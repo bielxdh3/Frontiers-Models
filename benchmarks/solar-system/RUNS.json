@@ -67,7 +67,7 @@
       "target_path": "runs/gpt-6.1-sol/source",
       "status": "imported",
       "arena_visibility": "current",
-      "live_url": null,
+      "live_url": "https://gpt-6.1-sol.biel.dev.br/",
       "notes": "Source project archived byte-for-byte from the pinned Git commit. The exact generating prompt has not been independently verified or archived, and no comparable score has been assigned.",
       "legacy_source_repository": "bielxdh3/6.1gptsol",
       "archive_status": "self-contained"
@@ -139,7 +139,7 @@
       "target_path": null,
       "status": "source-pinned",
       "arena_visibility": "non-frontier-or-outdated",
-      "live_url": "https://gpt-5.6-luna.biel.dev.br",
+      "live_url": "https://gpt-5.6-luna.biel.dev.br/",
       "notes": "Non-frontier reference kept visible outside the main arena. The source repository is pinned; prompt provenance is not archived in Frontier Models.",
       "legacy_source_repository": "bielxdh3/orbitario-luna",
       "archive_status": "source-repository-pinned"

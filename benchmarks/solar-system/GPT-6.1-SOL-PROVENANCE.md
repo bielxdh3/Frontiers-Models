@@ -9,7 +9,7 @@ The project is archived under [`runs/gpt-6.1-sol/source/`](./runs/gpt-6.1-sol/so
 - Exact file-by-file SHA-256 manifest: [`GPT-6.1-SOL-FILES.json`](./GPT-6.1-SOL-FILES.json)
 - Reproducible local verification: `node scripts/verify-sol-archive.mjs` from repository root
 - Exact generation prompt: **not independently verified or archived**
-- Live deployment: **not verified**
+- Live project URL (provided by the repository owner): https://gpt-6.1-sol.biel.dev.br/
 - Comparative benchmark score: **pending** (not zero)
 
 The content is copied without evaluator edits. The source repository remains available; this operation copies its files into the benchmark and does **not** delete or modify the source repository. Historical archive paths for other runs are preserved for link and provenance stability. Reasoning tiers are omitted from evaluator-authored presentation and run metadata.
