@@ -10,7 +10,7 @@
 
 </div>
 
-## ⚔️ Current Frontier V2 arena
+## ⚔️ Current reference arena
 
 | Model | Source status | Live project | Snapshot / source |
 | --- | --- | --- | --- |

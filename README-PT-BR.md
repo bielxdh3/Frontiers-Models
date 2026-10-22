@@ -5,7 +5,7 @@
 <br/>
 
 [![Benchmark](https://img.shields.io/badge/benchmark-frontier%20models-7C3AED?style=flat)](./benchmarks)
-[![Arena](https://img.shields.io/badge/Frontier%20V2-5%20modelos-2563EB?style=flat)](./benchmarks/solar-system/RUNS.json)
+[![Arena](https://img.shields.io/badge/Arena-5%20refer%C3%AAncias%20atuais-2563EB?style=flat)](./benchmarks/solar-system/RUNS.json)
 [![Arquivo](https://img.shields.io/badge/arquivo-7%20snapshots%20%2B%202%20fontes%20fixadas-DB2777?style=flat)](./benchmarks/solar-system/RUNS.json)
 
 # Frontier Models
@@ -18,7 +18,7 @@
 
 </div>
 
-## ⚔️ Arena Frontier V2 atual
+## ⚔️ Arena atual de referências
 
 | Modelo | Execução / origem | Projeto ao vivo | Execução arquivada / fixada |
 | --- | --- | --- | --- |

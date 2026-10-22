@@ -10,7 +10,7 @@
 
 </div>
 
-## ⚔️ Arena Frontier V2 atual
+## ⚔️ Arena atual de referências
 
 | Modelo | Origem | Projeto ao vivo | Snapshot / fonte |
 | --- | --- | --- | --- |

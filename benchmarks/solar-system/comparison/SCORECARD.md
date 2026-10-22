@@ -19,7 +19,7 @@ Run membership and verified prompt/source status are tracked separately from sco
 <details>
 <summary><strong>Historical baseline</strong></summary>
 
-GPT-5.6 Sun V1 (`67eb9fc…`) is preserved for prompt-leverage analysis, but it is excluded from the current weighted Frontier V2 arena because it used `sun-original.md`.
+GPT-5.6 Sun V1 (`67eb9fc…`) is preserved for prompt-leverage analysis, but it is excluded from the current reference arena because it used `sun-original.md`. GPT-6.1 Sol and Grok 4.7 Solar are included as source references without verified prompt equivalence or benchmark scores.
 
 </details>
 

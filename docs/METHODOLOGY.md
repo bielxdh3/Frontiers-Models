@@ -21,7 +21,7 @@ Record model/version, input provenance, source commit or archive hash, artifact 
 
 ## 5. Current arena and historical runs
 
-A historical run may remain valuable without belonging in the current head-to-head. The current Solar System weighted arena contains only runs generated from the shared Frontier V2 prompt. GPT-5.6 Sun V1 is preserved for prompt-leverage history but hidden from the current arena because it used a different input.
+A historical run may remain valuable without belonging in the current head-to-head. The Solar System reference arena includes verified Frontier V2 runs and source-pinned or source-archived references whose exact generating prompt is unknown. Membership alone never implies shared input or a comparable score. GPT-5.6 Sun V1 is preserved for prompt-leverage history but hidden from the current arena because it used a different input.
 
 ## 6. Evaluation dimensions
 
