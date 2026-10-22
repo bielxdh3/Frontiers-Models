@@ -1,0 +1,101 @@
+{
+  "sun": {
+    "path": "/textures/sun.jpg",
+    "resolution": "2048 × 1024",
+    "role": "sRGB color / enhanced planetary map",
+    "attribution": "Solar System Scope / INOVE, based on NASA data",
+    "license": "CC BY 4.0",
+    "url": "https://www.solarsystemscope.com/textures/",
+    "fallback": "Deterministic body-specific procedural material"
+  },
+  "mercury": {
+    "path": "/textures/mercury.jpg",
+    "resolution": "2048 × 1024",
+    "role": "sRGB color / enhanced planetary map",
+    "attribution": "Solar System Scope / INOVE, based on NASA data",
+    "license": "CC BY 4.0",
+    "url": "https://www.solarsystemscope.com/textures/",
+    "fallback": "Deterministic body-specific procedural material"
+  },
+  "venus_atmosphere": {
+    "path": "/textures/venus_atmosphere.jpg",
+    "resolution": "2048 × 1024",
+    "role": "sRGB color / enhanced planetary map",
+    "attribution": "Solar System Scope / INOVE, based on NASA data",
+    "license": "CC BY 4.0",
+    "url": "https://www.solarsystemscope.com/textures/",
+    "fallback": "Deterministic body-specific procedural material"
+  },
+  "earth_daymap": {
+    "path": "/textures/earth_daymap.jpg",
+    "resolution": "2048 × 1024",
+    "role": "sRGB color / enhanced planetary map",
+    "attribution": "Solar System Scope / INOVE, based on NASA data",
+    "license": "CC BY 4.0",
+    "url": "https://www.solarsystemscope.com/textures/",
+    "fallback": "Deterministic body-specific procedural material"
+  },
+  "earth_clouds": {
+    "path": "/textures/earth_clouds.jpg",
+    "resolution": "2048 × 1024",
+    "role": "sRGB color / enhanced planetary map",
+    "attribution": "Solar System Scope / INOVE, based on NASA data",
+    "license": "CC BY 4.0",
+    "url": "https://www.solarsystemscope.com/textures/",
+    "fallback": "Deterministic body-specific procedural material"
+  },
+  "moon": {
+    "path": "/textures/moon.jpg",
+    "resolution": "2048 × 1024",
+    "role": "sRGB color / enhanced planetary map",
+    "attribution": "Solar System Scope / INOVE, based on NASA data",
+    "license": "CC BY 4.0",
+    "url": "https://www.solarsystemscope.com/textures/",
+    "fallback": "Deterministic body-specific procedural material"
+  },
+  "mars": {
+    "path": "/textures/mars.jpg",
+    "resolution": "2048 × 1024",
+    "role": "sRGB color / enhanced planetary map",
+    "attribution": "Solar System Scope / INOVE, based on NASA data",
+    "license": "CC BY 4.0",
+    "url": "https://www.solarsystemscope.com/textures/",
+    "fallback": "Deterministic body-specific procedural material"
+  },
+  "jupiter": {
+    "path": "/textures/jupiter.jpg",
+    "resolution": "2048 × 1024",
+    "role": "sRGB color / enhanced planetary map",
+    "attribution": "Solar System Scope / INOVE, based on NASA data",
+    "license": "CC BY 4.0",
+    "url": "https://www.solarsystemscope.com/textures/",
+    "fallback": "Deterministic body-specific procedural material"
+  },
+  "saturn": {
+    "path": "/textures/saturn.jpg",
+    "resolution": "2048 × 1024",
+    "role": "sRGB color / enhanced planetary map",
+    "attribution": "Solar System Scope / INOVE, based on NASA data",
+    "license": "CC BY 4.0",
+    "url": "https://www.solarsystemscope.com/textures/",
+    "fallback": "Deterministic body-specific procedural material"
+  },
+  "uranus": {
+    "path": "/textures/uranus.jpg",
+    "resolution": "2048 × 1024",
+    "role": "sRGB color / enhanced planetary map",
+    "attribution": "Solar System Scope / INOVE, based on NASA data",
+    "license": "CC BY 4.0",
+    "url": "https://www.solarsystemscope.com/textures/",
+    "fallback": "Deterministic body-specific procedural material"
+  },
+  "neptune": {
+    "path": "/textures/neptune.jpg",
+    "resolution": "2048 × 1024",
+    "role": "sRGB color / enhanced planetary map",
+    "attribution": "Solar System Scope / INOVE, based on NASA data",
+    "license": "CC BY 4.0",
+    "url": "https://www.solarsystemscope.com/textures/",
+    "fallback": "Deterministic body-specific procedural material"
+  }
+}

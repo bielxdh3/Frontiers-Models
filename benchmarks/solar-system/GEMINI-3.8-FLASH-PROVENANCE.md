@@ -1,9 +1,8 @@
-# Gemini 3.8 Flash High — Frontier V2 provenance
+# Gemini 3.8 Flash — Frontier V2 provenance
 
 The Gemini Solar System run is pinned to the dedicated source repository and exact Git commit below.
 
 - Model: **Gemini 3.8 Flash**
-- Reasoning effort: **High**
 - Source repository: `bielxdh3/gemini`
 - Source commit: `805cfe87a6b4dcc64961130d4f9d2738f1005790`
 - Prompt: `prompts/frontier-v2.md`

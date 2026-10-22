@@ -16,13 +16,12 @@ The exact prompt text is archived separately under the benchmark's `prompts/` di
 
 ## 4. Run configuration metadata
 
-Record relevant run settings when they are known, including model/version and reasoning effort. Labels such as **Max** and **XHIGH** must be preserved as the settings actually used; they must not be silently normalized into a cross-vendor compute scale.
+Record model/version, input provenance, source commit or archive hash, artifact state and evaluation status. Display labels omit provider-specific effort tiers.
 
-For the current Solar System arena, Grok 4.6 is recorded at **XHIGH** and Fable 5.1 at **Max**.
 
 ## 5. Current arena and historical runs
 
-A historical run may remain valuable without belonging in the current head-to-head. The current Solar System weighted arena contains only runs generated from the shared Frontier V2 prompt. GPT-5.6 Sun Max V1 is preserved for prompt-leverage history but hidden from the current arena because it used a different input.
+A historical run may remain valuable without belonging in the current head-to-head. The current Solar System weighted arena contains only runs generated from the shared Frontier V2 prompt. GPT-5.6 Sun V1 is preserved for prompt-leverage history but hidden from the current arena because it used a different input.
 
 ## 6. Evaluation dimensions
 
@@ -76,7 +75,6 @@ When total scores are close, prefer the run with fewer critical defects, stronge
 - preserve immutable source provenance: commit IDs where available, verified archive hashes where Git metadata is absent;
 - do not edit a model's files merely to make the archive prettier;
 - keep current-arena presentation separate from historical preservation;
-- record reasoning-effort metadata without pretending vendor labels are directly equivalent;
 - put screenshots and scorecards in evaluation directories, not inside model snapshots unless they were originally produced by that model;
 - record missing information explicitly.
 

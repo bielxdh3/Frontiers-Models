@@ -24,13 +24,15 @@ Frontier-Models/
       ├─ runs/
       │  ├─ gpt-5.6-sun-max/
       │  │  ├─ original/          # historical baseline; hidden from current arena
-      │  │  └─ rebuild/           # current Frontier V2 arena
+      │  │  └─ rebuild/           # outdated Frontier V2 run
+      │  ├─ gpt-6.1-sol/
+      │  │  └─ source/             # exact source commit, prompt not verified
       │  ├─ gpt-6-astra-max/
       │  │  └─ frontier-v2/
       │  ├─ grok-4.6/
       │  │  └─ frontier-v2/
       │  ├─ fable/
-      │  │  └─ frontier-v2/       # Fable 5.1 Max
+      │  │  └─ frontier-v2/       # Fable 5.1
       │  └─ gemini-3.8-flash/
       │     └─ frontier-v2/        # source-pinned to exact Gemini commit
       └─ comparison/
@@ -43,13 +45,13 @@ Branches are development lines. Using them as permanent model categories makes t
 
 ## Current arena vs history
 
-The current Solar System arena contains five Frontier V2 contenders:
+The current Solar System arena lists five frontier references (some have no independently verified prompt):
 
-- GPT-5.6 Sun Max V2;
-- GPT-6 Astra Max;
-- Grok 4.6 XHIGH;
-- Fable 5.1 Max;
-- Gemini 3.8 Flash High.
+- GPT-6.1 Sol;
+- GPT-6 Astra;
+- Grok 4.7 Solar;
+- Fable 5.1;
+- Gemini 3.8 Flash.
 
 Sun V1 remains in the archive but is intentionally hidden from the current presentation because it used a different prompt.
 
@@ -57,13 +59,13 @@ Sun V1 remains in the archive but is intentionally hidden from the current prese
 
 A vendored run folder is an immutable, self-contained copy of the model output captured from pinned source provenance: a Git commit when available, or a verified source archive when Git metadata is absent. Evaluator-authored notes do not belong inside model snapshots.
 
-A newly admitted run may first be represented by an **exact source commit pin** while full vendoring is pending. That state must be explicit in `RUNS.json`; it must not be described as a self-contained archived snapshot until the project files are actually vendored. Gemini 3.8 Flash High currently uses this source-pinned state.
+A newly admitted run may first be represented by an **exact source commit pin** while full vendoring is pending. That state must be explicit in `RUNS.json`; it must not be described as a self-contained archived snapshot until the project files are actually vendored. Gemini 3.8 Flash currently uses this source-pinned state. GPT-6.1 Sol is fully archived, with unverified generating-prompt provenance.
 
 ## Provenance
 
 `RUNS.json` records the strongest verifiable source provenance available alongside model label, run role, prompt reference, local run path, presentation state and live URL when one exists.
 
-Reasoning-effort labels such as `Max`, `XHIGH` and `High` are preserved as run metadata where known. They are not normalized across model providers.
+Model display labels and comparison graphics omit vendor-specific effort tiers. Immutable archive paths and source URLs remain unchanged.
 
 ## Adding future benchmarks
 

@@ -3,7 +3,6 @@
 The Grok 4.6 Solar System run is preserved as an archived historical reference outside the current arena. at `runs/grok-4.6/frontier-v2/` as an immutable copy of the supplied project ZIP.
 
 - Model: **Grok 4.6**
-- Reasoning effort: **XHIGH**
 - Source file: `grok-4.6-solar-system-main.zip`
 - Source archive SHA-256: `5d77eeb509e147e40701fa7a72d7009c1a81ed3eca8f0c992d3dd6fa454cd1aa`
 - Source archive size: `122,173 bytes`
@@ -15,6 +14,5 @@ The Grok 4.6 Solar System run is preserved as an archived historical reference o
 
 The supplied ZIP did not include `.git` metadata, so no upstream commit SHA is claimed. The verified source-archive hash is the provenance anchor.
 
-`XHIGH` records the actual reasoning setting used for this run and is not normalized against another provider's effort labels.
 
 This evaluator-authored record intentionally lives outside the model snapshot so `runs/grok-4.6/frontier-v2/` remains unchanged from the supplied project.
