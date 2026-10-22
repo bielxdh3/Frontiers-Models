@@ -18,7 +18,8 @@ const escaped = value => String(value).replaceAll('&', '&amp;').replaceAll('<', 
 const colors = ['#fbbf24', '#93c5fd', '#c084fc', '#34d399', '#38bdf8'];
 const fillColors = ['#382a14', '#151a45', '#251447', '#152d35', '#132840'];
 const cards = arena.map((run, i) => {
-  const x = 76 + (i % 3) * 225;
+  // The final two cards form a centered second row beneath the first three.
+  const x = 76 + (i % 3) * 225 + (i >= 3 ? 112.5 : 0);
   const y = 276 + Math.floor(i / 3) * 86;
   return `
     <g transform="translate(${x} ${y})">
@@ -27,14 +28,36 @@ const cards = arena.map((run, i) => {
       <text x="17" y="51" font-size="18" font-weight="700" fill="#f8fafc">${escaped(run.model)}</text>
     </g>`;
 }).join('');
-const orbitRings = colors.map((c, i) =>
-  `<ellipse cx="1193" cy="260" rx="${118 + 17 * i}" ry="${43 + 12 * i}" transform="rotate(${-26 + i * 12} 1193 260)" fill="none" stroke="${c}" stroke-opacity=".44" stroke-width="1.7"/>`
-).join('');
-const markers = [
-  [1124, 191], [1273, 189], [1370, 252], [1157, 350], [1266, 329]
-].map(([x, y], i) =>
-  `<circle cx="${x}" cy="${y}" r="8" fill="${colors[i]}" stroke="#f8fafc" stroke-width="1.2"/>`
-).join('');
+// The five models have five nested, concentric orbits. Each marker is computed
+// from its own ellipse rather than positioned with hand-picked coordinates.
+// All five ellipses fit inside the right-hand illustration area (x 970..1400);
+// a shared tilt keeps the sun, rings and markers visually aligned.
+const orbitCenter = { x: 1187, y: 251 };
+const orbitTilt = -15;
+const orbitSpecs = [
+  { rx: 112, ry: 48, phase: 215 },
+  { rx: 130, ry: 59, phase: 307 },
+  { rx: 148, ry: 70, phase: 5 },
+  { rx: 166, ry: 81, phase: 125 },
+  { rx: 185, ry: 92, phase: 72 }
+];
+const toRad = degrees => degrees * Math.PI / 180;
+const tilt = toRad(orbitTilt);
+const fmt = number => Number(number.toFixed(3));
+const orbitGeometry = arena.map((run, i) => {
+  const { rx, ry, phase } = orbitSpecs[i];
+  const ex = rx * Math.cos(toRad(phase));
+  const ey = ry * Math.sin(toRad(phase));
+  const x = fmt(orbitCenter.x + ex * Math.cos(tilt) - ey * Math.sin(tilt));
+  const y = fmt(orbitCenter.y + ex * Math.sin(tilt) + ey * Math.cos(tilt));
+  return { run, color: colors[i], rx, ry, x, y };
+});
+const orbitRings = orbitGeometry.map(({ run, color, rx, ry }) =>
+  `<ellipse data-role="orbit" data-model="${escaped(run.id)}" cx="${orbitCenter.x}" cy="${orbitCenter.y}" rx="${rx}" ry="${ry}" transform="rotate(${orbitTilt} ${orbitCenter.x} ${orbitCenter.y})" fill="none" stroke="${color}" stroke-opacity=".54" stroke-width="1.6"/>`
+).join('\n    ');
+const markers = orbitGeometry.map(({ run, color, x, y }) =>
+  `<circle data-role="planet" data-model="${escaped(run.id)}" cx="${x}" cy="${y}" r="7.5" fill="${color}" stroke="#f8fafc" stroke-width="1.3"/>`
+).join('\n    ');
 const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 520" role="img" aria-labelledby="title desc">
   <title id="title">Frontier Models — five current references</title>
   <desc id="desc">${escaped(arena.map(x => x.model).join(', '))}. These are archived projects, not all scored or prompt-equivalent.</desc>
@@ -45,8 +68,8 @@ const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 520" rol
   </defs>
   <rect width="1440" height="520" rx="34" fill="url(#bg)"/>
   <g>${orbitRings}</g>
-  <circle cx="1193" cy="260" r="44" fill="url(#sun)" filter="url(#glow)"/>
-  <circle cx="1193" cy="260" r="10" fill="#fff7c2"/>
+  <circle data-role="sun-glow" cx="${orbitCenter.x}" cy="${orbitCenter.y}" r="44" fill="url(#sun)" filter="url(#glow)"/>
+  <circle data-role="sun" cx="${orbitCenter.x}" cy="${orbitCenter.y}" r="10" fill="#fff7c2"/>
   <g>${markers}</g>
   <g font-family="Inter,Segoe UI,Arial,sans-serif">
     <text x="76" y="92" font-size="18" letter-spacing="4" fill="#67e8f9">BENCHMARK ARCHIVE · SOLAR SYSTEM</text>
