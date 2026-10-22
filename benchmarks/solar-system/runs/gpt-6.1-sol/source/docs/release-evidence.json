@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-22",
+  "workspace": "E:/GPT-6.1-SOL",
+  "startingRepository": false,
+  "startingBranch": null,
+  "startingCommit": null,
+  "remotePublication": false,
+  "unitTests": {
+    "passed": 21,
+    "failed": 0
+  },
+  "integratedBrowserScenarios": {
+    "passed": 18,
+    "failed": 0,
+    "report": "test-results/browser-validation-final.json"
+  },
+  "affectedScenariosAfterCameraAndTextCorrection": {
+    "passed": 5,
+    "failed": 0,
+    "report": "test-results/browser-validation-targeted.json"
+  },
+  "activities": {
+    "completed": 12,
+    "method": "Actual scene/tool state evaluated through UI",
+    "evidence": "test-results/extended-twelve-activities-complete.png"
+  },
+  "touch": {
+    "mode": "Emulated touch and CDP pinch",
+    "status": "PASS",
+    "physicalHardwareTested": false
+  },
+  "photoAndVideo": {
+    "status": "PASS",
+    "report": "test-results/extended-validation.json",
+    "png": "test-results/saturn-square.png",
+    "webm": "test-results/test-video.webm"
+  },
+  "movingViewpoint": {
+    "status": "PASS",
+    "report": "test-results/viewpoint-validation.json"
+  },
+  "contextRecovery": {
+    "unnamedVisibleButtons": [],
+    "contextLossExtensionSupported": true,
+    "contextRestoredWithSelection": true,
+    "status": "PASS"
+  },
+  "sha256": {
+    "package.json": "a3c54326790de2604ec448f249f8039faf6790f8205b61bf44a34e44645ad4ba",
+    "package-lock.json": "ef6771de736f78c0b42c607eef0b436331bb6441bb4d8375fe368533c65af6f0",
+    "src/App.jsx": "bb9a863e89dd9a0e8a0a2dabf1fb5e6f720c8d302715c749946977be1aca48c9",
+    "src/content.js": "80f3832e2d29b57b90a1faa84a1eef9d078dbb0f510305b954495da89b11607a",
+    "src/context.js": "2e5dd0c64ed5ef74232b6940f36a865e09fa3893d2f6f0bef33dc2b6849a395a",
+    "src/data.js": "da8b758b569ddce85a634832e31911840645dd587ffc067930202eff41d3bc4a",
+    "src/i18n.js": "09ecc017845c78ed416c47546a5964b7a80326b3a3a60f2b50d6850785d1fea9",
+    "src/Laboratories.jsx": "6eb0e2e211535a6eb68690eeef857b02372e34251084e3f4c71ecf346b0454c9",
+    "src/Learning.jsx": "d2554147065775d8bc994f1a287c3b001953524a2e816e0a40f4759c64229ff4",
+    "src/main.jsx": "cdab715c75325e40ec2159381564149797255f42cb7954dd53d77a3e8d7ac332",
+    "src/scene.js": "650ae3957814cf2dd60a5720f3996c63aa8b4f47691f36b3da129134002e3ac4",
+    "src/science.js": "c14bcbe6e5dd9de2287443b5d8e72ed9265bad646884dcd91069eb1746c7466e",
+    "src/storage.js": "e2c9cbc75cfa6ba24a7df0700095e7892f34731304ba938de199e4a6a15079d6",
+    "src/styles.css": "fa76300759bb5c8352b8f46d98a9df21b80f14c1d57485fb84f4cf11126ff895",
+    "src/Tools.jsx": "17d2596edd572387b64f87cef5d6d7fb94b5c6070d5b3c473c7ef344846dbf8c",
+    "src/ui.jsx": "47211656549e078ab5b9e0fa73ce651b97d82cdbb05d7ed5c6e466dedb61dc49"
+  }
+}

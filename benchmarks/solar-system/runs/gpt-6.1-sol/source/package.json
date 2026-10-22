@@ -1,0 +1,23 @@
+{
+  "name": "solar-system-observatory",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5173",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 5173",
+    "test": "node --test tests/science.test.js tests/storage.test.js",
+    "test:browser": "node scripts/browser-test.mjs"
+  },
+  "dependencies": {
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "three": "0.186.1",
+    "lucide-react": "0.468.0"
+  },
+  "devDependencies": {
+    "vite": "7.2.2",
+    "@playwright/test": "1.56.1"
+  }
+}

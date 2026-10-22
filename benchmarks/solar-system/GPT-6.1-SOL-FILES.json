@@ -1,0 +1,232 @@
+{
+  "source_repository": "bielxdh3/6.1gptsol",
+  "source_commit": "7caaccc7f462806de10a1981c9826d3151e85407",
+  "note": "SHA-256 of each byte-identical tracked file from the pinned source commit; no .git directory.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 54,
+      "sha256": "a384f24a4643c0a4c773dcb810737bb427352a8370c0708913ecf4d1a3047101"
+    },
+    {
+      "path": "docs/ACCEPTANCE.md",
+      "bytes": 10888,
+      "sha256": "38d9c4d33b184b0cca197d485e0246383625574f5f068d356dddeef184854233"
+    },
+    {
+      "path": "docs/ASSETS.md",
+      "bytes": 1655,
+      "sha256": "41c51441bc8e4dfa74562b9aadd5d60b1603ab0d61010dc164c507e5b19f3ffb"
+    },
+    {
+      "path": "docs/IMPLEMENTATION.md",
+      "bytes": 5549,
+      "sha256": "9d63774ec6467c414e7093db2a516ab589c6b2b38437e317c0e5e34102102254"
+    },
+    {
+      "path": "docs/release-evidence.json",
+      "bytes": 2725,
+      "sha256": "fb38a248fe3c8ec548d142f85b503fb6189fc0f56878fdfe6543d1af8b708a2c"
+    },
+    {
+      "path": "docs/USO.md",
+      "bytes": 2173,
+      "sha256": "1e164b0f12b921d02b4b05b4c16ed25e01281bb3eb0b234d4b7c98607749f450"
+    },
+    {
+      "path": "index.html",
+      "bytes": 613,
+      "sha256": "d3fec88c78fc5d07befd88e7df4a6e09660463b313bece560619efb457579122"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 39331,
+      "sha256": "ef6771de736f78c0b42c607eef0b436331bb6441bb4d8375fe368533c65af6f0"
+    },
+    {
+      "path": "package.json",
+      "bytes": 587,
+      "sha256": "a3c54326790de2604ec448f249f8039faf6790f8205b61bf44a34e44645ad4ba"
+    },
+    {
+      "path": "public/asset-manifest.json",
+      "bytes": 3999,
+      "sha256": "30782a3cc4bf0fe7a61ac1294824a1035c0ab8130f5bb8a71adda063a879d60c"
+    },
+    {
+      "path": "public/favicon.svg",
+      "bytes": 285,
+      "sha256": "86c90273f32403f4ed04a0dff5a838bb46d2cd2744a62e24357d398e641de0e4"
+    },
+    {
+      "path": "public/fonts/manrope.woff2",
+      "bytes": 94972,
+      "sha256": "a13d9b41b0a471ce58f0e46d377fa3cc76615e4632c3b15eb397caadf7a13f0a"
+    },
+    {
+      "path": "public/textures/earth_clouds.jpg",
+      "bytes": 965676,
+      "sha256": "fffd7f68d41b37274822150e54a6ef605af1d3ec35624d9f628c3b896bfa42ed"
+    },
+    {
+      "path": "public/textures/earth_daymap.jpg",
+      "bytes": 463087,
+      "sha256": "767ee1dc6eb3802699bfccf6f264880f8acd0b80de3191cd24984fe279b07b7c"
+    },
+    {
+      "path": "public/textures/jupiter.jpg",
+      "bytes": 498976,
+      "sha256": "b0f04d005350252636b0e3396fc592548cbd9e9126b269d32d5c6abd4b0e4f2b"
+    },
+    {
+      "path": "public/textures/mars.jpg",
+      "bytes": 750547,
+      "sha256": "2d187f3e77a98eaa8cea5f4cc722f633c122ef170b9e94ace6b5fb6cbc3f8e01"
+    },
+    {
+      "path": "public/textures/mercury.jpg",
+      "bytes": 872555,
+      "sha256": "5a5c80607f643496bac9a631e71957def35ed788895f18b678ac849c2b38e48a"
+    },
+    {
+      "path": "public/textures/moon.jpg",
+      "bytes": 1053869,
+      "sha256": "2764ba6535ea0481a062846ee033cc7a909dae05b31a8fd13f3e98f3a7fd92bd"
+    },
+    {
+      "path": "public/textures/neptune.jpg",
+      "bytes": 241580,
+      "sha256": "cb42ea82709741d28b0af44d8b283cbc6dbd0c521a7f0e1e1e010ade00977df6"
+    },
+    {
+      "path": "public/textures/saturn.jpg",
+      "bytes": 199916,
+      "sha256": "54a900ca9bf7ab62e70f862852759abdf342e6d6436a95a2fe9ebdb6bcd3bbac"
+    },
+    {
+      "path": "public/textures/sun.jpg",
+      "bytes": 822427,
+      "sha256": "ff0f076ba65e03b5ab518451bc96699325be38e3ccbdd5869ee1c00f3a0c8816"
+    },
+    {
+      "path": "public/textures/uranus.jpg",
+      "bytes": 77751,
+      "sha256": "d15239d46f82d3ea13d2b260b5b29b2a382f42f2916dae0694d0387b1204a09d"
+    },
+    {
+      "path": "public/textures/venus_atmosphere.jpg",
+      "bytes": 229696,
+      "sha256": "225012ad4911730605c4e189ca2a3bf674fce50cc48aab4102b936b47d6991ac"
+    },
+    {
+      "path": "scripts/browser-test.mjs",
+      "bytes": 138,
+      "sha256": "393bb807ea2a9cd4daec193768a36fea5a77bd254b3d963b3d75a0cd54a3feaf"
+    },
+    {
+      "path": "scripts/fetch-assets.mjs",
+      "bytes": 1490,
+      "sha256": "2b23ed3f52a37aca5e18918f66fb67853dd216bcc6ccd50d4a72b20fdd043168"
+    },
+    {
+      "path": "src/App.jsx",
+      "bytes": 49501,
+      "sha256": "bb9a863e89dd9a0e8a0a2dabf1fb5e6f720c8d302715c749946977be1aca48c9"
+    },
+    {
+      "path": "src/content.js",
+      "bytes": 24823,
+      "sha256": "80f3832e2d29b57b90a1faa84a1eef9d078dbb0f510305b954495da89b11607a"
+    },
+    {
+      "path": "src/context.js",
+      "bytes": 165,
+      "sha256": "2e5dd0c64ed5ef74232b6940f36a865e09fa3893d2f6f0bef33dc2b6849a395a"
+    },
+    {
+      "path": "src/data.js",
+      "bytes": 16241,
+      "sha256": "da8b758b569ddce85a634832e31911840645dd587ffc067930202eff41d3bc4a"
+    },
+    {
+      "path": "src/i18n.js",
+      "bytes": 20331,
+      "sha256": "09ecc017845c78ed416c47546a5964b7a80326b3a3a60f2b50d6850785d1fea9"
+    },
+    {
+      "path": "src/Laboratories.jsx",
+      "bytes": 22721,
+      "sha256": "6eb0e2e211535a6eb68690eeef857b02372e34251084e3f4c71ecf346b0454c9"
+    },
+    {
+      "path": "src/Learning.jsx",
+      "bytes": 22254,
+      "sha256": "d2554147065775d8bc994f1a287c3b001953524a2e816e0a40f4759c64229ff4"
+    },
+    {
+      "path": "src/main.jsx",
+      "bytes": 180,
+      "sha256": "cdab715c75325e40ec2159381564149797255f42cb7954dd53d77a3e8d7ac332"
+    },
+    {
+      "path": "src/scene.js",
+      "bytes": 37248,
+      "sha256": "650ae3957814cf2dd60a5720f3996c63aa8b4f47691f36b3da129134002e3ac4"
+    },
+    {
+      "path": "src/science.js",
+      "bytes": 7521,
+      "sha256": "c14bcbe6e5dd9de2287443b5d8e72ed9265bad646884dcd91069eb1746c7466e"
+    },
+    {
+      "path": "src/storage.js",
+      "bytes": 6673,
+      "sha256": "e2c9cbc75cfa6ba24a7df0700095e7892f34731304ba938de199e4a6a15079d6"
+    },
+    {
+      "path": "src/styles.css",
+      "bytes": 116499,
+      "sha256": "fa76300759bb5c8352b8f46d98a9df21b80f14c1d57485fb84f4cf11126ff895"
+    },
+    {
+      "path": "src/Tools.jsx",
+      "bytes": 30088,
+      "sha256": "17d2596edd572387b64f87cef5d6d7fb94b5c6070d5b3c473c7ef344846dbf8c"
+    },
+    {
+      "path": "src/ui.jsx",
+      "bytes": 3976,
+      "sha256": "47211656549e078ab5b9e0fa73ce651b97d82cdbb05d7ed5c6e466dedb61dc49"
+    },
+    {
+      "path": "tests/browser.mjs",
+      "bytes": 28577,
+      "sha256": "575258833b75d796ea0ff5e5d1b04373e01b5649b155c6c406f279dcc3527076"
+    },
+    {
+      "path": "tests/capabilities-browser.mjs",
+      "bytes": 1871,
+      "sha256": "86d3ab44d5062423e51011cca0a4d81faace53a0737b6e4e5dac8485928cbcf9"
+    },
+    {
+      "path": "tests/extended-browser.mjs",
+      "bytes": 9191,
+      "sha256": "31eb385e2e4d06a26fc675692ff51424564919ba2a9be833b03550b8501aba50"
+    },
+    {
+      "path": "tests/science.test.js",
+      "bytes": 7169,
+      "sha256": "6f70b3ddb15d927d8b32c6a9dc656a1524f825e7ca971e111230cf45906fc747"
+    },
+    {
+      "path": "tests/storage.test.js",
+      "bytes": 3038,
+      "sha256": "28d782472eefcfabdfd2de300c59c54e7272a5f0082db8ac8bc79a134a84efc8"
+    },
+    {
+      "path": "tests/viewpoint-browser.mjs",
+      "bytes": 3497,
+      "sha256": "677331c41741e305fa65f38ff25fa374dced62f511c5e759f9bf0f805c50b137"
+    }
+  ]
+}

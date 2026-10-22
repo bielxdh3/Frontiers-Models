@@ -4,8 +4,8 @@ Prompts are immutable benchmark inputs. A run is only fully auditable when the e
 
 | Prompt | Used by | Status |
 | --- | --- | --- |
-| [`sun-original.md`](./sun-original.md) | GPT-5.6 Sun Max V1 historical baseline | ✅ Archived verbatim |
-| [`frontier-v2.md`](./frontier-v2.md) | GPT-5.6 Sun Max V2; GPT-6 Astra Max; Grok 4.6 XHIGH; Fable 5.1 Max | ✅ Archived verbatim + integrity verified |
+| [`sun-original.md`](./sun-original.md) | GPT-5.6 Sun V1 historical baseline | ✅ Archived verbatim |
+| [`frontier-v2.md`](./frontier-v2.md) | GPT-5.6 Sun V2; GPT-6 Astra; Grok 4.6; Fable 5.1 | ✅ Archived verbatim + integrity verified |
 
 ## Frontier V2 integrity record
 
@@ -18,7 +18,7 @@ The shared Frontier V2 prompt was supplied as `solar-system-master-prompt.md` an
 | Size | `115,983 bytes` |
 | Lines | `1,153` |
 | First heading | `SOLAR SYSTEM OBSERVATORY — COMPLETE INTERACTIVE EXPERIENCE` |
-| Current consumers | Sun Max V2 + Astra Max + Grok 4.6 XHIGH + Fable 5.1 Max |
+| Current consumers | Sun V2 + Astra + Grok 4.6 + Fable 5.1 |
 | Integrity check | byte-for-byte verification passed |
 
 ## Benchmark meaning
@@ -26,8 +26,7 @@ The shared Frontier V2 prompt was supplied as `solar-system-master-prompt.md` an
 ```text
                        EXACT SAME FRONTIER V2 PROMPT
                ↙                ↓               ↓               ↘
-      SUN MAX V2         ASTRA MAX        GROK 4.6          FABLE 5.1
-         MAX                MAX              XHIGH               MAX
+      SUN V2         ASTRA        GROK 4.6          FABLE 5.1
 ```
 
 The older `sun-original.md` remains preserved separately for historical prompt-leverage analysis and is not part of the current Frontier V2 arena.
@@ -36,7 +35,7 @@ The older `sun-original.md` remains preserved separately for historical prompt-l
 
 Prompt text must never be reconstructed from memory, summarized, improved after the fact or inferred from a produced application. If an exact source cannot be recovered, the benchmark must say so rather than fabricate certainty.
 
-Reasoning-effort labels are recorded independently from prompt integrity. `Max` and `XHIGH` identify the settings used for those runs; they are not normalized into a cross-vendor compute scale.
+Model display names omit provider-specific effort tiers; exact archived prompt and source paths are unchanged.
 
 ## Why prompts live outside run folders
 

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 520" role="img" aria-labelledby="title desc">
   <title id="title">Frontier Models — current frontier references</title>
-  <desc id="desc">A dark orbital visualization listing GPT-6 Astra Max, Fable 5.1 Max, Grok 4.7 Solar and Gemini 3.8 Flash in a balanced two-by-two reference grid.</desc>
+  <desc id="desc">A dark orbital visualization listing GPT-6 Astra, Fable 5.1, Grok 4.7 Solar and Gemini 3.8 Flash in a balanced two-by-two reference grid.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#070b1b"/>
@@ -86,11 +86,11 @@
     <g transform="translate(76 278)">
       <rect width="300" height="66" rx="14" fill="#151a45" stroke="#3b82f6"/>
       <text x="20" y="28" font-size="15" fill="#93c5fd">✦ CURRENT REFERENCE</text>
-      <text x="20" y="51" font-size="19" font-weight="700">GPT-6 Astra Max</text>
+      <text x="20" y="51" font-size="19" font-weight="700">GPT-6 Astra</text>
 
       <rect x="320" width="300" height="66" rx="14" fill="#152d35" stroke="#34d399"/>
       <text x="340" y="28" font-size="15" fill="#a7f3d0">◆ CURRENT REFERENCE</text>
-      <text x="340" y="51" font-size="19" font-weight="700">Fable 5.1 Max</text>
+      <text x="340" y="51" font-size="19" font-weight="700">Fable 5.1</text>
 
       <rect y="82" width="300" height="66" rx="14" fill="#251447" stroke="#c084fc"/>
       <text x="20" y="110" font-size="15" fill="#e9d5ff">𝕏 CURRENT REFERENCE</text>

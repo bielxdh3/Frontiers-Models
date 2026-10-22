@@ -10,18 +10,18 @@
 
 </div>
 
-## ⚔️ Current Frontier V2 arena
+## ⚔️ Current reference arena
 
-| Model | Effort | Live project | Snapshot / source |
+| Model | Source status | Live project | Snapshot / source |
 | --- | --- | --- | --- |
-| ✦ **GPT-6 Astra Max** | Max | [Open Astra](https://gpt-6-astra.biel.dev.br) | `fca2ef51b4…` |
+| ☀️ **GPT-6.1 Sol** | Source archived | [Open Sol](https://gpt-6.1-sol.biel.dev.br/) | [`runs/gpt-6.1-sol/source`](./runs/gpt-6.1-sol/source/) · `7caaccc7f4…` |
+| ✦ **GPT-6 Astra** | Archived | [Open Astra](https://gpt-6-astra.biel.dev.br) | `fca2ef51b4…` |
 | 𝕏 **Grok 4.7 Solar** | Source-pinned | [Open source repository](https://github.com/JouberthAlves/grok-4.7-solar) | commit `bcb1e82012…` |
-| ◆ **Fable 5.1** | **Max** | [Open Fable 5.1](https://fable-solar-system.vercel.app) | `7e079669e41b…` |
-| ◈ **Gemini 3.8 Flash** | **High** | [Open Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | source commit `805cfe87a…` |
+| ◆ **Fable 5.1** | Frontier V2 | [Open Fable 5.1](https://fable-solar-system.vercel.app) | `7e079669e41b…` |
+| ◈ **Gemini 3.8 Flash** | Frontier V2 | [Open Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | source commit `805cfe87a…` |
 
-All four current contenders use the exact same [`frontier-v2.md`](./prompts/frontier-v2.md) input.
+The archived Frontier V2 prompt is verified for runs that reference it. GPT-6.1 Sol and Grok 4.7 Solar are independent source references with unverified exact prompt provenance.
 
-> Reasoning labels are preserved exactly as run metadata. `Max`, `XHIGH` and `High` are vendor/run settings and are not treated as directly equivalent compute scales.
 
 ## 🗂️ Non-frontier or outdated models
 
@@ -29,16 +29,16 @@ These projects remain visible outside the current frontier arena and main hero. 
 
 | Model | Classification | Project / source | Provenance | Score status |
 | --- | --- | --- | --- | --- |
-| ☀️ **GPT-5.6 Sun Max V2** | Outdated frontier run | [Open Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | commit `93d43ae62f…` · [`runs/gpt-5.6-sun-max/rebuild`](./runs/gpt-5.6-sun-max/rebuild/) | **71.20/100** historical |
-| 🌙 **GPT-5.6 Luna Max** | Non-frontier | [Open Luna](https://gpt-5.6-luna.biel.dev.br) · [Source repository](https://github.com/bielxdh3/orbitario-luna) | source commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) | **Pending evaluation** |
+| ☀️ **GPT-5.6 Sun V2** | Outdated frontier run | [Open Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | commit `93d43ae62f…` · [`runs/gpt-5.6-sun-max/rebuild`](./runs/gpt-5.6-sun-max/rebuild/) | **71.20/100** historical |
+| 🌙 **GPT-5.6 Luna** | Non-frontier | [Open Luna](https://gpt-5.6-luna.biel.dev.br/) | source commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) | **Pending evaluation** |
 | 𝕏 **Grok 4.6** | Archived frontier run | [Open Grok 4.6](https://grok-4-6-solar-system.vercel.app) | [`runs/grok-4.6/frontier-v2`](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) | **33.80/100** historical |
 
-Luna Max is source-pinned only for now; its prompt provenance is not archived here.
+Luna is source-pinned only for now; its prompt provenance is not archived here.
 
 <details>
-<summary><strong>Historical baseline — GPT-5.6 Sun Max V1</strong></summary>
+<summary><strong>Historical baseline — GPT-5.6 Sun V1</strong></summary>
 
-GPT-5.6 Sun Max V1 is preserved only for prompt-leverage history. It is deliberately excluded from the current arena because it used [`sun-original.md`](./prompts/sun-original.md), not Frontier V2.
+GPT-5.6 Sun V1 is preserved only for prompt-leverage history. It is deliberately excluded from the current arena because it used [`sun-original.md`](./prompts/sun-original.md), not Frontier V2.
 
 - [Open Sun V1](https://gpt-5.6-sun-v1.biel.dev.br)
 - Snapshot: `67eb9fc51f…`
@@ -62,35 +62,37 @@ Lines    1,153
 
 | Run | Model | Prompt | Provenance | Arena |
 | --- | --- | --- | --- | --- |
-| Historical baseline | GPT-5.6 Sun Max V1 | `sun-original.md` | commit `67eb9fc51f…` | hidden |
-| Frontier V2 | GPT-5.6 Sun Max | `frontier-v2.md` | commit `93d43ae62f…` | non-frontier / outdated |
-| Source-pinned reference | GPT-5.6 Luna Max | not archived here | source commit `5fdc036884…` | non-frontier |
-| Frontier V2 | GPT-6 Astra Max | `frontier-v2.md` | commit `fca2ef51b4…` | current |
+| Historical baseline | GPT-5.6 Sun V1 | `sun-original.md` | commit `67eb9fc51f…` | hidden |
+| Frontier V2 | GPT-5.6 Sun | `frontier-v2.md` | commit `93d43ae62f…` | non-frontier / outdated |
+| Source-pinned reference | GPT-5.6 Luna | not archived here | source commit `5fdc036884…` | non-frontier |
+| Archived source | GPT-6.1 Sol | not verified | commit `7caaccc7f4…` | current |
+| Frontier V2 | GPT-6 Astra | `frontier-v2.md` | commit `fca2ef51b4…` | current |
 | Source-pinned | Grok 4.7 Solar | not archived here | commit `bcb1e82012…` | current |
-| Frontier V2 / Max | Fable 5.1 | `frontier-v2.md` | commit `7e079669e41b…` | current |
-| Frontier V2 / High | Gemini 3.8 Flash | `frontier-v2.md` | source commit `805cfe87a…` | current |
+| Frontier V2 | Fable 5.1 | `frontier-v2.md` | commit `7e079669e41b…` | current |
+| Frontier V2 | Gemini 3.8 Flash | `frontier-v2.md` | source commit `805cfe87a…` | current |
 
 Machine-readable provenance lives in [`RUNS.json`](./RUNS.json). Gemini's detailed source record is in [`GEMINI-3.8-FLASH-PROVENANCE.md`](./GEMINI-3.8-FLASH-PROVENANCE.md).
 
 ## Benchmark scores
 
-> **Preliminary evaluation:** the scores are mainly based on one evaluator and a limited number of devices/environments. Gemini 3.8 Flash High and GPT-5.6 Luna Max are **pending hands-on evaluation**. Pending is not zero; Sun Max V2 remains visible with its historical score even though it is outside the current frontier arena.
+> **Preliminary evaluation:** the scores are mainly based on one evaluator and a limited number of devices/environments. GPT-6.1 Sol, Grok 4.7 Solar, Gemini 3.8 Flash and GPT-5.6 Luna are **pending hands-on evaluation**. Pending is not zero; Sun V2 remains visible with its historical score even though it is outside the current frontier arena.
 
 <div align="center">
 
-<img src="../../assets/frontier-v2-scores-v4.svg" alt="Frontier Models overall score chart from 0 to 100: Astra Max 95.25, Fable 5.1 Max 93.30, Sun Max V2 71.20, Grok 4.6 XHIGH 33.80; Gemini 3.8 Flash High and GPT-5.6 Luna Max pending evaluation" width="100%" />
+<img src="../../assets/frontier-v2-scores-v5.svg" alt="Frontier Models overall score chart from 0 to 100: Astra 95.25, Fable 5.1 93.30, Sun V2 71.20, Grok 4.6 33.80; GPT-6.1 Sol, Grok 4.7 Solar, Gemini 3.8 Flash and GPT-5.6 Luna pending evaluation" width="100%" />
 
 </div>
 
 | Rank | Model | Score |
 | ---: | --- | ---: |
-| **1** | GPT-6 Astra Max | **95.25/100** |
-| **2** | Fable 5.1 Max | **93.30/100** |
-| **3** | GPT-5.6 Sun Max V2 | **71.20/100** |
-| **4** | Grok 4.6 XHIGH | **33.80/100** |
+| **1** | GPT-6 Astra | **95.25/100** |
+| **2** | Fable 5.1 | **93.30/100** |
+| **3** | GPT-5.6 Sun V2 | **71.20/100** |
+| **4** | Grok 4.6 | **33.80/100** |
+| — | GPT-6.1 Sol | **Pending** |
 | — | Grok 4.7 Solar | **Pending** |
-| — | Gemini 3.8 Flash High | **Pending** |
-| — | GPT-5.6 Luna Max | **Pending** |
+| — | Gemini 3.8 Flash | **Pending** |
+| — | GPT-5.6 Luna | **Pending** |
 
 ## Evaluation criteria — summary
 
