@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const index = JSON.parse(readFileSync(resolve(root, 'benchmarks/solar-system/RUNS.json'), 'utf8'));
-const svg = readFileSync(resolve(root, 'assets/frontier-models-hero-v6.svg'), 'utf8');
+const svg = readFileSync(resolve(root, 'assets/frontier-models-hero-v7.svg'), 'utf8');
 
 function elements(tag, role) {
   return [...svg.matchAll(new RegExp(`<${tag}\\b[^>]*data-role="${role}"[^>]*\\/>`, 'g'))]
@@ -19,6 +19,8 @@ test('five models have exactly five rings and five correctly colored markers', (
   const ids = index.current_arena;
   assert.equal(ids.length, 5);
   assert.equal(new Set(ids).size, 5);
+  assert.ok(ids.includes('gemini-4-argon-source'));
+  assert.ok(!ids.includes('gemini-3.8-flash-high-frontier-v2'));
   const rings = elements('ellipse', 'orbit');
   const planets = elements('circle', 'planet');
   assert.equal(rings.length, 5);

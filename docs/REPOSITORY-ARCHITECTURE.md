@@ -17,6 +17,7 @@ Frontier-Models/
       ├─ GROK-4.6-PROVENANCE.md
       ├─ FABLE-5.1-PROVENANCE.md
       ├─ GEMINI-3.8-FLASH-PROVENANCE.md
+      ├─ GEMINI-4-ARGON-PROVENANCE.md
       ├─ prompts/
       │  ├─ README.md
       │  ├─ sun-original.md
@@ -33,8 +34,10 @@ Frontier-Models/
       │  │  └─ frontier-v2/
       │  ├─ fable/
       │  │  └─ frontier-v2/       # Fable 5.1
+      │  ├─ gemini-4-argon/
+      │  │  └─ source/               # full source snapshot, unverified prompt
       │  └─ gemini-3.8-flash/
-      │     └─ frontier-v2/        # source-pinned to exact Gemini commit
+      │     └─ frontier-v2/       # archived historical source pin
       └─ comparison/
          └─ SCORECARD.md
 ```
@@ -51,7 +54,7 @@ The current Solar System arena lists five frontier references (some have no inde
 - GPT-6 Astra;
 - Grok 4.7 Solar;
 - Fable 5.1;
-- Gemini 3.8 Flash.
+- Gemini 4 Argon.
 
 Sun V1 remains in the archive but is intentionally hidden from the current presentation because it used a different prompt.
 
@@ -59,7 +62,7 @@ Sun V1 remains in the archive but is intentionally hidden from the current prese
 
 A vendored run folder is an immutable, self-contained copy of the model output captured from pinned source provenance: a Git commit when available, or a verified source archive when Git metadata is absent. Evaluator-authored notes do not belong inside model snapshots.
 
-A newly admitted run may first be represented by an **exact source commit pin** while full vendoring is pending. That state must be explicit in `RUNS.json`; it must not be described as a self-contained archived snapshot until the project files are actually vendored. Gemini 3.8 Flash currently uses this source-pinned state. GPT-6.1 Sol is fully archived, with unverified generating-prompt provenance.
+A newly admitted run may first be represented by an **exact source commit pin** while full vendoring is pending. That state must be explicit in `RUNS.json`; it must not be described as a self-contained archived snapshot until the project files are actually vendored. Gemini 3.8 Flash is an archived source-pinned historical reference. Gemini 4 Argon is fully vendored from its pinned commit with unverified prompt provenance. GPT-6.1 Sol is fully archived, with unverified generating-prompt provenance.
 
 ## Provenance
 

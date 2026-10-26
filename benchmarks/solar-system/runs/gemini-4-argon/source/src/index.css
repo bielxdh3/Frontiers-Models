@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  --bg-space-deep: #020617;
+  --surface-hud-primary: rgba(2, 6, 23, 0.88);
+  --surface-hud-elevated: rgba(15, 23, 42, 0.92);
+  --border-hud-subtle: rgba(51, 65, 85, 0.72);
+  --border-hud-active: rgba(56, 189, 248, 0.65);
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --accent-primary: #38bdf8;
+  --accent-secondary: #818cf8;
+  --status-simulated: #34d399;
+  --status-schematic: #fbbf24;
+  --status-warning: #f59e0b;
+  --status-danger: #f43f5e;
+  --font-display: 'Space Grotesk', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--bg-space-deep);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+
+/* Large interface accessibility mode */
+html[data-interface-size="large"] {
+  font-size: 17.5px;
+}
+
+/* High contrast label mode */
+html[data-high-contrast="true"] [data-scene-label="true"] {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #38bdf8 !important;
+  font-weight: 700 !important;
+}
+
+/* Tabular numbers for live telemetry and clocks */
+.tabular-nums,
+.font-mono {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Accessible keyboard focus ring */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: 2px;
+}
+
+/* Custom subtle scrollbars for HUD drawers */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(2, 6, 23, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(71, 85, 105, 0.7);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(56, 189, 248, 0.7);
+}

@@ -11,8 +11,10 @@ const arena = registry.current_arena.map(id => {
   if (!run) throw new Error(`Missing arena ID: ${id}`);
   return run;
 });
-if (arena.length !== 5 || !arena.some(run => run.model === 'GPT-6.1 Sol')) {
-  throw new Error('Expected five current references including GPT-6.1 Sol');
+if (arena.length !== 5 || !arena.some(run => run.model === 'GPT-6.1 Sol') ||
+    !arena.some(run => run.model === 'Gemini 4 Argon') ||
+    arena.some(run => run.model === 'Gemini 3.8 Flash')) {
+  throw new Error('Expected five current references including Gemini 4 Argon and excluding archived Gemini 3.8 Flash');
 }
 const escaped = value => String(value).replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('"', '&quot;');
 const colors = ['#fbbf24', '#93c5fd', '#c084fc', '#34d399', '#38bdf8'];
@@ -80,7 +82,7 @@ const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 520" rol
   </g>
 </svg>
 `;
-writeFileSync(resolve(base, 'frontier-models-hero-v6.svg'), hero.replace(/^[ \t]+$/gm, ''));
+writeFileSync(resolve(base, 'frontier-models-hero-v7.svg'), hero.replace(/^[ \t]+$/gm, ''));
 
 // Existing numeric results are copied from SCORECARD.md; unscored models
 // render dashed placeholders and never receive manufactured zeroes.
@@ -91,12 +93,13 @@ const rows = [
   ['grok-4.6-frontier-v2', 'Grok 4.6', '', 33.80, '#1f2937', 'archived'],
   ['gpt-6.1-sol-source', 'Sol', 'GPT-6.1', null, '#d97706', 'pending'],
   ['grok-4.7-solar-source', 'Grok 4.7', 'Solar', null, '#9333ea', 'pending'],
-  ['gemini-3.8-flash-high-frontier-v2', 'Gemini 3.8', 'Flash', null, '#2563eb', 'pending'],
+  ['gemini-4-argon-source', 'Gemini 4', 'Argon', null, '#2563eb', 'pending'],
+  ['gemini-3.8-flash-high-frontier-v2', 'Gemini 3.8', 'Flash', null, '#94a3b8', 'archived'],
   ['gpt-5.6-luna-max-orbitario', 'Luna', 'GPT-5.6', null, '#0891b2', 'non-frontier']
 ];
 for (const [id] of rows) if (!byId.has(id)) throw new Error(`Unknown chart run ${id}`);
 const bars = rows.map(([id, name, version, score, color, status], i) => {
-  const cx = 129 + i * 135;
+  const cx = 115 + i * 122;
   const x = cx - 37;
   const top = score === null ? 101 : 392 - score * 2.91;
   const bar = score === null
@@ -106,7 +109,7 @@ const bars = rows.map(([id, name, version, score, color, status], i) => {
 }).join('');
 const chart = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
   <title id="title">Frontier Models — preliminary scores out of 100</title>
-  <desc id="desc">GPT-6 Astra 95.25, Fable 5.1 93.30, GPT-5.6 Sun V2 71.20 and Grok 4.6 33.80. GPT-6.1 Sol, Grok 4.7 Solar, Gemini 3.8 Flash and GPT-5.6 Luna are unscored.</desc>
+  <desc id="desc">GPT-6 Astra 95.25, Fable 5.1 93.30, GPT-5.6 Sun V2 71.20 and Grok 4.6 33.80. GPT-6.1 Sol, Grok 4.7 Solar, Gemini 4 Argon, historical Gemini 3.8 Flash and GPT-5.6 Luna are unscored.</desc>
   <rect width="1200" height="500" rx="28" fill="#fff"/>
   <g font-family="Inter,Segoe UI,Arial,sans-serif">
     <text x="600" y="42" text-anchor="middle" font-size="27" font-weight="800" fill="#172033">Frontier Models · Scores / 100</text>
@@ -118,15 +121,8 @@ const chart = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" ro
   </g>
 </svg>
 `;
-writeFileSync(resolve(base, 'frontier-v2-scores-v5.svg'), chart.replace(/^[ \t]+$/gm, ''));
+writeFileSync(resolve(base, 'frontier-v2-scores-v6.svg'), chart.replace(/^[ \t]+$/gm, ''));
 
-// Older design versions are retained, but evaluator-authored labels should
-// not resurrect vendor reasoning tiers when opened directly.
-for (const asset of ['frontier-models-hero.svg', 'frontier-models-hero-v2.svg', 'frontier-models-hero-v3.svg', 'frontier-models-hero-v4.svg', 'frontier-models-hero-v5.svg', 'frontier-v2-scores.svg', 'frontier-v2-scores-v2.svg', 'frontier-v2-scores-v3.svg', 'frontier-v2-scores-v4.svg']) {
-  const file = resolve(base, asset);
-  let s = readFileSync(file, 'utf8');
-  for (const [oldName, newName] of [['GPT-6 Astra Max', 'GPT-6 Astra'], ['Fable 5.1 Max', 'Fable 5.1'], ['Astra Max', 'Astra'], ['Sun Max', 'Sun'], ['Luna Max', 'Luna'], ['Grok 4.6 XHIGH', 'Grok 4.6'], ['Gemini 3.8 Flash High', 'Gemini 3.8 Flash'], ['FLASH · HIGH', 'FLASH'], ['ASTRA MAX', 'ASTRA']]) s = s.replaceAll(oldName, newName);
-  s = s.replace(/>MAX</g, '>ARCHIVE<').replace(/>Max</g, '>ARCHIVE<').replace(/>XHIGH</g, '>ARCHIVE<').replace(/>High</g, '>FLASH<').replace(/>Flash High</g, '>Flash<');
-  writeFileSync(file, s.replaceAll('\r\n', '\n'));
-}
-console.log('Rendered five-current-reference hero and eight-run score overview.');
+// Historical SVG versions are immutable: always create a new numbered graphic
+// instead of touching previous versions with unrelated rendering changes.
+console.log('Rendered five-current-reference hero and nine-run score overview.');

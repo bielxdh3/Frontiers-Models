@@ -1,6 +1,6 @@
 {
   "benchmark": "solar-system",
-  "schema_version": 8,
+  "schema_version": 9,
   "prompts": {
     "sun-original": {
       "path": "prompts/sun-original.md",
@@ -117,16 +117,30 @@
       "archive_status": "self-contained"
     },
     {
+      "id": "gemini-4-argon-source",
+      "model": "Gemini 4 Argon",
+      "role": "frontier-reference",
+      "source_commit": "318aa80bb5c49cbbfdfd4c3d267ad88d56ae3f98",
+      "prompt": null,
+      "target_path": "runs/gemini-4-argon/source",
+      "status": "imported",
+      "arena_visibility": "current",
+      "live_url": "https://gemini-4-argon.biel.dev.br/",
+      "notes": "Byte-identical archived source from pinned git commit. The exact generating prompt has not been independently verified; comparative score is pending.",
+      "legacy_source_repository": "bielxdh3/gemini-argon",
+      "archive_status": "self-contained"
+    },
+    {
       "id": "gemini-3.8-flash-high-frontier-v2",
       "model": "Gemini 3.8 Flash",
-      "role": "frontier-run",
+      "role": "archived-frontier-run",
       "source_commit": "805cfe87a6b4dcc64961130d4f9d2738f1005790",
       "prompt": "prompts/frontier-v2.md",
       "target_path": "runs/gemini-3.8-flash/frontier-v2",
       "status": "source-pinned",
-      "arena_visibility": "current",
+      "arena_visibility": "non-frontier-or-outdated",
       "live_url": "https://gemini-3.8-flash.biel.dev.br",
-      "notes": "The generated project is pinned to the exact source Git commit in bielxdh3/gemini and is awaiting hands-on scoring.",
+      "notes": "Former current reference archived as an unscored historical Frontier V2 run, superseded in the current arena by Gemini 4 Argon. Original source commit, prompt provenance, URL, and source-pinned status are retained; a full source snapshot is not present here.",
       "legacy_source_repository": "bielxdh3/gemini",
       "archive_status": "source-repository-pinned"
     },
@@ -150,13 +164,14 @@
     "gpt-6-astra-max-frontier-v2",
     "grok-4.7-solar-source",
     "fable-5.1-frontier-v2",
-    "gemini-3.8-flash-high-frontier-v2"
+    "gemini-4-argon-source"
   ],
   "repository_mode": "hybrid-pinned",
   "external_source_dependency": true,
   "non_frontier_or_outdated": [
     "gpt-5.6-sun-max-frontier-v2",
     "gpt-5.6-luna-max-orbitario",
-    "grok-4.6-frontier-v2"
+    "grok-4.6-frontier-v2",
+    "gemini-3.8-flash-high-frontier-v2"
   ]
 }

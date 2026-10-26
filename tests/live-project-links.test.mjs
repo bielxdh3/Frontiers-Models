@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const runs = JSON.parse(readFileSync(resolve(root, 'benchmarks/solar-system/RUNS.json'), 'utf8')).runs;
 const expected = new Map([
+  ['Gemini 4 Argon', 'https://gemini-4-argon.biel.dev.br/'],
   ['GPT-6.1 Sol', 'https://gpt-6.1-sol.biel.dev.br/'],
   ['GPT-5.6 Luna', 'https://gpt-5.6-luna.biel.dev.br/'],
 ]);

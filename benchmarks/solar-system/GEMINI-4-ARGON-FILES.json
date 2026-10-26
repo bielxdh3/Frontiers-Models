@@ -1,0 +1,182 @@
+{
+  "source_repository": "bielxdh3/gemini-argon",
+  "source_commit": "318aa80bb5c49cbbfdfd4c3d267ad88d56ae3f98",
+  "note": "SHA-256 for each unchanged file in the source commit (including tracked dist files), excluding only .git.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 14,
+      "sha256": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97"
+    },
+    {
+      "path": "dist/assets/index-DaNQvopv.css",
+      "bytes": 68653,
+      "sha256": "895ff081987e2c06a5335f3678b371abededfce97045e89c6d8dc7583de6ed3c"
+    },
+    {
+      "path": "dist/assets/index-DTFmqZHp.js",
+      "bytes": 1169977,
+      "sha256": "7933d6e196654c37be42e0b052df0b620ad66f8a5862e43f4140c8f7542fa7d6"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 776,
+      "sha256": "11f68b95e3de55c0abbaeb2f09a6ed8ac40e86edbbdf020dffe1ad056db8eb5e"
+    },
+    {
+      "path": "index.html",
+      "bytes": 678,
+      "sha256": "65286e73bfbf53ed95ecd0c71302f46dd89de7e22e14d0769073cd737416a81c"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 129650,
+      "sha256": "9a6b03e2fe26085f5c6f33f2cb8f5960b7013bbeab5dc191f501c9a56a32863d"
+    },
+    {
+      "path": "package.json",
+      "bytes": 756,
+      "sha256": "73a10664294510c6b3da0117ad45f7e46c920adbcbc63a076ec0dee8820871da"
+    },
+    {
+      "path": "src/__tests__/ephemeris.test.ts",
+      "bytes": 13389,
+      "sha256": "37b12834690e5e959d86cd0016674ea2751a4c28c4efd8457d0e49a5015248a9"
+    },
+    {
+      "path": "src/App.tsx",
+      "bytes": 57474,
+      "sha256": "661619e3bb8b0a303840ec2f2b2c1684bafc28100c8bca83ff8d65abba92ca0e"
+    },
+    {
+      "path": "src/components/CollectionsAndPhotoModal.tsx",
+      "bytes": 63562,
+      "sha256": "e2355e51881727242f15a3c6ab91cbbf19d043e8527aaf120b13e9e6f31620bf"
+    },
+    {
+      "path": "src/components/ComparisonAndMeasurementModal.tsx",
+      "bytes": 37231,
+      "sha256": "20c98a922b514f6161e2c23dab410a2e50579e5d788ebda2f70461c06ac3308f"
+    },
+    {
+      "path": "src/components/InspectorPanel.tsx",
+      "bytes": 45298,
+      "sha256": "75096ddb5a156097535c488e96ba78bdd804b0d2880f167e1a711fa0036481a3"
+    },
+    {
+      "path": "src/components/LearnAndToursModal.tsx",
+      "bytes": 60309,
+      "sha256": "60ba5f4b835ff1e55c4102a2c9f27b9d6773370bfeea0aaa250feac8055b48df"
+    },
+    {
+      "path": "src/components/NavigatorPanel.tsx",
+      "bytes": 14688,
+      "sha256": "3f31652271c0289f5cef9ddbbc1360c8e6044ac719e4058150c5dddb3fba91b4"
+    },
+    {
+      "path": "src/components/OrientationMinimapAndOverlays.tsx",
+      "bytes": 48424,
+      "sha256": "fa6868ae7e78f1de756e3386dee5fdf431dc347caf49dd787998c5a7083eb8d6"
+    },
+    {
+      "path": "src/components/ScientificLaboratories.tsx",
+      "bytes": 101581,
+      "sha256": "748cebd0b5200c22c411ed5843b111c1a2d4d847d2ca565becdd94a0e166d864"
+    },
+    {
+      "path": "src/components/SolarSystemViewport.tsx",
+      "bytes": 60379,
+      "sha256": "52cd96d2ffa7ef6c351692fc133c784feebe5d60e921f150cf81891d002cefdf"
+    },
+    {
+      "path": "src/components/TimeControllerBar.tsx",
+      "bytes": 29530,
+      "sha256": "4790dcf1e088bf4bf3a7d375a118858812a5ccf0fd7df0a289c942321c244f26"
+    },
+    {
+      "path": "src/data/celestialCatalog.ts",
+      "bytes": 4439,
+      "sha256": "c526b5bc2eaee525600ad0f7386c9303b8d3f70c40509be5dbf18547c3c71214"
+    },
+    {
+      "path": "src/data/educationalContent.ts",
+      "bytes": 89830,
+      "sha256": "c9f30f8131383cab44284ce6d3d3cf63912009c90a1f209d3f79a12c9cac877c"
+    },
+    {
+      "path": "src/data/moonsAndSmallBodies.ts",
+      "bytes": 94338,
+      "sha256": "6f47b1d4f6a367c2ff30a78c70c6e62c8798c9358e399d32b9d41be809808e47"
+    },
+    {
+      "path": "src/data/planetsAndStar.ts",
+      "bytes": 47501,
+      "sha256": "67d4163d3c787261e9c32cd31495299708ad8b7c7fae3843faf884a4eb7d1201"
+    },
+    {
+      "path": "src/data/sources.ts",
+      "bytes": 4125,
+      "sha256": "0cd9db02632db2fb7c4fe808a37664ff4eaabd5a4292cffe3789ae43d0892e9b"
+    },
+    {
+      "path": "src/engine/ephemeris.ts",
+      "bytes": 22287,
+      "sha256": "3a96b5f1b2973f73fabb887499f3edf1c5b3c1b00c41185a8337526b8dcbcf1e"
+    },
+    {
+      "path": "src/engine/proceduralTextures.ts",
+      "bytes": 20246,
+      "sha256": "3e63490c367a2c310d752f62679d81159a66431c0ea7f62ffee61c55a0a9e891"
+    },
+    {
+      "path": "src/engine/sceneObjects.ts",
+      "bytes": 16823,
+      "sha256": "483c5aa626c166e7d039d61ea9c5642e0ed818aeaa9c41b175cc86e85b3f855a"
+    },
+    {
+      "path": "src/index.css",
+      "bytes": 2057,
+      "sha256": "4391c1051343b66e75adfed6e78e178baaa610b9cd9074b8d50c837917ae6bb6"
+    },
+    {
+      "path": "src/main.tsx",
+      "bytes": 236,
+      "sha256": "14a10dee4aaa2130d9f57c136db7f16f95f524d60d77146b17776e91c2ab626c"
+    },
+    {
+      "path": "src/types/solarSystem.ts",
+      "bytes": 9900,
+      "sha256": "11a90e7a3bc9007933e22ec5dc40e1109dc21241ec73eaaf82036501088e5381"
+    },
+    {
+      "path": "src/utils/audioEngine.ts",
+      "bytes": 5328,
+      "sha256": "691d28ff5ffb953b2db3ae73b9ed9435cbae7f59a460a67e581d5777e5d4ecb7"
+    },
+    {
+      "path": "src/utils/formatters.ts",
+      "bytes": 8564,
+      "sha256": "292b1888dab976ee0f3d9b8cf399d59133b0b9f35a690c767d0ebb55b49ab97f"
+    },
+    {
+      "path": "src/utils/storage.ts",
+      "bytes": 17409,
+      "sha256": "f9dec5fb8428013207cb0f40d30a0d5427c3466bba747862d66cb4164cf6cf31"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 511,
+      "sha256": "17a749e90007ce1b12b2eccb9b4bdc203a8c30eebac0bc27eb981526947ed5dd"
+    },
+    {
+      "path": "tsconfig.tsbuildinfo",
+      "bytes": 865,
+      "sha256": "17aa7e4f4077254c3f1ad19ff1a4996b0c15284462ca56d0ed21bd20eafd2f15"
+    },
+    {
+      "path": "vite.config.ts",
+      "bytes": 298,
+      "sha256": "f5706d0c57aa79f5ba958b840e40057e5ac7102ed1949e3cf6252e98b877c0a2"
+    }
+  ]
+}
