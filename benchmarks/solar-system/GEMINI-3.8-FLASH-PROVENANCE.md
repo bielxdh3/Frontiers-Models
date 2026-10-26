@@ -10,3 +10,5 @@ The Gemini Solar System run is pinned to the dedicated source repository and exa
 - Source state: tracked project at the pinned commit
 
 The source repository is the canonical immutable reference for this run. This evaluator-authored provenance record lives outside the model output so benchmark metadata does not modify the generated project.
+
+Historical status since 2026-10-26: **archived / superseded in the current reference arena by Gemini 4 Argon**. The pinned source commit and original live URL remain unchanged. This archive still contains a source reference, not a full vendored snapshot.

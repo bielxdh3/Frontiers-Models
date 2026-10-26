@@ -18,7 +18,7 @@
 | ✦ **GPT-6 Astra** | Archived | [Abrir Astra](https://gpt-6-astra.biel.dev.br) | `fca2ef51b4…` |
 | 𝕏 **Grok 4.7 Solar** | Fonte fixada | [Abrir repositório fonte](https://github.com/JouberthAlves/grok-4.7-solar) | commit `bcb1e82012…` |
 | ◆ **Fable 5.1** | Frontier V2 | [Abrir Fable 5.1](https://fable-solar-system.vercel.app) | `7e079669e41b…` |
-| ◈ **Gemini 3.8 Flash** | Frontier V2 | [Abrir Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | commit fonte `805cfe87a…` |
+| ◈ **Gemini 4 Argon** | Fonte arquivada | [Abrir Argon](https://gemini-4-argon.biel.dev.br/) | [`runs/gemini-4-argon/source`](./runs/gemini-4-argon/source/) · `318aa80bb5…` |
 
 A arena atual reúne **cinco** referências, incluindo o GPT-6.1 Sol, agora com código e recursos arquivados. A entrada exata usada para gerar o Sol não está verificada.
 
@@ -32,6 +32,7 @@ Estes projetos continuam visíveis fora da arena frontier atual e do SVG princip
 | ☀️ **GPT-5.6 Sun V2** | Frontier desatualizado | [Abrir Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | commit `93d43ae62f…` · [`runs/gpt-5.6-sun-max/rebuild`](./runs/gpt-5.6-sun-max/rebuild/) | **71,20/100** histórica |
 | 🌙 **GPT-5.6 Luna** | Non-frontier | [Abrir Luna](https://gpt-5.6-luna.biel.dev.br/) | commit fonte [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) | **Avaliação pendente** |
 | 𝕏 **Grok 4.6** | Execução frontier arquivada | [Abrir Grok 4.6](https://grok-4-6-solar-system.vercel.app) | [`runs/grok-4.6/frontier-v2`](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) | **33,80/100** histórica |
+| ◈ **Gemini 3.8 Flash** | Frontier V2 arquivado / sem nota | [Abrir Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | [`fonte fixada`](./GEMINI-3.8-FLASH-PROVENANCE.md) · `805cfe87a…` | **Pendente** |
 
 O Luna está, por enquanto, apenas com a fonte fixada; a proveniência do prompt ainda não foi arquivada aqui.
 
@@ -69,17 +70,18 @@ Linhas   1.153
 | Frontier V2 | GPT-6 Astra | `frontier-v2.md` | commit `fca2ef51b4…` | atual |
 | Fonte fixada | Grok 4.7 Solar | não arquivado aqui | commit `bcb1e82012…` | atual |
 | Frontier V2 | Fable 5.1 | `frontier-v2.md` | commit `7e079669e41b…` | atual |
-| Frontier V2 | Gemini 3.8 Flash | `frontier-v2.md` | commit fonte `805cfe87a…` | atual |
+| Fonte arquivada | Gemini 4 Argon | não verificado | commit `318aa80bb5…` | atual |
+| Frontier V2 | Gemini 3.8 Flash | `frontier-v2.md` | commit fonte `805cfe87a…` | arquivado |
 
-A proveniência legível por máquina fica em [`RUNS.json`](./RUNS.json). O registro detalhado do Gemini está em [`GEMINI-3.8-FLASH-PROVENANCE.md`](./GEMINI-3.8-FLASH-PROVENANCE.md).
+A proveniência legível por máquina fica em [`RUNS.json`](./RUNS.json). Consulte a [proveniência do Gemini 4 Argon](./GEMINI-4-ARGON-PROVENANCE.md) e o [registro histórico do Gemini 3.8](./GEMINI-3.8-FLASH-PROVENANCE.md).
 
 ## Pontuações do benchmark
 
-> **Avaliação preliminar:** as notas foram feitas principalmente por um único avaliador e em poucos dispositivos/ambientes. GPT-6.1 Sol, Grok 4.7 Solar, Gemini 3.8 Flash e GPT-5.6 Luna estão com **avaliação prática pendente**. Pendente não significa zero; o Sun V2 continua visível com sua nota histórica mesmo estando fora da arena frontier atual.
+> **Avaliação preliminar:** as notas foram feitas principalmente por um único avaliador e em poucos dispositivos/ambientes. GPT-6.1 Sol, Grok 4.7 Solar, Gemini 4 Argon, Gemini 3.8 Flash e GPT-5.6 Luna estão com **avaliação prática pendente**. Pendente não significa zero; o Sun V2 continua visível com sua nota histórica mesmo estando fora da arena frontier atual.
 
 <div align="center">
 
-<img src="../../assets/frontier-v2-scores-v5.svg" alt="Gráfico geral Frontier Models de 0 a 100: Astra 95,25; Fable 5.1 93,30; Sun V2 71,20; Grok 4.6 33,80; GPT-6.1 Sol, Grok 4.7 Solar, Gemini 3.8 Flash e GPT-5.6 Luna com avaliação pendente" width="100%" />
+<img src="../../assets/frontier-v2-scores-v6.svg" alt="Gráfico geral Frontier Models de 0 a 100: Astra 95,25; Fable 5.1 93,30; Sun V2 71,20; Grok 4.6 33,80; GPT-6.1 Sol, Grok 4.7 Solar, Gemini 4 Argon, Gemini 3.8 Flash e GPT-5.6 Luna com avaliação pendente" width="100%" />
 
 </div>
 
@@ -91,6 +93,7 @@ A proveniência legível por máquina fica em [`RUNS.json`](./RUNS.json). O regi
 | **4** | Grok 4.6 | **33,80/100** |
 | — | GPT-6.1 Sol | **Pendente** |
 | — | Grok 4.7 Solar | **Pendente** |
+| — | Gemini 4 Argon | **Pendente** |
 | — | Gemini 3.8 Flash | **Pendente** |
 | — | GPT-5.6 Luna | **Pendente** |
 

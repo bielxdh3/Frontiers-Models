@@ -18,7 +18,7 @@
 | ✦ **GPT-6 Astra** | Archived | [Open Astra](https://gpt-6-astra.biel.dev.br) | `fca2ef51b4…` |
 | 𝕏 **Grok 4.7 Solar** | Source-pinned | [Open source repository](https://github.com/JouberthAlves/grok-4.7-solar) | commit `bcb1e82012…` |
 | ◆ **Fable 5.1** | Frontier V2 | [Open Fable 5.1](https://fable-solar-system.vercel.app) | `7e079669e41b…` |
-| ◈ **Gemini 3.8 Flash** | Frontier V2 | [Open Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | source commit `805cfe87a…` |
+| ◈ **Gemini 4 Argon** | Source archived | [Open Argon](https://gemini-4-argon.biel.dev.br/) | [`runs/gemini-4-argon/source`](./runs/gemini-4-argon/source/) · `318aa80bb5…` |
 
 The archived Frontier V2 prompt is verified for runs that reference it. GPT-6.1 Sol and Grok 4.7 Solar are independent source references with unverified exact prompt provenance.
 
@@ -32,6 +32,7 @@ These projects remain visible outside the current frontier arena and main hero. 
 | ☀️ **GPT-5.6 Sun V2** | Outdated frontier run | [Open Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | commit `93d43ae62f…` · [`runs/gpt-5.6-sun-max/rebuild`](./runs/gpt-5.6-sun-max/rebuild/) | **71.20/100** historical |
 | 🌙 **GPT-5.6 Luna** | Non-frontier | [Open Luna](https://gpt-5.6-luna.biel.dev.br/) | source commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) | **Pending evaluation** |
 | 𝕏 **Grok 4.6** | Archived frontier run | [Open Grok 4.6](https://grok-4-6-solar-system.vercel.app) | [`runs/grok-4.6/frontier-v2`](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) | **33.80/100** historical |
+| ◈ **Gemini 3.8 Flash** | Archived / unscored Frontier V2 | [Open Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | [`source-pinned reference`](./GEMINI-3.8-FLASH-PROVENANCE.md) · `805cfe87a…` | **Pending** |
 
 Luna is source-pinned only for now; its prompt provenance is not archived here.
 
@@ -69,17 +70,18 @@ Lines    1,153
 | Frontier V2 | GPT-6 Astra | `frontier-v2.md` | commit `fca2ef51b4…` | current |
 | Source-pinned | Grok 4.7 Solar | not archived here | commit `bcb1e82012…` | current |
 | Frontier V2 | Fable 5.1 | `frontier-v2.md` | commit `7e079669e41b…` | current |
-| Frontier V2 | Gemini 3.8 Flash | `frontier-v2.md` | source commit `805cfe87a…` | current |
+| Archived source | Gemini 4 Argon | not verified | commit `318aa80bb5…` | current |
+| Frontier V2 | Gemini 3.8 Flash | `frontier-v2.md` | source commit `805cfe87a…` | archived |
 
-Machine-readable provenance lives in [`RUNS.json`](./RUNS.json). Gemini's detailed source record is in [`GEMINI-3.8-FLASH-PROVENANCE.md`](./GEMINI-3.8-FLASH-PROVENANCE.md).
+Machine-readable provenance lives in [`RUNS.json`](./RUNS.json). See [Gemini 4 Argon provenance](./GEMINI-4-ARGON-PROVENANCE.md) for its archived source manifest and [Gemini 3.8 provenance](./GEMINI-3.8-FLASH-PROVENANCE.md) for the historical source pin.
 
 ## Benchmark scores
 
-> **Preliminary evaluation:** the scores are mainly based on one evaluator and a limited number of devices/environments. GPT-6.1 Sol, Grok 4.7 Solar, Gemini 3.8 Flash and GPT-5.6 Luna are **pending hands-on evaluation**. Pending is not zero; Sun V2 remains visible with its historical score even though it is outside the current frontier arena.
+> **Preliminary evaluation:** the scores are mainly based on one evaluator and a limited number of devices/environments. GPT-6.1 Sol, Grok 4.7 Solar, Gemini 4 Argon, Gemini 3.8 Flash and GPT-5.6 Luna are **pending hands-on evaluation**. Pending is not zero; Sun V2 remains visible with its historical score even though it is outside the current frontier arena.
 
 <div align="center">
 
-<img src="../../assets/frontier-v2-scores-v5.svg" alt="Frontier Models overall score chart from 0 to 100: Astra 95.25, Fable 5.1 93.30, Sun V2 71.20, Grok 4.6 33.80; GPT-6.1 Sol, Grok 4.7 Solar, Gemini 3.8 Flash and GPT-5.6 Luna pending evaluation" width="100%" />
+<img src="../../assets/frontier-v2-scores-v6.svg" alt="Frontier Models overall score chart from 0 to 100: Astra 95.25, Fable 5.1 93.30, Sun V2 71.20, Grok 4.6 33.80; GPT-6.1 Sol, Grok 4.7 Solar, Gemini 4 Argon, Gemini 3.8 Flash and GPT-5.6 Luna pending evaluation" width="100%" />
 
 </div>
 
@@ -91,6 +93,7 @@ Machine-readable provenance lives in [`RUNS.json`](./RUNS.json). Gemini's detail
 | **4** | Grok 4.6 | **33.80/100** |
 | — | GPT-6.1 Sol | **Pending** |
 | — | Grok 4.7 Solar | **Pending** |
+| — | Gemini 4 Argon | **Pending** |
 | — | Gemini 3.8 Flash | **Pending** |
 | — | GPT-5.6 Luna | **Pending** |
 

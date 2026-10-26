@@ -1,18 +1,18 @@
 # Solar System benchmark scorecard
 
-> Status: Four frontier references are in the current arena. Astra and Fable 5.1 have complete preliminary weighted evaluations; Gemini 3.8 Flash is pending hands-on scoring, while Grok 4.7 Solar is source-pinned and unevaluated.
+> Status: Five references are in the current arena. Astra and Fable 5.1 have preliminary weighted scores; GPT-6.1 Sol, Gemini 4 Argon and Grok 4.7 Solar remain unscored. Gemini 3.8 Flash is archived, still unscored.
 
 ## Current arena (five references)
 
-| Model | Effort | Snapshot / source | Prompt | Evaluation state |
+| Model | Source status | Snapshot / source | Prompt | Evaluation state |
 | --- | --- | --- | --- | --- |
-| GPT-6.1 Sol | Source-archived | commit `7caaccc7f4…` | prompt not verified; **pending** |
+| GPT-6.1 Sol | Source archived | commit `7caaccc7f4…` | Not verified | **Pending evaluation** |
 | GPT-6 Astra | Archived | `fca2ef51…` | [`frontier-v2.md`](../prompts/frontier-v2.md) | Preliminary scored |
 | Grok 4.7 Solar | Source-pinned | commit `bcb1e820…` | — | **Pending source review** |
 | Fable 5.1 | Frontier V2 | `7e079669e41b…` | [`frontier-v2.md`](../prompts/frontier-v2.md) | Preliminary scored |
-| Gemini 3.8 Flash | Frontier V2 | source commit `805cfe87a…` | [`frontier-v2.md`](../prompts/frontier-v2.md) | **Pending evaluation** |
+| Gemini 4 Argon | Source archived | commit `318aa80bb5…` | Not verified | **Pending evaluation** |
 
-The current arena mixes scored Frontier V2 runs with source-pinned references. Grok 4.7 Solar has no archived prompt provenance and is not numerically ranked.
+The current arena mixes scored Frontier V2 runs with independent source-archived/pinned references. Gemini 4 Argon, GPT-6.1 Sol and Grok 4.7 Solar have no verified exact generating prompt in this archive and are not numerically ranked.
 
 Run membership and verified prompt/source status are tracked separately from score rankings.
 
@@ -29,6 +29,7 @@ GPT-5.6 Sun V1 (`67eb9fc…`) is preserved for prompt-leverage analysis, but it 
 | --- | --- | --- | --- |
 | GPT-5.6 Sun V2 | Outdated frontier run | commit `93d43ae…` | Historical preliminary score: **71.2/100** |
 | GPT-5.6 Luna | Non-frontier | source commit `5fdc036884…` in `bielxdh3/orbitario-luna` | Not in main ranking |
+| Gemini 3.8 Flash | Archived / unscored | source commit `805cfe87a…` | **Pending**; no numeric score |
 | Grok 4.6 | Archived frontier run | archive SHA-256 `5d77eeb509…` | Historical score: **33.8/100** |
 
 Sun V2 remains fully documented below as a historical scored run. Luna is source-pinned only and has no main-arena score.
@@ -47,7 +48,7 @@ Cells show the raw 0–10 rating followed by the weighted contribution.
 
 ## Weighted score — currently scored contenders
 
-GPT-6.1 Sol, Grok 4.7 Solar and Gemini 3.8 Flash are intentionally excluded from the numeric table until comparable hands-on evaluation is performed. **Pending is not zero** and does not affect the existing ordering.
+GPT-6.1 Sol, Grok 4.7 Solar, Gemini 4 Argon and historical Gemini 3.8 Flash are intentionally excluded from the numeric table until comparable hands-on evaluation is performed. **Pending is not zero** and does not affect the existing ordering.
 
 | Dimension | Weight | Astra | Grok 4.6 | Fable 5.1 |
 | --- | ---: | ---: | ---: | ---: |
@@ -177,7 +178,10 @@ A feature receives credit only when the requested behavior is actually present a
 
 **Critical defects:** basic breakages materially affected robustness despite the very high overall score
 
-### Gemini 3.8 Flash
+### Gemini 4 Argon
+**Evaluation state:** pending; source preserved at commit `318aa80bb5c49cbbfdfd4c3d267ad88d56ae3f98`, generating prompt not verified.
+
+### Gemini 3.8 Flash (archived)
 **Evaluation state:** pending hands-on scoring under the same Frontier V2 rubric.
 
 **Source:** pinned to `bielxdh3/gemini` commit `805cfe87a6b4dcc64961130d4f9d2738f1005790`.
@@ -186,7 +190,7 @@ No numeric or qualitative verdict is assigned before the run is evaluated.
 
 ## Current scored ranking
 
-Among contenders with completed preliminary scores: **1. Astra — 95.25/100**, **2. Fable 5.1 — 93.3/100**, **3. Sun V2 — 71.2/100**, **4. Grok 4.6 — 33.8/100**. **GPT-6.1 Sol, Grok 4.7 Solar and Gemini 3.8 Flash are pending and are not ranked yet.**
+Among contenders with completed preliminary scores: **1. Astra — 95.25/100**, **2. Fable 5.1 — 93.3/100**, **3. Sun V2 — 71.2/100**, **4. Grok 4.6 — 33.8/100**. **GPT-6.1 Sol, Grok 4.7 Solar, Gemini 4 Argon and archived Gemini 3.8 Flash are pending and are not ranked yet.**
 
 ### GPT-6.1 Sol
 **Evaluation state:** pending hands-on scoring. Source project archived in full from pinned commit `7caaccc7f462806de10a1981c9826d3151e85407`. The exact generating prompt is not independently verified, so no prompt-equivalence claim or numeric score is assigned.
