@@ -14,13 +14,13 @@
 
 | Model | Source status | Live project | Snapshot / source |
 | --- | --- | --- | --- |
-| ☀️ **GPT-6.1 Sol** | Source archived | [Open Sol](https://gpt-6.1-sol.biel.dev.br/) | [`runs/gpt-6.1-sol/source`](./runs/gpt-6.1-sol/source/) · `7caaccc7f4…` |
-| ✦ **GPT-6 Astra** | Archived | [Open Astra](https://gpt-6-astra.biel.dev.br) | `fca2ef51b4…` |
-| 𝕏 **Grok 4.7 Solar** | Source-pinned | [Open source repository](https://github.com/JouberthAlves/grok-4.7-solar) | commit `bcb1e82012…` |
+| ☀️ **GPT-6.1 Sol** | Source archived | [Open Sol](https://orbitarium-gpt-6.1-sol.biel.dev.br) | [`runs/gpt-6.1-sol/source`](./runs/gpt-6.1-sol/source/) · `7caaccc7f4…` |
+| ✦ **GPT-6 Astra** | Archived | [Open Astra](https://orbitarium-gpt-6-astra.biel.dev.br) | `fca2ef51b4…` |
+| 𝕏 **Grok 4.7** | Source-pinned | [Open Grok 4.7](https://orbitarium-grok-4.7.biel.dev.br) | [Source repository](https://github.com/JouberthAlves/grok-4.7-solar) · commit `bcb1e82012…` |
 | ◆ **Fable 5.1** | Frontier V2 | [Open Fable 5.1](https://fable-solar-system.vercel.app) | `7e079669e41b…` |
-| ◈ **Gemini 4 Argon** | Source archived | [Open Argon](https://gemini-4-argon.biel.dev.br/) | [`runs/gemini-4-argon/source`](./runs/gemini-4-argon/source/) · `318aa80bb5…` |
+| ◈ **Gemini 4 Argon** | Source archived | [Open Argon](https://orbitarium-gemini-4-argon.biel.dev.br) | [`runs/gemini-4-argon/source`](./runs/gemini-4-argon/source/) · `318aa80bb5…` |
 
-The archived Frontier V2 prompt is verified for runs that reference it. GPT-6.1 Sol and Grok 4.7 Solar are independent source references with unverified exact prompt provenance.
+The archived Frontier V2 prompt is verified for runs that reference it. GPT-6.1 Sol and Grok 4.7 are independent source references with unverified exact prompt provenance.
 
 
 ## 🗂️ Non-frontier or outdated models
@@ -29,10 +29,10 @@ These projects remain visible outside the current frontier arena and main hero.
 
 | Model | Classification | Project / source | Provenance |
 | --- | --- | --- | --- |
-| ☀️ **GPT-5.6 Sol V2** | Outdated frontier run | [Open Sol V2](https://gpt-5.6-sun-v2.biel.dev.br) | commit `93d43ae62f…` · [Archive V2](./runs/gpt-5.6-sun-max/rebuild/) |
-| 🌙 **GPT-5.6 Luna** | Non-frontier | [Open Luna](https://gpt-5.6-luna.biel.dev.br/) | source commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) |
+| ☀️ **GPT-5.6 Sol V2** | Outdated frontier run | [Open Sol V2](https://orbitarium-gpt-5.6-sol-v2.biel.dev.br) | commit `93d43ae62f…` · [Archive V2](./runs/gpt-5.6-sun-max/rebuild/) |
+| 🌙 **GPT-5.6 Luna** | Non-frontier | [Open Luna](https://orbitarium-gpt-5.6-luna.biel.dev.br) | source commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) |
 | 𝕏 **Grok 4.6** | Archived frontier run | [Open Grok 4.6](https://grok-4-6-solar-system.vercel.app) | [`runs/grok-4.6/frontier-v2`](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) |
-| ◈ **Gemini 3.8 Flash** | Archived Frontier V2 | [Open Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | [`source-pinned reference`](./GEMINI-3.8-FLASH-PROVENANCE.md) · `805cfe87a…` |
+| ◈ **Gemini 3.8 Flash** | Archived Frontier V2 | [Open Gemini 3.8 Flash](https://orbitarium-gemini-3.8-flash.biel.dev.br) | [`source-pinned reference`](./GEMINI-3.8-FLASH-PROVENANCE.md) · `805cfe87a…` |
 
 Luna is source-pinned only for now; its prompt provenance is not archived here.
 
@@ -41,7 +41,7 @@ Luna is source-pinned only for now; its prompt provenance is not archived here.
 
 GPT-5.6 Sol V1 is preserved only for prompt-leverage history. It is deliberately excluded from the current arena because it used [`sun-original.md`](./prompts/sun-original.md), not Frontier V2.
 
-- [Open Sol V1](https://gpt-5.6-sun-v1.biel.dev.br)
+- [Open Sol V1](https://orbitarium-gpt-5.6-sol.v1.biel.dev.br)
 - Snapshot: `67eb9fc51f…`
 - Archive: [Archive V1](./runs/gpt-5.6-sun-max/original/)
 
@@ -68,7 +68,7 @@ Lines    1,153
 | Source-pinned reference | GPT-5.6 Luna | not archived here | source commit `5fdc036884…` | non-frontier |
 | Archived source | GPT-6.1 Sol | not verified | commit `7caaccc7f4…` | current |
 | Frontier V2 | GPT-6 Astra | `frontier-v2.md` | commit `fca2ef51b4…` | current |
-| Source-pinned | Grok 4.7 Solar | not archived here | commit `bcb1e82012…` | current |
+| Source-pinned | Grok 4.7 | not archived here | commit `bcb1e82012…` | current |
 | Frontier V2 | Fable 5.1 | `frontier-v2.md` | commit `7e079669e41b…` | current |
 | Archived source | Gemini 4 Argon | not verified | commit `318aa80bb5…` | current |
 | Frontier V2 | Gemini 3.8 Flash | `frontier-v2.md` | source commit `805cfe87a…` | archived |

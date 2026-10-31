@@ -9,6 +9,6 @@ The project is archived under [`runs/gpt-6.1-sol/source/`](./runs/gpt-6.1-sol/so
 - Exact file-by-file SHA-256 manifest: [`GPT-6.1-SOL-FILES.json`](./GPT-6.1-SOL-FILES.json)
 - Reproducible local verification: `node scripts/verify-sol-archive.mjs` from repository root
 - Exact generation prompt: **not independently verified or archived**
-- Live project URL (provided by the repository owner): https://gpt-6.1-sol.biel.dev.br/
+- Live project URL (provided by the repository owner): https://orbitarium-gpt-6.1-sol.biel.dev.br
 
 The content is copied without archive modifications. The source repository remains available; this operation copies its files into the benchmark and does **not** delete or modify the source repository. Historical archive paths for other runs are preserved for link and provenance stability. Reasoning tiers are omitted from archive-maintained presentation and run metadata.

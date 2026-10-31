@@ -50,10 +50,10 @@ if (!argon || !old || argon.model !== 'Gemini 4 Argon' ||
     argon.source_commit !== sourceSha || argon.prompt !== null ||
     argon.target_path !== 'runs/gemini-4-argon/source' ||
     argon.archive_status !== 'self-contained' || argon.status !== 'imported' ||
-    argon.live_url !== 'https://gemini-4-argon.biel.dev.br/' ||
+    argon.live_url !== 'https://orbitarium-gemini-4-argon.biel.dev.br' ||
     argon.arena_visibility !== 'current' || old.source_commit !== '805cfe87a6b4dcc64961130d4f9d2738f1005790' ||
     old.archive_status !== 'source-repository-pinned' || old.status !== 'source-pinned' ||
-    old.live_url !== 'https://gemini-3.8-flash.biel.dev.br' ||
+    old.live_url !== 'https://orbitarium-gemini-3.8-flash.biel.dev.br' ||
     old.arena_visibility !== 'non-frontier-or-outdated') {
   throw new Error('Argon or historical Gemini 3.8 metadata mismatch');
 }
@@ -71,7 +71,7 @@ for (const path of ['README.md', 'README-PT-BR.md', 'benchmarks/solar-system/REA
   'benchmarks/solar-system/README-PT-BR.md']) {
   const text = readFileSync(resolve(root, path), 'utf8');
   if (!text.includes('Gemini 4 Argon') || !text.includes('Gemini 3.8 Flash') ||
-      !text.includes('https://gemini-4-argon.biel.dev.br/')) {
+      !text.includes('https://orbitarium-gemini-4-argon.biel.dev.br')) {
     throw new Error(`Incomplete source links / historical preservation in ${path}`);
   }
 }

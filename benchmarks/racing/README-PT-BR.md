@@ -19,10 +19,10 @@ O adendo autoriza skills e ferramentas operacionais de navegador, build, depura�
 - **Complemento:** [Adendo obrigatório de execução](./EXECUTION-ADDENDUM.md), registrado separadamente para manter intactos o prompt original e seu hash.
 - **Arquivos das execuções:** os dois repositórios foram preservados a partir de commits exatos, incluindo **todos os arquivos rastreados pelo Git** e um **backup restaurável do histórico Git completo**:
 
-  | Origem | Arquivos originais | Proveniência / manifesto | Backup do Git |
-  | --- | --- | --- | --- |
-  | GPT-6.1 Sol (82 arquivos) | [Código e assets](./runs/gpt-6.1-sol/source/) | [Proveniência](./runs/gpt-6.1-sol/SOURCE-PROVENANCE.md) · [Hashes](./runs/gpt-6.1-sol/SOURCE-FILES.json) | [Bundle](./runs/gpt-6.1-sol/SOURCE-REPOSITORY.bundle) |
-  | Gemini 3.8 Flash (38 arquivos) | [Código e assets](./runs/gemini-3.8-flash/source/) | [Proveniência](./runs/gemini-3.8-flash/SOURCE-PROVENANCE.md) · [Hashes](./runs/gemini-3.8-flash/SOURCE-FILES.json) | [Bundle](./runs/gemini-3.8-flash/SOURCE-REPOSITORY.bundle) |
+  | Origem | Jogar | Arquivos originais | Proveniência / manifesto | Backup do Git |
+  | --- | --- | --- | --- | --- |
+  | GPT-6.1 Sol (82 arquivos) | [Jogar GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br) | [Código e assets](./runs/gpt-6.1-sol/source/) | [Proveniência](./runs/gpt-6.1-sol/SOURCE-PROVENANCE.md) · [Hashes](./runs/gpt-6.1-sol/SOURCE-FILES.json) | [Bundle](./runs/gpt-6.1-sol/SOURCE-REPOSITORY.bundle) |
+  | Gemini 3.8 Flash (38 arquivos) | [Jogar Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br) | [Código e assets](./runs/gemini-3.8-flash/source/) | [Proveniência](./runs/gemini-3.8-flash/SOURCE-PROVENANCE.md) · [Hashes](./runs/gemini-3.8-flash/SOURCE-FILES.json) | [Bundle](./runs/gemini-3.8-flash/SOURCE-REPOSITORY.bundle) |
 
 - **Registro:** [RUNS.json](./RUNS.json) fixa os commits, URLs, manifestos e bundles. O arquivamento **não** significa que todos os testes de gameplay/navegador tenham sido aprovados.
 

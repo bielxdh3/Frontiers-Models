@@ -19,10 +19,10 @@ The addendum authorizes the operational browser, build, debugging and testing sk
 - **Companion:** the separate, mandatory [Execution Addendum](./EXECUTION-ADDENDUM.md) is recorded independently so the original prompt's hash and provenance remain unchanged.
 - **Source snapshots:** both participant repositories have been archived from exact Git commits, preserving **all Git-tracked files** and the **complete original Git history** in restorable bundles:
 
-  | Source | Archived source | Provenance / SHA-256 manifest | Git-history backup |
-  | --- | --- | --- | --- |
-  | GPT-6.1 Sol (82 files) | [Source files](./runs/gpt-6.1-sol/source/) | [Provenance](./runs/gpt-6.1-sol/SOURCE-PROVENANCE.md) · [File checksums](./runs/gpt-6.1-sol/SOURCE-FILES.json) | [Git bundle](./runs/gpt-6.1-sol/SOURCE-REPOSITORY.bundle) |
-  | Gemini 3.8 Flash (38 files) | [Source files](./runs/gemini-3.8-flash/source/) | [Provenance](./runs/gemini-3.8-flash/SOURCE-PROVENANCE.md) · [File checksums](./runs/gemini-3.8-flash/SOURCE-FILES.json) | [Git bundle](./runs/gemini-3.8-flash/SOURCE-REPOSITORY.bundle) |
+  | Source | Live game | Archived source | Provenance / SHA-256 manifest | Git-history backup |
+  | --- | --- | --- | --- | --- |
+  | GPT-6.1 Sol (82 files) | [Play GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br) | [Source files](./runs/gpt-6.1-sol/source/) | [Provenance](./runs/gpt-6.1-sol/SOURCE-PROVENANCE.md) · [File checksums](./runs/gpt-6.1-sol/SOURCE-FILES.json) | [Git bundle](./runs/gpt-6.1-sol/SOURCE-REPOSITORY.bundle) |
+  | Gemini 3.8 Flash (38 files) | [Play Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br) | [Source files](./runs/gemini-3.8-flash/source/) | [Provenance](./runs/gemini-3.8-flash/SOURCE-PROVENANCE.md) · [File checksums](./runs/gemini-3.8-flash/SOURCE-FILES.json) | [Git bundle](./runs/gemini-3.8-flash/SOURCE-REPOSITORY.bundle) |
 
 - **Registry:** [RUNS.json](./RUNS.json) pins both source commits, original URLs, manifests and restorable bundles. Source archival **does not** assert that gameplay or browser acceptance tests passed.
 

@@ -31,7 +31,7 @@ The shared Frontier V2 prompt was supplied as `solar-system-master-prompt.md` an
 
 The older `sun-original.md` remains preserved separately for historical prompt-leverage analysis and is not part of the current Frontier V2 arena.
 
-**Naming note:** The correct model display name is **GPT-5.6 Sol** (V1 and V2), not the former English-language label. The original `sun-original.md` filename, historical `gpt-5.6-sun-max` archive paths/registry IDs, source-repository name and already-published `sun` URLs are legacy identifiers retained to preserve links, archival provenance and exact source integrity; they are not current model names. The astronomical Sun in imagery and source assets is unrelated to this correction.
+**Naming note:** The correct model display name is **GPT-5.6 Sol** (V1 and V2), not the former English-language label. The original `sun-original.md` filename, historical `gpt-5.6-sun-max` archive paths/registry IDs and source-repository name are legacy identifiers retained to preserve archival provenance and exact source integrity; they are not current model names. Live links now follow the owner's canonical `orbitarium-gpt-5.6-sol` domains (including the exact `.sol.v1.` hostname). The astronomical Sun in imagery and source assets is unrelated to this correction.
 
 ## Integrity rule
 

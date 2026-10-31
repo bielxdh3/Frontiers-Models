@@ -26,7 +26,7 @@
       "target_path": "runs/gpt-5.6-sun-max/original",
       "status": "imported",
       "arena_visibility": "historical-hidden",
-      "live_url": "https://gpt-5.6-sun-v1.biel.dev.br",
+      "live_url": "https://orbitarium-gpt-5.6-sol.v1.biel.dev.br",
       "legacy_source_repository": "bielxdh3/GPT5.6-SUN-MAX-SOLAR-SYSTEM",
       "archive_status": "self-contained"
     },
@@ -39,7 +39,7 @@
       "target_path": "runs/gpt-5.6-sun-max/rebuild",
       "status": "imported",
       "arena_visibility": "non-frontier-or-outdated",
-      "live_url": "https://gpt-5.6-sun-v2.biel.dev.br",
+      "live_url": "https://orbitarium-gpt-5.6-sol-v2.biel.dev.br",
       "notes": "Frontier V2 Sol run preserved as an outdated reference and excluded from the current frontier arena.",
       "legacy_source_repository": "bielxdh3/GPT5.6-SUN-MAX-SOLAR-SYSTEM",
       "archive_status": "self-contained"
@@ -53,7 +53,7 @@
       "target_path": "runs/gpt-6-astra-max/frontier-v2",
       "status": "imported",
       "arena_visibility": "current",
-      "live_url": "https://gpt-6-astra.biel.dev.br",
+      "live_url": "https://orbitarium-gpt-6-astra.biel.dev.br",
       "notes": "Uses the exact shared Frontier V2 prompt archived and SHA-256 verified in this benchmark.",
       "legacy_source_repository": "bielxdh3/GPT6-ASTRA-MAX-SOLAR-SYSTEM",
       "archive_status": "self-contained"
@@ -67,7 +67,7 @@
       "target_path": "runs/gpt-6.1-sol/source",
       "status": "imported",
       "arena_visibility": "current",
-      "live_url": "https://gpt-6.1-sol.biel.dev.br/",
+      "live_url": "https://orbitarium-gpt-6.1-sol.biel.dev.br",
       "notes": "Source project archived byte-for-byte from the pinned Git commit. The exact generating prompt has not been independently verified or archived.",
       "legacy_source_repository": "bielxdh3/6.1gptsol",
       "archive_status": "self-contained"
@@ -90,14 +90,14 @@
     },
     {
       "id": "grok-4.7-solar-source",
-      "model": "Grok 4.7 Solar",
+      "model": "Grok 4.7",
       "role": "frontier-reference",
       "source_commit": "bcb1e820121754f434fa08568c04854c5dc80ab6",
       "prompt": null,
       "target_path": "runs/grok-4.7/source",
       "status": "source-pinned",
       "arena_visibility": "current",
-      "live_url": null,
+      "live_url": "https://orbitarium-grok-4.7.biel.dev.br",
       "notes": "Public source repository snapshot imported from JouberthAlves/grok-4.7-solar. The source commit is pinned; the exact generating prompt is not archived.",
       "legacy_source_repository": "JouberthAlves/grok-4.7-solar",
       "archive_status": "self-contained"
@@ -125,7 +125,7 @@
       "target_path": "runs/gemini-4-argon/source",
       "status": "imported",
       "arena_visibility": "current",
-      "live_url": "https://gemini-4-argon.biel.dev.br/",
+      "live_url": "https://orbitarium-gemini-4-argon.biel.dev.br",
       "notes": "Byte-identical archived source from pinned git commit. The exact generating prompt has not been independently verified.",
       "legacy_source_repository": "bielxdh3/gemini-argon",
       "archive_status": "self-contained"
@@ -139,7 +139,7 @@
       "target_path": "runs/gemini-3.8-flash/frontier-v2",
       "status": "source-pinned",
       "arena_visibility": "non-frontier-or-outdated",
-      "live_url": "https://gemini-3.8-flash.biel.dev.br",
+      "live_url": "https://orbitarium-gemini-3.8-flash.biel.dev.br",
       "notes": "Former current reference archived as a historical Frontier V2 run, superseded in the current arena by Gemini 4 Argon. Original source commit, prompt provenance, URL, and source-pinned status are retained; a full source snapshot is not present here.",
       "legacy_source_repository": "bielxdh3/gemini",
       "archive_status": "source-repository-pinned"
@@ -153,7 +153,7 @@
       "target_path": null,
       "status": "source-pinned",
       "arena_visibility": "non-frontier-or-outdated",
-      "live_url": "https://gpt-5.6-luna.biel.dev.br/",
+      "live_url": "https://orbitarium-gpt-5.6-luna.biel.dev.br",
       "notes": "Non-frontier reference kept visible outside the main arena. The source repository is pinned; prompt provenance is not archived in Frontier Models.",
       "legacy_source_repository": "bielxdh3/orbitario-luna",
       "archive_status": "source-repository-pinned"

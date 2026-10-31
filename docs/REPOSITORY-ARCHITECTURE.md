@@ -63,7 +63,7 @@ A vendored run folder contains a self-contained copy of model-produced files fro
 
 ## Current references and history
 
-The Orbitarium-bench current arena contains GPT-6.1 Sol, GPT-6 Astra, Grok 4.7 Solar, Fable 5.1 and Gemini 4 Argon. Historical and non-frontier runs remain discoverable. GPT-5.6 Sol V1 uses a different prompt and is kept outside the current reference hero.
+The Orbitarium-bench current arena contains GPT-6.1 Sol, GPT-6 Astra, Grok 4.7, Fable 5.1 and Gemini 4 Argon. Historical and non-frontier runs remain discoverable. GPT-5.6 Sol V1 uses a different prompt and is kept outside the current reference hero.
 
 ## Provenance and future benchmarks
 

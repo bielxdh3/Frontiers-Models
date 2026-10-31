@@ -22,6 +22,7 @@
     {
       "id": "gpt-6.1-sol",
       "model": "GPT-6.1 Sol",
+      "live_url": "https://racing-gpt-6.1-sol.biel.dev.br",
       "source_repository": "https://github.com/bielxdh3/6.1-sol",
       "source_branch": "main",
       "source_commit": "6f552636699e2db0d567cf207a91464be66c783f",
@@ -41,6 +42,7 @@
     {
       "id": "gemini-3.8-flash",
       "model": "Gemini 3.8 Flash",
+      "live_url": "https://racing-gemini-3.8-flash.biel.dev.br",
       "source_repository": "https://github.com/bielxdh3/gemini-3.8-flash",
       "source_branch": "main",
       "source_commit": "a18fcaee717b71969691ffc5e8cfb2901aea054e",
