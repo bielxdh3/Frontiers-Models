@@ -48,9 +48,43 @@ O Luna está, por enquanto, apenas com a fonte fixada; a proveniência do prompt
 
 **Frontier Models** é um arquivo de benchmarks para comparar sistemas de IA frontier em projetos completos e inspecionáveis, com prompts, código e proveniência verificáveis.
 
+### Arquitetura em resumo
+
 ```text
-PROMPT → EXECUÇÃO DO MODELO → SNAPSHOT / FONTE FIXADA → EVIDÊNCIAS → PROVENIÊNCIA → PROJETOS INSPECIONÁVEIS
+   +--------------------------------+         +--------------------------------+
+   | Prompts versionados            |         | Projetos gerados por IA        |
+   | prompts/frontier-v2.md         |         | commits de fonte / hashes ZIP  |
+   | apenas entradas verificadas    |         | arquivados ou fonte fixada     |
+   +--------------------------------+         +--------------------------------+
+                    |                                          |
+                    +--------------------+---------------------+
+                                         |
+                                         v
+                    +----------------------------------------+
+                    | Registro do benchmark Sistema Solar    |
+                    | benchmarks/solar-system/RUNS.json      |
+                    | referencias atuais + historicas        |
+                    +----------------------------------------+
+                                         |
+                    +--------------------+---------------------+
+                    |                                          |
+                    v                                          v
+   +--------------------------------+         +--------------------------------+
+   | Snapshots dos projetos         |         | Proveniencia e fontes fixadas  |
+   | runs/<model>/<run>/            |         | *-PROVENANCE.md / *-FILES.json |
+   | preservados sem alterar        |         | commits Git / SHA-256 / checks |
+   +--------------------------------+         +--------------------------------+
+                    |                                          |
+                    +--------------------+---------------------+
+                                         |
+                                         v
+                    +----------------------------------------+
+                    | READMEs + links de projetos            |
+                    | SVG principal + scripts de integridade |
+                    +----------------------------------------+
 ```
+
+O registro conecta evidências dos prompts, arquivos dos projetos ou fontes apenas fixadas e a proveniência imutável. Uma fonte fixada não é necessariamente um snapshot local; um prompt não verificado não é tratado como equivalente ao de outras execuções. Veja a [arquitetura do repositório](./docs/REPOSITORY-ARCHITECTURE.md).
 
 ## Benchmark 001 — Sistema Solar / Orbitário
 

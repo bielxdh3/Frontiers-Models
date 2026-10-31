@@ -48,9 +48,43 @@ Luna is currently source-pinned only; its prompt provenance is not archived in t
 
 **Frontier Models** is a benchmark archive for comparing frontier AI systems on complete, inspectable projects with verified prompts, source snapshots and provenance.
 
+### Architecture at a glance
+
 ```text
-PROMPT → MODEL RUN → PROJECT SNAPSHOT / PINNED SOURCE → EVIDENCE → PROVENANCE → INSPECTABLE PROJECTS
+   +--------------------------------+         +--------------------------------+
+   | Versioned benchmark prompts    |         | Model-generated projects       |
+   | prompts/frontier-v2.md         |         | source commits / ZIP hashes    |
+   | only for verified inputs       |         | archived or source-pinned      |
+   +--------------------------------+         +--------------------------------+
+                    |                                          |
+                    +--------------------+---------------------+
+                                         |
+                                         v
+                    +----------------------------------------+
+                    | Solar System run registry              |
+                    | benchmarks/solar-system/RUNS.json      |
+                    | current + historical references        |
+                    +----------------------------------------+
+                                         |
+                    +--------------------+---------------------+
+                    |                                          |
+                    v                                          v
+   +--------------------------------+         +--------------------------------+
+   | Original project snapshots     |         | Provenance and source pins     |
+   | runs/<model>/<run>/            |         | *-PROVENANCE.md / *-FILES.json |
+   | preserved without rewrites     |         | Git commits / SHA-256 / checks |
+   +--------------------------------+         +--------------------------------+
+                    |                                          |
+                    +--------------------+---------------------+
+                                         |
+                                         v
+                    +----------------------------------------+
+                    | READMEs + live project links           |
+                    | hero SVG + integrity scripts           |
+                    +----------------------------------------+
 ```
+
+The registry links input evidence, archived outputs or source-only references, and immutable provenance. An external source pin is not presented as a complete local snapshot; an unverified prompt is not assumed to match another run. See [repository architecture](./docs/REPOSITORY-ARCHITECTURE.md).
 
 ## Benchmark 001 — Solar System / Orbitarium
 
