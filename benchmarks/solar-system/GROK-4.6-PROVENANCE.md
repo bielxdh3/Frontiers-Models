@@ -15,4 +15,4 @@ The Grok 4.6 Solar System run is preserved as an archived historical reference o
 The supplied ZIP did not include `.git` metadata, so no upstream commit SHA is claimed. The verified source-archive hash is the provenance anchor.
 
 
-This evaluator-authored record intentionally lives outside the model snapshot so `runs/grok-4.6/frontier-v2/` remains unchanged from the supplied project.
+This Archive-maintained record intentionally lives outside the model snapshot so `runs/grok-4.6/frontier-v2/` remains unchanged from the supplied project.

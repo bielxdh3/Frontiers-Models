@@ -25,14 +25,14 @@ The archived Frontier V2 prompt is verified for runs that reference it. GPT-6.1 
 
 ## 🗂️ Non-frontier or outdated models
 
-These projects remain visible outside the current frontier arena and main hero. Arena classification is separate from the score overview: scored historical/outdated runs remain visible there, while unevaluated runs stay unranked.
+These projects remain visible outside the current frontier arena and main hero.
 
-| Model | Classification | Project / source | Provenance | Score status |
-| --- | --- | --- | --- | --- |
-| ☀️ **GPT-5.6 Sun V2** | Outdated frontier run | [Open Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | commit `93d43ae62f…` · [`runs/gpt-5.6-sun-max/rebuild`](./runs/gpt-5.6-sun-max/rebuild/) | **71.20/100** historical |
-| 🌙 **GPT-5.6 Luna** | Non-frontier | [Open Luna](https://gpt-5.6-luna.biel.dev.br/) | source commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) | **Pending evaluation** |
-| 𝕏 **Grok 4.6** | Archived frontier run | [Open Grok 4.6](https://grok-4-6-solar-system.vercel.app) | [`runs/grok-4.6/frontier-v2`](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) | **33.80/100** historical |
-| ◈ **Gemini 3.8 Flash** | Archived / unscored Frontier V2 | [Open Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | [`source-pinned reference`](./GEMINI-3.8-FLASH-PROVENANCE.md) · `805cfe87a…` | **Pending** |
+| Model | Classification | Project / source | Provenance |
+| --- | --- | --- | --- |
+| ☀️ **GPT-5.6 Sun V2** | Outdated frontier run | [Open Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | commit `93d43ae62f…` · [`runs/gpt-5.6-sun-max/rebuild`](./runs/gpt-5.6-sun-max/rebuild/) |
+| 🌙 **GPT-5.6 Luna** | Non-frontier | [Open Luna](https://gpt-5.6-luna.biel.dev.br/) | source commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) |
+| 𝕏 **Grok 4.6** | Archived frontier run | [Open Grok 4.6](https://grok-4-6-solar-system.vercel.app) | [`runs/grok-4.6/frontier-v2`](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) |
+| ◈ **Gemini 3.8 Flash** | Archived Frontier V2 | [Open Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | [`source-pinned reference`](./GEMINI-3.8-FLASH-PROVENANCE.md) · `805cfe87a…` |
 
 Luna is source-pinned only for now; its prompt provenance is not archived here.
 
@@ -75,50 +75,13 @@ Lines    1,153
 
 Machine-readable provenance lives in [`RUNS.json`](./RUNS.json). See [Gemini 4 Argon provenance](./GEMINI-4-ARGON-PROVENANCE.md) for its archived source manifest and [Gemini 3.8 provenance](./GEMINI-3.8-FLASH-PROVENANCE.md) for the historical source pin.
 
-## Benchmark scores
-
-> **Preliminary evaluation:** the scores are mainly based on one evaluator and a limited number of devices/environments. GPT-6.1 Sol, Grok 4.7 Solar, Gemini 4 Argon, Gemini 3.8 Flash and GPT-5.6 Luna are **pending hands-on evaluation**. Pending is not zero; Sun V2 remains visible with its historical score even though it is outside the current frontier arena.
-
-<div align="center">
-
-<img src="../../assets/frontier-v2-scores-v6.svg" alt="Frontier Models overall score chart from 0 to 100: Astra 95.25, Fable 5.1 93.30, Sun V2 71.20, Grok 4.6 33.80; GPT-6.1 Sol, Grok 4.7 Solar, Gemini 4 Argon, Gemini 3.8 Flash and GPT-5.6 Luna pending evaluation" width="100%" />
-
-</div>
-
-| Rank | Model | Score |
-| ---: | --- | ---: |
-| **1** | GPT-6 Astra | **95.25/100** |
-| **2** | Fable 5.1 | **93.30/100** |
-| **3** | GPT-5.6 Sun V2 | **71.20/100** |
-| **4** | Grok 4.6 | **33.80/100** |
-| — | GPT-6.1 Sol | **Pending** |
-| — | Grok 4.7 Solar | **Pending** |
-| — | Gemini 4 Argon | **Pending** |
-| — | Gemini 3.8 Flash | **Pending** |
-| — | GPT-5.6 Luna | **Pending** |
-
-## Evaluation criteria — summary
-
-- **Feature completeness — 20:** required features must exist and deliver the intended behavior; fake, shallow or loophole-driven implementations lose points.
-- **Interaction / UX — 15:** clarity, discoverability, ergonomics and control flow when the product works as designed; ordinary implementation bugs belong to Robustness.
-- **Visual execution — 15:** hierarchy, readability, coherence, rendering quality and polish.
-- **Scientific / simulation fidelity — 15:** orbital, temporal, scale and astronomical correctness plus honest approximation boundaries.
-- **Robustness — 10:** bugs, desynchronization, broken camera/follow state, exceptions, corrupted state and behaviors that stop working.
-- **Performance — 10:** responsiveness, frame pacing, loading and resource efficiency.
-- **Code / architecture — 10:** maintainability, modularity, state boundaries, dependency discipline, testability and validation quality.
-- **Accessibility / responsive behavior — 5:** keyboard/focus access, reduced motion, semantic usability and layout adaptation.
-
-**No double penalty:** a defect is scored in its primary category unless separate evidence proves an independent second violation. A broken Sun-follow/camera state, for example, is **Robustness**, not UX.
-
-See [`comparison/SCORECARD.md`](./comparison/SCORECARD.md) for detailed evidence and per-category scores.
-
 ## Snapshot policy
 
-Model-produced files are preserved inside vendored `runs/` snapshots without evaluator edits. Evaluator-authored material stays outside model output. A newly added run may be pinned to an exact source Git commit while the full vendored snapshot is still pending; that state is explicit in `RUNS.json` rather than being represented as a completed archive.
+Model-produced files are preserved inside vendored `runs/` snapshots without modifications. Archive metadata stays outside model output. A newly added run may be pinned to an exact source Git commit while the full vendored snapshot is still pending; that state is explicit in `RUNS.json` rather than being represented as a completed archive.
 
 ## Fairness
 
-A contender should not receive another contender's implementation, score, critique or post-hoc hints while generating its own project. The benchmark is **generation first, evaluation second**.
+A contender should not receive another contender's implementation or post-hoc hints while generating its own project. Generated projects are preserved unchanged.
 
 ---
 

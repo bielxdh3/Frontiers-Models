@@ -1,86 +1,51 @@
 # Repository architecture
 
-**Frontier Models** is organized by **benchmark → inputs → runs → evaluation**, not by permanent branches per model.
+**Frontier Models** is organized as **benchmark → prompts → runs → provenance**. Runs live side by side rather than on permanent per-model branches.
 
 ```text
-Frontier-Models/
+Frontiers-Models/
 ├─ README.md
+├─ README-PT-BR.md
 ├─ assets/
-│  └─ frontier-models-hero-v3.svg
+│  └─ frontier-models-hero-v7.svg
 ├─ docs/
 │  ├─ METHODOLOGY.md
 │  └─ REPOSITORY-ARCHITECTURE.md
+├─ scripts/
+│  ├─ render-benchmark-assets.mjs
+│  ├─ verify-argon-archive.mjs
+│  └─ verify-sol-archive.mjs
 └─ benchmarks/
    └─ solar-system/
       ├─ README.md
+      ├─ README-PT-BR.md
       ├─ RUNS.json
-      ├─ GROK-4.6-PROVENANCE.md
-      ├─ FABLE-5.1-PROVENANCE.md
-      ├─ GEMINI-3.8-FLASH-PROVENANCE.md
-      ├─ GEMINI-4-ARGON-PROVENANCE.md
+      ├─ *-PROVENANCE.md
+      ├─ *-FILES.json
       ├─ prompts/
-      │  ├─ README.md
       │  ├─ sun-original.md
       │  └─ frontier-v2.md
-      ├─ runs/
-      │  ├─ gpt-5.6-sun-max/
-      │  │  ├─ original/          # historical baseline; hidden from current arena
-      │  │  └─ rebuild/           # outdated Frontier V2 run
-      │  ├─ gpt-6.1-sol/
-      │  │  └─ source/             # exact source commit, prompt not verified
-      │  ├─ gpt-6-astra-max/
-      │  │  └─ frontier-v2/
-      │  ├─ grok-4.6/
-      │  │  └─ frontier-v2/
-      │  ├─ fable/
-      │  │  └─ frontier-v2/       # Fable 5.1
-      │  ├─ gemini-4-argon/
-      │  │  └─ source/               # full source snapshot, unverified prompt
-      │  └─ gemini-3.8-flash/
-      │     └─ frontier-v2/       # archived historical source pin
-      └─ comparison/
-         └─ SCORECARD.md
+      └─ runs/
+         ├─ gpt-5.6-sun-max/
+         ├─ gpt-6.1-sol/
+         ├─ gpt-6-astra-max/
+         ├─ grok-4.6/
+         ├─ grok-4.7/
+         ├─ fable/
+         ├─ gemini-4-argon/
+         └─ gemini-3.8-flash/
 ```
-
-## Why folders instead of model branches?
-
-Branches are development lines. Using them as permanent model categories makes the archive harder to browse, link and compare. Completed runs live side by side on canonical `main`; review branches are temporary.
-
-## Current arena vs history
-
-The current Solar System arena lists five frontier references (some have no independently verified prompt):
-
-- GPT-6.1 Sol;
-- GPT-6 Astra;
-- Grok 4.7 Solar;
-- Fable 5.1;
-- Gemini 4 Argon.
-
-Sun V1 remains in the archive but is intentionally hidden from the current presentation because it used a different prompt.
 
 ## Run snapshots and source pins
 
-A vendored run folder is an immutable, self-contained copy of the model output captured from pinned source provenance: a Git commit when available, or a verified source archive when Git metadata is absent. Evaluator-authored notes do not belong inside model snapshots.
+A vendored run folder contains a self-contained copy of model-produced files from an exact pinned source. A source-pinned record can appear in `RUNS.json` before full vendoring; it must not be described as a complete snapshot.
 
-A newly admitted run may first be represented by an **exact source commit pin** while full vendoring is pending. That state must be explicit in `RUNS.json`; it must not be described as a self-contained archived snapshot until the project files are actually vendored. Gemini 3.8 Flash is an archived source-pinned historical reference. Gemini 4 Argon is fully vendored from its pinned commit with unverified prompt provenance. GPT-6.1 Sol is fully archived, with unverified generating-prompt provenance.
+## Current references and history
 
-## Provenance
+The Solar System current arena contains GPT-6.1 Sol, GPT-6 Astra, Grok 4.7 Solar, Fable 5.1 and Gemini 4 Argon. Historical and non-frontier runs remain discoverable. GPT-5.6 Sun V1 uses a different prompt and is kept outside the current reference hero.
 
-`RUNS.json` records the strongest verifiable source provenance available alongside model label, run role, prompt reference, local run path, presentation state and live URL when one exists.
+## Provenance and future benchmarks
 
-Model display labels and comparison graphics omit vendor-specific effort tiers. Immutable archive paths and source URLs remain unchanged.
+`RUNS.json` records source commit or archive hash, model, prompt reference, local path, archival state, display grouping and live URL. Prompts and snapshots are not rewritten when presentation changes.
 
-## Adding future benchmarks
-
-Add a sibling under `benchmarks/`, for example:
-
-```text
-benchmarks/
-├─ solar-system/
-├─ full-stack-app/
-├─ coding-agent/
-├─ game-development/
-└─ data-analysis/
-```
-
-Each benchmark should preserve the same contract: exact input, exact run or exact pinned source, explicit provenance, explicit evidence and explicit comparison.
+Add new benchmark directories under `benchmarks/`. Each should preserve its exact input, original output or pinned source, and verifiable provenance.

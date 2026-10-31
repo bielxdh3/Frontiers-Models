@@ -9,4 +9,4 @@ The Fable 5.1 Solar System run is archived at `runs/fable/frontier-v2/` as an im
 - Prompt: `prompts/frontier-v2.md`
 - Live project: `https://fable-solar-system.vercel.app`
 
-The archived snapshot contains the tracked project files and remains separate from evaluator-authored benchmark metadata.
+The archived snapshot contains the tracked project files and remains separate from Archive-maintained benchmark metadata.

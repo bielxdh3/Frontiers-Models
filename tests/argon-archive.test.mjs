@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -10,7 +10,6 @@ const catalog = JSON.parse(readFileSync(resolve(bench, 'RUNS.json'), 'utf8'));
 const argon = catalog.runs.find(x => x.id === 'gemini-4-argon-source');
 const old = catalog.runs.find(x => x.id === 'gemini-3.8-flash-high-frontier-v2');
 const hero = readFileSync(resolve(root, 'assets/frontier-models-hero-v7.svg'), 'utf8');
-const chart = readFileSync(resolve(root, 'assets/frontier-v2-scores-v6.svg'), 'utf8');
 
 test('Gemini 4 Argon replaces Gemini 3.8 in arena but preserves historical record', () => {
   assert.equal(catalog.current_arena.length, 5);
@@ -26,14 +25,12 @@ test('Gemini 4 Argon replaces Gemini 3.8 in arena but preserves historical recor
   assert.equal(argon.live_url, 'https://gemini-4-argon.biel.dev.br/');
 });
 
-test('primary SVG shows Gemini Argon only; chart retains historical unscored Gemini', () => {
+test('primary SVG shows Gemini Argon while the archived registry retains Gemini 3.8', () => {
   assert.ok(hero.includes('Gemini 4 Argon'));
   assert.ok(!hero.includes('Gemini 3.8 Flash'));
   assert.equal([...hero.matchAll(/data-role="planet"/g)].length, 5);
   assert.equal([...hero.matchAll(/data-role="orbit"/g)].length, 5);
-  assert.ok(chart.includes('Gemini 4'));
-  assert.ok(chart.includes('Gemini 3.8'));
-  assert.equal([...chart.matchAll(/>PENDING</g)].length, 5);
+  assert.equal(existsSync(resolve(root, 'assets/frontier-v2-scores-v6.svg')), false);
 });
 
 for (const path of ['README.md', 'README-PT-BR.md',
