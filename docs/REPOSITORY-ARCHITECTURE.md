@@ -38,6 +38,7 @@ Frontiers-Models/
    │     └─ gemini-3.8-flash/
    └─ racing/
       ├─ README.md
+      ├─ EXECUTION-ADDENDUM.md
       ├─ README-PT-BR.md
       ├─ RUNS.json
       └─ prompts/

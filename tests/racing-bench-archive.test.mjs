@@ -29,6 +29,24 @@ test('Racing-bench runs are not claimed before provenance exists', () => {
   assert.match(text('benchmarks/racing/README.md'), /no completed, independently verifiable run/i);
 });
 
+test('every Racing-bench V2.6 execution requires the separate operational tool addendum', () => {
+  const record = registry.execution_addendum;
+  assert.ok(record);
+  assert.equal(record.required_with, 'racing-v2.6');
+  assert.equal(record.path, 'EXECUTION-ADDENDUM.md');
+  const content = file('benchmarks/racing/' + record.path);
+  const canonical = Buffer.from(content.toString('utf8').replace(/\r\n/g, '\n'));
+  assert.equal(canonical.length, record.bytes);
+  assert.equal(canonical.toString('utf8').split('\n').length - 1, record.lines);
+  assert.equal(createHash('sha256').update(canonical).digest('hex'), record.sha256);
+  assert.match(canonical.toString('utf8'), /both complete documents together/i);
+  assert.match(canonical.toString('utf8'), /Playwright or browser DevTools/);
+  assert.match(canonical.toString('utf8'), /No delegation/);
+  assert.match(text('benchmarks/racing/README.md'), /Always supply BOTH documents together/);
+  assert.match(text('benchmarks/racing/README-PT-BR.md'), /Sempre envie os DOIS documentos juntos/);
+  assert.match(text('benchmarks/racing/prompts/README.md'), /Every new Racing-bench V2.6 run must receive both/);
+});
+
 test('Racing-bench is discoverable from both repository homepages', () => {
   for (const p of ['README.md', 'README-PT-BR.md']) {
     assert.match(text(p), /\]\(\.\/benchmarks\/racing\/\)/);
