@@ -17,9 +17,15 @@ The addendum authorizes the operational browser, build, debugging and testing sk
 
 - **Prompt:** V2.6, published verbatim with a SHA-256 integrity record in [the prompt archive](./prompts/README.md).
 - **Companion:** the separate, mandatory [Execution Addendum](./EXECUTION-ADDENDUM.md) is recorded independently so the original prompt's hash and provenance remain unchanged.
-- **Runs:** no completed, independently verifiable run has been archived yet. A participant working on an implementation is not evidence of a completed run.
-- **Registry:** [RUNS.json](./RUNS.json) currently contains the official prompt and an empty list of archived runs.
+- **Source snapshots:** both participant repositories have been archived from exact Git commits, preserving **all Git-tracked files** and the **complete original Git history** in restorable bundles:
 
-When a run is available, record its exact prompt version, source revision or archive hash, and verification status. Keep source snapshots unmodified and do not imply unverified work is complete.
+  | Source | Archived source | Provenance / SHA-256 manifest | Git-history backup |
+  | --- | --- | --- | --- |
+  | GPT-6.1 Sol (82 files) | [Source files](./runs/gpt-6.1-sol/source/) | [Provenance](./runs/gpt-6.1-sol/SOURCE-PROVENANCE.md) · [File checksums](./runs/gpt-6.1-sol/SOURCE-FILES.json) | [Git bundle](./runs/gpt-6.1-sol/SOURCE-REPOSITORY.bundle) |
+  | Gemini 3.8 Flash (38 files) | [Source files](./runs/gemini-3.8-flash/source/) | [Provenance](./runs/gemini-3.8-flash/SOURCE-PROVENANCE.md) · [File checksums](./runs/gemini-3.8-flash/SOURCE-FILES.json) | [Git bundle](./runs/gemini-3.8-flash/SOURCE-REPOSITORY.bundle) |
+
+- **Registry:** [RUNS.json](./RUNS.json) pins both source commits, original URLs, manifests and restorable bundles. Source archival **does not** assert that gameplay or browser acceptance tests passed.
+
+All original files, including source code and recorded screenshots/build output present in Git, remain unchanged. The original repositories may be removed after the archive has been verified on the merged main branch; note that GitHub-specific repository settings, issues, and other metadata are not part of these code archives.
 
 This archive records projects and provenance. It does **not** grade, rank, or score AI models.

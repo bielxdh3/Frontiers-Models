@@ -94,7 +94,7 @@ The historical archive path `benchmarks/solar-system/` is preserved to keep exis
 
 ## Benchmark 002 — Racing-bench
 
-[Racing-bench](./benchmarks/racing/) is a separate cinematic arcade racing-game benchmark. **Every execution must receive both the [official V2.6 prompt](./benchmarks/racing/prompts/racing-v2.6.md) and the [mandatory tool/skill execution addendum](./benchmarks/racing/EXECUTION-ADDENDUM.md).** Both are recorded separately for provenance. No completed Racing-bench run has been archived yet; work in progress is not represented as a finished result.
+[Racing-bench](./benchmarks/racing/) is a separate cinematic arcade racing-game benchmark. **Every execution must receive both the [official V2.6 prompt](./benchmarks/racing/prompts/racing-v2.6.md) and the [mandatory tool/skill execution addendum](./benchmarks/racing/EXECUTION-ADDENDUM.md).** Complete, byte-verified source snapshots of [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/) and [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) are archived with original Git-history bundles; this is not a claim of verified game quality.
 
 ## Run provenance
 

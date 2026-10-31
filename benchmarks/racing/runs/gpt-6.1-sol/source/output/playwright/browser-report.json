@@ -1,0 +1,277 @@
+{
+  "started": "2026-10-31T20:03:41.319Z",
+  "browser": "150.0.7871.127",
+  "journeys": [
+    {
+      "name": "first launch, all garage cars and setup",
+      "kind": "direct browser UI",
+      "status": "passed",
+      "evidence": {
+        "initialWeather": "Rainy",
+        "initialLight": "Night",
+        "cars": 6,
+        "countdownBlocksMotion": true,
+        "speedAfterKeyboard": 11.616289539836124
+      }
+    },
+    {
+      "name": "keyboard nitro, drift, pause, focused HUD and remapping",
+      "kind": "direct keyboard + fixed-step harness",
+      "status": "passed",
+      "evidence": {
+        "nitroRemaining": 86.24999999999984,
+        "drift": true,
+        "pauseFreeze": true,
+        "focusedSpaceDoesNotClickHUD": true,
+        "rebindAndConflict": true,
+        "high": {
+          "quality": "High",
+          "size": [
+            1440,
+            900
+          ],
+          "drawCalls": 173,
+          "triangles": 98932,
+          "geometries": 34,
+          "textures": 7,
+          "shadows": true,
+          "shadowMapSize": 2048,
+          "rainBudget": 1600,
+          "sceneryInstances": 752,
+          "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "activeAnimationOwners": 1
+        },
+        "low": {
+          "quality": "Low",
+          "size": [
+            1440,
+            900
+          ],
+          "drawCalls": 94,
+          "triangles": 53492,
+          "geometries": 34,
+          "textures": 5,
+          "shadows": false,
+          "shadowMapSize": 1024,
+          "rainBudget": 350,
+          "sceneryInstances": 320,
+          "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "activeAnimationOwners": 1
+        }
+      }
+    },
+    {
+      "name": "three-lap Time Trial with one invalid lap and qualified record",
+      "kind": "development harness, real physics and finish path",
+      "status": "passed",
+      "evidence": {
+        "laps": [
+          {
+            "time": 52.93333333333161,
+            "valid": false,
+            "reason": "Recovery"
+          },
+          {
+            "time": 56.43333333333013,
+            "valid": true,
+            "reason": ""
+          },
+          {
+            "time": 49.28333333335665,
+            "valid": true,
+            "reason": ""
+          }
+        ],
+        "qualifiedHarnessRecord": 49.28333333335665,
+        "replayFrames": 1589,
+        "persistedAfterReload": 1
+      }
+    },
+    {
+      "name": "three competitive races on fixed Easy, Normal and Hard",
+      "kind": "development harness, six cars using the real simulation",
+      "status": "passed",
+      "evidence": [
+        {
+          "difficulty": 0,
+          "time": 270.85000000008233,
+          "carsFinished": 1,
+          "actualOpponentFinishes": []
+        },
+        {
+          "difficulty": 1,
+          "time": 277.45000000007633,
+          "carsFinished": 6,
+          "actualOpponentFinishes": [
+            256.4166666667621,
+            257.00000000009493,
+            258.1166666667606,
+            263.2000000000893,
+            264.0500000000885
+          ]
+        },
+        {
+          "difficulty": 2,
+          "time": 274.51666666674566,
+          "carsFinished": 6,
+          "actualOpponentFinishes": [
+            243.2666666667524,
+            243.71666666675276,
+            243.90000000008624,
+            246.95000000008866,
+            251.36666666675885
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sixteen-gate Checkpoint Run success and genuine timeout",
+      "kind": "development harness, real progress/score/timer paths",
+      "status": "passed",
+      "evidence": {
+        "score": 21318.823845225033,
+        "combo": 5,
+        "remaining": 15.833333333337592,
+        "failedAt": 22.000000000000032,
+        "failedReplayFrames": 221
+      }
+    },
+    {
+      "name": "damage, recovery, climate change, retirement and faithful seeking",
+      "kind": "scripted real inputs + replay UI",
+      "status": "passed",
+      "evidence": {
+        "damage": [
+          0,
+          0,
+          0.48640442057486444
+        ],
+        "collisionTime": 2,
+        "recoveryTime": 20.017,
+        "outcome": "partial",
+        "duration": 115.09999999999475,
+        "seekDirectionIndependent": true
+      }
+    },
+    {
+      "name": "Postcard studio produces an original downloadable PNG",
+      "kind": "direct browser UI and local file export",
+      "status": "passed",
+      "evidence": {
+        "pngBytes": 1281412,
+        "pausedComposition": true,
+        "localExport": true
+      }
+    },
+    {
+      "name": "five slots, cancel, explicit replacement, file import and authentic records",
+      "kind": "real OPFS/localStorage + browser import UI",
+      "status": "passed",
+      "evidence": {
+        "capacity": 5,
+        "importedStamped": "imported",
+        "forgedRecordRejected": true,
+        "cancellationPreservesAll": true
+      }
+    },
+    {
+      "name": "two-tab serialization and interrupted replacement recovery at full capacity",
+      "kind": "two real browser tabs, OPFS and Web Locks",
+      "status": "passed",
+      "evidence": {
+        "concurrentCapacity": 5,
+        "oneWriteRefusedAtCapacity": true,
+        "previousEntryPreserved": true,
+        "validOrphanPreserved": 1
+      }
+    },
+    {
+      "name": "storage denial and context loss preserve playability without false success",
+      "kind": "safe development failure injection + browser UI",
+      "status": "passed",
+      "evidence": {
+        "storageDenialExplained": true,
+        "contextRestoredPaused": true,
+        "resumed": true,
+        "narrowViewport": "900×700"
+      }
+    },
+    {
+      "name": "meaningful loaded-scene render pacing observation",
+      "kind": "browser requestAnimationFrame observation, one local GPU only",
+      "status": "passed",
+      "evidence": {
+        "quality": "Medium",
+        "size": [
+          1440,
+          900
+        ],
+        "drawCalls": 481,
+        "triangles": 114463,
+        "geometries": 56,
+        "textures": 6,
+        "shadows": true,
+        "shadowMapSize": 1024,
+        "rainBudget": 850,
+        "sceneryInstances": 671,
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "activeAnimationOwners": 1,
+        "viewport": "1440×900",
+        "framesObserved": 180,
+        "rafAverageMs": 10,
+        "rafP95Ms": 10.100000000000364,
+        "limitation": "Headless Chrome RAF cadence; not proof of sustained rendered game FPS or broad consumer hardware performance."
+      }
+    },
+    {
+      "name": "production build on a plain static host, keyboard driving and offline continuation",
+      "kind": "direct browser UI on compiled production assets",
+      "status": "passed",
+      "evidence": {
+        "host": "plain Node static file server",
+        "speedObservedKmh": 70,
+        "offlineAfterLoad": true,
+        "productionHarnessAbsent": true,
+        "remoteRequests": 0,
+        "errors": 0
+      }
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "screenshots": [
+    "menu-desktop",
+    "garage-tern",
+    "garage-mistral",
+    "garage-solano",
+    "setup",
+    "race-night-grid",
+    "race-drift",
+    "settings",
+    "results-trial",
+    "replay-aerial",
+    "replay-trial",
+    "replay-after-refresh",
+    "race-easy",
+    "race-normal",
+    "race-hard",
+    "results-race",
+    "checkpoint-run",
+    "results-rush",
+    "results-timeout",
+    "damage-wet",
+    "replay-chase-event",
+    "replay-trackside-event",
+    "replay-aerial-event",
+    "postcard-studio",
+    "library-full",
+    "library-orphan-recovery",
+    "pause-after-context-restore",
+    "race-narrow",
+    "settings-narrow",
+    "rain-night-loaded"
+  ],
+  "notes": [],
+  "finished": "2026-10-31T20:04:11.316Z",
+  "testDataPurged": true
+}

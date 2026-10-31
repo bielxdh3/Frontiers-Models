@@ -24,9 +24,14 @@ test('Racing-bench V2.6 prompt is archived verbatim', () => {
   assert.match(canonical.toString('utf8'), /\*\*Version 2\.6 — Standalone implementation brief\*\*/);
 });
 
-test('Racing-bench runs are not claimed before provenance exists', () => {
-  assert.deepEqual(registry.runs, []);
-  assert.match(text('benchmarks/racing/README.md'), /no completed, independently verifiable run/i);
+test('Racing-bench source runs have provenance records, without claiming gameplay verification', () => {
+  assert.deepEqual(registry.runs.map(r => r.id).sort(), ['gemini-3.8-flash', 'gpt-6.1-sol']);
+  for (const run of registry.runs) {
+    assert.equal(run.gameplay_verification, 'not-independently-verified');
+    assert.ok(run.source_commit);
+    assert.ok(run.manifest);
+    assert.ok(run.git_bundle);
+  }
 });
 
 test('every Racing-bench V2.6 execution requires the separate operational tool addendum', () => {
