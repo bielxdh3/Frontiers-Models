@@ -53,21 +53,50 @@ test('the homepages present Racing first and Orbitarium second, without mixing m
   }
 });
 
-test('all seven current rows use consistent source and prompt provenance labels', () => {
-  for (const [path, source, labels] of [
-    ['README.md', 'Archived', ['prompt unverified', 'Frontier V2 prompt']],
-    ['README-PT-BR.md', 'Arquivada', ['prompt não verificado', 'prompt Frontier V2']],
+test('all current tables have the same three columns and full model names in both links', () => {
+  const racing = JSON.parse(read('benchmarks/racing/RUNS.json'));
+  const groups = [
+    {
+      marker: '### Racing-bench — ',
+      runs: racing.runs,
+      archiveRoot: 'benchmarks/racing/',
+      archiveKey: 'archive_path',
+    },
+    {
+      marker: '### Orbitarium-bench — ',
+      runs: registry.current_arena.map(id => registry.runs.find(run => run.id === id)),
+      archiveRoot: 'benchmarks/solar-system/',
+      archiveKey: 'target_path',
+    },
+  ];
+  for (const [path, expectedHeader, externalPrefix, sourcePrefix] of [
+    ['README.md', '| Model | Live project | Source code |', 'Open ', 'Code: '],
+    ['README-PT-BR.md', '| Modelo | Projeto ao vivo | Código-fonte |', 'Abrir ', 'Código: '],
   ]) {
     const content = read(path);
-    const start = content.indexOf('### Racing-bench — ');
-    const end = content.indexOf(path === 'README.md' ? '## How it fits together' : '## Como se organiza');
-    const current = content.slice(start, end);
-    const modelRows = current.split('\n').filter(line => /^\| .+ \*\*.+\*\* \|/.test(line));
-    assert.equal(modelRows.length, 7, path);
-    for (const row of modelRows) {
-      const cells = row.split('|').map(cell => cell.trim());
-      assert.ok(cells[2].startsWith(source + ' · '), row);
-      assert.ok(labels.some(label => cells[2].endsWith(label)), row);
+    for (const group of groups) {
+      const start = content.indexOf(group.marker);
+      assert.ok(start >= 0, path + ': missing ' + group.marker);
+      const nextHeading = content.indexOf('\n### ', start + 4);
+      const nextSection = content.indexOf('\n## ', start + 4);
+      const end = Math.min(...[nextHeading, nextSection].filter(i => i > start));
+      const section = content.slice(start, end);
+      const lines = section.split(/\r?\n/);
+      assert.equal(lines.filter(line => line === expectedHeader).length, 1, path);
+      assert.ok(lines.includes('| --- | --- | --- |'), path);
+      const rows = lines.filter(line => /^\| .+ \*\*.+\*\* \|/.test(line));
+      assert.equal(rows.length, group.runs.length, path + ': incorrect run count');
+      for (let i = 0; i < rows.length; i++) {
+        const row = rows[i];
+        const run = group.runs[i];
+        const cells = row.split('|').slice(1, -1).map(s => s.trim());
+        assert.equal(cells.length, 3, row);
+        assert.ok(cells[0].includes('**' + run.model + '**'), row);
+        assert.equal(cells[1], `[${externalPrefix}${run.model}](${run.live_url})`, row);
+        const archive = './' + group.archiveRoot + run[group.archiveKey] + '/';
+        assert.equal(cells[2], `[${sourcePrefix}${run.model}](${archive})`, row);
+        assert.ok(existsSync(resolve(root, archive)), row + ': missing archived source');
+      }
     }
   }
 });

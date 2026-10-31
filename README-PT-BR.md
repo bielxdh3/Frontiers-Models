@@ -22,26 +22,24 @@
 
 ### Racing-bench — execuções atuais
 
-| Modelo | Fonte / prompt | Jogo ao vivo | Código arquivado |
-| --- | --- | --- | --- |
-| 🏎️ **GPT-6.1 Sol** | Arquivada · prompt não verificado | [Jogar GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br) | [Código e manifesto](./benchmarks/racing/runs/gpt-6.1-sol/) |
-| 🏎️ **Gemini 3.8 Flash** | Arquivada · prompt não verificado | [Jogar Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br) | [Código e manifesto](./benchmarks/racing/runs/gemini-3.8-flash/) |
+| Modelo | Projeto ao vivo | Código-fonte |
+| --- | --- | --- |
+| 🏎️ **GPT-6.1 Sol** | [Abrir GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br) | [Código: GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/) |
+| 🏎️ **Gemini 3.8 Flash** | [Abrir Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br) | [Código: Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) |
 
 Os dois projetos Racing foram arquivados a partir de commits Git exatos. Isso comprova a preservação dos arquivos, **não a aprovação independente do gameplay**. Veja o [arquivo Racing](./benchmarks/racing/) e o [adendo obrigatório de execução](./benchmarks/racing/EXECUTION-ADDENDUM.md).
 
 ### Orbitarium-bench — referências atuais
 
-| Modelo | Fonte / prompt | Projeto ao vivo | Execução arquivada / fixada |
-| --- | --- | --- | --- |
-| ☀️ **GPT-6.1 Sol** | Arquivada · prompt não verificado | [Abrir Sol](https://orbitarium-gpt-6.1-sol.biel.dev.br) | [`runs/gpt-6.1-sol/source`](./benchmarks/solar-system/runs/gpt-6.1-sol/source/) |
-| ✦ **GPT-6 Astra** | Arquivada · prompt Frontier V2 | [Abrir Astra](https://orbitarium-gpt-6-astra.biel.dev.br) | [`runs/gpt-6-astra-max/frontier-v2`](./benchmarks/solar-system/runs/gpt-6-astra-max/frontier-v2/) |
-| 𝕏 **Grok 4.7** | Arquivada · prompt não verificado | [Abrir Grok 4.7](https://orbitarium-grok-4.7.biel.dev.br) | [`runs/grok-4.7/source`](./benchmarks/solar-system/runs/grok-4.7/source/) |
-| ◆ **Fable 5.1** | Arquivada · prompt Frontier V2 | [Abrir Fable 5.1](https://fable-solar-system.vercel.app) | [`runs/fable/frontier-v2`](./benchmarks/solar-system/runs/fable/frontier-v2/) |
-| ◈ **Gemini 4 Argon** | Arquivada · prompt não verificado | [Abrir Argon](https://orbitarium-gemini-4-argon.biel.dev.br) | [`runs/gemini-4-argon/source`](./benchmarks/solar-system/runs/gemini-4-argon/source/) |
+| Modelo | Projeto ao vivo | Código-fonte |
+| --- | --- | --- |
+| ☀️ **GPT-6.1 Sol** | [Abrir GPT-6.1 Sol](https://orbitarium-gpt-6.1-sol.biel.dev.br) | [Código: GPT-6.1 Sol](./benchmarks/solar-system/runs/gpt-6.1-sol/source/) |
+| ✦ **GPT-6 Astra** | [Abrir GPT-6 Astra](https://orbitarium-gpt-6-astra.biel.dev.br) | [Código: GPT-6 Astra](./benchmarks/solar-system/runs/gpt-6-astra-max/frontier-v2/) |
+| 𝕏 **Grok 4.7** | [Abrir Grok 4.7](https://orbitarium-grok-4.7.biel.dev.br) | [Código: Grok 4.7](./benchmarks/solar-system/runs/grok-4.7/source/) |
+| ◆ **Fable 5.1** | [Abrir Fable 5.1](https://fable-solar-system.vercel.app) | [Código: Fable 5.1](./benchmarks/solar-system/runs/fable/frontier-v2/) |
+| ◈ **Gemini 4 Argon** | [Abrir Gemini 4 Argon](https://orbitarium-gemini-4-argon.biel.dev.br) | [Código: Gemini 4 Argon](./benchmarks/solar-system/runs/gemini-4-argon/source/) |
 
 O Orbitarium reúne **cinco referências atuais**. O Gemini 4 Argon e o GPT-6.1 Sol foram arquivados integralmente a partir de commits exatos, mas seus prompts de geração não foram comprovados; por isso não há comprovação de equivalência ao Frontier V2. O Gemini 3.8 Flash permanece no histórico **do Orbitarium**, mas é uma execução **atual no Racing**.
-
-*Fonte / prompt:* **Arquivada** significa que os arquivos do projeto foram preservados no Frontier Models. **Prompt Frontier V2** identifica o input compartilhado arquivado; **prompt não verificado** significa que não foi possível comprovar independentemente a instrução exata enviada. Os backups Git completos dos dois Racing também estão preservados.
 
 ## Como se organiza
 
