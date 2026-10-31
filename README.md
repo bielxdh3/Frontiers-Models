@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — frontier model benchmark archive" width="100%" />
+<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — independent Racing and Orbitarium benchmark collection with seven current runs" width="100%" />
 
 <br/>
 
 [![Benchmark](https://img.shields.io/badge/benchmark-frontier%20models-7C3AED?style=flat)](./benchmarks)
-[![Arena](https://img.shields.io/badge/Arena-5%20current%20references-2563EB?style=flat)](./benchmarks/solar-system/RUNS.json)
-[![Archive](https://img.shields.io/badge/archive-8%20snapshots%20%2B%202%20pinned%20sources-DB2777?style=flat)](./benchmarks/solar-system/RUNS.json)
+[![Benchmarks](https://img.shields.io/badge/benchmarks-2-2563EB?style=flat)](./docs/REPOSITORY-ARCHITECTURE.md)
+[![Current runs](https://img.shields.io/badge/current%20runs-7-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
 
 # Frontier Models
 
@@ -14,23 +14,32 @@
 
 [![Português (Brasil)](https://img.shields.io/badge/Idioma-Portugu%C3%AAs%20(BR)-2563EB?style=flat)](./README-PT-BR.md)
 
-[Open Orbitarium-bench](./benchmarks/solar-system/) · [Methodology](./docs/METHODOLOGY.md)
-
-[Racing-bench — V2.6 prompt + mandatory execution addendum](./benchmarks/racing/)
+[Open Racing-bench](./benchmarks/racing/) · [Open Orbitarium-bench](./benchmarks/solar-system/) · [Methodology](./docs/METHODOLOGY.md)
 
 </div>
 
-## ⚔️ Current reference arena
+## ⚔️ Current benchmark runs
 
-| Model | Run / provenance | Live project | Archived / pinned run |
-| --- | --- | --- | --- |
-| ☀️ **GPT-6.1 Sol** | Source-archived / prompt unverified | [Open Sol](https://orbitarium-gpt-6.1-sol.biel.dev.br) | [`runs/gpt-6.1-sol/source`](./benchmarks/solar-system/runs/gpt-6.1-sol/source/) |
-| ✦ **GPT-6 Astra** | Frontier V2 | [Open Astra](https://orbitarium-gpt-6-astra.biel.dev.br) | [`runs/gpt-6-astra-max/frontier-v2`](./benchmarks/solar-system/runs/gpt-6-astra-max/frontier-v2/) |
-| 𝕏 **Grok 4.7** | Source-pinned reference | [Open Grok 4.7](https://orbitarium-grok-4.7.biel.dev.br) | [`runs/grok-4.7/source`](./benchmarks/solar-system/runs/grok-4.7/source/) |
-| ◆ **Fable 5.1** | Frontier V2 | [Open Fable 5.1](https://fable-solar-system.vercel.app) | [`runs/fable/frontier-v2`](./benchmarks/solar-system/runs/fable/frontier-v2/) |
-| ◈ **Gemini 4 Argon** | Source archived / prompt unverified | [Open Argon](https://orbitarium-gemini-4-argon.biel.dev.br) | [`runs/gemini-4-argon/source`](./benchmarks/solar-system/runs/gemini-4-argon/source/) |
+### Racing-bench — current runs
 
-The current arena includes **five** references. Gemini 4 Argon and GPT-6.1 Sol are archived at exact source commits, but their generating prompts are not independently verified, so Frontier V2 prompt equivalence is not claimed. Gemini 3.8 Flash remains visible below as a historical source-pinned reference.
+| Model | Live project | Source code |
+| --- | --- | --- |
+| 🏎️ **GPT-6.1 Sol** | [Open GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br) | [Code: GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/) |
+| 🏎️ **Gemini 3.8 Flash** | [Open Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br) | [Code: Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) |
+
+Both Racing runs are archived at exact Git commits; this is a source-archival status, **not a claim that gameplay passed independent review**. See the [Racing-bench archive](./benchmarks/racing/) and its separate required [execution addendum](./benchmarks/racing/EXECUTION-ADDENDUM.md).
+
+### Orbitarium-bench — current references
+
+| Model | Live project | Source code |
+| --- | --- | --- |
+| ☀️ **GPT-6.1 Sol** | [Open GPT-6.1 Sol](https://orbitarium-gpt-6.1-sol.biel.dev.br) | [Code: GPT-6.1 Sol](./benchmarks/solar-system/runs/gpt-6.1-sol/source/) |
+| ✦ **GPT-6 Astra** | [Open GPT-6 Astra](https://orbitarium-gpt-6-astra.biel.dev.br) | [Code: GPT-6 Astra](./benchmarks/solar-system/runs/gpt-6-astra-max/frontier-v2/) |
+| 𝕏 **Grok 4.7** | [Open Grok 4.7](https://orbitarium-grok-4.7.biel.dev.br) | [Code: Grok 4.7](./benchmarks/solar-system/runs/grok-4.7/source/) |
+| ◆ **Fable 5.1** | [Open Fable 5.1](https://fable-solar-system.vercel.app) | [Code: Fable 5.1](./benchmarks/solar-system/runs/fable/frontier-v2/) |
+| ◈ **Gemini 4 Argon** | [Open Gemini 4 Argon](https://orbitarium-gemini-4-argon.biel.dev.br) | [Code: Gemini 4 Argon](./benchmarks/solar-system/runs/gemini-4-argon/source/) |
+
+Orbitarium includes **five current references**. Gemini 4 Argon and GPT-6.1 Sol are archived at exact source commits, but their generating prompts are not independently verified, so Frontier V2 prompt equivalence is not claimed. Gemini 3.8 Flash remains visible below as a **historical Orbitarium** source-pinned reference while being a **current Racing** run.
 
 ## How it fits together
 
@@ -43,8 +52,8 @@ The current arena includes **five** references. Gemini 4 Argon and GPT-6.1 Sol a
                      └────────────┬─────────────┘
                                   │
                        ┌──────────▼───────────┐
-                       │   Orbitarium-bench   │
-                       │ RUNS.json · registry │
+                       │   Frontier Models    │
+                       │ RUNS.json · 2        │
                        │ current · historical │
                        └──────┬────────┬──────┘
                               │        │
@@ -66,7 +75,7 @@ The registry connects archived inputs, independent project runs, source evidence
 
 ## 🗂️ Non-frontier or outdated models
 
-These runs stay visible for reference, but they are intentionally separated from the current frontier arena and hero graphic.
+These **Orbitarium** runs stay visible for reference but are separated from that benchmark's current arena. Some models may independently be current in Racing-bench.
 
 | Model | Classification | Project / source | Provenance |
 | --- | --- | --- | --- |
@@ -86,34 +95,47 @@ Luna is currently source-pinned only; its prompt provenance is not archived in t
 PROMPT → MODEL RUN → PROJECT SNAPSHOT / PINNED SOURCE → EVIDENCE → PROVENANCE → INSPECTABLE PROJECTS
 ```
 
-## Benchmark 001 — Orbitarium-bench
-
-Orbitarium-bench asks each model to build a complete interactive Solar System product from a dense product specification. It stresses product design, simulation and orbital logic, camera/navigation, time state, accessibility, performance, robustness, scientific honesty, learning tools and QA.
-
-The historical archive path `benchmarks/solar-system/` is preserved to keep existing links and exact-source provenance stable.
-
 ## Benchmark 002 — Racing-bench
 
 [Racing-bench](./benchmarks/racing/) is a separate cinematic arcade racing-game benchmark. **Every execution must receive both the [official V2.6 prompt](./benchmarks/racing/prompts/racing-v2.6.md) and the [mandatory tool/skill execution addendum](./benchmarks/racing/EXECUTION-ADDENDUM.md).** Complete, byte-verified source snapshots of [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/) and [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) are archived with original Git-history bundles; this is not a claim of verified game quality.
 
 **Playable Racing-bench deployments:** [GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br) · [Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br).
 
-## Run provenance
+## Benchmark 001 — Orbitarium-bench
 
-| Model | Provenance | Classification | Source status |
+Orbitarium-bench asks each model to build a complete interactive Solar System product from a dense product specification. It stresses product design, simulation and orbital logic, camera/navigation, time state, accessibility, performance, robustness, scientific honesty, learning tools and QA.
+
+The historical archive path `benchmarks/solar-system/` is preserved to keep existing links and exact-source provenance stable.
+
+## Run provenance by benchmark
+
+### Racing-bench
+
+| Model | Source revision | Classification | Source status |
 | --- | --- | --- | --- |
-| GPT-6.1 Sol | source commit [`7caaccc7f4…`](https://github.com/bielxdh3/6.1gptsol/commit/7caaccc7f462806de10a1981c9826d3151e85407) | Current reference | Archived; prompt unverified |
-| GPT-6 Astra | commit `fca2ef51b4…` | Current frontier | Archived |
-| Grok 4.7 | commit `bcb1e82012…` in `JouberthAlves/grok-4.7-solar` | Current frontier | Source pinned |
-| Fable 5.1 | commit `7e079669e41b…` | Current frontier | Archived |
-| Gemini 4 Argon | source commit [`318aa80bb5…`](https://github.com/bielxdh3/gemini-argon/commit/318aa80bb5c49cbbfdfd4c3d267ad88d56ae3f98) | Current reference | Archived; prompt unverified |
-| Gemini 3.8 Flash | commit `805cfe87a…` in `bielxdh3/gemini` | Historical | Source pinned |
-| GPT-5.6 Sol V1 | commit `67eb9fc51f…` | Historical baseline | Archived |
-| GPT-5.6 Sol V2 | commit `93d43ae62f…` | Outdated | Archived |
-| Grok 4.6 | source ZIP SHA-256 `5d77eeb509…` | Archived frontier | Archived |
-| GPT-5.6 Luna | commit `5fdc036884…` in `bielxdh3/orbitario-luna` | Non-frontier | Source pinned |
+| **GPT-6.1 Sol** | Git `6f55263669…` | Current | Archived |
+| **Gemini 3.8 Flash** | Git `a18fcaee71…` | Current | Archived |
 
-The exact shared prompt is [`frontier-v2.md`](./benchmarks/solar-system/prompts/frontier-v2.md), SHA-256 `7c2833a0486938c38671139807bd4a8c16371c3740175376ad02a6c0c3c06d65`.
+Both Racing source snapshots include [SHA-256 manifests and restorable Git bundles](./benchmarks/racing/).
+
+### Orbitarium-bench
+
+| Model | Source revision | Classification | Source status |
+| --- | --- | --- | --- |
+| **GPT-6.1 Sol** | Git `7caaccc7f4…` | Current | Archived |
+| **GPT-6 Astra** | Git `fca2ef51b4…` | Current | Archived |
+| **Grok 4.7** | Git `bcb1e82012…` | Current | Archived |
+| **Fable 5.1** | Git `7e079669e4…` | Current | Archived |
+| **Gemini 4 Argon** | Git `318aa80bb5…` | Current | Archived |
+| **GPT-5.6 Sol V1** | Git `67eb9fc51f…` | Historical | Archived |
+| **GPT-5.6 Sol V2** | Git `93d43ae62f…` | Historical | Archived |
+| **Grok 4.6** | ZIP SHA-256 `5d77eeb509…` | Historical | Archived |
+| **Gemini 3.8 Flash** | Git `805cfe87a6…` | Historical | Pinned only |
+| **GPT-5.6 Luna** | Git `5fdc036884…` | Non-frontier | Pinned only |
+
+**Classification** refers to the run's status *within its benchmark*: Current, Historical (including superseded/archived runs), or Non-frontier. **Source status** refers only to source-file preservation: Archived (local snapshot) or Pinned only (source revision recorded, without a full local snapshot). It does not assert prompt equivalence or gameplay quality.
+
+The exact shared Orbitarium prompt is [`frontier-v2.md`](./benchmarks/solar-system/prompts/frontier-v2.md), SHA-256 `7c2833a0486938c38671139807bd4a8c16371c3740175376ad02a6c0c3c06d65`.
 
 ## Archive policy
 

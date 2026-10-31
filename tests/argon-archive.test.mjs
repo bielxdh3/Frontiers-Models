@@ -25,11 +25,14 @@ test('Gemini 4 Argon replaces Gemini 3.8 in arena but preserves historical recor
   assert.equal(argon.live_url, 'https://orbitarium-gemini-4-argon.biel.dev.br');
 });
 
-test('primary SVG shows Gemini Argon while the archived registry retains Gemini 3.8', () => {
+test('collection SVG shows Argon in Orbitarium and Gemini 3.8 only in Racing', () => {
   assert.ok(hero.includes('Gemini 4 Argon'));
-  assert.ok(!hero.includes('Gemini 3.8 Flash'));
-  assert.equal([...hero.matchAll(/data-role="planet"/g)].length, 5);
-  assert.equal([...hero.matchAll(/data-role="orbit"/g)].length, 5);
+  assert.ok(hero.includes('Gemini 3.8 Flash'));
+  assert.ok(hero.includes('data-benchmark="racing" data-model="gemini-3.8-flash"'));
+  assert.ok(hero.includes('data-benchmark="orbitarium" data-model="gemini-4-argon-source"'));
+  assert.ok(!hero.includes('data-benchmark="orbitarium" data-model="gemini-3.8-flash-high-frontier-v2"'));
+  assert.equal([...hero.matchAll(/data-role="run" data-benchmark="orbitarium"/g)].length, 5);
+  assert.equal([...hero.matchAll(/data-role="run" data-benchmark="racing"/g)].length, 2);
   assert.equal(existsSync(resolve(root, 'assets/frontier-v2-scores-v6.svg')), false);
 });
 
@@ -37,7 +40,10 @@ for (const path of ['README.md', 'README-PT-BR.md',
   'benchmarks/solar-system/README.md', 'benchmarks/solar-system/README-PT-BR.md']) {
   test(`${path}: Argon current, 3.8 historical, both direct websites`, () => {
     const text = readFileSync(resolve(root, path), 'utf8');
-    const current = text.split('## ')[1];
+    const current = path.startsWith('README')
+      ? text.split('### Orbitarium-bench')[1]?.split('## ')[0]
+      : text.split('## ')[1];
+    assert.ok(current, 'Orbitarium current section exists');
     assert.ok(current.includes('Gemini 4 Argon'));
     assert.ok(!current.includes('**Gemini 3.8 Flash**'));
     assert.ok(text.includes('https://orbitarium-gemini-4-argon.biel.dev.br'));
