@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — frontier model benchmark archive" width="100%" />
+<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — independent Racing and Orbitarium benchmark collection with seven current runs" width="100%" />
 
 <br/>
 
 [![Benchmark](https://img.shields.io/badge/benchmark-frontier%20models-7C3AED?style=flat)](./benchmarks)
-[![Arena](https://img.shields.io/badge/Arena-5%20current%20references-2563EB?style=flat)](./benchmarks/solar-system/RUNS.json)
-[![Archive](https://img.shields.io/badge/archive-8%20snapshots%20%2B%202%20pinned%20sources-DB2777?style=flat)](./benchmarks/solar-system/RUNS.json)
+[![Benchmarks](https://img.shields.io/badge/benchmarks-2-2563EB?style=flat)](./docs/REPOSITORY-ARCHITECTURE.md)
+[![Current runs](https://img.shields.io/badge/current%20runs-7-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
 
 # Frontier Models
 
@@ -14,13 +14,22 @@
 
 [![Português (Brasil)](https://img.shields.io/badge/Idioma-Portugu%C3%AAs%20(BR)-2563EB?style=flat)](./README-PT-BR.md)
 
-[Open Orbitarium-bench](./benchmarks/solar-system/) · [Methodology](./docs/METHODOLOGY.md)
-
-[Racing-bench — V2.6 prompt + mandatory execution addendum](./benchmarks/racing/)
+[Open Racing-bench](./benchmarks/racing/) · [Open Orbitarium-bench](./benchmarks/solar-system/) · [Methodology](./docs/METHODOLOGY.md)
 
 </div>
 
-## ⚔️ Current reference arena
+## ⚔️ Current benchmark runs
+
+### Racing-bench — current runs
+
+| Model | Run / provenance | Live game | Archived source |
+| --- | --- | --- | --- |
+| 🏎️ **GPT-6.1 Sol** | Full source + restorable Git history | [Play GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br) | [Source and manifest](./benchmarks/racing/runs/gpt-6.1-sol/) |
+| 🏎️ **Gemini 3.8 Flash** | Full source + restorable Git history | [Play Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br) | [Source and manifest](./benchmarks/racing/runs/gemini-3.8-flash/) |
+
+Both Racing runs are archived at exact Git commits; this is a source-archival status, **not a claim that gameplay passed independent review**. See the [Racing-bench archive](./benchmarks/racing/) and its separate required [execution addendum](./benchmarks/racing/EXECUTION-ADDENDUM.md).
+
+### Orbitarium-bench — current references
 
 | Model | Run / provenance | Live project | Archived / pinned run |
 | --- | --- | --- | --- |
@@ -30,7 +39,7 @@
 | ◆ **Fable 5.1** | Frontier V2 | [Open Fable 5.1](https://fable-solar-system.vercel.app) | [`runs/fable/frontier-v2`](./benchmarks/solar-system/runs/fable/frontier-v2/) |
 | ◈ **Gemini 4 Argon** | Source archived / prompt unverified | [Open Argon](https://orbitarium-gemini-4-argon.biel.dev.br) | [`runs/gemini-4-argon/source`](./benchmarks/solar-system/runs/gemini-4-argon/source/) |
 
-The current arena includes **five** references. Gemini 4 Argon and GPT-6.1 Sol are archived at exact source commits, but their generating prompts are not independently verified, so Frontier V2 prompt equivalence is not claimed. Gemini 3.8 Flash remains visible below as a historical source-pinned reference.
+Orbitarium includes **five current references**. Gemini 4 Argon and GPT-6.1 Sol are archived at exact source commits, but their generating prompts are not independently verified, so Frontier V2 prompt equivalence is not claimed. Gemini 3.8 Flash remains visible below as a **historical Orbitarium** source-pinned reference while being a **current Racing** run.
 
 ## How it fits together
 
@@ -43,8 +52,8 @@ The current arena includes **five** references. Gemini 4 Argon and GPT-6.1 Sol a
                      └────────────┬─────────────┘
                                   │
                        ┌──────────▼───────────┐
-                       │   Orbitarium-bench   │
-                       │ RUNS.json · registry │
+                       │   Frontier Models    │
+                       │ RUNS.json · 2        │
                        │ current · historical │
                        └──────┬────────┬──────┘
                               │        │
@@ -66,7 +75,7 @@ The registry connects archived inputs, independent project runs, source evidence
 
 ## 🗂️ Non-frontier or outdated models
 
-These runs stay visible for reference, but they are intentionally separated from the current frontier arena and hero graphic.
+These **Orbitarium** runs stay visible for reference but are separated from that benchmark's current arena. Some models may independently be current in Racing-bench.
 
 | Model | Classification | Project / source | Provenance |
 | --- | --- | --- | --- |
@@ -86,17 +95,17 @@ Luna is currently source-pinned only; its prompt provenance is not archived in t
 PROMPT → MODEL RUN → PROJECT SNAPSHOT / PINNED SOURCE → EVIDENCE → PROVENANCE → INSPECTABLE PROJECTS
 ```
 
-## Benchmark 001 — Orbitarium-bench
-
-Orbitarium-bench asks each model to build a complete interactive Solar System product from a dense product specification. It stresses product design, simulation and orbital logic, camera/navigation, time state, accessibility, performance, robustness, scientific honesty, learning tools and QA.
-
-The historical archive path `benchmarks/solar-system/` is preserved to keep existing links and exact-source provenance stable.
-
 ## Benchmark 002 — Racing-bench
 
 [Racing-bench](./benchmarks/racing/) is a separate cinematic arcade racing-game benchmark. **Every execution must receive both the [official V2.6 prompt](./benchmarks/racing/prompts/racing-v2.6.md) and the [mandatory tool/skill execution addendum](./benchmarks/racing/EXECUTION-ADDENDUM.md).** Complete, byte-verified source snapshots of [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/) and [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) are archived with original Git-history bundles; this is not a claim of verified game quality.
 
 **Playable Racing-bench deployments:** [GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br) · [Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br).
+
+## Benchmark 001 — Orbitarium-bench
+
+Orbitarium-bench asks each model to build a complete interactive Solar System product from a dense product specification. It stresses product design, simulation and orbital logic, camera/navigation, time state, accessibility, performance, robustness, scientific honesty, learning tools and QA.
+
+The historical archive path `benchmarks/solar-system/` is preserved to keep existing links and exact-source provenance stable.
 
 ## Run provenance
 

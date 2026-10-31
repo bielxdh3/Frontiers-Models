@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — arquivo de benchmarks de modelos frontier" width="100%" />
+<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — coleção de benchmarks independentes Racing e Orbitarium com sete execuções atuais" width="100%" />
 
 <br/>
 
 [![Benchmark](https://img.shields.io/badge/benchmark-frontier%20models-7C3AED?style=flat)](./benchmarks)
-[![Arena](https://img.shields.io/badge/Arena-5%20refer%C3%AAncias%20atuais-2563EB?style=flat)](./benchmarks/solar-system/RUNS.json)
-[![Arquivo](https://img.shields.io/badge/arquivo-8%20snapshots%20%2B%202%20fontes%20fixadas-DB2777?style=flat)](./benchmarks/solar-system/RUNS.json)
+[![Benchmarks](https://img.shields.io/badge/benchmarks-2-2563EB?style=flat)](./docs/REPOSITORY-ARCHITECTURE.md)
+[![Execuções atuais](https://img.shields.io/badge/execu%C3%A7%C3%B5es%20atuais-7-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
 
 # Frontier Models
 
@@ -14,13 +14,22 @@
 
 [![English](https://img.shields.io/badge/Idioma-English-2563EB?style=flat)](./README.md)
 
-[Abrir Orbitarium-bench](./benchmarks/solar-system/) · [Metodologia](./docs/METHODOLOGY.md)
-
-[Racing-bench — prompt V2.6 + adendo obrigatório de execução](./benchmarks/racing/)
+[Abrir Racing-bench](./benchmarks/racing/) · [Abrir Orbitarium-bench](./benchmarks/solar-system/) · [Metodologia](./docs/METHODOLOGY.md)
 
 </div>
 
-## ⚔️ Arena atual de referências
+## ⚔️ Execuções atuais por benchmark
+
+### Racing-bench — execuções atuais
+
+| Modelo | Execução / origem | Jogo ao vivo | Código arquivado |
+| --- | --- | --- | --- |
+| 🏎️ **GPT-6.1 Sol** | Fonte completa + histórico Git restaurável | [Jogar GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br) | [Código e manifesto](./benchmarks/racing/runs/gpt-6.1-sol/) |
+| 🏎️ **Gemini 3.8 Flash** | Fonte completa + histórico Git restaurável | [Jogar Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br) | [Código e manifesto](./benchmarks/racing/runs/gemini-3.8-flash/) |
+
+Os dois projetos Racing foram arquivados a partir de commits Git exatos. Isso comprova a preservação dos arquivos, **não a aprovação independente do gameplay**. Veja o [arquivo Racing](./benchmarks/racing/) e o [adendo obrigatório de execução](./benchmarks/racing/EXECUTION-ADDENDUM.md).
+
+### Orbitarium-bench — referências atuais
 
 | Modelo | Execução / origem | Projeto ao vivo | Execução arquivada / fixada |
 | --- | --- | --- | --- |
@@ -30,7 +39,7 @@
 | ◆ **Fable 5.1** | Frontier V2 | [Abrir Fable 5.1](https://fable-solar-system.vercel.app) | [`runs/fable/frontier-v2`](./benchmarks/solar-system/runs/fable/frontier-v2/) |
 | ◈ **Gemini 4 Argon** | Fonte arquivada / prompt não verificado | [Abrir Argon](https://orbitarium-gemini-4-argon.biel.dev.br) | [`runs/gemini-4-argon/source`](./benchmarks/solar-system/runs/gemini-4-argon/source/) |
 
-A arena atual reúne **cinco** referências. O Gemini 4 Argon e o GPT-6.1 Sol foram arquivados integralmente a partir de commits exatos, mas seus prompts de geração não foram comprovados; por isso não há comprovação de equivalência ao Frontier V2. O Gemini 3.8 Flash permanece no histórico.
+O Orbitarium reúne **cinco referências atuais**. O Gemini 4 Argon e o GPT-6.1 Sol foram arquivados integralmente a partir de commits exatos, mas seus prompts de geração não foram comprovados; por isso não há comprovação de equivalência ao Frontier V2. O Gemini 3.8 Flash permanece no histórico **do Orbitarium**, mas é uma execução **atual no Racing**.
 
 ## Como se organiza
 
@@ -43,8 +52,8 @@ A arena atual reúne **cinco** referências. O Gemini 4 Argon e o GPT-6.1 Sol fo
                      └────────────┬─────────────┘
                                   │
                        ┌──────────▼───────────┐
-                       │   Orbitarium-bench   │
-                       │ RUNS.json · registro │
+                       │   Frontier Models    │
+                       │ RUNS.json · 2        │
                        │ atuais · históricos  │
                        └──────┬────────┬──────┘
                               │        │
@@ -66,7 +75,7 @@ O registro conecta prompts arquivados, projetos independentes, evidências de or
 
 ## 🗂️ Modelos non-frontier ou desatualizados
 
-Estas execuções continuam visíveis como referência, mas ficam intencionalmente separadas da arena frontier atual e do SVG principal.
+Estas execuções **do Orbitarium** continuam visíveis como referência, mas ficam separadas da arena atual desse benchmark. Um mesmo modelo pode participar atualmente do Racing.
 
 | Modelo | Classificação | Projeto / fonte | Proveniência |
 | --- | --- | --- | --- |
@@ -86,17 +95,17 @@ O Luna está, por enquanto, apenas com a fonte fixada; a proveniência do prompt
 PROMPT → EXECUÇÃO DO MODELO → SNAPSHOT / FONTE FIXADA → EVIDÊNCIAS → PROVENIÊNCIA → PROJETOS INSPECIONÁVEIS
 ```
 
-## Benchmark 001 — Orbitarium-bench
-
-O Orbitarium-bench pede a cada modelo que construa um produto completo e interativo do Sistema Solar a partir de uma especificação extensa. Ele testa design de produto, simulação e lógica orbital, câmera/navegação, estado temporal, acessibilidade, desempenho, robustez, honestidade científica, ferramentas educacionais e QA.
-
-O caminho histórico `benchmarks/solar-system/` permanece inalterado para preservar links e a proveniência dos arquivos originais.
-
 ## Benchmark 002 — Racing-bench
 
 O [Racing-bench](./benchmarks/racing/) é um benchmark independente de criação de um jogo de corrida arcade cinematográfico. **Toda execução deve receber o [prompt oficial V2.6](./benchmarks/racing/prompts/racing-v2.6.md) junto com o [adendo obrigatório sobre skills e ferramentas](./benchmarks/racing/EXECUTION-ADDENDUM.md).** Os códigos originais do [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/) e [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) foram arquivados com todos os arquivos rastreados e backups do histórico Git; isso não representa aprovação dos testes de gameplay.
 
 **Sites do Racing-bench:** [GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br) · [Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br).
+
+## Benchmark 001 — Orbitarium-bench
+
+O Orbitarium-bench pede a cada modelo que construa um produto completo e interativo do Sistema Solar a partir de uma especificação extensa. Ele testa design de produto, simulação e lógica orbital, câmera/navegação, estado temporal, acessibilidade, desempenho, robustez, honestidade científica, ferramentas educacionais e QA.
+
+O caminho histórico `benchmarks/solar-system/` permanece inalterado para preservar links e a proveniência dos arquivos originais.
 
 ## Proveniência das execuções
 

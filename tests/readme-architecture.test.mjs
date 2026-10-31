@@ -8,8 +8,8 @@ const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const read = path => readFileSync(resolve(root, path), 'utf8');
 
 for (const [path, arenaHeading, title, archivedHeading] of [
-  ['README.md', '## ⚔️ Current reference arena', '## How it fits together', '## 🗂️ Non-frontier or outdated models'],
-  ['README-PT-BR.md', '## ⚔️ Arena atual de referências', '## Como se organiza', '## 🗂️ Modelos non-frontier ou desatualizados'],
+  ['README.md', '## ⚔️ Current benchmark runs', '## How it fits together', '## 🗂️ Non-frontier or outdated models'],
+  ['README-PT-BR.md', '## ⚔️ Execuções atuais por benchmark', '## Como se organiza', '## 🗂️ Modelos non-frontier ou desatualizados'],
 ]) {
   test(path + ': Root.ark-style diagram is exactly between current and historical arena sections', () => {
     const content = read(path);

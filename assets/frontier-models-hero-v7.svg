@@ -1,54 +1,125 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 520" role="img" aria-labelledby="title desc">
-  <title id="title">Frontier Models — five current references</title>
-  <desc id="desc">GPT-6.1 Sol, GPT-6 Astra, Grok 4.7, Fable 5.1, Gemini 4 Argon. These are archived or pinned projects; their generating prompts may differ.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" role="img" aria-labelledby="title desc">
+  <title id="title">Frontier Models — Racing and Orbitarium benchmark collection</title>
+  <desc id="desc">Two independent benchmarks. Racing: GPT-6.1 Sol, Gemini 3.8 Flash. Orbitarium: GPT-6.1 Sol, GPT-6 Astra, Grok 4.7, Fable 5.1, Gemini 4 Argon. Projects link to archived source and documented provenance.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070b1b"/><stop offset=".55" stop-color="#11133b"/><stop offset="1" stop-color="#061d2e"/></linearGradient>
-    <radialGradient id="sun"><stop stop-color="#fff5bd"/><stop offset=".45" stop-color="#ffb84d"/><stop offset="1" stop-color="#ff6b3d" stop-opacity=".14"/></radialGradient>
-    <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#080f1d"/>
+      <stop offset=".52" stop-color="#0b1726"/>
+      <stop offset="1" stop-color="#101e35"/>
+    </linearGradient>
+    <linearGradient id="race" x1="0" y1="0" x2="1" y2=".35">
+      <stop stop-color="#302337"/>
+      <stop offset=".57" stop-color="#222235"/>
+      <stop offset="1" stop-color="#142737"/>
+    </linearGradient>
+    <linearGradient id="orbit" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#17283b"/>
+      <stop offset="1" stop-color="#14243a"/>
+    </linearGradient>
+    <linearGradient id="rail" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#ffb76b"/>
+      <stop offset="1" stop-color="#80e9f2"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#4b6386" stroke-opacity=".12" stroke-width=".8"/>
+    </pattern>
+    <clipPath id="canvas"><rect width="1440" height="560" rx="30"/></clipPath>
   </defs>
-  <rect width="1440" height="520" rx="34" fill="url(#bg)"/>
-  <g><ellipse data-role="orbit" data-model="gpt-6.1-sol-source" cx="1187" cy="251" rx="112" ry="48" transform="rotate(-15 1187 251)" fill="none" stroke="#fbbf24" stroke-opacity=".54" stroke-width="1.6"/>
-    <ellipse data-role="orbit" data-model="gpt-6-astra-max-frontier-v2" cx="1187" cy="251" rx="130" ry="59" transform="rotate(-15 1187 251)" fill="none" stroke="#93c5fd" stroke-opacity=".54" stroke-width="1.6"/>
-    <ellipse data-role="orbit" data-model="grok-4.7-solar-source" cx="1187" cy="251" rx="148" ry="70" transform="rotate(-15 1187 251)" fill="none" stroke="#c084fc" stroke-opacity=".54" stroke-width="1.6"/>
-    <ellipse data-role="orbit" data-model="fable-5.1-frontier-v2" cx="1187" cy="251" rx="166" ry="81" transform="rotate(-15 1187 251)" fill="none" stroke="#34d399" stroke-opacity=".54" stroke-width="1.6"/>
-    <ellipse data-role="orbit" data-model="gemini-4-argon-source" cx="1187" cy="251" rx="185" ry="92" transform="rotate(-15 1187 251)" fill="none" stroke="#38bdf8" stroke-opacity=".54" stroke-width="1.6"/></g>
-  <circle data-role="sun-glow" cx="1187" cy="251" r="44" fill="url(#sun)" filter="url(#glow)"/>
-  <circle data-role="sun" cx="1187" cy="251" r="10" fill="#fff7c2"/>
-  <g><circle data-role="planet" data-model="gpt-6.1-sol-source" cx="1091.255" cy="248.152" r="7.5" fill="#fbbf24" stroke="#f8fafc" stroke-width="1.3"/>
-    <circle data-role="planet" data-model="gpt-6-astra-max-frontier-v2" cx="1250.375" cy="185.237" r="7.5" fill="#93c5fd" stroke="#f8fafc" stroke-width="1.3"/>
-    <circle data-role="planet" data-model="grok-4.7-solar-source" cx="1330.992" cy="218.734" r="7.5" fill="#c084fc" stroke="#f8fafc" stroke-width="1.3"/>
-    <circle data-role="planet" data-model="fable-5.1-frontier-v2" cx="1112.204" cy="339.734" r="7.5" fill="#34d399" stroke="#f8fafc" stroke-width="1.3"/>
-    <circle data-role="planet" data-model="gemini-4-argon-source" cx="1264.866" cy="320.72" r="7.5" fill="#38bdf8" stroke="#f8fafc" stroke-width="1.3"/></g>
-  <g font-family="Inter,Segoe UI,Arial,sans-serif">
-    <text x="76" y="92" font-size="18" letter-spacing="4" fill="#67e8f9">BENCHMARK ARCHIVE · ORBITARIUM-BENCH</text>
-    <text x="72" y="166" font-size="64" font-weight="800" fill="#f8fafc">FRONTIER MODELS</text>
-    <text x="76" y="212" font-size="22" fill="#b9c6e4">Inspectable projects · pinned sources · explicit evidence</text>
-
-    <g transform="translate(76 276)">
-      <rect width="211" height="71" rx="13" fill="#382a14" stroke="#fbbf24" stroke-opacity=".78"/>
-      <text x="17" y="25" font-size="12" fill="#fbbf24" letter-spacing=".6">CURRENT REFERENCE</text>
-      <text x="17" y="51" font-size="18" font-weight="700" fill="#f8fafc">GPT-6.1 Sol</text>
+  <g clip-path="url(#canvas)" font-family="Inter,Segoe UI,Arial,sans-serif">
+    <rect width="1440" height="560" fill="url(#base)"/>
+    <rect width="1440" height="560" fill="url(#grid)"/>
+    <path d="M0 0H12V560H0Z" fill="url(#rail)"/>
+    <path d="M42 37H555" stroke="#33445b" stroke-width="1"/>
+    <g opacity=".34" stroke="#50708f" stroke-width="1" fill="none">
+      <path d="M0 485L585 -100M0 560L605 -45M115 560L675 0"/>
+      <path d="M0 505H585M0 540H585"/>
     </g>
-    <g transform="translate(301 276)">
-      <rect width="211" height="71" rx="13" fill="#151a45" stroke="#93c5fd" stroke-opacity=".78"/>
-      <text x="17" y="25" font-size="12" fill="#93c5fd" letter-spacing=".6">CURRENT REFERENCE</text>
-      <text x="17" y="51" font-size="18" font-weight="700" fill="#f8fafc">GPT-6 Astra</text>
+    <rect x="73" y="59" width="196" height="30" rx="15" fill="#15313c" stroke="#2b6770"/>
+    <circle cx="91" cy="74" r="4" fill="#87e9ee"/>
+    <text x="105" y="79" font-size="12" font-weight="700" letter-spacing="1.5" fill="#9cf2ef">BENCHMARK COLLECTION</text>
+    <text x="69" y="186" font-size="77" font-weight="800" letter-spacing="-3.8" fill="#f1f6fd">FRONTIER</text>
+    <text x="69" y="262" font-size="77" font-weight="800" letter-spacing="-3.8" fill="#f1f6fd">MODELS</text>
+    <rect x="75" y="287" width="102" height="4" rx="2" fill="#ffb76b"/>
+    <rect x="177" y="287" width="107" height="4" rx="2" fill="#85e4eb"/>
+    <text x="74" y="331" font-size="21" fill="#c7d9ec">Independent challenges.</text>
+    <text x="74" y="362" font-size="21" fill="#c7d9ec">Real builds. Inspectable evidence.</text>
+    <g data-role="collection-counts">
+      <rect x="74" y="434" width="217" height="63" rx="14" fill="#13283e" stroke="#345168"/>
+      <text x="93" y="458" font-size="13" letter-spacing="1.1" fill="#8caac7">BENCHMARKS</text>
+      <text x="93" y="485" font-size="23" font-weight="750" fill="#f8fbff">02</text>
+      <rect x="306" y="434" width="240" height="63" rx="14" fill="#13283e" stroke="#345168"/>
+      <text x="326" y="458" font-size="13" letter-spacing="1.1" fill="#8caac7">CURRENT RUNS</text>
+      <text x="326" y="485" font-size="23" font-weight="750" fill="#f8fbff">07</text>
     </g>
-    <g transform="translate(526 276)">
-      <rect width="211" height="71" rx="13" fill="#251447" stroke="#c084fc" stroke-opacity=".78"/>
-      <text x="17" y="25" font-size="12" fill="#c084fc" letter-spacing=".6">CURRENT REFERENCE</text>
-      <text x="17" y="51" font-size="18" font-weight="700" fill="#f8fafc">Grok 4.7</text>
+    <g data-benchmark="racing">
+      <rect x="613" y="51" width="775" height="215" rx="22" fill="url(#race)" stroke="#7d5565" stroke-opacity=".8"/>
+      <path d="M649 67H929" stroke="#fdaf6d" stroke-width="3" stroke-linecap="round"/>
+      <g stroke="#ec9b70" fill="none" stroke-linecap="round" opacity=".27">
+        <path d="M1050 88h283M1135 99h199M1224 111h111" stroke-width="2"/>
+        <path d="M1000 143l29 -25 40 19 22 -17 46 19 32 -20 65 25 46 -20 46 20" stroke-width="1.4"/>
+      </g>
+      <text x="650" y="105" font-size="13" font-weight="700" letter-spacing="2.2" fill="#ffc694">BENCHMARK 002 / GAMEPLAY ENGINEERING</text>
+      <text x="649" y="146" font-size="34" font-weight="800" fill="#fff5ed">Racing-bench</text>
+      <text x="654" y="167" font-size="14" fill="#cbbbc4">Cinematic arcade racing · 3D gameplay</text>
+      <g data-role="run" data-benchmark="racing" data-model="gpt-6.1-sol">
+    <rect x="650" y="181" width="342" height="49" rx="11" fill="#0e2034" stroke="#25415d"/>
+    <rect x="651" y="182" width="4" height="47" rx="2" fill="#ffbb73"/>
+    <circle cx="670" cy="205.5" r="4" fill="#ffbb73"/>
+    <text x="686" y="212" font-size="16" font-weight="650" fill="#eef6ff">GPT-6.1 Sol</text>
+  </g>
+    <g data-role="run" data-benchmark="racing" data-model="gemini-3.8-flash">
+    <rect x="1012" y="181" width="342" height="49" rx="11" fill="#0e2034" stroke="#25415d"/>
+    <rect x="1013" y="182" width="4" height="47" rx="2" fill="#80e9f2"/>
+    <circle cx="1032" cy="205.5" r="4" fill="#80e9f2"/>
+    <text x="1048" y="212" font-size="16" font-weight="650" fill="#eef6ff">Gemini 3.8 Flash</text>
+  </g>
+      <text x="654" y="253" font-size="12" letter-spacing="1" fill="#bcaeb6">02 CURRENT RUNS   ·   SOURCE AND PLAYABLE SITES</text>
     </g>
-    <g transform="translate(188.5 362)">
-      <rect width="211" height="71" rx="13" fill="#152d35" stroke="#34d399" stroke-opacity=".78"/>
-      <text x="17" y="25" font-size="12" fill="#34d399" letter-spacing=".6">CURRENT REFERENCE</text>
-      <text x="17" y="51" font-size="18" font-weight="700" fill="#f8fafc">Fable 5.1</text>
+    <g data-benchmark="orbitarium">
+      <rect x="613" y="280" width="775" height="250" rx="22" fill="url(#orbit)" stroke="#3e617f" stroke-opacity=".8"/>
+      <path d="M649 297H929" stroke="#83caff" stroke-width="3" stroke-linecap="round"/>
+      <g opacity=".25" fill="none" stroke="#8eb6f0" stroke-width="1.2">
+        <path d="M1162 307l22 24 42 -10 26 28 39 -15 38 19"/>
+        <path d="M1204 318l-12 34 46 21 31 -24"/>
+        <circle cx="1184" cy="331" r="3" fill="#9fc9ff"/>
+        <circle cx="1226" cy="321" r="3" fill="#9fc9ff"/>
+        <circle cx="1252" cy="349" r="3" fill="#9fc9ff"/>
+        <circle cx="1291" cy="334" r="3" fill="#9fc9ff"/>
+      </g>
+      <text x="650" y="328" font-size="13" font-weight="700" letter-spacing="2.2" fill="#a1d8ff">BENCHMARK 001 / PRODUCT &amp; SIMULATION</text>
+      <text x="649" y="370" font-size="34" font-weight="800" fill="#f0f8ff">Orbitarium-bench</text>
+      <g data-role="run" data-benchmark="orbitarium" data-model="gpt-6.1-sol-source">
+    <rect x="650" y="390" width="225" height="49" rx="11" fill="#0e2034" stroke="#25415d"/>
+    <rect x="651" y="391" width="4" height="47" rx="2" fill="#facc6b"/>
+    <circle cx="670" cy="414.5" r="4" fill="#facc6b"/>
+    <text x="686" y="421" font-size="16" font-weight="650" fill="#eef6ff">GPT-6.1 Sol</text>
+  </g>
+    <g data-role="run" data-benchmark="orbitarium" data-model="gpt-6-astra-max-frontier-v2">
+    <rect x="889" y="390" width="225" height="49" rx="11" fill="#0e2034" stroke="#25415d"/>
+    <rect x="890" y="391" width="4" height="47" rx="2" fill="#aaa7ff"/>
+    <circle cx="909" cy="414.5" r="4" fill="#aaa7ff"/>
+    <text x="925" y="421" font-size="16" font-weight="650" fill="#eef6ff">GPT-6 Astra</text>
+  </g>
+    <g data-role="run" data-benchmark="orbitarium" data-model="grok-4.7-solar-source">
+    <rect x="1128" y="390" width="225" height="49" rx="11" fill="#0e2034" stroke="#25415d"/>
+    <rect x="1129" y="391" width="4" height="47" rx="2" fill="#d2a2ff"/>
+    <circle cx="1148" cy="414.5" r="4" fill="#d2a2ff"/>
+    <text x="1164" y="421" font-size="16" font-weight="650" fill="#eef6ff">Grok 4.7</text>
+  </g>
+    <g data-role="run" data-benchmark="orbitarium" data-model="fable-5.1-frontier-v2">
+    <rect x="769.5" y="451" width="225" height="49" rx="11" fill="#0e2034" stroke="#25415d"/>
+    <rect x="770.5" y="452" width="4" height="47" rx="2" fill="#72dfbd"/>
+    <circle cx="789.5" cy="475.5" r="4" fill="#72dfbd"/>
+    <text x="805.5" y="482" font-size="16" font-weight="650" fill="#eef6ff">Fable 5.1</text>
+  </g>
+    <g data-role="run" data-benchmark="orbitarium" data-model="gemini-4-argon-source">
+    <rect x="1008.5" y="451" width="225" height="49" rx="11" fill="#0e2034" stroke="#25415d"/>
+    <rect x="1009.5" y="452" width="4" height="47" rx="2" fill="#83caff"/>
+    <circle cx="1028.5" cy="475.5" r="4" fill="#83caff"/>
+    <text x="1044.5" y="482" font-size="16" font-weight="650" fill="#eef6ff">Gemini 4 Argon</text>
+  </g>
+      <text x="654" y="518" font-size="12" letter-spacing="1" fill="#95b3ce">05 CURRENT REFERENCES   ·   ORIGINAL ARCHIVE PRESERVED</text>
     </g>
-    <g transform="translate(413.5 362)">
-      <rect width="211" height="71" rx="13" fill="#132840" stroke="#38bdf8" stroke-opacity=".78"/>
-      <text x="17" y="25" font-size="12" fill="#38bdf8" letter-spacing=".6">CURRENT REFERENCE</text>
-      <text x="17" y="51" font-size="18" font-weight="700" fill="#f8fafc">Gemini 4 Argon</text>
-    </g>
-    <text x="76" y="478" font-size="15" fill="#91a4c8">Five current references · inspect the preserved source and provenance</text>
+    <text x="74" y="540" font-size="13" letter-spacing=".4" fill="#7c9bb6">FRONTIER MODELS  /  OPEN PROJECT ARCHIVE</text>
   </g>
 </svg>
