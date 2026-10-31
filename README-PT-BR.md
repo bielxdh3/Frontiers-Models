@@ -70,8 +70,8 @@ Estas execuções continuam visíveis como referência, mas ficam intencionalmen
 
 | Modelo | Classificação | Projeto / fonte | Proveniência |
 | --- | --- | --- | --- |
-| ☀️ **GPT-5.6 Sun V1** | Baseline histórico | [Abrir Sun V1](https://gpt-5.6-sun-v1.biel.dev.br) | [`runs/gpt-5.6-sun-max/original`](./benchmarks/solar-system/runs/gpt-5.6-sun-max/original/) · commit `67eb9fc51f…` |
-| ☀️ **GPT-5.6 Sun V2** | Frontier desatualizado | [Abrir Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | [`runs/gpt-5.6-sun-max/rebuild`](./benchmarks/solar-system/runs/gpt-5.6-sun-max/rebuild/) · commit `93d43ae62f…` |
+| ☀️ **GPT-5.6 Sol V1** | Baseline histórico | [Abrir Sol V1](https://gpt-5.6-sun-v1.biel.dev.br) | [Código V1](./benchmarks/solar-system/runs/gpt-5.6-sun-max/original/) · commit `67eb9fc51f…` |
+| ☀️ **GPT-5.6 Sol V2** | Frontier desatualizado | [Abrir Sol V2](https://gpt-5.6-sun-v2.biel.dev.br) | [Código V2](./benchmarks/solar-system/runs/gpt-5.6-sun-max/rebuild/) · commit `93d43ae62f…` |
 | 🌙 **GPT-5.6 Luna** | Non-frontier | [Abrir Luna](https://gpt-5.6-luna.biel.dev.br/) | commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) |
 | 𝕏 **Grok 4.6** | Execução frontier arquivada | [Abrir Grok 4.6](https://grok-4-6-solar-system.vercel.app) | [`runs/grok-4.6/frontier-v2`](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) |
 | ◈ **Gemini 3.8 Flash** | Frontier V2 arquivado | [Abrir Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | [`fonte fixada`](./benchmarks/solar-system/GEMINI-3.8-FLASH-PROVENANCE.md) · `805cfe87a…` |
@@ -106,8 +106,8 @@ O [Racing-bench](./benchmarks/racing/) é um benchmark independente de criação
 | Fable 5.1 | commit `7e079669e41b…` | Frontier atual | Arquivado |
 | Gemini 4 Argon | commit fonte [`318aa80bb5…`](https://github.com/bielxdh3/gemini-argon/commit/318aa80bb5c49cbbfdfd4c3d267ad88d56ae3f98) | Referência atual | Arquivado; prompt não verificado |
 | Gemini 3.8 Flash | commit `805cfe87a…` em `bielxdh3/gemini` | Histórico / | Fonte fixada |
-| GPT-5.6 Sun V1 | commit `67eb9fc51f…` | Baseline histórico | Arquivado |
-| GPT-5.6 Sun V2 | commit `93d43ae62f…` | Desatualizado | Arquivado |
+| GPT-5.6 Sol V1 | commit `67eb9fc51f…` | Baseline histórico | Arquivado |
+| GPT-5.6 Sol V2 | commit `93d43ae62f…` | Desatualizado | Arquivado |
 | Grok 4.6 | SHA-256 do ZIP `5d77eeb509…` | Frontier arquivado | Arquivado |
 | GPT-5.6 Luna | commit `5fdc036884…` em `bielxdh3/orbitario-luna` | Non-frontier | Fonte fixada |
 

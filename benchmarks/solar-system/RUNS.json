@@ -19,7 +19,7 @@
   "runs": [
     {
       "id": "gpt-5.6-sun-max-original",
-      "model": "GPT-5.6 Sun",
+      "model": "GPT-5.6 Sol",
       "role": "historical-baseline",
       "source_commit": "67eb9fc51feb40ba4befddefde904bf6a6306016",
       "prompt": "prompts/sun-original.md",
@@ -32,7 +32,7 @@
     },
     {
       "id": "gpt-5.6-sun-max-frontier-v2",
-      "model": "GPT-5.6 Sun",
+      "model": "GPT-5.6 Sol",
       "role": "outdated-frontier-run",
       "source_commit": "93d43ae62f615a37672c0d1936912160d0475ca1",
       "prompt": "prompts/frontier-v2.md",
@@ -40,7 +40,7 @@
       "status": "imported",
       "arena_visibility": "non-frontier-or-outdated",
       "live_url": "https://gpt-5.6-sun-v2.biel.dev.br",
-      "notes": "Frontier V2 Sun run preserved as an outdated reference and excluded from the current frontier arena.",
+      "notes": "Frontier V2 Sol run preserved as an outdated reference and excluded from the current frontier arena.",
       "legacy_source_repository": "bielxdh3/GPT5.6-SUN-MAX-SOLAR-SYSTEM",
       "archive_status": "self-contained"
     },

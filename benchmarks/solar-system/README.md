@@ -29,7 +29,7 @@ These projects remain visible outside the current frontier arena and main hero.
 
 | Model | Classification | Project / source | Provenance |
 | --- | --- | --- | --- |
-| ☀️ **GPT-5.6 Sun V2** | Outdated frontier run | [Open Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | commit `93d43ae62f…` · [`runs/gpt-5.6-sun-max/rebuild`](./runs/gpt-5.6-sun-max/rebuild/) |
+| ☀️ **GPT-5.6 Sol V2** | Outdated frontier run | [Open Sol V2](https://gpt-5.6-sun-v2.biel.dev.br) | commit `93d43ae62f…` · [Archive V2](./runs/gpt-5.6-sun-max/rebuild/) |
 | 🌙 **GPT-5.6 Luna** | Non-frontier | [Open Luna](https://gpt-5.6-luna.biel.dev.br/) | source commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) |
 | 𝕏 **Grok 4.6** | Archived frontier run | [Open Grok 4.6](https://grok-4-6-solar-system.vercel.app) | [`runs/grok-4.6/frontier-v2`](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) |
 | ◈ **Gemini 3.8 Flash** | Archived Frontier V2 | [Open Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | [`source-pinned reference`](./GEMINI-3.8-FLASH-PROVENANCE.md) · `805cfe87a…` |
@@ -37,13 +37,13 @@ These projects remain visible outside the current frontier arena and main hero.
 Luna is source-pinned only for now; its prompt provenance is not archived here.
 
 <details>
-<summary><strong>Historical baseline — GPT-5.6 Sun V1</strong></summary>
+<summary><strong>Historical baseline — GPT-5.6 Sol V1</strong></summary>
 
-GPT-5.6 Sun V1 is preserved only for prompt-leverage history. It is deliberately excluded from the current arena because it used [`sun-original.md`](./prompts/sun-original.md), not Frontier V2.
+GPT-5.6 Sol V1 is preserved only for prompt-leverage history. It is deliberately excluded from the current arena because it used [`sun-original.md`](./prompts/sun-original.md), not Frontier V2.
 
-- [Open Sun V1](https://gpt-5.6-sun-v1.biel.dev.br)
+- [Open Sol V1](https://gpt-5.6-sun-v1.biel.dev.br)
 - Snapshot: `67eb9fc51f…`
-- Archive: [`runs/gpt-5.6-sun-max/original`](./runs/gpt-5.6-sun-max/original/)
+- Archive: [Archive V1](./runs/gpt-5.6-sun-max/original/)
 
 </details>
 
@@ -63,8 +63,8 @@ Lines    1,153
 
 | Run | Model | Prompt | Provenance | Arena |
 | --- | --- | --- | --- | --- |
-| Historical baseline | GPT-5.6 Sun V1 | `sun-original.md` | commit `67eb9fc51f…` | hidden |
-| Frontier V2 | GPT-5.6 Sun | `frontier-v2.md` | commit `93d43ae62f…` | non-frontier / outdated |
+| Historical baseline | GPT-5.6 Sol V1 | `sun-original.md` | commit `67eb9fc51f…` | hidden |
+| Frontier V2 | GPT-5.6 Sol | `frontier-v2.md` | commit `93d43ae62f…` | non-frontier / outdated |
 | Source-pinned reference | GPT-5.6 Luna | not archived here | source commit `5fdc036884…` | non-frontier |
 | Archived source | GPT-6.1 Sol | not verified | commit `7caaccc7f4…` | current |
 | Frontier V2 | GPT-6 Astra | `frontier-v2.md` | commit `fca2ef51b4…` | current |
