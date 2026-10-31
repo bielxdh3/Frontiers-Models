@@ -96,6 +96,8 @@ The historical archive path `benchmarks/solar-system/` is preserved to keep exis
 
 [Racing-bench](./benchmarks/racing/) is a separate cinematic arcade racing-game benchmark. Its [official V2.6 prompt](./benchmarks/racing/prompts/racing-v2.6.md) is archived with a SHA-256 integrity record. No completed Racing-bench run has been archived yet; work in progress is not represented as a finished result.
 
+**When starting any Racing-bench V2.6 task, attach both the [prompt](./benchmarks/racing/prompts/racing-v2.6.md) and the [mandatory tooling clarification](./benchmarks/racing/prompts/execution-tooling-clarification-v1.md).**
+
 ## Run provenance
 
 | Model | Provenance | Classification | Source status |

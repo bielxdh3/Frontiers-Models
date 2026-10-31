@@ -96,6 +96,8 @@ O caminho histórico `benchmarks/solar-system/` permanece inalterado para preser
 
 O [Racing-bench](./benchmarks/racing/) é um benchmark independente de criação de um jogo de corrida arcade cinematográfico. O [prompt oficial V2.6](./benchmarks/racing/prompts/racing-v2.6.md) está arquivado com hash SHA-256. Ainda não há nenhuma execução concluída arquivada; trabalhos em andamento não são apresentados como resultados prontos.
 
+**Ao iniciar qualquer tarefa do Racing-bench V2.6, anexar tanto o [prompt](./benchmarks/racing/prompts/racing-v2.6.md) quanto a [nota obrigatória sobre ferramentas](./benchmarks/racing/prompts/execution-tooling-clarification-v1.md).**
+
 ## Proveniência das execuções
 
 | Modelo | Proveniência | Classificação | Status da fonte |
