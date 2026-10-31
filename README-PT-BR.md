@@ -107,22 +107,35 @@ O Orbitarium-bench pede a cada modelo que construa um produto completo e interat
 
 O caminho histórico `benchmarks/solar-system/` permanece inalterado para preservar links e a proveniência dos arquivos originais.
 
-## Proveniência das execuções
+## Proveniência das execuções por benchmark
 
-| Modelo | Proveniência | Classificação | Status da fonte |
+### Racing-bench
+
+| Modelo | Revisão da fonte | Classificação | Status da fonte |
 | --- | --- | --- | --- |
-| GPT-6.1 Sol | commit fonte [`7caaccc7f4…`](https://github.com/bielxdh3/6.1gptsol/commit/7caaccc7f462806de10a1981c9826d3151e85407) | Referência atual | Arquivado; prompt não verificado |
-| GPT-6 Astra | commit `fca2ef51b4…` | Frontier atual | Arquivado |
-| Grok 4.7 | commit `bcb1e82012…` em `JouberthAlves/grok-4.7-solar` | Frontier atual | Fonte fixada |
-| Fable 5.1 | commit `7e079669e41b…` | Frontier atual | Arquivado |
-| Gemini 4 Argon | commit fonte [`318aa80bb5…`](https://github.com/bielxdh3/gemini-argon/commit/318aa80bb5c49cbbfdfd4c3d267ad88d56ae3f98) | Referência atual | Arquivado; prompt não verificado |
-| Gemini 3.8 Flash | commit `805cfe87a…` em `bielxdh3/gemini` | Histórico / | Fonte fixada |
-| GPT-5.6 Sol V1 | commit `67eb9fc51f…` | Baseline histórico | Arquivado |
-| GPT-5.6 Sol V2 | commit `93d43ae62f…` | Desatualizado | Arquivado |
-| Grok 4.6 | SHA-256 do ZIP `5d77eeb509…` | Frontier arquivado | Arquivado |
-| GPT-5.6 Luna | commit `5fdc036884…` em `bielxdh3/orbitario-luna` | Non-frontier | Fonte fixada |
+| **GPT-6.1 Sol** | Git `6f55263669…` | Atual | Arquivado |
+| **Gemini 3.8 Flash** | Git `a18fcaee71…` | Atual | Arquivado |
 
-O prompt compartilhado exato é [`frontier-v2.md`](./benchmarks/solar-system/prompts/frontier-v2.md), SHA-256 `7c2833a0486938c38671139807bd4a8c16371c3740175376ad02a6c0c3c06d65`.
+Os dois snapshots do Racing incluem [manifestos SHA-256 e backups Git restauráveis](./benchmarks/racing/).
+
+### Orbitarium-bench
+
+| Modelo | Revisão da fonte | Classificação | Status da fonte |
+| --- | --- | --- | --- |
+| **GPT-6.1 Sol** | Git `7caaccc7f4…` | Atual | Arquivado |
+| **GPT-6 Astra** | Git `fca2ef51b4…` | Atual | Arquivado |
+| **Grok 4.7** | Git `bcb1e82012…` | Atual | Arquivado |
+| **Fable 5.1** | Git `7e079669e4…` | Atual | Arquivado |
+| **Gemini 4 Argon** | Git `318aa80bb5…` | Atual | Arquivado |
+| **GPT-5.6 Sol V1** | Git `67eb9fc51f…` | Histórico | Arquivado |
+| **GPT-5.6 Sol V2** | Git `93d43ae62f…` | Histórico | Arquivado |
+| **Grok 4.6** | ZIP SHA-256 `5d77eeb509…` | Histórico | Arquivado |
+| **Gemini 3.8 Flash** | Git `805cfe87a6…` | Histórico | Apenas fonte fixada |
+| **GPT-5.6 Luna** | Git `5fdc036884…` | Non-frontier | Apenas fonte fixada |
+
+**Classificação** indica a posição da execução *dentro do próprio benchmark*: Atual, Histórico (incluindo execuções substituídas/arquivadas) ou Non-frontier. **Status da fonte** indica apenas a preservação dos arquivos: Arquivado (snapshot local) ou Apenas fonte fixada (revisão registrada sem snapshot completo). Isso não comprova equivalência dos prompts nem qualidade do gameplay.
+
+O prompt compartilhado exato do Orbitarium é [`frontier-v2.md`](./benchmarks/solar-system/prompts/frontier-v2.md), SHA-256 `7c2833a0486938c38671139807bd4a8c16371c3740175376ad02a6c0c3c06d65`.
 
 ## Política do arquivo
 
