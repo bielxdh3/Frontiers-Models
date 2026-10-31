@@ -74,7 +74,7 @@ const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 520" rol
   <circle data-role="sun" cx="${orbitCenter.x}" cy="${orbitCenter.y}" r="10" fill="#fff7c2"/>
   <g>${markers}</g>
   <g font-family="Inter,Segoe UI,Arial,sans-serif">
-    <text x="76" y="92" font-size="18" letter-spacing="4" fill="#67e8f9">BENCHMARK ARCHIVE · SOLAR SYSTEM</text>
+    <text x="76" y="92" font-size="18" letter-spacing="4" fill="#67e8f9">BENCHMARK ARCHIVE · ORBITARIUM-BENCH</text>
     <text x="72" y="166" font-size="64" font-weight="800" fill="#f8fafc">FRONTIER MODELS</text>
     <text x="76" y="212" font-size="22" fill="#b9c6e4">Inspectable projects · pinned sources · explicit evidence</text>
     ${cards}

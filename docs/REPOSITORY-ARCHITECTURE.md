@@ -2,6 +2,8 @@
 
 **Frontier Models** is organized as **benchmark → prompts → runs → provenance**. Runs live side by side rather than on permanent per-model branches.
 
+**Orbitarium-bench** is the current display name of the legacy `benchmarks/solar-system/` archive. Its existing path, source snapshots, and exact archived prompts remain unchanged for provenance and link stability.
+
 ```text
 Frontiers-Models/
 ├─ README.md
@@ -42,7 +44,7 @@ A vendored run folder contains a self-contained copy of model-produced files fro
 
 ## Current references and history
 
-The Solar System current arena contains GPT-6.1 Sol, GPT-6 Astra, Grok 4.7 Solar, Fable 5.1 and Gemini 4 Argon. Historical and non-frontier runs remain discoverable. GPT-5.6 Sun V1 uses a different prompt and is kept outside the current reference hero.
+The Orbitarium-bench current arena contains GPT-6.1 Sol, GPT-6 Astra, Grok 4.7 Solar, Fable 5.1 and Gemini 4 Argon. Historical and non-frontier runs remain discoverable. GPT-5.6 Sun V1 uses a different prompt and is kept outside the current reference hero.
 
 ## Provenance and future benchmarks
 

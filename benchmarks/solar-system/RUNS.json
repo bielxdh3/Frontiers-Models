@@ -1,5 +1,5 @@
 {
-  "benchmark": "solar-system",
+  "benchmark": "orbitarium-bench",
   "schema_version": 9,
   "prompts": {
     "sun-original": {

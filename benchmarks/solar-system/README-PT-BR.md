@@ -1,6 +1,6 @@
 <div align="center">
 
-# Benchmark do Sistema Solar / Orbitário
+# Orbitarium-bench
 
 **Frontier Models · benchmark de geração de produto completo**
 

@@ -1,4 +1,4 @@
-# Prompt archive
+# Orbitarium-bench prompt archive
 
 Prompts are immutable benchmark inputs. A run is only fully auditable when the exact prompt used for that run is preserved verbatim and its provenance is explicit.
 

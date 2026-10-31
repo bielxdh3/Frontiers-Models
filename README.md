@@ -14,7 +14,7 @@
 
 [![Português (Brasil)](https://img.shields.io/badge/Idioma-Portugu%C3%AAs%20(BR)-2563EB?style=flat)](./README-PT-BR.md)
 
-[Open benchmark](./benchmarks/solar-system/) · [Methodology](./docs/METHODOLOGY.md)
+[Open Orbitarium-bench](./benchmarks/solar-system/) · [Methodology](./docs/METHODOLOGY.md)
 
 </div>
 
@@ -41,7 +41,7 @@ The current arena includes **five** references. Gemini 4 Argon and GPT-6.1 Sol a
                      └────────────┬─────────────┘
                                   │
                        ┌──────────▼───────────┐
-                       │     Solar System     │
+                       │   Orbitarium-bench   │
                        │ RUNS.json · registry │
                        │ current · historical │
                        └──────┬────────┬──────┘
@@ -84,9 +84,11 @@ Luna is currently source-pinned only; its prompt provenance is not archived in t
 PROMPT → MODEL RUN → PROJECT SNAPSHOT / PINNED SOURCE → EVIDENCE → PROVENANCE → INSPECTABLE PROJECTS
 ```
 
-## Benchmark 001 — Solar System / Orbitarium
+## Benchmark 001 — Orbitarium-bench
 
-The first benchmark asks each model to build a complete interactive Solar System product from a dense product specification. It stresses product design, simulation and orbital logic, camera/navigation, time state, accessibility, performance, robustness, scientific honesty, learning tools and QA.
+Orbitarium-bench asks each model to build a complete interactive Solar System product from a dense product specification. It stresses product design, simulation and orbital logic, camera/navigation, time state, accessibility, performance, robustness, scientific honesty, learning tools and QA.
+
+The historical archive path `benchmarks/solar-system/` is preserved to keep existing links and exact-source provenance stable.
 
 ## Run provenance
 
