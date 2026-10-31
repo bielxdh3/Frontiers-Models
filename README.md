@@ -30,6 +30,38 @@
 
 The current arena includes **five** references. Gemini 4 Argon and GPT-6.1 Sol are archived at exact source commits, but their generating prompts are not independently verified, so Frontier V2 prompt equivalence is not claimed. Gemini 3.8 Flash remains visible below as a historical source-pinned reference.
 
+## How it fits together
+
+```text
+          ┌──────────────────────┐   ┌──────────────────────┐
+          │ Benchmark prompts    │   │ Model project runs   │
+          │ original inputs      │   │ sources / snapshots  │
+          └──────────┬───────────┘   └──────────┬───────────┘
+                     │                          │
+                     └────────────┬─────────────┘
+                                  │
+                       ┌──────────▼───────────┐
+                       │     Solar System     │
+                       │ RUNS.json · registry │
+                       │ current · historical │
+                       └──────┬────────┬──────┘
+                              │        │
+                snapshots     │        │ source evidence
+                              │        │
+                    ┌─────────▼───┐ ┌──▼──────────────────┐
+                    │  Snapshots  │ │ Provenance records  │
+                    │ runs/       │ │ commits · ZIP hashes│
+                    │ model files │ │ prompt provenance   │
+                    └─────────────┘ └──┬──────────────────┘
+                                       │ published references
+                         ┌─────────────▼───────────┐
+                         │ Live project URLs       │
+                         │ SHA-256 verification    │
+                         └─────────────────────────┘
+```
+
+The registry connects archived inputs, independent project runs, source evidence, and public references. A pinned source is not necessarily a local snapshot, and prompts with unverified provenance are kept distinct. See [repository architecture](./docs/REPOSITORY-ARCHITECTURE.md).
+
 ## 🗂️ Non-frontier or outdated models
 
 These runs stay visible for reference, but they are intentionally separated from the current frontier arena and hero graphic.
