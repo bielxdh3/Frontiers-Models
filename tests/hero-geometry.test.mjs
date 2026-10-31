@@ -12,14 +12,14 @@ const racing = JSON.parse(readFileSync(resolve(root, 'benchmarks/racing/RUNS.jso
 const orbitById = new Map(orbit.runs.map(run => [run.id, run]));
 const models = benchmark => [...svg.matchAll(new RegExp('<g data-role="run" data-benchmark="' + benchmark + '" data-model="([^"]+)"', 'g'))].map(([, id]) => id);
 
-test('hero presents a collection of two benchmarks, not a standalone orbital diagram', () => {
+test('hero presents a clean collection of two benchmarks with no microcopy or orbital diagram', () => {
   assert.match(svg, /<title id="title">Frontier Models — Racing and Orbitarium benchmark collection<\/title>/);
   assert.match(svg, /viewBox="0 0 1440 560"/);
-  assert.match(svg, /data-role="collection-counts"/);
-  assert.match(svg, /02 CURRENT RUNS/);
-  assert.match(svg, /05 CURRENT REFERENCES/);
-  assert.match(svg, /BENCHMARK 002 \/ GAMEPLAY ENGINEERING/);
-  assert.match(svg, /BENCHMARK 001 \/ PRODUCT &amp; SIMULATION/);
+  assert.doesNotMatch(svg, /BENCHMARK COLLECTION|02 CURRENT RUNS|05 CURRENT REFERENCES|OPEN PROJECT ARCHIVE|CURRENT RUNS|<text[^>]*>CURRENT<\/text>/);
+  assert.doesNotMatch(svg, /BENCHMARK 002|BENCHMARK 001|GAMEPLAY ENGINEERING|PRODUCT &amp; SIMULATION|data-role="collection-counts"|HISTORICAL \/ NON-FRONTIER/);
+  assert.doesNotMatch(svg, /<text[^>]*font-size="1[0-5]"/);
+  assert.match(svg, />FRONTIER<\/text>/);
+  assert.match(svg, />MODELS<\/text>/);
   assert.doesNotMatch(svg, /data-role="orbit"|data-role="planet"|data-role="sun"|<ellipse\b/);
   assert.doesNotMatch(renderer, /orbitSpecs|orbitRings|orbitCenter/);
 });
@@ -48,18 +48,28 @@ test('Orbitarium second: all five current references preserved in registry order
 });
 
 test('all seven visible run badges stay inside their benchmark panels', () => {
-  const racingBadges = [...svg.matchAll(/<g data-role="run" data-benchmark="racing" data-model="[^"]+">\s*<rect x="([\d.]+)" y="([\d.]+)" width="([\d.]+)" height="49"/g)]
+  const racingBadges = [...svg.matchAll(/<g data-role="run" data-benchmark="racing" data-model="[^"]+">\s*<rect x="([\d.]+)" y="([\d.]+)" width="([\d.]+)" height="56"/g)]
     .map(([, x, y, w]) => ({ x: Number(x), y: Number(y), w: Number(w) }));
-  const orbitBadges = [...svg.matchAll(/<g data-role="run" data-benchmark="orbitarium" data-model="[^"]+">\s*<rect x="([\d.]+)" y="([\d.]+)" width="([\d.]+)" height="49"/g)]
+  const orbitBadges = [...svg.matchAll(/<g data-role="run" data-benchmark="orbitarium" data-model="[^"]+">\s*<rect x="([\d.]+)" y="([\d.]+)" width="([\d.]+)" height="56"/g)]
     .map(([, x, y, w]) => ({ x: Number(x), y: Number(y), w: Number(w) }));
   assert.equal(racingBadges.length, 2);
   assert.equal(orbitBadges.length, 5);
   for (const b of racingBadges) {
-    assert.ok(b.x >= 613 && b.x + b.w <= 1388 && b.y >= 51 && b.y + 49 <= 266);
+    assert.ok(b.x >= 613 && b.x + b.w <= 1388 && b.y >= 51 && b.y + 56 <= 266);
   }
   for (const b of orbitBadges) {
-    assert.ok(b.x >= 613 && b.x + b.w <= 1388 && b.y >= 280 && b.y + 49 <= 530);
+    assert.ok(b.x >= 613 && b.x + b.w <= 1388 && b.y >= 280 && b.y + 56 <= 530);
   }
+});
+
+test('current-run SVG does not include Orbitarium historical/non-frontier IDs', () => {
+  const current = new Set(orbit.current_arena);
+  const orbitariumIds = models('orbitarium');
+  for (const run of orbit.runs) {
+    if (current.has(run.id)) continue;
+    assert.ok(!orbitariumIds.includes(run.id), 'non-frontier run in current SVG: ' + run.id);
+  }
+  assert.equal(models('orbitarium').length + models('racing').length, 7);
 });
 
 test('hero is deterministic, source-driven and free of AI rankings', () => {

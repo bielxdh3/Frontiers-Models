@@ -22,24 +22,26 @@
 
 ### Racing-bench — current runs
 
-| Model | Run / provenance | Live game | Archived source |
+| Model | Source / prompt | Live game | Archived source |
 | --- | --- | --- | --- |
-| 🏎️ **GPT-6.1 Sol** | Full source + restorable Git history | [Play GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br) | [Source and manifest](./benchmarks/racing/runs/gpt-6.1-sol/) |
-| 🏎️ **Gemini 3.8 Flash** | Full source + restorable Git history | [Play Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br) | [Source and manifest](./benchmarks/racing/runs/gemini-3.8-flash/) |
+| 🏎️ **GPT-6.1 Sol** | Archived · prompt unverified | [Play GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br) | [Source and manifest](./benchmarks/racing/runs/gpt-6.1-sol/) |
+| 🏎️ **Gemini 3.8 Flash** | Archived · prompt unverified | [Play Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br) | [Source and manifest](./benchmarks/racing/runs/gemini-3.8-flash/) |
 
 Both Racing runs are archived at exact Git commits; this is a source-archival status, **not a claim that gameplay passed independent review**. See the [Racing-bench archive](./benchmarks/racing/) and its separate required [execution addendum](./benchmarks/racing/EXECUTION-ADDENDUM.md).
 
 ### Orbitarium-bench — current references
 
-| Model | Run / provenance | Live project | Archived / pinned run |
+| Model | Source / prompt | Live project | Archived / pinned run |
 | --- | --- | --- | --- |
-| ☀️ **GPT-6.1 Sol** | Source-archived / prompt unverified | [Open Sol](https://orbitarium-gpt-6.1-sol.biel.dev.br) | [`runs/gpt-6.1-sol/source`](./benchmarks/solar-system/runs/gpt-6.1-sol/source/) |
-| ✦ **GPT-6 Astra** | Frontier V2 | [Open Astra](https://orbitarium-gpt-6-astra.biel.dev.br) | [`runs/gpt-6-astra-max/frontier-v2`](./benchmarks/solar-system/runs/gpt-6-astra-max/frontier-v2/) |
-| 𝕏 **Grok 4.7** | Source-pinned reference | [Open Grok 4.7](https://orbitarium-grok-4.7.biel.dev.br) | [`runs/grok-4.7/source`](./benchmarks/solar-system/runs/grok-4.7/source/) |
-| ◆ **Fable 5.1** | Frontier V2 | [Open Fable 5.1](https://fable-solar-system.vercel.app) | [`runs/fable/frontier-v2`](./benchmarks/solar-system/runs/fable/frontier-v2/) |
-| ◈ **Gemini 4 Argon** | Source archived / prompt unverified | [Open Argon](https://orbitarium-gemini-4-argon.biel.dev.br) | [`runs/gemini-4-argon/source`](./benchmarks/solar-system/runs/gemini-4-argon/source/) |
+| ☀️ **GPT-6.1 Sol** | Archived · prompt unverified | [Open Sol](https://orbitarium-gpt-6.1-sol.biel.dev.br) | [`runs/gpt-6.1-sol/source`](./benchmarks/solar-system/runs/gpt-6.1-sol/source/) |
+| ✦ **GPT-6 Astra** | Archived · Frontier V2 prompt | [Open Astra](https://orbitarium-gpt-6-astra.biel.dev.br) | [`runs/gpt-6-astra-max/frontier-v2`](./benchmarks/solar-system/runs/gpt-6-astra-max/frontier-v2/) |
+| 𝕏 **Grok 4.7** | Archived · prompt unverified | [Open Grok 4.7](https://orbitarium-grok-4.7.biel.dev.br) | [`runs/grok-4.7/source`](./benchmarks/solar-system/runs/grok-4.7/source/) |
+| ◆ **Fable 5.1** | Archived · Frontier V2 prompt | [Open Fable 5.1](https://fable-solar-system.vercel.app) | [`runs/fable/frontier-v2`](./benchmarks/solar-system/runs/fable/frontier-v2/) |
+| ◈ **Gemini 4 Argon** | Archived · prompt unverified | [Open Argon](https://orbitarium-gemini-4-argon.biel.dev.br) | [`runs/gemini-4-argon/source`](./benchmarks/solar-system/runs/gemini-4-argon/source/) |
 
 Orbitarium includes **five current references**. Gemini 4 Argon and GPT-6.1 Sol are archived at exact source commits, but their generating prompts are not independently verified, so Frontier V2 prompt equivalence is not claimed. Gemini 3.8 Flash remains visible below as a **historical Orbitarium** source-pinned reference while being a **current Racing** run.
+
+*Source / prompt:* **Archived** means the project files are preserved in Frontier Models. **Frontier V2 prompt** identifies the archived shared input; **prompt unverified** means exact delivery could not be independently confirmed. Git-history bundles for both Racing runs are preserved separately.
 
 ## How it fits together
 

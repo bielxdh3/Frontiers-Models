@@ -52,3 +52,22 @@ test('the homepages present Racing first and Orbitarium second, without mixing m
       content.indexOf('## Benchmark 001 — Orbitarium-bench'), path);
   }
 });
+
+test('all seven current rows use consistent source and prompt provenance labels', () => {
+  for (const [path, source, labels] of [
+    ['README.md', 'Archived', ['prompt unverified', 'Frontier V2 prompt']],
+    ['README-PT-BR.md', 'Arquivada', ['prompt não verificado', 'prompt Frontier V2']],
+  ]) {
+    const content = read(path);
+    const start = content.indexOf('### Racing-bench — ');
+    const end = content.indexOf(path === 'README.md' ? '## How it fits together' : '## Como se organiza');
+    const current = content.slice(start, end);
+    const modelRows = current.split('\n').filter(line => /^\| .+ \*\*.+\*\* \|/.test(line));
+    assert.equal(modelRows.length, 7, path);
+    for (const row of modelRows) {
+      const cells = row.split('|').map(cell => cell.trim());
+      assert.ok(cells[2].startsWith(source + ' · '), row);
+      assert.ok(labels.some(label => cells[2].endsWith(label)), row);
+    }
+  }
+});
