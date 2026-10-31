@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 520" role="img" aria-labelledby="title desc">
   <title id="title">Frontier Models — five current references</title>
-  <desc id="desc">GPT-6.1 Sol, GPT-6 Astra, Grok 4.7 Solar, Fable 5.1, Gemini 4 Argon. These are archived or pinned projects; their generating prompts may differ.</desc>
+  <desc id="desc">GPT-6.1 Sol, GPT-6 Astra, Grok 4.7, Fable 5.1, Gemini 4 Argon. These are archived or pinned projects; their generating prompts may differ.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070b1b"/><stop offset=".55" stop-color="#11133b"/><stop offset="1" stop-color="#061d2e"/></linearGradient>
     <radialGradient id="sun"><stop stop-color="#fff5bd"/><stop offset=".45" stop-color="#ffb84d"/><stop offset="1" stop-color="#ff6b3d" stop-opacity=".14"/></radialGradient>
@@ -37,7 +37,7 @@
     <g transform="translate(526 276)">
       <rect width="211" height="71" rx="13" fill="#251447" stroke="#c084fc" stroke-opacity=".78"/>
       <text x="17" y="25" font-size="12" fill="#c084fc" letter-spacing=".6">CURRENT REFERENCE</text>
-      <text x="17" y="51" font-size="18" font-weight="700" fill="#f8fafc">Grok 4.7 Solar</text>
+      <text x="17" y="51" font-size="18" font-weight="700" fill="#f8fafc">Grok 4.7</text>
     </g>
     <g transform="translate(188.5 362)">
       <rect width="211" height="71" rx="13" fill="#152d35" stroke="#34d399" stroke-opacity=".78"/>

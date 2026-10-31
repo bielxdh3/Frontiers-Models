@@ -20,9 +20,9 @@ test('Gemini 4 Argon replaces Gemini 3.8 in arena but preserves historical recor
   assert.equal(old.target_path, 'runs/gemini-3.8-flash/frontier-v2');
   assert.equal(old.prompt, 'prompts/frontier-v2.md');
   assert.equal(old.status, 'source-pinned');
-  assert.equal(old.live_url, 'https://gemini-3.8-flash.biel.dev.br');
+  assert.equal(old.live_url, 'https://orbitarium-gemini-3.8-flash.biel.dev.br');
   assert.equal(argon.prompt, null);
-  assert.equal(argon.live_url, 'https://gemini-4-argon.biel.dev.br/');
+  assert.equal(argon.live_url, 'https://orbitarium-gemini-4-argon.biel.dev.br');
 });
 
 test('primary SVG shows Gemini Argon while the archived registry retains Gemini 3.8', () => {
@@ -40,7 +40,7 @@ for (const path of ['README.md', 'README-PT-BR.md',
     const current = text.split('## ')[1];
     assert.ok(current.includes('Gemini 4 Argon'));
     assert.ok(!current.includes('**Gemini 3.8 Flash**'));
-    assert.ok(text.includes('https://gemini-4-argon.biel.dev.br/'));
-    assert.ok(text.includes('https://gemini-3.8-flash.biel.dev.br'));
+    assert.ok(text.includes('https://orbitarium-gemini-4-argon.biel.dev.br'));
+    assert.ok(text.includes('https://orbitarium-gemini-3.8-flash.biel.dev.br'));
   });
 }
