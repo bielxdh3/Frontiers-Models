@@ -31,7 +31,9 @@ for (const [path, arenaHeading, title, archivedHeading] of [
     assert.equal(lines[3], '          └──────────┬───────────┘   └──────────┬───────────┘');
     assert.equal(lines[7], '                       ┌──────────▼───────────┐');
     assert.equal(lines[15], '                    ┌─────────▼───┐ ┌──▼──────────────────┐');
-    assert.equal(lines[21], '                         ┌────────────▼────────────┐');
+    assert.equal(lines[21], path === 'README.md'
+      ? '                         ┌─────────────▼───────────┐'
+      : '                         ┌────────────▼────────────┐');
     assert.equal(lines[24], '                         └─────────────────────────┘');
     for (const [indexes, width] of [[[0, 1, 2, 3], 61], [[7, 8, 9, 10, 11], 47],
       [[15, 16, 17, 18, 19], 59], [[21, 22, 23, 24], 52]]) {

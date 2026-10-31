@@ -16,6 +16,8 @@
 
 [Abrir benchmark](./benchmarks/solar-system/) · [Metodologia](./docs/METHODOLOGY.md)
 
+[Racing-bench — prompt de implementação V2.6](./benchmarks/racing/)
+
 </div>
 
 ## ⚔️ Arena atual de referências
@@ -87,6 +89,10 @@ PROMPT → EXECUÇÃO DO MODELO → SNAPSHOT / FONTE FIXADA → EVIDÊNCIAS → 
 ## Benchmark 001 — Sistema Solar / Orbitário
 
 O primeiro benchmark pede a cada modelo que construa um produto completo e interativo do Sistema Solar a partir de uma especificação extensa. Ele testa design de produto, simulação e lógica orbital, câmera/navegação, estado temporal, acessibilidade, desempenho, robustez, honestidade científica, ferramentas educacionais e QA.
+
+## Benchmark 002 — Racing-bench
+
+O [Racing-bench](./benchmarks/racing/) é um benchmark independente de criação de um jogo de corrida arcade cinematográfico. O [prompt oficial V2.6](./benchmarks/racing/prompts/racing-v2.6.md) está arquivado com hash SHA-256. Ainda não há nenhuma execução concluída arquivada; trabalhos em andamento não são apresentados como resultados prontos.
 
 ## Proveniência das execuções
 
