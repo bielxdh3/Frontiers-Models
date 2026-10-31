@@ -1,0 +1,15 @@
+{
+  "benchmark": "racing-bench",
+  "schema_version": 1,
+  "prompts": {
+    "racing-v2.6": {
+      "path": "prompts/racing-v2.6.md",
+      "status": "archived-verbatim-and-verified",
+      "sha256": "8dc65f23a8eaa35a06a7833a7929763fd16aa3cde2ff563561bffac7d7d69248",
+      "bytes": 80309,
+      "lines": 429,
+      "source_filename": "Racing-bench-v2.6-prompt.md"
+    }
+  },
+  "runs": []
+}

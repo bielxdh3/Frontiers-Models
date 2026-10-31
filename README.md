@@ -16,6 +16,8 @@
 
 [Open Orbitarium-bench](./benchmarks/solar-system/) · [Methodology](./docs/METHODOLOGY.md)
 
+[Racing-bench — V2.6 implementation prompt](./benchmarks/racing/)
+
 </div>
 
 ## ⚔️ Current reference arena
@@ -89,6 +91,10 @@ PROMPT → MODEL RUN → PROJECT SNAPSHOT / PINNED SOURCE → EVIDENCE → PROVE
 Orbitarium-bench asks each model to build a complete interactive Solar System product from a dense product specification. It stresses product design, simulation and orbital logic, camera/navigation, time state, accessibility, performance, robustness, scientific honesty, learning tools and QA.
 
 The historical archive path `benchmarks/solar-system/` is preserved to keep existing links and exact-source provenance stable.
+
+## Benchmark 002 — Racing-bench
+
+[Racing-bench](./benchmarks/racing/) is a separate cinematic arcade racing-game benchmark. Its [official V2.6 prompt](./benchmarks/racing/prompts/racing-v2.6.md) is archived with a SHA-256 integrity record. No completed Racing-bench run has been archived yet; work in progress is not represented as a finished result.
 
 ## Run provenance
 
