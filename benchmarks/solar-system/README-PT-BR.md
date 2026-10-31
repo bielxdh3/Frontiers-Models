@@ -29,7 +29,7 @@ Estes projetos continuam visíveis fora da arena frontier atual e do SVG princip
 
 | Modelo | Classificação | Projeto / fonte | Proveniência |
 | --- | --- | --- | --- |
-| ☀️ **GPT-5.6 Sun V2** | Frontier desatualizado | [Abrir Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | commit `93d43ae62f…` · [`runs/gpt-5.6-sun-max/rebuild`](./runs/gpt-5.6-sun-max/rebuild/) |
+| ☀️ **GPT-5.6 Sol V2** | Frontier desatualizado | [Abrir Sol V2](https://gpt-5.6-sun-v2.biel.dev.br) | commit `93d43ae62f…` · [Código V2](./runs/gpt-5.6-sun-max/rebuild/) |
 | 🌙 **GPT-5.6 Luna** | Non-frontier | [Abrir Luna](https://gpt-5.6-luna.biel.dev.br/) | commit fonte [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) |
 | 𝕏 **Grok 4.6** | Execução frontier arquivada | [Abrir Grok 4.6](https://grok-4-6-solar-system.vercel.app) | [`runs/grok-4.6/frontier-v2`](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) |
 | ◈ **Gemini 3.8 Flash** | Frontier V2 arquivado / | [Abrir Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | [`fonte fixada`](./GEMINI-3.8-FLASH-PROVENANCE.md) · `805cfe87a…` |
@@ -37,13 +37,13 @@ Estes projetos continuam visíveis fora da arena frontier atual e do SVG princip
 O Luna está, por enquanto, apenas com a fonte fixada; a proveniência do prompt ainda não foi arquivada aqui.
 
 <details>
-<summary><strong>Baseline histórico — GPT-5.6 Sun V1</strong></summary>
+<summary><strong>Baseline histórico — GPT-5.6 Sol V1</strong></summary>
 
-O GPT-5.6 Sun V1 é preservado apenas para análise histórica do efeito do prompt. Ele é excluído da arena atual porque usou [`sun-original.md`](./prompts/sun-original.md), e não Frontier V2.
+O GPT-5.6 Sol V1 é preservado apenas para análise histórica do efeito do prompt. Ele é excluído da arena atual porque usou [`sun-original.md`](./prompts/sun-original.md), e não Frontier V2.
 
-- [Abrir Sun V1](https://gpt-5.6-sun-v1.biel.dev.br)
+- [Abrir Sol V1](https://gpt-5.6-sun-v1.biel.dev.br)
 - Snapshot: `67eb9fc51f…`
-- Arquivo: [`runs/gpt-5.6-sun-max/original`](./runs/gpt-5.6-sun-max/original/)
+- Arquivo: [Código V1](./runs/gpt-5.6-sun-max/original/)
 
 </details>
 
@@ -63,8 +63,8 @@ Linhas   1.153
 
 | Execução | Modelo | Prompt | Proveniência | Arena |
 | --- | --- | --- | --- | --- |
-| Baseline histórico | GPT-5.6 Sun V1 | `sun-original.md` | commit `67eb9fc51f…` | oculto |
-| Frontier V2 | GPT-5.6 Sun | `frontier-v2.md` | commit `93d43ae62f…` | non-frontier / desatualizado |
+| Baseline histórico | GPT-5.6 Sol V1 | `sun-original.md` | commit `67eb9fc51f…` | oculto |
+| Frontier V2 | GPT-5.6 Sol | `frontier-v2.md` | commit `93d43ae62f…` | non-frontier / desatualizado |
 | Referência com fonte fixada | GPT-5.6 Luna | não arquivado aqui | commit fonte `5fdc036884…` | non-frontier |
 | Fonte arquivada | GPT-6.1 Sol | não verificado | commit `7caaccc7f4…` | atual |
 | Frontier V2 | GPT-6 Astra | `frontier-v2.md` | commit `fca2ef51b4…` | atual |
