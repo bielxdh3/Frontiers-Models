@@ -25,14 +25,14 @@ A arena atual reúne **cinco** referências, incluindo o GPT-6.1 Sol, agora com 
 
 ## 🗂️ Modelos non-frontier ou desatualizados
 
-Estes projetos continuam visíveis fora da arena frontier atual e do SVG principal. A classificação da arena é separada do quadro de pontuações: execuções históricas/desatualizadas já avaliadas continuam visíveis nele, enquanto as ainda não avaliadas ficam sem posição.
+Estes projetos continuam visíveis fora da arena frontier atual e do SVG principal.
 
-| Modelo | Classificação | Projeto / fonte | Proveniência | Situação da nota |
-| --- | --- | --- | --- | --- |
-| ☀️ **GPT-5.6 Sun V2** | Frontier desatualizado | [Abrir Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | commit `93d43ae62f…` · [`runs/gpt-5.6-sun-max/rebuild`](./runs/gpt-5.6-sun-max/rebuild/) | **71,20/100** histórica |
-| 🌙 **GPT-5.6 Luna** | Non-frontier | [Abrir Luna](https://gpt-5.6-luna.biel.dev.br/) | commit fonte [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) | **Avaliação pendente** |
-| 𝕏 **Grok 4.6** | Execução frontier arquivada | [Abrir Grok 4.6](https://grok-4-6-solar-system.vercel.app) | [`runs/grok-4.6/frontier-v2`](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) | **33,80/100** histórica |
-| ◈ **Gemini 3.8 Flash** | Frontier V2 arquivado / sem nota | [Abrir Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | [`fonte fixada`](./GEMINI-3.8-FLASH-PROVENANCE.md) · `805cfe87a…` | **Pendente** |
+| Modelo | Classificação | Projeto / fonte | Proveniência |
+| --- | --- | --- | --- |
+| ☀️ **GPT-5.6 Sun V2** | Frontier desatualizado | [Abrir Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | commit `93d43ae62f…` · [`runs/gpt-5.6-sun-max/rebuild`](./runs/gpt-5.6-sun-max/rebuild/) |
+| 🌙 **GPT-5.6 Luna** | Non-frontier | [Abrir Luna](https://gpt-5.6-luna.biel.dev.br/) | commit fonte [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) |
+| 𝕏 **Grok 4.6** | Execução frontier arquivada | [Abrir Grok 4.6](https://grok-4-6-solar-system.vercel.app) | [`runs/grok-4.6/frontier-v2`](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) |
+| ◈ **Gemini 3.8 Flash** | Frontier V2 arquivado / | [Abrir Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | [`fonte fixada`](./GEMINI-3.8-FLASH-PROVENANCE.md) · `805cfe87a…` |
 
 O Luna está, por enquanto, apenas com a fonte fixada; a proveniência do prompt ainda não foi arquivada aqui.
 
@@ -75,50 +75,13 @@ Linhas   1.153
 
 A proveniência legível por máquina fica em [`RUNS.json`](./RUNS.json). Consulte a [proveniência do Gemini 4 Argon](./GEMINI-4-ARGON-PROVENANCE.md) e o [registro histórico do Gemini 3.8](./GEMINI-3.8-FLASH-PROVENANCE.md).
 
-## Pontuações do benchmark
-
-> **Avaliação preliminar:** as notas foram feitas principalmente por um único avaliador e em poucos dispositivos/ambientes. GPT-6.1 Sol, Grok 4.7 Solar, Gemini 4 Argon, Gemini 3.8 Flash e GPT-5.6 Luna estão com **avaliação prática pendente**. Pendente não significa zero; o Sun V2 continua visível com sua nota histórica mesmo estando fora da arena frontier atual.
-
-<div align="center">
-
-<img src="../../assets/frontier-v2-scores-v6.svg" alt="Gráfico geral Frontier Models de 0 a 100: Astra 95,25; Fable 5.1 93,30; Sun V2 71,20; Grok 4.6 33,80; GPT-6.1 Sol, Grok 4.7 Solar, Gemini 4 Argon, Gemini 3.8 Flash e GPT-5.6 Luna com avaliação pendente" width="100%" />
-
-</div>
-
-| Posição | Modelo | Nota |
-| ---: | --- | ---: |
-| **1** | GPT-6 Astra | **95,25/100** |
-| **2** | Fable 5.1 | **93,30/100** |
-| **3** | GPT-5.6 Sun V2 | **71,20/100** |
-| **4** | Grok 4.6 | **33,80/100** |
-| — | GPT-6.1 Sol | **Pendente** |
-| — | Grok 4.7 Solar | **Pendente** |
-| — | Gemini 4 Argon | **Pendente** |
-| — | Gemini 3.8 Flash | **Pendente** |
-| — | GPT-5.6 Luna | **Pendente** |
-
-## Critérios de avaliação — resumo
-
-- **Completude de recursos — 20:** os recursos exigidos precisam existir e entregar o comportamento pretendido; implementações falsas, superficiais ou feitas para contornar a intenção perdem pontos.
-- **Interação / UX — 15:** clareza, descobribilidade, ergonomia e fluxo dos controles quando o produto funciona como projetado; bugs comuns de implementação pertencem à Robustez.
-- **Execução visual — 15:** hierarquia, legibilidade, coerência, qualidade de renderização e acabamento.
-- **Fidelidade científica / da simulação — 15:** correção orbital, temporal, de escala e astronômica, além de limites de aproximação explicados com honestidade.
-- **Robustez — 10:** bugs, dessincronização, estado de câmera/seguimento quebrado, exceções, estado corrompido e comportamentos que deixam de funcionar.
-- **Desempenho — 10:** responsividade, estabilidade dos frames, carregamento e eficiência de recursos.
-- **Código / arquitetura — 10:** manutenibilidade, modularidade, limites de estado, disciplina de dependências, testabilidade e qualidade da validação.
-- **Acessibilidade / responsividade — 5:** teclado/foco, movimento reduzido, usabilidade semântica e adaptação do layout.
-
-**Sem dupla penalização:** um defeito deve perder pontos na categoria principal à qual pertence, salvo quando houver evidência separada de outra violação. Estado de câmera/seguimento do Sol quebrado, por exemplo, é **Robustez**, não UX.
-
-Veja [`comparison/SCORECARD.md`](./comparison/SCORECARD.md) para evidências detalhadas e notas por categoria.
-
 ## Política de snapshots
 
-Arquivos produzidos pelos modelos são preservados dentro dos snapshots vendorizados em `runs/` sem edições do avaliador. Material escrito pelo avaliador permanece fora do resultado do modelo. Uma execução recém-adicionada pode ficar fixada em um commit Git exato enquanto o snapshot vendorizado completo ainda estiver pendente; esse estado fica explícito em `RUNS.json` em vez de ser apresentado como arquivo completo.
+Arquivos produzidos pelos modelos são preservados dentro dos snapshots vendorizados em `runs/` sem alterações. Metadados mantidos pelo repositório ficam fora do resultado do modelo. Uma execução recém-adicionada pode ficar fixada em um commit Git exato enquanto o snapshot vendorizado completo ainda estiver pendente; esse estado fica explícito em `RUNS.json` em vez de ser apresentado como arquivo completo.
 
 ## Justiça da comparação
 
-Um concorrente não deve receber a implementação, nota, crítica ou dicas posteriores de outro concorrente durante a geração do próprio projeto. O benchmark segue a regra: **primeiro geração, depois avaliação**.
+Um concorrente não deve receber a implementação de outro concorrente ou dicas posteriores durante a geração do próprio projeto. Os projetos são preservados sem alterações.
 
 ---
 

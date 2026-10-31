@@ -28,28 +28,28 @@
 | ◆ **Fable 5.1** | Frontier V2 | [Abrir Fable 5.1](https://fable-solar-system.vercel.app) | [`runs/fable/frontier-v2`](./benchmarks/solar-system/runs/fable/frontier-v2/) |
 | ◈ **Gemini 4 Argon** | Fonte arquivada / prompt não verificado | [Abrir Argon](https://gemini-4-argon.biel.dev.br/) | [`runs/gemini-4-argon/source`](./benchmarks/solar-system/runs/gemini-4-argon/source/) |
 
-A arena atual reúne **cinco** referências. O Gemini 4 Argon e o GPT-6.1 Sol foram arquivados integralmente a partir de commits exatos, mas seus prompts de geração não foram comprovados; portanto não recebem notas nem alegações de equivalência ao Frontier V2. O Gemini 3.8 Flash permanece no histórico, sem nota.
+A arena atual reúne **cinco** referências. O Gemini 4 Argon e o GPT-6.1 Sol foram arquivados integralmente a partir de commits exatos, mas seus prompts de geração não foram comprovados; por isso não há comprovação de equivalência ao Frontier V2. O Gemini 3.8 Flash permanece no histórico.
 
 ## 🗂️ Modelos non-frontier ou desatualizados
 
-Estas execuções continuam visíveis como referência, mas ficam intencionalmente separadas da arena frontier atual e do SVG principal. A classificação da arena é separada do quadro de pontuações: execuções históricas/desatualizadas já avaliadas continuam visíveis nele, enquanto as ainda não avaliadas ficam sem posição.
+Estas execuções continuam visíveis como referência, mas ficam intencionalmente separadas da arena frontier atual e do SVG principal.
 
-| Modelo | Classificação | Projeto / fonte | Proveniência | Situação da nota |
-| --- | --- | --- | --- | --- |
-| ☀️ **GPT-5.6 Sun V1** | Baseline histórico | [Abrir Sun V1](https://gpt-5.6-sun-v1.biel.dev.br) | [`runs/gpt-5.6-sun-max/original`](./benchmarks/solar-system/runs/gpt-5.6-sun-max/original/) · commit `67eb9fc51f…` | **Sem ranking** · prompt diferente |
-| ☀️ **GPT-5.6 Sun V2** | Frontier desatualizado | [Abrir Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | [`runs/gpt-5.6-sun-max/rebuild`](./benchmarks/solar-system/runs/gpt-5.6-sun-max/rebuild/) · commit `93d43ae62f…` | **71,20/100** histórica |
-| 🌙 **GPT-5.6 Luna** | Non-frontier | [Abrir Luna](https://gpt-5.6-luna.biel.dev.br/) | commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) | **Avaliação pendente** |
-| 𝕏 **Grok 4.6** | Execução frontier arquivada | [Abrir Grok 4.6](https://grok-4-6-solar-system.vercel.app) | [`runs/grok-4.6/frontier-v2`](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) | **33,80/100** histórica |
-| ◈ **Gemini 3.8 Flash** | Frontier V2 arquivado / sem nota | [Abrir Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | [`fonte fixada`](./benchmarks/solar-system/GEMINI-3.8-FLASH-PROVENANCE.md) · `805cfe87a…` | **Pendente** |
+| Modelo | Classificação | Projeto / fonte | Proveniência |
+| --- | --- | --- | --- |
+| ☀️ **GPT-5.6 Sun V1** | Baseline histórico | [Abrir Sun V1](https://gpt-5.6-sun-v1.biel.dev.br) | [`runs/gpt-5.6-sun-max/original`](./benchmarks/solar-system/runs/gpt-5.6-sun-max/original/) · commit `67eb9fc51f…` |
+| ☀️ **GPT-5.6 Sun V2** | Frontier desatualizado | [Abrir Sun V2](https://gpt-5.6-sun-v2.biel.dev.br) | [`runs/gpt-5.6-sun-max/rebuild`](./benchmarks/solar-system/runs/gpt-5.6-sun-max/rebuild/) · commit `93d43ae62f…` |
+| 🌙 **GPT-5.6 Luna** | Non-frontier | [Abrir Luna](https://gpt-5.6-luna.biel.dev.br/) | commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) |
+| 𝕏 **Grok 4.6** | Execução frontier arquivada | [Abrir Grok 4.6](https://grok-4-6-solar-system.vercel.app) | [`runs/grok-4.6/frontier-v2`](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) |
+| ◈ **Gemini 3.8 Flash** | Frontier V2 arquivado | [Abrir Gemini 3.8 Flash](https://gemini-3.8-flash.biel.dev.br) | [`fonte fixada`](./benchmarks/solar-system/GEMINI-3.8-FLASH-PROVENANCE.md) · `805cfe87a…` |
 
 O Luna está, por enquanto, apenas com a fonte fixada; a proveniência do prompt ainda não foi arquivada neste repositório.
 
 ## O que é Frontier Models?
 
-**Frontier Models** é um arquivo de benchmarks para comparar sistemas de IA frontier em projetos completos e inspecionáveis, em vez de capturas isoladas ou pontuações sintéticas.
+**Frontier Models** é um arquivo de benchmarks para comparar sistemas de IA frontier em projetos completos e inspecionáveis, com prompts, código e proveniência verificáveis.
 
 ```text
-PROMPT → EXECUÇÃO DO MODELO → SNAPSHOT / FONTE FIXADA → EVIDÊNCIAS → SCORECARD → VEREDITO
+PROMPT → EXECUÇÃO DO MODELO → SNAPSHOT / FONTE FIXADA → EVIDÊNCIAS → PROVENIÊNCIA → PROJETOS INSPECIONÁVEIS
 ```
 
 ## Benchmark 001 — Sistema Solar / Orbitário
@@ -65,7 +65,7 @@ O primeiro benchmark pede a cada modelo que construa um produto completo e inter
 | Grok 4.7 Solar | commit `bcb1e82012…` em `JouberthAlves/grok-4.7-solar` | Frontier atual | Fonte fixada |
 | Fable 5.1 | commit `7e079669e41b…` | Frontier atual | Arquivado |
 | Gemini 4 Argon | commit fonte [`318aa80bb5…`](https://github.com/bielxdh3/gemini-argon/commit/318aa80bb5c49cbbfdfd4c3d267ad88d56ae3f98) | Referência atual | Arquivado; prompt não verificado |
-| Gemini 3.8 Flash | commit `805cfe87a…` em `bielxdh3/gemini` | Histórico / sem nota | Fonte fixada |
+| Gemini 3.8 Flash | commit `805cfe87a…` em `bielxdh3/gemini` | Histórico / | Fonte fixada |
 | GPT-5.6 Sun V1 | commit `67eb9fc51f…` | Baseline histórico | Arquivado |
 | GPT-5.6 Sun V2 | commit `93d43ae62f…` | Desatualizado | Arquivado |
 | Grok 4.6 | SHA-256 do ZIP `5d77eeb509…` | Frontier arquivado | Arquivado |
@@ -73,47 +73,10 @@ O primeiro benchmark pede a cada modelo que construa um produto completo e inter
 
 O prompt compartilhado exato é [`frontier-v2.md`](./benchmarks/solar-system/prompts/frontier-v2.md), SHA-256 `7c2833a0486938c38671139807bd4a8c16371c3740175376ad02a6c0c3c06d65`.
 
-## Pontuações do benchmark
-
-> **Avaliação preliminar:** as notas atuais foram feitas principalmente por um único avaliador e em poucos dispositivos/ambientes. GPT-6.1 Sol, Grok 4.7 Solar, Gemini 4 Argon, Gemini 3.8 Flash e GPT-5.6 Luna **ainda não foram pontuados**. Pendente não significa zero; o Sun V2 continua visível com sua nota histórica mesmo não fazendo mais parte da arena frontier.
-
-<div align="center">
-
-<img src="./assets/frontier-v2-scores-v6.svg" alt="Gráfico geral Frontier Models: Astra 95,25; Fable 5.1 93,30; Sun V2 71,20; Grok 4.6 33,80; Grok 4.7 Solar, GPT-6.1 Sol, Gemini 4 Argon, Gemini 3.8 Flash e GPT-5.6 Luna com avaliação pendente" width="100%" />
-
-</div>
-
-| Posição | Modelo | Nota |
-| ---: | --- | ---: |
-| **1** | GPT-6 Astra | **95,25/100** |
-| **2** | Fable 5.1 | **93,30/100** |
-| **3** | GPT-5.6 Sun V2 | **71,20/100** |
-| **4** | Grok 4.6 | **33,80/100** |
-| — | GPT-6.1 Sol | **Pendente** |
-| — | Grok 4.7 Solar | **Pendente** |
-| — | Gemini 4 Argon | **Pendente** |
-| — | Gemini 3.8 Flash | **Pendente** |
-| — | GPT-5.6 Luna | **Pendente** |
-
-## Critérios de avaliação — resumo
-
-- **Completude de recursos — 20 pts:** os recursos exigidos precisam existir de verdade e entregar o comportamento pretendido; implementações falsas, superficiais ou feitas para contornar a intenção perdem pontos.
-- **Interação / UX — 15 pts:** clareza, descobribilidade, ergonomia e fluxo dos controles quando o produto funciona como projetado; bugs de implementação **não** viram automaticamente problemas de UX.
-- **Execução visual — 15 pts:** hierarquia, legibilidade, coerência, qualidade de renderização e acabamento.
-- **Fidelidade científica / da simulação — 15 pts:** correção orbital, temporal, de escala e astronômica, incluindo limites de aproximação explicados com honestidade.
-- **Robustez — 10 pts:** bugs, dessincronização de estado, câmera/seguimento quebrados, exceções, estado corrompido e recursos que deixam de funcionar.
-- **Desempenho — 10 pts:** responsividade, estabilidade dos frames, carregamento e eficiência de recursos.
-- **Código / arquitetura — 10 pts:** manutenibilidade, modularidade, limites de estado, dependências, testabilidade e qualidade da validação.
-- **Acessibilidade / responsividade — 5 pts:** teclado/foco, movimento reduzido, usabilidade semântica e adaptação do layout aos tamanhos de tela-alvo.
-
-**Sem dupla penalização:** um defeito deve perder pontos na categoria principal à qual pertence, salvo quando houver evidência independente de outra violação. Exemplo: se o Sol seguir a câmera/usuário por estado de cena ou seguimento quebrado, isso é **Robustez**, não UX.
-
-Veja as evidências detalhadas e notas por categoria em [`SCORECARD.md`](./benchmarks/solar-system/comparison/SCORECARD.md).
-
 ## Política do arquivo
 
 - resultados dos modelos permanecem intocados dentro dos snapshots arquivados em `runs/`;
-- material do avaliador fica fora dos resultados dos modelos;
+- metadados do arquivo ficam fora dos resultados dos modelos;
 - prompts exatos são arquivados separadamente e sem alterações;
 - commits Git são usados quando existem metadados Git da fonte;
 - hashes criptográficos são usados quando não existem;

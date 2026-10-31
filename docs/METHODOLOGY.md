@@ -1,83 +1,31 @@
-# Benchmark methodology
+# Benchmark archive methodology
 
-**Frontier Models** is an archive of model-produced projects and the evidence needed to compare them fairly. The repository is designed around one principle: **evaluation should happen after generation, not inside the model's working context**.
+**Frontier Models** preserves model-generated projects, exact benchmark inputs and independently verifiable source provenance. It does not modify a model's output to fit a presentation.
 
-## 1. Experimental isolation
+## 1. Independent generation
 
-Each model receives the intended benchmark prompt without being told about another contender's output, score, implementation choices or evaluator commentary. Model run folders therefore contain project artifacts, not hidden benchmark guidance.
+Each model receives its designated input without access to other contenders' implementations or post-hoc hints. Differences between archived input prompts must be disclosed, not hidden.
 
-## 2. Immutable run snapshots
+## 2. Immutable project snapshots
 
-Every evaluated run is pinned to the strongest exact source provenance available. Prefer an exact source commit when Git metadata exists; when a supplied artifact contains no Git history, pin the exact source archive with a cryptographic hash instead of inventing a commit. A rebuild is a new run even when it comes from the same model family.
+Model-produced files are preserved verbatim under each benchmark's `runs/` directory. When available, each run records its original Git commit; otherwise, the archived source hash provides an immutable reference. A rebuild is a distinct run.
 
-## 3. Prompt provenance
+## 3. Exact prompt provenance
 
-The exact prompt text is archived separately under the benchmark's `prompts/` directory. Prompts are copied verbatim. A prompt that cannot be recovered exactly is marked pending rather than reconstructed.
+Preserve original prompts separately under `prompts/`, including byte counts and cryptographic checksums when known. If a run's generating prompt cannot be recovered, explicitly state that it is unverified instead of assuming it matches another run.
 
-## 4. Run configuration metadata
+## 4. Run registry
 
-Record model/version, input provenance, source commit or archive hash, artifact state and evaluation status. Display labels omit provider-specific effort tiers.
+`RUNS.json` records model label, source location and commit/hash, local archive path, prompt provenance, current/historical grouping and live URL when available. The current reference arena is a display grouping, not a claim that all inputs were identical.
 
+## 5. Integrity and reproducibility
 
-## 5. Current arena and historical runs
+Keep source manifests and verification scripts executable. Preserve links to original repositories and public deployments. Record known gaps (such as source-only references) rather than inventing archive contents or missing prompt evidence.
 
-A historical run may remain valuable without belonging in the current head-to-head. The Solar System reference arena includes verified Frontier V2 runs and source-pinned or source-archived references whose exact generating prompt is unknown. Membership alone never implies shared input or a comparable score. GPT-5.6 Sun V1 is preserved for prompt-leverage history but hidden from the current arena because it used a different input.
+## 6. Repository hygiene
 
-## 6. Evaluation dimensions
-
-### Product quality
-- visual hierarchy and first impression
-- completeness of the requested experience
-- interaction design and discoverability
-- responsive behavior and accessibility
-- error states, onboarding and polish
-
-### Technical quality
-- architecture and maintainability
-- correctness of state and simulation logic
-- performance characteristics
-- dependency discipline
-- robustness and graceful degradation
-- testability and validation evidence
-
-### Domain fidelity
-For the Solar System benchmark this includes orbital behavior, time semantics, scale explanations, astronomical data handling, scientific caveats, object hierarchy, Moon/Earth behavior and the distinction between visualization and precise ephemerides.
-
-### Instruction fidelity
-A feature is not rewarded merely because it is impressive. The evaluator checks whether it was actually requested, whether required behavior works and whether optional additions damage usability or correctness.
-
-## 7. Evidence before score
-
-Scores should be derived from inspectable evidence: source files, screenshots, reproducible test reports, console/runtime checks, responsive captures and direct interaction. Claims without evidence are marked unverified.
-
-## 8. Suggested scoring model
-
-| Dimension | Weight |
-| --- | ---: |
-| Feature completeness | 20 |
-| Interaction / UX | 15 |
-| Visual execution | 15 |
-| Correctness / domain fidelity | 15 |
-| Robustness | 10 |
-| Performance | 10 |
-| Code / architecture | 10 |
-| Accessibility / responsive behavior | 5 |
-
-If a future benchmark uses different priorities, record a separate rubric instead of silently changing these weights.
-
-## 9. Tie-breaking
-
-When total scores are close, prefer the run with fewer critical defects, stronger instruction fidelity and more reproducible evidence. Avoid using subjective visual preference as the sole tie-breaker.
-
-## 10. Repository hygiene
-
-- keep generated runs separate from evaluator-authored files;
-- preserve immutable source provenance: commit IDs where available, verified archive hashes where Git metadata is absent;
-- do not edit a model's files merely to make the archive prettier;
-- keep current-arena presentation separate from historical preservation;
-- put screenshots and scorecards in evaluation directories, not inside model snapshots unless they were originally produced by that model;
-- record missing information explicitly.
-
-## 11. Interpretation
-
-This repository measures performance on the documented tasks and conditions. It is not a universal ranking of model intelligence. A frontier model may dominate one benchmark and lose another because the tasks stress different capabilities.
+- Do not rewrite or normalize files in archived `runs/` snapshots.
+- Keep provenance records and scripts outside model-produced output.
+- Preserve exact input prompts and hash/commit references.
+- Retain historical runs separately from current reference presentation.
+- Treat every run as an inspectable project; do not infer a universal ordering from archive membership.

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 520" role="img" aria-labelledby="title desc">
   <title id="title">Frontier Models — five current references</title>
-  <desc id="desc">GPT-6.1 Sol, GPT-6 Astra, Grok 4.7 Solar, Fable 5.1, Gemini 4 Argon. These are archived projects, not all scored or prompt-equivalent.</desc>
+  <desc id="desc">GPT-6.1 Sol, GPT-6 Astra, Grok 4.7 Solar, Fable 5.1, Gemini 4 Argon. These are archived or pinned projects; their generating prompts may differ.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070b1b"/><stop offset=".55" stop-color="#11133b"/><stop offset="1" stop-color="#061d2e"/></linearGradient>
     <radialGradient id="sun"><stop stop-color="#fff5bd"/><stop offset=".45" stop-color="#ffb84d"/><stop offset="1" stop-color="#ff6b3d" stop-opacity=".14"/></radialGradient>
@@ -49,6 +49,6 @@
       <text x="17" y="25" font-size="12" fill="#38bdf8" letter-spacing=".6">CURRENT REFERENCE</text>
       <text x="17" y="51" font-size="18" font-weight="700" fill="#f8fafc">Gemini 4 Argon</text>
     </g>
-    <text x="76" y="478" font-size="15" fill="#91a4c8">Five current references · scores pending where not independently evaluated</text>
+    <text x="76" y="478" font-size="15" fill="#91a4c8">Five current references · inspect the preserved source and provenance</text>
   </g>
 </svg>

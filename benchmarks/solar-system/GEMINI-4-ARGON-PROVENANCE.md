@@ -8,6 +8,5 @@ Model: **Gemini 4 Argon**. Complete snapshot: [`runs/gemini-4-argon/source`](./r
 - Full tracked source files, including tracked build artifacts, preserved unchanged; no `.git` directory.
 - File integrity: [`GEMINI-4-ARGON-FILES.json`](./GEMINI-4-ARGON-FILES.json), SHA-256 per file.
 - Exact generating prompt: **not verified**. Frontier V2 prompt equivalence not asserted.
-- Benchmark score: **pending**, never counted as zero.
 
-Evaluator metadata is outside the immutable source snapshot. Gemini 3.8 Flash remains archived separately with its existing source pin and live URL.
+Archive metadata is outside the immutable source snapshot. Gemini 3.8 Flash remains archived separately with its existing source pin and live URL.

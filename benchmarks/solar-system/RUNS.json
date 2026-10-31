@@ -68,7 +68,7 @@
       "status": "imported",
       "arena_visibility": "current",
       "live_url": "https://gpt-6.1-sol.biel.dev.br/",
-      "notes": "Source project archived byte-for-byte from the pinned Git commit. The exact generating prompt has not been independently verified or archived, and no comparable score has been assigned.",
+      "notes": "Source project archived byte-for-byte from the pinned Git commit. The exact generating prompt has not been independently verified or archived.",
       "legacy_source_repository": "bielxdh3/6.1gptsol",
       "archive_status": "self-contained"
     },
@@ -85,7 +85,7 @@
       "status": "imported",
       "arena_visibility": "non-frontier-or-archived",
       "live_url": "https://grok-4-6-solar-system.vercel.app",
-      "notes": "Grok 4.6 is preserved as a scored historical reference outside the current arena; the supplied ZIP provenance remains unchanged.",
+      "notes": "Grok 4.6 is preserved as a historical reference outside the current arena; the supplied ZIP provenance remains unchanged.",
       "archive_status": "self-contained"
     },
     {
@@ -98,7 +98,7 @@
       "status": "source-pinned",
       "arena_visibility": "current",
       "live_url": null,
-      "notes": "Public source repository snapshot imported from JouberthAlves/grok-4.7-solar. The source commit is pinned, but prompt provenance and a benchmark score are not archived yet.",
+      "notes": "Public source repository snapshot imported from JouberthAlves/grok-4.7-solar. The source commit is pinned; the exact generating prompt is not archived.",
       "legacy_source_repository": "JouberthAlves/grok-4.7-solar",
       "archive_status": "self-contained"
     },
@@ -126,7 +126,7 @@
       "status": "imported",
       "arena_visibility": "current",
       "live_url": "https://gemini-4-argon.biel.dev.br/",
-      "notes": "Byte-identical archived source from pinned git commit. The exact generating prompt has not been independently verified; comparative score is pending.",
+      "notes": "Byte-identical archived source from pinned git commit. The exact generating prompt has not been independently verified.",
       "legacy_source_repository": "bielxdh3/gemini-argon",
       "archive_status": "self-contained"
     },
@@ -140,7 +140,7 @@
       "status": "source-pinned",
       "arena_visibility": "non-frontier-or-outdated",
       "live_url": "https://gemini-3.8-flash.biel.dev.br",
-      "notes": "Former current reference archived as an unscored historical Frontier V2 run, superseded in the current arena by Gemini 4 Argon. Original source commit, prompt provenance, URL, and source-pinned status are retained; a full source snapshot is not present here.",
+      "notes": "Former current reference archived as a historical Frontier V2 run, superseded in the current arena by Gemini 4 Argon. Original source commit, prompt provenance, URL, and source-pinned status are retained; a full source snapshot is not present here.",
       "legacy_source_repository": "bielxdh3/gemini",
       "archive_status": "source-repository-pinned"
     },
