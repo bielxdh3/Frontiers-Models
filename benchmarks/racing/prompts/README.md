@@ -8,4 +8,6 @@ Benchmark prompts are immutable inputs. Preserve each version byte-for-byte once
 
 Original supplied filename: `Racing-bench-v2.6-prompt.md`.
 
+**Execution rule:** Every new Racing-bench V2.6 run must receive both the exact prompt above and the [Mandatory Execution Addendum](../EXECUTION-ADDENDUM.md) together. The addendum authorizes only the use of operational browser/build/debug/test skills and tools for the assigned project and does not modify the immutable prompt. Record in the run's provenance whether the addendum was provided at the beginning or introduced mid-run.
+
 Run source files belong under a separately documented run/archive path only after their origin and prompt association can be verified. Earlier draft prompts and review handoffs have not been published here.

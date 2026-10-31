@@ -16,7 +16,7 @@
 
 [Abrir Orbitarium-bench](./benchmarks/solar-system/) · [Metodologia](./docs/METHODOLOGY.md)
 
-[Racing-bench — prompt de implementação V2.6](./benchmarks/racing/)
+[Racing-bench — prompt V2.6 + adendo obrigatório de execução](./benchmarks/racing/)
 
 </div>
 
@@ -94,7 +94,7 @@ O caminho histórico `benchmarks/solar-system/` permanece inalterado para preser
 
 ## Benchmark 002 — Racing-bench
 
-O [Racing-bench](./benchmarks/racing/) é um benchmark independente de criação de um jogo de corrida arcade cinematográfico. O [prompt oficial V2.6](./benchmarks/racing/prompts/racing-v2.6.md) está arquivado com hash SHA-256. Ainda não há nenhuma execução concluída arquivada; trabalhos em andamento não são apresentados como resultados prontos.
+O [Racing-bench](./benchmarks/racing/) é um benchmark independente de criação de um jogo de corrida arcade cinematográfico. **Toda execução deve receber o [prompt oficial V2.6](./benchmarks/racing/prompts/racing-v2.6.md) junto com o [adendo obrigatório sobre skills e ferramentas](./benchmarks/racing/EXECUTION-ADDENDUM.md).** Os dois são registrados separadamente para preservar a proveniência. Ainda não há nenhuma execução concluída arquivada; trabalhos em andamento não são apresentados como resultados prontos.
 
 ## Proveniência das execuções
 

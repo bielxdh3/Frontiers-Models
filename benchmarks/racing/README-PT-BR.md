@@ -4,9 +4,19 @@
 
 O prompt oficial para implementação é o [Racing-bench V2.6](./prompts/racing-v2.6.md). Ele descreve uma experiência 3D original e completa para execução independente em um espaço de trabalho isolado. Os requisitos e as permissões estão no próprio prompt.
 
+## Obrigatório em toda execução
+
+**Sempre envie os DOIS documentos juntos** ao modelo quando iniciar uma execução do Racing-bench:
+
+1. [Racing-bench V2.6 — prompt de implementação](./prompts/racing-v2.6.md)
+2. [Adendo obrigatório de execução — esclarecimento sobre skills/ferramentas](./EXECUTION-ADDENDUM.md)
+
+O adendo autoriza skills e ferramentas operacionais de navegador, build, depuração e teste **do próprio projeto**, sem liberar consultas a outros projetos, arquivos privados, soluções externas ou outros agentes. Não inicie a V2.6 usando apenas o prompt. Para execuções já iniciadas, envie a mesma nota a todos os participantes e registre que foi fornecida durante a execução.
+
 ## Estado do arquivo
 
 - **Prompt:** V2.6, preservado integralmente com SHA-256 registrado no [arquivo de prompts](./prompts/README.md).
+- **Complemento:** [Adendo obrigatório de execução](./EXECUTION-ADDENDUM.md), registrado separadamente para manter intactos o prompt original e seu hash.
 - **Execuções:** nenhuma execução concluída com proveniência verificável foi arquivada ainda. O fato de um participante estar desenvolvendo não comprova conclusão.
 - **Registro:** o [RUNS.json](./RUNS.json) registra o prompt oficial e mantém vazia a lista de execuções arquivadas.
 

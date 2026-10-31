@@ -11,5 +11,12 @@
       "source_filename": "Racing-bench-v2.6-prompt.md"
     }
   },
+  "execution_addendum": {
+    "path": "EXECUTION-ADDENDUM.md",
+    "required_with": "racing-v2.6",
+    "sha256": "d9ee0d83857b2e51203647c3f040098b19c01246a4c7600a589415a1f5da2f5e",
+    "bytes": 3994,
+    "lines": 27
+  },
   "runs": []
 }
