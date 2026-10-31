@@ -1,0 +1,11 @@
+{
+  "method": "visible Chrome through Playwright CLI; development harness storage only",
+  "scale125": [1800, 1125],
+  "fullscreenEnteredAndExited": true,
+  "backgroundTabProbe": { "hidden": false, "status": "racing", "nativeHiddenTabSuspensionVerified": false },
+  "gridCars": 6,
+  "gridStatus": "countdown",
+  "terminalAudio": { "active": true, "state": "running", "voices": 1 },
+  "isolatedStoragePurged": true,
+  "note": "Audio graph observed; audible balance was not assessed by ear. Full browser journey evidence is in browser-report.json."
+}

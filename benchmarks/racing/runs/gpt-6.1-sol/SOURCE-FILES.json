@@ -1,0 +1,592 @@
+{
+  "format": "git-blob-byte-exact-v1",
+  "model": "GPT-6.1 Sol",
+  "source_repository": "https://github.com/bielxdh3/6.1-sol",
+  "source_branch": "main",
+  "source_commit": "6f552636699e2db0d567cf207a91464be66c783f",
+  "source_tree": "0402026c12bc4247bdebfdb24f5e225c59707967",
+  "snapshot_root": "source/",
+  "file_count": 82,
+  "total_bytes": 26148711,
+  "repository_bundle": {
+    "path": "SOURCE-REPOSITORY.bundle",
+    "bytes": 24797372,
+    "sha256": "a7d205fa1e417c9f2c495a8e69295fa038985abb6e4c78cd5d18d943a4b02b72"
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "git_blob_sha1": "2fe862123d4a865bbfe89dbab38c4d2cbd9d45ce",
+      "sha256": "cf0eee24273e7e05bef8fbd59f2b9ca4a56b72df377d49df87ea639d3ae433c6",
+      "bytes": 4018
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "mode": "100644",
+      "git_blob_sha1": "13959df1dbffc505ded5cc656f592d7bf148561f",
+      "sha256": "e614ff3a7b812fc7b6bd25d361f3da7efb2ee433b7f7801e57d4cf69a24b69d5",
+      "bytes": 1907
+    },
+    {
+      "path": "dist/assets/index-DMb5-mXx.js",
+      "mode": "100644",
+      "git_blob_sha1": "f4321c75ccbe96ab7985c8238e7e89c52503b72b",
+      "sha256": "24c3448bf84189896462e06b319aa0323686b5a24b2b38b8bef28fdbcb6bc9af",
+      "bytes": 648601
+    },
+    {
+      "path": "dist/assets/index-Trh8OJFE.css",
+      "mode": "100644",
+      "git_blob_sha1": "dd6e8daa0401f2e3cb0dbdfa7ec3372dcfffe94e",
+      "sha256": "c4a422b6abfc943f297d69377a0efcac295a1b8b98ccefb31cf93a566120b0f4",
+      "bytes": 29822
+    },
+    {
+      "path": "dist/index.html",
+      "mode": "100644",
+      "git_blob_sha1": "be78a1d38ea3041a582d1fb0e8e5ceb4b24024e2",
+      "sha256": "ab552c0a251e118e17baf6ac7205d09b199f6dbf859467a4a6d599191e5bffc6",
+      "bytes": 1220
+    },
+    {
+      "path": "dist/licenses/playwright-test-tool.txt",
+      "mode": "100644",
+      "git_blob_sha1": "df112373eb2e23e459bf93ec412be1764dc5a38b",
+      "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb",
+      "bytes": 11601
+    },
+    {
+      "path": "dist/licenses/three-MIT.txt",
+      "mode": "100644",
+      "git_blob_sha1": "8ada2a5f982916b0ba4b7a0aa7de347587e745d7",
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "bytes": 1081
+    },
+    {
+      "path": "dist/licenses/vite-build-tool.txt",
+      "mode": "100644",
+      "git_blob_sha1": "06481aa9d21aa40e438c0d263dc9df80eaaad717",
+      "sha256": "a22152baa1aef74402443008e767e7c689a524c0909d19b0431d97f5ab066a13",
+      "bytes": 98196
+    },
+    {
+      "path": "docs/replay-format.md",
+      "mode": "100644",
+      "git_blob_sha1": "1503e0b2ce9e69c479a8f3dd5fd7dd1451090398",
+      "sha256": "d398c296bc8cdda7c484866b7cf7d7be319176c1776230bf51d8bcdd5cb2be0d",
+      "bytes": 2202
+    },
+    {
+      "path": "docs/verification.md",
+      "mode": "100644",
+      "git_blob_sha1": "43a49d2a5f47d1457aaad8654f6ecab8f50ad3c3",
+      "sha256": "56c23a49ff80d6e5c943839314fbe2a8eb75dec432e1fe7e6bc1f96800569dfc",
+      "bytes": 11030
+    },
+    {
+      "path": "index.html",
+      "mode": "100644",
+      "git_blob_sha1": "615ed215d0df2bc9e0d9505ab1708c7f9f44e2d9",
+      "sha256": "bcd495c0ae7b161ed7666f8ea1e5d52ca4c34a4ff9a6830ff5f3a995763fb210",
+      "bytes": 1121
+    },
+    {
+      "path": "output/playwright/audio-green.json",
+      "mode": "100644",
+      "git_blob_sha1": "5953150254fb02d931279255198b217e4afe27fe",
+      "sha256": "7705dc393fb93d72965383027527f2b7a8c2427d11ba858fe9ce2b5753c9804e",
+      "bytes": 105
+    },
+    {
+      "path": "output/playwright/audio-red.json",
+      "mode": "100644",
+      "git_blob_sha1": "e181563532a94f280b5c698a4c44908df6d377e6",
+      "sha256": "9f0f892a51829b21b3d60e617fb3c4ce7c841d5f5080e5c9ee3a30f1aeb71dd8",
+      "bytes": 105
+    },
+    {
+      "path": "output/playwright/browser-report.json",
+      "mode": "100644",
+      "git_blob_sha1": "e715b61e0ccb8a884f86cd49f88178361c27582a",
+      "sha256": "d8a948f48931bbfe2197542f2ddf0815322407994f8dc416196ec3abc709a59a",
+      "bytes": 7939
+    },
+    {
+      "path": "output/playwright/checkpoint-run.png",
+      "mode": "100644",
+      "git_blob_sha1": "076183e8629abbabfef1aeaad15d1e1d9793acb8",
+      "sha256": "4c728af35574369a1ac196779399d692eafa42d5c109e7383cb8f851efc3a855",
+      "bytes": 649106
+    },
+    {
+      "path": "output/playwright/countdown-grid-visible.png",
+      "mode": "100644",
+      "git_blob_sha1": "be555d7945569a06669303d140df538d463aa4dc",
+      "sha256": "0adaefc185f86584b563f36225fdb8a5665895048537c657c4af3e4f6d13df22",
+      "bytes": 824974
+    },
+    {
+      "path": "output/playwright/damage-wet.png",
+      "mode": "100644",
+      "git_blob_sha1": "cfe5e98b79c0cc837ad2ae878044dde73e968e3e",
+      "sha256": "eff54af5173a92749a0ba68c3a60098a929804185048ef622ea2e9e94978e511",
+      "bytes": 456611
+    },
+    {
+      "path": "output/playwright/delivery-check.js",
+      "mode": "100644",
+      "git_blob_sha1": "3c9472daa7b7a22b1fe4a5cd24aaf2bd870f2b3e",
+      "sha256": "3749c00ade20d7f3e22c14d4e96c4d373850c5513ca63bdb7583386fb47d6341",
+      "bytes": 993
+    },
+    {
+      "path": "output/playwright/delivery-menu.png",
+      "mode": "100644",
+      "git_blob_sha1": "eb29a02bb61273eb117df55a89849424f361bfdc",
+      "sha256": "7b12451710373fc9ad8f9b9bf150c5ee1a6d62bf3439ea27c15efe320b1ab75e",
+      "bytes": 840908
+    },
+    {
+      "path": "output/playwright/failure-8.png",
+      "mode": "100644",
+      "git_blob_sha1": "dc7ab41f4cfc01eb5ba2e7b39c7fea9047f5ebc4",
+      "sha256": "379be94e8ad54ad6684fac692a68d6cdfca2306ec98054273b6ba3dcd88da559",
+      "bytes": 159007
+    },
+    {
+      "path": "output/playwright/garage-mistral.png",
+      "mode": "100644",
+      "git_blob_sha1": "3a2b20e00a279a309163c6651d8e2d52c91188cc",
+      "sha256": "cf98c681fbb49029ea7bec3e8b5e0cc4c187a3314f5d72d3f805b29e893e5193",
+      "bytes": 926230
+    },
+    {
+      "path": "output/playwright/garage-solano.png",
+      "mode": "100644",
+      "git_blob_sha1": "ca3f155278003a6dcb118f18218efd9561d2ee8d",
+      "sha256": "65bfa721e28a255624e1179c07c39ca56f45cbee838ac529234d1443214cdc6f",
+      "bytes": 926985
+    },
+    {
+      "path": "output/playwright/garage-tern.png",
+      "mode": "100644",
+      "git_blob_sha1": "733f8a68e391163a2cb3beeddabcd811bb76220b",
+      "sha256": "d06304f1937f6981b093ce4d9cdd24af8a427a665a512f50d49ccd75ca164798",
+      "bytes": 925348
+    },
+    {
+      "path": "output/playwright/harness-trial.solstice",
+      "mode": "100644",
+      "git_blob_sha1": "6c8d823954ada15aca333c4d7a1fd4c620bb6a80",
+      "sha256": "b958ecdc90798cb7a2bc8b62a5d04e57315ee59a6610bc7cf03a1e170cef8117",
+      "bytes": 227929
+    },
+    {
+      "path": "output/playwright/library-full.png",
+      "mode": "100644",
+      "git_blob_sha1": "c0247fc9e422c52da3fa0bcd062eeed3762956a9",
+      "sha256": "cd70e3b45822a02c0bc8aeb825ce6dfc5a53c3917cc6f11a6660424322a51012",
+      "bytes": 190047
+    },
+    {
+      "path": "output/playwright/library-orphan-recovery.png",
+      "mode": "100644",
+      "git_blob_sha1": "fd0e88000501bf249be0df62c0832cc9c048fcfe",
+      "sha256": "243685a6d06a8b0535e0cb06b83849a19a1f2a7b9c8f15b81777dc32c6e44725",
+      "bytes": 174310
+    },
+    {
+      "path": "output/playwright/malformed.solstice",
+      "mode": "100644",
+      "git_blob_sha1": "54f192b02729fa979dcae54aeb08dbd8d116266a",
+      "sha256": "a4e54678ffcc21fb5b8e89f26ad975d3e07e9b282b211fdcf057f4ff49623e83",
+      "bytes": 10
+    },
+    {
+      "path": "output/playwright/menu-desktop.png",
+      "mode": "100644",
+      "git_blob_sha1": "6ba8c790be5f6f1a922596a84f4148a9766d0f96",
+      "sha256": "1cba5f2152d3044db192ae67d2a04ad0a7dd4f4dc89e27269ecca3f71a40058f",
+      "bytes": 841491
+    },
+    {
+      "path": "output/playwright/menu-first.png",
+      "mode": "100644",
+      "git_blob_sha1": "2d8a2f7aa2ce8aa2ccee71cc8805d2758240beb7",
+      "sha256": "4455e0ba8437f10600869dbce970529516ff35488e013def1652502f2e416dc2",
+      "bytes": 729658
+    },
+    {
+      "path": "output/playwright/menu.png",
+      "mode": "100644",
+      "git_blob_sha1": "d435911cc530836f3d3412e68c4f9518eea04f01",
+      "sha256": "da20d8993575822f34ee8fa34132c6682feb8d38d8a24a9b59d475e2560e391f",
+      "bytes": 747282
+    },
+    {
+      "path": "output/playwright/pause-after-context-restore.png",
+      "mode": "100644",
+      "git_blob_sha1": "75a469397f1f9575fa8f9a6c0212280364346090",
+      "sha256": "efd77d9c578d9641dfe32b675bd2e3666101be5731d4d40324f6b41bf12cfd86",
+      "bytes": 240187
+    },
+    {
+      "path": "output/playwright/postcard-studio.png",
+      "mode": "100644",
+      "git_blob_sha1": "010e081aa13b20093b91850c9597c75134636cee",
+      "sha256": "b2d7a8c3b0882722c2b637c4a4a18c85d071004a33bb17619cfc2d06e232eca3",
+      "bytes": 564441
+    },
+    {
+      "path": "output/playwright/postcard.png",
+      "mode": "100644",
+      "git_blob_sha1": "fae5e588bddb4bdeefc113a357d3b19e4c7aa4c2",
+      "sha256": "67e41ad28edfda31b12df574bcc9b75276449c51ccbf989925ffbcc6a9850e0f",
+      "bytes": 1281412
+    },
+    {
+      "path": "output/playwright/production-countdown-grid.png",
+      "mode": "100644",
+      "git_blob_sha1": "fd51281f98e1fc2a7f063e11428a493215d288a7",
+      "sha256": "6e390aedda40f40355946bed70d3223044999dfffa8dce1f329793c1046e5319",
+      "bytes": 823966
+    },
+    {
+      "path": "output/playwright/production-static-driving.png",
+      "mode": "100644",
+      "git_blob_sha1": "9bd647b7935e8b48253db79ef0455062e2f216b1",
+      "sha256": "ac6c631075aac67abc9586d2426aad7b0dd7740ac0c9b440aa0e8e68756f3b15",
+      "bytes": 497199
+    },
+    {
+      "path": "output/playwright/production-static-replay.png",
+      "mode": "100644",
+      "git_blob_sha1": "0e68ab87129cbe67c23caf9c59aa93aeffd759de",
+      "sha256": "a98142f0454ce7be65867123e7537a95879bb6fcc704bbe4d0d1c1eb38e39dd6",
+      "bytes": 456350
+    },
+    {
+      "path": "output/playwright/race-drift.png",
+      "mode": "100644",
+      "git_blob_sha1": "5bd6a04814263ecd5d6ec00e495328f2c888db94",
+      "sha256": "d4bb4bf87bd582b3149c13ce4a4815f6d00f74a142049c73e594e8a0744e8364",
+      "bytes": 603721
+    },
+    {
+      "path": "output/playwright/race-easy.png",
+      "mode": "100644",
+      "git_blob_sha1": "421ccf895213cbd82392e90fba2733b570058937",
+      "sha256": "fefdba95e5b9f1ecb254ec39cce18bd0609956ff28616b5580073481634e92f1",
+      "bytes": 638160
+    },
+    {
+      "path": "output/playwright/race-hard.png",
+      "mode": "100644",
+      "git_blob_sha1": "a8541a4dea2d58c6862b850a2cd0072e1b9a327f",
+      "sha256": "a43da476a234d7df96aac0c9ae535efa6e37d8dcbfddbb419e20e87bd302b488",
+      "bytes": 562487
+    },
+    {
+      "path": "output/playwright/race-narrow.png",
+      "mode": "100644",
+      "git_blob_sha1": "3255a0dd1ff5843c35bfab2797cff05672d7e97c",
+      "sha256": "365c1a6c36ea7f3c075e79be51e5125de87b01200e7f44edc3d6cf80d5b3c775",
+      "bytes": 231382
+    },
+    {
+      "path": "output/playwright/race-night-grid.png",
+      "mode": "100644",
+      "git_blob_sha1": "9d2ad6d2cd459fd9e40ed9042e76b3f550a59ec3",
+      "sha256": "26ddba91142ef0ec47046c1d78dfa9895d1e79970251b365ef7fc724c1b97d8e",
+      "bytes": 531911
+    },
+    {
+      "path": "output/playwright/race-normal.png",
+      "mode": "100644",
+      "git_blob_sha1": "9e21ffe7f0d53c0d01cef0956a57dc443685a2d5",
+      "sha256": "9eb2c74a9e677b499c11a137452896d90ff6a4336fe6345ef40f2bb703771e4c",
+      "bytes": 494345
+    },
+    {
+      "path": "output/playwright/rain-night-loaded.png",
+      "mode": "100644",
+      "git_blob_sha1": "17f6e7e26a5a46fe30a5025494611b8b7fbf170f",
+      "sha256": "a8c4409ba614f3f35846cc82acf6dee266d383c7521bbf6b1deb0ea7385a8204",
+      "bytes": 330904
+    },
+    {
+      "path": "output/playwright/replay-aerial-event.png",
+      "mode": "100644",
+      "git_blob_sha1": "5cf7cabf8516d992000d7721924426f57bca63e7",
+      "sha256": "34e0a726ac6019fe2b907a22ae9c45924d53419e9cd8300a57550f1de09fa0e6",
+      "bytes": 521569
+    },
+    {
+      "path": "output/playwright/replay-aerial.png",
+      "mode": "100644",
+      "git_blob_sha1": "be46875f7fb1f7fc5bb39ab6d69540f0dffe2942",
+      "sha256": "6a0d5605d03107684c0220d89d8ac71cfb030846c791a3b557652349847b2b12",
+      "bytes": 558013
+    },
+    {
+      "path": "output/playwright/replay-after-refresh.png",
+      "mode": "100644",
+      "git_blob_sha1": "380cb882ae8df13046397707cdc0732abc19bdf5",
+      "sha256": "0611f7b87a84305a3ab4c02062653e2f7fb8d4f4c6d877b727790d6c36412676",
+      "bytes": 489640
+    },
+    {
+      "path": "output/playwright/replay-chase-event.png",
+      "mode": "100644",
+      "git_blob_sha1": "b3ff4d7ac5ba2d9fb70287963200c04933a45497",
+      "sha256": "b59bf399d2646db82eba1d92d74ef0754a81e8bcfd239e359e4cf4b32eedf82f",
+      "bytes": 429761
+    },
+    {
+      "path": "output/playwright/replay-trackside-event.png",
+      "mode": "100644",
+      "git_blob_sha1": "69f0fe70099dcc68322aa612583ad3ff05a9e9fc",
+      "sha256": "baa935a07778c44d40431810f20f4d7ddec59b1342a77023a7f509f549a96d07",
+      "bytes": 380775
+    },
+    {
+      "path": "output/playwright/replay-trial.png",
+      "mode": "100644",
+      "git_blob_sha1": "3eaec51ef82528b958b265ed0c5a25ddd9f20928",
+      "sha256": "f1fae0649b55c8223bbdc80e5c1a2164c9915ee2e81db37b84ccee7aea63ac44",
+      "bytes": 568346
+    },
+    {
+      "path": "output/playwright/results-race.png",
+      "mode": "100644",
+      "git_blob_sha1": "8f90dc49ab7407a2a609a23e6cb138c3db7d1071",
+      "sha256": "e22adf10a9c8e24124d3d94d6c1112d066700f99c6c15a10e9cafed5b85ce36c",
+      "bytes": 906566
+    },
+    {
+      "path": "output/playwright/results-rush.png",
+      "mode": "100644",
+      "git_blob_sha1": "76e24747cb92b4062b1dc6b8bd255368b6717bb0",
+      "sha256": "51ed49984892a099d1a9a88f6078e67873f4444d3893b116e23bbc5b35134803",
+      "bytes": 842018
+    },
+    {
+      "path": "output/playwright/results-timeout.png",
+      "mode": "100644",
+      "git_blob_sha1": "cfac15e762995e87aa421e7312a2007efef7f6a3",
+      "sha256": "66aab872ddcd482048512d2fa1a60feaa5de8c9294ecbf9f9df0deb5423d8561",
+      "bytes": 882733
+    },
+    {
+      "path": "output/playwright/results-trial.png",
+      "mode": "100644",
+      "git_blob_sha1": "79357c4a79ac1e46f29650ac08dfc94726cf9ed7",
+      "sha256": "b60474550a12eeb79f373d9a6401eea209e54de70b675c249cbbdf7ce3d9fba4",
+      "bytes": 872673
+    },
+    {
+      "path": "output/playwright/settings-narrow.png",
+      "mode": "100644",
+      "git_blob_sha1": "9a8d2e1c56680993659a31acf954174baf965341",
+      "sha256": "1c256815c81581ad3c2a79f7656e4a29cb519ffe1fae2605526f4617a6581dc2",
+      "bytes": 64727
+    },
+    {
+      "path": "output/playwright/settings.png",
+      "mode": "100644",
+      "git_blob_sha1": "cedaffd91ce12197bcf0d40c3ce78630db32e4a7",
+      "sha256": "dc5c5901e4666246c66e28bd08ecb1048cfecf2948b72db4da012ee160f28dfb",
+      "bytes": 174533
+    },
+    {
+      "path": "output/playwright/setup.png",
+      "mode": "100644",
+      "git_blob_sha1": "907db173d07a7c625a62caae2c6d885dc8fd6341",
+      "sha256": "fb870eb7bd2c0963438c8f8ea7922393e638f0d961e71291b0445c3297e7545e",
+      "bytes": 938172
+    },
+    {
+      "path": "output/playwright/targeted-final-check.js",
+      "mode": "100644",
+      "git_blob_sha1": "7a69b2d53798fd1e408eac988437f3157c955b26",
+      "sha256": "969b6779fd4073d996ab6be3ea7ae4b820a00c3f1bab5116d2eebc6dff8c0e90",
+      "bytes": 1945
+    },
+    {
+      "path": "output/playwright/targeted-report.json",
+      "mode": "100644",
+      "git_blob_sha1": "a74b1e92459f297e15c65a7a56127fc8ebbd85ed",
+      "sha256": "214732fd6dbdca41506bb4206c790c52801a5a90547d90409650e92d17b03fdc",
+      "bytes": 549
+    },
+    {
+      "path": "output/playwright/untrusted-import.solstice",
+      "mode": "100644",
+      "git_blob_sha1": "a7dd96db867c325a757279cbf6b484a3b2b0bfbd",
+      "sha256": "58db5f6e07c8d55590f8ee913ecb520f5ed081e3d32c25ecc1ee8da7a0e5b80f",
+      "bytes": 227934
+    },
+    {
+      "path": "output/playwright/viaduct-visible.png",
+      "mode": "100644",
+      "git_blob_sha1": "2beec6ae4a587ccea4e86140973fe65ce6ac3d26",
+      "sha256": "3559d7abe7d8c7baab04dc3de89163e16e33de2252bcc20ec85fab2a280e0a61",
+      "bytes": 630491
+    },
+    {
+      "path": "output/playwright/village-visible.png",
+      "mode": "100644",
+      "git_blob_sha1": "6a6a54793225232eadf803d51fcf451cccc1e96c",
+      "sha256": "03ef41829a518243c763ca2cb79a49bca5b70bec6625e42f4c851d6dac537256",
+      "bytes": 605790
+    },
+    {
+      "path": "output/playwright/visual-check.js",
+      "mode": "100644",
+      "git_blob_sha1": "8124a95f1bbcf5b60289c57d0bde46ab91ecaab4",
+      "sha256": "3f62bd77649cce0e7b6f391978a5ff7b6a11b04d881159529a724270f30ec812",
+      "bytes": 2078
+    },
+    {
+      "path": "package-lock.json",
+      "mode": "100644",
+      "git_blob_sha1": "f5a6b59d42dba20e6be4262ed502f83b0524b8f3",
+      "sha256": "1fcd8873f92b7e4afae9715752c8633d569136d1a47a998eb9d74a160f439388",
+      "bytes": 27423
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "git_blob_sha1": "3ba46ab63918712426b6670f5550eccfb82be8f3",
+      "sha256": "4ebd3b7912147820f555ddf315f726a54ef8fe7f8957592689ab4820b70eb8fd",
+      "bytes": 556
+    },
+    {
+      "path": "public/licenses/playwright-test-tool.txt",
+      "mode": "100644",
+      "git_blob_sha1": "df112373eb2e23e459bf93ec412be1764dc5a38b",
+      "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb",
+      "bytes": 11601
+    },
+    {
+      "path": "public/licenses/three-MIT.txt",
+      "mode": "100644",
+      "git_blob_sha1": "8ada2a5f982916b0ba4b7a0aa7de347587e745d7",
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "bytes": 1081
+    },
+    {
+      "path": "public/licenses/vite-build-tool.txt",
+      "mode": "100644",
+      "git_blob_sha1": "06481aa9d21aa40e438c0d263dc9df80eaaad717",
+      "sha256": "a22152baa1aef74402443008e767e7c689a524c0909d19b0431d97f5ab066a13",
+      "bytes": 98196
+    },
+    {
+      "path": "scripts/audio-resilience-check.mjs",
+      "mode": "100644",
+      "git_blob_sha1": "d9353109f7bed460d25f7e595c188a5d8fd65d37",
+      "sha256": "468de0c4729584d20f5a88dd473174e46c2647e54e249829149df360d8806605",
+      "bytes": 1137
+    },
+    {
+      "path": "scripts/browser-check.mjs",
+      "mode": "100644",
+      "git_blob_sha1": "9e6e10657b343da43b134edbfcde3a3806a0fc21",
+      "sha256": "d68d5eb0e0274e160e690391c50442141e6494be4fd9052126b0be78e468268b",
+      "bytes": 22762
+    },
+    {
+      "path": "scripts/static-server.mjs",
+      "mode": "100644",
+      "git_blob_sha1": "a4bd4fa00be95d5b1721e639c4c6dd90956b0cae",
+      "sha256": "0876edf1f2373f6231f7baf53c43f56d7bc57ee988d510879b5c7a97caa1a404",
+      "bytes": 1173
+    },
+    {
+      "path": "src/audio.js",
+      "mode": "100644",
+      "git_blob_sha1": "6743dd383d655c9aec85041c93eb028a015a2cb8",
+      "sha256": "6ae76711012948800a5a324be97e7c44ba823f7af048949e9b006de10a168ea1",
+      "bytes": 4099
+    },
+    {
+      "path": "src/catalog.js",
+      "mode": "100644",
+      "git_blob_sha1": "9190aad87ebe40916efe7b9f0edc58f2d8b99a67",
+      "sha256": "2c14ad9b252f41e7e232d72a467de4aea835c5f31b2aab0642d81468e409e9e0",
+      "bytes": 4490
+    },
+    {
+      "path": "src/dev-harness.js",
+      "mode": "100644",
+      "git_blob_sha1": "3f1df12d76aa9b6d0a097a9f71d82eb080d5d8f9",
+      "sha256": "d3e4ed187c08141ea0d5640d7390ff140de609836d16f6eab7f53ec6d450af1a",
+      "bytes": 5270
+    },
+    {
+      "path": "src/main.js",
+      "mode": "100644",
+      "git_blob_sha1": "f50c103200940f701b715c1e94d39e8e8fed2cbf",
+      "sha256": "c9f799acb082902bb395ca15bb62e67d57082191b77f25d08d3a460fbc5891e9",
+      "bytes": 52341
+    },
+    {
+      "path": "src/math.js",
+      "mode": "100644",
+      "git_blob_sha1": "178e0ed0912426c157edf534f19e5cd8df12137d",
+      "sha256": "c2e18c9a2c628feb1b8c7d97181a09ccdaa09657fae50a77d225f50344724e2f",
+      "bytes": 2894
+    },
+    {
+      "path": "src/render.js",
+      "mode": "100644",
+      "git_blob_sha1": "7914266aee15044f9c0e886d67bc723bd4d174e8",
+      "sha256": "1bccae30254f21d0568dc9fbb5d6e856a23c450f3cc26ed4979a89e503084fda",
+      "bytes": 38621
+    },
+    {
+      "path": "src/replay.js",
+      "mode": "100644",
+      "git_blob_sha1": "9309a684d2e4e6048652bce62aedbc5ef83b2373",
+      "sha256": "de89497f7441a1e88422db6b5e39aaa8927372bcbc2db23089da2d9b74095323",
+      "bytes": 6517
+    },
+    {
+      "path": "src/sim.js",
+      "mode": "100644",
+      "git_blob_sha1": "c33ff4d851315849edfa4fc3a03c562d69742770",
+      "sha256": "4de717efd022a7e5ef2784a043159b2bd36e1fa959308970c44f54c2f2e8b6d0",
+      "bytes": 18545
+    },
+    {
+      "path": "src/storage.js",
+      "mode": "100644",
+      "git_blob_sha1": "493b312e5b833724df492c30daa7e1dee30c2fa2",
+      "sha256": "831857b0bfb3aebb339ae28cb651bbf5d225a0f5c29a5d98d2d15b2dac2821a7",
+      "bytes": 10018
+    },
+    {
+      "path": "src/style.css",
+      "mode": "100644",
+      "git_blob_sha1": "25a2453509390d3d3ba28d62c05e591d7a26ede1",
+      "sha256": "e368f418b837ede45ddfe3978cd0ae21dbf50156711869f06b2d71b371599769",
+      "bytes": 29935
+    },
+    {
+      "path": "tests/replay-storage.test.js",
+      "mode": "100644",
+      "git_blob_sha1": "9d811bb144e920cad707b2a79626bc566bd93163",
+      "sha256": "a8e0f72a867246b9b0ad79ddb2ca1a81ae80d0ea7010f6428f2c1b366c31041e",
+      "bytes": 8483
+    },
+    {
+      "path": "tests/simulation.test.js",
+      "mode": "100644",
+      "git_blob_sha1": "c54077f2535e3907b1b02f5dac147ac4fc04d6ef",
+      "sha256": "610ee775ae80d700929884d34410ddb054b5946ac56dab6a730f9d5b5af85ff2",
+      "bytes": 8954
+    }
+  ]
+}

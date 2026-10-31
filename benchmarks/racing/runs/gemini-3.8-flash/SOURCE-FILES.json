@@ -1,0 +1,284 @@
+{
+  "format": "git-blob-byte-exact-v1",
+  "model": "Gemini 3.8 Flash",
+  "source_repository": "https://github.com/bielxdh3/gemini-3.8-flash",
+  "source_branch": "main",
+  "source_commit": "a18fcaee717b71969691ffc5e8cfb2901aea054e",
+  "source_tree": "29d41e12bff2e5e92dcfb3ca5e8db2c0629f119e",
+  "snapshot_root": "source/",
+  "file_count": 38,
+  "total_bytes": 304424,
+  "repository_bundle": {
+    "path": "SOURCE-REPOSITORY.bundle",
+    "bytes": 86467,
+    "sha256": "dc5aa046f0b99643f876a7b7efc305342948bb8de8dcb8f3738ec479c23e1e8a"
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "git_blob_sha1": "69ec6aa2afbfecb4a41879d925c60fa062f20b57",
+      "sha256": "8b0734c16fb58de1fbec057bb79171577f42eb2fdc1bd002a364c5fe25e325f9",
+      "bytes": 53
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "git_blob_sha1": "1432e2fa28f890853403a58efd9f889561ae7f1d",
+      "sha256": "5f9b6a425fcd317acaa01f257ad953f348628f340f248548db344a0398b71089",
+      "bytes": 5169
+    },
+    {
+      "path": "docs/SIGNATURE_FEATURE.md",
+      "mode": "100644",
+      "git_blob_sha1": "a7203b17c24a0c772736f25481c1927b1d63e8fd",
+      "sha256": "80a537bce973cd7b2d890b1547f0b04503bc416b8a4e1350d444a7e3ef5c483f",
+      "bytes": 2113
+    },
+    {
+      "path": "e2e/game.spec.ts",
+      "mode": "100644",
+      "git_blob_sha1": "c6128bae75778a3dc01bd86e2ee444affb4e703a",
+      "sha256": "d43f957bb1f48635e31dbf1fc24e2c8768dba16d2c9b0e3dea1d351ccc03d1e1",
+      "bytes": 11038
+    },
+    {
+      "path": "index.html",
+      "mode": "100644",
+      "git_blob_sha1": "4889dc272cb16fc6749a503abb81a45cb2fcd32a",
+      "sha256": "a235f2ee402941badb01d5ddfc8d98470f914df84f631fcabf473376928354c4",
+      "bytes": 418
+    },
+    {
+      "path": "package-lock.json",
+      "mode": "100644",
+      "git_blob_sha1": "0d20fdcc5a65af73a926ddeec7befe1c199aa8e2",
+      "sha256": "821a36fbf5d4f1cb6e13abe88b20b63d6a21829aff96e44d9b5c3b8432975c9d",
+      "bytes": 55873
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "git_blob_sha1": "363fac44d5fd39a00453c255610ed1a8bb6870bf",
+      "sha256": "886f3acd6ee624ce105d1f98bfeecb5aa07b3f610268d95f46e3b5852fe3f497",
+      "bytes": 582
+    },
+    {
+      "path": "playwright.config.ts",
+      "mode": "100644",
+      "git_blob_sha1": "7982540bd5f53b68cd79d52a439032d0cb49b6ae",
+      "sha256": "489b8bb7811b199eb89e1a9cb6388252f762eb49aca76f6c480c5e482bf6ef8b",
+      "bytes": 511
+    },
+    {
+      "path": "src/core/AudioManager.ts",
+      "mode": "100644",
+      "git_blob_sha1": "8cd2e6c7622b96792edc9199ae0631fdc16bd098",
+      "sha256": "e100d70d10daf5a912ba377126b6fd16c5cf2dde175bb3227d98c9bd94b62c81",
+      "bytes": 11499
+    },
+    {
+      "path": "src/core/InputManager.ts",
+      "mode": "100644",
+      "git_blob_sha1": "4b317b53104ee4631576f6b5596a43eca9141a9e",
+      "sha256": "0428fd50f9add64ee547ba751302c57f39bbcfa19edf5528b795a6641b850ee8",
+      "bytes": 5413
+    },
+    {
+      "path": "src/core/Simulation.ts",
+      "mode": "100644",
+      "git_blob_sha1": "63fd57487d2cab9f82e77d0d0e0328ec30e0b81c",
+      "sha256": "543b08b4f89888a3da08947b55382ab572e0936fe6db7214a9d7b0bc058ff232",
+      "bytes": 1433
+    },
+    {
+      "path": "src/core/StorageManager.ts",
+      "mode": "100644",
+      "git_blob_sha1": "43dfd36876cc5de9bbf2f4ecddde6f6b53f1d67a",
+      "sha256": "970a9fb67412f7e2d449a9534986f200a0d8b3835427286b71224bf677ac7226",
+      "bytes": 12910
+    },
+    {
+      "path": "src/gameplay/AICarController.ts",
+      "mode": "100644",
+      "git_blob_sha1": "4ae1386d4dfb3edab3790f3ad06e46ffd236f436",
+      "sha256": "95c78bdec1f7695a446a06895c68563b4e53f57d652f96b6b610b3cc6a21562e",
+      "bytes": 7539
+    },
+    {
+      "path": "src/gameplay/CarConfigs.ts",
+      "mode": "100644",
+      "git_blob_sha1": "37365438d48994caf9687e9076490a63f719594d",
+      "sha256": "4c9fa68040cae04488d59be16d4b27fbdd29d4ac425a8d9b250127ad4b3a8887",
+      "bytes": 4023
+    },
+    {
+      "path": "src/gameplay/RaceManager.ts",
+      "mode": "100644",
+      "git_blob_sha1": "cdd000d45a9beed322702408c57fe05cf02c3f74",
+      "sha256": "190f7b71f3fde4d47baa41b4a49e56f716f9e552a51d9779f2ef9d8fafb0d2ce",
+      "bytes": 12049
+    },
+    {
+      "path": "src/gameplay/ReplayPlayer.ts",
+      "mode": "100644",
+      "git_blob_sha1": "89cb8f9c4ee63b3a807e2df2730b731b383667ae",
+      "sha256": "e38bf5947521da73d641d4fa0384e3e90056c029ea3a103f8b077d52e35ae1a3",
+      "bytes": 8038
+    },
+    {
+      "path": "src/gameplay/ReplayRecorder.ts",
+      "mode": "100644",
+      "git_blob_sha1": "5b1883aef2159299664484a7015916f4c6a1e41a",
+      "sha256": "e87fca1e2f937f4c7d1f7b69577029516c6333665012b6407902200c5781cb36",
+      "bytes": 3626
+    },
+    {
+      "path": "src/gameplay/Vehicle.ts",
+      "mode": "100644",
+      "git_blob_sha1": "ab66e5b835ef4ca999a818615101a411474ea1db",
+      "sha256": "1af2acdfe597a821a1b8c864b9ce76850d086ddf2af6d8e364ea1c4809dedfd6",
+      "bytes": 13255
+    },
+    {
+      "path": "src/graphics/CarVisuals.ts",
+      "mode": "100644",
+      "git_blob_sha1": "b24768d30361a7eb33539a6fa192706b29a09d36",
+      "sha256": "46bb0cca35dd68d9adbab216c70d82d33b0403e86431e94624f5aed0752a6a2e",
+      "bytes": 9483
+    },
+    {
+      "path": "src/graphics/ChaseCamera.ts",
+      "mode": "100644",
+      "git_blob_sha1": "ef064bec9ef8177dc3d47f06ec70b2f57c2cd0b7",
+      "sha256": "a666bd960925f892d2e902f8cf5a166a9f9757468bee527b403bb3dcb75b2d9a",
+      "bytes": 2593
+    },
+    {
+      "path": "src/graphics/PhotoStudio.ts",
+      "mode": "100644",
+      "git_blob_sha1": "742a4b04aa957387f2cc0cb70812bfadcd15a780",
+      "sha256": "b4356fe05159fa342cbf2b56b513bb89c7843891255114a21faa55929968f3fc",
+      "bytes": 6474
+    },
+    {
+      "path": "src/graphics/Renderer.ts",
+      "mode": "100644",
+      "git_blob_sha1": "3242abb08e6b85e1685c0195ea1159c47193de5d",
+      "sha256": "a07428946511dd4651c442805d82f0b43c3f97a2921d15b576ed6e1820de5c62",
+      "bytes": 1998
+    },
+    {
+      "path": "src/graphics/ReplayCamera.ts",
+      "mode": "100644",
+      "git_blob_sha1": "7e90dfe5fdb227f95edb021f1b929c4a8fd992eb",
+      "sha256": "7a776fa3228e4d1a55c221a07f93e8e95ad2a81bdd21881c0597de6a8a554db9",
+      "bytes": 3242
+    },
+    {
+      "path": "src/main.ts",
+      "mode": "100644",
+      "git_blob_sha1": "9ca79925dfbaf4399f1c53ff3dc02b938fbde13f",
+      "sha256": "b229ad2e1f9690b0f003b45faaa325307ca0eb4e78a5bd2a521b996fa9624f4b",
+      "bytes": 15694
+    },
+    {
+      "path": "src/tests/InputManager.test.ts",
+      "mode": "100644",
+      "git_blob_sha1": "aa26299491cb80a45d625d5cb71a6da787f074ec",
+      "sha256": "cc4423a64e22551189ee0acff694aa8b4a84e8b1d1e5962c922531e5589abefa",
+      "bytes": 2093
+    },
+    {
+      "path": "src/tests/RaceManager.test.ts",
+      "mode": "100644",
+      "git_blob_sha1": "fd07937a8b91097c982a1fce131111bd489034b7",
+      "sha256": "b6b67fec48551917f535b30fded5d90459d1b3753a1c4e52e689d6746b2f920d",
+      "bytes": 4907
+    },
+    {
+      "path": "src/tests/ReplayConsistency.test.ts",
+      "mode": "100644",
+      "git_blob_sha1": "163750c755ba8590b9d3f6a2b6815e7177299795",
+      "sha256": "1daabe56c06baabd5e6347a9151f34510bfa35ab2aa3e44ff5d4c51dccf486fd",
+      "bytes": 3132
+    },
+    {
+      "path": "src/tests/StorageManager.test.ts",
+      "mode": "100644",
+      "git_blob_sha1": "e6970d9976b45f567b0051860f9de09e433c1f31",
+      "sha256": "5ea2a4a5c515f2d3d386a5278ed7a55314883b71e36917278bcc1b2c25021489",
+      "bytes": 4878
+    },
+    {
+      "path": "src/tests/VehicleDynamics.test.ts",
+      "mode": "100644",
+      "git_blob_sha1": "f828a57214a89d6891b0c0c57ebe2641f25a6299",
+      "sha256": "6d14ebb2099756652d10468b5e7e8507402c1df990f4192bf3517239deaad4c5",
+      "bytes": 4041
+    },
+    {
+      "path": "src/ui/UIController.ts",
+      "mode": "100644",
+      "git_blob_sha1": "77be27da09d38299216982d8cdf0b90c151ff04a",
+      "sha256": "919003ac5b75e44fd5dbe2054081878c5dbc95247a9241e71b836838b53a8d05",
+      "bytes": 49866
+    },
+    {
+      "path": "src/ui/styles.css",
+      "mode": "100644",
+      "git_blob_sha1": "6b0ac052fb77fb8fb426dbdd7fe23f574b9af0b1",
+      "sha256": "16ced530c563c35f5f4cf405ab1d6fdc1a390266c6a1feed352bc6f943601313",
+      "bytes": 9207
+    },
+    {
+      "path": "src/world/Environment.ts",
+      "mode": "100644",
+      "git_blob_sha1": "de04f138debdaf5c13637657dc59c17f35c3b14d",
+      "sha256": "5aa9118bf9289842757d7723fd90dc9ac64255cbcd650aed23cacb47734e2fe2",
+      "bytes": 5799
+    },
+    {
+      "path": "src/world/Track.ts",
+      "mode": "100644",
+      "git_blob_sha1": "195e41365cf900f24ed3ce7732d4bba248a9cabc",
+      "sha256": "2cbacfc9d28efd3617edff48301e81eb63b85f967cd50eec07d396e2a1a7a4ed",
+      "bytes": 7098
+    },
+    {
+      "path": "src/world/TrackBuilder.ts",
+      "mode": "100644",
+      "git_blob_sha1": "dce8ff366cf8be56589a42a07d44356e5b27b1d7",
+      "sha256": "0a175d925f89e1d84bc667e7278af47ff2667b67f7de7ca4139a0d532e1aa85c",
+      "bytes": 13142
+    },
+    {
+      "path": "src/world/TrackConfigs.ts",
+      "mode": "100644",
+      "git_blob_sha1": "c6af74c75db99a82aa608fc276c43c95141fe272",
+      "sha256": "6ebadc3fe4a60165d2e00389c88504002c6b531d92e9bf5ffb3d918deab109fb",
+      "bytes": 4327
+    },
+    {
+      "path": "tsconfig.json",
+      "mode": "100644",
+      "git_blob_sha1": "c97908b2e022f376c7927805327df241a3a36914",
+      "sha256": "cd4fd87048ffb7fb5cb7aa8709e89bb6ce4deca76bc00a5ce67c0231116d5f6d",
+      "bytes": 487
+    },
+    {
+      "path": "vite.config.ts",
+      "mode": "100644",
+      "git_blob_sha1": "1dbe9626af2fa919d4248f61a90d626488cfab94",
+      "sha256": "d8d62d5be1e0d993accb15a80e02902afe1dcee7480e4b47ae67b9f53b6077b4",
+      "bytes": 237
+    },
+    {
+      "path": "vitest.config.ts",
+      "mode": "100644",
+      "git_blob_sha1": "9e6714e2f18506e02e1e870ed998885c3193c5bf",
+      "sha256": "cdf45b8468eef35e3dfe99d7a6ee339771694aa4f1b97b57abcd419dbdf5fe2f",
+      "bytes": 184
+    }
+  ]
+}

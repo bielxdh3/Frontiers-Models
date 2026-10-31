@@ -1,0 +1,5 @@
+{
+  "injection": "AudioContext.resume never settles",
+  "raceStarted": true,
+  "expectedBlocked": false
+}

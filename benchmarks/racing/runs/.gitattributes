@@ -1,0 +1,3 @@
+# Byte-exact source snapshots: Git must never normalize line endings or transform blobs.
+**/source/** -text -filter -ident
+**/SOURCE-REPOSITORY.bundle binary

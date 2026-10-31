@@ -94,7 +94,7 @@ O caminho histórico `benchmarks/solar-system/` permanece inalterado para preser
 
 ## Benchmark 002 — Racing-bench
 
-O [Racing-bench](./benchmarks/racing/) é um benchmark independente de criação de um jogo de corrida arcade cinematográfico. **Toda execução deve receber o [prompt oficial V2.6](./benchmarks/racing/prompts/racing-v2.6.md) junto com o [adendo obrigatório sobre skills e ferramentas](./benchmarks/racing/EXECUTION-ADDENDUM.md).** Os dois são registrados separadamente para preservar a proveniência. Ainda não há nenhuma execução concluída arquivada; trabalhos em andamento não são apresentados como resultados prontos.
+O [Racing-bench](./benchmarks/racing/) é um benchmark independente de criação de um jogo de corrida arcade cinematográfico. **Toda execução deve receber o [prompt oficial V2.6](./benchmarks/racing/prompts/racing-v2.6.md) junto com o [adendo obrigatório sobre skills e ferramentas](./benchmarks/racing/EXECUTION-ADDENDUM.md).** Os códigos originais do [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/) e [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) foram arquivados com todos os arquivos rastreados e backups do histórico Git; isso não representa aprovação dos testes de gameplay.
 
 ## Proveniência das execuções
 

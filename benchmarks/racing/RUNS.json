@@ -18,5 +18,44 @@
     "bytes": 3994,
     "lines": 27
   },
-  "runs": []
+  "runs": [
+    {
+      "id": "gpt-6.1-sol",
+      "model": "GPT-6.1 Sol",
+      "source_repository": "https://github.com/bielxdh3/6.1-sol",
+      "source_branch": "main",
+      "source_commit": "6f552636699e2db0d567cf207a91464be66c783f",
+      "source_tree": "0402026c12bc4247bdebfdb24f5e225c59707967",
+      "prompt": "prompts/racing-v2.6.md",
+      "prompt_association": "source-readme-reports-v2.6; original launch not independently verified",
+      "addendum_delivery": "not independently verified",
+      "archive_path": "runs/gpt-6.1-sol/source",
+      "manifest": "runs/gpt-6.1-sol/SOURCE-FILES.json",
+      "provenance": "runs/gpt-6.1-sol/SOURCE-PROVENANCE.md",
+      "git_bundle": "runs/gpt-6.1-sol/SOURCE-REPOSITORY.bundle",
+      "archival_status": "complete-tracked-git-snapshot-and-full-history-bundle",
+      "source_file_count": 82,
+      "source_bytes": 26148711,
+      "gameplay_verification": "not-independently-verified"
+    },
+    {
+      "id": "gemini-3.8-flash",
+      "model": "Gemini 3.8 Flash",
+      "source_repository": "https://github.com/bielxdh3/gemini-3.8-flash",
+      "source_branch": "main",
+      "source_commit": "a18fcaee717b71969691ffc5e8cfb2901aea054e",
+      "source_tree": "29d41e12bff2e5e92dcfb3ca5e8db2c0629f119e",
+      "prompt": "prompts/racing-v2.6.md",
+      "prompt_association": "source-readme-reports-v2.6; original launch not independently verified",
+      "addendum_delivery": "not independently verified",
+      "archive_path": "runs/gemini-3.8-flash/source",
+      "manifest": "runs/gemini-3.8-flash/SOURCE-FILES.json",
+      "provenance": "runs/gemini-3.8-flash/SOURCE-PROVENANCE.md",
+      "git_bundle": "runs/gemini-3.8-flash/SOURCE-REPOSITORY.bundle",
+      "archival_status": "complete-tracked-git-snapshot-and-full-history-bundle",
+      "source_file_count": 38,
+      "source_bytes": 304424,
+      "gameplay_verification": "not-independently-verified"
+    }
+  ]
 }

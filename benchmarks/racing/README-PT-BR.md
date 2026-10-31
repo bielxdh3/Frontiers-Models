@@ -17,9 +17,15 @@ O adendo autoriza skills e ferramentas operacionais de navegador, build, depura�
 
 - **Prompt:** V2.6, preservado integralmente com SHA-256 registrado no [arquivo de prompts](./prompts/README.md).
 - **Complemento:** [Adendo obrigatório de execução](./EXECUTION-ADDENDUM.md), registrado separadamente para manter intactos o prompt original e seu hash.
-- **Execuções:** nenhuma execução concluída com proveniência verificável foi arquivada ainda. O fato de um participante estar desenvolvendo não comprova conclusão.
-- **Registro:** o [RUNS.json](./RUNS.json) registra o prompt oficial e mantém vazia a lista de execuções arquivadas.
+- **Arquivos das execuções:** os dois repositórios foram preservados a partir de commits exatos, incluindo **todos os arquivos rastreados pelo Git** e um **backup restaurável do histórico Git completo**:
 
-Quando houver uma execução verificável, registrar a versão exata do prompt, o commit de origem ou hash do arquivo e o estado da verificação. Preservar os resultados originais sem modificações.
+  | Origem | Arquivos originais | Proveniência / manifesto | Backup do Git |
+  | --- | --- | --- | --- |
+  | GPT-6.1 Sol (82 arquivos) | [Código e assets](./runs/gpt-6.1-sol/source/) | [Proveniência](./runs/gpt-6.1-sol/SOURCE-PROVENANCE.md) · [Hashes](./runs/gpt-6.1-sol/SOURCE-FILES.json) | [Bundle](./runs/gpt-6.1-sol/SOURCE-REPOSITORY.bundle) |
+  | Gemini 3.8 Flash (38 arquivos) | [Código e assets](./runs/gemini-3.8-flash/source/) | [Proveniência](./runs/gemini-3.8-flash/SOURCE-PROVENANCE.md) · [Hashes](./runs/gemini-3.8-flash/SOURCE-FILES.json) | [Bundle](./runs/gemini-3.8-flash/SOURCE-REPOSITORY.bundle) |
+
+- **Registro:** [RUNS.json](./RUNS.json) fixa os commits, URLs, manifestos e bundles. O arquivamento **não** significa que todos os testes de gameplay/navegador tenham sido aprovados.
+
+Os arquivos originais, incluindo código, assets, builds e capturas presentes no Git, foram preservados sem modificações. Após verificar o arquivamento na branch principal, os repositórios separados podem ser excluídos sem perder esses arquivos e históricos Git; configurações do GitHub, issues e metadados externos não estão cobertos pelo backup.
 
 Este arquivo documenta projetos e proveniência. **Não** atribui notas, rankings ou pontuações a modelos de IA.
