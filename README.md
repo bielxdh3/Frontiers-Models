@@ -53,8 +53,8 @@ The current arena includes **five** references. Gemini 4 Argon and GPT-6.1 Sol a
                     │ runs/       │ │ commits · ZIP hashes│
                     │ model files │ │ prompt provenance   │
                     └─────────────┘ └──┬──────────────────┘
-                                      │ published references
-                         ┌────────────▼────────────┐
+                                       │ published references
+                         ┌─────────────▼───────────┐
                          │ Live project URLs       │
                          │ SHA-256 verification    │
                          └─────────────────────────┘
