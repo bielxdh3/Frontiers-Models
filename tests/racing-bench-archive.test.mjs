@@ -66,6 +66,11 @@ test('Racing-bench V3.1 frozen prompt is byte-exact and standalone', () => {
   const p = registry.prompts['racing-v3.1'];
   assert.equal(p.status, 'current-frozen-standalone');
   assert.equal(p.execution_addendum, 'integrated-no-separate-document');
+  assert.equal(p.required_attachment, 'prompts/racing-v3.1-attach.md');
+  const note = text('benchmarks/racing/' + p.required_attachment);
+  assert.match(note, /attach this text together with the complete, unchanged V3\.1 prompt/i);
+  assert.match(note, /Playwright, DevTools, run builds, debug, and test/i);
+  assert.match(note, /All other rules of the Racing-bench V3\.1 prompt remain unchanged/);
   const content = text('benchmarks/racing/' + p.path).replace(/\r\n/g, '\n');
   assert.equal(Buffer.byteLength(content), p.bytes);
   assert.equal(content.split('\n').length - 1, p.lines);
