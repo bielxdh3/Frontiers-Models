@@ -13,4 +13,4 @@
 
 V3.3 requires 17 original browser journeys + 16 E01–E16 expansion probes + 16 U01–U16 UI/UX probes + 10 W01–W10 environment-art probes (59 distinct verified items), and 16 original + 12 UI + 10 environment screenshots (38+ genuine captures) and G1–G13. Archived prompts V3.2/V3.1 stay untouched.
 
-For historic V3.2 reproduction, use its [frozen prompt](./racing-v3.2.md) and [V3.2 clarification](./racing-v3.2-attach.md). V3.1 similarly uses its [original prompt](./racing-v3.1.md) and [clarification](./racing-v3.1-attach.md). Historic V2.6 required both its [original prompt](./racing-v2.6.md) and the [Mandatory Execution Addendum](../EXECUTION-ADDENDUM.md). The legacy model code archives remain unchanged.
+For historic V3.2 reproduction, use its [frozen prompt](./racing-v3.2.md) and [V3.2 clarification](./racing-v3.2-attach.md). V3.1 similarly uses its [original prompt](./racing-v3.1.md) and [clarification](./racing-v3.1-attach.md). For historical V2.6 reproduction, supply **both** the [original prompt](./racing-v2.6.md) and the [Mandatory Execution Addendum](../EXECUTION-ADDENDUM.md). The legacy model code archives remain unchanged.
