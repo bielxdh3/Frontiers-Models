@@ -80,7 +80,7 @@ Estas execuções **do Orbitarium** continuam visíveis como referência, mas fi
 
 | Modelo | Classificação | Projeto / fonte | Proveniência |
 | --- | --- | --- | --- |
-| ☀️ **GPT-5.6 Sol V1** | Baseline histórico | [Abrir Sol V1](https://orbitarium-gpt-5.6-sol.v1.biel.dev.br) | [Código V1](./benchmarks/solar-system/runs/gpt-5.6-sun-max/original/) · commit `67eb9fc51f…` |
+| ☀️ **GPT-5.6 Sol V1** | Baseline histórico | Site removido | [Código V1](./benchmarks/solar-system/runs/gpt-5.6-sun-max/original/) · commit `67eb9fc51f…` |
 | ☀️ **GPT-5.6 Sol V2** | Frontier desatualizado | [Abrir Sol V2](https://orbitarium-gpt-5.6-sol-v2.biel.dev.br) | [Código V2](./benchmarks/solar-system/runs/gpt-5.6-sun-max/rebuild/) · commit `93d43ae62f…` |
 | 🌙 **GPT-5.6 Luna** | Non-frontier | [Abrir Luna](https://orbitarium-gpt-5.6-luna.biel.dev.br) | commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) |
 | 𝕏 **Grok 4.6** | Execução frontier arquivada | [Abrir Grok 4.6](https://grok-4-6-solar-system.vercel.app) | [`runs/grok-4.6/frontier-v2`](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) |

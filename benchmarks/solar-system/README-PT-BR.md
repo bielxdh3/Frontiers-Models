@@ -41,7 +41,7 @@ O Luna está, por enquanto, apenas com a fonte fixada; a proveniência do prompt
 
 O GPT-5.6 Sol V1 é preservado apenas para análise histórica do efeito do prompt. Ele é excluído da arena atual porque usou [`sun-original.md`](./prompts/sun-original.md), e não Frontier V2.
 
-- [Abrir Sol V1](https://orbitarium-gpt-5.6-sol.v1.biel.dev.br)
+- Site removido; o código arquivado continua disponível abaixo.
 - Snapshot: `67eb9fc51f…`
 - Arquivo: [Código V1](./runs/gpt-5.6-sun-max/original/)
 

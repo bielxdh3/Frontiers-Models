@@ -26,7 +26,7 @@
       "target_path": "runs/gpt-5.6-sun-max/original",
       "status": "imported",
       "arena_visibility": "historical-hidden",
-      "live_url": "https://orbitarium-gpt-5.6-sol.v1.biel.dev.br",
+      "live_url": null,
       "legacy_source_repository": "bielxdh3/GPT5.6-SUN-MAX-SOLAR-SYSTEM",
       "archive_status": "self-contained"
     },

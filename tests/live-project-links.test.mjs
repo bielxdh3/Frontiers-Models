@@ -9,9 +9,8 @@ const read = file => readFileSync(resolve(root, file), 'utf8');
 const orbitarium = JSON.parse(read('benchmarks/solar-system/RUNS.json')).runs;
 const racing = JSON.parse(read('benchmarks/racing/RUNS.json')).runs;
 
-// Exact owner-provided sites. In particular, Sol V1 has ".sol.v1." (not "-sol-v1.").
+// Canonical live sites only. The owner deleted the former GPT-5.6 Sol V1 site.
 const orbitariumSites = new Map([
-  ['gpt-5.6-sun-max-original', ['GPT-5.6 Sol', 'https://orbitarium-gpt-5.6-sol.v1.biel.dev.br']],
   ['gpt-5.6-sun-max-frontier-v2', ['GPT-5.6 Sol', 'https://orbitarium-gpt-5.6-sol-v2.biel.dev.br']],
   ['gpt-5.6-luna-max-orbitario', ['GPT-5.6 Luna', 'https://orbitarium-gpt-5.6-luna.biel.dev.br']],
   ['gpt-6-astra-max-frontier-v2', ['GPT-6 Astra', 'https://orbitarium-gpt-6-astra.biel.dev.br']],
@@ -27,7 +26,7 @@ const racingSites = new Map([
   ['gpt-6-astra', ['GPT-6 Astra', 'https://racing-gpt-6-astra.biel.dev.br']],
 ]);
 
-test('all eight Orbitarium website URLs and model names match the supplied canonical list', () => {
+test('all seven remaining Orbitarium website URLs and model names match the canonical list', () => {
   for (const [id, [model, url]] of orbitariumSites) {
     const runs = orbitarium.filter(run => run.id === id);
     assert.equal(runs.length, 1, id);
@@ -48,7 +47,7 @@ test('all three Racing websites are registered independently of the Orbitarium s
 
 for (const file of ['README.md', 'README-PT-BR.md',
   'benchmarks/solar-system/README.md', 'benchmarks/solar-system/README-PT-BR.md']) {
-  test(`${file} links to all eight canonical Orbitarium websites`, () => {
+  test(`${file} links to all seven remaining Orbitarium websites`, () => {
     const content = read(file);
     for (const [id, [model, url]] of orbitariumSites) {
       assert.ok(content.includes(`](${url})`), `${file}: missing live URL for ${id}`);
@@ -69,8 +68,16 @@ for (const file of ['README.md', 'README-PT-BR.md',
   });
 }
 
-test('the V1 host is exact, not a silently rewritten hyphen alias', () => {
-  const url = orbitariumSites.get('gpt-5.6-sun-max-original')[1];
-  assert.equal(url, 'https://orbitarium-gpt-5.6-sol.v1.biel.dev.br');
-  assert.ok(!url.includes('-sol-v1.'));
+test('deleted GPT-5.6 Sol V1 site has no live link, but the V1 archive and V2 URL remain', () => {
+  const v1 = orbitarium.find(run => run.id === 'gpt-5.6-sun-max-original');
+  assert.ok(v1);
+  assert.equal(v1.live_url, null);
+  assert.equal(orbitariumSites.get('gpt-5.6-sun-max-frontier-v2')[1],
+    'https://orbitarium-gpt-5.6-sol-v2.biel.dev.br');
+  for (const file of ['README.md', 'README-PT-BR.md',
+    'benchmarks/solar-system/README.md', 'benchmarks/solar-system/README-PT-BR.md']) {
+    const content = read(file);
+    assert.doesNotMatch(content, /orbitarium-gpt-5\.6-sol\.v1\.biel\.dev\.br/);
+    assert.match(content, /GPT-5\.6 Sol V1/);
+  }
 });
