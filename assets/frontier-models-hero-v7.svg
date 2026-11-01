@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" role="img" aria-labelledby="title desc">
   <title id="title">Frontier Models — Racing and Orbitarium benchmark collection</title>
-  <desc id="desc">Two benchmarks. Racing-bench V3.1 is the active frozen specification; three V2.6 projects are legacy archives: GPT-6.1 Sol, Gemini 3.8 Flash, GPT-6 Astra. Orbitarium current: GPT-6.1 Sol, GPT-6 Astra, Grok 4.7, Fable 5.1, Gemini 4 Argon. Source archives remain available without retired game links.</desc>
+  <desc id="desc">Two benchmarks. Racing-bench V3.2 is the active frozen specification; three V2.6 projects are legacy archives: GPT-6.1 Sol, Gemini 3.8 Flash, GPT-6 Astra. Orbitarium current: GPT-6.1 Sol, GPT-6 Astra, Grok 4.7, Fable 5.1, Gemini 4 Argon. Source archives remain available without retired game links.</desc>
   <defs>
     <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#080f1d"/>
@@ -46,7 +46,7 @@
         <path d="M1050 88h283M1135 99h199M1224 111h111" stroke-width="2"/>
         <path d="M1000 143l29 -25 40 19 22 -17 46 19 32 -20 65 25 46 -20 46 20" stroke-width="1.4"/>
       </g>
-      <text x="649" y="137" font-size="38" font-weight="800" fill="#fff5ed">Racing-bench V3.1</text>
+      <text x="649" y="137" font-size="38" font-weight="800" fill="#fff5ed">Racing-bench V3.2</text>
       <g data-role="run" data-benchmark="racing" data-model="gpt-6.1-sol">
     <rect x="650" y="173" width="225" height="56" rx="11" fill="#0e2034" stroke="#25415d"/>
     <rect x="651" y="174" width="4" height="54" rx="2" fill="#ffbb73"/>
