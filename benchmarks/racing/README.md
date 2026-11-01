@@ -1,32 +1,23 @@
-# Racing-bench
+# Racing-bench V3.1
 
-**Benchmark 002 — a complete browser-based cinematic arcade racing game.**
+**Benchmark 002 — current frozen standalone specification**
 
-The canonical implementation brief is [Racing-bench V2.6](./prompts/racing-v2.6.md). It specifies an original, complete 3D arcade racing experience intended for independent execution in an isolated project workspace. See the prompt for the actual requirements and permitted resources.
+## Official current prompt
 
-## Required for every execution
+**[Racing-bench V3.1](./prompts/racing-v3.1.md)** is the only active execution contract. It specifies three dedicated tracks/modes, four high-detail cars, five local AI opponents, three additional orthogonal Signature Features, 16 mandatory expansion systems E01–E16, detailed photoreal PBR/GPU graphics, deep vehicle physics, Photo Mode and verified full-state replays.
 
-**Always supply BOTH documents together** to the model starting a Racing-bench run:
+All competitors must receive the **same complete V3.1 prompt**. Its operational browser/build/test permissions are already included. **Do not supply any review context or separate V2.6 execution addendum with V3.1.** No V3.1 model run or live game is published yet.
 
-1. [Racing-bench V2.6 — implementation prompt](./prompts/racing-v2.6.md)
-2. [Mandatory Execution Addendum — operational skills/tools clarification](./EXECUTION-ADDENDUM.md)
+## Legacy archived runs — V2.6
 
-The addendum authorizes the operational browser, build, debugging and testing skills/tools needed to inspect **the model's own project** while keeping the clean-room, filesystem, research and non-delegation rules intact. It is **not** permission to use external coding assistance or inspect unrelated data. Do not distribute or launch V2.6 with the prompt alone. For an already-running attempt, communicate the same addendum to all participants and record that it was introduced after their start.
+The three former Racing projects are **legacy/archived**, not current V3.1 contestants. Their old live-game URLs have been removed from this index.
 
-## Archive status
+| Legacy model | Archived source | Provenance and checksums | Git-history bundle |
+| --- | --- | --- | --- |
+| **GPT-6.1 Sol** | [Source](./runs/gpt-6.1-sol/source/) | [Provenance](./runs/gpt-6.1-sol/SOURCE-PROVENANCE.md) · [Manifest](./runs/gpt-6.1-sol/SOURCE-FILES.json) | [Git bundle](./runs/gpt-6.1-sol/SOURCE-REPOSITORY.bundle) |
+| **Gemini 3.8 Flash** | [Source](./runs/gemini-3.8-flash/source/) | [Provenance](./runs/gemini-3.8-flash/SOURCE-PROVENANCE.md) · [Manifest](./runs/gemini-3.8-flash/SOURCE-FILES.json) | [Git bundle](./runs/gemini-3.8-flash/SOURCE-REPOSITORY.bundle) |
+| **GPT-6 Astra** | [Source](./runs/gpt-6-astra/source/) | [Provenance](./runs/gpt-6-astra/SOURCE-PROVENANCE.md) · [Manifest](./runs/gpt-6-astra/SOURCE-FILES.json) | [Git bundle](./runs/gpt-6-astra/SOURCE-REPOSITORY.bundle) |
 
-- **Prompt:** V2.6, published verbatim with a SHA-256 integrity record in [the prompt archive](./prompts/README.md).
-- **Companion:** the separate, mandatory [Execution Addendum](./EXECUTION-ADDENDUM.md) is recorded independently so the original prompt's hash and provenance remain unchanged.
-- **Source snapshots:** all three participant repositories have been archived from exact Git commits, preserving **all Git-tracked files** and the **complete original Git history** in restorable bundles:
+The [original V2.6 prompt](./prompts/racing-v2.6.md) is preserved byte-for-byte. Historical V2.6 runs required **BOTH** the V2.6 prompt and the [separate Mandatory Execution Addendum](./EXECUTION-ADDENDUM.md). This separate addendum is not required for V3.1. The [registry](./RUNS.json) retains provenance but no retired public-game links. Archived code does not guarantee verified gameplay.
 
-  | Source | Live game | Archived source | Provenance / SHA-256 manifest | Git-history backup |
-  | --- | --- | --- | --- | --- |
-  | GPT-6.1 Sol (82 files) | [Play GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br) | [Source files](./runs/gpt-6.1-sol/source/) | [Provenance](./runs/gpt-6.1-sol/SOURCE-PROVENANCE.md) · [File checksums](./runs/gpt-6.1-sol/SOURCE-FILES.json) | [Git bundle](./runs/gpt-6.1-sol/SOURCE-REPOSITORY.bundle) |
-  | Gemini 3.8 Flash (38 files) | [Play Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br) | [Source files](./runs/gemini-3.8-flash/source/) | [Provenance](./runs/gemini-3.8-flash/SOURCE-PROVENANCE.md) · [File checksums](./runs/gemini-3.8-flash/SOURCE-FILES.json) | [Git bundle](./runs/gemini-3.8-flash/SOURCE-REPOSITORY.bundle) |
-  | GPT-6 Astra (24 files) | [Play GPT-6 Astra](https://racing-gpt-6-astra.biel.dev.br) | [Source files](./runs/gpt-6-astra/source/) | [Provenance](./runs/gpt-6-astra/SOURCE-PROVENANCE.md) · [File checksums](./runs/gpt-6-astra/SOURCE-FILES.json) | [Git bundle](./runs/gpt-6-astra/SOURCE-REPOSITORY.bundle) |
-
-- **Registry:** [RUNS.json](./RUNS.json) pins all three source commits, original URLs, manifests and restorable bundles. Source archival **does not** assert that gameplay or browser acceptance tests passed.
-
-All original files, including source code and recorded screenshots/build output present in Git, remain unchanged. The original repositories may be removed after the archive has been verified on the merged main branch; note that GitHub-specific repository settings, issues, and other metadata are not part of these code archives.
-
-This archive records projects and provenance. It does **not** grade, rank, or score AI models.
+No review `context.md` is part of the current benchmark publication.
