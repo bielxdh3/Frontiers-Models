@@ -24,6 +24,8 @@
 
 **[Racing-bench V3.1 — frozen standalone prompt](./benchmarks/racing/prompts/racing-v3.1.md)** is the current Racing benchmark: AAA-inspired browser racing with three courses, four cars, five local rivals, three independently invented Signature Features and sixteen additional mandatory engineering systems. **No V3.1 model runs or live-game sites have been published yet.**
 
+**For each execution, attach both:** the [V3.1 prompt](./benchmarks/racing/prompts/racing-v3.1.md) and the [short English operational clarification](./benchmarks/racing/prompts/racing-v3.1-attach.md).
+
 **Legacy archive — Racing-bench V2.6 (original code preserved, old play links removed):**
 
 | Legacy model | Archived source |
