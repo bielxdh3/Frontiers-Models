@@ -128,11 +128,11 @@ All three Racing source snapshots include [SHA-256 manifests and restorable Git 
 
 | Model | Source revision | Classification | Source status |
 | --- | --- | --- | --- |
-| **GPT-6.1 Sol** | Git `7caaccc7f4…` | Legacy | Archived |
-| **GPT-6 Astra** | Git `fca2ef51b4…` | Legacy | Archived |
-| **Grok 4.7** | Git `bcb1e82012…` | Legacy | Archived |
-| **Fable 5.1** | Git `7e079669e4…` | Legacy | Archived |
-| **Gemini 4 Argon** | Git `318aa80bb5…` | Legacy | Archived |
+| **GPT-6.1 Sol** | Git `7caaccc7f4…` | Current | Archived |
+| **GPT-6 Astra** | Git `fca2ef51b4…` | Current | Archived |
+| **Grok 4.7** | Git `bcb1e82012…` | Current | Archived |
+| **Fable 5.1** | Git `7e079669e4…` | Current | Archived |
+| **Gemini 4 Argon** | Git `318aa80bb5…` | Current | Archived |
 | **GPT-5.6 Sol V1** | Git `67eb9fc51f…` | Historical | Archived |
 | **GPT-5.6 Sol V2** | Git `93d43ae62f…` | Historical | Archived |
 | **Grok 4.6** | ZIP SHA-256 `5d77eeb509…` | Historical | Archived |
