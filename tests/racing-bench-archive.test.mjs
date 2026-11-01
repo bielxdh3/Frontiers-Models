@@ -28,6 +28,8 @@ test('Racing-bench source runs have provenance records, without claiming gamepla
   assert.deepEqual(registry.runs.map(r => r.id).sort(), ['gemini-3.8-flash', 'gpt-6-astra', 'gpt-6.1-sol'].sort());
   for (const run of registry.runs) {
     assert.equal(run.gameplay_verification, 'not-independently-verified');
+    assert.equal(run.display_status, 'legacy-archived');
+    assert.equal(run.live_url, null);
     assert.ok(run.source_commit);
     assert.ok(run.manifest);
     assert.ok(run.git_bundle);
@@ -47,13 +49,28 @@ test('every Racing-bench V2.6 execution requires the separate operational tool a
   assert.match(canonical.toString('utf8'), /both complete documents together/i);
   assert.match(canonical.toString('utf8'), /Playwright or browser DevTools/);
   assert.match(canonical.toString('utf8'), /No delegation/);
-  assert.match(text('benchmarks/racing/README.md'), /Always supply BOTH documents together/);
-  assert.match(text('benchmarks/racing/README-PT-BR.md'), /Sempre envie os DOIS documentos juntos/);
-  assert.match(text('benchmarks/racing/prompts/README.md'), /Every new Racing-bench V2.6 run must receive both/);
+  assert.match(text('benchmarks/racing/README.md'), /required \*\*BOTH\*\*/);
+  assert.match(text('benchmarks/racing/README-PT-BR.md'), /\*\*OS DOIS\*\*/);
+  assert.match(text('benchmarks/racing/prompts/README.md'), /historical \*\*V2\.6\*\*/);
 });
 
 test('Racing-bench is discoverable from both repository homepages', () => {
   for (const p of ['README.md', 'README-PT-BR.md']) {
     assert.match(text(p), /\]\(\.\/benchmarks\/racing\/\)/);
   }
+});
+
+
+test('Racing-bench V3.1 frozen prompt is byte-exact and standalone', () => {
+  assert.equal(registry.current_prompt, 'racing-v3.1');
+  const p = registry.prompts['racing-v3.1'];
+  assert.equal(p.status, 'current-frozen-standalone');
+  assert.equal(p.execution_addendum, 'integrated-no-separate-document');
+  const content = text('benchmarks/racing/' + p.path).replace(/\r\n/g, '\n');
+  assert.equal(Buffer.byteLength(content), p.bytes);
+  assert.equal(content.split('\n').length - 1, p.lines);
+  assert.equal(createHash('sha256').update(content).digest('hex'), p.sha256);
+  assert.match(content, /Frozen execution contract/);
+  assert.doesNotMatch(content, /REVIEW DRAFT|NOT FROZEN/);
+  assert.equal(registry.legacy_runs.length, 3);
 });
