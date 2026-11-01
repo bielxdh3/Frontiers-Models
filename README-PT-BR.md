@@ -20,15 +20,19 @@
 
 ## ⚔️ Execuções atuais por benchmark
 
-### Racing-bench V3.2 — especificação atual
+### Racing-bench V3.3 — especificação atual
 
-O **[Racing-bench V3.2 — prompt oficial congelado](./benchmarks/racing/prompts/racing-v3.2.md)** é a versão vigente: um jogo de corrida AAA-inspired no navegador com três pistas, quatro carros, cinco rivais locais, três Signature Features independentes e dezesseis sistemas avançados obrigatórios. **Ainda não existem jogos ou sites V3.2 publicados pelos modelos.**
+O **[Racing-bench V3.3 — prompt oficial congelado](./benchmarks/racing/prompts/racing-v3.3.md)** é a versão vigente: um jogo de corrida AAA-inspired no navegador com três pistas, quatro carros, cinco rivais locais, três Signature Features independentes e dezesseis sistemas avançados obrigatórios. **Ainda não existem jogos ou sites V3.3 publicados pelos modelos.**
 
-**V3.2 com UI/UX premium:** Todas as telas, menus, três HUDs, garagem e editores precisam passar G12, U01–U16 e 12 capturas extras, além das 16 originais (28+ imagens).
+**V3.3 com UI/UX premium:** Todas as telas, menus, três HUDs, garagem e editores precisam passar G12, U01–U16 e 12 capturas extras, além das 16 originais (28+ imagens).
 
-**Ao executar, anexe dois arquivos juntos:** o [prompt V3.2](./benchmarks/racing/prompts/racing-v3.2.md) e o [breve esclarecimento operacional em inglês](./benchmarks/racing/prompts/racing-v3.2-attach.md).
+**Ao executar, anexe dois arquivos juntos:** o [prompt V3.3](./benchmarks/racing/prompts/racing-v3.3.md) e o [breve esclarecimento operacional em inglês](./benchmarks/racing/prompts/racing-v3.3-attach.md).
 
 **Versão anterior preservada:** [Racing-bench V3.1](./benchmarks/racing/prompts/racing-v3.1.md) continua disponível como especificação histórica congelada, sem apagar ou modificar seus arquivos.
+
+**V3.3 — ambiente costeiro/cidade de qualidade premium:** mar, praia, areia, árvores, casas, pontes, asfalto, shaders/texturas e áudio ambiental completos, com G13, W01–W10 e 10 capturas adicionais (mínimo 38 imagens). Referências visuais e assets ambientais licenciados podem ser usados com autoria/integridade; copiar código continua proibido.
+
+A [V3.2](./benchmarks/racing/prompts/racing-v3.2.md) permanece arquivada, sem alterações.
 
 **Legado arquivado — Racing-bench V2.6 (código preservado, links antigos para jogar removidos):**
 
@@ -38,7 +42,7 @@ O **[Racing-bench V3.2 — prompt oficial congelado](./benchmarks/racing/prompts
 | **Gemini 3.8 Flash** | [Código](./benchmarks/racing/runs/gemini-3.8-flash/source/) |
 | **GPT-6 Astra** | [Código](./benchmarks/racing/runs/gpt-6-astra/source/) |
 
-As três execuções da V2.6 agora são **legado/arquivadas**, não participantes da V3.2. Seus snapshots, manifestos e bundles Git continuam intactos; isso não afirma aprovação do gameplay.
+As três execuções da V2.6 agora são **legado/arquivadas**, não participantes da V3.3. Seus snapshots, manifestos e bundles Git continuam intactos; isso não afirma aprovação do gameplay.
 
 ### Orbitarium-bench — referências atuais
 
@@ -86,7 +90,7 @@ O registro conecta prompts arquivados, projetos independentes, evidências de or
 
 ## 🗂️ Modelos non-frontier ou desatualizados
 
-Estas execuções **do Orbitarium** continuam visíveis como referência, mas ficam separadas da arena atual desse benchmark. A V3.2 do Racing-bench ainda não possui execuções publicadas; os três projetos da V2.6 são legado arquivado.
+Estas execuções **do Orbitarium** continuam visíveis como referência, mas ficam separadas da arena atual desse benchmark. A V3.3 do Racing-bench ainda não possui execuções publicadas; os três projetos da V2.6 são legado arquivado.
 
 | Modelo | Classificação | Projeto / fonte | Proveniência |
 | --- | --- | --- | --- |
@@ -108,7 +112,7 @@ PROMPT → EXECUÇÃO DO MODELO → SNAPSHOT / FONTE FIXADA → EVIDÊNCIAS → 
 
 ## Benchmark 002 — Racing-bench
 
-**O [Racing-bench V3.2](./benchmarks/racing/prompts/racing-v3.2.md) é o contrato oficial atual, congelado e autônomo.** Exige um jogo de corrida fotorrealista e complexo no navegador, com gráficos avançados de GPU, física profunda, três pistas/modos, quatro carros, cinco rivais locais, três Signature Features originais e dezesseis sistemas adicionais integrados. Ainda não há execuções V3.2 publicadas.
+**O [Racing-bench V3.3](./benchmarks/racing/prompts/racing-v3.3.md) é o contrato oficial atual, congelado e autônomo.** Exige um jogo de corrida fotorrealista e complexo no navegador, com gráficos avançados de GPU, física profunda, três pistas/modos, quatro carros, cinco rivais locais, três Signature Features originais e dezesseis sistemas adicionais integrados. Ainda não há execuções V3.3 publicadas.
 
 **A V2.6 agora é legado arquivado.** Seu [prompt original intacto](./benchmarks/racing/prompts/racing-v2.6.md), o [adendo histórico de execução](./benchmarks/racing/EXECUTION-ADDENDUM.md) e os códigos do [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/), [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) e [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra/source/) permanecem preservados. Os links antigos de visita foram removidos da apresentação pública; isso não exclui sites externos.
 
