@@ -1195,3 +1195,69 @@ Run and record **sixteen UI probes (U01–U16)** separately, on top of **the sev
 **G12 — Premium, original, production-grade complete UI/UX:** Every screen and tool in Sections 65–69 is implemented to the professional visual and interaction floor; the HUD communicates authentic physical/race state without hiding the road; real browser verification has exercised U01–U16 and inspected all required screens/states; at least twelve additional UI/UX screenshots exist **on top of** the original sixteen screenshots (= **28+ files**); every UI action correctly affects authoritative state, handling focus, errors and recovery. Generic web-app/admin-template styling, unstyled browser forms, menus made of placeholder panels, static/nonworking car/track tools, blank/unstyled states, obscured racing sightlines, dead controls or fabricated UI claims **fail G12**. G12 is additional to G1–G11: it does not replace E01–E16 or the three independently invented Signature Features.
 
 **UI scope and balance:** UI/UX is a production-quality requirement for the existing game and two existing creation tools; it does **not** add racing modes, new tracks/cars, career progression, open-world travel, multiplayer, extra AI systems, unrelated mobile touch driving or a compulsory 3D UI framework. Preserve the original graphics, physics, replay, security, clean-room, High GPU performance and M1 non-abandonment requirements. When a mandatory UI element cannot be implemented, report the gap without claiming the game is complete; continue productive implementation instead of treating an aesthetic imperfection as permission to abandon all remaining work.
+
+## 72. Integrated coastal city, sea and beach as mandatory world identity
+
+Author a substantial, geographically coherent scenic region with a rich and visible ocean, beach/sand and coastal natural environment AND a substantial Mediterranean-inspired tourist town/harbor/waterfront with credible streets and structures. Neither natural nor urban side may be a token background. Existing courses remain exactly Coastal Sprint, Riviera Grand Prix and Horizon Rush: the first emphasizes beach/sea/shoreline roads, the second architectural town and waterfront, the third cliff/hill/forest/bridge views, but all are coherently situated in one scenic coastal region. No fixed 50/50 city/sea ratio or free-roam/open-world mode is required.
+
+Terrain, beaches, roads, houses, bridge supports, sea walls, foliage, sidewalks, intersections and cliff structures must connect plausibly in 3D. Avoid roads suspended above ground, building bases floating over slopes, hard artificial water/sand edges, textureless distant terrain, repeat-cloned rows or empty undeveloped roadside. Author memorable, architecturally sound near/mid/far scenic compositions that withstand moving third-person driving, replay cameras and Photo Mode. The entire three-course region matters, not just one promo angle.
+
+## 73. Twelve mandatory high-quality modeled and textured environmental families
+
+Each family must appear meaningfully within the three existing course environments, visibly authored at road-view distances, and rendered with appropriate material-specific shaders.
+
+1. **Ocean:** Multi-scale animated waves, surface currents, depth-sensitive blue/green absorption, convincing Fresnel and sky reflections, capillary ripples and foam. A flat blue mirrored plane fails. Keep E06 depth water and E07 bioluminescent sea as independently functional systems.
+2. **Beach and natural shore:** Substantial visible sandy beach, dune/sand banks, slope/pebble/rock variation, natural surf, breaking and receding wave wash, wet/dry sand boundary, foam around shoreline geometry and coherent connections with cliffs and sea. Beach driving is not an extra requirement.
+3. **Sand, soil and gravel:** Plausible granular scale, fine normal/roughness/albedo variation, wetness, small stones, subtle contours, rut/deformation where E05 operates, seamless transitions between sand, dune, soil and paved road.
+4. **Cliffs and terrain:** Realistic geological strata, fractures, erosion, boulders, retaining walls and slope/altitude material blending without obvious map repetition or geometry seams.
+5. **Trees, foliage and grass:** Multiple believable coast/urban/hill species with modeled natural crowns/trunks, proper leaf/backlit response, controlled wind sway, shrubs/grass clusters and placement variation. Repeated identical trees and billboard-only near-camera trees fail High; distant impostors for E16 are permitted.
+6. **Tourist town and buildings:** Varied homes, waterfront shops, facades, roofs, windows, doors, balconies, awnings, plaster/stone/tile/wood materials and restrained dirt/aging. Large unadorned textured cubes do not qualify. Enterable building interiors are not required.
+7. **Urban/waterfront detail:** Piers, docks, pavements, stairs, promenade, curbs, plazas, sea walls, street lamps, signs, small props, retaining structures and human-scaled street engineering in believable spatial arrangements.
+8. **Asphalt and race road:** High-frequency aggregate, rubbered racing lines, correct texel density, camber/banking, real 3D curbs, painted edge/line aging, cracks, patches, worn roughness and realistic dry/wet responses. No giant texture repeats or clean toy-road materials.
+9. **Bridges/viaducts:** Credible decks, load-bearing piers, abutments, structural supports, expansion joints, railings, material weathering and connected road approaches. A floating slab labeled bridge fails.
+10. **Tunnel and roadside engineering:** Modeled portals, inner concrete/stone lining, lamps, barriers, signage, drainage, retaining slopes and convincing daylight-to-tunnel transitions.
+11. **Light and weather integration:** Distinct coherent day/sunset/night/rain response across wet sand, water, plants, facades, street lighting, asphalt and stone; no static highlights painted into maps or inconsistent shadow state.
+12. **Coherent overall world composition:** The entire ensemble reads as one finished place and remains rich and believable in close-ups, the fast chase camera and cinematic aerial/replay views, without empty sterile sections masking behind fog.
+
+## 74. Texture, material and shader craftsmanship takes visual precedence over tracing
+
+In development and aesthetic acceptance prioritize: (1) model geometry, high-quality appropriate-resolution textures, convincing material variation and surface-specific shaders; (2) natural/urban world integration and authored composition; (3) shadows/lighting which reveal those details; and (4) higher-order GI, reflections and path tracing. This is NOT permission to skip existing E11–E15, shadows, GPU or weather requirements. Ray tracing of a generic flat ocean, empty sand, primitive houses or low-detail bridge is still visually unacceptable.
+
+Make texel density, UV mapping/triplanar scale, anisotropy, mipmapping, normal/detail maps, roughness, weathering, albedo and material mixing credible at close and far range. Avoid visibly repeated tiling, shimmering patterns, muddy materials, unrealistic uniform roughness, generic one-shader-for-all surfaces, and harsh material boundaries. Implement substance-specific responses: waves/water absorption and Fresnel, wet sand compaction/specularity, asphalt aggregate and rubber, tree-leaf transmission/wind, rock strata, wall stucco and glass/metal. Compare actual browser images in motion, paused, dry, rainy, daytime and night. Haze, bloom, god rays and GI cannot conceal missing or poor fundamental scene art.
+
+## 75. Licensed visual references and supporting art allowed; absolutely no copied third-party code
+
+Use public images, photography, coastal architecture, beach/landscape references and shader/material appearance for original art direction. Properly licensed supporting PBR/albedo/normal/roughness texture maps, non-code material presets, foliage/tree/rock/building meshes, bridge detail props, HDRIs and environmental sound assets may be obtained, bundled and adapted in an original assembled scene when permission and distribution conditions are actually verified. It is legal to reuse an individual properly licensed texture or model under its terms; the overall world must be a distinct authored composition, not an unaltered complete environment pack, a copied whole game location or a near-identical tracing of a commercial racer.
+
+**Never consult, copy or adapt outside shader source code (GLSL/WGSL/JS/TS), scripts, procedural generation implementations, finished game source, other benchmark projects, tutorials, scene-generation code, coding examples, complete starter demos or third-party racing logic.** Shader appearance is a visual reference, not permission to copy shader implementation. Official API syntax references and general-purpose library dependencies retain only their original narrow allowances. Four playable car exterior models and all three authored race-route/road/course gameplay geometries remain project-original; downloaded completed cars/courses are not allowed.
+
+Record each legally reused supporting item in ASSET-LICENSES.md with file/provider URL, exact license and verification, attribution, permitted redistribution, adaptation and bundled path. An image available on the web is not automatically licensed. Unverified assets must be replaced with original procedural ones. Preserve static/offline delivery and restrictions on other user files, outside code and AI generation services. This section explicitly expands supporting environmental **visual** asset permissions in Sections 02 and 41, not permissions to reuse code.
+
+## 76. Premium coastal ambient sound and resilient three-course art streaming
+
+Layer waves and beach surf, wind through foliage/guardrails, subtle coastal birds/insects, town/harbor atmosphere and correct tunnel/bridge/cliff reverberation into the existing original vehicle-audio system. Spatialize or crossfade according to location, geometry, camera, weather and time; avoid monotonous single loop or abrupt sound-zone discontinuities. Support mute/accessibility. No city traffic, NPC crowds, economy or extra gameplay modes are implied.
+
+At racing speeds and during replay seeking and Photo Mode, preserve sound and environment coherence: E16 streaming/LOD must not create missing bridge supports, popped-in forests, disappearing beach terrain, road/collision disconnects, texture aliasing or GPU residency spikes. Fine scenery must remain visually convincing at road proximity and still-frame inspection across all three routes in day/rain/night conditions.
+
+## 77. Ten additional genuine environment screenshots, W01–W10 proofs and G13
+
+Keep the original 16 baseline screenshots and 12 separate Section 70 UI screenshots. Add exactly ten further REQUIRED minimum distinct environment-art screenshots, yielding **at least 38 total genuine browser screenshots**. None may be reused/relabelled from the previous 28, derived from static mockups, downloaded reference imagery or duplicated with a new filename.
+
+| Probe | New separate browser capture and adversarial environmental inspection |
+| --- | --- |
+| W01 | Ocean waves/foam/depth reflections with day vs weather or movement difference |
+| W02 | Beach dry/wet sand, real changing surfline, sand-water and rock transitions |
+| W03 | Sand/gravel/soil material microdetail, normal and roughness, road shoulders |
+| W04 | Diverse tree/grass/bush species, natural composition and wind/shadow behavior |
+| W05 | Waterfront city/tourist town, rich distinct roof/window/facade/street details |
+| W06 | Bridge/viaduct with deck/supports/abutments/railings in its real terrain context |
+| W07 | Road asphalt/curb close and moving, dry/wet microtexture and rubbered lines |
+| W08 | Cliff/rock/geological detail plus believable tunnel/roadside infrastructure |
+| W09 | Wide integrated cinematic coast + beach + ocean + road + architecture + vegetation composition |
+| W10 | Extra distinct viewpoint on another course, with notes/logs demonstrating differentiation across all three course environments, sound and LOD |
+
+Each W-card must state actual course/location, camera/time/weather, real screenshot path, material/module/asset evidence, license provenance, observed visual quality and shader response, A/B or motion proof where relevant, deficiencies and honest status. Exercise W01–W10 independently as browser inspections additional to 17 original journeys, 16 E-probes and 16 U-probes: **59 total distinct verification records**. Include close/far, motion/frozen, day/rain/night and actual GPU context; a screenshot alone does not prove shader math or physical state.
+
+**G13 — Premium coastal-city/beach environmental art and ambience:** PASS requires all substantial materials and world asset families of Sections 72–76, original three-course coherence, good shaders and textures, reliable environmental audio, all W01–W10 inspections, ten extra genuine captures (38+ images) and license evidence. A scene consisting of generic sea, low-detail sand, cloned trees, block houses, unsupported bridges, empty roads or disconnected scenery FAILS regardless of impressive path tracing, advanced lighting, HDR effects or UI. G13 is in addition to G1–G12; no original system is replaced.
+
+**Scope limits:** Do not add first-person/cockpit driving, detailed vehicle interiors, open-world traversal, new modes, extra cars or tracks, enterable buildings, urban traffic/NPC economy, more AI agents or additional Signature Features as V3.3 obligations. The established M1 recovery rule still requires continued productive implementation after a deficient early visual inspection; final G13 remains mandatory.
