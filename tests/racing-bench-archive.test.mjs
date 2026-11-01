@@ -61,21 +61,43 @@ test('Racing-bench is discoverable from both repository homepages', () => {
 });
 
 
-test('Racing-bench V3.1 frozen prompt is byte-exact and standalone', () => {
-  assert.equal(registry.current_prompt, 'racing-v3.1');
+test('Racing-bench V3.1 remains byte-exact in the historical archive', () => {
   const p = registry.prompts['racing-v3.1'];
-  assert.equal(p.status, 'current-frozen-standalone');
-  assert.equal(p.execution_addendum, 'integrated-no-separate-document');
+  assert.equal(p.status, 'historical-frozen-archived');
   assert.equal(p.required_attachment, 'prompts/racing-v3.1-attach.md');
+  const content = text('benchmarks/racing/' + p.path).replace(/\r\n/g, '\n');
+  assert.equal(Buffer.byteLength(content), p.bytes);
+  assert.equal(content.split('\n').length - 1, p.lines);
+  assert.equal(createHash('sha256').update(content).digest('hex'), p.sha256);
+  assert.match(content, /Frozen execution contract/);
+});
+
+test('Racing-bench V3.2 current prompt and attachment are exact and complete', () => {
+  assert.equal(registry.current_prompt, 'racing-v3.2');
+  const p = registry.prompts['racing-v3.2'];
+  assert.equal(p.status, 'current-frozen-standalone-with-required-operational-clarification');
+  assert.equal(p.required_attachment, 'prompts/racing-v3.2-attach.md');
   const note = text('benchmarks/racing/' + p.required_attachment);
-  assert.match(note, /attach this text together with the complete, unchanged V3\.1 prompt/i);
+  assert.match(note, /attach this text together with the complete, unchanged V3\.2 prompt/i);
   assert.match(note, /Playwright, DevTools, run builds, debug, and test/i);
-  assert.match(note, /All other rules of the Racing-bench V3\.1 prompt remain unchanged/);
+  assert.match(note, /All other rules of the Racing-bench V3\.2 prompt remain unchanged/);
   const content = text('benchmarks/racing/' + p.path).replace(/\r\n/g, '\n');
   assert.equal(Buffer.byteLength(content), p.bytes);
   assert.equal(content.split('\n').length - 1, p.lines);
   assert.equal(createHash('sha256').update(content).digest('hex'), p.sha256);
   assert.match(content, /Frozen execution contract/);
   assert.doesNotMatch(content, /REVIEW DRAFT|NOT FROZEN/);
-  assert.equal(registry.legacy_runs.length, 3);
+  assert.deepEqual([...content.matchAll(/^## (\d{2})\./gm)].map(m => Number(m[1])), Array.from({length:72}, (_, i) => i));
+  for(let i=1;i<=16;i++) {
+    const u='U'+String(i).padStart(2,'0');
+    const e='E'+String(i).padStart(2,'0');
+    assert.match(content,new RegExp('\\b'+u+'\\b'));
+    assert.match(content,new RegExp('\\b'+e+'\\b'));
+  }
+  assert.match(content, /G12 — Premium/);
+  assert.match(content, /28\+ (?:files|genuine images|distinct)/);
+  assert.equal(p.ui_ux.ui_probes,16);
+  assert.equal(p.ui_ux.minimum_screenshots,28);
+  assert.equal(p.ui_ux.additional_ui_screenshots,12);
+  assert.equal(registry.legacy_runs.length,3);
 });
