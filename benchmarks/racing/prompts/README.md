@@ -1,13 +1,12 @@
-# Racing-bench prompt archive
+# Racing-bench — prompt archive
 
-Benchmark prompts are immutable inputs. Preserve each version byte-for-byte once used, and record its provenance. The canonical prompt currently published is:
+**Current: [Racing-bench V3.1](./racing-v3.1.md)**. V2.6 is a preserved historical edition.
 
-| Prompt | Version | Size | Lines | SHA-256 |
+| Prompt | Status | UTF-8 bytes | Lines | SHA-256 |
 | --- | --- | ---: | ---: | --- |
-| [racing-v2.6.md](./racing-v2.6.md) | V2.6 | 80,309 bytes | 429 | `8dc65f23a8eaa35a06a7833a7929763fd16aa3cde2ff563561bffac7d7d69248` |
+| **[racing-v3.1.md](./racing-v3.1.md)** | **Current, frozen standalone contract** | **222,337** | **1,069** | `b8b2e662f2ba06cc47374580d346a20fe17806c5a0b9d0f4fa8fa6b05bcee82b` |
+| [racing-v2.6.md](./racing-v2.6.md) | Legacy, archived verbatim | 80,309 | 429 | `8dc65f23a8eaa35a06a7833a7929763fd16aa3cde2ff563561bffac7d7d69248` |
 
-Original supplied filename: `Racing-bench-v2.6-prompt.md`.
+For all **V3.1** contestants, supply only the complete frozen standalone prompt, identically. It already includes permitted browser/build/debug/test operational tool use. Do not attach an auditor's context or the old V2.6 addendum.
 
-**Execution rule:** Every new Racing-bench V2.6 run must receive both the exact prompt above and the [Mandatory Execution Addendum](../EXECUTION-ADDENDUM.md) together. The addendum authorizes only the use of operational browser/build/debug/test skills and tools for the assigned project and does not modify the immutable prompt. Record in the run's provenance whether the addendum was provided at the beginning or introduced mid-run.
-
-Run source files belong under a separately documented run/archive path only after their origin and prompt association can be verified. Earlier draft prompts and review handoffs have not been published here.
+For historical **V2.6** reproductions, the immutable original V2.6 prompt required **both** the prompt and the [Mandatory Execution Addendum](../EXECUTION-ADDENDUM.md). Historical run snapshots remain unchanged.
