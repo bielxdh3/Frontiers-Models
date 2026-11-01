@@ -35,7 +35,7 @@ test('Racing first: three legacy runs from the Racing registry with correct name
   }
   assert.ok(svg.indexOf('<g data-benchmark="racing">') < svg.indexOf('<g data-benchmark="orbitarium">'));
   assert.match(svg, /V2\.6 LEGACY/);
-  assert.match(svg, />Racing-bench V3\.2<\/text>/);
+  assert.match(svg, />Racing-bench V3\.3<\/text>/);
 });
 
 test('Orbitarium second: all five current references preserved in registry order', () => {
