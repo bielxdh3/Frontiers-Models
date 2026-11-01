@@ -72,10 +72,10 @@ test('Racing-bench V3.1 remains byte-exact in the historical archive', () => {
   assert.match(content, /Frozen execution contract/);
 });
 
-test('Racing-bench V3.2 current prompt and attachment are exact and complete', () => {
-  assert.equal(registry.current_prompt, 'racing-v3.2');
+test('Racing-bench V3.2 remains byte-exact and historically archived', () => {
+  assert.equal(registry.current_prompt, 'racing-v3.3');
   const p = registry.prompts['racing-v3.2'];
-  assert.equal(p.status, 'current-frozen-standalone-with-required-operational-clarification');
+  assert.equal(p.status, 'historical-frozen-archived');
   assert.equal(p.required_attachment, 'prompts/racing-v3.2-attach.md');
   const note = text('benchmarks/racing/' + p.required_attachment);
   assert.match(note, /attach this text together with the complete, unchanged V3\.2 prompt/i);
@@ -100,4 +100,31 @@ test('Racing-bench V3.2 current prompt and attachment are exact and complete', (
   assert.equal(p.ui_ux.minimum_screenshots,28);
   assert.equal(p.ui_ux.additional_ui_screenshots,12);
   assert.equal(registry.legacy_runs.length,3);
+});
+
+
+test('Racing V3.3 frozen prompt preserves all legacy scopes and requires coastal world art', () => {
+  assert.equal(registry.current_prompt, 'racing-v3.3');
+  const p=registry.prompts['racing-v3.3'];
+  assert.equal(p.status,'current-frozen-standalone-with-required-operational-clarification');
+  assert.equal(p.required_attachment,'prompts/racing-v3.3-attach.md');
+  const note=text('benchmarks/racing/'+p.required_attachment);
+  assert.match(note,/attach this text together with the complete, unchanged V3\.3 prompt/i);
+  assert.match(note,/Playwright, DevTools, run builds, debug, and test/i);
+  const content=text('benchmarks/racing/'+p.path).replace(/\r\n/g,'\n');
+  assert.equal(Buffer.byteLength(content),p.bytes);
+  assert.equal(content.split('\n').length-1,p.lines);
+  assert.equal(createHash('sha256').update(content).digest('hex'),p.sha256);
+  assert.deepEqual([...content.matchAll(/^## (\d{2})\./gm)].map(m=>Number(m[1])),Array.from({length:78},(_,i)=>i));
+  for(let i=1;i<=16;i++){
+    assert.match(content,new RegExp('\\bE'+String(i).padStart(2,'0')+'\\b'));
+    assert.match(content,new RegExp('\\bU'+String(i).padStart(2,'0')+'\\b'));
+  }
+  for(let i=1;i<=10;i++)assert.match(content,new RegExp('\\bW'+String(i).padStart(2,'0')+'\\b'));
+  assert.match(content,/G13 — Complete Premium Coastal-City Environment and Material Art/);
+  assert.match(content,/at least 38 total genuine browser screenshots/);
+  assert.match(content,/first-person.*not.*mandatory/i);
+  assert.equal(p.environment_art.world_probes,10);
+  assert.equal(p.minimum_screenshots,38);
+  assert.equal(p.ui_ux.ui_probes,16);
 });
