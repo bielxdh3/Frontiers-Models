@@ -44,7 +44,7 @@ As três execuções da V2.6 agora são **legado/arquivadas**, não participante
 | ◆ **Fable 5.1** | [Abrir Fable 5.1](https://fable-solar-system.vercel.app) | [Código: Fable 5.1](./benchmarks/solar-system/runs/fable/frontier-v2/) |
 | ◈ **Gemini 4 Argon** | [Abrir Gemini 4 Argon](https://orbitarium-gemini-4-argon.biel.dev.br) | [Código: Gemini 4 Argon](./benchmarks/solar-system/runs/gemini-4-argon/source/) |
 
-O Orbitarium reúne **cinco referências atuais**. O Gemini 4 Argon e o GPT-6.1 Sol foram arquivados integralmente a partir de commits exatos, mas seus prompts de geração não foram comprovados; por isso não há comprovação de equivalência ao Frontier V2. O Gemini 3.8 Flash permanece no histórico **do Orbitarium**, mas é uma execução **atual no Racing**.
+O Orbitarium reúne **cinco referências atuais**. O Gemini 4 Argon e o GPT-6.1 Sol foram arquivados integralmente a partir de commits exatos, mas seus prompts de geração não foram comprovados; por isso não há comprovação de equivalência ao Frontier V2. O Gemini 3.8 Flash permanece no histórico **do Orbitarium** e sua execução Racing V2.6 também é **legado arquivado**.
 
 ## Como se organiza
 
@@ -80,7 +80,7 @@ O registro conecta prompts arquivados, projetos independentes, evidências de or
 
 ## 🗂️ Modelos non-frontier ou desatualizados
 
-Estas execuções **do Orbitarium** continuam visíveis como referência, mas ficam separadas da arena atual desse benchmark. Um mesmo modelo pode participar atualmente do Racing.
+Estas execuções **do Orbitarium** continuam visíveis como referência, mas ficam separadas da arena atual desse benchmark. A V3.1 do Racing-bench ainda não possui execuções publicadas; os três projetos da V2.6 são legado arquivado.
 
 | Modelo | Classificação | Projeto / fonte | Proveniência |
 | --- | --- | --- | --- |
