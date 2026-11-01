@@ -6,7 +6,7 @@
 
 **[Racing-bench V3.1](./prompts/racing-v3.1.md)** is the only active execution contract. It specifies three dedicated tracks/modes, four high-detail cars, five local AI opponents, three additional orthogonal Signature Features, 16 mandatory expansion systems E01–E16, detailed photoreal PBR/GPU graphics, deep vehicle physics, Photo Mode and verified full-state replays.
 
-All competitors must receive the **same complete V3.1 prompt**. Its operational browser/build/test permissions are already included. **Do not supply any review context or separate V2.6 execution addendum with V3.1.** No V3.1 model run or live game is published yet.
+**Attach both documents to every V3.1 run:** (1) the unchanged [Racing-bench V3.1 prompt](./prompts/racing-v3.1.md), and (2) the short [mandatory operational clarification](./prompts/racing-v3.1-attach.md). This clarification explicitly permits the tools needed for browsing, Playwright, DevTools, builds, debugging and testing this project. **Do not attach review contexts or the historical V2.6 addendum.** No V3.1 model run or live game is published yet.
 
 ## Legacy archived runs — V2.6
 
