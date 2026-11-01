@@ -4,7 +4,7 @@
 
 | Prompt | Status | UTF-8 bytes | Lines | SHA-256 |
 | --- | --- | ---: | ---: | --- |
-| **[racing-v3.3.md](./racing-v3.3.md)** | **Current, frozen; G1–G13** | **266,596** | **1,263** | `0866a35f061df48eb1473a96cd9a288cae32b5a522887eb72a1d727368c49e84` |
+| **[racing-v3.3.md](./racing-v3.3.md)** | **Current, frozen; G1–G13** | **269,102** | **1,263** | `4e532514d322f59d70912285b292a2fae569a516bb9581c5c8f60036fe99dcd7` |
 | [racing-v3.2.md](./racing-v3.2.md) | Historical, frozen | 252,906 | 1,195 | `bacdc4f7ad93881c6159bdbb353a421ca59aacd2450a08a88e0b700530ccf3ed` |
 | [racing-v3.1.md](./racing-v3.1.md) | Historical, frozen | 223,685 | 1,072 | `2b0ce465048b9edacc8ba943d3bbf09aeee223410bf9eb3c4012f515d7fb93b5` |
 | [racing-v2.6.md](./racing-v2.6.md) | Legacy, archived verbatim | 80,309 | 429 | `8dc65f23a8eaa35a06a7833a7929763fd16aa3cde2ff563561bffac7d7d69248` |
