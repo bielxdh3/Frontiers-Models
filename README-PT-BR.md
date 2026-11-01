@@ -128,11 +128,11 @@ Os três snapshots do Racing incluem [manifestos SHA-256 e backups Git restaurá
 
 | Modelo | Revisão da fonte | Classificação | Status da fonte |
 | --- | --- | --- | --- |
-| **GPT-6.1 Sol** | Git `7caaccc7f4…` | Legado | Arquivado |
-| **GPT-6 Astra** | Git `fca2ef51b4…` | Legado | Arquivado |
-| **Grok 4.7** | Git `bcb1e82012…` | Legado | Arquivado |
-| **Fable 5.1** | Git `7e079669e4…` | Legado | Arquivado |
-| **Gemini 4 Argon** | Git `318aa80bb5…` | Legado | Arquivado |
+| **GPT-6.1 Sol** | Git `7caaccc7f4…` | Atual | Arquivado |
+| **GPT-6 Astra** | Git `fca2ef51b4…` | Atual | Arquivado |
+| **Grok 4.7** | Git `bcb1e82012…` | Atual | Arquivado |
+| **Fable 5.1** | Git `7e079669e4…` | Atual | Arquivado |
+| **Gemini 4 Argon** | Git `318aa80bb5…` | Atual | Arquivado |
 | **GPT-5.6 Sol V1** | Git `67eb9fc51f…` | Histórico | Arquivado |
 | **GPT-5.6 Sol V2** | Git `93d43ae62f…` | Histórico | Arquivado |
 | **Grok 4.6** | ZIP SHA-256 `5d77eeb509…` | Histórico | Arquivado |
