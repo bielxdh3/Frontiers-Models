@@ -25,8 +25,8 @@ test('all seven canonical Orbitarium sites retain their original links', () => {
   }
 });
 
-test('Racing V3.1 is current; all three V2.6 runs are legacy without live links', () => {
-  assert.equal(racing.current_prompt, 'racing-v3.1');
+test('Racing V3.2 is current; all three V2.6 runs are legacy without live links', () => {
+  assert.equal(racing.current_prompt, 'racing-v3.2');
   assert.deepEqual(racing.runs.map(run => run.id), ['gpt-6.1-sol', 'gemini-3.8-flash', 'gpt-6-astra']);
   for (const run of racing.runs) {
     assert.equal(run.live_url, null);
