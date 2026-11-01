@@ -6,7 +6,7 @@
 
 O **[Racing-bench V3.1](./prompts/racing-v3.1.md)** é o único contrato ativo. Exige três pistas/modos dedicados, quatro carros detalhados, cinco rivais locais, três Signature Features adicionais e independentes, dezesseis sistemas obrigatórios E01–E16, gráficos PBR/GPU fotorrealistas, física avançada, Modo Foto e replays íntegros.
 
-Todos os competidores devem receber **o mesmo prompt V3.1 integral**. As permissões de navegador/build/teste já estão nele. **Não envie contexto de revisão nem o antigo adendo separado V2.6 junto à V3.1.** Ainda não existem jogos ou sites V3.1 publicados.
+**Anexe os dois arquivos em toda execução V3.1:** (1) o [prompt Racing-bench V3.1 intacto](./prompts/racing-v3.1.md) e (2) o [breve esclarecimento operacional obrigatório, em inglês](./prompts/racing-v3.1-attach.md). O esclarecimento autoriza navegador, Playwright, DevTools, builds, depuração e testes do próprio projeto. **Não envie contextos de revisão nem o adendo histórico da V2.6.** Ainda não existem jogos ou sites V3.1 publicados.
 
 ## Legado arquivado — V2.6
 
