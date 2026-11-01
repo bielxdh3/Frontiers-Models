@@ -41,7 +41,7 @@ Luna is source-pinned only for now; its prompt provenance is not archived here.
 
 GPT-5.6 Sol V1 is preserved only for prompt-leverage history. It is deliberately excluded from the current arena because it used [`sun-original.md`](./prompts/sun-original.md), not Frontier V2.
 
-- [Open Sol V1](https://orbitarium-gpt-5.6-sol.v1.biel.dev.br)
+- Live site removed; the source archive remains available below.
 - Snapshot: `67eb9fc51f…`
 - Archive: [Archive V1](./runs/gpt-5.6-sun-max/original/)
 

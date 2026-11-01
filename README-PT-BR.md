@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — coleção de benchmarks independentes Racing e Orbitarium com sete execuções atuais" width="100%" />
+<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — coleção de benchmarks independentes Racing e Orbitarium com oito execuções atuais" width="100%" />
 
 <br/>
 
 [![Benchmark](https://img.shields.io/badge/benchmark-frontier%20models-7C3AED?style=flat)](./benchmarks)
 [![Benchmarks](https://img.shields.io/badge/benchmarks-2-2563EB?style=flat)](./docs/REPOSITORY-ARCHITECTURE.md)
-[![Execuções atuais](https://img.shields.io/badge/execu%C3%A7%C3%B5es%20atuais-7-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
+[![Execuções atuais](https://img.shields.io/badge/execu%C3%A7%C3%B5es%20atuais-8-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
 
 # Frontier Models
 
@@ -26,8 +26,9 @@
 | --- | --- | --- |
 | 🏎️ **GPT-6.1 Sol** | [Abrir GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br) | [Código: GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/) |
 | 🏎️ **Gemini 3.8 Flash** | [Abrir Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br) | [Código: Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) |
+| 🏎️ **GPT-6 Astra** | [Abrir GPT-6 Astra](https://racing-gpt-6-astra.biel.dev.br) | [Código: GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra/source/) |
 
-Os dois projetos Racing foram arquivados a partir de commits Git exatos. Isso comprova a preservação dos arquivos, **não a aprovação independente do gameplay**. Veja o [arquivo Racing](./benchmarks/racing/) e o [adendo obrigatório de execução](./benchmarks/racing/EXECUTION-ADDENDUM.md).
+Os três projetos Racing foram arquivados a partir de commits Git exatos. Isso comprova a preservação dos arquivos, **não a aprovação independente do gameplay**. Veja o [arquivo Racing](./benchmarks/racing/) e o [adendo obrigatório de execução](./benchmarks/racing/EXECUTION-ADDENDUM.md).
 
 ### Orbitarium-bench — referências atuais
 
@@ -79,7 +80,7 @@ Estas execuções **do Orbitarium** continuam visíveis como referência, mas fi
 
 | Modelo | Classificação | Projeto / fonte | Proveniência |
 | --- | --- | --- | --- |
-| ☀️ **GPT-5.6 Sol V1** | Baseline histórico | [Abrir Sol V1](https://orbitarium-gpt-5.6-sol.v1.biel.dev.br) | [Código V1](./benchmarks/solar-system/runs/gpt-5.6-sun-max/original/) · commit `67eb9fc51f…` |
+| ☀️ **GPT-5.6 Sol V1** | Baseline histórico | Site removido | [Código V1](./benchmarks/solar-system/runs/gpt-5.6-sun-max/original/) · commit `67eb9fc51f…` |
 | ☀️ **GPT-5.6 Sol V2** | Frontier desatualizado | [Abrir Sol V2](https://orbitarium-gpt-5.6-sol-v2.biel.dev.br) | [Código V2](./benchmarks/solar-system/runs/gpt-5.6-sun-max/rebuild/) · commit `93d43ae62f…` |
 | 🌙 **GPT-5.6 Luna** | Non-frontier | [Abrir Luna](https://orbitarium-gpt-5.6-luna.biel.dev.br) | commit [`5fdc036884…`](https://github.com/bielxdh3/orbitario-luna/commit/5fdc036884bbeb712eb015c76db1b1eaf83c9e42) |
 | 𝕏 **Grok 4.6** | Execução frontier arquivada | [Abrir Grok 4.6](https://grok-4-6-solar-system.vercel.app) | [`runs/grok-4.6/frontier-v2`](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) |
@@ -97,9 +98,9 @@ PROMPT → EXECUÇÃO DO MODELO → SNAPSHOT / FONTE FIXADA → EVIDÊNCIAS → 
 
 ## Benchmark 002 — Racing-bench
 
-O [Racing-bench](./benchmarks/racing/) é um benchmark independente de criação de um jogo de corrida arcade cinematográfico. **Toda execução deve receber o [prompt oficial V2.6](./benchmarks/racing/prompts/racing-v2.6.md) junto com o [adendo obrigatório sobre skills e ferramentas](./benchmarks/racing/EXECUTION-ADDENDUM.md).** Os códigos originais do [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/) e [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) foram arquivados com todos os arquivos rastreados e backups do histórico Git; isso não representa aprovação dos testes de gameplay.
+O [Racing-bench](./benchmarks/racing/) é um benchmark independente de criação de um jogo de corrida arcade cinematográfico. **Toda execução deve receber o [prompt oficial V2.6](./benchmarks/racing/prompts/racing-v2.6.md) junto com o [adendo obrigatório sobre skills e ferramentas](./benchmarks/racing/EXECUTION-ADDENDUM.md).** Os códigos originais do [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/), [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) e [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra/source/) foram arquivados com todos os arquivos rastreados e backups do histórico Git; isso não representa aprovação dos testes de gameplay.
 
-**Sites do Racing-bench:** [GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br) · [Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br).
+**Sites do Racing-bench:** [GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br) · [Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br) · [GPT-6 Astra](https://racing-gpt-6-astra.biel.dev.br).
 
 ## Benchmark 001 — Orbitarium-bench
 
@@ -115,8 +116,9 @@ O caminho histórico `benchmarks/solar-system/` permanece inalterado para preser
 | --- | --- | --- | --- |
 | **GPT-6.1 Sol** | Git `6f55263669…` | Atual | Arquivado |
 | **Gemini 3.8 Flash** | Git `a18fcaee71…` | Atual | Arquivado |
+| **GPT-6 Astra** | Git `0c615e8dc3…` | Atual | Arquivado |
 
-Os dois snapshots do Racing incluem [manifestos SHA-256 e backups Git restauráveis](./benchmarks/racing/).
+Os três snapshots do Racing incluem [manifestos SHA-256 e backups Git restauráveis](./benchmarks/racing/).
 
 ### Orbitarium-bench
 

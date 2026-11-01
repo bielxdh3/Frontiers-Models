@@ -30,7 +30,7 @@ test('legacy IDs, archived prompt filename and source URLs stay valid', () => {
     assert.match(run.id, /^gpt-5\.6-sun-max-/);
     assert.match(run.target_path, /^runs\/gpt-5\.6-sun-max\//);
     assert.equal(run.live_url, run.role === 'historical-baseline'
-      ? 'https://orbitarium-gpt-5.6-sol.v1.biel.dev.br'
+      ? null
       : 'https://orbitarium-gpt-5.6-sol-v2.biel.dev.br');
     assert.ok(existsSync(resolve(root, 'benchmarks/solar-system', run.target_path)));
     assert.ok(existsSync(resolve(root, 'benchmarks/solar-system', run.prompt)));

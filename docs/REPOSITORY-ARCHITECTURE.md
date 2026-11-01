@@ -50,11 +50,16 @@ Frontiers-Models/
          │  ├─ SOURCE-FILES.json
          │  ├─ SOURCE-REPOSITORY.bundle
          │  └─ source/
-         └─ gemini-3.8-flash/
-            ├─ SOURCE-PROVENANCE.md
-            ├─ SOURCE-FILES.json
-            ├─ SOURCE-REPOSITORY.bundle
-            └─ source/
+          ├─ gemini-3.8-flash/
+          │  ├─ SOURCE-PROVENANCE.md
+          │  ├─ SOURCE-FILES.json
+          │  ├─ SOURCE-REPOSITORY.bundle
+          │  └─ source/
+          └─ gpt-6-astra/
+             ├─ SOURCE-PROVENANCE.md
+             ├─ SOURCE-FILES.json
+             ├─ SOURCE-REPOSITORY.bundle
+             └─ source/
 ```
 
 ## Run snapshots and source pins
@@ -71,4 +76,4 @@ The Orbitarium-bench current arena contains GPT-6.1 Sol, GPT-6 Astra, Grok 4.7, 
 
 Add new benchmark directories under `benchmarks/`. Each should preserve its exact input, original output or pinned source, and verifiable provenance.
 
-Racing-bench archives the V2.6 prompt and the exact source trees for GPT-6.1 Sol and Gemini 3.8 Flash at pinned commits, plus per-file SHA-256 manifests and restorable Git bundles. No gameplay quality or successful runtime verification is implied by source archival. The Orbitarium/Solar System archive and its existing paths remain unchanged.
+Racing-bench archives the V2.6 prompt and the exact source trees for GPT-6.1 Sol, Gemini 3.8 Flash and GPT-6 Astra at pinned commits, plus per-file SHA-256 manifests and restorable Git bundles. No gameplay quality or successful runtime verification is implied by source archival. The Orbitarium/Solar System archive and its existing paths remain unchanged.

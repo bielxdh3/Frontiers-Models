@@ -13,18 +13,16 @@ const orbitRuns = orbitarium.current_arena.map(id => {
   if (!run) throw new Error('Missing Orbitarium reference: ' + id);
   return run;
 });
-const racingRuns = ['gpt-6.1-sol', 'gemini-3.8-flash'].map(id => {
-  const run = racing.runs.find(item => item.id === id);
-  if (!run) throw new Error('Missing Racing run: ' + id);
-  return run;
-});
+const racingRuns = racing.runs;
 if (orbitRuns.length !== 5 || new Set(orbitRuns.map(run => run.id)).size !== 5 ||
     !orbitRuns.some(run => run.model === 'Gemini 4 Argon') ||
     orbitRuns.some(run => run.model === 'Gemini 3.8 Flash') ||
-    racingRuns.length !== 2 || racingRuns[0].model !== 'GPT-6.1 Sol' ||
+    racingRuns.length !== 3 || new Set(racingRuns.map(run => run.id)).size !== 3 ||
+    racingRuns[0].model !== 'GPT-6.1 Sol' ||
     racingRuns[1].model !== 'Gemini 3.8 Flash' ||
+    racingRuns[2].model !== 'GPT-6 Astra' ||
     [...orbitRuns, ...racingRuns].some(run => !run.live_url?.startsWith('https://'))) {
-  throw new Error('Hero expects 2 Racing runs and 5 current Orbitarium references with websites');
+  throw new Error('Hero expects 3 Racing runs and 5 current Orbitarium references with websites');
 }
 
 const escape = value => String(value).replaceAll('&', '&amp;')
@@ -40,7 +38,7 @@ function badge({ run, x, y, width, accent, benchmark }) {
 }
 
 const racingBadges = racingRuns.map((run, i) =>
-  badge({ run, x: 650 + i * 362, y: 173, width: 342, accent: i ? '#80e9f2' : '#ffbb73', benchmark: 'racing' })
+  badge({ run, x: 650 + i * 239, y: 173, width: 225, accent: ['#ffbb73', '#80e9f2', '#bda3ff'][i], benchmark: 'racing' })
 ).join('\n    ');
 const orbitBadges = orbitRuns.map((run, i) =>
   badge({ run, x: i < 3 ? 650 + i * 239 : 769.5 + (i - 3) * 239, y: i < 3 ? 390 : 452,
@@ -49,7 +47,7 @@ const orbitBadges = orbitRuns.map((run, i) =>
 
 const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" role="img" aria-labelledby="title desc">
   <title id="title">Frontier Models — Racing and Orbitarium benchmark collection</title>
-  <desc id="desc">Two independent benchmarks, seven current projects. Racing: ${escape(racingRuns.map(run => run.model).join(', '))}. Orbitarium current: ${escape(orbitRuns.map(run => run.model).join(', '))}. Historical and non-frontier runs remain available in the repository archive, not in this banner.</desc>
+  <desc id="desc">Two independent benchmarks, eight current projects. Racing: ${escape(racingRuns.map(run => run.model).join(', '))}. Orbitarium current: ${escape(orbitRuns.map(run => run.model).join(', '))}. Historical and non-frontier runs remain available in the repository archive, not in this banner.</desc>
   <defs>
     <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#080f1d"/>
@@ -115,4 +113,4 @@ const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" rol
 </svg>
 `;
 writeFileSync(resolve(archive, 'frontier-models-hero-v7.svg'), hero);
-console.log('Rendered Frontier Models collection hero: Racing 2 + Orbitarium 5.');
+console.log(`Rendered Frontier Models collection hero: Racing ${racingRuns.length} + Orbitarium ${orbitRuns.length}.`);

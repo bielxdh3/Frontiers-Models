@@ -41,9 +41,10 @@ test('the homepages present Racing first and Orbitarium second, without mixing m
     const diagram = content.indexOf(path === 'README.md' ? '## How it fits together' : '## Como se organiza');
     assert.ok(0 <= racing && racing < orbitarium && orbitarium < diagram, path);
     const racingSection = content.slice(racing, orbitarium);
-    assert.equal([...racingSection.matchAll(/\| 🏎️ \*\*/g)].length, 2, path);
+    assert.equal([...racingSection.matchAll(/\| 🏎️ \*\*/g)].length, 3, path);
     assert.ok(racingSection.includes('https://racing-gpt-6.1-sol.biel.dev.br'));
     assert.ok(racingSection.includes('https://racing-gemini-3.8-flash.biel.dev.br'));
+    assert.ok(racingSection.includes('https://racing-gpt-6-astra.biel.dev.br'));
     const orbitariumSection = content.slice(orbitarium, diagram);
     assert.equal(orbitariumSection.split('\n').filter(line =>
       line.startsWith('|') && line.includes('**')).length, 5, path);
