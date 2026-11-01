@@ -21,8 +21,9 @@ if (orbitRuns.length !== 5 || new Set(orbitRuns.map(run => run.id)).size !== 5 |
     racingRuns[0].model !== 'GPT-6.1 Sol' ||
     racingRuns[1].model !== 'Gemini 3.8 Flash' ||
     racingRuns[2].model !== 'GPT-6 Astra' ||
-    [...orbitRuns, ...racingRuns].some(run => !run.live_url?.startsWith('https://'))) {
-  throw new Error('Hero expects 3 Racing runs and 5 current Orbitarium references with websites');
+    orbitRuns.some(run => !run.live_url?.startsWith('https://')) ||
+    racingRuns.some(run => run.display_status !== 'legacy-archived' || run.live_url !== null)) {
+  throw new Error('Hero expects 3 archived Racing runs and 5 current Orbitarium references');
 }
 
 const escape = value => String(value).replaceAll('&', '&amp;')
@@ -47,7 +48,7 @@ const orbitBadges = orbitRuns.map((run, i) =>
 
 const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" role="img" aria-labelledby="title desc">
   <title id="title">Frontier Models — Racing and Orbitarium benchmark collection</title>
-  <desc id="desc">Two independent benchmarks, eight current projects. Racing: ${escape(racingRuns.map(run => run.model).join(', '))}. Orbitarium current: ${escape(orbitRuns.map(run => run.model).join(', '))}. Historical and non-frontier runs remain available in the repository archive, not in this banner.</desc>
+  <desc id="desc">Two benchmarks. Racing-bench V3.1 is the active frozen specification; three V2.6 projects are legacy archives: ${escape(racingRuns.map(run => run.model).join(', '))}. Orbitarium current: ${escape(orbitRuns.map(run => run.model).join(', '))}. Source archives remain available without retired game links.</desc>
   <defs>
     <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#080f1d"/>
@@ -88,11 +89,12 @@ const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" rol
     <g data-benchmark="racing">
       <rect x="613" y="51" width="775" height="215" rx="22" fill="url(#race)" stroke="#7d5565" stroke-opacity=".8"/>
       <path d="M649 67H929" stroke="#fdaf6d" stroke-width="3" stroke-linecap="round"/>
+      <text x="1260" y="84" font-size="17" font-weight="700" fill="#ffc99d">V2.6 LEGACY</text>
       <g stroke="#ec9b70" fill="none" stroke-linecap="round" opacity=".27">
         <path d="M1050 88h283M1135 99h199M1224 111h111" stroke-width="2"/>
         <path d="M1000 143l29 -25 40 19 22 -17 46 19 32 -20 65 25 46 -20 46 20" stroke-width="1.4"/>
       </g>
-      <text x="649" y="137" font-size="38" font-weight="800" fill="#fff5ed">Racing-bench</text>
+      <text x="649" y="137" font-size="38" font-weight="800" fill="#fff5ed">Racing-bench V3.1</text>
       ${racingBadges}
     </g>
     <g data-benchmark="orbitarium">
@@ -113,4 +115,4 @@ const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" rol
 </svg>
 `;
 writeFileSync(resolve(archive, 'frontier-models-hero-v7.svg'), hero);
-console.log(`Rendered Frontier Models collection hero: Racing ${racingRuns.length} + Orbitarium ${orbitRuns.length}.`);
+console.log(`Rendered Frontier Models collection hero: Racing V2.6 legacy ${racingRuns.length} + Orbitarium current ${orbitRuns.length}.`);
