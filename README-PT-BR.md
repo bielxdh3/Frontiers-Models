@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — coleção de benchmarks independentes Racing e Orbitarium com oito execuções atuais" width="100%" />
+<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — coleção de benchmarks independentes Racing e Orbitarium com cinco execuções atuais do Orbitarium" width="100%" />
 
 <br/>
 
 [![Benchmark](https://img.shields.io/badge/benchmark-frontier%20models-7C3AED?style=flat)](./benchmarks)
 [![Benchmarks](https://img.shields.io/badge/benchmarks-2-2563EB?style=flat)](./docs/REPOSITORY-ARCHITECTURE.md)
-[![Execuções atuais](https://img.shields.io/badge/execu%C3%A7%C3%B5es%20atuais-8-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
+[![Execuções atuais](https://img.shields.io/badge/execu%C3%A7%C3%B5es%20atuais-5-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
 
 # Frontier Models
 
@@ -20,15 +20,19 @@
 
 ## ⚔️ Execuções atuais por benchmark
 
-### Racing-bench — execuções atuais
+### Racing-bench V3.1 — especificação atual
 
-| Modelo | Projeto ao vivo | Código-fonte |
-| --- | --- | --- |
-| 🏎️ **GPT-6.1 Sol** | [Abrir GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br) | [Código: GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/) |
-| 🏎️ **Gemini 3.8 Flash** | [Abrir Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br) | [Código: Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) |
-| 🏎️ **GPT-6 Astra** | [Abrir GPT-6 Astra](https://racing-gpt-6-astra.biel.dev.br) | [Código: GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra/source/) |
+O **[Racing-bench V3.1 — prompt oficial congelado](./benchmarks/racing/prompts/racing-v3.1.md)** é a versão vigente: um jogo de corrida AAA-inspired no navegador com três pistas, quatro carros, cinco rivais locais, três Signature Features independentes e dezesseis sistemas avançados obrigatórios. **Ainda não existem jogos ou sites V3.1 publicados pelos modelos.**
 
-Os três projetos Racing foram arquivados a partir de commits Git exatos. Isso comprova a preservação dos arquivos, **não a aprovação independente do gameplay**. Veja o [arquivo Racing](./benchmarks/racing/) e o [adendo obrigatório de execução](./benchmarks/racing/EXECUTION-ADDENDUM.md).
+**Legado arquivado — Racing-bench V2.6 (código preservado, links antigos para jogar removidos):**
+
+| Modelo legado | Código arquivado |
+| --- | --- |
+| **GPT-6.1 Sol** | [Código](./benchmarks/racing/runs/gpt-6.1-sol/source/) |
+| **Gemini 3.8 Flash** | [Código](./benchmarks/racing/runs/gemini-3.8-flash/source/) |
+| **GPT-6 Astra** | [Código](./benchmarks/racing/runs/gpt-6-astra/source/) |
+
+As três execuções da V2.6 agora são **legado/arquivadas**, não participantes da V3.1. Seus snapshots, manifestos e bundles Git continuam intactos; isso não afirma aprovação do gameplay.
 
 ### Orbitarium-bench — referências atuais
 
@@ -98,9 +102,9 @@ PROMPT → EXECUÇÃO DO MODELO → SNAPSHOT / FONTE FIXADA → EVIDÊNCIAS → 
 
 ## Benchmark 002 — Racing-bench
 
-O [Racing-bench](./benchmarks/racing/) é um benchmark independente de criação de um jogo de corrida arcade cinematográfico. **Toda execução deve receber o [prompt oficial V2.6](./benchmarks/racing/prompts/racing-v2.6.md) junto com o [adendo obrigatório sobre skills e ferramentas](./benchmarks/racing/EXECUTION-ADDENDUM.md).** Os códigos originais do [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/), [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) e [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra/source/) foram arquivados com todos os arquivos rastreados e backups do histórico Git; isso não representa aprovação dos testes de gameplay.
+**O [Racing-bench V3.1](./benchmarks/racing/prompts/racing-v3.1.md) é o contrato oficial atual, congelado e autônomo.** Exige um jogo de corrida fotorrealista e complexo no navegador, com gráficos avançados de GPU, física profunda, três pistas/modos, quatro carros, cinco rivais locais, três Signature Features originais e dezesseis sistemas adicionais integrados. Ainda não há execuções V3.1 publicadas.
 
-**Sites do Racing-bench:** [GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br) · [Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br) · [GPT-6 Astra](https://racing-gpt-6-astra.biel.dev.br).
+**A V2.6 agora é legado arquivado.** Seu [prompt original intacto](./benchmarks/racing/prompts/racing-v2.6.md), o [adendo histórico de execução](./benchmarks/racing/EXECUTION-ADDENDUM.md) e os códigos do [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/), [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) e [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra/source/) permanecem preservados. Os links antigos de visita foram removidos da apresentação pública; isso não exclui sites externos.
 
 ## Benchmark 001 — Orbitarium-bench
 
@@ -114,9 +118,9 @@ O caminho histórico `benchmarks/solar-system/` permanece inalterado para preser
 
 | Modelo | Revisão da fonte | Classificação | Status da fonte |
 | --- | --- | --- | --- |
-| **GPT-6.1 Sol** | Git `6f55263669…` | Atual | Arquivado |
-| **Gemini 3.8 Flash** | Git `a18fcaee71…` | Atual | Arquivado |
-| **GPT-6 Astra** | Git `0c615e8dc3…` | Atual | Arquivado |
+| **GPT-6.1 Sol** | Git `6f55263669…` | Legado | Arquivado |
+| **Gemini 3.8 Flash** | Git `a18fcaee71…` | Legado | Arquivado |
+| **GPT-6 Astra** | Git `0c615e8dc3…` | Legado | Arquivado |
 
 Os três snapshots do Racing incluem [manifestos SHA-256 e backups Git restauráveis](./benchmarks/racing/).
 
@@ -124,11 +128,11 @@ Os três snapshots do Racing incluem [manifestos SHA-256 e backups Git restaurá
 
 | Modelo | Revisão da fonte | Classificação | Status da fonte |
 | --- | --- | --- | --- |
-| **GPT-6.1 Sol** | Git `7caaccc7f4…` | Atual | Arquivado |
-| **GPT-6 Astra** | Git `fca2ef51b4…` | Atual | Arquivado |
-| **Grok 4.7** | Git `bcb1e82012…` | Atual | Arquivado |
-| **Fable 5.1** | Git `7e079669e4…` | Atual | Arquivado |
-| **Gemini 4 Argon** | Git `318aa80bb5…` | Atual | Arquivado |
+| **GPT-6.1 Sol** | Git `7caaccc7f4…` | Legado | Arquivado |
+| **GPT-6 Astra** | Git `fca2ef51b4…` | Legado | Arquivado |
+| **Grok 4.7** | Git `bcb1e82012…` | Legado | Arquivado |
+| **Fable 5.1** | Git `7e079669e4…` | Legado | Arquivado |
+| **Gemini 4 Argon** | Git `318aa80bb5…` | Legado | Arquivado |
 | **GPT-5.6 Sol V1** | Git `67eb9fc51f…` | Histórico | Arquivado |
 | **GPT-5.6 Sol V2** | Git `93d43ae62f…` | Histórico | Arquivado |
 | **Grok 4.6** | ZIP SHA-256 `5d77eeb509…` | Histórico | Arquivado |
