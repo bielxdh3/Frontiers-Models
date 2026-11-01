@@ -123,7 +123,7 @@ test('Racing V3.3 frozen prompt preserves all legacy scopes and requires coastal
   for(let i=1;i<=10;i++)assert.match(content,new RegExp('\\bW'+String(i).padStart(2,'0')+'\\b'));
   assert.match(content,/G13 — Complete Premium Coastal-City Environment and Material Art/);
   assert.match(content,/at least 38 total genuine browser screenshots/);
-  assert.match(content,/first-person.*not.*mandatory/i);
+  assert.match(content,/No first-person or cockpit-camera requirement/);
   assert.equal(p.environment_art.world_probes,10);
   assert.equal(p.minimum_screenshots,38);
   assert.equal(p.ui_ux.ui_probes,16);
