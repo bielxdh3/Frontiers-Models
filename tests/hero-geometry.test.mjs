@@ -24,15 +24,18 @@ test('hero presents a clean collection of two benchmarks with no microcopy or or
   assert.doesNotMatch(renderer, /orbitSpecs|orbitRings|orbitCenter/);
 });
 
-test('Racing first: three current runs from the Racing registry with correct names', () => {
+test('Racing first: three legacy runs from the Racing registry with correct names', () => {
   assert.deepEqual(models('racing'), ['gpt-6.1-sol', 'gemini-3.8-flash', 'gpt-6-astra']);
   const entries = racing.runs;
   for (const id of models('racing')) {
     const run = entries.find(run => run.id === id);
     assert.ok(run);
+    assert.equal(run.display_status, 'legacy-archived');
     assert.match(svg, new RegExp('>' + run.model.replace(/[.*+?^$()|[\]{}]/g, '\\$&') + '<'));
   }
   assert.ok(svg.indexOf('<g data-benchmark="racing">') < svg.indexOf('<g data-benchmark="orbitarium">'));
+  assert.match(svg, /V2\.6 LEGACY/);
+  assert.match(svg, />Racing-bench V3\.1<\/text>/);
 });
 
 test('Orbitarium second: all five current references preserved in registry order', () => {
