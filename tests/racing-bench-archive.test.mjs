@@ -51,7 +51,7 @@ test('every Racing-bench V2.6 execution requires the separate operational tool a
   assert.match(canonical.toString('utf8'), /No delegation/);
   assert.match(text('benchmarks/racing/README.md'), /required \*\*BOTH\*\*/);
   assert.match(text('benchmarks/racing/README-PT-BR.md'), /\*\*OS DOIS\*\*/);
-  assert.match(text('benchmarks/racing/prompts/README.md'), /historical \*\*V2\.6\*\*/);
+  assert.match(text('benchmarks/racing/prompts/README.md'), /For historical V2\.6 reproduction, supply \*\*both\*\*/);
 });
 
 test('Racing-bench is discoverable from both repository homepages', () => {
