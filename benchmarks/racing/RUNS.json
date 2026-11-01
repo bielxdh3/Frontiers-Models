@@ -17,7 +17,9 @@
       "bytes": 222337,
       "lines": 1069,
       "source_filename": "racing-v3.1.md",
-      "execution_addendum": "integrated-no-separate-document"
+      "execution_addendum": "integrated-no-separate-document",
+      "required_attachment": "prompts/racing-v3.1-attach.md",
+      "attachment_purpose": "mandatory-operational-tools-clarification"
     }
   },
   "execution_addendum": {
