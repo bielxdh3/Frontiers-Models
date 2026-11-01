@@ -128,3 +128,21 @@ test('Racing V3.3 frozen prompt preserves all legacy scopes and requires coastal
   assert.equal(p.minimum_screenshots,38);
   assert.equal(p.ui_ux.ui_probes,16);
 });
+
+test('Racing V3.3 Gemini-review corrections preserve real frozen-world and evidence invariants', () => {
+  const content = text('benchmarks/racing/prompts/racing-v3.3.md').replace(/\r\n/g, '\n');
+  assert.match(content, /Clock\/Photo Mode invariant/);
+  assert.match(content, /performance\.now\(\)/);
+  assert.match(content, /E15 progressive path-tracing samples/);
+  assert.match(content, /Environmental audio lifecycle/);
+  assert.match(content, /disposed without stacked\/doubled nodes/);
+  assert.match(content, /59 mandatory independent verification records/);
+  assert.match(content, /at least 38 distinct, genuine browser screenshot files/);
+  assert.match(content, /Sections 72–76 coastal-city\/beach\/surf/);
+  assert.match(content, /Sections `40–77` are an integral part/);
+  assert.match(content, /premium reflective\/transmissive exterior glazing \(no modeled interior required\)/);
+  assert.match(content, /under the Section 34 M1 recovery-and-continuation rule/);
+  assert.doesNotMatch(content, /W01–W12|40\+ images|Section 80|Sections `00` through `80`/);
+  assert.equal(registry.prompts['racing-v3.3'].minimum_screenshots, 38);
+  assert.equal(registry.prompts['racing-v3.3'].environment_art.world_probes, 10);
+});
