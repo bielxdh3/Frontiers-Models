@@ -33,10 +33,10 @@ test('legacy archive paths and exact prompt integrity remain unchanged', () => {
   assert.equal(digest, registry.prompts['frontier-v2'].sha256);
 });
 
-test('Racing V3.2 appears first while the old three remain source-only legacy', () => {
+test('Racing V3.3 appears first while the old three remain source-only legacy', () => {
   for (const path of ['README.md', 'README-PT-BR.md']) {
     const s = read(path);
-    const first = s.indexOf('### Racing-bench V3.2');
+    const first = s.indexOf('### Racing-bench V3.3');
     const second = s.indexOf('### Orbitarium-bench — ');
     assert.ok(first >= 0 && first < second);
     const section = s.slice(first, second);
