@@ -45,9 +45,11 @@ Frontiers-Models/
       │  ├─ README.md
       │  ├─ racing-v2.6.md  (legacy)
       │  ├─ racing-v3.1.md  (historical, frozen)
-      │  ├─ racing-v3.2.md  (current, frozen; premium UI/UX)
+      │  ├─ racing-v3.2.md  (historical, frozen; premium UI/UX)
+      │  ├─ racing-v3.3.md  (current, frozen; coastal city and beach art)
       │  ├─ racing-v3.1-attach.md
-      │  └─ racing-v3.2-attach.md  (current required operational note)
+      │  ├─ racing-v3.2-attach.md
+      │  └─ racing-v3.3-attach.md  (current required operational note)
       └─ runs/
          ├─ gpt-6.1-sol/
          │  ├─ SOURCE-PROVENANCE.md
@@ -80,4 +82,4 @@ The Orbitarium-bench current arena contains GPT-6.1 Sol, GPT-6 Astra, Grok 4.7, 
 
 Add new benchmark directories under `benchmarks/`. Each should preserve its exact input, original output or pinned source, and verifiable provenance.
 
-Racing-bench V3.2 is the current frozen specification with mandatory complete premium UI/UX (G12), sixteen U01–U16 interface probes, twelve extra UI screenshots and a short required operational attachment. The previous V3.1 prompt and its attachment remain intact for archival reproduction. Its three prior V2.6 projects are legacy/archived with retired public-game links omitted from the index. Racing-bench archives the V2.6 prompt and the exact source trees for GPT-6.1 Sol, Gemini 3.8 Flash and GPT-6 Astra at pinned commits, plus per-file SHA-256 manifests and restorable Git bundles. No gameplay quality or successful runtime verification is implied by source archival. The Orbitarium/Solar System archive and its existing paths remain unchanged.
+Racing-bench V3.3 is the current frozen specification with complete premium UI/UX (G12), high-quality coastal-city and beach environmental art (G13), 10 dedicated W01–W10 world-art inspections, and a total of 38+ screenshot files. V3.2 and V3.1 prompts and attachments remain intact for archival reproduction. Its three prior V2.6 projects are legacy/archived with retired public-game links omitted from the index. Racing-bench archives the V2.6 prompt and the exact source trees for GPT-6.1 Sol, Gemini 3.8 Flash and GPT-6 Astra at pinned commits, plus per-file SHA-256 manifests and restorable Git bundles. No gameplay quality or successful runtime verification is implied by source archival. The Orbitarium/Solar System archive and its existing paths remain unchanged.
