@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — independent Racing and Orbitarium benchmark collection with seven current runs" width="100%" />
+<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — independent Racing and Orbitarium benchmark collection with eight current runs" width="100%" />
 
 <br/>
 
 [![Benchmark](https://img.shields.io/badge/benchmark-frontier%20models-7C3AED?style=flat)](./benchmarks)
 [![Benchmarks](https://img.shields.io/badge/benchmarks-2-2563EB?style=flat)](./docs/REPOSITORY-ARCHITECTURE.md)
-[![Current runs](https://img.shields.io/badge/current%20runs-7-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
+[![Current runs](https://img.shields.io/badge/current%20runs-8-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
 
 # Frontier Models
 
@@ -26,8 +26,9 @@
 | --- | --- | --- |
 | 🏎️ **GPT-6.1 Sol** | [Open GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br) | [Code: GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/) |
 | 🏎️ **Gemini 3.8 Flash** | [Open Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br) | [Code: Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) |
+| 🏎️ **GPT-6 Astra** | [Open GPT-6 Astra](https://racing-gpt-6-astra.biel.dev.br) | [Code: GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra/source/) |
 
-Both Racing runs are archived at exact Git commits; this is a source-archival status, **not a claim that gameplay passed independent review**. See the [Racing-bench archive](./benchmarks/racing/) and its separate required [execution addendum](./benchmarks/racing/EXECUTION-ADDENDUM.md).
+All three Racing runs are archived at exact Git commits; this is a source-archival status, **not a claim that gameplay passed independent review**. See the [Racing-bench archive](./benchmarks/racing/) and its separate required [execution addendum](./benchmarks/racing/EXECUTION-ADDENDUM.md).
 
 ### Orbitarium-bench — current references
 
@@ -97,9 +98,9 @@ PROMPT → MODEL RUN → PROJECT SNAPSHOT / PINNED SOURCE → EVIDENCE → PROVE
 
 ## Benchmark 002 — Racing-bench
 
-[Racing-bench](./benchmarks/racing/) is a separate cinematic arcade racing-game benchmark. **Every execution must receive both the [official V2.6 prompt](./benchmarks/racing/prompts/racing-v2.6.md) and the [mandatory tool/skill execution addendum](./benchmarks/racing/EXECUTION-ADDENDUM.md).** Complete, byte-verified source snapshots of [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/) and [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) are archived with original Git-history bundles; this is not a claim of verified game quality.
+[Racing-bench](./benchmarks/racing/) is a separate cinematic arcade racing-game benchmark. **Every execution must receive both the [official V2.6 prompt](./benchmarks/racing/prompts/racing-v2.6.md) and the [mandatory tool/skill execution addendum](./benchmarks/racing/EXECUTION-ADDENDUM.md).** Complete, byte-verified source snapshots of [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/), [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/), and [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra/source/) are archived with original Git-history bundles; this is not a claim of verified game quality.
 
-**Playable Racing-bench deployments:** [GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br) · [Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br).
+**Racing-bench project sites:** [GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br) · [Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br) · [GPT-6 Astra](https://racing-gpt-6-astra.biel.dev.br).
 
 ## Benchmark 001 — Orbitarium-bench
 
@@ -115,8 +116,9 @@ The historical archive path `benchmarks/solar-system/` is preserved to keep exis
 | --- | --- | --- | --- |
 | **GPT-6.1 Sol** | Git `6f55263669…` | Current | Archived |
 | **Gemini 3.8 Flash** | Git `a18fcaee71…` | Current | Archived |
+| **GPT-6 Astra** | Git `0c615e8dc3…` | Current | Archived |
 
-Both Racing source snapshots include [SHA-256 manifests and restorable Git bundles](./benchmarks/racing/).
+All three Racing source snapshots include [SHA-256 manifests and restorable Git bundles](./benchmarks/racing/).
 
 ### Orbitarium-bench
 

@@ -24,6 +24,7 @@ const orbitariumSites = new Map([
 const racingSites = new Map([
   ['gpt-6.1-sol', ['GPT-6.1 Sol', 'https://racing-gpt-6.1-sol.biel.dev.br']],
   ['gemini-3.8-flash', ['Gemini 3.8 Flash', 'https://racing-gemini-3.8-flash.biel.dev.br']],
+  ['gpt-6-astra', ['GPT-6 Astra', 'https://racing-gpt-6-astra.biel.dev.br']],
 ]);
 
 test('all eight Orbitarium website URLs and model names match the supplied canonical list', () => {
@@ -36,7 +37,7 @@ test('all eight Orbitarium website URLs and model names match the supplied canon
   }
 });
 
-test('both Racing websites are registered independently of the Orbitarium sites', () => {
+test('all three Racing websites are registered independently of the Orbitarium sites', () => {
   for (const [id, [model, url]] of racingSites) {
     const runs = racing.filter(run => run.id === id);
     assert.equal(runs.length, 1, id);
@@ -59,7 +60,7 @@ for (const file of ['README.md', 'README-PT-BR.md',
 
 for (const file of ['README.md', 'README-PT-BR.md',
   'benchmarks/racing/README.md', 'benchmarks/racing/README-PT-BR.md']) {
-  test(`${file} links to both canonical Racing websites`, () => {
+  test(`${file} links to all three canonical Racing websites`, () => {
     const content = read(file);
     for (const [id, [model, url]] of racingSites) {
       assert.ok(content.includes(`](${url})`), `${file}: missing site for ${id}`);

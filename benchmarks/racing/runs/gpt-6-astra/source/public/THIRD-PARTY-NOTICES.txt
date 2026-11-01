@@ -1,0 +1,40 @@
+Maré Alta — third-party notices
+
+Runtime dependency: Three.js 0.187.0 (MIT).
+Source distribution obtained from the official npm registry. The installed
+node_modules/three/LICENSE was inspected on 2026-10-31.
+
+The MIT License
+
+Copyright © 2010-2026 three.js authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+Development-only tools, not runtime assets:
+- Vite 8.3.5: MIT (installed package metadata checked).
+- Playwright 1.65.0-alpha-2026-10-30: Apache-2.0 (package metadata checked).
+- @playwright/cli 0.1.23: Apache-2.0 (package metadata checked).
+Their distributions retain their own license notices in node_modules.
+
+Original project material:
+All three vehicle designs, course layouts, scene geometry, procedural ocean
+shader, road texture, signs, interface, postcard frames and synthesized audio
+were authored for this project. No downloaded cars, tracks, photographs,
+fonts, music, images or external AI-generated material are included.
+The interface uses fonts already installed on the player's system.

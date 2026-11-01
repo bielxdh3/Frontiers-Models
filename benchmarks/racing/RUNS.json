@@ -58,6 +58,26 @@
       "source_file_count": 38,
       "source_bytes": 304424,
       "gameplay_verification": "not-independently-verified"
+    },
+    {
+      "id": "gpt-6-astra",
+      "model": "GPT-6 Astra",
+      "live_url": "https://racing-gpt-6-astra.biel.dev.br",
+      "source_repository": "https://github.com/bielxdh3/6-ASTRA",
+      "source_branch": "main",
+      "source_commit": "0c615e8dc345dbb337921e7829c5516457680d16",
+      "source_tree": "f846e744bcc432ffb8e46e6b9e5d77ea3eb8c35f",
+      "prompt": "prompts/racing-v2.6.md",
+      "prompt_association": "source-readme-reports-v2.6; original launch not independently verified",
+      "addendum_delivery": "not independently verified",
+      "archive_path": "runs/gpt-6-astra/source",
+      "manifest": "runs/gpt-6-astra/SOURCE-FILES.json",
+      "provenance": "runs/gpt-6-astra/SOURCE-PROVENANCE.md",
+      "git_bundle": "runs/gpt-6-astra/SOURCE-REPOSITORY.bundle",
+      "archival_status": "complete-tracked-git-snapshot-and-full-history-bundle",
+      "source_file_count": 24,
+      "source_bytes": 217369,
+      "gameplay_verification": "not-independently-verified"
     }
   ]
 }

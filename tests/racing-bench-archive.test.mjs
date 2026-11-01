@@ -25,7 +25,7 @@ test('Racing-bench V2.6 prompt is archived verbatim', () => {
 });
 
 test('Racing-bench source runs have provenance records, without claiming gameplay verification', () => {
-  assert.deepEqual(registry.runs.map(r => r.id).sort(), ['gemini-3.8-flash', 'gpt-6.1-sol']);
+  assert.deepEqual(registry.runs.map(r => r.id).sort(), ['gemini-3.8-flash', 'gpt-6-astra', 'gpt-6.1-sol'].sort());
   for (const run of registry.runs) {
     assert.equal(run.gameplay_verification, 'not-independently-verified');
     assert.ok(run.source_commit);
