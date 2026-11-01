@@ -135,7 +135,7 @@ test('Racing V3.3 Gemini-review corrections preserve real frozen-world and evide
   assert.match(content, /performance\.now\(\)/);
   assert.match(content, /E15 progressive path-tracing samples/);
   assert.match(content, /Environmental audio lifecycle/);
-  assert.match(content, /disposed without stacked\/doubled nodes/);
+  assert.match(content, /dispose without stacked\/doubled nodes/);
   assert.match(content, /59 mandatory independent verification records/);
   assert.match(content, /at least 38 distinct, genuine browser screenshot files/);
   assert.match(content, /Sections 72–76 coastal-city\/beach\/surf/);
