@@ -23,7 +23,8 @@ function displayName(run) {
 }
 
 function classification(run, isRacing, pt) {
-  if (isRacing || currentOrbit.has(run.id)) return pt ? 'Atual' : 'Current';
+  if (isRacing) return pt ? 'Legado' : 'Legacy';
+  if (currentOrbit.has(run.id)) return pt ? 'Atual' : 'Current';
   if (run.role === 'non-frontier-run') return 'Non-frontier';
   return pt ? 'Histórico' : 'Historical';
 }
