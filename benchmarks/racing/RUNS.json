@@ -43,8 +43,8 @@
     "racing-v3.3": {
       "path": "prompts/racing-v3.3.md",
       "status": "current-frozen-standalone-with-required-operational-clarification",
-      "sha256": "0f20dad06d6046a82d46a25d65890c11bd5e018f08c16c1592240e5dc25c2f8f",
-      "bytes": 266558,
+      "sha256": "fd1aa18463e47e201401ebb368975602aca78a30038d7dc85704aa49a1d6ab24",
+      "bytes": 266595,
       "lines": 1263,
       "source_filename": "racing-v3.3.md",
       "required_attachment": "prompts/racing-v3.3-attach.md",
