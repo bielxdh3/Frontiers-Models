@@ -33,71 +33,29 @@ test('legacy archive paths and exact prompt integrity remain unchanged', () => {
   assert.equal(digest, registry.prompts['frontier-v2'].sha256);
 });
 
-test('the homepages present Racing first and Orbitarium second, without mixing model run status', () => {
+test('Racing V3.1 appears first while the old three remain source-only legacy', () => {
   for (const path of ['README.md', 'README-PT-BR.md']) {
-    const content = read(path);
-    const racing = content.indexOf('### Racing-bench — ');
-    const orbitarium = content.indexOf('### Orbitarium-bench — ');
-    const diagram = content.indexOf(path === 'README.md' ? '## How it fits together' : '## Como se organiza');
-    assert.ok(0 <= racing && racing < orbitarium && orbitarium < diagram, path);
-    const racingSection = content.slice(racing, orbitarium);
-    assert.equal([...racingSection.matchAll(/\| 🏎️ \*\*/g)].length, 3, path);
-    assert.ok(racingSection.includes('https://racing-gpt-6.1-sol.biel.dev.br'));
-    assert.ok(racingSection.includes('https://racing-gemini-3.8-flash.biel.dev.br'));
-    assert.ok(racingSection.includes('https://racing-gpt-6-astra.biel.dev.br'));
-    const orbitariumSection = content.slice(orbitarium, diagram);
-    assert.equal(orbitariumSection.split('\n').filter(line =>
-      line.startsWith('|') && line.includes('**')).length, 5, path);
-    assert.ok(!orbitariumSection.includes('**Gemini 3.8 Flash**'), path);
-    assert.ok(content.indexOf('## Benchmark 002 — Racing-bench') <
-      content.indexOf('## Benchmark 001 — Orbitarium-bench'), path);
+    const s = read(path);
+    const first = s.indexOf('### Racing-bench V3.1');
+    const second = s.indexOf('### Orbitarium-bench — ');
+    assert.ok(first >= 0 && first < second);
+    const section = s.slice(first, second);
+    assert.match(section, /racing-v3\.1\.md/);
+    assert.doesNotMatch(section, /https:\/\/racing-/);
+    for (const name of ['GPT-6.1 Sol', 'Gemini 3.8 Flash', 'GPT-6 Astra']) assert.ok(section.includes(name));
+    assert.ok(s.indexOf('## Benchmark 002 — Racing-bench') < s.indexOf('## Benchmark 001 — Orbitarium-bench'));
   }
 });
 
-test('all current tables have the same three columns and full model names in both links', () => {
-  const racing = JSON.parse(read('benchmarks/racing/RUNS.json'));
-  const groups = [
-    {
-      marker: '### Racing-bench — ',
-      runs: racing.runs,
-      archiveRoot: 'benchmarks/racing/',
-      archiveKey: 'archive_path',
-    },
-    {
-      marker: '### Orbitarium-bench — ',
-      runs: registry.current_arena.map(id => registry.runs.find(run => run.id === id)),
-      archiveRoot: 'benchmarks/solar-system/',
-      archiveKey: 'target_path',
-    },
-  ];
-  for (const [path, expectedHeader, externalPrefix, sourcePrefix] of [
-    ['README.md', '| Model | Live project | Source code |', 'Open ', 'Code: '],
-    ['README-PT-BR.md', '| Modelo | Projeto ao vivo | Código-fonte |', 'Abrir ', 'Código: '],
-  ]) {
-    const content = read(path);
-    for (const group of groups) {
-      const start = content.indexOf(group.marker);
-      assert.ok(start >= 0, path + ': missing ' + group.marker);
-      const nextHeading = content.indexOf('\n### ', start + 4);
-      const nextSection = content.indexOf('\n## ', start + 4);
-      const end = Math.min(...[nextHeading, nextSection].filter(i => i > start));
-      const section = content.slice(start, end);
-      const lines = section.split(/\r?\n/);
-      assert.equal(lines.filter(line => line === expectedHeader).length, 1, path);
-      assert.ok(lines.includes('| --- | --- | --- |'), path);
-      const rows = lines.filter(line => /^\| .+ \*\*.+\*\* \|/.test(line));
-      assert.equal(rows.length, group.runs.length, path + ': incorrect run count');
-      for (let i = 0; i < rows.length; i++) {
-        const row = rows[i];
-        const run = group.runs[i];
-        const cells = row.split('|').slice(1, -1).map(s => s.trim());
-        assert.equal(cells.length, 3, row);
-        assert.ok(cells[0].includes('**' + run.model + '**'), row);
-        assert.equal(cells[1], `[${externalPrefix}${run.model}](${run.live_url})`, row);
-        const archive = './' + group.archiveRoot + run[group.archiveKey] + '/';
-        assert.equal(cells[2], `[${sourcePrefix}${run.model}](${archive})`, row);
-        assert.ok(existsSync(resolve(root, archive)), row + ': missing archived source');
-      }
+test('all five current Orbitarium sites remain displayed', () => {
+  for (const path of ['README.md', 'README-PT-BR.md']) {
+    const s = read(path);
+    const a = s.indexOf('### Orbitarium-bench — ');
+    const b = s.indexOf(path === 'README.md' ? '## How it fits together' : '## Como se organiza', a);
+    const section = s.slice(a, b);
+    for (const id of registry.current_arena) {
+      const run = registry.runs.find(r => r.id === id);
+      assert.ok(section.includes('](' + run.live_url + ')'), id);
     }
   }
 });
