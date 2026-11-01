@@ -48,7 +48,7 @@ const orbitBadges = orbitRuns.map((run, i) =>
 
 const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" role="img" aria-labelledby="title desc">
   <title id="title">Frontier Models — Racing and Orbitarium benchmark collection</title>
-  <desc id="desc">Two benchmarks. Racing-bench V3.2 is the active frozen specification; three V2.6 projects are legacy archives: ${escape(racingRuns.map(run => run.model).join(', '))}. Orbitarium current: ${escape(orbitRuns.map(run => run.model).join(', '))}. Source archives remain available without retired game links.</desc>
+  <desc id="desc">Two benchmarks. Racing-bench V3.3 is the active frozen specification; three V2.6 projects are legacy archives: ${escape(racingRuns.map(run => run.model).join(', '))}. Orbitarium current: ${escape(orbitRuns.map(run => run.model).join(', '))}. Source archives remain available without retired game links.</desc>
   <defs>
     <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#080f1d"/>
@@ -94,7 +94,7 @@ const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" rol
         <path d="M1050 88h283M1135 99h199M1224 111h111" stroke-width="2"/>
         <path d="M1000 143l29 -25 40 19 22 -17 46 19 32 -20 65 25 46 -20 46 20" stroke-width="1.4"/>
       </g>
-      <text x="649" y="137" font-size="38" font-weight="800" fill="#fff5ed">Racing-bench V3.2</text>
+      <text x="649" y="137" font-size="38" font-weight="800" fill="#fff5ed">Racing-bench V3.3</text>
       ${racingBadges}
     </g>
     <g data-benchmark="orbitarium">
