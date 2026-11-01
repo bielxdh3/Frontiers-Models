@@ -12,7 +12,7 @@
     },
     "racing-v3.1": {
       "path": "prompts/racing-v3.1.md",
-      "status": "current-frozen-standalone",
+      "status": "historical-frozen-archived",
       "sha256": "2b0ce465048b9edacc8ba943d3bbf09aeee223410bf9eb3c4012f515d7fb93b5",
       "bytes": 223685,
       "lines": 1072,
@@ -20,6 +20,25 @@
       "execution_addendum": "integrated-no-separate-document",
       "required_attachment": "prompts/racing-v3.1-attach.md",
       "attachment_purpose": "mandatory-operational-tools-clarification"
+    },
+    "racing-v3.2": {
+      "path": "prompts/racing-v3.2.md",
+      "status": "current-frozen-standalone-with-required-operational-clarification",
+      "sha256": "bacdc4f7ad93881c6159bdbb353a421ca59aacd2450a08a88e0b700530ccf3ed",
+      "bytes": 252906,
+      "lines": 1195,
+      "source_filename": "racing-v3.2.md",
+      "required_attachment": "prompts/racing-v3.2-attach.md",
+      "attachment_purpose": "mandatory-operational-tools-clarification",
+      "ui_ux": {
+        "sections": "65–71",
+        "acceptance_gate": "G12",
+        "ui_probes": 16,
+        "baseline_browser_journeys": 17,
+        "expansion_probes": 16,
+        "minimum_screenshots": 28,
+        "additional_ui_screenshots": 12
+      }
     }
   },
   "execution_addendum": {
@@ -94,7 +113,7 @@
       "display_status": "legacy-archived"
     }
   ],
-  "current_prompt": "racing-v3.1",
+  "current_prompt": "racing-v3.2",
   "legacy_runs": [
     "gpt-6.1-sol",
     "gemini-3.8-flash",
