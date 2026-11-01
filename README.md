@@ -20,15 +20,19 @@
 
 ## ⚔️ Current benchmark runs
 
-### Racing-bench V3.2 — current specification
+### Racing-bench V3.3 — current specification
 
-**[Racing-bench V3.2 — frozen standalone prompt](./benchmarks/racing/prompts/racing-v3.2.md)** is the current Racing benchmark: AAA-inspired browser racing with three courses, four cars, five local rivals, three independently invented Signature Features and sixteen additional mandatory engineering systems. **No V3.2 model runs or live-game sites have been published yet.**
+**[Racing-bench V3.3 — frozen standalone prompt](./benchmarks/racing/prompts/racing-v3.3.md)** is the current Racing benchmark: AAA-inspired browser racing with three courses, four cars, five local rivals, three independently invented Signature Features and sixteen additional mandatory engineering systems. **No V3.3 model runs or live-game sites have been published yet.**
 
-**V3.2 premium UI/UX:** Every menu, all three HUDs, garage, editors and other screens must pass G12, U01–U16 and 12 additional UI captures on top of 16 baseline screenshots (28+ images).
+**V3.3 premium UI/UX:** Every menu, all three HUDs, garage, editors and other screens must pass G12, U01–U16 and 12 additional UI captures on top of 16 baseline screenshots (28+ images).
 
-**For each execution, attach both:** the [V3.2 prompt](./benchmarks/racing/prompts/racing-v3.2.md) and the [short English operational clarification](./benchmarks/racing/prompts/racing-v3.2-attach.md).
+**For each execution, attach both:** the [V3.3 prompt](./benchmarks/racing/prompts/racing-v3.3.md) and the [short English operational clarification](./benchmarks/racing/prompts/racing-v3.3-attach.md).
 
 **Previous edition retained:** [Racing-bench V3.1](./benchmarks/racing/prompts/racing-v3.1.md) remains an intact historical frozen contract.
+
+**V3.3 — premium coastal-city environment:** Authored sea, beaches, sand, foliage, houses, bridges, asphalt, high-quality shaders/textures and spatial ambience, verified with G13, W01–W10 and ten more genuine captures (38+ total). Licensed supporting visual assets and references are allowed; copying implementation code remains forbidden.
+
+The [V3.2 prompt](./benchmarks/racing/prompts/racing-v3.2.md) remains unchanged as a historical edition.
 
 **Legacy archive — Racing-bench V2.6 (original code preserved, old play links removed):**
 
@@ -38,7 +42,7 @@
 | **Gemini 3.8 Flash** | [Source](./benchmarks/racing/runs/gemini-3.8-flash/source/) |
 | **GPT-6 Astra** | [Source](./benchmarks/racing/runs/gpt-6-astra/source/) |
 
-All three V2.6 executions are **legacy/archived**, not current V3.2 runs. Exact sources, manifests and Git-history bundles are preserved; this is not a gameplay quality claim.
+All three V2.6 executions are **legacy/archived**, not current V3.3 runs. Exact sources, manifests and Git-history bundles are preserved; this is not a gameplay quality claim.
 
 ### Orbitarium-bench — current references
 
@@ -86,7 +90,7 @@ The registry connects archived inputs, independent project runs, source evidence
 
 ## 🗂️ Non-frontier or outdated models
 
-These **Orbitarium** runs stay visible for reference but are separated from that benchmark's current arena. Racing-bench V3.2 currently has no published model runs; its three V2.6 projects are legacy archives.
+These **Orbitarium** runs stay visible for reference but are separated from that benchmark's current arena. Racing-bench V3.3 currently has no published model runs; its three V2.6 projects are legacy archives.
 
 | Model | Classification | Project / source | Provenance |
 | --- | --- | --- | --- |
@@ -108,7 +112,7 @@ PROMPT → MODEL RUN → PROJECT SNAPSHOT / PINNED SOURCE → EVIDENCE → PROVE
 
 ## Benchmark 002 — Racing-bench
 
-**[Racing-bench V3.2](./benchmarks/racing/prompts/racing-v3.2.md) is the current frozen, standalone execution contract.** It requires a photoreal, GPU-intensive desktop-browser racer with deep mechanics, three tracks/modes, four cars, five offline rivals, three original Signature Features and sixteen integrated additional systems. No V3.2 game runs are published yet.
+**[Racing-bench V3.3](./benchmarks/racing/prompts/racing-v3.3.md) is the current frozen, standalone execution contract.** It requires a photoreal, GPU-intensive desktop-browser racer with deep mechanics, three tracks/modes, four cars, five offline rivals, three original Signature Features and sixteen integrated additional systems. No V3.3 game runs are published yet.
 
 **V2.6 is legacy/archived.** Its [immutable original prompt](./benchmarks/racing/prompts/racing-v2.6.md), [historical V2.6 execution addendum](./benchmarks/racing/EXECUTION-ADDENDUM.md) and the source archives of [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/), [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) and [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra/source/) remain preserved. Former Racing live-game links are no longer shown; this does not delete external sites.
 
