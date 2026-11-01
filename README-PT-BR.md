@@ -24,6 +24,8 @@
 
 O **[Racing-bench V3.1 — prompt oficial congelado](./benchmarks/racing/prompts/racing-v3.1.md)** é a versão vigente: um jogo de corrida AAA-inspired no navegador com três pistas, quatro carros, cinco rivais locais, três Signature Features independentes e dezesseis sistemas avançados obrigatórios. **Ainda não existem jogos ou sites V3.1 publicados pelos modelos.**
 
+**Ao executar, anexe dois arquivos juntos:** o [prompt V3.1](./benchmarks/racing/prompts/racing-v3.1.md) e o [breve esclarecimento operacional em inglês](./benchmarks/racing/prompts/racing-v3.1-attach.md).
+
 **Legado arquivado — Racing-bench V2.6 (código preservado, links antigos para jogar removidos):**
 
 | Modelo legado | Código arquivado |
