@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -25,14 +25,22 @@ test('Racing-bench V2.6 prompt is archived verbatim', () => {
 });
 
 test('Racing-bench source runs have provenance records, without claiming gameplay verification', () => {
-  assert.deepEqual(registry.runs.map(r => r.id).sort(), ['gemini-3.8-flash', 'gpt-6-astra', 'gpt-6.1-sol'].sort());
+  assert.deepEqual(registry.runs.map(r => r.id).sort(), ['gemini-3.8-flash', 'gpt-6-astra', 'gpt-6.1-sol', 'gemini-3.8-v3.4'].sort());
   for (const run of registry.runs) {
     assert.equal(run.gameplay_verification, 'not-independently-verified');
-    assert.equal(run.display_status, 'legacy-archived');
     assert.equal(run.live_url, null);
     assert.ok(run.source_commit);
-    assert.ok(run.manifest);
-    assert.ok(run.git_bundle);
+    if (registry.legacy_runs.includes(run.id)) {
+      assert.equal(run.display_status, 'legacy-archived');
+      assert.ok(run.manifest);
+      assert.ok(run.git_bundle);
+    } else {
+      assert.deepEqual(registry.current_arena, [run.id]);
+      assert.equal(run.archival_status, 'complete-tracked-git-snapshot-lfs-pointer-no-history-bundle');
+      assert.ok(run.manifest);
+      assert.equal(run.git_bundle, null);
+      assert.ok(run.provenance);
+    }
   }
 });
 
@@ -73,7 +81,7 @@ test('Racing-bench V3.1 remains byte-exact in the historical archive', () => {
 });
 
 test('Racing-bench V3.2 remains byte-exact and historically archived', () => {
-  assert.equal(registry.current_prompt, 'racing-v3.3');
+  assert.equal(registry.current_prompt, 'racing-v3.4');
   const p = registry.prompts['racing-v3.2'];
   assert.equal(p.status, 'historical-frozen-archived');
   assert.equal(p.required_attachment, 'prompts/racing-v3.2-attach.md');
@@ -104,9 +112,9 @@ test('Racing-bench V3.2 remains byte-exact and historically archived', () => {
 
 
 test('Racing V3.3 frozen prompt preserves all legacy scopes and requires coastal world art', () => {
-  assert.equal(registry.current_prompt, 'racing-v3.3');
+  assert.equal(registry.current_prompt, 'racing-v3.4');
   const p=registry.prompts['racing-v3.3'];
-  assert.equal(p.status,'current-frozen-standalone-with-required-operational-clarification');
+  assert.equal(p.status,'historical-frozen-archived-unchanged');
   assert.equal(p.required_attachment,'prompts/racing-v3.3-attach.md');
   const note=text('benchmarks/racing/'+p.required_attachment);
   assert.match(note,/attach this text together with the complete, unchanged V3\.3 prompt/i);
@@ -127,6 +135,18 @@ test('Racing V3.3 frozen prompt preserves all legacy scopes and requires coastal
   assert.equal(p.environment_art.world_probes,10);
   assert.equal(p.minimum_screenshots,38);
   assert.equal(p.ui_ux.ui_probes,16);
+});
+
+test('Racing V3.4 prompt and 14 reference assets are present and pinned', () => {
+  const p=registry.prompts['racing-v3.4'];
+  const content=text('benchmarks/racing/'+p.path).replace(/\r\n/g,'\n');
+  assert.equal(Buffer.byteLength(content),p.bytes);
+  assert.equal(content.split('\n').length-1,p.lines);
+  assert.equal(createHash('sha256').update(content).digest('hex'),p.sha256);
+  const refDir=resolve(root,'benchmarks/racing',p.reference_directory);
+  assert.ok(existsSync(refDir));
+  assert.equal(readdirSync(refDir).filter(x=>x.endsWith('.jpg')).length,14);
+  assert.deepEqual(registry.current_arena,['gemini-3.8-v3.4']);
 });
 
 test('Racing V3.3 Gemini-review corrections preserve real frozen-world and evidence invariants', () => {

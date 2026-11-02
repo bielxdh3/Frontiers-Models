@@ -1,0 +1,17 @@
+{
+  "carLOD0Triangles": 30290,
+  "carMaterials": 9,
+  "boxViolationsCount": 0,
+  "boxViolations": [],
+  "flatColorViolationsCount": 0,
+  "flatColorViolations": [],
+  "houseCount": 39,
+  "houseVariants": 5,
+  "foliageCount": 949,
+  "foliageSpeciesCount": 4,
+  "propsCount": 429,
+  "propsPer100m": 13.245728298105544,
+  "audioBuffersLoaded": 25,
+  "hasAudioEngineSamples": true,
+  "trackTotalLength": 3238.7800077505535
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Costa Dorada Grand Prix — Racing-bench V3.4</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./node_modules/three/build/three.module.js"
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- 3D WebGL Canvas -->
+  <canvas id="game-canvas"></canvas>
+
+  <!-- UI Layer -->
+  <div class="ui-layer">
+    <!-- MENU SCREEN -->
+    <div id="screen-menu" class="screen">
+      <div class="title-container">
+        <h1>COSTA DORADA</h1>
+        <div class="subtitle">Grand Prix • Circuito Costeiro ao Pôr do Sol</div>
+      </div>
+      <div class="menu-actions">
+        <button id="btn-play" class="btn-primary">JOGAR</button>
+      </div>
+    </div>
+
+    <!-- GARAGE & RACE SETUP SCREEN -->
+    <div id="screen-garage" class="screen">
+      <div class="garage-sidebar glass-panel">
+        <div class="garage-header">
+          <h2>GARAGEM & SETUP</h2>
+        </div>
+
+        <!-- Vehicle Selection -->
+        <div class="setup-group">
+          <label>Modelo do Carro</label>
+          <div class="car-selector">
+            <button id="btn-prev-car" class="nav-arrow">&lsaquo;</button>
+            <div id="garage-car-name" class="car-name">VELOCE GT-8 COUPE</div>
+            <button id="btn-next-car" class="nav-arrow">&rsaquo;</button>
+          </div>
+        </div>
+
+        <!-- Livery / Color Selection -->
+        <div class="setup-group">
+          <label>Pintura & Grid</label>
+          <div id="garage-liveries" class="livery-swatches"></div>
+        </div>
+
+        <!-- Laps Setup -->
+        <div class="setup-group">
+          <label>Voltas</label>
+          <div class="button-toggle-group">
+            <button class="toggle-btn lap-opt active" data-laps="3">3 VOLTAS</button>
+            <button class="toggle-btn lap-opt" data-laps="6">6 VOLTAS</button>
+          </div>
+        </div>
+
+        <!-- Difficulty Setup -->
+        <div class="setup-group">
+          <label>Dificuldade</label>
+          <div class="button-toggle-group">
+            <button class="toggle-btn diff-opt" data-diff="facil">FÁCIL</button>
+            <button class="toggle-btn diff-opt active" data-diff="normal">NORMAL</button>
+            <button class="toggle-btn diff-opt" data-diff="dificil">DIFÍCIL</button>
+          </div>
+        </div>
+
+        <!-- Quality Preset -->
+        <div class="setup-group">
+          <label>Qualidade Gráfica</label>
+          <div class="button-toggle-group">
+            <button class="toggle-btn qual-opt active" data-qual="high">ALTA</button>
+            <button class="toggle-btn qual-opt" data-qual="low">BAIXA</button>
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div style="display: flex; gap: 12px; margin-top: 10px;">
+          <button id="btn-back-menu" class="btn-secondary" style="flex: 1;">MENU</button>
+          <button id="btn-start-race" class="btn-primary" style="flex: 2;">LARGADA</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- IN-GAME HUD -->
+    <div id="screen-hud" class="screen">
+      <!-- Top Left: Position & Lap Badges -->
+      <div class="hud-top-left">
+        <div class="hud-badge glass-panel">
+          <div class="label">POSIÇÃO</div>
+          <div id="hud-pos-val" class="value"><span>1</span><small>ST</small> / 6</div>
+        </div>
+        <div class="hud-badge glass-panel">
+          <div class="label">VOLTA</div>
+          <div id="hud-lap-val" class="value">1 / 3</div>
+        </div>
+      </div>
+
+      <!-- Top Right: Lap Times -->
+      <div class="hud-top-right glass-panel">
+        <div class="timing-row">
+          <span class="label">ATUAL</span>
+          <span id="hud-cur-time" class="time">0:00.000</span>
+        </div>
+        <div class="timing-row">
+          <span class="label">MELHOR</span>
+          <span id="hud-best-time" class="time">--:--.---</span>
+        </div>
+      </div>
+
+      <!-- Bottom Left: Minimap -->
+      <div class="hud-bottom-left glass-panel">
+        <canvas id="minimap-canvas" width="220" height="180"></canvas>
+      </div>
+
+      <!-- Bottom Right: Speed, Gear, Tachometer -->
+      <div class="hud-bottom-right glass-panel">
+        <div class="gear-box" id="hud-gear-val">1</div>
+        <div class="speed-cluster">
+          <span id="hud-speed-num" class="speed-val">0</span>
+          <span class="speed-unit">KM/H</span>
+        </div>
+        <div class="rpm-bar-container">
+          <div id="hud-rpm-fill" class="rpm-bar-fill"></div>
+        </div>
+      </div>
+
+      <!-- Notification overlay -->
+      <div id="hud-notification"></div>
+    </div>
+
+    <!-- 3-2-1 COUNTDOWN OVERLAY -->
+    <div id="countdown-overlay">3</div>
+
+    <!-- PAUSE MENU -->
+    <div id="screen-pause" class="screen">
+      <div class="pause-box glass-panel">
+        <h2>JOGO PAUSADO</h2>
+        <div class="setup-group">
+          <label>Volume Geral</label>
+          <input type="range" id="vol-master" min="0" max="1" step="0.05" value="0.85" style="width: 100%;">
+        </div>
+        <button id="btn-pause-resume" class="btn-primary">CONTINUAR</button>
+        <button id="btn-pause-restart" class="btn-secondary">REINICIAR CORRIDA</button>
+        <button id="btn-pause-exit" class="btn-secondary">MENU PRINCIPAL</button>
+      </div>
+    </div>
+
+    <!-- RESULTS SCREEN -->
+    <div id="screen-results" class="screen">
+      <div class="results-box glass-panel">
+        <h2>CLASSIFICAÇÃO FINAL</h2>
+        <div id="results-standings-list" class="results-table"></div>
+        <div style="display: flex; gap: 16px; margin-top: 15px;">
+          <button id="btn-results-menu" class="btn-secondary" style="flex: 1;">MENU</button>
+          <button id="btn-race-again" class="btn-primary" style="flex: 2;">CORRER DE NOVO</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

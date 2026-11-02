@@ -1,31 +1,27 @@
-# Racing-bench V3.3
+# Racing-bench V3.4
 
-**Benchmark 002 — current frozen standalone specification**
+**Benchmark 002 — current race-first specification**
 
-## Official current prompt
+## Current prompt and model
 
-**[Racing-bench V3.3](./prompts/racing-v3.3.md)** is the only active execution contract. It specifies three dedicated tracks/modes, four high-detail cars, five local AI opponents, three additional orthogonal Signature Features, 16 mandatory expansion systems E01–E16, detailed photoreal PBR/GPU graphics, deep vehicle physics, Photo Mode and verified full-state replays.
+The [V3.4 prompt](./prompts/racing-v3.4/racing-v3.4.md) and its [14 reference images](./prompts/racing-v3.4/refs/) are the current benchmark input package: one coastal circuit, five AI opponents, 3/6 laps.
 
-**Attach both documents to every V3.3 run:** (1) the unchanged [Racing-bench V3.3 prompt](./prompts/racing-v3.3.md), and (2) the short [mandatory operational clarification](./prompts/racing-v3.3-attach.md). This clarification explicitly permits the tools needed for browsing, Playwright, DevTools, builds, debugging and testing this project. **Do not attach review contexts or the historical V2.6 addendum.** No V3.3 model run or live game is published yet.
+**Gemini 3.8 Flash (V3.4)** is the only current Racing-bench run.
 
-**New mandatory V3.3 scope:** A premium game-specific visual and interaction experience for every menu, mode, garage, E04 tuning, E10 builder, E09 track editor, mode-specific HUD, pause/service, results, replays, Photo Mode, settings and error/recovery state. In addition to G1–G11, **G12** requires **16 U01–U16 experience probes** and **12 additional UI screenshots**, for at least **28 genuine screenshots** overall. A generic dashboard or unfinished browser-form interface fails G12.
+- [Source at pinned commit](https://github.com/bielxdh3/gemini-3.8/tree/8f1992b88c3771edae825f7ecc52f1499844cb0b)
+- [Source provenance](./runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md)
+- [Owner-provided site](https://racing-gemini-3.8-flash.biel.dev.br): **HTTP 404 when checked on 2026-11-02; not yet a verified playable site**.
 
-The original [V3.1 prompt](./prompts/racing-v3.1.md) and its [historical short attachment](./prompts/racing-v3.1-attach.md) remain archived unchanged.
+All 188 Git-tracked source files are archived here at the pinned upstream commit with per-file hashes (the external Git LFS video is not bundled). Independent visual or gameplay verification has not been performed. V3.3 remains unchanged and frozen as a historical prompt; V3.2 and V3.1 are also archived.
 
-**V3.3 — premium coastal-city environment:** Authored sea, beaches, sand, foliage, houses, bridges, asphalt, high-quality shaders/textures and spatial ambience, verified with G13, W01–W10 and ten more genuine captures (38+ total). Licensed supporting visual assets and references are allowed; copying implementation code remains forbidden.
+## Historical source archives — Racing V2.6
 
-The previous [V3.2 frozen prompt](./prompts/racing-v3.2.md) and [attachment](./prompts/racing-v3.2-attach.md) remain unchanged.
+These three source snapshots and their full Git history bundles are preserved unchanged; they are no longer current Racing-bench runs. No old game-site URLs are promoted.
 
-## Legacy archived runs — V2.6
-
-The three former Racing projects are **legacy/archived**, not current V3.3 contestants. Their old live-game URLs have been removed from this index.
-
-| Legacy model | Archived source | Provenance and checksums | Git-history bundle |
+| Historical model | Archived source | Provenance | Git bundle |
 | --- | --- | --- | --- |
-| **GPT-6.1 Sol** | [Source](./runs/gpt-6.1-sol/source/) | [Provenance](./runs/gpt-6.1-sol/SOURCE-PROVENANCE.md) · [Manifest](./runs/gpt-6.1-sol/SOURCE-FILES.json) | [Git bundle](./runs/gpt-6.1-sol/SOURCE-REPOSITORY.bundle) |
-| **Gemini 3.8 Flash** | [Source](./runs/gemini-3.8-flash/source/) | [Provenance](./runs/gemini-3.8-flash/SOURCE-PROVENANCE.md) · [Manifest](./runs/gemini-3.8-flash/SOURCE-FILES.json) | [Git bundle](./runs/gemini-3.8-flash/SOURCE-REPOSITORY.bundle) |
-| **GPT-6 Astra** | [Source](./runs/gpt-6-astra/source/) | [Provenance](./runs/gpt-6-astra/SOURCE-PROVENANCE.md) · [Manifest](./runs/gpt-6-astra/SOURCE-FILES.json) | [Git bundle](./runs/gpt-6-astra/SOURCE-REPOSITORY.bundle) |
+| **GPT-6.1 Sol** | [Source](./runs/gpt-6.1-sol/source/) | [Provenance](./runs/gpt-6.1-sol/SOURCE-PROVENANCE.md) | [Bundle](./runs/gpt-6.1-sol/SOURCE-REPOSITORY.bundle) |
+| **Gemini 3.8 Flash (V2.6)** | [Source](./runs/gemini-3.8-flash/source/) | [Provenance](./runs/gemini-3.8-flash/SOURCE-PROVENANCE.md) | [Bundle](./runs/gemini-3.8-flash/SOURCE-REPOSITORY.bundle) |
+| **GPT-6 Astra** | [Source](./runs/gpt-6-astra/source/) | [Provenance](./runs/gpt-6-astra/SOURCE-PROVENANCE.md) | [Bundle](./runs/gpt-6-astra/SOURCE-REPOSITORY.bundle) |
 
-The [original V2.6 prompt](./prompts/racing-v2.6.md) is preserved byte-for-byte. Historical V2.6 runs required **BOTH** the V2.6 prompt and the [separate Mandatory Execution Addendum](./EXECUTION-ADDENDUM.md). This separate addendum is not required for V3.3. The [registry](./RUNS.json) retains provenance but no retired public-game links. Archived code does not guarantee verified gameplay.
-
-No review `context.md` is part of the current benchmark publication.
+For historical V2.6 reproduction, the [original prompt](./prompts/racing-v2.6.md) and [mandatory execution addendum](./EXECUTION-ADDENDUM.md) are required **BOTH** together. Prompts [V3.1](./prompts/racing-v3.1.md), [V3.2](./prompts/racing-v3.2.md) and [V3.3](./prompts/racing-v3.3.md) are preserved byte-for-byte.

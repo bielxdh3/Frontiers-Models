@@ -33,15 +33,17 @@ test('legacy archive paths and exact prompt integrity remain unchanged', () => {
   assert.equal(digest, registry.prompts['frontier-v2'].sha256);
 });
 
-test('Racing V3.3 appears first while the old three remain source-only legacy', () => {
+test('Racing V3.4 appears first with new Gemini and the old three retained in history', () => {
   for (const path of ['README.md', 'README-PT-BR.md']) {
     const s = read(path);
-    const first = s.indexOf('### Racing-bench V3.3');
+    const first = s.indexOf('### Racing-bench V3.4');
     const second = s.indexOf('### Orbitarium-bench — ');
     assert.ok(first >= 0 && first < second);
     const section = s.slice(first, second);
-    assert.match(section, /racing-v3\.1\.md/);
-    assert.doesNotMatch(section, /https:\/\/racing-/);
+    assert.match(section, /racing-v3\.4\.md/);
+    assert.match(section, /gemini-3\.8-v3\.4/);
+    assert.match(section, /HTTP 404/);
+    assert.doesNotMatch(section, /https:\/\/racing-(?:gpt-6\.1-sol|gemini-3\.8-flash-old|gpt-6-astra)\.biel/);
     for (const name of ['GPT-6.1 Sol', 'Gemini 3.8 Flash', 'GPT-6 Astra']) assert.ok(section.includes(name));
     assert.ok(s.indexOf('## Benchmark 002 — Racing-bench') < s.indexOf('## Benchmark 001 — Orbitarium-bench'));
   }

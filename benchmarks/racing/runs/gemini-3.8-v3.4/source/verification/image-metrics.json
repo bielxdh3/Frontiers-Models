@@ -1,0 +1,110 @@
+{
+  "s1": {
+    "file": "s1-reta-orla.png",
+    "skyCoverage": 0.4593,
+    "skyCoveragePassed": true,
+    "meanLuminance": 0.4687,
+    "meanLuminancePassed": true,
+    "stdLuminance": 0.319,
+    "stdLuminancePassed": true,
+    "maxColorDominance": 0.1036,
+    "maxColorDominancePassed": true,
+    "allSanityPassed": true
+  },
+  "s2": {
+    "file": "s2-grid-3-4.png",
+    "skyCoverage": 0.4495,
+    "skyCoveragePassed": true,
+    "meanLuminance": 0.4671,
+    "meanLuminancePassed": true,
+    "stdLuminance": 0.3358,
+    "stdLuminancePassed": true,
+    "maxColorDominance": 0.1295,
+    "maxColorDominancePassed": true,
+    "allSanityPassed": true
+  },
+  "s3": {
+    "file": "s3-praia-espuma.png",
+    "skyCoverage": 0.46,
+    "skyCoveragePassed": true,
+    "meanLuminance": 0.4706,
+    "meanLuminancePassed": true,
+    "stdLuminance": 0.3189,
+    "stdLuminancePassed": true,
+    "maxColorDominance": 0.1105,
+    "maxColorDominancePassed": true,
+    "allSanityPassed": true
+  },
+  "s4": {
+    "file": "s4-falesia-mirante.png",
+    "skyCoverage": 0.4205,
+    "skyCoveragePassed": true,
+    "meanLuminance": 0.4156,
+    "meanLuminancePassed": true,
+    "stdLuminance": 0.3002,
+    "stdLuminancePassed": true,
+    "maxColorDominance": 0.1463,
+    "maxColorDominancePassed": true,
+    "allSanityPassed": true
+  },
+  "s5": {
+    "file": "s5-vila-rua.png",
+    "skyCoverage": 0.221,
+    "skyCoveragePassed": true,
+    "meanLuminance": 0.2712,
+    "meanLuminancePassed": true,
+    "stdLuminance": 0.2738,
+    "stdLuminancePassed": true,
+    "maxColorDominance": 0.2429,
+    "maxColorDominancePassed": true,
+    "allSanityPassed": true
+  },
+  "s6": {
+    "file": "s6-bosque-luz.png",
+    "skyCoverage": 0.5029,
+    "skyCoveragePassed": true,
+    "meanLuminance": 0.4972,
+    "meanLuminancePassed": true,
+    "stdLuminance": 0.3093,
+    "stdLuminancePassed": true,
+    "maxColorDominance": 0.1148,
+    "maxColorDominancePassed": true,
+    "allSanityPassed": true
+  },
+  "s7": {
+    "file": "s7-ponte-ou-tunel.png",
+    "skyCoverage": 0.4111,
+    "skyCoveragePassed": true,
+    "meanLuminance": 0.4307,
+    "meanLuminancePassed": true,
+    "stdLuminance": 0.3059,
+    "stdLuminancePassed": true,
+    "maxColorDominance": 0.0909,
+    "maxColorDominancePassed": true,
+    "allSanityPassed": true
+  },
+  "s8": {
+    "file": "s8-disputa.png",
+    "skyCoverage": 0.4964,
+    "skyCoveragePassed": true,
+    "meanLuminance": 0.4494,
+    "meanLuminancePassed": true,
+    "stdLuminance": 0.3427,
+    "stdLuminancePassed": true,
+    "maxColorDominance": 0.1077,
+    "maxColorDominancePassed": true,
+    "allSanityPassed": true
+  },
+  "s9": {
+    "file": "s9-close-pista.png",
+    "skyCoverage": 0.483,
+    "skyCoveragePassed": true,
+    "meanLuminance": 0.4524,
+    "meanLuminancePassed": true,
+    "stdLuminance": 0.3445,
+    "stdLuminancePassed": true,
+    "maxColorDominance": 0.1012,
+    "maxColorDominancePassed": true,
+    "allSanityPassed": true
+  }
+}
