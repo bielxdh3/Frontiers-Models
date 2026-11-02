@@ -26,8 +26,8 @@ if (orbitRuns.length !== 5 || new Set(orbitRuns.map(run => run.id)).size !== 5 |
     racing.current_prompt !== 'racing-v3.4' ||
     racing.legacy_runs.length !== 3 || racing.legacy_runs.some(id => racing.current_arena.includes(id)) ||
     orbitRuns.some(run => !run.live_url?.startsWith('https://')) ||
-    racingRuns.some(run => !run.display_status.startsWith('current-') || run.live_url !== null)) {
-  throw new Error('Hero expects one current Racing source with pending site and five current Orbitarium references');
+    racingRuns.some(run => !run.display_status.startsWith('current-') || !run.live_url?.startsWith('https://'))) {
+  throw new Error('Hero expects one current Racing source and live site plus five current Orbitarium references');
 }
 
 const escape = value => String(value).replaceAll('&', '&amp;')
@@ -52,7 +52,7 @@ const orbitBadges = orbitRuns.map((run, i) =>
 
 const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" role="img" aria-labelledby="title desc">
   <title id="title">Frontier Models — Racing and Orbitarium benchmark collection</title>
-  <desc id="desc">Two benchmarks. Racing-bench V3.4 current run: ${escape(racingRuns[0].model)} (source pinned, game site pending). The three V2.6 projects remain in the historical archive. Orbitarium current: ${escape(orbitRuns.map(run => run.model).join(', '))}.</desc>
+  <desc id="desc">Two benchmarks. Racing-bench V3.4 current run: ${escape(racingRuns[0].model)} (source archived and official website reachable). The three V2.6 projects remain in the historical archive. Orbitarium current: ${escape(orbitRuns.map(run => run.model).join(', '))}.</desc>
   <defs>
     <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#080f1d"/>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" role="img" aria-labelledby="title desc">
   <title id="title">Frontier Models — Racing and Orbitarium benchmark collection</title>
-  <desc id="desc">Two benchmarks. Racing-bench V3.4 current run: Gemini 3.8 Flash (source pinned, game site pending). The three V2.6 projects remain in the historical archive. Orbitarium current: GPT-6.1 Sol, GPT-6 Astra, Grok 4.7, Fable 5.1, Gemini 4 Argon.</desc>
+  <desc id="desc">Two benchmarks. Racing-bench V3.4 current run: Gemini 3.8 Flash (source archived and official website reachable). The three V2.6 projects remain in the historical archive. Orbitarium current: GPT-6.1 Sol, GPT-6 Astra, Grok 4.7, Fable 5.1, Gemini 4 Argon.</desc>
   <defs>
     <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#080f1d"/>

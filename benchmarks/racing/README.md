@@ -6,13 +6,11 @@
 
 The [V3.4 prompt](./prompts/racing-v3.4/racing-v3.4.md) and its [14 reference images](./prompts/racing-v3.4/refs/) are the current benchmark input package: one coastal circuit, five AI opponents, 3/6 laps.
 
-**Gemini 3.8 Flash (V3.4)** is the only current Racing-bench run.
+| Current model | Play | Source |
+| --- | --- | --- |
+| **Gemini 3.8 Flash (V3.4)** | [Play racing](https://racing-gemini-3.8-flash.biel.dev.br/) | [Source — gemini-3.8](https://github.com/bielxdh3/gemini-3.8) |
 
-- [Source at pinned commit](https://github.com/bielxdh3/gemini-3.8/tree/8f1992b88c3771edae825f7ecc52f1499844cb0b)
-- [Source provenance](./runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md)
-- [Owner-provided site](https://racing-gemini-3.8-flash.biel.dev.br): **HTTP 404 when checked on 2026-11-02; not yet a verified playable site**.
-
-All 188 Git-tracked source files are archived here at the pinned upstream commit with per-file hashes (the external Git LFS video is not bundled). Independent visual or gameplay verification has not been performed. V3.3 remains unchanged and frozen as a historical prompt; V3.2 and V3.1 are also archived.
+The site returned HTTP 200 on 2026-11-02; gameplay remains unverified. [Source provenance](./runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md) pins the exact source commit. All 188 Git-tracked files are archived here with hashes (the external Git LFS video is not bundled). V3.3 remains unchanged and frozen as a historical prompt; V3.2 and V3.1 are also archived.
 
 ## Historical source archives — Racing V2.6
 

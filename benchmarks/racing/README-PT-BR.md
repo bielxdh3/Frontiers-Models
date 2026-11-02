@@ -6,13 +6,11 @@
 
 O [prompt V3.4](./prompts/racing-v3.4/racing-v3.4.md), junto às [14 imagens de referência](./prompts/racing-v3.4/refs/), é o pacote atual: uma pista costeira, cinco rivais de IA e corridas de 3 ou 6 voltas.
 
-**Gemini 3.8 Flash (V3.4)** é a única execução atual do Racing-bench.
+| Modelo atual | Jogar | Código-fonte |
+| --- | --- | --- |
+| **Gemini 3.8 Flash (V3.4)** | [Jogar](https://racing-gemini-3.8-flash.biel.dev.br/) | [Source — gemini-3.8](https://github.com/bielxdh3/gemini-3.8) |
 
-- [Código-fonte no commit exato](https://github.com/bielxdh3/gemini-3.8/tree/8f1992b88c3771edae825f7ecc52f1499844cb0b)
-- [Proveniência](./runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md)
-- [Site fornecido pelo proprietário](https://racing-gemini-3.8-flash.biel.dev.br): **retornou HTTP 404 em 2026-11-02; ainda não confirmado como site jogável**.
-
-Os 188 arquivos Git estão arquivados aqui com hashes e commit fixado (o vídeo externo LFS não está incluído). Jogabilidade e evidências visuais não foram verificadas de forma independente. A V3.3 permanece congelada e intacta no histórico; a V3.2 e a V3.1 também.
+O site respondeu HTTP 200 em 02/11/2026; a jogabilidade ainda não foi verificada. A [proveniência](./runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md) fixa o commit exato. Os 188 arquivos Git estão arquivados aqui com hashes (o vídeo externo LFS não está incluído). A V3.3 permanece congelada e intacta no histórico; a V3.2 e a V3.1 também.
 
 ## Histórico arquivado — Racing V2.6
 

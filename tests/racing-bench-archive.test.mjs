@@ -28,14 +28,15 @@ test('Racing-bench source runs have provenance records, without claiming gamepla
   assert.deepEqual(registry.runs.map(r => r.id).sort(), ['gemini-3.8-flash', 'gpt-6-astra', 'gpt-6.1-sol', 'gemini-3.8-v3.4'].sort());
   for (const run of registry.runs) {
     assert.equal(run.gameplay_verification, 'not-independently-verified');
-    assert.equal(run.live_url, null);
     assert.ok(run.source_commit);
     if (registry.legacy_runs.includes(run.id)) {
+      assert.equal(run.live_url, null);
       assert.equal(run.display_status, 'legacy-archived');
       assert.ok(run.manifest);
       assert.ok(run.git_bundle);
     } else {
       assert.deepEqual(registry.current_arena, [run.id]);
+      assert.equal(run.live_url, 'https://racing-gemini-3.8-flash.biel.dev.br/');
       assert.equal(run.archival_status, 'complete-tracked-git-snapshot-lfs-pointer-no-history-bundle');
       assert.ok(run.manifest);
       assert.equal(run.git_bundle, null);
