@@ -25,10 +25,17 @@ test('all seven canonical Orbitarium sites retain their original links', () => {
   }
 });
 
-test('Racing V3.3 is current; all three V2.6 runs are legacy without live links', () => {
-  assert.equal(racing.current_prompt, 'racing-v3.3');
-  assert.deepEqual(racing.runs.map(run => run.id), ['gpt-6.1-sol', 'gemini-3.8-flash', 'gpt-6-astra']);
-  for (const run of racing.runs) {
+test('Racing V3.4 Gemini is current, source pinned, website pending, with old three archived', () => {
+  assert.equal(racing.current_prompt, 'racing-v3.4');
+  assert.deepEqual(racing.current_arena, ['gemini-3.8-v3.4']);
+  assert.deepEqual(racing.legacy_runs, ['gpt-6.1-sol', 'gemini-3.8-flash', 'gpt-6-astra']);
+  const current = racing.runs.find(run => run.id === racing.current_arena[0]);
+  assert.equal(current.model, 'Gemini 3.8 Flash');
+  assert.equal(current.source_commit, '8f1992b88c3771edae825f7ecc52f1499844cb0b');
+  assert.equal(current.site_url, 'https://racing-gemini-3.8-flash.biel.dev.br');
+  assert.match(current.site_status, /HTTP-404/);
+  assert.equal(current.live_url, null);
+  for (const run of racing.runs.filter(run => racing.legacy_runs.includes(run.id))) {
     assert.equal(run.live_url, null);
     assert.equal(run.display_status, 'legacy-archived');
   }
@@ -36,8 +43,10 @@ test('Racing V3.3 is current; all three V2.6 runs are legacy without live links'
     'benchmarks/racing/README.md', 'benchmarks/racing/README-PT-BR.md']) {
     const s = read(path);
     assert.match(s, /racing-v3\.1\.md/);
+    assert.match(s, /racing-v3\.4/);
+    assert.match(s, /racing-gemini-3\.8-flash\.biel\.dev\.br/);
     for (const run of racing.runs) assert.ok(s.includes(run.model));
-    assert.doesNotMatch(s, /https:\/\/racing-(?:gpt-6\.1-sol|gemini-3\.8-flash|gpt-6-astra)\.biel\.dev\.br/);
+    assert.doesNotMatch(s, /https:\/\/racing-(?:gpt-6\.1-sol|gpt-6-astra)\.biel\.dev\.br/);
   }
 });
 

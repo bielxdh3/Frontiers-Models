@@ -1,0 +1,2 @@
+# Transport override for the archived upstream Git LFS pointer.
+volta.webm -filter -diff -merge -text

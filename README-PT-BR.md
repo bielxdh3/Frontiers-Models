@@ -6,7 +6,7 @@
 
 [![Benchmark](https://img.shields.io/badge/benchmark-frontier%20models-7C3AED?style=flat)](./benchmarks)
 [![Benchmarks](https://img.shields.io/badge/benchmarks-2-2563EB?style=flat)](./docs/REPOSITORY-ARCHITECTURE.md)
-[![Execuções atuais](https://img.shields.io/badge/execu%C3%A7%C3%B5es%20atuais-5-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
+[![Execuções atuais](https://img.shields.io/badge/execu%C3%A7%C3%B5es%20atuais-6-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
 
 # Frontier Models
 
@@ -20,21 +20,13 @@
 
 ## ⚔️ Execuções atuais por benchmark
 
-### Racing-bench V3.3 — especificação atual
+### Racing-bench V3.4 — versão atual, focada na corrida
 
-O **[Racing-bench V3.3 — prompt oficial congelado](./benchmarks/racing/prompts/racing-v3.3.md)** é a versão vigente: um jogo de corrida AAA-inspired no navegador com três pistas, quatro carros, cinco rivais locais, três Signature Features independentes e dezesseis sistemas avançados obrigatórios. **Ainda não existem jogos ou sites V3.3 publicados pelos modelos.**
+O pacote atual é o **[prompt Racing-bench V3.4](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md)** e suas **[14 imagens de referência](./benchmarks/racing/prompts/racing-v3.4/refs/)**. Uma pista costeira, cinco rivais de IA, 3 ou 6 voltas e qualidade visual. A V3.3 continua congelada e preservada, sem alterações.
 
-**V3.3 com UI/UX premium:** Todas as telas, menus, três HUDs, garagem e editores precisam passar G12, U01–U16 e 12 capturas extras, além das 16 originais (28+ imagens).
+**Execução atual: Gemini 3.8 Flash (V3.4)** — [código no commit exato](https://github.com/bielxdh3/gemini-3.8/tree/8f1992b88c3771edae825f7ecc52f1499844cb0b) · [proveniência](./benchmarks/racing/runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md). [Site fornecido pelo proprietário](https://racing-gemini-3.8-flash.biel.dev.br) — **HTTP 404 na verificação de 2026-11-02; ainda não confirmado como jogável**. Os 188 arquivos Git da fonte estão arquivados byte a byte (exceto o vídeo externo LFS); desempenho e jogabilidade não foram verificados aqui. Esta execução V3.4 é diferente da execução histórica Gemini 3.8 Flash V2.6.
 
-**Ao executar, anexe dois arquivos juntos:** o [prompt V3.3](./benchmarks/racing/prompts/racing-v3.3.md) e o [breve esclarecimento operacional em inglês](./benchmarks/racing/prompts/racing-v3.3-attach.md).
-
-**Versão anterior preservada:** [Racing-bench V3.1](./benchmarks/racing/prompts/racing-v3.1.md) continua disponível como especificação histórica congelada, sem apagar ou modificar seus arquivos.
-
-**V3.3 — ambiente costeiro/cidade de qualidade premium:** mar, praia, areia, árvores, casas, pontes, asfalto, shaders/texturas e áudio ambiental completos, com G13, W01–W10 e 10 capturas adicionais (mínimo 38 imagens). Referências visuais e assets ambientais licenciados podem ser usados com autoria/integridade; copiar código continua proibido.
-
-A [V3.2](./benchmarks/racing/prompts/racing-v3.2.md) permanece arquivada, sem alterações.
-
-**Legado arquivado — Racing-bench V2.6 (código preservado, links antigos para jogar removidos):**
+**Histórico V2.6 — códigos arquivados e preservados, fora da vitrine atual:**
 
 | Modelo legado | Código arquivado |
 | --- | --- |
@@ -42,7 +34,7 @@ A [V3.2](./benchmarks/racing/prompts/racing-v3.2.md) permanece arquivada, sem al
 | **Gemini 3.8 Flash** | [Código](./benchmarks/racing/runs/gemini-3.8-flash/source/) |
 | **GPT-6 Astra** | [Código](./benchmarks/racing/runs/gpt-6-astra/source/) |
 
-As três execuções da V2.6 agora são **legado/arquivadas**, não participantes da V3.3. Seus snapshots, manifestos e bundles Git continuam intactos; isso não afirma aprovação do gameplay.
+Os três continuam com snapshots, manifestos e históricos Git preservados.
 
 ### Orbitarium-bench — referências atuais
 
@@ -90,7 +82,7 @@ O registro conecta prompts arquivados, projetos independentes, evidências de or
 
 ## 🗂️ Modelos non-frontier ou desatualizados
 
-Estas execuções **do Orbitarium** continuam visíveis como referência, mas ficam separadas da arena atual desse benchmark. A V3.3 do Racing-bench ainda não possui execuções publicadas; os três projetos da V2.6 são legado arquivado.
+Estas execuções **do Orbitarium** continuam visíveis como referência, mas ficam separadas da arena atual desse benchmark. O Racing-bench V3.4 tem uma execução Gemini 3.8 Flash V3.4 com código fixado e site fornecido que ainda responde HTTP 404; os três projetos V2.6 são legado arquivado.
 
 | Modelo | Classificação | Projeto / fonte | Proveniência |
 | --- | --- | --- | --- |
@@ -112,9 +104,9 @@ PROMPT → EXECUÇÃO DO MODELO → SNAPSHOT / FONTE FIXADA → EVIDÊNCIAS → 
 
 ## Benchmark 002 — Racing-bench
 
-**O [Racing-bench V3.3](./benchmarks/racing/prompts/racing-v3.3.md) é o contrato oficial atual, congelado e autônomo.** Exige um jogo de corrida fotorrealista e complexo no navegador, com gráficos avançados de GPU, física profunda, três pistas/modos, quatro carros, cinco rivais locais, três Signature Features originais e dezesseis sistemas adicionais integrados. Ainda não há execuções V3.3 publicadas.
+A **[V3.4](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md) é a especificação atual**, acompanhada por 14 imagens de referência. O [Gemini 3.8 Flash (V3.4)](./benchmarks/racing/runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md) tem código-fonte fixado por commit; o [site informado](https://racing-gemini-3.8-flash.biel.dev.br) ainda responde HTTP 404.
 
-**A V2.6 agora é legado arquivado.** Seu [prompt original intacto](./benchmarks/racing/prompts/racing-v2.6.md), o [adendo histórico de execução](./benchmarks/racing/EXECUTION-ADDENDUM.md) e os códigos do [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/), [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) e [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra/source/) permanecem preservados. Os links antigos de visita foram removidos da apresentação pública; isso não exclui sites externos.
+Os prompts [V3.3](./benchmarks/racing/prompts/racing-v3.3.md), [V3.2](./benchmarks/racing/prompts/racing-v3.2.md) e [V3.1](./benchmarks/racing/prompts/racing-v3.1.md) seguem intactos no histórico. A [V2.6](./benchmarks/racing/prompts/racing-v2.6.md) e seu [adendo](./benchmarks/racing/EXECUTION-ADDENDUM.md), com os códigos de [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/), [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) e [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra/source/), permanecem preservados. Links antigos não são exibidos.
 
 ## Benchmark 001 — Orbitarium-bench
 
@@ -131,8 +123,9 @@ O caminho histórico `benchmarks/solar-system/` permanece inalterado para preser
 | **GPT-6.1 Sol** | Git `6f55263669…` | Legado | Arquivado |
 | **Gemini 3.8 Flash** | Git `a18fcaee71…` | Legado | Arquivado |
 | **GPT-6 Astra** | Git `0c615e8dc3…` | Legado | Arquivado |
+| **Gemini 3.8 Flash** | Git `8f1992b88c…` | Atual | Arquivado |
 
-Os três snapshots do Racing incluem [manifestos SHA-256 e backups Git restauráveis](./benchmarks/racing/).
+Os três snapshots históricos do Racing incluem bundles Git completos. Gemini V3.4 inclui os 188 arquivos Git e um manifesto SHA-256, sem vídeo LFS externo nem bundle de histórico.
 
 ### Orbitarium-bench
 

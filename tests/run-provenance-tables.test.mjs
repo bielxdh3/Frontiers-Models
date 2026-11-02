@@ -23,7 +23,7 @@ function displayName(run) {
 }
 
 function classification(run, isRacing, pt) {
-  if (isRacing) return pt ? 'Legado' : 'Legacy';
+  if (isRacing) return racing.current_arena.includes(run.id) ? (pt ? 'Atual' : 'Current') : (pt ? 'Legado' : 'Legacy');
   if (currentOrbit.has(run.id)) return pt ? 'Atual' : 'Current';
   if (run.role === 'non-frontier-run') return 'Non-frontier';
   return pt ? 'Histórico' : 'Historical';
@@ -31,9 +31,11 @@ function classification(run, isRacing, pt) {
 
 function sourceStatus(run, isRacing, pt) {
   const archived = isRacing
-    ? run.archival_status === 'complete-tracked-git-snapshot-and-full-history-bundle'
+    ? ['complete-tracked-git-snapshot-and-full-history-bundle',
+      'complete-tracked-git-snapshot-lfs-pointer-no-history-bundle'].includes(run.archival_status)
     : run.archive_status === 'self-contained';
-  assert.ok(archived || run.archive_status === 'source-repository-pinned', run.id);
+  assert.ok(archived || (isRacing ? run.archival_status === 'source-repository-pinned' :
+    run.archive_status === 'source-repository-pinned'), run.id);
   if (archived) {
     const path = resolve(root, isRacing ? 'benchmarks/racing/' + run.archive_path : 'benchmarks/solar-system/' + run.target_path);
     assert.ok(existsSync(path) && statSync(path).isDirectory(), 'archived source must exist: ' + run.id);
