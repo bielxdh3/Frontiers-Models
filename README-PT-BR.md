@@ -6,7 +6,7 @@
 
 [![Benchmark](https://img.shields.io/badge/benchmark-frontier%20models-7C3AED?style=flat)](./benchmarks)
 [![Benchmarks](https://img.shields.io/badge/benchmarks-2-2563EB?style=flat)](./docs/REPOSITORY-ARCHITECTURE.md)
-[![Execuções atuais](https://img.shields.io/badge/execu%C3%A7%C3%B5es%20atuais-7-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
+[![Execuções atuais](https://img.shields.io/badge/execu%C3%A7%C3%B5es%20atuais-8-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
 
 # Frontier Models
 
@@ -26,8 +26,11 @@
 | --- | --- | --- |
 | **Gemini 3.8 Flash (V3.4)** | [Jogar](https://racing-gemini-3.8-flash.biel.dev.br/) | [Source — gemini-3.8](https://github.com/bielxdh3/gemini-3.8) |
 | **GPT-6.1 Sol (V3.4)** | [Jogar](https://racing-gpt-6.1-sol.biel.dev.br/) | [Código — arquivado aqui](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/source/) |
+| **GPT-6 Astra (V3.4)** | Ainda sem site público | [Código — arquivado aqui](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) |
 
-**Entradas V3.4:** [prompt Racing](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md) · [14 imagens de referência](./benchmarks/racing/prompts/racing-v3.4/refs/). **Código arquivado:** [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md) · [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/SOURCE-PROVENANCE.md).
+**Entradas V3.4:** [prompt Racing](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md) · [14 imagens de referência](./benchmarks/racing/prompts/racing-v3.4/refs/). **Proveniência:** [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md) · [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/SOURCE-PROVENANCE.md) · [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra-v3.4/SOURCE-PROVENANCE.md).
+
+**GPT-6 Astra V3.4:** O [relatório de origem](https://github.com/bielxdh3/6-astra/blob/daf0099699a0e8201b8bc4f1dca6909f92700b3b/verification/REPORT.md) registra 33/34 testes automatizados, mas o **benchmark integral foi reprovado** (preset Alto abaixo de 60 FPS); não há comprovação de aprovação visual dos portões P2–P4. Nenhuma URL jogável foi fornecida.
 
 **Arquivo Racing V2.6:** [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/), [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) e [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra/source/).
 
@@ -46,11 +49,11 @@ O Orbitarium reúne **cinco referências atuais**. O Gemini 4 Argon e o GPT-6.1 
 ## Como se organiza
 
 ```text
-FRONTIER MODELS                         2 benchmarks · 7 execuções atuais
+FRONTIER MODELS                         2 benchmarks · 8 execuções atuais
 │
-├── RACING-BENCH (V3.4)                 2 execuções atuais
+├── RACING-BENCH (V3.4)                 3 execuções atuais
 │   ├── entradas    racing-v3.4/ · 14 referências visuais
-│   ├── atuais      Gemini 3.8 Flash · GPT-6.1 Sol
+│   ├── atuais      Gemini 3.8 Flash · GPT-6.1 Sol · GPT-6 Astra
 │   └── histórico   execuções V2.6 + prompts anteriores
 │
 ├── ORBITARIUM-BENCH (Frontier V2)      5 referências atuais
@@ -69,7 +72,7 @@ Cada benchmark mantém seus próprios prompts, execuções atuais e histórico, 
 
 ## 🗂️ Modelos non-frontier ou desatualizados
 
-Estas execuções **do Orbitarium** continuam visíveis como referência, mas ficam separadas da arena atual desse benchmark. O Racing-bench V3.4 destaca Gemini 3.8 Flash e GPT-6.1 Sol como execuções atuais independentes, com código-fonte arquivado; os três projetos V2.6 continuam arquivados como legado.
+Estas execuções **do Orbitarium** continuam visíveis como referência, mas ficam separadas da arena atual desse benchmark. O Racing-bench V3.4 destaca Gemini 3.8 Flash, GPT-6.1 Sol e GPT-6 Astra como execuções atuais independentes; os três projetos V2.6 continuam arquivados como legado.
 
 | Modelo | Classificação | Projeto / fonte | Proveniência |
 | --- | --- | --- | --- |
@@ -91,7 +94,7 @@ PROMPT → EXECUÇÃO DO MODELO → SNAPSHOT / FONTE FIXADA → EVIDÊNCIAS → 
 
 ## Benchmark 002 — Racing-bench
 
-**[Prompt V3.4](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md)** · [14 referências visuais](./benchmarks/racing/prompts/racing-v3.4/refs/). Jogue o [Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br/) ou o [GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br/); acesse os [arquivos de código Racing](./benchmarks/racing/README-PT-BR.md).
+**[Prompt V3.4](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md)** · [14 referências visuais](./benchmarks/racing/prompts/racing-v3.4/refs/). Jogue o [Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br/) ou o [GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br/); consulte o [arquivo GPT-6 Astra V3.4](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) e os [arquivos de código Racing](./benchmarks/racing/README-PT-BR.md).
 
 Prompts anteriores: [V3.3](./benchmarks/racing/prompts/racing-v3.3.md), [V3.2](./benchmarks/racing/prompts/racing-v3.2.md), [V3.1](./benchmarks/racing/prompts/racing-v3.1.md) e [V2.6](./benchmarks/racing/prompts/racing-v2.6.md).
 
@@ -112,6 +115,7 @@ O caminho histórico `benchmarks/solar-system/` permanece inalterado para preser
 | **GPT-6 Astra** | Git `0c615e8dc3…` | Legado | Arquivado |
 | **Gemini 3.8 Flash** | Git `8f1992b88c…` | Atual | Arquivado |
 | **GPT-6.1 Sol** | Git `1ab34b18cb…` | Atual | Arquivado |
+| **GPT-6 Astra** | Git `daf0099699…` | Atual | Arquivado |
 
 Os três snapshots históricos do Racing incluem bundles Git completos. Gemini V3.4 inclui os 188 arquivos Git e um manifesto SHA-256, sem vídeo LFS externo nem bundle de histórico.
 

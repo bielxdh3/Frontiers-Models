@@ -22,13 +22,15 @@ const racingRuns = racing.current_arena.map(id => {
 if (orbitRuns.length !== 5 || new Set(orbitRuns.map(run => run.id)).size !== 5 ||
     !orbitRuns.some(run => run.model === 'Gemini 4 Argon') ||
     orbitRuns.some(run => run.model === 'Gemini 3.8 Flash') ||
-    racingRuns.length !== 2 || racingRuns[0].id !== 'gemini-3.8-v3.4' ||
+    racingRuns.length !== 3 || racingRuns[0].id !== 'gemini-3.8-v3.4' ||
     racingRuns[1].id !== 'gpt-6.1-sol-v3.4' ||
+    racingRuns[2].id !== 'gpt-6-astra-v3.4' ||
     racing.current_prompt !== 'racing-v3.4' ||
     racing.legacy_runs.length !== 3 || racing.legacy_runs.some(id => racing.current_arena.includes(id)) ||
     orbitRuns.some(run => !run.live_url?.startsWith('https://')) ||
-    racingRuns.some(run => !run.display_status.startsWith('current-') || !run.live_url?.startsWith('https://'))) {
-  throw new Error('Hero expects two current Racing sources and live sites plus five current Orbitarium references');
+    racingRuns.some(run => !run.display_status.startsWith('current-') ||
+      (run.live_url !== null && !run.live_url?.startsWith('https://')))) {
+  throw new Error('Hero expects three current Racing sources and five current Orbitarium references; unpublished game URLs must stay null');
 }
 
 const escape = value => String(value).replaceAll('&', '&amp;')
@@ -44,8 +46,8 @@ function badge({ run, x, y, width, accent, benchmark }) {
 }
 
 const racingBadges = racingRuns.map((run, i) =>
-  badge({ run, x: 769.5 + i * 239, y: 173, width: 225,
-    accent: ['#80e9f2', '#facc6b'][i], benchmark: 'racing' })
+  badge({ run, x: 649 + i * 239, y: 173, width: 225,
+    accent: ['#80e9f2', '#facc6b', '#aaa7ff'][i], benchmark: 'racing' })
 ).join('\n    ');
 const orbitBadges = orbitRuns.map((run, i) =>
   badge({ run, x: i < 3 ? 650 + i * 239 : 769.5 + (i - 3) * 239, y: i < 3 ? 390 : 452,

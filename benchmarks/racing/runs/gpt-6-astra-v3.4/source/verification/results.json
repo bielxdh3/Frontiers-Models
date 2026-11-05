@@ -1,0 +1,796 @@
+{
+  "benchmark": "Racing-bench V3.4",
+  "automatedStatus": "FAIL",
+  "tests": [
+    {
+      "name": "Garage: two models, six colors and number",
+      "pass": true
+    },
+    {
+      "name": "Five-second grid plus locked 3-2-1 start",
+      "pass": true,
+      "evidence": {
+        "status": "countdown",
+        "distance": 0,
+        "phaseTime": 7.98333333333352
+      }
+    },
+    {
+      "name": "Real keyboard driving",
+      "pass": true,
+      "evidence": {
+        "distance": 5.1077272357909225,
+        "speed": 8.212559971815264
+      }
+    },
+    {
+      "name": "Hood camera toggle",
+      "pass": true
+    },
+    {
+      "name": "Pause freezes simulation",
+      "pass": true
+    },
+    {
+      "name": "Resume restores race",
+      "pass": true
+    },
+    {
+      "name": "3-lap journey reaches results",
+      "pass": true,
+      "evidence": {
+        "id": 0,
+        "nextGate": 97,
+        "completed": 3,
+        "lapStart": 322.76666666653745,
+        "laps": [
+          109.22500000003411,
+          106.06666666659982,
+          106.07499999990353
+        ],
+        "best": 106.06666666659982,
+        "invalid": false,
+        "finish": 322.76666666653745,
+        "maxStopped": 0.06666666666666667,
+        "progress": 8547.960836237313
+      }
+    },
+    {
+      "name": "3-lap vehicle integrity",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "3-lap AI overtaking and progress",
+      "pass": true,
+      "evidence": {
+        "overtakes": 16,
+        "maxStopped": 0.06666666666666667
+      }
+    },
+    {
+      "name": "3-lap camera integrity",
+      "pass": true,
+      "evidence": {
+        "events": [],
+        "minClearance": 1.0892816032565058,
+        "samples": 3636
+      }
+    },
+    {
+      "name": "3-lap projected times marked",
+      "pass": true,
+      "evidence": [
+        {
+          "id": 2,
+          "name": "A. RIVA",
+          "time": 300.8166666665574,
+          "projected": false,
+          "best": 98.99166666657663
+        },
+        {
+          "id": 5,
+          "name": "I. MAR",
+          "time": 308.63333333321697,
+          "projected": false,
+          "best": 101.54999999990764
+        },
+        {
+          "id": 4,
+          "name": "N. VALE",
+          "time": 315.78333333321046,
+          "projected": false,
+          "best": 103.70833333323901
+        },
+        {
+          "id": 1,
+          "name": "L. COSTA",
+          "time": 316.4999999998765,
+          "projected": false,
+          "best": 104.39999999990505
+        },
+        {
+          "id": 3,
+          "name": "M. SOL",
+          "time": 322.5166666665377,
+          "projected": false,
+          "best": 106.34166666660093
+        },
+        {
+          "id": 0,
+          "name": "VOCÊ",
+          "time": 322.76666666653745,
+          "projected": false,
+          "best": 106.06666666659982
+        }
+      ]
+    },
+    {
+      "name": "Retry starts a fresh grid",
+      "pass": true
+    },
+    {
+      "name": "6-lap journey reaches results",
+      "pass": true,
+      "evidence": {
+        "id": 0,
+        "nextGate": 193,
+        "completed": 6,
+        "lapStart": 640.9749999995814,
+        "laps": [
+          109.22500000003411,
+          106.06666666659982,
+          106.07499999990353,
+          106.0666666665702,
+          106.07499999990358,
+          106.0666666665702
+        ],
+        "best": 106.0666666665702,
+        "invalid": false,
+        "finish": 640.9749999995814,
+        "maxStopped": 0.06666666666666667,
+        "progress": 17095.666527194113
+      }
+    },
+    {
+      "name": "6-lap vehicle integrity",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "6-lap AI overtaking and progress",
+      "pass": true,
+      "evidence": {
+        "overtakes": 16,
+        "maxStopped": 0.06666666666666667
+      }
+    },
+    {
+      "name": "6-lap camera integrity",
+      "pass": true,
+      "evidence": {
+        "events": [],
+        "minClearance": 1.0892816032565058,
+        "samples": 10212
+      }
+    },
+    {
+      "name": "6-lap projected times marked",
+      "pass": true,
+      "evidence": [
+        {
+          "id": 2,
+          "name": "A. RIVA",
+          "time": 597.7916666662874,
+          "projected": false,
+          "best": 98.99166666657663
+        },
+        {
+          "id": 5,
+          "name": "I. MAR",
+          "time": 613.28333333294,
+          "projected": false,
+          "best": 101.54999999990764
+        },
+        {
+          "id": 4,
+          "name": "N. VALE",
+          "time": 626.9083333329276,
+          "projected": false,
+          "best": 103.70833333323901
+        },
+        {
+          "id": 1,
+          "name": "L. COSTA",
+          "time": 629.6999999995917,
+          "projected": false,
+          "best": 104.39999999990505
+        },
+        {
+          "id": 0,
+          "name": "VOCÊ",
+          "time": 640.9749999995814,
+          "projected": false,
+          "best": 106.0666666665702
+        },
+        {
+          "id": 3,
+          "name": "M. SOL",
+          "time": 641.7058699140965,
+          "projected": true,
+          "best": 106.34166666656995
+        }
+      ]
+    },
+    {
+      "name": "Three restarts do not duplicate voices",
+      "pass": true,
+      "evidence": [
+        {
+          "engines": 6,
+          "aiVoices": 5,
+          "sampleSources": 24,
+          "maxEngineVoices": 6,
+          "oneshots": 0,
+          "buffers": [
+            "gt-low",
+            "hatch-low",
+            "hatch-high",
+            "hatch-mid",
+            "gt-mid",
+            "gt-high",
+            "hatch-idle",
+            "gt-idle",
+            "tires",
+            "gravel",
+            "impact"
+          ],
+          "state": "running"
+        },
+        {
+          "engines": 6,
+          "aiVoices": 5,
+          "sampleSources": 24,
+          "maxEngineVoices": 6,
+          "oneshots": 0,
+          "buffers": [
+            "gt-low",
+            "hatch-low",
+            "hatch-high",
+            "hatch-mid",
+            "gt-mid",
+            "gt-high",
+            "hatch-idle",
+            "gt-idle",
+            "tires",
+            "gravel",
+            "impact"
+          ],
+          "state": "running"
+        },
+        {
+          "engines": 6,
+          "aiVoices": 5,
+          "sampleSources": 24,
+          "maxEngineVoices": 6,
+          "oneshots": 0,
+          "buffers": [
+            "gt-low",
+            "hatch-low",
+            "hatch-high",
+            "hatch-mid",
+            "gt-mid",
+            "gt-high",
+            "hatch-idle",
+            "gt-idle",
+            "tires",
+            "gravel",
+            "impact"
+          ],
+          "state": "running"
+        },
+        {
+          "engines": 6,
+          "aiVoices": 5,
+          "sampleSources": 24,
+          "maxEngineVoices": 6,
+          "oneshots": 0,
+          "buffers": [
+            "gt-low",
+            "hatch-low",
+            "hatch-high",
+            "hatch-mid",
+            "gt-mid",
+            "gt-high",
+            "hatch-idle",
+            "gt-idle",
+            "tires",
+            "gravel",
+            "impact"
+          ],
+          "state": "running"
+        }
+      ]
+    },
+    {
+      "name": "Heap stable after three restarts",
+      "pass": true,
+      "evidence": [
+        16150672,
+        16152652,
+        16162280,
+        16191224
+      ]
+    },
+    {
+      "name": "Menu stops race voices",
+      "pass": true
+    },
+    {
+      "name": "Shortcut cannot count a lap",
+      "pass": true,
+      "evidence": {
+        "before": 0,
+        "after": 0,
+        "invalid": true,
+        "events": [
+          {
+            "time": 4.008333333333322,
+            "type": "invalid-checkpoint",
+            "id": 0,
+            "delta": 826.1034591440524
+          },
+          {
+            "time": 4.016666666666656,
+            "type": "invalid-checkpoint",
+            "id": 0,
+            "delta": 826.095934497094
+          },
+          {
+            "time": 4.02499999999999,
+            "type": "invalid-checkpoint",
+            "id": 0,
+            "delta": 826.3273093835769
+          }
+        ]
+      }
+    },
+    {
+      "name": "World geometry validates",
+      "pass": true,
+      "evidence": {
+        "ok": true,
+        "errors": [],
+        "stats": {
+          "length": 2849.274918507988,
+          "maxGrade": 0.13824548016163843,
+          "minRadius": 25.50901132711316,
+          "maxEdgeGap": 0.09898496838210491,
+          "maxTerrainAbove": 0,
+          "objects": 2788
+        }
+      }
+    },
+    {
+      "name": "Scene car triangle/material thresholds",
+      "pass": true,
+      "evidence": [
+        {
+          "name": "Vela GT",
+          "model": "gt",
+          "triangles": 183904,
+          "materials": 14
+        },
+        {
+          "name": "Brisa RS",
+          "model": "hatch",
+          "triangles": 178940,
+          "materials": 14
+        },
+        {
+          "name": "Vela GT",
+          "model": "gt",
+          "triangles": 183904,
+          "materials": 14
+        },
+        {
+          "name": "Brisa RS",
+          "model": "hatch",
+          "triangles": 178940,
+          "materials": 14
+        },
+        {
+          "name": "Vela GT",
+          "model": "gt",
+          "triangles": 183904,
+          "materials": 14
+        },
+        {
+          "name": "Brisa RS",
+          "model": "hatch",
+          "triangles": 178940,
+          "materials": 14
+        },
+        {
+          "name": "Brisa RS",
+          "model": "hatch",
+          "triangles": 178940,
+          "materials": 14
+        }
+      ]
+    },
+    {
+      "name": "Scene box/flat/texture detectors",
+      "pass": true,
+      "evidence": {
+        "boxes": [],
+        "flat": [],
+        "textures": []
+      }
+    },
+    {
+      "name": "Scene density and variety",
+      "pass": true,
+      "evidence": {
+        "houses": 38,
+        "variants": 6,
+        "species": [
+          "palm",
+          "bush",
+          "olive",
+          "pine"
+        ],
+        "bins": [
+          115,
+          110,
+          126,
+          125,
+          115,
+          124,
+          118,
+          91,
+          90,
+          94,
+          93,
+          92,
+          92,
+          92,
+          87,
+          74,
+          91,
+          75,
+          74,
+          76,
+          74,
+          80,
+          101,
+          103,
+          110,
+          105,
+          100,
+          105,
+          56
+        ]
+      }
+    },
+    {
+      "name": "Recorded sample engine connections",
+      "pass": true,
+      "evidence": {
+        "engines": 6,
+        "aiVoices": 5,
+        "sampleSources": 24,
+        "maxEngineVoices": 6,
+        "oneshots": 0,
+        "buffers": [
+          "gt-low",
+          "hatch-low",
+          "hatch-high",
+          "hatch-mid",
+          "gt-mid",
+          "gt-high",
+          "hatch-idle",
+          "gt-idle",
+          "tires",
+          "gravel",
+          "impact"
+        ],
+        "state": "running"
+      }
+    },
+    {
+      "name": "S1–S9 numerical image sanity",
+      "pass": true,
+      "evidence": [
+        {
+          "id": "s2",
+          "pass": true,
+          "skyFraction": 0.354945987654321,
+          "luminanceMean": 0.41343388911705614,
+          "luminanceStd": 0.2273428671556324,
+          "maxExactColorFraction": 0.007751253858024692
+        },
+        {
+          "id": "s1",
+          "pass": true,
+          "skyFraction": 0.34762345679012346,
+          "luminanceMean": 0.41965785080503587,
+          "luminanceStd": 0.22926456944180604,
+          "maxExactColorFraction": 0.0033550347222222224
+        },
+        {
+          "id": "s3",
+          "pass": true,
+          "skyFraction": 0.4638503086419753,
+          "luminanceMean": 0.545836746000969,
+          "luminanceStd": 0.18299743531903628,
+          "maxExactColorFraction": 0.0024310378086419755
+        },
+        {
+          "id": "s8",
+          "pass": true,
+          "skyFraction": 0.3422145061728395,
+          "luminanceMean": 0.4210990087059156,
+          "luminanceStd": 0.22539971019178054,
+          "maxExactColorFraction": 0.005959201388888889
+        },
+        {
+          "id": "s4",
+          "pass": true,
+          "skyFraction": 0.37415895061728394,
+          "luminanceMean": 0.4000006890945012,
+          "luminanceStd": 0.23113369038507173,
+          "maxExactColorFraction": 0.004910783179012346
+        },
+        {
+          "id": "s9",
+          "pass": true,
+          "skyFraction": 0.43296296296296294,
+          "luminanceMean": 0.45392360998012643,
+          "luminanceStd": 0.22208250020719741,
+          "maxExactColorFraction": 0.018941936728395063
+        },
+        {
+          "id": "s5",
+          "pass": true,
+          "skyFraction": 0.3321604938271605,
+          "luminanceMean": 0.3726787942911278,
+          "luminanceStd": 0.22160820107092205,
+          "maxExactColorFraction": 0.0044835069444444445
+        },
+        {
+          "id": "s6",
+          "pass": true,
+          "skyFraction": 0.2590817901234568,
+          "luminanceMean": 0.31207863893293075,
+          "luminanceStd": 0.20732658143580518,
+          "maxExactColorFraction": 0.004862075617283951
+        },
+        {
+          "id": "s7",
+          "pass": true,
+          "skyFraction": 0.3731404320987654,
+          "luminanceMean": 0.3604485002649331,
+          "luminanceStd": 0.24123482164892224,
+          "maxExactColorFraction": 0.010453800154320987
+        }
+      ]
+    },
+    {
+      "name": "Every 25m camera sweep image sanity",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "Measured high/low mean FPS >=60 on available GPU",
+      "pass": false,
+      "evidence": {
+        "high": {
+          "meanFPS": 55.48450825185043,
+          "onePercentLow": 28.922631944550197,
+          "frames": 334,
+          "seconds": 6.0196983
+        },
+        "low": {
+          "meanFPS": 91.2876557838811,
+          "onePercentLow": 50.04170142779889,
+          "frames": 549,
+          "seconds": 6.0139566
+        }
+      }
+    },
+    {
+      "name": "Full lap WebM and WAV captured",
+      "pass": true,
+      "evidence": {
+        "seconds": 125.28,
+        "laps": 1
+      }
+    },
+    {
+      "name": "Master peak <= -1 dBFS",
+      "pass": true,
+      "evidence": -5.179118107919588
+    },
+    {
+      "name": "Recorded lap integrity",
+      "pass": true,
+      "evidence": {
+        "vehicle": [],
+        "camera": []
+      }
+    },
+    {
+      "name": "No runtime browser errors",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "Offline asset loading: zero external requests",
+      "pass": true,
+      "evidence": []
+    }
+  ],
+  "runtimeErrors": [],
+  "captures": [
+    {
+      "id": "s2",
+      "name": "grid-3-4",
+      "s": 153,
+      "mode": "beauty",
+      "noHUD": true,
+      "refs": [
+        "11-carro-pintura-vidro-rodas.jpg"
+      ],
+      "file": "s2-grid-3-4-73fps.png"
+    },
+    {
+      "id": "s12",
+      "name": "mapa",
+      "s": 153,
+      "mode": "top",
+      "noHUD": true,
+      "refs": [],
+      "file": "s12-mapa-45fps.png"
+    },
+    {
+      "id": "s1",
+      "name": "reta-orla",
+      "s": 245,
+      "mode": "drive",
+      "refs": [
+        "01-golden-hour-palmeiras.jpg",
+        "02-costa-praia-falesia.jpg"
+      ],
+      "file": "s1-reta-orla-100fps.png"
+    },
+    {
+      "id": "s3",
+      "name": "praia-espuma",
+      "s": 330,
+      "mode": "shore",
+      "refs": [
+        "02-costa-praia-falesia.jpg",
+        "04-agua-margem-pedras.jpg"
+      ],
+      "file": "s3-praia-espuma-92fps.png"
+    },
+    {
+      "id": "s8",
+      "name": "disputa",
+      "s": 430,
+      "mode": "battle",
+      "refs": [
+        "09-vegetacao-curva-disputa.jpg",
+        "13-pelotao-ia-lado-a-lado.jpg"
+      ],
+      "file": "s8-disputa-58fps.png"
+    },
+    {
+      "id": "s4",
+      "name": "falesia-mirante",
+      "s": 1010,
+      "mode": "drive",
+      "refs": [
+        "02-costa-praia-falesia.jpg"
+      ],
+      "file": "s4-falesia-mirante-67fps.png"
+    },
+    {
+      "id": "s9",
+      "name": "close-pista",
+      "s": 1010,
+      "mode": "close",
+      "refs": [],
+      "file": "s9-close-pista-97fps.png"
+    },
+    {
+      "id": "s5",
+      "name": "vila-rua",
+      "s": 1525,
+      "mode": "drive",
+      "refs": [
+        "05-vila-igreja-densidade.jpg",
+        "06-vila-pedra-disputa.jpg",
+        "07-vila-paredes-velocidade.jpg"
+      ],
+      "file": "s5-vila-rua-91fps.png"
+    },
+    {
+      "id": "s10",
+      "name": "baixa-vila",
+      "s": 1525,
+      "mode": "drive",
+      "quality": "low",
+      "refs": [],
+      "file": "s10-baixa-vila-87fps.png"
+    },
+    {
+      "id": "s11",
+      "name": "escala",
+      "s": 1525,
+      "mode": "scale",
+      "refs": [],
+      "file": "s11-escala-100fps.png"
+    },
+    {
+      "id": "s6",
+      "name": "bosque-luz",
+      "s": 2325,
+      "mode": "drive",
+      "refs": [
+        "08-vegetacao-densa.jpg",
+        "10-luz-rasante-floresta.jpg"
+      ],
+      "file": "s6-bosque-luz-100fps.png"
+    },
+    {
+      "id": "s7",
+      "name": "ponte-ou-tunel",
+      "s": 2504,
+      "mode": "drive",
+      "refs": [
+        "14-ponte-terreno.jpg"
+      ],
+      "file": "s7-ponte-ou-tunel-97fps.png"
+    }
+  ],
+  "hardware": {
+    "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+    "resolution": [
+      1920,
+      1080
+    ],
+    "cpu": "AMD Ryzen 7 5700G with Radeon Graphics         ",
+    "logicalCores": 16,
+    "os": "10.0.26300",
+    "platform": "win32",
+    "targetHardwareTested": false
+  },
+  "performance": {
+    "high": {
+      "meanFPS": 55.48450825185043,
+      "onePercentLow": 28.922631944550197,
+      "frames": 334,
+      "seconds": 6.0196983
+    },
+    "low": {
+      "meanFPS": 91.2876557838811,
+      "onePercentLow": 50.04170142779889,
+      "frames": 549,
+      "seconds": 6.0139566
+    }
+  },
+  "recording": {
+    "peakDb": -5.179118107919588,
+    "duration": 125.28
+  },
+  "captureRefreshes": [
+    {
+      "id": "s9",
+      "reason": "Corrected close camera to show the curb without vehicle occlusion",
+      "runtimeErrors": []
+    }
+  ]
+}

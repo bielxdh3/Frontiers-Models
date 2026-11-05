@@ -1,0 +1,94 @@
+{
+  "heaps": [
+    16150672,
+    16152652,
+    16162280,
+    16191224
+  ],
+  "voices": [
+    {
+      "engines": 6,
+      "aiVoices": 5,
+      "sampleSources": 24,
+      "maxEngineVoices": 6,
+      "oneshots": 0,
+      "buffers": [
+        "gt-low",
+        "hatch-low",
+        "hatch-high",
+        "hatch-mid",
+        "gt-mid",
+        "gt-high",
+        "hatch-idle",
+        "gt-idle",
+        "tires",
+        "gravel",
+        "impact"
+      ],
+      "state": "running"
+    },
+    {
+      "engines": 6,
+      "aiVoices": 5,
+      "sampleSources": 24,
+      "maxEngineVoices": 6,
+      "oneshots": 0,
+      "buffers": [
+        "gt-low",
+        "hatch-low",
+        "hatch-high",
+        "hatch-mid",
+        "gt-mid",
+        "gt-high",
+        "hatch-idle",
+        "gt-idle",
+        "tires",
+        "gravel",
+        "impact"
+      ],
+      "state": "running"
+    },
+    {
+      "engines": 6,
+      "aiVoices": 5,
+      "sampleSources": 24,
+      "maxEngineVoices": 6,
+      "oneshots": 0,
+      "buffers": [
+        "gt-low",
+        "hatch-low",
+        "hatch-high",
+        "hatch-mid",
+        "gt-mid",
+        "gt-high",
+        "hatch-idle",
+        "gt-idle",
+        "tires",
+        "gravel",
+        "impact"
+      ],
+      "state": "running"
+    },
+    {
+      "engines": 6,
+      "aiVoices": 5,
+      "sampleSources": 24,
+      "maxEngineVoices": 6,
+      "oneshots": 0,
+      "buffers": [
+        "gt-low",
+        "hatch-low",
+        "hatch-high",
+        "hatch-mid",
+        "gt-mid",
+        "gt-high",
+        "hatch-idle",
+        "gt-idle",
+        "tires",
+        "gravel",
+        "impact"
+      ],
+      "state": "running"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "report": {
+    "ok": true,
+    "errors": [],
+    "stats": {
+      "length": 2849.274918507988,
+      "maxGrade": 0.13824548016163843,
+      "minRadius": 25.50901132711316,
+      "maxEdgeGap": 0.09898496838210491,
+      "maxTerrainAbove": 0,
+      "objects": 0
+    }
+  },
+  "drive": {
+    "time": 110.99166666670106,
+    "distance": 2879.4984656090287,
+    "progress": 2885.962745096011,
+    "events": [],
+    "barrierContacts": 37
+  }
+}

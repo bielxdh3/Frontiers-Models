@@ -10,8 +10,11 @@ The [V3.4 prompt](./prompts/racing-v3.4/racing-v3.4.md) and its [14 reference im
 | --- | --- | --- |
 | **Gemini 3.8 Flash (V3.4)** | [Play racing](https://racing-gemini-3.8-flash.biel.dev.br/) | [Source — gemini-3.8](https://github.com/bielxdh3/gemini-3.8) |
 | **GPT-6.1 Sol (V3.4)** | [Play racing](https://racing-gpt-6.1-sol.biel.dev.br/) | [Source — archived here](./runs/gpt-6.1-sol-v3.4/source/) |
+| **GPT-6 Astra (V3.4)** | No public game URL | [Source — archived here](./runs/gpt-6-astra-v3.4/source/) |
 
-**V3.4 source archives:** [Gemini 3.8 Flash](./runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md) · [GPT-6.1 Sol](./runs/gpt-6.1-sol-v3.4/SOURCE-PROVENANCE.md). Earlier prompts: [V3.3](./prompts/racing-v3.3.md), [V3.2](./prompts/racing-v3.2.md), [V3.1](./prompts/racing-v3.1.md).
+**V3.4 source provenance:** [Gemini 3.8 Flash](./runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md) · [GPT-6.1 Sol](./runs/gpt-6.1-sol-v3.4/SOURCE-PROVENANCE.md) · [GPT-6 Astra](./runs/gpt-6-astra-v3.4/SOURCE-PROVENANCE.md). Earlier prompts: [V3.3](./prompts/racing-v3.3.md), [V3.2](./prompts/racing-v3.2.md), [V3.1](./prompts/racing-v3.1.md).
+
+The Astra source reports **33/34 automated checks passed but overall benchmark FAILED**: the High preset did not meet 60 FPS; visual gates P2–P4 lack demonstrated approval. This is a run record, not a passing score. The complete tracked source snapshot and SHA-256 manifest are now archived here at the pinned commit.
 
 ## Historical source archives — Racing V2.6
 

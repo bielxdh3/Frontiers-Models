@@ -1,0 +1,14 @@
+# Recreate dependencies from the committed lockfile with npm ci.
+node_modules/
+
+# Local release archives are already represented by the source, dist/ and
+# verification files. GitHub rejects these generated archives above 100 MB.
+/solmare-checkpoint.zip
+/solmare-racing.zip
+/solmare-racing.zip.sha256
+
+# Captured provider pages are not project assets and may embed private tokens.
+/assets/audio/source-*.html
+
+# Transient local process identifier.
+/verification/logs/current-run.pid

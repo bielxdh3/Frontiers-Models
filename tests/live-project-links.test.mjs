@@ -25,9 +25,9 @@ test('all seven canonical Orbitarium sites retain their original links', () => {
   }
 });
 
-test('Racing V3.4 Gemini and GPT-6.1 Sol are current with source and site links; old three archived', () => {
+test('Racing V3.4 includes Gemini, Sol and Astra; missing Astra site is not invented', () => {
   assert.equal(racing.current_prompt, 'racing-v3.4');
-  assert.deepEqual(racing.current_arena, ['gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4']);
+  assert.deepEqual(racing.current_arena, ['gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4']);
   assert.deepEqual(racing.legacy_runs, ['gpt-6.1-sol', 'gemini-3.8-flash', 'gpt-6-astra']);
   const current = racing.runs.find(run => run.id === racing.current_arena[0]);
   assert.equal(current.model, 'Gemini 3.8 Flash');
@@ -43,6 +43,16 @@ test('Racing V3.4 Gemini and GPT-6.1 Sol are current with source and site links;
   assert.equal(sol.live_url, 'https://racing-gpt-6.1-sol.biel.dev.br/');
   assert.equal(sol.site_url, sol.live_url);
   assert.match(sol.site_status, /not-independently-verified/);
+  const astra = racing.runs.find(run => run.id === 'gpt-6-astra-v3.4');
+  assert.equal(astra.source_repository, 'https://github.com/bielxdh3/6-astra');
+  assert.equal(astra.source_commit, 'daf0099699a0e8201b8bc4f1dca6909f92700b3b');
+  assert.equal(astra.source_tree, 'b115486c104e25041bf2116865de91b6c4a31132');
+  assert.equal(astra.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
+  assert.equal(astra.live_url, null);
+  assert.equal(astra.site_url, null);
+  assert.equal(astra.reported_verification.integral_benchmark, 'failed');
+  assert.equal(astra.reported_verification.passed, 33);
+  assert.equal(astra.reported_verification.total, 34);
   for (const run of racing.runs.filter(run => racing.legacy_runs.includes(run.id))) {
     assert.equal(run.live_url, null);
     assert.equal(run.display_status, 'legacy-archived');
@@ -58,6 +68,10 @@ test('Racing V3.4 Gemini and GPT-6.1 Sol are current with source and site links;
       ? './runs/gpt-6.1-sol-v3.4/source/'
       : './benchmarks/racing/runs/gpt-6.1-sol-v3.4/source/';
     assert.ok(s.includes('](' + localSolSource + ')'), path + ' must link to its local Sol source archive');
+    const localAstraSource = path.startsWith('benchmarks/racing/')
+      ? './runs/gpt-6-astra-v3.4/source/'
+      : './benchmarks/racing/runs/gpt-6-astra-v3.4/source/';
+    assert.ok(s.includes('](' + localAstraSource + ')'), path + ' must link to its local Astra source archive');
     assert.doesNotMatch(s, /https:\/\/github\.com\/bielxdh3\/6\.1racinsol/);
     assert.doesNotMatch(s, /HTTP 404/);
     for (const run of racing.runs) assert.ok(s.includes(run.model));

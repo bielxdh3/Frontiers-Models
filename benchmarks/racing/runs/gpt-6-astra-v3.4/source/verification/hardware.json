@@ -1,0 +1,13 @@
+{
+  "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "cpu": "AMD Ryzen 7 5700G with Radeon Graphics         ",
+  "logicalCores": 16,
+  "os": "10.0.26300",
+  "platform": "win32",
+  "targetHardwareTested": false
+}

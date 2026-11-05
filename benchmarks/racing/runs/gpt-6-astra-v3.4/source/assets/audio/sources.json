@@ -1,0 +1,74 @@
+[
+  {
+    "author": "GiocoSound",
+    "processing": "Public HQ preview; decoded, crossfaded loop endpoints in runtime",
+    "source": "https://freesound.org/people/GiocoSound/sounds/401552/",
+    "name": "gt-idle",
+    "id": 401552,
+    "license": "CC0-1.0",
+    "download": "https://cdn.freesound.org/previews/401/401552_5820033-hq.mp3"
+  },
+  {
+    "author": "GiocoSound",
+    "processing": "Public HQ preview; decoded, crossfaded loop endpoints in runtime",
+    "source": "https://freesound.org/people/GiocoSound/sounds/401556/",
+    "name": "gt-low",
+    "id": 401556,
+    "license": "CC0-1.0",
+    "download": "https://cdn.freesound.org/previews/401/401556_5820033-hq.mp3"
+  },
+  {
+    "author": "GiocoSound",
+    "processing": "Public HQ preview; decoded, crossfaded loop endpoints in runtime",
+    "source": "https://freesound.org/people/GiocoSound/sounds/401555/",
+    "name": "gt-mid",
+    "id": 401555,
+    "license": "CC0-1.0",
+    "download": "https://cdn.freesound.org/previews/401/401555_5820033-hq.mp3"
+  },
+  {
+    "author": "GiocoSound",
+    "processing": "Public HQ preview; decoded, crossfaded loop endpoints in runtime",
+    "source": "https://freesound.org/people/GiocoSound/sounds/401551/",
+    "name": "gt-high",
+    "id": 401551,
+    "license": "CC0-1.0",
+    "download": "https://cdn.freesound.org/previews/401/401551_5820033-hq.mp3"
+  },
+  {
+    "author": "GiocoSound",
+    "processing": "Public HQ preview; decoded, crossfaded loop endpoints in runtime",
+    "source": "https://freesound.org/people/GiocoSound/sounds/401550/",
+    "name": "hatch-idle",
+    "id": 401550,
+    "license": "CC0-1.0",
+    "download": "https://cdn.freesound.org/previews/401/401550_5820033-hq.mp3"
+  },
+  {
+    "author": "GiocoSound",
+    "processing": "Public HQ preview; decoded, crossfaded loop endpoints in runtime",
+    "source": "https://freesound.org/people/GiocoSound/sounds/401548/",
+    "name": "hatch-low",
+    "id": 401548,
+    "license": "CC0-1.0",
+    "download": "https://cdn.freesound.org/previews/401/401548_5820033-hq.mp3"
+  },
+  {
+    "author": "GiocoSound",
+    "processing": "Public HQ preview; decoded, crossfaded loop endpoints in runtime",
+    "source": "https://freesound.org/people/GiocoSound/sounds/401547/",
+    "name": "hatch-mid",
+    "id": 401547,
+    "license": "CC0-1.0",
+    "download": "https://cdn.freesound.org/previews/401/401547_5820033-hq.mp3"
+  },
+  {
+    "author": "GiocoSound",
+    "processing": "Public HQ preview; decoded, crossfaded loop endpoints in runtime",
+    "source": "https://freesound.org/people/GiocoSound/sounds/401549/",
+    "name": "hatch-high",
+    "id": 401549,
+    "license": "CC0-1.0",
+    "download": "https://cdn.freesound.org/previews/401/401549_5820033-hq.mp3"
+  }
+]

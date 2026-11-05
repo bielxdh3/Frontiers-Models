@@ -193,6 +193,35 @@
       "source_file_count": 104,
       "source_bytes": 142958723,
       "git_bundle": null
+    },
+    {
+      "id": "gpt-6-astra-v3.4",
+      "model": "GPT-6 Astra",
+      "live_url": null,
+      "site_url": null,
+      "site_status": "no-public-game-url-provided",
+      "source_repository": "https://github.com/bielxdh3/6-astra",
+      "source_branch": "main",
+      "source_commit": "daf0099699a0e8201b8bc4f1dca6909f92700b3b",
+      "source_tree": "b115486c104e25041bf2116865de91b6c4a31132",
+      "prompt": "prompts/racing-v3.4/racing-v3.4.md",
+      "prompt_association": "owner-reported V3.4 execution; exact original prompt and 14-reference delivery not independently proven",
+      "provenance": "runs/gpt-6-astra-v3.4/SOURCE-PROVENANCE.md",
+      "archival_status": "complete-tracked-git-snapshot-no-history-bundle",
+      "gameplay_verification": "not-independently-verified",
+      "display_status": "current-archived-source-no-site",
+      "archive_path": "runs/gpt-6-astra-v3.4/source",
+      "manifest": "runs/gpt-6-astra-v3.4/SOURCE-FILES.json",
+      "source_file_count": 1183,
+      "source_bytes": 432577165,
+      "git_bundle": null,
+      "reported_verification": {
+        "passed": 33,
+        "total": 34,
+        "integral_benchmark": "failed",
+        "high_preset_fps_requirement": "failed",
+        "visual_gates_p2_p4": "not-demonstrated"
+      }
     }
   ],
   "current_prompt": "racing-v3.4",
@@ -203,6 +232,7 @@
   ],
   "current_arena": [
     "gemini-3.8-v3.4",
-    "gpt-6.1-sol-v3.4"
+    "gpt-6.1-sol-v3.4",
+    "gpt-6-astra-v3.4"
   ]
 }

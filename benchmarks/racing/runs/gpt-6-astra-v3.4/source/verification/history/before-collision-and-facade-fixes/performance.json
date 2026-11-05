@@ -1,0 +1,14 @@
+{
+  "high": {
+    "meanFPS": 44.57561873661619,
+    "onePercentLow": 18.951358186378215,
+    "frames": 268,
+    "seconds": 6.0122553
+  },
+  "low": {
+    "meanFPS": 84.14420240957733,
+    "onePercentLow": 33.44481605795645,
+    "frames": 506,
+    "seconds": 6.0134862
+  }
+}
