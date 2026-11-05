@@ -26,11 +26,11 @@
 | --- | --- | --- |
 | **Gemini 3.8 Flash (V3.4)** | [Play racing](https://racing-gemini-3.8-flash.biel.dev.br/) | [Source — gemini-3.8](https://github.com/bielxdh3/gemini-3.8) |
 | **GPT-6.1 Sol (V3.4)** | [Play racing](https://racing-gpt-6.1-sol.biel.dev.br/) | [Source — archived here](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/source/) |
-| **GPT-6 Astra (V3.4)** | Not published | [Source — archived here](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) |
+| **GPT-6 Astra (V3.4)** | [Play racing](https://racing-gpt-6-astra.biel.dev.br/) (HTTP 404 on Nov 5) | [Source — archived here](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) |
 
 **V3.4 inputs:** [Racing prompt](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md) · [14 reference images](./benchmarks/racing/prompts/racing-v3.4/refs/). **Source provenance:** [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md) · [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/SOURCE-PROVENANCE.md) · [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra-v3.4/SOURCE-PROVENANCE.md).
 
-**GPT-6 Astra V3.4:** The [upstream report](https://github.com/bielxdh3/6-astra/blob/daf0099699a0e8201b8bc4f1dca6909f92700b3b/verification/REPORT.md) records 33/34 automated checks passed, but the **overall benchmark failed** (High preset below 60 FPS); visual gates P2–P4 were not demonstrated as passed. No playable URL has been provided.
+**GPT-6 Astra V3.4:** The [upstream report](https://github.com/bielxdh3/6-astra/blob/daf0099699a0e8201b8bc4f1dca6909f92700b3b/verification/REPORT.md) records 33/34 automated checks passed, but the **overall benchmark failed** (High preset below 60 FPS); visual gates P2–P4 were not demonstrated as passed. The owner-provided game URL returned HTTP 404 on November 5, 2026.
 
 **Racing V2.6 archive:** [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/), [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) and [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra/source/).
 
@@ -94,7 +94,7 @@ PROMPT → MODEL RUN → PROJECT SNAPSHOT / PINNED SOURCE → EVIDENCE → PROVE
 
 ## Benchmark 002 — Racing-bench
 
-**[V3.4 prompt](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md)** · [14 visual references](./benchmarks/racing/prompts/racing-v3.4/refs/). Play [Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br/) or [GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br/); inspect the [GPT-6 Astra V3.4 archive](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) and [Racing source archive](./benchmarks/racing/README.md).
+**[V3.4 prompt](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md)** · [14 visual references](./benchmarks/racing/prompts/racing-v3.4/refs/). Play [Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br/) or [GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br/); the owner also provided an [Astra V3.4 game URL](https://racing-gpt-6-astra.biel.dev.br/) (returned HTTP 404 on November 5). Inspect the [GPT-6 Astra V3.4 archive](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) and [Racing source archive](./benchmarks/racing/README.md).
 
 Previous prompts: [V3.3](./benchmarks/racing/prompts/racing-v3.3.md), [V3.2](./benchmarks/racing/prompts/racing-v3.2.md), [V3.1](./benchmarks/racing/prompts/racing-v3.1.md) and [V2.6](./benchmarks/racing/prompts/racing-v2.6.md).
 

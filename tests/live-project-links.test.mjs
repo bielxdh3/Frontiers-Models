@@ -25,7 +25,7 @@ test('all seven canonical Orbitarium sites retain their original links', () => {
   }
 });
 
-test('Racing V3.4 includes Gemini, Sol and Astra; missing Astra site is not invented', () => {
+test('Racing V3.4 includes Gemini, Sol and Astra; owner-provided Astra URL is marked HTTP 404', () => {
   assert.equal(racing.current_prompt, 'racing-v3.4');
   assert.deepEqual(racing.current_arena, ['gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4']);
   assert.deepEqual(racing.legacy_runs, ['gpt-6.1-sol', 'gemini-3.8-flash', 'gpt-6-astra']);
@@ -48,8 +48,10 @@ test('Racing V3.4 includes Gemini, Sol and Astra; missing Astra site is not inve
   assert.equal(astra.source_commit, 'daf0099699a0e8201b8bc4f1dca6909f92700b3b');
   assert.equal(astra.source_tree, 'b115486c104e25041bf2116865de91b6c4a31132');
   assert.equal(astra.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
-  assert.equal(astra.live_url, null);
-  assert.equal(astra.site_url, null);
+  assert.equal(astra.live_url, 'https://racing-gpt-6-astra.biel.dev.br/');
+  assert.equal(astra.site_url, astra.live_url);
+  assert.match(astra.site_status, /owner-provided-url-http-404-on-2026-11-05/);
+  assert.match(astra.site_status, /gameplay-not-independently-verified/);
   assert.equal(astra.reported_verification.integral_benchmark, 'failed');
   assert.equal(astra.reported_verification.passed, 33);
   assert.equal(astra.reported_verification.total, 34);
@@ -72,10 +74,10 @@ test('Racing V3.4 includes Gemini, Sol and Astra; missing Astra site is not inve
       ? './runs/gpt-6-astra-v3.4/source/'
       : './benchmarks/racing/runs/gpt-6-astra-v3.4/source/';
     assert.ok(s.includes('](' + localAstraSource + ')'), path + ' must link to its local Astra source archive');
+    assert.ok(s.includes('](https://racing-gpt-6-astra.biel.dev.br/)'), path + ' Astra site link');
+    assert.match(s, /HTTP 404/, path + ' discloses failed reachability');
     assert.doesNotMatch(s, /https:\/\/github\.com\/bielxdh3\/6\.1racinsol/);
-    assert.doesNotMatch(s, /HTTP 404/);
     for (const run of racing.runs) assert.ok(s.includes(run.model));
-    assert.doesNotMatch(s, /https:\/\/racing-gpt-6-astra\.biel\.dev\.br/);
   }
 });
 
