@@ -1,0 +1,62 @@
+[
+  {
+    "id": 2,
+    "file": "s2-grid-3-4-77fps.png",
+    "fps": 76.92307692307688
+  },
+  {
+    "id": 8,
+    "file": "s8-disputa-81fps.png",
+    "fps": 80.53691275167797
+  },
+  {
+    "id": 1,
+    "file": "s1-reta-orla-78fps.png",
+    "fps": 77.92713812585231
+  },
+  {
+    "id": 3,
+    "file": "s3-praia-espuma-94fps.png",
+    "fps": 94.49562957713195
+  },
+  {
+    "id": 4,
+    "file": "s4-falesia-mirante-86fps.png",
+    "fps": 86.33093525179858
+  },
+  {
+    "id": 9,
+    "file": "s9-close-pista-86fps.png",
+    "fps": 85.71428571428577
+  },
+  {
+    "id": 5,
+    "file": "s5-vila-rua-88fps.png",
+    "fps": 88.24178248400627
+  },
+  {
+    "id": 10,
+    "file": "s10-baixa-vila-90fps.png",
+    "fps": 89.55223880597015
+  },
+  {
+    "id": 11,
+    "file": "s11-escala-98fps.png",
+    "fps": 98.36871874743842
+  },
+  {
+    "id": 6,
+    "file": "s6-bosque-luz-92fps.png",
+    "fps": 92.30769230769226
+  },
+  {
+    "id": 7,
+    "file": "s7-ponte-ou-tunel-90fps.png",
+    "fps": 90.23234829686459
+  },
+  {
+    "id": 12,
+    "file": "s12-mapa-94fps.png",
+    "fps": 94.48818897637797
+  }
+]

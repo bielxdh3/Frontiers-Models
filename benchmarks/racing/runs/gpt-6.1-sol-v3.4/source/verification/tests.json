@@ -1,0 +1,538 @@
+{
+  "tests": [
+    {
+      "name": "World invariants at load",
+      "pass": true,
+      "details": {
+        "ok": true,
+        "errors": [],
+        "length": 2973.935565113679,
+        "maxGrade": 0.13586162022470966,
+        "maxBank": 2.6648538071197083,
+        "minRadius": 34.37604501301045,
+        "maxRoadOverlap": 0,
+        "maxEdgeGap": 0.07139158831536463,
+        "objects": 2472
+      }
+    },
+    {
+      "name": "Scale screenshot: stopped car",
+      "pass": true,
+      "details": {}
+    },
+    {
+      "name": "Menu → garage → 3 laps → results",
+      "pass": true,
+      "details": {
+        "clock": 327.3499999998666,
+        "best": 105.98333333325846
+      }
+    },
+    {
+      "name": "3-lap integrity",
+      "pass": true,
+      "details": {
+        "integrity": [],
+        "camera": []
+      }
+    },
+    {
+      "name": "AI overtaking",
+      "pass": true,
+      "details": {
+        "overtakes": 7
+      }
+    },
+    {
+      "name": "AI: no stall/off-road for 5s",
+      "pass": true,
+      "details": [
+        {
+          "id": 1,
+          "maxStopped": 0.025,
+          "maxOffTime": 0
+        },
+        {
+          "id": 2,
+          "maxStopped": 0.025,
+          "maxOffTime": 0
+        },
+        {
+          "id": 3,
+          "maxStopped": 0.025,
+          "maxOffTime": 0
+        },
+        {
+          "id": 4,
+          "maxStopped": 0.025,
+          "maxOffTime": 0
+        },
+        {
+          "id": 5,
+          "maxStopped": 0.025,
+          "maxOffTime": 0
+        }
+      ]
+    },
+    {
+      "name": "Run again resets race",
+      "pass": true,
+      "details": {}
+    },
+    {
+      "name": "Pause freezes simulation",
+      "pass": true,
+      "details": {}
+    },
+    {
+      "name": "Three restarts: audio voices stable",
+      "pass": true,
+      "details": {
+        "voices": [
+          14,
+          14,
+          14
+        ],
+        "baselineVoices": 14,
+        "heaps": [
+          146098861,
+          169300509,
+          161195781
+        ]
+      }
+    },
+    {
+      "name": "Three restarts: heap bounded",
+      "pass": true,
+      "details": {
+        "bytes": [
+          146098861,
+          169300509,
+          161195781
+        ],
+        "limitBytes": 25165824
+      }
+    },
+    {
+      "name": "Return to menu",
+      "pass": true,
+      "details": {}
+    },
+    {
+      "name": "Menu → 6 laps → results",
+      "pass": true,
+      "details": {
+        "clock": 639.9166666662491
+      }
+    },
+    {
+      "name": "6-lap integrity",
+      "pass": true,
+      "details": {
+        "integrity": [],
+        "camera": []
+      }
+    },
+    {
+      "name": "Shortcut does not count lap",
+      "pass": true,
+      "details": {
+        "oldLap": 1,
+        "lap": 1,
+        "nextCheckpoint": 0
+      }
+    },
+    {
+      "name": "Scene audit",
+      "pass": true,
+      "details": {
+        "cars": [
+          {
+            "name": "AUREL GT / Grand tourer",
+            "triangles": 115334,
+            "materials": 19
+          },
+          {
+            "name": "NOVA R / Sport hatch",
+            "triangles": 115358,
+            "materials": 19
+          },
+          {
+            "name": "AUREL GT / Grand tourer",
+            "triangles": 115334,
+            "materials": 19
+          },
+          {
+            "name": "NOVA R / Sport hatch",
+            "triangles": 115358,
+            "materials": 19
+          },
+          {
+            "name": "AUREL GT / Grand tourer",
+            "triangles": 115334,
+            "materials": 19
+          },
+          {
+            "name": "NOVA R / Sport hatch",
+            "triangles": 115358,
+            "materials": 19
+          }
+        ],
+        "meshes": 343,
+        "instances": 7395,
+        "houseCount": 52,
+        "houseVariations": 6,
+        "vegetationSpecies": [
+          "palm",
+          "olive",
+          "pine",
+          "shrub"
+        ],
+        "propDensity": [
+          {
+            "from": 0,
+            "to": 100,
+            "count": 29,
+            "per100": 28.999999999999996
+          },
+          {
+            "from": 100,
+            "to": 200,
+            "count": 25,
+            "per100": 25
+          },
+          {
+            "from": 200,
+            "to": 300,
+            "count": 28,
+            "per100": 28.000000000000004
+          },
+          {
+            "from": 300,
+            "to": 400,
+            "count": 26,
+            "per100": 26
+          },
+          {
+            "from": 400,
+            "to": 500,
+            "count": 25,
+            "per100": 25
+          },
+          {
+            "from": 500,
+            "to": 600,
+            "count": 27,
+            "per100": 27
+          },
+          {
+            "from": 600,
+            "to": 700,
+            "count": 26,
+            "per100": 26
+          },
+          {
+            "from": 700,
+            "to": 800,
+            "count": 26,
+            "per100": 26
+          },
+          {
+            "from": 800,
+            "to": 900,
+            "count": 29,
+            "per100": 28.999999999999996
+          },
+          {
+            "from": 900,
+            "to": 1000,
+            "count": 30,
+            "per100": 30
+          },
+          {
+            "from": 1000,
+            "to": 1100,
+            "count": 30,
+            "per100": 30
+          },
+          {
+            "from": 1100,
+            "to": 1200,
+            "count": 29,
+            "per100": 28.999999999999996
+          },
+          {
+            "from": 1200,
+            "to": 1300,
+            "count": 30,
+            "per100": 30
+          },
+          {
+            "from": 1300,
+            "to": 1400,
+            "count": 31,
+            "per100": 31
+          },
+          {
+            "from": 1400,
+            "to": 1500,
+            "count": 29,
+            "per100": 28.999999999999996
+          },
+          {
+            "from": 1500,
+            "to": 1600,
+            "count": 38,
+            "per100": 38
+          },
+          {
+            "from": 1600,
+            "to": 1700,
+            "count": 46,
+            "per100": 46
+          },
+          {
+            "from": 1700,
+            "to": 1800,
+            "count": 44,
+            "per100": 44
+          },
+          {
+            "from": 1800,
+            "to": 1900,
+            "count": 55,
+            "per100": 55.00000000000001
+          },
+          {
+            "from": 1900,
+            "to": 2000,
+            "count": 46,
+            "per100": 46
+          },
+          {
+            "from": 2000,
+            "to": 2100,
+            "count": 46,
+            "per100": 46
+          },
+          {
+            "from": 2100,
+            "to": 2200,
+            "count": 40,
+            "per100": 40
+          },
+          {
+            "from": 2200,
+            "to": 2300,
+            "count": 20,
+            "per100": 20
+          },
+          {
+            "from": 2300,
+            "to": 2400,
+            "count": 20,
+            "per100": 20
+          },
+          {
+            "from": 2400,
+            "to": 2500,
+            "count": 22,
+            "per100": 22
+          },
+          {
+            "from": 2500,
+            "to": 2600,
+            "count": 19,
+            "per100": 19
+          },
+          {
+            "from": 2600,
+            "to": 2700,
+            "count": 22,
+            "per100": 22
+          },
+          {
+            "from": 2700,
+            "to": 2800,
+            "count": 20,
+            "per100": 20
+          },
+          {
+            "from": 2800,
+            "to": 2900,
+            "count": 20,
+            "per100": 20
+          },
+          {
+            "from": 2900,
+            "to": 2973.935565113679,
+            "count": 11,
+            "per100": 14.877819602902962
+          }
+        ],
+        "surfaceIssues": [],
+        "textureIssues": [],
+        "boxes": [],
+        "audio": {
+          "loaded": true,
+          "engineUsesSamples": true,
+          "rpmBands": 4,
+          "activeSources": 63,
+          "loopSources": 14,
+          "baselineVoices": 14,
+          "maxSources": 64,
+          "maxAIVoices": 5,
+          "peakDBFS": -11.192158482135735,
+          "sampleRate": 48000
+        },
+        "world": {
+          "ok": true,
+          "errors": [],
+          "length": 2973.935565113679,
+          "maxGrade": 0.13586162022470966,
+          "maxBank": 2.6648538071197083,
+          "minRadius": 34.37604501301045,
+          "maxRoadOverlap": 0,
+          "maxEdgeGap": 0.07139158831536463,
+          "objects": 2472
+        },
+        "renderer": {
+          "frame": 33348,
+          "calls": 1,
+          "triangles": 1,
+          "points": 0,
+          "lines": 0
+        }
+      }
+    },
+    {
+      "name": "High preset >=60 FPS on tested GPU",
+      "pass": true,
+      "details": {
+        "average": 99.89344698987824,
+        "onePercentLow": 88.66995073890354,
+        "frames": 900,
+        "seconds": 9.00959999999993
+      }
+    },
+    {
+      "name": "Low preset >=60 FPS on tested GPU",
+      "pass": true,
+      "details": {
+        "average": 99.23150710607962,
+        "onePercentLow": 56.17977528089733,
+        "frames": 900,
+        "seconds": 9.069699999999896
+      }
+    },
+    {
+      "name": "Camera sweep every 25m: image sanity",
+      "pass": true,
+      "details": {
+        "total": 119,
+        "failed": []
+      }
+    },
+    {
+      "name": "Recorded audio: peak <= -1 dBFS",
+      "pass": true,
+      "details": {
+        "peakDBFS": -9.963956467618644,
+        "seconds": 113.46933333333334
+      }
+    },
+    {
+      "name": "Video contains complete lap",
+      "pass": true,
+      "details": {
+        "videoSize": 64781987,
+        "seconds": 113.46933333333334
+      }
+    },
+    {
+      "name": "Screenshots S1–S9: image sanity",
+      "pass": true,
+      "details": {
+        "s2": {
+          "skyFraction": 0.2633463541666667,
+          "meanLuminance": 0.34482995875092864,
+          "luminanceStdDev": 0.23727733678327498,
+          "largestQuantizedColorFraction": 0.20716820987654322,
+          "method": "256x144 geometric sky mask; Rec.709 weights over sRGB pixels; 16-level/channel color bins",
+          "pass": true
+        },
+        "s8": {
+          "skyFraction": 0.4239366319444444,
+          "meanLuminance": 0.4653969582486194,
+          "luminanceStdDev": 0.24137704599248222,
+          "largestQuantizedColorFraction": 0.04814043209876543,
+          "method": "256x144 geometric sky mask; Rec.709 weights over sRGB pixels; 16-level/channel color bins",
+          "pass": true
+        },
+        "s1": {
+          "skyFraction": 0.4196234809027778,
+          "meanLuminance": 0.41938770291696326,
+          "luminanceStdDev": 0.24383968106414364,
+          "largestQuantizedColorFraction": 0.06439043209876544,
+          "method": "256x144 geometric sky mask; Rec.709 weights over sRGB pixels; 16-level/channel color bins",
+          "pass": true
+        },
+        "s3": {
+          "skyFraction": 0.4730902777777778,
+          "meanLuminance": 0.576378025030176,
+          "luminanceStdDev": 0.1765628715381655,
+          "largestQuantizedColorFraction": 0.09341049382716049,
+          "method": "256x144 geometric sky mask; Rec.709 weights over sRGB pixels; 16-level/channel color bins",
+          "pass": true
+        },
+        "s4": {
+          "skyFraction": 0.3725043402777778,
+          "meanLuminance": 0.43456910933189863,
+          "luminanceStdDev": 0.26877946690007504,
+          "largestQuantizedColorFraction": 0.0698996913580247,
+          "method": "256x144 geometric sky mask; Rec.709 weights over sRGB pixels; 16-level/channel color bins",
+          "pass": true
+        },
+        "s9": {
+          "skyFraction": 0.4112141927083333,
+          "meanLuminance": 0.37823428003503673,
+          "luminanceStdDev": 0.25976309625001676,
+          "largestQuantizedColorFraction": 0.1304320987654321,
+          "method": "256x144 geometric sky mask; Rec.709 weights over sRGB pixels; 16-level/channel color bins",
+          "pass": true
+        },
+        "s5": {
+          "skyFraction": 0.3324924045138889,
+          "meanLuminance": 0.362999104750682,
+          "luminanceStdDev": 0.2325572013073616,
+          "largestQuantizedColorFraction": 0.10297067901234568,
+          "method": "256x144 geometric sky mask; Rec.709 weights over sRGB pixels; 16-level/channel color bins",
+          "pass": true
+        },
+        "s6": {
+          "skyFraction": 0.3987901475694444,
+          "meanLuminance": 0.3504417143608751,
+          "luminanceStdDev": 0.2588469522857761,
+          "largestQuantizedColorFraction": 0.14721450617283952,
+          "method": "256x144 geometric sky mask; Rec.709 weights over sRGB pixels; 16-level/channel color bins",
+          "pass": true
+        },
+        "s7": {
+          "skyFraction": 0.3800184461805556,
+          "meanLuminance": 0.34858356920243133,
+          "luminanceStdDev": 0.2562737654486473,
+          "largestQuantizedColorFraction": 0.148070987654321,
+          "method": "256x144 geometric sky mask; Rec.709 weights over sRGB pixels; 16-level/channel color bins",
+          "pass": true
+        }
+      }
+    },
+    {
+      "name": "Browser console has no errors",
+      "pass": true,
+      "details": []
+    }
+  ],
+  "passed": 22,
+  "failed": 0
+}

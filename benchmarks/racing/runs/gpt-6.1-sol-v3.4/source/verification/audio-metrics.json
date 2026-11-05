@@ -1,0 +1,393 @@
+{
+  "videoBytes": 64781987,
+  "samples": 5446528,
+  "sampleRate": 48000,
+  "logs": [
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 1.1833333333333316,
+      "gear": 2
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 2.499999999999994,
+      "gear": 3
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 4.258333333333335,
+      "gear": 4
+    },
+    {
+      "type": "ai-pass",
+      "car": 1,
+      "time": 4.533333333333348
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 7.925000000000184,
+      "gear": 5
+    },
+    {
+      "type": "ai-pass",
+      "car": 1,
+      "time": 17.35833333333299
+    },
+    {
+      "type": "skid",
+      "time": 18.016666666666286
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 22.51666666666603,
+      "gear": 4
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 23.558333333332637,
+      "gear": 3
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 25.791666666665844,
+      "force": 0.8765613531877854
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 26.71666666666579,
+      "force": 1.403211979699364
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 27.574999999999076,
+      "force": 0.8798901548964793
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 28.183333333332374,
+      "force": 0.06296109899982838
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 28.791666666665673,
+      "force": 0.06296095491977383
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 29.399999999998972,
+      "force": 0.06296087061332045
+    },
+    {
+      "type": "ai-pass",
+      "car": 3,
+      "time": 29.691666666665622
+    },
+    {
+      "type": "skid",
+      "time": 29.71666666666562
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 30.00833333333227,
+      "force": 0
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 30.61666666666557,
+      "force": 0
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 30.841666666665557,
+      "gear": 4
+    },
+    {
+      "type": "skid",
+      "time": 30.958333333332217
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 31.19999999999887,
+      "gear": 3
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 31.224999999998868,
+      "force": 0.6394839756234383
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 31.833333333332167,
+      "force": 0.7182412634417616
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 32.44166666666547,
+      "force": 0.9898040659934537
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 33.04999999999877,
+      "force": 1.0741104687049372
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 33.65833333333207,
+      "force": 1.0905245647928705
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 34.266666666665365,
+      "force": 1.1051814149384942
+    },
+    {
+      "type": "skid",
+      "time": 35.00833333333199
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 35.258333333331976,
+      "gear": 2
+    },
+    {
+      "type": "skid",
+      "time": 35.52499999999863
+    },
+    {
+      "type": "skid",
+      "time": 36.06666666666526
+    },
+    {
+      "type": "skid",
+      "time": 37.34166666666519
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 37.533333333331846,
+      "gear": 3
+    },
+    {
+      "type": "skid",
+      "time": 38.59166666666512
+    },
+    {
+      "type": "skid",
+      "time": 39.366666666665076
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 39.63333333333173,
+      "gear": 4
+    },
+    {
+      "type": "skid",
+      "time": 39.73333333333172
+    },
+    {
+      "type": "skid",
+      "time": 40.04166666666504
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 40.50833333333168,
+      "force": 5.575518312895319
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 40.50833333333168,
+      "gear": 3
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 40.52499999999834,
+      "gear": 2
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 40.54166666666501,
+      "gear": 1
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 40.81666666666499,
+      "force": 0.0005611139632281936
+    },
+    {
+      "type": "ai-pass",
+      "car": 2,
+      "time": 40.941666666664986
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 41.12499999999831,
+      "force": -0.002995419110693759
+    },
+    {
+      "type": "ai-pass",
+      "car": 5,
+      "time": 41.30833333333163
+    },
+    {
+      "type": "ai-pass",
+      "car": 4,
+      "time": 41.42499999999829
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 41.433333333331625,
+      "force": -3.045424948333597e-7
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 41.74166666666494,
+      "force": -3.0962482577834294e-11
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 42.049999999998256,
+      "force": -3.1363800445660672e-15
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 42.35833333333157,
+      "force": 0.008628285407355663
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 42.67499999999822,
+      "force": 0.03347530176073776
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 42.98333333333154,
+      "force": 0.05440969156069353
+    },
+    {
+      "type": "collision",
+      "car": 0,
+      "time": 43.299999999998185,
+      "force": 0.1082302904723883
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 44.44166666666479,
+      "gear": 2
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 45.76666666666471,
+      "gear": 3
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 52.383333333331,
+      "gear": 4
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 61.17499999999717,
+      "gear": 5
+    },
+    {
+      "type": "bridge",
+      "time": 94.2750000000211
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 102.76666666669452,
+      "gear": 4
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 102.85000000002792,
+      "gear": 5
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 103.06666666669476,
+      "gear": 4
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 103.23333333336156,
+      "gear": 5
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 104.95833333336293,
+      "gear": 4
+    },
+    {
+      "type": "shift",
+      "car": 0,
+      "time": 112.90000000003592,
+      "gear": 5
+    },
+    {
+      "type": "lap",
+      "car": 0,
+      "time": 113.27500000003621,
+      "lap": 2
+    }
+  ],
+  "peak": -10.102302122869425,
+  "peakDBFS": -9.963956467618644,
+  "stats": {
+    "loaded": true,
+    "engineUsesSamples": true,
+    "rpmBands": 4,
+    "activeSources": 15,
+    "loopSources": 14,
+    "baselineVoices": 14,
+    "maxSources": 16,
+    "maxAIVoices": 5,
+    "peakDBFS": -10.102302122869425,
+    "sampleRate": 48000
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "hardware": {
+    "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
+    "cores": 16,
+    "memoryGB": 32,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "cpu": "AMD Ryzen 7 5700G with Radeon Graphics         "
+  },
+  "high": {
+    "average": 99.89344698987824,
+    "onePercentLow": 88.66995073890354,
+    "frames": 900,
+    "seconds": 9.00959999999993
+  },
+  "low": {
+    "average": 99.23150710607962,
+    "onePercentLow": 56.17977528089733,
+    "frames": 900,
+    "seconds": 9.069699999999896
+  }
+}

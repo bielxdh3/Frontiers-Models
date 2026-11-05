@@ -7,47 +7,42 @@ import { fileURLToPath } from 'node:url';
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const read = path => readFileSync(resolve(root, path), 'utf8');
 
-for (const [path, arenaHeading, title, archivedHeading] of [
-  ['README.md', '## ⚔️ Current benchmark runs', '## How it fits together', '## 🗂️ Non-frontier or outdated models'],
-  ['README-PT-BR.md', '## ⚔️ Execuções atuais por benchmark', '## Como se organiza', '## 🗂️ Modelos non-frontier ou desatualizados'],
+for (const [path, arenaHeading, title, archivedHeading, labels] of [
+  ['README.md', '## ⚔️ Current benchmark runs', '## How it fits together',
+    '## 🗂️ Non-frontier or outdated models', ['2 current runs', '5 current references', 'ARCHIVE CONVENTIONS']],
+  ['README-PT-BR.md', '## ⚔️ Execuções atuais por benchmark', '## Como se organiza',
+    '## 🗂️ Modelos non-frontier ou desatualizados', ['2 execuções atuais', '5 referências atuais', 'ORGANIZAÇÃO DO ACERVO']],
 ]) {
-  test(path + ': Root.ark-style diagram is exactly between current and historical arena sections', () => {
+  test(path + ': benchmark-specific repository map sits between current and historical runs', () => {
     const content = read(path);
     const arenaStart = content.indexOf(arenaHeading);
     const diagramStart = content.indexOf(title);
     const archiveStart = content.indexOf(archivedHeading);
     assert.ok(arenaStart >= 0 && arenaStart < diagramStart && diagramStart < archiveStart,
-      'diagram must come after the current arena and before historical models');
+      'repository map follows current runs and precedes historical models');
     assert.equal(content.indexOf(title, diagramStart + title.length), -1,
-      'diagram appears only once');
+      'map appears only once');
     const section = content.slice(diagramStart, archiveStart);
-    const start = section.indexOf('```text');
-    const end = section.indexOf('```', start + 7);
-    const drawing = start >= 0 && end > start ? section.slice(start + 7, end) : null;
-    assert.ok(drawing, 'monospaced diagram exists');
-    const lines = drawing.trimEnd().split(/\r?\n/).slice(1);
-    assert.equal(lines.length, 25, 'same 25-line structure as the Root.ark diagram');
-    assert.equal(lines[0], '          ┌──────────────────────┐   ┌──────────────────────┐');
-    assert.equal(lines[3], '          └──────────┬───────────┘   └──────────┬───────────┘');
-    assert.equal(lines[7], '                       ┌──────────▼───────────┐');
-    assert.equal(lines[15], '                    ┌─────────▼───┐ ┌──▼──────────────────┐');
-    assert.equal(lines[21], path === 'README.md'
-      ? '                         ┌─────────────▼───────────┐'
-      : '                         ┌────────────▼────────────┐');
-    assert.equal(lines[24], '                         └─────────────────────────┘');
-    for (const [indexes, width] of [[[0, 1, 2, 3], 61], [[7, 8, 9, 10, 11], 47],
-      [[15, 16, 17, 18, 19], 59], [[21, 22, 23, 24], 52]]) {
-      for (const i of indexes) assert.equal(lines[i].length, width, `diagram line ${i}`);
-    }
-    for (const evidence of [
-      'RUNS.json',
-      'Snapshots',
-      'runs/',
-      'SHA-256',
+    const matches = [...section.matchAll(/```text\r?\n([\s\S]*?)\r?\n```/g)];
+    assert.equal(matches.length, 1, 'one text diagram per language');
+    const drawing = matches[0][1];
+    const racing = drawing.indexOf('RACING-BENCH');
+    const orbitarium = drawing.indexOf('ORBITARIUM-BENCH');
+    const archive = drawing.indexOf(labels[2]);
+    assert.ok(drawing.startsWith('FRONTIER MODELS'));
+    assert.ok(racing > 0 && orbitarium > racing && archive > orbitarium,
+      'two benchmark branches followed by shared archive conventions');
+    for (const required of [
+      '2 benchmarks', ...labels.slice(0, 2), 'Gemini 3.8 Flash', 'GPT-6.1 Sol',
+      'V2.6', 'frontier-v2.md', 'racing-v3.4/', '14', 'RUNS.json', 'prompts/',
+      'runs/', 'SHA-256',
     ]) {
-      assert.ok(drawing.includes(evidence), evidence);
+      assert.ok(drawing.includes(required), 'missing ' + required);
     }
-    assert.doesNotMatch(drawing, /\+[-]{3,}|\|/);
+    assert.match(drawing, /├── RACING-BENCH/);
+    assert.match(drawing, /├── ORBITARIUM-BENCH/);
+    assert.match(drawing, /└── (?:ARCHIVE CONVENTIONS|ORGANIZAÇÃO DO ACERVO)/);
+    assert.doesNotMatch(drawing, /┌|┬|▼/, 'must not reuse the old pipeline flowchart');
     assert.doesNotMatch(content, /repo-commit-history/);
   });
 }

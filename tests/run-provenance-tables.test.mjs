@@ -32,7 +32,8 @@ function classification(run, isRacing, pt) {
 function sourceStatus(run, isRacing, pt) {
   const archived = isRacing
     ? ['complete-tracked-git-snapshot-and-full-history-bundle',
-      'complete-tracked-git-snapshot-lfs-pointer-no-history-bundle'].includes(run.archival_status)
+      'complete-tracked-git-snapshot-lfs-pointer-no-history-bundle',
+      'complete-tracked-git-snapshot-no-history-bundle'].includes(run.archival_status)
     : run.archive_status === 'self-contained';
   assert.ok(archived || (isRacing ? run.archival_status === 'source-repository-pinned' :
     run.archive_status === 'source-repository-pinned'), run.id);

@@ -1,0 +1,69 @@
+{
+  "verdict": "NÃO APROVADO no alvo visual comercial da V3.4. O jogo e a verificação automatizada foram implementados, mas as comparações mostram uma linguagem procedural com acabamento abaixo das referências. Isso impede tratar a entrega como aprovação integral do benchmark.",
+  "screens": {
+    "1": [
+      "As palmeiras têm folhas planas e coroas menos densas que a referência 01.",
+      "A praia tem menos detritos, microvegetação e marcas de uso que a referência 02.",
+      "A luz rasante produz sombras longas, mas não reproduz o recorte luminoso e a dispersão atmosférica da referência 01."
+    ],
+    "2": [
+      "A carroceria é curva e reflexiva, mas o para-choque e os recortes de farol são mais simples que na referência 11.",
+      "As rodas têm raios, disco e pinça, porém faltam letras e microdetalhes laterais dos pneus da referência.",
+      "O vidro reflete e deixa ver silhuetas internas, mas tem menos complexidade ótica e menos detalhes de vedação."
+    ],
+    "3": [
+      "A espuma forma faixas regulares, enquanto a referência 04 possui espuma quebrada e respingos ao redor de cada pedra.",
+      "A água é menos transparente e a transição de profundidade é mais simples que nas referências 02 e 04.",
+      "As rochas têm silhuetas menos orgânicas e há menos variação na areia molhada.",
+      "A captura de praia não enquadra as IAs; isso deixa de cumprir a exigência de adversários visíveis nessa screenshot."
+    ],
+    "4": [
+      "O relevo é suave e tem menos estratificação de rocha exposta que a falésia da referência 02.",
+      "A costa distante tem menos recortes, praia curva e detalhe de vegetação.",
+      "As margens da serpentina têm menor variedade de material e formas que o alvo comercial."
+    ],
+    "5": [
+      "Há janelas recuadas, molduras, beirais e varandas, mas as fachadas têm menos desgaste e irregularidade que as referências 05–07.",
+      "A rua tem menos elementos pequenos, cabos, vasos e vida de vila por quadro.",
+      "O marco escolhido é um farol original; sua superfície é mais simples que a torre arquitetônica da referência 05."
+    ],
+    "6": [
+      "As copas mostram cartões geométricos e são menos volumosas que a vegetação da referência 08.",
+      "Faltam as várias camadas de vegetação rasteira e ramos finos da referência.",
+      "Há sombras rasantes, mas faltam os feixes volumétricos e a névoa quente entre árvores da referência 10.",
+      "Os adversários estão fora do enquadramento legível nesta captura, apesar do estado de corrida conter as cinco IAs."
+    ],
+    "7": [
+      "A travessia é caracterizada por parapeitos, pilastras e encontros; não há um vão livre sob a estrada. O requisito de ponte estrutural não foi atendido.",
+      "A alvenaria tem menos juntas e variação de desgaste.",
+      "O vale e a paisagem em torno da ponte são mais simples e menos profundos que o alvo.",
+      "Os adversários não são legíveis no quadro desta captura."
+    ],
+    "8": [
+      "O pelotão vem da simulação real, mas a câmera mais recuada enquadra duas filas em vez da composição baixa e comprimida da referência 13.",
+      "As carrocerias refletem o céu, porém têm menos detalhes de painéis e aros que a referência.",
+      "O blur do fundo é radial aproximado, sem o campo de movimento físico da referência 09.",
+      "O jogador aparece adiante dos dois adversários em primeiro plano; a imagem não comprova o jogador lado a lado com duas IAs, como exigido para S8."
+    ],
+    "9": [
+      "Sem referência indicada: o asfalto tem mapas 2048², porém a distribuição de fissuras e remendos é simples.",
+      "As zebras têm cor alternada e relevo discreto, mas pouca sujeira acumulada.",
+      "O guardrail tem postes e seção arredondada; faltam parafusos e amassados."
+    ],
+    "10": [
+      "Sem referência externa: a comparação à direita é a posição S5 em Alta.",
+      "Baixa preserva fachadas, texturas, rodas e folhagem, mas perde definição pela resolução interna menor.",
+      "As sombras usam mapa 1024² e mostram bordas menos definidas que em Alta."
+    ],
+    "11": [
+      "As casas em talude têm fundações altas e ainda faltam escadas de acesso às portas; o carro está parado e a porta tem 2,1 m no modelo.",
+      "A porta e o carro ficam em profundidades diferentes; a perspectiva limita a comparação direta de alturas em pixels.",
+      "A aproximação permite ver que reboco, porta e vegetação ainda têm menos detalhe de superfície que o alvo comercial."
+    ],
+    "12": [
+      "A névoa distante reduz muito o contraste da pista na vista superior; o circuito completo é visível, mas pouco legível.",
+      "O heightfield tem extensão retangular e não pretende representar um mundo aberto.",
+      "A malha do mar mostra manchas triangulares junto à costa nesta vista; essa transição está abaixo do acabamento solicitado."
+    ]
+  }
+}

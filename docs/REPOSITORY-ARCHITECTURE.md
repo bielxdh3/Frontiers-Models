@@ -67,7 +67,11 @@ Frontiers-Models/
           │  ├─ SOURCE-FILES.json
           │  ├─ SOURCE-REPOSITORY.bundle
           │  └─ source/
-          └─ gemini-3.8-v3.4/ (current; 188-file snapshot)
+          ├─ gemini-3.8-v3.4/ (current; 188-file snapshot)
+          │  ├─ SOURCE-PROVENANCE.md
+          │  ├─ SOURCE-FILES.json
+          │  └─ source/
+          └─ gpt-6.1-sol-v3.4/ (current; 104-file snapshot)
              ├─ SOURCE-PROVENANCE.md
              ├─ SOURCE-FILES.json
              └─ source/
@@ -87,4 +91,4 @@ The Orbitarium-bench current arena contains GPT-6.1 Sol, GPT-6 Astra, Grok 4.7, 
 
 Add new benchmark directories under `benchmarks/`. Each should preserve its exact input, original output or pinned source, and verifiable provenance.
 
-Racing-bench V3.4 is the current race-first specification with 14 required visual references and **Gemini 3.8 Flash (V3.4)** as its sole current Racing run ([source](https://github.com/bielxdh3/gemini-3.8) and [live site](https://racing-gemini-3.8-flash.biel.dev.br/)). Its 188 Git-tracked files are archived with SHA-256 checksums at a pinned commit (the external LFS video is not bundled). The site responded HTTP 200 on 2026-11-02; gameplay was not independently verified. V3.3 is a preserved frozen historical specification with complete premium UI/UX (G12), high-quality coastal-city and beach environmental art (G13), 10 dedicated W01–W10 world-art inspections, and 38+ screenshot requirements. V3.2 and V3.1 prompts and attachments remain intact for archival reproduction. The three prior V2.6 projects are legacy/archived with retired public-game links omitted from the index; their exact source trees, SHA-256 manifests and Git-history bundles remain unchanged. The Orbitarium/Solar System archive and its existing paths remain unchanged.
+Racing-bench V3.4 is the current race-first specification with 14 required visual references and two current Racing runs: **Gemini 3.8 Flash (V3.4)** ([source](https://github.com/bielxdh3/gemini-3.8), [live site](https://racing-gemini-3.8-flash.biel.dev.br/)) and **GPT-6.1 Sol (V3.4)** ([source](https://github.com/bielxdh3/6.1racinsol), [owner-provided site](https://racing-gpt-6.1-sol.biel.dev.br/)). Gemini's 188 Git-tracked files and Sol's 104 Git-tracked files are archived separately with SHA-256 checksums at pinned commits (Gemini's external LFS video is not bundled). The site responded HTTP 200 on 2026-11-02; gameplay was not independently verified. V3.3 is a preserved frozen historical specification with complete premium UI/UX (G12), high-quality coastal-city and beach environmental art (G13), 10 dedicated W01–W10 world-art inspections, and 38+ screenshot requirements. V3.2 and V3.1 prompts and attachments remain intact for archival reproduction. The three prior V2.6 projects are legacy/archived with retired public-game links omitted from the index; their exact source trees, SHA-256 manifests and Git-history bundles remain unchanged. The Orbitarium/Solar System archive and its existing paths remain unchanged.

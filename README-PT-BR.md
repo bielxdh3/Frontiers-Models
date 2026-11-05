@@ -6,7 +6,7 @@
 
 [![Benchmark](https://img.shields.io/badge/benchmark-frontier%20models-7C3AED?style=flat)](./benchmarks)
 [![Benchmarks](https://img.shields.io/badge/benchmarks-2-2563EB?style=flat)](./docs/REPOSITORY-ARCHITECTURE.md)
-[![Execuções atuais](https://img.shields.io/badge/execu%C3%A7%C3%B5es%20atuais-6-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
+[![Execuções atuais](https://img.shields.io/badge/execu%C3%A7%C3%B5es%20atuais-7-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
 
 # Frontier Models
 
@@ -25,10 +25,11 @@
 | Modelo atual | Jogar | Código-fonte |
 | --- | --- | --- |
 | **Gemini 3.8 Flash (V3.4)** | [Jogar](https://racing-gemini-3.8-flash.biel.dev.br/) | [Source — gemini-3.8](https://github.com/bielxdh3/gemini-3.8) |
+| **GPT-6.1 Sol (V3.4)** | [Jogar](https://racing-gpt-6.1-sol.biel.dev.br/) | [Source — 6.1racinsol](https://github.com/bielxdh3/6.1racinsol) |
 
-O pacote atual é o **[prompt Racing-bench V3.4](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md)** e suas **[14 imagens de referência](./benchmarks/racing/prompts/racing-v3.4/refs/)**. O site respondeu HTTP 200 em 02/11/2026; a jogabilidade ainda não foi testada de forma independente. [Código arquivado e proveniência](./benchmarks/racing/runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md) preservam a execução V3.4.
+**Entradas V3.4:** [prompt Racing](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md) · [14 imagens de referência](./benchmarks/racing/prompts/racing-v3.4/refs/). **Código arquivado:** [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md) · [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/SOURCE-PROVENANCE.md).
 
-**Histórico Racing V2.6:** [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/), [Gemini 3.8 Flash V2.6](./benchmarks/racing/runs/gemini-3.8-flash/source/) e [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra/source/) seguem arquivados com seus históricos Git, fora da arena atual. A V3.3 continua congelada no arquivo de prompts.
+**Arquivo Racing V2.6:** [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/), [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) e [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra/source/).
 
 ### Orbitarium-bench — referências atuais
 
@@ -45,38 +46,30 @@ O Orbitarium reúne **cinco referências atuais**. O Gemini 4 Argon e o GPT-6.1 
 ## Como se organiza
 
 ```text
-          ┌──────────────────────┐   ┌──────────────────────┐
-          │ Prompts do benchmark │   │ Projetos dos modelos │
-          │ entradas originais   │   │ fontes / snapshots   │
-          └──────────┬───────────┘   └──────────┬───────────┘
-                     │                          │
-                     └────────────┬─────────────┘
-                                  │
-                       ┌──────────▼───────────┐
-                       │   Frontier Models    │
-                       │ RUNS.json · 2        │
-                       │ atuais · históricos  │
-                       └──────┬────────┬──────┘
-                              │        │
-                arquivos      │        │ dados de origem
-                              │        │
-                    ┌─────────▼───┐ ┌──▼──────────────────┐
-                    │  Snapshots  │ │ Proveniência        │
-                    │ runs/       │ │ commits · hashes ZIP│
-                    │ originais   │ │ status dos prompts  │
-                    └─────────────┘ └──┬──────────────────┘
-                                      │ links e verificações
-                         ┌────────────▼────────────┐
-                         │ Links dos projetos      │
-                         │ Checagens SHA-256       │
-                         └─────────────────────────┘
+FRONTIER MODELS                         2 benchmarks · 7 execuções atuais
+│
+├── RACING-BENCH (V3.4)                 2 execuções atuais
+│   ├── entradas    racing-v3.4/ · 14 referências visuais
+│   ├── atuais      Gemini 3.8 Flash · GPT-6.1 Sol
+│   └── histórico   execuções V2.6 + prompts anteriores
+│
+├── ORBITARIUM-BENCH (Frontier V2)      5 referências atuais
+│   ├── entradas    frontier-v2.md
+│   ├── atuais      Sol · Astra · Grok · Fable · Argon
+│   └── histórico   execuções antigas e não frontier
+│
+└── ORGANIZAÇÃO DO ACERVO (por benchmark)
+    ├── RUNS.json   índice atual / histórico + links
+    ├── prompts/    entradas originais
+    ├── runs/       snapshots de código ou fontes fixadas
+    └── proveniência commits · manifests SHA-256 · status dos prompts
 ```
 
-O registro conecta prompts arquivados, projetos independentes, evidências de origem e referências públicas. Uma fonte fixada não significa necessariamente que exista um snapshot local, e prompts sem origem verificada permanecem distintos. Veja a [arquitetura do repositório](./docs/REPOSITORY-ARCHITECTURE.md).
+Cada benchmark mantém seus próprios prompts, execuções atuais e histórico, registrados em `RUNS.json`. Snapshots, commits de origem e proveniência ficam separados dos links públicos. Veja a [arquitetura do repositório](./docs/REPOSITORY-ARCHITECTURE.md).
 
 ## 🗂️ Modelos non-frontier ou desatualizados
 
-Estas execuções **do Orbitarium** continuam visíveis como referência, mas ficam separadas da arena atual desse benchmark. O Racing-bench V3.4 destaca o Gemini 3.8 Flash (V3.4) como execução atual, com links para site e código-fonte; os três projetos V2.6 continuam arquivados.
+Estas execuções **do Orbitarium** continuam visíveis como referência, mas ficam separadas da arena atual desse benchmark. O Racing-bench V3.4 destaca Gemini 3.8 Flash e GPT-6.1 Sol como execuções atuais independentes, com código-fonte arquivado; os três projetos V2.6 continuam arquivados como legado.
 
 | Modelo | Classificação | Projeto / fonte | Proveniência |
 | --- | --- | --- | --- |
@@ -98,9 +91,9 @@ PROMPT → EXECUÇÃO DO MODELO → SNAPSHOT / FONTE FIXADA → EVIDÊNCIAS → 
 
 ## Benchmark 002 — Racing-bench
 
-A **[V3.4](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md) é a especificação atual**, acompanhada por 14 imagens de referência. O **[Gemini 3.8 Flash (V3.4)](https://github.com/bielxdh3/gemini-3.8)** é a execução atual, com [site publicado](https://racing-gemini-3.8-flash.biel.dev.br/) e [proveniência preservada](./benchmarks/racing/runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md).
+**[Prompt V3.4](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md)** · [14 referências visuais](./benchmarks/racing/prompts/racing-v3.4/refs/). Jogue o [Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br/) ou o [GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br/); acesse os [arquivos de código Racing](./benchmarks/racing/README-PT-BR.md).
 
-Os prompts [V3.3](./benchmarks/racing/prompts/racing-v3.3.md), [V3.2](./benchmarks/racing/prompts/racing-v3.2.md) e [V3.1](./benchmarks/racing/prompts/racing-v3.1.md) seguem intactos no histórico. A [V2.6](./benchmarks/racing/prompts/racing-v2.6.md) e seu [adendo](./benchmarks/racing/EXECUTION-ADDENDUM.md), com os códigos de [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/), [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) e [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra/source/), permanecem preservados. Links antigos não são exibidos.
+Prompts anteriores: [V3.3](./benchmarks/racing/prompts/racing-v3.3.md), [V3.2](./benchmarks/racing/prompts/racing-v3.2.md), [V3.1](./benchmarks/racing/prompts/racing-v3.1.md) e [V2.6](./benchmarks/racing/prompts/racing-v2.6.md).
 
 ## Benchmark 001 — Orbitarium-bench
 
@@ -118,6 +111,7 @@ O caminho histórico `benchmarks/solar-system/` permanece inalterado para preser
 | **Gemini 3.8 Flash** | Git `a18fcaee71…` | Legado | Arquivado |
 | **GPT-6 Astra** | Git `0c615e8dc3…` | Legado | Arquivado |
 | **Gemini 3.8 Flash** | Git `8f1992b88c…` | Atual | Arquivado |
+| **GPT-6.1 Sol** | Git `1ab34b18cb…` | Atual | Arquivado |
 
 Os três snapshots históricos do Racing incluem bundles Git completos. Gemini V3.4 inclui os 188 arquivos Git e um manifesto SHA-256, sem vídeo LFS externo nem bundle de histórico.
 

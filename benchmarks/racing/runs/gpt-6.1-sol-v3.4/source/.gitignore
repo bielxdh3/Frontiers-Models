@@ -1,0 +1,13 @@
+/node_modules/
+/dist/
+/output/
+/.playwright-cli/
+/*.zip
+/benchmark/racing-v3.4/refs/
+/verification/sweep/
+/verification/compare/
+/verification/logs/
+*.log
+.env
+.env.*
+!.env.example
