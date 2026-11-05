@@ -25,9 +25,9 @@ test('all seven canonical Orbitarium sites retain their original links', () => {
   }
 });
 
-test('Racing V3.4 includes Gemini, Sol, Astra and Alpha; Alpha remains unpublished', () => {
+test('Racing V3.4 includes Gemini, Sol, Astra and Opus; Opus remains unpublished', () => {
   assert.equal(racing.current_prompt, 'racing-v3.4');
-  assert.deepEqual(racing.current_arena, ['gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'alpha-5.5-v3.4']);
+  assert.deepEqual(racing.current_arena, ['gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4']);
   assert.deepEqual(racing.legacy_runs, ['gpt-6.1-sol', 'gemini-3.8-flash', 'gpt-6-astra']);
   const current = racing.runs.find(run => run.id === racing.current_arena[0]);
   assert.equal(current.model, 'Gemini 3.8 Flash');
@@ -55,15 +55,15 @@ test('Racing V3.4 includes Gemini, Sol, Astra and Alpha; Alpha remains unpublish
   assert.equal(astra.reported_verification.integral_benchmark, 'failed');
   assert.equal(astra.reported_verification.passed, 33);
   assert.equal(astra.reported_verification.total, 34);
-  const alpha = racing.runs.find(run => run.id === 'alpha-5.5-v3.4');
-  assert.equal(alpha.model, 'Alpha 5.5');
-  assert.equal(alpha.source_repository, 'https://github.com/bielxdh3/opus55');
-  assert.equal(alpha.source_commit, 'e75f298d49bb1324aec329690dc56f53ed0ee643');
-  assert.equal(alpha.source_tree, 'ca06e6d07ea2e567597ead65726e1d6fe777630f');
-  assert.equal(alpha.live_url, null);
-  assert.equal(alpha.site_url, null);
-  assert.equal(alpha.site_status, 'owner-confirmed-not-yet-published');
-  assert.equal(alpha.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
+  const opus = racing.runs.find(run => run.id === 'opus-5.5-v3.4');
+  assert.equal(opus.model, 'Opus 5.5');
+  assert.equal(opus.source_repository, 'https://github.com/bielxdh3/opus55');
+  assert.equal(opus.source_commit, 'e75f298d49bb1324aec329690dc56f53ed0ee643');
+  assert.equal(opus.source_tree, 'ca06e6d07ea2e567597ead65726e1d6fe777630f');
+  assert.equal(opus.live_url, null);
+  assert.equal(opus.site_url, null);
+  assert.equal(opus.site_status, 'owner-confirmed-not-yet-published');
+  assert.equal(opus.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
   for (const run of racing.runs.filter(run => racing.legacy_runs.includes(run.id))) {
     assert.equal(run.live_url, null);
     assert.equal(run.display_status, 'legacy-archived');
@@ -83,11 +83,11 @@ test('Racing V3.4 includes Gemini, Sol, Astra and Alpha; Alpha remains unpublish
       ? './runs/gpt-6-astra-v3.4/source/'
       : './benchmarks/racing/runs/gpt-6-astra-v3.4/source/';
     assert.ok(s.includes('](' + localAstraSource + ')'), path + ' must link to its local Astra source archive');
-    const localAlphaSource = path.startsWith('benchmarks/racing/')
-      ? './runs/alpha-5.5-v3.4/source/'
-      : './benchmarks/racing/runs/alpha-5.5-v3.4/source/';
-    assert.ok(s.includes('](' + localAlphaSource + ')'), path + ' must link to its local Alpha 5.5 archive');
-    assert.doesNotMatch(s, /https:\/\/racing-(?:alpha-5\.5|opus-5\.5)\.biel\.dev\.br\//, path + ' must not invent an Alpha URL');
+    const localOpusSource = path.startsWith('benchmarks/racing/')
+      ? './runs/opus-5.5-v3.4/source/'
+      : './benchmarks/racing/runs/opus-5.5-v3.4/source/';
+    assert.ok(s.includes('](' + localOpusSource + ')'), path + ' must link to its local Opus 5.5 archive');
+    assert.doesNotMatch(s, /https:\/\/racing-opus-5\.5\.biel\.dev\.br\//, path + ' must not invent an Opus URL');
     assert.ok(s.includes('](https://racing-gpt-6-astra.biel.dev.br/)'), path + ' Astra site link');
     assert.match(s, /HTTP 404/, path + ' discloses failed reachability');
     assert.doesNotMatch(s, /https:\/\/github\.com\/bielxdh3\/6\.1racinsol/);

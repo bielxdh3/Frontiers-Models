@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 650" role="img" aria-labelledby="title desc">
   <title id="title">Frontier Models — Racing and Orbitarium benchmark collection</title>
-  <desc id="desc">Two benchmarks. Racing-bench V3.4 current: Gemini 3.8 Flash, GPT-6.1 Sol, GPT-6 Astra, Alpha 5.5. Orbitarium current: GPT-6.1 Sol, GPT-6 Astra, Grok 4.7, Fable 5.1, Gemini 4 Argon.</desc>
+  <desc id="desc">Two benchmarks. Racing-bench V3.4 current: Gemini 3.8 Flash, GPT-6.1 Sol, GPT-6 Astra, Opus 5.5. Orbitarium current: GPT-6.1 Sol, GPT-6 Astra, Grok 4.7, Fable 5.1, Gemini 4 Argon.</desc>
   <defs>
     <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#080f1d"/>
@@ -65,11 +65,11 @@
     <circle cx="789.5" cy="263" r="4" fill="#aaa7ff"/>
     <text x="805.5" y="269" font-size="18" font-weight="650" fill="#eef6ff">GPT-6 Astra</text>
   </g>
-    <g data-role="run" data-benchmark="racing" data-model="alpha-5.5-v3.4">
+    <g data-role="run" data-benchmark="racing" data-model="opus-5.5-v3.4">
     <rect x="1008.5" y="235" width="225" height="56" rx="11" fill="#0e2034" stroke="#25415d"/>
     <rect x="1009.5" y="236" width="4" height="54" rx="2" fill="#ff99cc"/>
     <circle cx="1028.5" cy="263" r="4" fill="#ff99cc"/>
-    <text x="1044.5" y="269" font-size="18" font-weight="650" fill="#eef6ff">Alpha 5.5</text>
+    <text x="1044.5" y="269" font-size="18" font-weight="650" fill="#eef6ff">Opus 5.5</text>
   </g>
     </g>
     <g data-benchmark="orbitarium">

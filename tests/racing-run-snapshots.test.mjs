@@ -184,10 +184,10 @@ test('GPT-6 Astra V3.4: all 1,183 upstream Git blobs archived with byte-exact pr
   assert.match(report, /33\/34/);
 });
 
-test('Alpha 5.5 V3.4: all 2,100 upstream Git blobs archived byte-exactly, with no invented site', () => {
-  const run = registry.runs.find(run => run.id === 'alpha-5.5-v3.4');
+test('Opus 5.5 V3.4: all 2,100 upstream Git blobs archived byte-exactly, with no invented site', () => {
+  const run = registry.runs.find(run => run.id === 'opus-5.5-v3.4');
   assert.ok(run && registry.current_arena.includes(run.id));
-  assert.equal(run.model, 'Alpha 5.5');
+  assert.equal(run.model, 'Opus 5.5');
   assert.equal(run.live_url, null);
   assert.equal(run.site_url, null);
   assert.equal(run.site_status, 'owner-confirmed-not-yet-published');

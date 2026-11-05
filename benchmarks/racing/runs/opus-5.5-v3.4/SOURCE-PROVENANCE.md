@@ -1,4 +1,4 @@
-# Alpha 5.5 — Racing-bench V3.4 source provenance
+# Opus 5.5 — Racing-bench V3.4 source provenance
 
 - Owner-provided source repository: https://github.com/bielxdh3/opus55
 - Branch: `main`; pinned commit: `e75f298d49bb1324aec329690dc56f53ed0ee643`

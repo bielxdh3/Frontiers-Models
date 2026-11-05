@@ -26,7 +26,7 @@ test('hero presents a clean collection of two benchmarks with no microcopy or or
 
 test('Racing first: all four V3.4 current source runs are in the hero', () => {
   assert.deepEqual(models('racing'), racing.current_arena);
-  assert.deepEqual(models('racing'), ['gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'alpha-5.5-v3.4']);
+  assert.deepEqual(models('racing'), ['gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4']);
   const entries = racing.runs;
   for (const id of models('racing')) {
     const run = entries.find(run => run.id === id);

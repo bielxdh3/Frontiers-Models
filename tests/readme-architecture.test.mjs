@@ -33,7 +33,7 @@ for (const [path, arenaHeading, title, archivedHeading, labels] of [
     assert.ok(racing > 0 && orbitarium > racing && archive > orbitarium,
       'two benchmark branches followed by shared archive conventions');
     for (const required of [
-      '2 benchmarks', ...labels.slice(0, 2), 'Gemini 3.8 Flash', 'GPT-6.1 Sol', 'GPT-6 Astra', 'Alpha 5.5',
+      '2 benchmarks', ...labels.slice(0, 2), 'Gemini 3.8 Flash', 'GPT-6.1 Sol', 'GPT-6 Astra', 'Opus 5.5',
       'V2.6', 'frontier-v2.md', 'racing-v3.4/', '14', 'RUNS.json', 'prompts/',
       'runs/', 'SHA-256',
     ]) {

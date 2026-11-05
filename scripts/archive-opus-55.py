@@ -1,6 +1,6 @@
-"""Import the pinned Alpha 5.5 Racing V3.4 Git snapshot byte-for-byte.
+"""Import the pinned Opus 5.5 Racing V3.4 Git snapshot byte-for-byte.
 
-Usage: python scripts/archive-alpha-55.py E:/path/to/opus55-checkout
+Usage: python scripts/archive-opus-55.py E:/path/to/opus55-checkout
 This is an archival operation only: never rebuild or modify model output.
 """
 
@@ -16,7 +16,7 @@ COMMIT = "e75f298d49bb1324aec329690dc56f53ed0ee643"
 TREE = "ca06e6d07ea2e567597ead65726e1d6fe777630f"
 SOURCE_REPO = "https://github.com/bielxdh3/opus55"
 ROOT = Path(__file__).resolve().parent.parent
-RUN = ROOT / "benchmarks" / "racing" / "runs" / "alpha-5.5-v3.4"
+RUN = ROOT / "benchmarks" / "racing" / "runs" / "opus-5.5-v3.4"
 DEST = RUN / "source"
 
 
@@ -83,7 +83,7 @@ def main(source: Path) -> None:
     entries.sort(key=lambda item: str(item["path"]))
     manifest = {
         "format": "git-blob-byte-exact-v1",
-        "model": "Alpha 5.5 (Racing V3.4)",
+        "model": "Opus 5.5 (Racing V3.4)",
         "source_repository": SOURCE_REPO,
         "source_branch": "main",
         "source_commit": COMMIT,
@@ -104,5 +104,5 @@ def main(source: Path) -> None:
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        raise SystemExit("Usage: python scripts/archive-alpha-55.py SOURCE_GIT_CHECKOUT")
+        raise SystemExit("Usage: python scripts/archive-opus-55.py SOURCE_GIT_CHECKOUT")
     main(Path(sys.argv[1]))

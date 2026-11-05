@@ -25,7 +25,7 @@ if (orbitRuns.length !== 5 || new Set(orbitRuns.map(run => run.id)).size !== 5 |
     racingRuns.length !== 4 || racingRuns[0].id !== 'gemini-3.8-v3.4' ||
     racingRuns[1].id !== 'gpt-6.1-sol-v3.4' ||
     racingRuns[2].id !== 'gpt-6-astra-v3.4' ||
-    racingRuns[3].id !== 'alpha-5.5-v3.4' ||
+    racingRuns[3].id !== 'opus-5.5-v3.4' ||
     racingRuns[3].live_url !== null ||
     racingRuns[3].site_url !== null ||
     racing.current_prompt !== 'racing-v3.4' ||
