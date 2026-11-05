@@ -54,6 +54,11 @@ test('Racing V3.4 Gemini and GPT-6.1 Sol are current with source and site links;
     assert.match(s, /racing-v3\.4/);
     assert.match(s, /racing-gemini-3\.8-flash\.biel\.dev\.br/);
     assert.match(s, /\[Source — gemini-3\.8\]\(https:\/\/github\.com\/bielxdh3\/gemini-3\.8\)/);
+    const localSolSource = path.startsWith('benchmarks/racing/')
+      ? './runs/gpt-6.1-sol-v3.4/source/'
+      : './benchmarks/racing/runs/gpt-6.1-sol-v3.4/source/';
+    assert.ok(s.includes('](' + localSolSource + ')'), path + ' must link to its local Sol source archive');
+    assert.doesNotMatch(s, /https:\/\/github\.com\/bielxdh3\/6\.1racinsol/);
     assert.doesNotMatch(s, /HTTP 404/);
     for (const run of racing.runs) assert.ok(s.includes(run.model));
     assert.doesNotMatch(s, /https:\/\/racing-gpt-6-astra\.biel\.dev\.br/);
