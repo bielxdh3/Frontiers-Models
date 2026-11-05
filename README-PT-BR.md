@@ -25,7 +25,7 @@
 | Modelo atual | Jogar | Código-fonte |
 | --- | --- | --- |
 | **Gemini 3.8 Flash (V3.4)** | [Jogar](https://racing-gemini-3.8-flash.biel.dev.br/) | [Source — gemini-3.8](https://github.com/bielxdh3/gemini-3.8) |
-| **GPT-6.1 Sol (V3.4)** | [Jogar](https://racing-gpt-6.1-sol.biel.dev.br/) | [Source — 6.1racinsol](https://github.com/bielxdh3/6.1racinsol) |
+| **GPT-6.1 Sol (V3.4)** | [Jogar](https://racing-gpt-6.1-sol.biel.dev.br/) | [Código — arquivado aqui](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/source/) |
 
 **Entradas V3.4:** [prompt Racing](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md) · [14 imagens de referência](./benchmarks/racing/prompts/racing-v3.4/refs/). **Código arquivado:** [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md) · [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/SOURCE-PROVENANCE.md).
 
