@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Costa Dourada — Corrida ao Pôr do Sol</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="./src/ui/style.css">
+<script type="importmap">
+{ "imports": { "three": "./vendor/three/three.module.js", "three/addons/": "./vendor/three/addons/" } }
+</script>
+</head>
+<body>
+<canvas id="gl"></canvas>
+<canvas id="hud"></canvas>
+<div id="ui"></div>
+<div id="loading">
+  <div class="load-inner">
+    <div class="load-title">COSTA DOURADA</div>
+    <div class="load-sub">Circuito ao pôr do sol</div>
+    <div class="load-bar"><div class="load-fill" id="loadFill"></div></div>
+    <div class="load-text" id="loadText">Carregando…</div>
+  </div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>

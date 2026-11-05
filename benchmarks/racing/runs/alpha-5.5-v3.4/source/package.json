@@ -1,0 +1,20 @@
+{
+  "name": "costa-dourada-racing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Racing-bench V3.4 entry: 3D coastal sunset circuit racer vs 5 AI (Three.js, static site)",
+  "type": "module",
+  "scripts": {
+    "serve": "node tools/serve.mjs",
+    "verify": "node tools/verify.mjs",
+    "postinstall": "playwright install chromium"
+  },
+  "devDependencies": {
+    "jpeg-js": "0.4.4",
+    "playwright": "1.64.1",
+    "pngjs": "7.0.0"
+  },
+  "dependencies": {
+    "three": "0.187.0"
+  }
+}
