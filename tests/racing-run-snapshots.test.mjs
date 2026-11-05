@@ -184,13 +184,13 @@ test('GPT-6 Astra V3.4: all 1,183 upstream Git blobs archived with byte-exact pr
   assert.match(report, /33\/34/);
 });
 
-test('Opus 5.5 V3.4: all 2,100 upstream Git blobs archived byte-exactly, with no invented site', () => {
+test('Opus 5.5 V3.4: all 2,100 upstream Git blobs archived byte-exactly with owner-provided site', () => {
   const run = registry.runs.find(run => run.id === 'opus-5.5-v3.4');
   assert.ok(run && registry.current_arena.includes(run.id));
   assert.equal(run.model, 'Opus 5.5');
-  assert.equal(run.live_url, null);
-  assert.equal(run.site_url, null);
-  assert.equal(run.site_status, 'owner-confirmed-not-yet-published');
+  assert.equal(run.live_url, 'https://racing-opus-5.5.biel.dev.br/');
+  assert.equal(run.site_url, run.live_url);
+  assert.match(run.site_status, /owner-provided-url-http-404-on-2026-11-05/);
   assert.equal(run.source_commit, 'e75f298d49bb1324aec329690dc56f53ed0ee643');
   assert.equal(run.source_tree, 'ca06e6d07ea2e567597ead65726e1d6fe777630f');
   assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');

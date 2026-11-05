@@ -26,14 +26,14 @@ if (orbitRuns.length !== 5 || new Set(orbitRuns.map(run => run.id)).size !== 5 |
     racingRuns[1].id !== 'gpt-6.1-sol-v3.4' ||
     racingRuns[2].id !== 'gpt-6-astra-v3.4' ||
     racingRuns[3].id !== 'opus-5.5-v3.4' ||
-    racingRuns[3].live_url !== null ||
-    racingRuns[3].site_url !== null ||
+    racingRuns[3].live_url !== 'https://racing-opus-5.5.biel.dev.br/' ||
+    racingRuns[3].site_url !== 'https://racing-opus-5.5.biel.dev.br/' ||
     racing.current_prompt !== 'racing-v3.4' ||
     racing.legacy_runs.length !== 3 || racing.legacy_runs.some(id => racing.current_arena.includes(id)) ||
     orbitRuns.some(run => !run.live_url?.startsWith('https://')) ||
     racingRuns.some(run => !run.display_status.startsWith('current-') ||
       (run.live_url !== null && !run.live_url?.startsWith('https://')))) {
-  throw new Error('Hero expects four current Racing sources and five current Orbitarium references; unpublished game URLs must stay null');
+  throw new Error('Hero expects four current Racing sources and five current Orbitarium references; supplied game URLs must be valid');
 }
 
 const escape = value => String(value).replaceAll('&', '&amp;')

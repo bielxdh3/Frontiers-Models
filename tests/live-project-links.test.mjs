@@ -25,7 +25,7 @@ test('all seven canonical Orbitarium sites retain their original links', () => {
   }
 });
 
-test('Racing V3.4 includes Gemini, Sol, Astra and Opus; Opus remains unpublished', () => {
+test('Racing V3.4 includes Gemini, Sol, Astra and owner-provided Opus URL with 404 disclosure', () => {
   assert.equal(racing.current_prompt, 'racing-v3.4');
   assert.deepEqual(racing.current_arena, ['gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4']);
   assert.deepEqual(racing.legacy_runs, ['gpt-6.1-sol', 'gemini-3.8-flash', 'gpt-6-astra']);
@@ -60,9 +60,10 @@ test('Racing V3.4 includes Gemini, Sol, Astra and Opus; Opus remains unpublished
   assert.equal(opus.source_repository, 'https://github.com/bielxdh3/opus55');
   assert.equal(opus.source_commit, 'e75f298d49bb1324aec329690dc56f53ed0ee643');
   assert.equal(opus.source_tree, 'ca06e6d07ea2e567597ead65726e1d6fe777630f');
-  assert.equal(opus.live_url, null);
-  assert.equal(opus.site_url, null);
-  assert.equal(opus.site_status, 'owner-confirmed-not-yet-published');
+  assert.equal(opus.live_url, 'https://racing-opus-5.5.biel.dev.br/');
+  assert.equal(opus.site_url, opus.live_url);
+  assert.match(opus.site_status, /owner-provided-url-http-404-on-2026-11-05/);
+  assert.match(opus.site_status, /gameplay-not-independently-verified/);
   assert.equal(opus.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
   for (const run of racing.runs.filter(run => racing.legacy_runs.includes(run.id))) {
     assert.equal(run.live_url, null);
@@ -87,7 +88,7 @@ test('Racing V3.4 includes Gemini, Sol, Astra and Opus; Opus remains unpublished
       ? './runs/opus-5.5-v3.4/source/'
       : './benchmarks/racing/runs/opus-5.5-v3.4/source/';
     assert.ok(s.includes('](' + localOpusSource + ')'), path + ' must link to its local Opus 5.5 archive');
-    assert.doesNotMatch(s, /https:\/\/racing-opus-5\.5\.biel\.dev\.br\//, path + ' must not invent an Opus URL');
+    assert.ok(s.includes('](https://racing-opus-5.5.biel.dev.br/)'), path + ' must contain owner-provided Opus URL');
     assert.ok(s.includes('](https://racing-gpt-6-astra.biel.dev.br/)'), path + ' Astra site link');
     assert.match(s, /HTTP 404/, path + ' discloses failed reachability');
     assert.doesNotMatch(s, /https:\/\/github\.com\/bielxdh3\/6\.1racinsol/);

@@ -49,7 +49,8 @@ test('Racing V3.4 appears first with new Gemini and the old three retained in hi
     assert.match(section, /https:\/\/racing-gpt-6\.1-sol\.biel\.dev\.br\//);
     assert.match(section, /gpt-6-astra-v3\.4\/source\//);
     assert.match(section, /opus-5\.5-v3\.4\/source\//);
-    assert.match(section, /site (?:pending|pendente)/i);
+    assert.match(section, /https:\/\/racing-opus-5\.5\.biel\.dev\.br\//);
+    assert.match(section, /HTTP 404/);
     assert.match(section, /33\/34/);
     assert.doesNotMatch(section, /https:\/\/racing-gemini-3\.8-flash-old\.biel/);
     for (const name of ['GPT-6.1 Sol', 'Gemini 3.8 Flash', 'GPT-6 Astra', 'Opus 5.5']) assert.ok(section.includes(name));

@@ -27,7 +27,7 @@
 | **Gemini 3.8 Flash (V3.4)** | [Jogar](https://racing-gemini-3.8-flash.biel.dev.br/) | [Source — gemini-3.8](https://github.com/bielxdh3/gemini-3.8) |
 | **GPT-6.1 Sol (V3.4)** | [Jogar](https://racing-gpt-6.1-sol.biel.dev.br/) | [Código — arquivado aqui](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/source/) |
 | **GPT-6 Astra (V3.4)** | [Jogar](https://racing-gpt-6-astra.biel.dev.br/) (HTTP 404 em 05/11) | [Código — arquivado aqui](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) |
-| **Opus 5.5 (V3.4)** | Site pendente — sem URL por enquanto | [Código — arquivado aqui](./benchmarks/racing/runs/opus-5.5-v3.4/source/) |
+| **Opus 5.5 (V3.4)** | [Jogar](https://racing-opus-5.5.biel.dev.br/) (HTTP 404 em 05/11) | [Código — arquivado aqui](./benchmarks/racing/runs/opus-5.5-v3.4/source/) |
 
 **Entradas V3.4:** [prompt Racing](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md) · [14 imagens de referência](./benchmarks/racing/prompts/racing-v3.4/refs/). **Proveniência:** [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md) · [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/SOURCE-PROVENANCE.md) · [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra-v3.4/SOURCE-PROVENANCE.md) · [Opus 5.5](./benchmarks/racing/runs/opus-5.5-v3.4/SOURCE-PROVENANCE.md).
 
@@ -95,7 +95,7 @@ PROMPT → EXECUÇÃO DO MODELO → SNAPSHOT / FONTE FIXADA → EVIDÊNCIAS → 
 
 ## Benchmark 002 — Racing-bench
 
-**[Prompt V3.4](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md)** · [14 referências visuais](./benchmarks/racing/prompts/racing-v3.4/refs/). Jogue o [Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br/) ou o [GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br/); o proprietário também informou o [site do Astra V3.4](https://racing-gpt-6-astra.biel.dev.br/) (respondeu HTTP 404 em 05/11). O [Opus 5.5](./benchmarks/racing/runs/opus-5.5-v3.4/source/) está arquivado, mas seu site ainda não está pronto. Consulte o [arquivo GPT-6 Astra V3.4](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) e os [arquivos de código Racing](./benchmarks/racing/README-PT-BR.md).
+**[Prompt V3.4](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md)** · [14 referências visuais](./benchmarks/racing/prompts/racing-v3.4/refs/). Jogue o [Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br/) ou o [GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br/); o proprietário também informou o [site do Astra V3.4](https://racing-gpt-6-astra.biel.dev.br/) (respondeu HTTP 404 em 05/11). A [URL do Opus 5.5](https://racing-opus-5.5.biel.dev.br/) foi informada pelo proprietário, mas respondeu HTTP 404 em 05/11/2026; o [código está arquivado](./benchmarks/racing/runs/opus-5.5-v3.4/source/). Consulte o [arquivo GPT-6 Astra V3.4](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) e os [arquivos de código Racing](./benchmarks/racing/README-PT-BR.md).
 
 Prompts anteriores: [V3.3](./benchmarks/racing/prompts/racing-v3.3.md), [V3.2](./benchmarks/racing/prompts/racing-v3.2.md), [V3.1](./benchmarks/racing/prompts/racing-v3.1.md) e [V2.6](./benchmarks/racing/prompts/racing-v2.6.md).
 

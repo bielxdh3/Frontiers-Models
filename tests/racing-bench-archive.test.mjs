@@ -49,8 +49,9 @@ test('Racing-bench source runs have provenance records, without claiming gamepla
         assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
       } else {
         assert.equal(run.id, 'opus-5.5-v3.4');
-        assert.equal(run.live_url, null, 'Opus URL not ready');
-        assert.equal(run.site_url, null, 'Opus site not ready');
+        assert.equal(run.live_url, 'https://racing-opus-5.5.biel.dev.br/', 'owner-provided Opus URL');
+        assert.equal(run.site_url, run.live_url);
+        assert.match(run.site_status, /http-404-on-2026-11-05/);
         assert.equal(run.source_repository, 'https://github.com/bielxdh3/opus55');
         assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
       }
