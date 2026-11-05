@@ -1,0 +1,366 @@
+{
+ "cars": [
+  {
+   "key": "gt:rosso",
+   "lod0Tris": 128820,
+   "materials": 13,
+   "materialNames": [
+    "paint",
+    "glass",
+    "trim-gloss-black",
+    "plastic-matte",
+    "headlight",
+    "taillight",
+    "chrome",
+    "grille",
+    "rubber",
+    "rim",
+    "brake-disc",
+    "interior",
+    "caliper"
+   ],
+   "ok": true
+  },
+  {
+   "key": "gt:blu",
+   "lod0Tris": 128820,
+   "materials": 13,
+   "materialNames": [
+    "paint",
+    "glass",
+    "trim-gloss-black",
+    "plastic-matte",
+    "headlight",
+    "taillight",
+    "chrome",
+    "grille",
+    "rubber",
+    "rim",
+    "brake-disc",
+    "interior",
+    "caliper"
+   ],
+   "ok": true
+  },
+  {
+   "key": "gt:bianco",
+   "lod0Tris": 128820,
+   "materials": 13,
+   "materialNames": [
+    "paint",
+    "glass",
+    "trim-gloss-black",
+    "plastic-matte",
+    "headlight",
+    "taillight",
+    "chrome",
+    "grille",
+    "rubber",
+    "rim",
+    "brake-disc",
+    "interior",
+    "caliper"
+   ],
+   "ok": true
+  },
+  {
+   "key": "gt:verde",
+   "lod0Tris": 128820,
+   "materials": 13,
+   "materialNames": [
+    "paint",
+    "glass",
+    "trim-gloss-black",
+    "plastic-matte",
+    "headlight",
+    "taillight",
+    "chrome",
+    "grille",
+    "rubber",
+    "rim",
+    "brake-disc",
+    "interior",
+    "caliper"
+   ],
+   "ok": true
+  },
+  {
+   "key": "gt:arancio",
+   "lod0Tris": 128820,
+   "materials": 13,
+   "materialNames": [
+    "paint",
+    "glass",
+    "trim-gloss-black",
+    "plastic-matte",
+    "headlight",
+    "taillight",
+    "chrome",
+    "grille",
+    "rubber",
+    "rim",
+    "brake-disc",
+    "interior",
+    "caliper"
+   ],
+   "ok": true
+  },
+  {
+   "key": "gt:nero",
+   "lod0Tris": 128820,
+   "materials": 13,
+   "materialNames": [
+    "paint",
+    "glass",
+    "trim-gloss-black",
+    "plastic-matte",
+    "headlight",
+    "taillight",
+    "chrome",
+    "grille",
+    "rubber",
+    "rim",
+    "brake-disc",
+    "interior",
+    "caliper"
+   ],
+   "ok": true
+  },
+  {
+   "key": "hatch:rosso",
+   "lod0Tris": 122182,
+   "materials": 13,
+   "materialNames": [
+    "paint",
+    "glass",
+    "trim-gloss-black",
+    "plastic-matte",
+    "headlight",
+    "taillight",
+    "chrome",
+    "grille",
+    "rubber",
+    "rim",
+    "brake-disc",
+    "interior",
+    "caliper"
+   ],
+   "ok": true
+  },
+  {
+   "key": "hatch:blu",
+   "lod0Tris": 122182,
+   "materials": 13,
+   "materialNames": [
+    "paint",
+    "glass",
+    "trim-gloss-black",
+    "plastic-matte",
+    "headlight",
+    "taillight",
+    "chrome",
+    "grille",
+    "rubber",
+    "rim",
+    "brake-disc",
+    "interior",
+    "caliper"
+   ],
+   "ok": true
+  },
+  {
+   "key": "hatch:bianco",
+   "lod0Tris": 122182,
+   "materials": 13,
+   "materialNames": [
+    "paint",
+    "glass",
+    "trim-gloss-black",
+    "plastic-matte",
+    "headlight",
+    "taillight",
+    "chrome",
+    "grille",
+    "rubber",
+    "rim",
+    "brake-disc",
+    "interior",
+    "caliper"
+   ],
+   "ok": true
+  },
+  {
+   "key": "hatch:verde",
+   "lod0Tris": 122182,
+   "materials": 13,
+   "materialNames": [
+    "paint",
+    "glass",
+    "trim-gloss-black",
+    "plastic-matte",
+    "headlight",
+    "taillight",
+    "chrome",
+    "grille",
+    "rubber",
+    "rim",
+    "brake-disc",
+    "interior",
+    "caliper"
+   ],
+   "ok": true
+  },
+  {
+   "key": "hatch:arancio",
+   "lod0Tris": 122182,
+   "materials": 13,
+   "materialNames": [
+    "paint",
+    "glass",
+    "trim-gloss-black",
+    "plastic-matte",
+    "headlight",
+    "taillight",
+    "chrome",
+    "grille",
+    "rubber",
+    "rim",
+    "brake-disc",
+    "interior",
+    "caliper"
+   ],
+   "ok": true
+  },
+  {
+   "key": "hatch:nero",
+   "lod0Tris": 122182,
+   "materials": 13,
+   "materialNames": [
+    "paint",
+    "glass",
+    "trim-gloss-black",
+    "plastic-matte",
+    "headlight",
+    "taillight",
+    "chrome",
+    "grille",
+    "rubber",
+    "rim",
+    "brake-disc",
+    "interior",
+    "caliper"
+   ],
+   "ok": true
+  }
+ ],
+ "boxes": [],
+ "flat": [],
+ "lowTex": [],
+ "counts": {
+  "houses": 88,
+  "houseStyles": 6,
+  "houseHeights": {
+   "max": 0
+  },
+  "vegetationSpecies": [
+   "olive",
+   "cypress",
+   "palm",
+   "shrub",
+   "grass",
+   "shrubFlower",
+   "pine"
+  ],
+  "vegetationInstances": 3258,
+  "propsPer100m": {
+   "min": 16,
+   "avg": 32.6,
+   "bins": [
+    19,
+    18,
+    19,
+    29,
+    16,
+    18,
+    18,
+    17,
+    18,
+    18,
+    17,
+    18,
+    18,
+    22,
+    115,
+    93,
+    93,
+    114,
+    115,
+    26,
+    18,
+    17,
+    17,
+    18,
+    18,
+    19,
+    18,
+    17,
+    25,
+    30,
+    22,
+    18,
+    19
+   ]
+  },
+  "loadedTextures": 258
+ },
+ "audio": {
+  "sampleBased": true,
+  "bands": [
+   {
+    "rpm": 850,
+    "seconds": 0.321,
+    "channels": 1
+   },
+   {
+    "rpm": 3150,
+    "seconds": 0.326,
+    "channels": 1
+   },
+   {
+    "rpm": 4050,
+    "seconds": 0.318,
+    "channels": 1
+   },
+   {
+    "rpm": 5050,
+    "seconds": 0.311,
+    "channels": 1
+   },
+   {
+    "rpm": 5950,
+    "seconds": 0.312,
+    "channels": 1
+   },
+   {
+    "rpm": 6900,
+    "seconds": 0.314,
+    "channels": 1
+   }
+  ],
+  "oscillatorAsMainSound": false
+ },
+ "meshesChecked": 384,
+ "instancesChecked": 784,
+ "texturesChecked": 129,
+ "ok": {
+  "cars": true,
+  "boxes": true,
+  "flat": true,
+  "textures": true,
+  "houses": true,
+  "vegetation": true,
+  "props": true,
+  "audio": true
+ },
+ "pass": true
+}

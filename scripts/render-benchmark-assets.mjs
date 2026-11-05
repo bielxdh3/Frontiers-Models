@@ -19,16 +19,22 @@ const racingRuns = racing.current_arena.map(id => {
   if (!run) throw new Error('Missing current Racing run: ' + id);
   return run;
 });
+const currentRunCount = racingRuns.length + orbitRuns.length;
 if (orbitRuns.length !== 5 || new Set(orbitRuns.map(run => run.id)).size !== 5 ||
     !orbitRuns.some(run => run.model === 'Gemini 4 Argon') ||
     orbitRuns.some(run => run.model === 'Gemini 3.8 Flash') ||
-    racingRuns.length !== 2 || racingRuns[0].id !== 'gemini-3.8-v3.4' ||
+    racingRuns.length !== 4 || racingRuns[0].id !== 'gemini-3.8-v3.4' ||
     racingRuns[1].id !== 'gpt-6.1-sol-v3.4' ||
+    racingRuns[2].id !== 'gpt-6-astra-v3.4' ||
+    racingRuns[3].id !== 'opus-5.5-v3.4' ||
+    racingRuns[3].live_url !== 'https://racing-opus-5.5.biel.dev.br/' ||
+    racingRuns[3].site_url !== 'https://racing-opus-5.5.biel.dev.br/' ||
     racing.current_prompt !== 'racing-v3.4' ||
     racing.legacy_runs.length !== 3 || racing.legacy_runs.some(id => racing.current_arena.includes(id)) ||
     orbitRuns.some(run => !run.live_url?.startsWith('https://')) ||
-    racingRuns.some(run => !run.display_status.startsWith('current-') || !run.live_url?.startsWith('https://'))) {
-  throw new Error('Hero expects two current Racing sources and live sites plus five current Orbitarium references');
+    racingRuns.some(run => !run.display_status.startsWith('current-') ||
+      (run.live_url !== null && !run.live_url?.startsWith('https://')))) {
+  throw new Error('Hero expects four current Racing sources and five current Orbitarium references; supplied game URLs must be valid');
 }
 
 const escape = value => String(value).replaceAll('&', '&amp;')
@@ -44,17 +50,17 @@ function badge({ run, x, y, width, accent, benchmark }) {
 }
 
 const racingBadges = racingRuns.map((run, i) =>
-  badge({ run, x: 769.5 + i * 239, y: 173, width: 225,
-    accent: ['#80e9f2', '#facc6b'][i], benchmark: 'racing' })
+  badge({ run, x: 769.5 + (i % 2) * 239, y: i < 2 ? 173 : 235, width: 225,
+    accent: ['#80e9f2', '#facc6b', '#aaa7ff', '#ff99cc'][i], benchmark: 'racing' })
 ).join('\n    ');
 const orbitBadges = orbitRuns.map((run, i) =>
-  badge({ run, x: i < 3 ? 650 + i * 239 : 769.5 + (i - 3) * 239, y: i < 3 ? 390 : 452,
+  badge({ run, x: i < 3 ? 650 + i * 239 : 769.5 + (i - 3) * 239, y: i < 3 ? 455 : 517,
     width: 225, accent: ['#facc6b', '#aaa7ff', '#d2a2ff', '#72dfbd', '#83caff'][i], benchmark: 'orbitarium' })
 ).join('\n    ');
 
-const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" role="img" aria-labelledby="title desc">
+const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 650" role="img" aria-labelledby="title desc">
   <title id="title">Frontier Models — Racing and Orbitarium benchmark collection</title>
-  <desc id="desc">Two benchmarks. Racing-bench V3.4 current: ${escape(racingRuns.map(run => run.model).join(', '))}. Orbitarium current: ${escape(orbitRuns.map(run => run.model).join(', '))}.</desc>
+  <desc id="desc">${currentRunCount} current runs across two benchmarks: ${racingRuns.length} Racing V3.4 (${escape(racingRuns.map(run => run.model).join(', '))}) and ${orbitRuns.length} Orbitarium (${escape(orbitRuns.map(run => run.model).join(', '))}).</desc>
   <defs>
     <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#080f1d"/>
@@ -77,12 +83,12 @@ const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" rol
     <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
       <path d="M36 0H0V36" fill="none" stroke="#4b6386" stroke-opacity=".12" stroke-width=".8"/>
     </pattern>
-    <clipPath id="canvas"><rect width="1440" height="560" rx="30"/></clipPath>
+    <clipPath id="canvas"><rect width="1440" height="650" rx="30"/></clipPath>
   </defs>
   <g clip-path="url(#canvas)" font-family="Inter,Segoe UI,Arial,sans-serif">
-    <rect width="1440" height="560" fill="url(#base)"/>
-    <rect width="1440" height="560" fill="url(#grid)"/>
-    <path d="M0 0H12V560H0Z" fill="url(#rail)"/>
+    <rect width="1440" height="650" fill="url(#base)"/>
+    <rect width="1440" height="650" fill="url(#grid)"/>
+    <path d="M0 0H12V650H0Z" fill="url(#rail)"/>
     <path d="M42 37H555" stroke="#33445b" stroke-width="1"/>
     <g opacity=".34" stroke="#50708f" stroke-width="1" fill="none">
       <path d="M0 485L585 -100M0 560L605 -45M115 560L675 0"/>
@@ -92,8 +98,13 @@ const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" rol
     <text x="66" y="313" font-size="88" font-weight="800" letter-spacing="-4" fill="#f1f6fd">MODELS</text>
     <rect x="73" y="345" width="108" height="5" rx="2.5" fill="#ffb76b"/>
     <rect x="181" y="345" width="116" height="5" rx="2.5" fill="#85e4eb"/>
+    <g data-role="current-run-count" aria-label="${currentRunCount} current runs: ${racingRuns.length} Racing and ${orbitRuns.length} Orbitarium">
+      <text x="69" y="448" font-size="68" font-weight="800" letter-spacing="-2" fill="#f1f6fd">${String(currentRunCount).padStart(2, '0')}</text>
+      <text x="188" y="412" font-size="21" font-weight="700" fill="#b7cbe1">CURRENT RUNS</text>
+      <text x="188" y="442" font-size="17" font-weight="600" fill="#85e4eb">${racingRuns.length} Racing · ${orbitRuns.length} Orbitarium</text>
+    </g>
     <g data-benchmark="racing">
-      <rect x="613" y="51" width="775" height="215" rx="22" fill="url(#race)" stroke="#7d5565" stroke-opacity=".8"/>
+      <rect x="613" y="51" width="775" height="280" rx="22" fill="url(#race)" stroke="#7d5565" stroke-opacity=".8"/>
       <path d="M649 67H929" stroke="#fdaf6d" stroke-width="3" stroke-linecap="round"/>
       <text x="1200" y="84" font-size="17" font-weight="700" fill="#ffc99d">V3.4 CURRENT</text>
       <g stroke="#ec9b70" fill="none" stroke-linecap="round" opacity=".27">
@@ -104,8 +115,8 @@ const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" rol
       ${racingBadges}
     </g>
     <g data-benchmark="orbitarium">
-      <rect x="613" y="280" width="775" height="250" rx="22" fill="url(#orbit)" stroke="#3e617f" stroke-opacity=".8"/>
-      <path d="M649 297H929" stroke="#83caff" stroke-width="3" stroke-linecap="round"/>
+      <rect x="613" y="345" width="775" height="270" rx="22" fill="url(#orbit)" stroke="#3e617f" stroke-opacity=".8"/>
+      <path d="M649 362H929" stroke="#83caff" stroke-width="3" stroke-linecap="round"/>
       <g opacity=".25" fill="none" stroke="#8eb6f0" stroke-width="1.2">
         <path d="M1162 307l22 24 42 -10 26 28 39 -15 38 19"/>
         <path d="M1204 318l-12 34 46 21 31 -24"/>
@@ -114,7 +125,7 @@ const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 560" rol
         <circle cx="1252" cy="349" r="3" fill="#9fc9ff"/>
         <circle cx="1291" cy="334" r="3" fill="#9fc9ff"/>
       </g>
-      <text x="649" y="362" font-size="38" font-weight="800" fill="#f0f8ff">Orbitarium-bench</text>
+      <text x="649" y="427" font-size="38" font-weight="800" fill="#f0f8ff">Orbitarium-bench</text>
       ${orbitBadges}
     </g>
   </g>

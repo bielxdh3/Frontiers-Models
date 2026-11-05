@@ -1,0 +1,3 @@
+[log] [validateWorld] OK {"maxTerrainAboveRoad":-0.0444,"maxEdgeGap":0.1173,"surfaceSamples":70833,"objects":5142,"houses":89,"exclusionViolations":0,"baseViolations":0,"houseOverlaps":0,"maxBankDeg":5.593,"maxGradePct":9.386,"minRadius":31.09,"minRadiusAtS":900.1,"length":3372.32,"checkpoints":33}
+[warning] THREE.WebGLProgram: Program Info Log: (59,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value
+(59,12-86): warning X3595: gradient instruction used in a loop with varying iteration; partial derivatives may have undefined value

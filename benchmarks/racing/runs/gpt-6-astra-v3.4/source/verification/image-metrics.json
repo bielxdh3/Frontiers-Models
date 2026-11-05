@@ -1,0 +1,182 @@
+[
+  {
+    "id": "s2",
+    "file": "s2-grid-3-4-73fps.png",
+    "skyFraction": 0.354945987654321,
+    "luminanceMean": 0.41343388911705614,
+    "luminanceStd": 0.2273428671556324,
+    "maxExactColorFraction": 0.007751253858024692,
+    "pass": true,
+    "fps": {
+      "meanFPS": 72.54012365401393,
+      "onePercentLow": 36.23188402667263,
+      "frames": 89,
+      "seconds": 1.2269072
+    }
+  },
+  {
+    "id": "s12",
+    "file": "s12-mapa-45fps.png",
+    "skyFraction": null,
+    "luminanceMean": 0.24453621871178294,
+    "luminanceStd": 0.1945946269043183,
+    "maxExactColorFraction": 0.016262538580246913,
+    "pass": false,
+    "fps": {
+      "meanFPS": 44.99740903311737,
+      "onePercentLow": 25.51020412817939,
+      "frames": 56,
+      "seconds": 1.2445161
+    }
+  },
+  {
+    "id": "s1",
+    "file": "s1-reta-orla-100fps.png",
+    "skyFraction": 0.34762345679012346,
+    "luminanceMean": 0.41965785080503587,
+    "luminanceStd": 0.22926456944180604,
+    "maxExactColorFraction": 0.0033550347222222224,
+    "pass": true,
+    "fps": {
+      "meanFPS": 99.73525647086053,
+      "onePercentLow": 79.68127482471117,
+      "frames": 121,
+      "seconds": 1.2132119
+    }
+  },
+  {
+    "id": "s3",
+    "file": "s3-praia-espuma-92fps.png",
+    "skyFraction": 0.4638503086419753,
+    "luminanceMean": 0.545836746000969,
+    "luminanceStd": 0.18299743531903628,
+    "maxExactColorFraction": 0.0024310378086419755,
+    "pass": true,
+    "fps": {
+      "meanFPS": 92.05489792467985,
+      "onePercentLow": 45.76659046392407,
+      "frames": 112,
+      "seconds": 1.2166653
+    }
+  },
+  {
+    "id": "s8",
+    "file": "s8-disputa-58fps.png",
+    "skyFraction": 0.3422145061728395,
+    "luminanceMean": 0.4210990087059156,
+    "luminanceStd": 0.22539971019178054,
+    "maxExactColorFraction": 0.005959201388888889,
+    "pass": true,
+    "fps": {
+      "meanFPS": 57.793742598229215,
+      "onePercentLow": 6.877579093287306,
+      "frames": 71,
+      "seconds": 1.2285067
+    }
+  },
+  {
+    "id": "s4",
+    "file": "s4-falesia-mirante-67fps.png",
+    "skyFraction": 0.37415895061728394,
+    "luminanceMean": 0.4000006890945012,
+    "luminanceStd": 0.23113369038507173,
+    "maxExactColorFraction": 0.004910783179012346,
+    "pass": true,
+    "fps": {
+      "meanFPS": 67.32887453945631,
+      "onePercentLow": 25.906735735293662,
+      "frames": 83,
+      "seconds": 1.2327549
+    }
+  },
+  {
+    "id": "s9",
+    "file": "s9-close-pista-97fps.png",
+    "skyFraction": 0.43296296296296294,
+    "luminanceMean": 0.45392360998012643,
+    "luminanceStd": 0.22208250020719741,
+    "maxExactColorFraction": 0.018941936728395063,
+    "pass": true,
+    "fps": {
+      "meanFPS": 97.04393483220159,
+      "onePercentLow": 51.67958665882202,
+      "frames": 118,
+      "seconds": 1.2159441
+    }
+  },
+  {
+    "id": "s5",
+    "file": "s5-vila-rua-91fps.png",
+    "skyFraction": 0.3321604938271605,
+    "luminanceMean": 0.3726787942911278,
+    "luminanceStd": 0.22160820107092205,
+    "maxExactColorFraction": 0.0044835069444444445,
+    "pass": true,
+    "fps": {
+      "meanFPS": 90.62568715897451,
+      "onePercentLow": 63.89776343225801,
+      "frames": 110,
+      "seconds": 1.2137839
+    }
+  },
+  {
+    "id": "s10",
+    "file": "s10-baixa-vila-87fps.png",
+    "skyFraction": 0.3321604938271605,
+    "luminanceMean": 0.3716570089788613,
+    "luminanceStd": 0.2202977129012599,
+    "maxExactColorFraction": 0.004562596450617284,
+    "pass": true,
+    "fps": {
+      "meanFPS": 86.51768267804408,
+      "onePercentLow": 45.76659046392407,
+      "frames": 107,
+      "seconds": 1.2367414
+    }
+  },
+  {
+    "id": "s11",
+    "file": "s11-escala-100fps.png",
+    "skyFraction": 0.36594135802469135,
+    "luminanceMean": 0.3910053811003932,
+    "luminanceStd": 0.21840477693861107,
+    "maxExactColorFraction": 0.008738425925925926,
+    "pass": true,
+    "fps": {
+      "meanFPS": 99.85021649081979,
+      "onePercentLow": 75.18796985742027,
+      "frames": 122,
+      "seconds": 1.2218301
+    }
+  },
+  {
+    "id": "s6",
+    "file": "s6-bosque-luz-100fps.png",
+    "skyFraction": 0.2590817901234568,
+    "luminanceMean": 0.31207863893293075,
+    "luminanceStd": 0.20732658143580518,
+    "maxExactColorFraction": 0.004862075617283951,
+    "pass": true,
+    "fps": {
+      "meanFPS": 99.93271743106732,
+      "onePercentLow": 94.78672975071603,
+      "frames": 122,
+      "seconds": 1.2208214
+    }
+  },
+  {
+    "id": "s7",
+    "file": "s7-ponte-ou-tunel-97fps.png",
+    "skyFraction": 0.3731404320987654,
+    "luminanceMean": 0.3604485002649331,
+    "luminanceStd": 0.24123482164892224,
+    "maxExactColorFraction": 0.010453800154320987,
+    "pass": true,
+    "fps": {
+      "meanFPS": 96.93115949052982,
+      "onePercentLow": 43.478260982239405,
+      "frames": 118,
+      "seconds": 1.2173588
+    }
+  }
+]

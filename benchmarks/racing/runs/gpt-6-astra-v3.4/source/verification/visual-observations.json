@@ -1,0 +1,76 @@
+{
+  "s1": [
+    "As sombras são longas e há reflexo do sol no asfalto; a referência 01 tem uma névoa dourada mais rica e contraluz mais recortado nas carrocerias.",
+    "As palmeiras do jogo têm folhas geométricas visíveis, mas as copas são mais esparsas e repetem a mesma organização radial.",
+    "A orla tem bancos, cercas, arbustos e rochas; os taludes distantes ainda têm menos variação de relevo e vegetação que a referência 02."
+  ],
+  "s2": [
+    "O carro tem superfície contínua, caixas de roda abertas e pintura com clearcoat; o perfil das laterais e do para-choque é mais simples que o carro da referência 11.",
+    "Rodas, raios, discos e pinças são geometria separada; o pneu tem menos detalhes de sulcos e inscrições laterais que o da referência.",
+    "O vidro reflete o ambiente, mas o interior e os reflexos locais têm menos detalhes. A iluminação do grid é aberta, sem a oclusão arquitetônica da referência."
+  ],
+  "s3": [
+    "Há areia molhada com reflexo, faixa de espuma e rochas na linha d’água; a espuma do jogo ainda aparece como um padrão mais uniforme que as quebras irregulares da referência 04.",
+    "O mar usa várias ondas e brilho especular, mas o padrão de pequenas ondulações ainda se repete e não tem a mesma turbulência junto às pedras.",
+    "A praia é mais ampla e limpa; faltam a densidade de pequenas pedras, raízes e vegetação rasteira que aparece nas referências 02 e 04."
+  ],
+  "s4": [
+    "A serpentina tem desnível real, vista do mar e guardrails acompanhando a inclinação; os grandes afloramentos rochosos da referência 02 têm silhuetas muito mais irregulares.",
+    "O talude mistura textura de solo e rocha conforme a inclinação, mas continua mais regular e arredondado que a falésia da referência.",
+    "A sinalização, zebras e margens são legíveis, porém a distribuição de arbustos e pequenas pedras tem menos variação de escala e agrupamento."
+  ],
+  "s5": [
+    "A igreja aparece ao fundo e as casas têm janelas recuadas, persianas, beirais e chaminés; a igreja é geometricamente mais simples que o marco da referência 05.",
+    "As seis fachadas variam cor, altura, sacada e toldo, mas repetem a distribuição de janelas e ficam mais espaçadas que a rua da referência 06.",
+    "O pavimento lateral e os muros seguem a rua; faltam desgaste localizado, placas comerciais e pequenos objetos nas fachadas com a riqueza da referência 07."
+  ],
+  "s6": [
+    "Pinheiros e oliveiras lançam sombras atravessando a pista; a copa é mais aberta e a densidade de folhas é menor que a da referência 08.",
+    "O terreno tem solo texturizado, arbustos e rochas; o sub-bosque ainda é menos estratificado que a mistura de plantas altas e baixas da referência.",
+    "O sol é rasante e quente, mas a cena não reproduz os feixes volumétricos e a poeira suspensa iluminada da referência 10."
+  ],
+  "s7": [
+    "A ponte tem arcos metálicos, tirantes e parapeito de pedra ligados ao traçado; sua estrutura é diferente da ponte de concreto baixa da referência 14.",
+    "A câmera mostra a travessia por cima do tabuleiro; a referência evidencia mais claramente os pilares e o vão visto lateralmente.",
+    "O entorno tem árvores e litoral, mas não reproduz a variedade de rocha exposta, campos e relevo montanhoso ao fundo da referência."
+  ],
+  "s8": [
+    "Os carros disputam linhas distintas com posições vindas da física; o enquadramento de perseguição mostra menos detalhe frontal que as referências 09 e 13.",
+    "Há diferenças de cor e dois perfis de carroceria, mas a variedade de modelos e detalhes externos é menor que a dos carros das referências.",
+    "O desfoque de velocidade é discreto; as referências têm mais borramento direcional do entorno e reflexos locais mais complexos nas latarias."
+  ],
+  "s9": [
+    "Sem referência designada. O close permite ver o agregado do asfalto em 2048 px e as marcas pintadas seguindo a geometria da curva.",
+    "O guardrail tem postes e perfil com espessura; as juntas entre segmentos ainda são mais repetitivas e regulares que numa estrada real.",
+    "As zebras são faixas texturizadas rasas; não possuem todas as irregularidades, trincas e sujeira acumulada de uma superfície escaneada."
+  ],
+  "s10": [
+    "Sem referência designada; comparação com S5. O preset Baixa mantém os mesmos edifícios, carros e mapas PBR.",
+    "A resolução interna menor suaviza detalhes de janelas, pneus e pintura; diagonais finas têm menos definição.",
+    "As sombras têm menor resolução, a vegetação distante desaparece antes e o bloom/desfoque ficam desativados."
+  ],
+  "s11": [
+    "Sem referência designada. O carro parado e a casa aparecem no mesmo sistema métrico; a porta foi modelada com 2,10 m de altura e o carro tem cerca de 1,3 m.",
+    "Persianas, molduras e toldo têm volume, mas o muro lateral encobre parte da região inferior da fachada.",
+    "A fundação acompanha o solo, embora a transição entre a base da casa e o pavimento ainda seja mais uniforme e limpa que uma construção real."
+  ],
+  "s12": [
+    "Sem referência designada. A vista superior mostra o circuito fechado completo e a transição entre orla, serpentinas, vila e bosque.",
+    "O heightfield mantém continuidade junto à pista, mas a terraplenagem cria faixas largas e regulares ao redor de alguns trechos.",
+    "A distribuição de árvores e casas revela repetição; há uma descontinuidade retangular de cor no mar no limite do mapa de profundidade."
+  ],
+  "veto": {
+    "s1": "Abaixo do alvo: há trechos amplos e pouco detalhados nas margens, além de repetição perceptível dos arbustos. A imagem mostra céu e sombras, mas isso não elimina esses pontos de veto.",
+    "s2": "Não há penetração aparente do carro no asfalto, e carroceria e rodas têm volume. O vidro e a lataria continuam visualmente simples e excessivamente uniformes para aprovar P2.",
+    "s3": "Reprovado pelo padrão repetitivo dominante da água e da espuma. O mar tem relevo de ondas e espuma, mas sua regularidade continua visível.",
+    "s4": "Abaixo do alvo: o talude tem grandes áreas com poucos detalhes e vegetação esparsa. A estrada acompanha o terreno, mas a margem não tem o acabamento exigido.",
+    "s5": "Abaixo do alvo: os intervalos entre edifícios e as grandes áreas pavimentadas parecem vazios. As fachadas têm volume, mas sua organização se repete.",
+    "s6": "Reprovado pela repetição das copas e pelo sub-bosque pouco preenchido. Céu e sombras são visíveis; a densidade numérica não corresponde à riqueza visual das referências.",
+    "s7": "A estrutura está conectada à estrada, sem penetração aparente na imagem. O entorno é esparso e as copas repetidas continuam abaixo do alvo visual.",
+    "s8": "Os três carros estão em linhas distintas, sem sobreposição aparente neste quadro. Persistem as margens esparsas e repetitivas da orla e a simplicidade das carrocerias.",
+    "s9": "Asfalto, zebra e guardrail estão visíveis após corrigir a câmera. A zebra e o metal têm aparência excessivamente uniforme no close; os mapas existentes não resolvem esse limite visual.",
+    "s10": "Mantém os problemas visuais de S5: espaços vazios e repetição arquitetônica. As formas continuam modeladas no preset Baixa.",
+    "s11": "Carro e casa têm apoio aparente no solo; a porta permite comparar escala. O muro encobre parte da fachada e as áreas laterais continuam pouco detalhadas.",
+    "s12": "A vista superior evidencia repetição de distribuição, grandes áreas uniformes e um limite retangular de cor no mar. Não constitui aprovação artística do circuito."
+  }
+}

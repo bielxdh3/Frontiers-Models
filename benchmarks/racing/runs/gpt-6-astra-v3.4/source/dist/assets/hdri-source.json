@@ -1,0 +1,86 @@
+{
+  "hdri": {
+    "16k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/exr/16k%2B/noordhoek_sunset_2_16k.exr",
+        "md5": "82a3bfc619ea0ab2cbddf2c1cd63b5c4",
+        "size": 1243042461
+      },
+      "hdr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/16k%2B/noordhoek_sunset_2_16k.hdr",
+        "md5": "1e48203ed131cf773f06bbc798fb5fe1",
+        "size": 397234539
+      }
+    },
+    "24k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/exr/16k%2B/noordhoek_sunset_2_24k.exr",
+        "md5": "ae9577c7edddf429c67b5b34a913fb8a",
+        "size": 2828999158
+      },
+      "hdr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/16k%2B/noordhoek_sunset_2_24k.hdr",
+        "md5": "5ca69186bb6451342490b37617c4a230",
+        "size": 884150733
+      }
+    },
+    "1k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/exr/1k/noordhoek_sunset_2_1k.exr",
+        "md5": "8ef62693aa8ce43fe2e762af4e4451e3",
+        "size": 5477739
+      },
+      "hdr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/noordhoek_sunset_2_1k.hdr",
+        "md5": "3d9131c56b477c861294933e43732c68",
+        "size": 1542136
+      }
+    },
+    "2k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/exr/2k/noordhoek_sunset_2_2k.exr",
+        "md5": "0d00a3efc3ad9ba5b395ddc951570f4f",
+        "size": 20656699
+      },
+      "hdr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/noordhoek_sunset_2_2k.hdr",
+        "md5": "ca96c8c22e463727bb24cf4413a8c9b8",
+        "size": 6266638
+      }
+    },
+    "4k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/exr/4k/noordhoek_sunset_2_4k.exr",
+        "md5": "20f2c6e55432699b78cf6444596de903",
+        "size": 80653117
+      },
+      "hdr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/4k/noordhoek_sunset_2_4k.hdr",
+        "md5": "f218d9476c4ee070d65d9d35446f2c7a",
+        "size": 25382945
+      }
+    },
+    "8k": {
+      "exr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/exr/8k/noordhoek_sunset_2_8k.exr",
+        "md5": "ad45a9e5347ea805fed8212d738c3a5a",
+        "size": 320654283
+      },
+      "hdr": {
+        "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/8k/noordhoek_sunset_2_8k.hdr",
+        "md5": "be7dfacc4fa02daaf04d19788760a81e",
+        "size": 101764526
+      }
+    }
+  },
+  "colorchart": {
+    "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Color%20Charts/noordhoek_sunset_2.zip",
+    "md5": "891ffc2dce1af9d98e20cc0ffc94d6ad",
+    "size": 755308815
+  },
+  "tonemapped": {
+    "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/extra/Tonemapped%20JPG/noordhoek_sunset_2.jpg",
+    "md5": "749e07f553cb2536b97c86ddaf656c19",
+    "size": 21513471
+  }
+}

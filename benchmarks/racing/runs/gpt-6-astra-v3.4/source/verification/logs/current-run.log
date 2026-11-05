@@ -1,0 +1,80 @@
+Scene ready
+PASS Garage: two models, six colors and number
+PASS Five-second grid plus locked 3-2-1 start
+PASS Real keyboard driving
+PASS Hood camera toggle
+PASS Pause freezes simulation
+PASS Resume restores race
+3 laps: 0.4 min simulated
+3 laps: 1.9 min simulated
+3 laps: 3.4 min simulated
+3 laps: 4.9 min simulated
+PASS 3-lap journey reaches results
+PASS 3-lap vehicle integrity
+PASS 3-lap AI overtaking and progress
+PASS 3-lap camera integrity
+PASS 3-lap projected times marked
+PASS Retry starts a fresh grid
+6 laps: 0.4 min simulated
+6 laps: 1.9 min simulated
+6 laps: 3.4 min simulated
+6 laps: 4.9 min simulated
+6 laps: 6.4 min simulated
+6 laps: 7.9 min simulated
+6 laps: 9.4 min simulated
+6 laps: 10.7 min simulated
+PASS 6-lap journey reaches results
+PASS 6-lap vehicle integrity
+PASS 6-lap AI overtaking and progress
+PASS 6-lap camera integrity
+PASS 6-lap projected times marked
+PASS Three restarts do not duplicate voices
+PASS Heap stable after three restarts
+PASS Menu stops race voices
+PASS Shortcut cannot count a lap
+PASS World geometry validates
+PASS Scene car triangle/material thresholds
+PASS Scene box/flat/texture detectors
+PASS Scene density and variety
+PASS Recorded sample engine connections
+CAPTURE s2-grid-3-4-73fps.png sky=0.355 luminance=0.413 std=0.227
+CAPTURE s12-mapa-45fps.png sky=n/a luminance=0.245 std=0.195
+CAPTURE s1-reta-orla-100fps.png sky=0.348 luminance=0.420 std=0.229
+CAPTURE s3-praia-espuma-92fps.png sky=0.464 luminance=0.546 std=0.183
+CAPTURE s8-disputa-58fps.png sky=0.342 luminance=0.421 std=0.225
+CAPTURE s4-falesia-mirante-67fps.png sky=0.374 luminance=0.400 std=0.231
+CAPTURE s9-close-pista-69fps.png sky=0.344 luminance=0.402 std=0.214
+CAPTURE s5-vila-rua-91fps.png sky=0.332 luminance=0.373 std=0.222
+CAPTURE s10-baixa-vila-87fps.png sky=0.332 luminance=0.372 std=0.220
+CAPTURE s11-escala-100fps.png sky=0.366 luminance=0.391 std=0.218
+CAPTURE s6-bosque-luz-100fps.png sky=0.259 luminance=0.312 std=0.207
+CAPTURE s7-ponte-ou-tunel-97fps.png sky=0.373 luminance=0.360 std=0.241
+PASS S1–S9 numerical image sanity
+Camera sweep 0 m
+Camera sweep 500 m
+Camera sweep 1000 m
+Camera sweep 1500 m
+Camera sweep 2000 m
+Camera sweep 2500 m
+PASS Every 25m camera sweep image sanity
+high: 55.5 FPS, 1% low 28.9
+low: 91.3 FPS, 1% low 50.0
+FAIL Measured high/low mean FPS >=60 on available GPU
+Recording one complete real-time lap with master audio
+Recording 0.0 s, laps 0
+Recording 8.1 s, laps 0
+Recording 20.1 s, laps 0
+Recording 32.1 s, laps 0
+Recording 42.0 s, laps 0
+Recording 54.1 s, laps 0
+Recording 65.9 s, laps 0
+Recording 77.7 s, laps 0
+Recording 88.5 s, laps 0
+Recording 100.6 s, laps 0
+Recording 112.7 s, laps 1
+PASS Full lap WebM and WAV captured
+PASS Master peak <= -1 dBFS
+PASS Recorded lap integrity
+PASS No runtime browser errors
+PASS Offline asset loading: zero external requests
+FAIL: 33/34 automated checks. Visual comparisons and hardware scope are reported separately.

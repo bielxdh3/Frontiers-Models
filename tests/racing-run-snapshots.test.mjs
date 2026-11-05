@@ -142,3 +142,93 @@ test('GPT-6.1 Sol V3.4: all 104 upstream Git-tracked blobs archived byte-exactly
   assert.equal(totalBytes, 142958723);
   assert.deepEqual(walk(sourceDir), [...paths].sort());
 });
+
+test('GPT-6 Astra V3.4: all 1,183 upstream Git blobs archived with byte-exact provenance', () => {
+  const run = registry.runs.find(run => run.id === 'gpt-6-astra-v3.4');
+  assert.ok(run && registry.current_arena.includes(run.id));
+  assert.equal(run.source_commit, 'daf0099699a0e8201b8bc4f1dca6909f92700b3b');
+  assert.equal(run.source_tree, 'b115486c104e25041bf2116865de91b6c4a31132');
+  assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
+  assert.equal(run.git_bundle, null);
+  const manifest = JSON.parse(readFileSync(resolve(racing, run.manifest), 'utf8'));
+  assert.equal(manifest.source_commit, run.source_commit);
+  assert.equal(manifest.source_tree, run.source_tree);
+  assert.equal(manifest.source_repository, run.source_repository);
+  assert.equal(manifest.file_count, 1183);
+  assert.equal(manifest.total_bytes, 432577165);
+  assert.equal(run.source_file_count, manifest.file_count);
+  assert.equal(run.source_bytes, manifest.total_bytes);
+  assert.deepEqual(manifest.lfs_pointer_paths, []);
+  const sourceDir = resolve(racing, run.archive_path);
+  let totalBytes = 0;
+  const paths = new Set();
+  for (const entry of manifest.files) {
+    assert.match(entry.path, /^(?!\/)(?!.*(?:^|\/)\.\.(?:\/|$))[\w./+@() -]+$/, entry.path);
+    assert.ok(['100644', '100755'].includes(entry.mode), entry.path);
+    assert.ok(!paths.has(entry.path), 'duplicate path: ' + entry.path);
+    paths.add(entry.path);
+    const filePath = resolve(sourceDir, ...entry.path.split('/'));
+    assert.ok(filePath.startsWith(sourceDir + requireSeparator()), entry.path);
+    assert.ok(lstatSync(filePath).isFile(), entry.path);
+    const bytes = readFileSync(filePath);
+    assert.equal(bytes.length, entry.bytes, entry.path);
+    assert.equal(sha256(bytes), entry.sha256, entry.path);
+    assert.equal(gitBlob(bytes), entry.git_blob_sha1, entry.path);
+    totalBytes += bytes.length;
+  }
+  assert.equal(paths.size, 1183);
+  assert.equal(totalBytes, 432577165);
+  assert.deepEqual(walk(sourceDir), [...paths].sort());
+  const report = readFileSync(resolve(sourceDir, 'verification/REPORT.md'), 'utf8');
+  assert.match(report, /Resultado integral do benchmark: FAIL/);
+  assert.match(report, /33\/34/);
+});
+
+test('Opus 5.5 V3.4: all 2,100 upstream Git blobs archived byte-exactly with owner-provided site', () => {
+  const run = registry.runs.find(run => run.id === 'opus-5.5-v3.4');
+  assert.ok(run && registry.current_arena.includes(run.id));
+  assert.equal(run.model, 'Opus 5.5');
+  assert.equal(run.live_url, 'https://racing-opus-5.5.biel.dev.br/');
+  assert.equal(run.site_url, run.live_url);
+  assert.match(run.site_status, /owner-provided-url-http-404-on-2026-11-05/);
+  assert.equal(run.source_commit, 'e75f298d49bb1324aec329690dc56f53ed0ee643');
+  assert.equal(run.source_tree, 'ca06e6d07ea2e567597ead65726e1d6fe777630f');
+  assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
+  assert.equal(run.git_bundle, null);
+  const manifest = JSON.parse(readFileSync(resolve(racing, run.manifest), 'utf8'));
+  assert.equal(manifest.source_commit, run.source_commit);
+  assert.equal(manifest.source_tree, run.source_tree);
+  assert.equal(manifest.source_repository, 'https://github.com/bielxdh3/opus55');
+  assert.equal(manifest.file_count, 2100);
+  assert.equal(manifest.total_bytes, 285683675);
+  assert.equal(manifest.file_count, run.source_file_count);
+  assert.equal(manifest.total_bytes, run.source_bytes);
+  assert.deepEqual(manifest.lfs_pointer_paths, []);
+  assert.equal(manifest.repository_bundle, null);
+  const sourceDir = resolve(racing, run.archive_path);
+  const paths = new Set();
+  let totalBytes = 0;
+  for (const entry of manifest.files) {
+    assert.ok(!entry.path.startsWith('/') && !entry.path.includes('\\') &&
+      entry.path.split('/').every(part => part !== '' && part !== '.' && part !== '..'),
+      'unsafe source path: ' + entry.path);
+    assert.ok(!paths.has(entry.path), 'duplicate source path: ' + entry.path);
+    paths.add(entry.path);
+    assert.ok(['100644', '100755'].includes(entry.mode), entry.path);
+    const filePath = resolve(sourceDir, ...entry.path.split('/'));
+    assert.ok(filePath.startsWith(sourceDir + requireSeparator()), entry.path);
+    assert.ok(lstatSync(filePath).isFile(), entry.path);
+    const bytes = readFileSync(filePath);
+    assert.equal(bytes.length, entry.bytes, entry.path);
+    assert.equal(sha256(bytes), entry.sha256, entry.path);
+    assert.equal(gitBlob(bytes), entry.git_blob_sha1, entry.path);
+    totalBytes += bytes.length;
+  }
+  assert.equal(paths.size, 2100);
+  assert.equal(totalBytes, 285683675);
+  assert.deepEqual(walk(sourceDir), [...paths].sort());
+  const report = readFileSync(resolve(sourceDir, 'verification/REPORT.md'), 'utf8');
+  assert.match(report, /Nenhum teste automatizado falhou nesta execução/);
+  assert.match(report, /134\.9/);
+  assert.match(report, /não medida/);
+});

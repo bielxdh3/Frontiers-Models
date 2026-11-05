@@ -1,0 +1,9 @@
+{
+  "channels": 2,
+  "sampleRate": 48000,
+  "sampleWidth": 2,
+  "seconds": 125.28,
+  "peakDbFS": -5.1794545743608245,
+  "rmsDbFS": -21.93791937426468,
+  "silent": false
+}

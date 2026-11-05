@@ -1,0 +1,195 @@
+{
+  "snapshot": {
+    "status": "results",
+    "elapsed": 322.5333333332043,
+    "overtakes": 12,
+    "maxStopped": 0.18333333333333332,
+    "records": [
+      {
+        "id": 0,
+        "nextGate": 97,
+        "completed": 3,
+        "lapStart": 322.5333333332043,
+        "laps": [
+          108.9916666667006,
+          106.06666666660021,
+          106.07499999990353
+        ],
+        "best": 106.06666666660021,
+        "invalid": false,
+        "finish": 322.5333333332043,
+        "maxStopped": 0.06666666666666667,
+        "progress": 8548.037893765597
+      },
+      {
+        "id": 1,
+        "nextGate": 94,
+        "completed": 2,
+        "lapStart": 223.00833333329484,
+        "laps": [
+          113.21666666670396,
+          108.38333333325755
+        ],
+        "best": 108.38333333325755,
+        "invalid": false,
+        "finish": null,
+        "maxStopped": 0.18333333333333332,
+        "progress": 8315.447679625955
+      },
+      {
+        "id": 2,
+        "nextGate": 97,
+        "completed": 3,
+        "lapStart": 317.17499999987587,
+        "laps": [
+          107.93333333336692,
+          103.39999999993671,
+          103.81666666657225
+        ],
+        "best": 103.39999999993671,
+        "invalid": false,
+        "finish": 317.17499999987587,
+        "maxStopped": 0.16666666666666666,
+        "progress": 8738.268504568558
+      },
+      {
+        "id": 3,
+        "nextGate": 94,
+        "completed": 2,
+        "lapStart": 223.26666666662794,
+        "laps": [
+          112.80833333337078,
+          108.44166666659049
+        ],
+        "best": 108.44166666659049,
+        "invalid": false,
+        "finish": null,
+        "maxStopped": 0.06666666666666667,
+        "progress": 8305.48620263818
+      },
+      {
+        "id": 4,
+        "nextGate": 97,
+        "completed": 3,
+        "lapStart": 314.8916666665446,
+        "laps": [
+          104.95833333336493,
+          103.708333333274,
+          103.70833333323901
+        ],
+        "best": 103.70833333323901,
+        "invalid": false,
+        "finish": 314.8916666665446,
+        "maxStopped": 0.06666666666666667,
+        "progress": 8822.2006677117
+      },
+      {
+        "id": 5,
+        "nextGate": 97,
+        "completed": 3,
+        "lapStart": 312.50833333321344,
+        "laps": [
+          106.90833333336647,
+          101.54999999993933,
+          101.54999999990764
+        ],
+        "best": 101.54999999990764,
+        "invalid": false,
+        "finish": 312.50833333321344,
+        "maxStopped": 0.06666666666666667,
+        "progress": 8912.752902694356
+      }
+    ],
+    "events": [],
+    "contacts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "results": [
+    {
+      "id": 5,
+      "name": "I. MAR",
+      "time": 312.50833333321344,
+      "projected": false,
+      "best": 101.54999999990764
+    },
+    {
+      "id": 4,
+      "name": "N. VALE",
+      "time": 314.8916666665446,
+      "projected": false,
+      "best": 103.70833333323901
+    },
+    {
+      "id": 2,
+      "name": "A. RIVA",
+      "time": 317.17499999987587,
+      "projected": false,
+      "best": 103.39999999993671
+    },
+    {
+      "id": 0,
+      "name": "VOCÊ",
+      "time": 322.5333333332043,
+      "projected": false,
+      "best": 106.06666666660021
+    },
+    {
+      "id": 1,
+      "name": "L. COSTA",
+      "time": 331.5698007664618,
+      "projected": true,
+      "best": 108.38333333325755
+    },
+    {
+      "id": 3,
+      "name": "M. SOL",
+      "time": 331.9422893587687,
+      "projected": true,
+      "best": 108.44166666659049
+    }
+  ],
+  "integrity": [
+    {
+      "samples": 38704,
+      "minBodyClearance": 0.19681492345716833,
+      "minWheelClearance": 0.05638658980906541,
+      "maxOutside": 0
+    },
+    {
+      "samples": 38704,
+      "minBodyClearance": 0.18251511229209427,
+      "minWheelClearance": 0.05191694172534511,
+      "maxOutside": 0
+    },
+    {
+      "samples": 38704,
+      "minBodyClearance": 0.1825956652052909,
+      "minWheelClearance": 0.04763249658859792,
+      "maxOutside": 0
+    },
+    {
+      "samples": 38704,
+      "minBodyClearance": 0.22855907996444103,
+      "minWheelClearance": 0.06692117626968042,
+      "maxOutside": 0
+    },
+    {
+      "samples": 38704,
+      "minBodyClearance": 0.19681492345716833,
+      "minWheelClearance": 0.05624486353698899,
+      "maxOutside": 0
+    },
+    {
+      "samples": 38704,
+      "minBodyClearance": 0.2119454702846042,
+      "minWheelClearance": 0.0589629960587672,
+      "maxOutside": 0
+    }
+  ]
+}

@@ -1,0 +1,1028 @@
+[
+  {
+    "s": 0,
+    "file": "0000m.png",
+    "skyFraction": 0.3794367283950617,
+    "luminanceMean": 0.49285494375454064,
+    "luminanceStd": 0.21934356777722272,
+    "maxExactColorFraction": 0.004143518518518519,
+    "pass": true
+  },
+  {
+    "s": 25,
+    "file": "0025m.png",
+    "skyFraction": 0.35679783950617283,
+    "luminanceMean": 0.4624637435730002,
+    "luminanceStd": 0.22125200622179525,
+    "maxExactColorFraction": 0.002361111111111111,
+    "pass": true
+  },
+  {
+    "s": 50,
+    "file": "0050m.png",
+    "skyFraction": 0.3460030864197531,
+    "luminanceMean": 0.4475058856511719,
+    "luminanceStd": 0.2276242999979446,
+    "maxExactColorFraction": 0.0033950617283950617,
+    "pass": true
+  },
+  {
+    "s": 75,
+    "file": "0075m.png",
+    "skyFraction": 0.3440432098765432,
+    "luminanceMean": 0.4482213983599764,
+    "luminanceStd": 0.2267628067116259,
+    "maxExactColorFraction": 0.0036805555555555554,
+    "pass": true
+  },
+  {
+    "s": 100,
+    "file": "0100m.png",
+    "skyFraction": 0.33979166666666666,
+    "luminanceMean": 0.44586055497459054,
+    "luminanceStd": 0.2273691914733425,
+    "maxExactColorFraction": 0.004529320987654321,
+    "pass": true
+  },
+  {
+    "s": 125,
+    "file": "0125m.png",
+    "skyFraction": 0.333233024691358,
+    "luminanceMean": 0.4378122083636255,
+    "luminanceStd": 0.22837949673235153,
+    "maxExactColorFraction": 0.004421296296296296,
+    "pass": true
+  },
+  {
+    "s": 150,
+    "file": "0150m.png",
+    "skyFraction": 0.29820987654320985,
+    "luminanceMean": 0.42091651795570856,
+    "luminanceStd": 0.23015823405600738,
+    "maxExactColorFraction": 0.004359567901234568,
+    "pass": true
+  },
+  {
+    "s": 175,
+    "file": "0175m.png",
+    "skyFraction": 0.33386574074074077,
+    "luminanceMean": 0.4401998598099901,
+    "luminanceStd": 0.2291083335589738,
+    "maxExactColorFraction": 0.003703703703703704,
+    "pass": true
+  },
+  {
+    "s": 200,
+    "file": "0200m.png",
+    "skyFraction": 0.33122685185185186,
+    "luminanceMean": 0.43490154647181134,
+    "luminanceStd": 0.23011823034066073,
+    "maxExactColorFraction": 0.003626543209876543,
+    "pass": true
+  },
+  {
+    "s": 225,
+    "file": "0225m.png",
+    "skyFraction": 0.3358564814814815,
+    "luminanceMean": 0.4371889040668277,
+    "luminanceStd": 0.22908288095250623,
+    "maxExactColorFraction": 0.004020061728395061,
+    "pass": true
+  },
+  {
+    "s": 250,
+    "file": "0250m.png",
+    "skyFraction": 0.33489969135802466,
+    "luminanceMean": 0.4366221007383505,
+    "luminanceStd": 0.2293296967523578,
+    "maxExactColorFraction": 0.003942901234567901,
+    "pass": true
+  },
+  {
+    "s": 275,
+    "file": "0275m.png",
+    "skyFraction": 0.33565586419753085,
+    "luminanceMean": 0.43752790741952635,
+    "luminanceStd": 0.2304767450151674,
+    "maxExactColorFraction": 0.004050925925925926,
+    "pass": true
+  },
+  {
+    "s": 300,
+    "file": "0300m.png",
+    "skyFraction": 0.33675925925925926,
+    "luminanceMean": 0.43601693370854916,
+    "luminanceStd": 0.23156397242507418,
+    "maxExactColorFraction": 0.0036959876543209876,
+    "pass": true
+  },
+  {
+    "s": 325,
+    "file": "0325m.png",
+    "skyFraction": 0.3362962962962963,
+    "luminanceMean": 0.4357778436456263,
+    "luminanceStd": 0.22927070228820803,
+    "maxExactColorFraction": 0.0035262345679012348,
+    "pass": true
+  },
+  {
+    "s": 350,
+    "file": "0350m.png",
+    "skyFraction": 0.333125,
+    "luminanceMean": 0.42352875991894434,
+    "luminanceStd": 0.2313077804889799,
+    "maxExactColorFraction": 0.003310185185185185,
+    "pass": true
+  },
+  {
+    "s": 375,
+    "file": "0375m.png",
+    "skyFraction": 0.33270833333333333,
+    "luminanceMean": 0.43291004080128187,
+    "luminanceStd": 0.22604379013145273,
+    "maxExactColorFraction": 0.004421296296296296,
+    "pass": true
+  },
+  {
+    "s": 400,
+    "file": "0400m.png",
+    "skyFraction": 0.3400925925925926,
+    "luminanceMean": 0.4425893639917824,
+    "luminanceStd": 0.22536965011782886,
+    "maxExactColorFraction": 0.003989197530864197,
+    "pass": true
+  },
+  {
+    "s": 425,
+    "file": "0425m.png",
+    "skyFraction": 0.3386651234567901,
+    "luminanceMean": 0.43896758589931334,
+    "luminanceStd": 0.22849292212097402,
+    "maxExactColorFraction": 0.004089506172839506,
+    "pass": true
+  },
+  {
+    "s": 450,
+    "file": "0450m.png",
+    "skyFraction": 0.3360725308641975,
+    "luminanceMean": 0.4367894051319581,
+    "luminanceStd": 0.2254562541919545,
+    "maxExactColorFraction": 0.0038271604938271606,
+    "pass": true
+  },
+  {
+    "s": 475,
+    "file": "0475m.png",
+    "skyFraction": 0.3447145061728395,
+    "luminanceMean": 0.43633365861171797,
+    "luminanceStd": 0.224776365712217,
+    "maxExactColorFraction": 0.003572530864197531,
+    "pass": true
+  },
+  {
+    "s": 500,
+    "file": "0500m.png",
+    "skyFraction": 0.34229938271604937,
+    "luminanceMean": 0.4356881711268565,
+    "luminanceStd": 0.22571004468025846,
+    "maxExactColorFraction": 0.004112654320987654,
+    "pass": true
+  },
+  {
+    "s": 525,
+    "file": "0525m.png",
+    "skyFraction": 0.34074074074074073,
+    "luminanceMean": 0.4296078028625072,
+    "luminanceStd": 0.22742638250795483,
+    "maxExactColorFraction": 0.004845679012345679,
+    "pass": true
+  },
+  {
+    "s": 550,
+    "file": "0550m.png",
+    "skyFraction": 0.33696759259259257,
+    "luminanceMean": 0.4159081427257515,
+    "luminanceStd": 0.2342700901531384,
+    "maxExactColorFraction": 0.005316358024691358,
+    "pass": true
+  },
+  {
+    "s": 575,
+    "file": "0575m.png",
+    "skyFraction": 0.3388734567901235,
+    "luminanceMean": 0.413001080428477,
+    "luminanceStd": 0.23622660667137044,
+    "maxExactColorFraction": 0.00492283950617284,
+    "pass": true
+  },
+  {
+    "s": 600,
+    "file": "0600m.png",
+    "skyFraction": 0.3422530864197531,
+    "luminanceMean": 0.406099495915074,
+    "luminanceStd": 0.24399624504978942,
+    "maxExactColorFraction": 0.004953703703703704,
+    "pass": true
+  },
+  {
+    "s": 625,
+    "file": "0625m.png",
+    "skyFraction": 0.3450925925925926,
+    "luminanceMean": 0.3949428414427826,
+    "luminanceStd": 0.250053561900237,
+    "maxExactColorFraction": 0.005532407407407408,
+    "pass": true
+  },
+  {
+    "s": 650,
+    "file": "0650m.png",
+    "skyFraction": 0.34815586419753086,
+    "luminanceMean": 0.3959807110929687,
+    "luminanceStd": 0.2555777054288963,
+    "maxExactColorFraction": 0.006234567901234568,
+    "pass": true
+  },
+  {
+    "s": 675,
+    "file": "0675m.png",
+    "skyFraction": 0.3434182098765432,
+    "luminanceMean": 0.38496207784438596,
+    "luminanceStd": 0.2442326745721411,
+    "maxExactColorFraction": 0.006327160493827161,
+    "pass": true
+  },
+  {
+    "s": 700,
+    "file": "0700m.png",
+    "skyFraction": 0.33371913580246915,
+    "luminanceMean": 0.35976935864199633,
+    "luminanceStd": 0.23343609707553292,
+    "maxExactColorFraction": 0.00654320987654321,
+    "pass": true
+  },
+  {
+    "s": 725,
+    "file": "0725m.png",
+    "skyFraction": 0.32656635802469136,
+    "luminanceMean": 0.35246096068147276,
+    "luminanceStd": 0.23037971005379088,
+    "maxExactColorFraction": 0.005848765432098765,
+    "pass": true
+  },
+  {
+    "s": 750,
+    "file": "0750m.png",
+    "skyFraction": 0.3212114197530864,
+    "luminanceMean": 0.3464997380295827,
+    "luminanceStd": 0.22877195315049384,
+    "maxExactColorFraction": 0.0053858024691358026,
+    "pass": true
+  },
+  {
+    "s": 775,
+    "file": "0775m.png",
+    "skyFraction": 0.3157253086419753,
+    "luminanceMean": 0.34105374147910744,
+    "luminanceStd": 0.22900670760482178,
+    "maxExactColorFraction": 0.004521604938271605,
+    "pass": true
+  },
+  {
+    "s": 800,
+    "file": "0800m.png",
+    "skyFraction": 0.3130401234567901,
+    "luminanceMean": 0.338381338271643,
+    "luminanceStd": 0.23075446043029624,
+    "maxExactColorFraction": 0.005015432098765432,
+    "pass": true
+  },
+  {
+    "s": 825,
+    "file": "0825m.png",
+    "skyFraction": 0.30451388888888886,
+    "luminanceMean": 0.3529860784313241,
+    "luminanceStd": 0.2245048403467756,
+    "maxExactColorFraction": 0.008194444444444445,
+    "pass": true
+  },
+  {
+    "s": 850,
+    "file": "0850m.png",
+    "skyFraction": 0.2978549382716049,
+    "luminanceMean": 0.35547996160725986,
+    "luminanceStd": 0.21437316797844275,
+    "maxExactColorFraction": 0.009266975308641975,
+    "pass": true
+  },
+  {
+    "s": 875,
+    "file": "0875m.png",
+    "skyFraction": 0.2994753086419753,
+    "luminanceMean": 0.3662852093197018,
+    "luminanceStd": 0.2098276635998109,
+    "maxExactColorFraction": 0.0101929012345679,
+    "pass": true
+  },
+  {
+    "s": 900,
+    "file": "0900m.png",
+    "skyFraction": 0.30420524691358025,
+    "luminanceMean": 0.36867873519721617,
+    "luminanceStd": 0.2123209592802999,
+    "maxExactColorFraction": 0.009814814814814814,
+    "pass": true
+  },
+  {
+    "s": 925,
+    "file": "0925m.png",
+    "skyFraction": 0.30780092592592595,
+    "luminanceMean": 0.38898622163514573,
+    "luminanceStd": 0.2081191694431212,
+    "maxExactColorFraction": 0.009251543209876542,
+    "pass": true
+  },
+  {
+    "s": 950,
+    "file": "0950m.png",
+    "skyFraction": 0.34163580246913583,
+    "luminanceMean": 0.4045883129024223,
+    "luminanceStd": 0.21660543432434945,
+    "maxExactColorFraction": 0.008371913580246913,
+    "pass": true
+  },
+  {
+    "s": 975,
+    "file": "0975m.png",
+    "skyFraction": 0.3575308641975309,
+    "luminanceMean": 0.3975188207153195,
+    "luminanceStd": 0.2247591548776303,
+    "maxExactColorFraction": 0.007199074074074074,
+    "pass": true
+  },
+  {
+    "s": 1000,
+    "file": "1000m.png",
+    "skyFraction": 0.3672685185185185,
+    "luminanceMean": 0.402727962636174,
+    "luminanceStd": 0.22862429353351982,
+    "maxExactColorFraction": 0.007368827160493827,
+    "pass": true
+  },
+  {
+    "s": 1025,
+    "file": "1025m.png",
+    "skyFraction": 0.37203703703703705,
+    "luminanceMean": 0.42174302860684465,
+    "luminanceStd": 0.22813739630603305,
+    "maxExactColorFraction": 0.007955246913580247,
+    "pass": true
+  },
+  {
+    "s": 1050,
+    "file": "1050m.png",
+    "skyFraction": 0.3712037037037037,
+    "luminanceMean": 0.42170505326787083,
+    "luminanceStd": 0.2253606427308565,
+    "maxExactColorFraction": 0.007824074074074074,
+    "pass": true
+  },
+  {
+    "s": 1075,
+    "file": "1075m.png",
+    "skyFraction": 0.3760570987654321,
+    "luminanceMean": 0.4175043209996422,
+    "luminanceStd": 0.22790119778565962,
+    "maxExactColorFraction": 0.007716049382716049,
+    "pass": true
+  },
+  {
+    "s": 1100,
+    "file": "1100m.png",
+    "skyFraction": 0.38222993827160495,
+    "luminanceMean": 0.4193025874605548,
+    "luminanceStd": 0.22876545026690134,
+    "maxExactColorFraction": 0.007638888888888889,
+    "pass": true
+  },
+  {
+    "s": 1125,
+    "file": "1125m.png",
+    "skyFraction": 0.38881172839506173,
+    "luminanceMean": 0.4226599218227262,
+    "luminanceStd": 0.23051403803112386,
+    "maxExactColorFraction": 0.009050925925925926,
+    "pass": true
+  },
+  {
+    "s": 1150,
+    "file": "1150m.png",
+    "skyFraction": 0.3913966049382716,
+    "luminanceMean": 0.4243371281892467,
+    "luminanceStd": 0.23343106755743898,
+    "maxExactColorFraction": 0.008125,
+    "pass": true
+  },
+  {
+    "s": 1175,
+    "file": "1175m.png",
+    "skyFraction": 0.38742283950617284,
+    "luminanceMean": 0.41629374436580213,
+    "luminanceStd": 0.23854056805719168,
+    "maxExactColorFraction": 0.006774691358024692,
+    "pass": true
+  },
+  {
+    "s": 1200,
+    "file": "1200m.png",
+    "skyFraction": 0.38743827160493827,
+    "luminanceMean": 0.39170602369285523,
+    "luminanceStd": 0.24320293221903214,
+    "maxExactColorFraction": 0.005794753086419753,
+    "pass": true
+  },
+  {
+    "s": 1225,
+    "file": "1225m.png",
+    "skyFraction": 0.386875,
+    "luminanceMean": 0.39001301649121445,
+    "luminanceStd": 0.24296762036837968,
+    "maxExactColorFraction": 0.004166666666666667,
+    "pass": true
+  },
+  {
+    "s": 1250,
+    "file": "1250m.png",
+    "skyFraction": 0.38669753086419756,
+    "luminanceMean": 0.3870248124909946,
+    "luminanceStd": 0.24560899550844897,
+    "maxExactColorFraction": 0.004182098765432099,
+    "pass": true
+  },
+  {
+    "s": 1275,
+    "file": "1275m.png",
+    "skyFraction": 0.38535493827160494,
+    "luminanceMean": 0.3862395809852775,
+    "luminanceStd": 0.24460851777577386,
+    "maxExactColorFraction": 0.004097222222222223,
+    "pass": true
+  },
+  {
+    "s": 1300,
+    "file": "1300m.png",
+    "skyFraction": 0.38426697530864196,
+    "luminanceMean": 0.38917480789158176,
+    "luminanceStd": 0.24208907068752802,
+    "maxExactColorFraction": 0.004452160493827161,
+    "pass": true
+  },
+  {
+    "s": 1325,
+    "file": "1325m.png",
+    "skyFraction": 0.3829475308641975,
+    "luminanceMean": 0.3886030658436686,
+    "luminanceStd": 0.24092565320000642,
+    "maxExactColorFraction": 0.004521604938271605,
+    "pass": true
+  },
+  {
+    "s": 1350,
+    "file": "1350m.png",
+    "skyFraction": 0.3823456790123457,
+    "luminanceMean": 0.39987179022638714,
+    "luminanceStd": 0.24133824489551983,
+    "maxExactColorFraction": 0.005115740740740741,
+    "pass": true
+  },
+  {
+    "s": 1375,
+    "file": "1375m.png",
+    "skyFraction": 0.38098765432098763,
+    "luminanceMean": 0.41346702291820814,
+    "luminanceStd": 0.24153669635168767,
+    "maxExactColorFraction": 0.004768518518518518,
+    "pass": true
+  },
+  {
+    "s": 1400,
+    "file": "1400m.png",
+    "skyFraction": 0.37892746913580244,
+    "luminanceMean": 0.4192097918240309,
+    "luminanceStd": 0.24129546819638178,
+    "maxExactColorFraction": 0.004529320987654321,
+    "pass": true
+  },
+  {
+    "s": 1425,
+    "file": "1425m.png",
+    "skyFraction": 0.3759490740740741,
+    "luminanceMean": 0.4168619396514449,
+    "luminanceStd": 0.2422739390381144,
+    "maxExactColorFraction": 0.005015432098765432,
+    "pass": true
+  },
+  {
+    "s": 1450,
+    "file": "1450m.png",
+    "skyFraction": 0.3692283950617284,
+    "luminanceMean": 0.40920458663763565,
+    "luminanceStd": 0.23708827530841053,
+    "maxExactColorFraction": 0.004645061728395062,
+    "pass": true
+  },
+  {
+    "s": 1475,
+    "file": "1475m.png",
+    "skyFraction": 0.3560030864197531,
+    "luminanceMean": 0.38411032941179496,
+    "luminanceStd": 0.2335618398792326,
+    "maxExactColorFraction": 0.0062037037037037035,
+    "pass": true
+  },
+  {
+    "s": 1500,
+    "file": "1500m.png",
+    "skyFraction": 0.3127854938271605,
+    "luminanceMean": 0.3622620409586751,
+    "luminanceStd": 0.2159716604396277,
+    "maxExactColorFraction": 0.005787037037037037,
+    "pass": true
+  },
+  {
+    "s": 1525,
+    "file": "1525m.png",
+    "skyFraction": 0.3186805555555556,
+    "luminanceMean": 0.37223562626489093,
+    "luminanceStd": 0.21523224045395242,
+    "maxExactColorFraction": 0.004243827160493827,
+    "pass": true
+  },
+  {
+    "s": 1550,
+    "file": "1550m.png",
+    "skyFraction": 0.32633487654320986,
+    "luminanceMean": 0.3774801410312837,
+    "luminanceStd": 0.21630349493900483,
+    "maxExactColorFraction": 0.004814814814814815,
+    "pass": true
+  },
+  {
+    "s": 1575,
+    "file": "1575m.png",
+    "skyFraction": 0.2653780864197531,
+    "luminanceMean": 0.3557256363713837,
+    "luminanceStd": 0.20295993495040077,
+    "maxExactColorFraction": 0.005054012345679012,
+    "pass": true
+  },
+  {
+    "s": 1600,
+    "file": "1600m.png",
+    "skyFraction": 0.28955246913580246,
+    "luminanceMean": 0.3563620235960073,
+    "luminanceStd": 0.21276931277163655,
+    "maxExactColorFraction": 0.009205246913580246,
+    "pass": true
+  },
+  {
+    "s": 1625,
+    "file": "1625m.png",
+    "skyFraction": 0.31604166666666667,
+    "luminanceMean": 0.3761062243282975,
+    "luminanceStd": 0.21460974662186957,
+    "maxExactColorFraction": 0.006265432098765432,
+    "pass": true
+  },
+  {
+    "s": 1650,
+    "file": "1650m.png",
+    "skyFraction": 0.3144598765432099,
+    "luminanceMean": 0.37128827496979977,
+    "luminanceStd": 0.21471715439549208,
+    "maxExactColorFraction": 0.005740740740740741,
+    "pass": true
+  },
+  {
+    "s": 1675,
+    "file": "1675m.png",
+    "skyFraction": 0.2731018518518519,
+    "luminanceMean": 0.35093163576616204,
+    "luminanceStd": 0.20623936857878755,
+    "maxExactColorFraction": 0.007577160493827161,
+    "pass": true
+  },
+  {
+    "s": 1700,
+    "file": "1700m.png",
+    "skyFraction": 0.3134104938271605,
+    "luminanceMean": 0.3610019986867925,
+    "luminanceStd": 0.2190176013230189,
+    "maxExactColorFraction": 0.007353395061728395,
+    "pass": true
+  },
+  {
+    "s": 1725,
+    "file": "1725m.png",
+    "skyFraction": 0.31540895061728397,
+    "luminanceMean": 0.3634811380295559,
+    "luminanceStd": 0.21859870096545592,
+    "maxExactColorFraction": 0.005439814814814815,
+    "pass": true
+  },
+  {
+    "s": 1750,
+    "file": "1750m.png",
+    "skyFraction": 0.30627314814814816,
+    "luminanceMean": 0.36230042665824846,
+    "luminanceStd": 0.2134864410842317,
+    "maxExactColorFraction": 0.005864197530864198,
+    "pass": true
+  },
+  {
+    "s": 1775,
+    "file": "1775m.png",
+    "skyFraction": 0.2718055555555556,
+    "luminanceMean": 0.34380318951832856,
+    "luminanceStd": 0.20669814548324014,
+    "maxExactColorFraction": 0.006473765432098765,
+    "pass": true
+  },
+  {
+    "s": 1800,
+    "file": "1800m.png",
+    "skyFraction": 0.3174151234567901,
+    "luminanceMean": 0.36520531195839806,
+    "luminanceStd": 0.21551520230622093,
+    "maxExactColorFraction": 0.0066280864197530865,
+    "pass": true
+  },
+  {
+    "s": 1825,
+    "file": "1825m.png",
+    "skyFraction": 0.3216203703703704,
+    "luminanceMean": 0.3784574749818781,
+    "luminanceStd": 0.21211628886362063,
+    "maxExactColorFraction": 0.006296296296296296,
+    "pass": true
+  },
+  {
+    "s": 1850,
+    "file": "1850m.png",
+    "skyFraction": 0.3042746913580247,
+    "luminanceMean": 0.3711297662249087,
+    "luminanceStd": 0.20768109245326855,
+    "maxExactColorFraction": 0.006975308641975308,
+    "pass": true
+  },
+  {
+    "s": 1875,
+    "file": "1875m.png",
+    "skyFraction": 0.27089506172839506,
+    "luminanceMean": 0.36119953461030263,
+    "luminanceStd": 0.197258801337911,
+    "maxExactColorFraction": 0.0073070987654320985,
+    "pass": true
+  },
+  {
+    "s": 1900,
+    "file": "1900m.png",
+    "skyFraction": 0.3273070987654321,
+    "luminanceMean": 0.37923700990685494,
+    "luminanceStd": 0.21153637703439063,
+    "maxExactColorFraction": 0.007507716049382716,
+    "pass": true
+  },
+  {
+    "s": 1925,
+    "file": "1925m.png",
+    "skyFraction": 0.3299614197530864,
+    "luminanceMean": 0.3771380741770012,
+    "luminanceStd": 0.21583375450720133,
+    "maxExactColorFraction": 0.006327160493827161,
+    "pass": true
+  },
+  {
+    "s": 1950,
+    "file": "1950m.png",
+    "skyFraction": 0.27650462962962963,
+    "luminanceMean": 0.3553396932523193,
+    "luminanceStd": 0.20383470706786258,
+    "maxExactColorFraction": 0.009945987654320988,
+    "pass": true
+  },
+  {
+    "s": 1975,
+    "file": "1975m.png",
+    "skyFraction": 0.2753858024691358,
+    "luminanceMean": 0.34913402677329947,
+    "luminanceStd": 0.20717898481453528,
+    "maxExactColorFraction": 0.010779320987654321,
+    "pass": true
+  },
+  {
+    "s": 2000,
+    "file": "2000m.png",
+    "skyFraction": 0.3202777777777778,
+    "luminanceMean": 0.3647000928408227,
+    "luminanceStd": 0.216252509391353,
+    "maxExactColorFraction": 0.011489197530864198,
+    "pass": true
+  },
+  {
+    "s": 2025,
+    "file": "2025m.png",
+    "skyFraction": 0.31493055555555555,
+    "luminanceMean": 0.3590927988079241,
+    "luminanceStd": 0.215651812475731,
+    "maxExactColorFraction": 0.013225308641975308,
+    "pass": true
+  },
+  {
+    "s": 2050,
+    "file": "2050m.png",
+    "skyFraction": 0.25699845679012345,
+    "luminanceMean": 0.34446502811681556,
+    "luminanceStd": 0.19948957838493092,
+    "maxExactColorFraction": 0.013896604938271604,
+    "pass": true
+  },
+  {
+    "s": 2075,
+    "file": "2075m.png",
+    "skyFraction": 0.268125,
+    "luminanceMean": 0.35104804373044385,
+    "luminanceStd": 0.19788965417284685,
+    "maxExactColorFraction": 0.012345679012345678,
+    "pass": true
+  },
+  {
+    "s": 2100,
+    "file": "2100m.png",
+    "skyFraction": 0.27827932098765434,
+    "luminanceMean": 0.35494964509208,
+    "luminanceStd": 0.19998436541011827,
+    "maxExactColorFraction": 0.01220679012345679,
+    "pass": true
+  },
+  {
+    "s": 2125,
+    "file": "2125m.png",
+    "skyFraction": 0.23589506172839506,
+    "luminanceMean": 0.3451677708788243,
+    "luminanceStd": 0.1876806151084992,
+    "maxExactColorFraction": 0.013078703703703703,
+    "pass": true
+  },
+  {
+    "s": 2150,
+    "file": "2150m.png",
+    "skyFraction": 0.17587191358024692,
+    "luminanceMean": 0.32046979026276,
+    "luminanceStd": 0.18221377640366346,
+    "maxExactColorFraction": 0.013958333333333333,
+    "pass": true
+  },
+  {
+    "s": 2175,
+    "file": "2175m.png",
+    "skyFraction": 0.16891975308641977,
+    "luminanceMean": 0.3147320518277477,
+    "luminanceStd": 0.1765040820772023,
+    "maxExactColorFraction": 0.011952160493827161,
+    "pass": true
+  },
+  {
+    "s": 2200,
+    "file": "2200m.png",
+    "skyFraction": 0.19236111111111112,
+    "luminanceMean": 0.3127436983116274,
+    "luminanceStd": 0.18578089468468875,
+    "maxExactColorFraction": 0.00738425925925926,
+    "pass": true
+  },
+  {
+    "s": 2225,
+    "file": "2225m.png",
+    "skyFraction": 0.1992283950617284,
+    "luminanceMean": 0.3102363127693655,
+    "luminanceStd": 0.18852980804571629,
+    "maxExactColorFraction": 0.007013888888888889,
+    "pass": true
+  },
+  {
+    "s": 2250,
+    "file": "2250m.png",
+    "skyFraction": 0.18387345679012346,
+    "luminanceMean": 0.2988816980332231,
+    "luminanceStd": 0.18791826738956283,
+    "maxExactColorFraction": 0.008958333333333334,
+    "pass": true
+  },
+  {
+    "s": 2275,
+    "file": "2275m.png",
+    "skyFraction": 0.22231481481481483,
+    "luminanceMean": 0.32340503313369123,
+    "luminanceStd": 0.19405135794937114,
+    "maxExactColorFraction": 0.006890432098765432,
+    "pass": true
+  },
+  {
+    "s": 2300,
+    "file": "2300m.png",
+    "skyFraction": 0.22713734567901234,
+    "luminanceMean": 0.311739268948229,
+    "luminanceStd": 0.19857324848884975,
+    "maxExactColorFraction": 0.006720679012345679,
+    "pass": true
+  },
+  {
+    "s": 2325,
+    "file": "2325m.png",
+    "skyFraction": 0.25342592592592594,
+    "luminanceMean": 0.31551165689909455,
+    "luminanceStd": 0.2082154815001286,
+    "maxExactColorFraction": 0.006311728395061728,
+    "pass": true
+  },
+  {
+    "s": 2350,
+    "file": "2350m.png",
+    "skyFraction": 0.2535648148148148,
+    "luminanceMean": 0.31513536471803055,
+    "luminanceStd": 0.2104317064988926,
+    "maxExactColorFraction": 0.006535493827160494,
+    "pass": true
+  },
+  {
+    "s": 2375,
+    "file": "2375m.png",
+    "skyFraction": 0.2532175925925926,
+    "luminanceMean": 0.32431066402207936,
+    "luminanceStd": 0.2109770915624274,
+    "maxExactColorFraction": 0.006450617283950617,
+    "pass": true
+  },
+  {
+    "s": 2400,
+    "file": "2400m.png",
+    "skyFraction": 0.2595138888888889,
+    "luminanceMean": 0.32359694753092166,
+    "luminanceStd": 0.2161555104629426,
+    "maxExactColorFraction": 0.007114197530864197,
+    "pass": true
+  },
+  {
+    "s": 2425,
+    "file": "2425m.png",
+    "skyFraction": 0.29430555555555554,
+    "luminanceMean": 0.3317845836843916,
+    "luminanceStd": 0.2253174286769588,
+    "maxExactColorFraction": 0.007939814814814814,
+    "pass": true
+  },
+  {
+    "s": 2450,
+    "file": "2450m.png",
+    "skyFraction": 0.3402854938271605,
+    "luminanceMean": 0.3529174749093027,
+    "luminanceStd": 0.23894944910764948,
+    "maxExactColorFraction": 0.01202932098765432,
+    "pass": true
+  },
+  {
+    "s": 2475,
+    "file": "2475m.png",
+    "skyFraction": 0.3494135802469136,
+    "luminanceMean": 0.36233308697053407,
+    "luminanceStd": 0.23685175903733108,
+    "maxExactColorFraction": 0.010200617283950617,
+    "pass": true
+  },
+  {
+    "s": 2500,
+    "file": "2500m.png",
+    "skyFraction": 0.36821759259259257,
+    "luminanceMean": 0.36649776885145685,
+    "luminanceStd": 0.24567429806889712,
+    "maxExactColorFraction": 0.01599537037037037,
+    "pass": true
+  },
+  {
+    "s": 2525,
+    "file": "2525m.png",
+    "skyFraction": 0.3247145061728395,
+    "luminanceMean": 0.3577185730090707,
+    "luminanceStd": 0.2318642352391682,
+    "maxExactColorFraction": 0.013209876543209877,
+    "pass": true
+  },
+  {
+    "s": 2550,
+    "file": "2550m.png",
+    "skyFraction": 0.3498456790123457,
+    "luminanceMean": 0.36370639714967185,
+    "luminanceStd": 0.2370067670461763,
+    "maxExactColorFraction": 0.01658179012345679,
+    "pass": true
+  },
+  {
+    "s": 2575,
+    "file": "2575m.png",
+    "skyFraction": 0.3139351851851852,
+    "luminanceMean": 0.35143393017435226,
+    "luminanceStd": 0.23305037886648355,
+    "maxExactColorFraction": 0.00945216049382716,
+    "pass": true
+  },
+  {
+    "s": 2600,
+    "file": "2600m.png",
+    "skyFraction": 0.31787808641975307,
+    "luminanceMean": 0.35380400093811815,
+    "luminanceStd": 0.23530135156091192,
+    "maxExactColorFraction": 0.012453703703703703,
+    "pass": true
+  },
+  {
+    "s": 2625,
+    "file": "2625m.png",
+    "skyFraction": 0.3431172839506173,
+    "luminanceMean": 0.36756462923632266,
+    "luminanceStd": 0.2359691315986478,
+    "maxExactColorFraction": 0.011219135802469136,
+    "pass": true
+  },
+  {
+    "s": 2650,
+    "file": "2650m.png",
+    "skyFraction": 0.36737654320987656,
+    "luminanceMean": 0.38628967060039515,
+    "luminanceStd": 0.2386425980717199,
+    "maxExactColorFraction": 0.010200617283950617,
+    "pass": true
+  },
+  {
+    "s": 2675,
+    "file": "2675m.png",
+    "skyFraction": 0.36744598765432096,
+    "luminanceMean": 0.3950904200436222,
+    "luminanceStd": 0.23711073185771753,
+    "maxExactColorFraction": 0.010131172839506174,
+    "pass": true
+  },
+  {
+    "s": 2700,
+    "file": "2700m.png",
+    "skyFraction": 0.3848765432098765,
+    "luminanceMean": 0.4095827252784377,
+    "luminanceStd": 0.23862142965413624,
+    "maxExactColorFraction": 0.011998456790123457,
+    "pass": true
+  },
+  {
+    "s": 2725,
+    "file": "2725m.png",
+    "skyFraction": 0.38516203703703705,
+    "luminanceMean": 0.4182106996732309,
+    "luminanceStd": 0.234162351460802,
+    "maxExactColorFraction": 0.008171296296296296,
+    "pass": true
+  },
+  {
+    "s": 2750,
+    "file": "2750m.png",
+    "skyFraction": 0.38506172839506175,
+    "luminanceMean": 0.44200227868560915,
+    "luminanceStd": 0.23367419155600863,
+    "maxExactColorFraction": 0.00845679012345679,
+    "pass": true
+  },
+  {
+    "s": 2775,
+    "file": "2775m.png",
+    "skyFraction": 0.3850077160493827,
+    "luminanceMean": 0.4267245397240919,
+    "luminanceStd": 0.23315043961048998,
+    "maxExactColorFraction": 0.00863425925925926,
+    "pass": true
+  },
+  {
+    "s": 2800,
+    "file": "2800m.png",
+    "skyFraction": 0.3837577160493827,
+    "luminanceMean": 0.4449767158376182,
+    "luminanceStd": 0.23089110146566685,
+    "maxExactColorFraction": 0.007631172839506173,
+    "pass": true
+  },
+  {
+    "s": 2825,
+    "file": "2825m.png",
+    "skyFraction": 0.37925154320987653,
+    "luminanceMean": 0.44453343554226443,
+    "luminanceStd": 0.241006438131425,
+    "maxExactColorFraction": 0.008402777777777778,
+    "pass": true
+  }
+]

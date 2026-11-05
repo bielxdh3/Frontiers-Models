@@ -1,0 +1,2180 @@
+{
+  "source": "Live Three.js graph; geometries, materials, instanced transforms and connected AudioBuffer sources",
+  "cars": [
+    {
+      "name": "Vela GT",
+      "model": "gt",
+      "triangles": 183904,
+      "materials": 14
+    },
+    {
+      "name": "Brisa RS",
+      "model": "hatch",
+      "triangles": 178940,
+      "materials": 14
+    },
+    {
+      "name": "Vela GT",
+      "model": "gt",
+      "triangles": 183904,
+      "materials": 14
+    },
+    {
+      "name": "Brisa RS",
+      "model": "hatch",
+      "triangles": 178940,
+      "materials": 14
+    },
+    {
+      "name": "Vela GT",
+      "model": "gt",
+      "triangles": 183904,
+      "materials": 14
+    },
+    {
+      "name": "Brisa RS",
+      "model": "hatch",
+      "triangles": 178940,
+      "materials": 14
+    },
+    {
+      "name": "Brisa RS",
+      "model": "hatch",
+      "triangles": 178940,
+      "materials": 14
+    }
+  ],
+  "meshCount": 984,
+  "totalTriangles": 12417196,
+  "materials": [
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": false,
+      "normal": false,
+      "emissive": true
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshPhysicalMaterial",
+      "albedo": false,
+      "normal": false,
+      "glass": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshPhysicalMaterial",
+      "albedo": false,
+      "normal": false,
+      "glass": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshPhysicalMaterial",
+      "albedo": false,
+      "normal": false,
+      "glass": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshPhysicalMaterial",
+      "albedo": false,
+      "normal": false,
+      "glass": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshPhysicalMaterial",
+      "albedo": false,
+      "normal": false,
+      "glass": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshPhysicalMaterial",
+      "albedo": false,
+      "normal": false,
+      "glass": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshPhysicalMaterial",
+      "albedo": false,
+      "normal": false,
+      "glass": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshPhysicalMaterial",
+      "albedo": true,
+      "normal": true,
+      "glass": false,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshPhysicalMaterial",
+      "albedo": false,
+      "normal": false,
+      "glass": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": false,
+      "normal": false,
+      "emissive": true
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": false,
+      "normal": false,
+      "emissive": true
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": false,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshBasicMaterial",
+      "albedo": true,
+      "normal": false,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshPhysicalMaterial",
+      "albedo": true,
+      "normal": true,
+      "glass": false,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshPhysicalMaterial",
+      "albedo": false,
+      "normal": false,
+      "glass": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": false,
+      "normal": false,
+      "emissive": true
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": false,
+      "normal": false,
+      "emissive": true
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": false,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshBasicMaterial",
+      "albedo": true,
+      "normal": false,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshPhysicalMaterial",
+      "albedo": true,
+      "normal": true,
+      "glass": false,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshPhysicalMaterial",
+      "albedo": false,
+      "normal": false,
+      "glass": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": false,
+      "normal": false,
+      "emissive": true
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": false,
+      "normal": false,
+      "emissive": true
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": false,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshBasicMaterial",
+      "albedo": true,
+      "normal": false,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshPhysicalMaterial",
+      "albedo": true,
+      "normal": true,
+      "glass": false,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshPhysicalMaterial",
+      "albedo": false,
+      "normal": false,
+      "glass": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": false,
+      "normal": false,
+      "emissive": true
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": false,
+      "normal": false,
+      "emissive": true
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": false,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshBasicMaterial",
+      "albedo": true,
+      "normal": false,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshPhysicalMaterial",
+      "albedo": true,
+      "normal": true,
+      "glass": false,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshPhysicalMaterial",
+      "albedo": false,
+      "normal": false,
+      "glass": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": false,
+      "normal": false,
+      "emissive": true
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": false,
+      "normal": false,
+      "emissive": true
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": false,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshBasicMaterial",
+      "albedo": true,
+      "normal": false,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshPhysicalMaterial",
+      "albedo": true,
+      "normal": true,
+      "glass": false,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshPhysicalMaterial",
+      "albedo": false,
+      "normal": false,
+      "glass": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": false,
+      "normal": false,
+      "emissive": true
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": false,
+      "normal": false,
+      "emissive": true
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": false,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshBasicMaterial",
+      "albedo": true,
+      "normal": false,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshPhysicalMaterial",
+      "albedo": true,
+      "normal": true,
+      "glass": false,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshPhysicalMaterial",
+      "albedo": false,
+      "normal": false,
+      "glass": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": false,
+      "normal": false,
+      "emissive": true
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": false,
+      "normal": false,
+      "emissive": true
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": true,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshStandardMaterial",
+      "albedo": true,
+      "normal": false,
+      "emissive": false
+    },
+    {
+      "name": "",
+      "type": "MeshBasicMaterial",
+      "albedo": true,
+      "normal": false,
+      "emissive": false
+    }
+  ],
+  "textures": [
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/earth-color.jpg"
+    },
+    {
+      "slot": "normalMap",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/earth-normal.png"
+    },
+    {
+      "slot": "roughnessMap",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/earth-rough.png"
+    },
+    {
+      "slot": "map",
+      "width": 2048,
+      "height": 2048,
+      "url": "http://127.0.0.1:59212/assets/textures/asphalt-color.jpg"
+    },
+    {
+      "slot": "normalMap",
+      "width": 2048,
+      "height": 2048,
+      "url": "http://127.0.0.1:59212/assets/textures/asphalt-normal.png"
+    },
+    {
+      "slot": "roughnessMap",
+      "width": 2048,
+      "height": 2048,
+      "url": "http://127.0.0.1:59212/assets/textures/asphalt-rough.png"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/paint-color.jpg"
+    },
+    {
+      "slot": "normalMap",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/paint-normal.png"
+    },
+    {
+      "slot": "roughnessMap",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/paint-rough.png"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/rubber-color.jpg"
+    },
+    {
+      "slot": "normalMap",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/rubber-normal.png"
+    },
+    {
+      "slot": "roughnessMap",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/rubber-rough.png"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/stone-color.jpg"
+    },
+    {
+      "slot": "normalMap",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/stone-normal.png"
+    },
+    {
+      "slot": "roughnessMap",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/stone-rough.png"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/metal-color.jpg"
+    },
+    {
+      "slot": "normalMap",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/metal-normal.png"
+    },
+    {
+      "slot": "roughnessMap",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/metal-rough.png"
+    },
+    {
+      "slot": "map",
+      "width": 2048,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 2048,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 2048,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 2048,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 2048,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 2048,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 2048,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 2048,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 2048,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/bark-color.jpg"
+    },
+    {
+      "slot": "normalMap",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/bark-normal.png"
+    },
+    {
+      "slot": "roughnessMap",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/bark-rough.png"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/leaf-color.jpg"
+    },
+    {
+      "slot": "normalMap",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/leaf-normal.png"
+    },
+    {
+      "slot": "roughnessMap",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/leaf-rough.png"
+    },
+    {
+      "slot": "alphaMap",
+      "width": 1024,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 2048,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/plaster-color.jpg"
+    },
+    {
+      "slot": "normalMap",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/plaster-normal.png"
+    },
+    {
+      "slot": "roughnessMap",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/plaster-rough.png"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/tile-color.jpg"
+    },
+    {
+      "slot": "normalMap",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/tile-normal.png"
+    },
+    {
+      "slot": "roughnessMap",
+      "width": 1024,
+      "height": 1024,
+      "url": "http://127.0.0.1:59212/assets/textures/tile-rough.png"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "generated canvas"
+    },
+    {
+      "slot": "map",
+      "width": 1024,
+      "height": 1024,
+      "url": "generated canvas"
+    }
+  ],
+  "houseCount": 38,
+  "houseVariants": 6,
+  "vegetationSpecies": [
+    "palm",
+    "bush",
+    "olive",
+    "pine"
+  ],
+  "propsPer100m": [
+    115,
+    110,
+    126,
+    125,
+    115,
+    124,
+    118,
+    91,
+    90,
+    94,
+    93,
+    92,
+    92,
+    92,
+    87,
+    74,
+    91,
+    75,
+    74,
+    76,
+    74,
+    80,
+    101,
+    103,
+    110,
+    105,
+    100,
+    105,
+    56
+  ],
+  "boxViolations": [],
+  "flatViolations": [],
+  "smallTextures": [],
+  "world": {
+    "ok": true,
+    "errors": [],
+    "stats": {
+      "length": 2849.274918507988,
+      "maxGrade": 0.13824548016163843,
+      "minRadius": 25.50901132711316,
+      "maxEdgeGap": 0.09898496838210491,
+      "maxTerrainAbove": 0,
+      "objects": 2788
+    }
+  },
+  "audio": {
+    "engines": 6,
+    "aiVoices": 5,
+    "sampleSources": 24,
+    "maxEngineVoices": 6,
+    "oneshots": 0,
+    "buffers": [
+      "gt-low",
+      "hatch-low",
+      "hatch-high",
+      "hatch-mid",
+      "gt-mid",
+      "gt-high",
+      "hatch-idle",
+      "gt-idle",
+      "tires",
+      "gravel",
+      "impact"
+    ],
+    "state": "running"
+  },
+  "activeAI": 5
+}

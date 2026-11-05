@@ -1,0 +1,92 @@
+{
+ "s1": {
+  "file": "s1-reta-orla-153fps.png",
+  "skyFraction": 0.3235,
+  "meanLuminance": 0.4509,
+  "stdLuminance": 0.2636,
+  "maxSingleColorFraction": 0.0607,
+  "dominantColor4bit": "#111",
+  "failures": [],
+  "pass": true
+ },
+ "s2": {
+  "file": "s2-grid-3-4-200fps.png",
+  "skyFraction": 0.1407,
+  "meanLuminance": 0.3498,
+  "stdLuminance": 0.2097,
+  "maxSingleColorFraction": 0.0584,
+  "dominantColor4bit": "#123",
+  "failures": [],
+  "pass": true
+ },
+ "s3": {
+  "file": "s3-praia-espuma-171fps.png",
+  "skyFraction": 0.3524,
+  "meanLuminance": 0.5886,
+  "stdLuminance": 0.2016,
+  "maxSingleColorFraction": 0.0988,
+  "dominantColor4bit": "#ca9",
+  "failures": [],
+  "pass": true
+ },
+ "s4": {
+  "file": "s4-falesia-mirante-147fps.png",
+  "skyFraction": 0.1694,
+  "meanLuminance": 0.3685,
+  "stdLuminance": 0.1889,
+  "maxSingleColorFraction": 0.0473,
+  "dominantColor4bit": "#bbb",
+  "failures": [],
+  "pass": true
+ },
+ "s5": {
+  "file": "s5-vila-rua-143fps.png",
+  "skyFraction": 0.1518,
+  "meanLuminance": 0.3428,
+  "stdLuminance": 0.2255,
+  "maxSingleColorFraction": 0.1127,
+  "dominantColor4bit": "#112",
+  "failures": [],
+  "pass": true
+ },
+ "s6": {
+  "file": "s6-bosque-luz-183fps.png",
+  "skyFraction": 0.2683,
+  "meanLuminance": 0.3634,
+  "stdLuminance": 0.2481,
+  "maxSingleColorFraction": 0.0597,
+  "dominantColor4bit": "#333",
+  "failures": [],
+  "pass": true
+ },
+ "s7": {
+  "file": "s7-ponte-ou-tunel-143fps.png",
+  "skyFraction": 0.4161,
+  "meanLuminance": 0.4139,
+  "stdLuminance": 0.2231,
+  "maxSingleColorFraction": 0.0801,
+  "dominantColor4bit": "#222",
+  "failures": [],
+  "pass": true
+ },
+ "s8": {
+  "file": "s8-disputa-157fps.png",
+  "skyFraction": 0.3508,
+  "meanLuminance": 0.4495,
+  "stdLuminance": 0.2746,
+  "maxSingleColorFraction": 0.073,
+  "dominantColor4bit": "#111",
+  "failures": [],
+  "pass": true
+ },
+ "s9": {
+  "file": "s9-close-pista-152fps.png",
+  "skyFraction": 0.1884,
+  "meanLuminance": 0.3538,
+  "stdLuminance": 0.2158,
+  "maxSingleColorFraction": 0.0876,
+  "dominantColor4bit": "#112",
+  "failures": [],
+  "pass": true
+ }
+}
