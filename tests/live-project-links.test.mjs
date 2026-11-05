@@ -75,22 +75,22 @@ test('Racing V3.4 includes Gemini, Sol, Astra and owner-provided Opus URL with 4
     assert.match(s, /racing-v3\.1\.md/);
     assert.match(s, /racing-v3\.4/);
     assert.match(s, /racing-gemini-3\.8-flash\.biel\.dev\.br/);
-    assert.match(s, /\[Source — gemini-3\.8\]\(https:\/\/github\.com\/bielxdh3\/gemini-3\.8\)/);
+    assert.ok(s.includes('[Gemini 3.8 Flash](https://github.com/bielxdh3/gemini-3.8)'), path + ' must label Gemini source by model');
     const localSolSource = path.startsWith('benchmarks/racing/')
       ? './runs/gpt-6.1-sol-v3.4/source/'
       : './benchmarks/racing/runs/gpt-6.1-sol-v3.4/source/';
-    assert.ok(s.includes('](' + localSolSource + ')'), path + ' must link to its local Sol source archive');
+    assert.ok(s.includes('[GPT-6.1 Sol](' + localSolSource + ')'), path + ' must label Sol source by model');
     const localAstraSource = path.startsWith('benchmarks/racing/')
       ? './runs/gpt-6-astra-v3.4/source/'
       : './benchmarks/racing/runs/gpt-6-astra-v3.4/source/';
-    assert.ok(s.includes('](' + localAstraSource + ')'), path + ' must link to its local Astra source archive');
+    assert.ok(s.includes('[GPT-6 Astra](' + localAstraSource + ')'), path + ' must label Astra source by model');
     const localOpusSource = path.startsWith('benchmarks/racing/')
       ? './runs/opus-5.5-v3.4/source/'
       : './benchmarks/racing/runs/opus-5.5-v3.4/source/';
-    assert.ok(s.includes('](' + localOpusSource + ')'), path + ' must link to its local Opus 5.5 archive');
+    assert.ok(s.includes('[Opus 5.5](' + localOpusSource + ')'), path + ' must label Opus source by model');
     assert.ok(s.includes('](https://racing-opus-5.5.biel.dev.br/)'), path + ' must contain owner-provided Opus URL');
     assert.ok(s.includes('](https://racing-gpt-6-astra.biel.dev.br/)'), path + ' Astra site link');
-    assert.match(s, /HTTP 404/, path + ' discloses failed reachability');
+    assert.doesNotMatch(s, /HTTP 404|Source — archived here|Código — arquivado aqui|Source — gemini-3\.8/, path + ' must present clean links without status annotations or generic source labels');
     assert.doesNotMatch(s, /https:\/\/github\.com\/bielxdh3\/6\.1racinsol/);
     for (const run of racing.runs) assert.ok(s.includes(run.model));
   }

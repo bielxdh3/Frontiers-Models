@@ -24,14 +24,14 @@
 
 | Current model | Play | Source code |
 | --- | --- | --- |
-| **Gemini 3.8 Flash (V3.4)** | [Play racing](https://racing-gemini-3.8-flash.biel.dev.br/) | [Source — gemini-3.8](https://github.com/bielxdh3/gemini-3.8) |
-| **GPT-6.1 Sol (V3.4)** | [Play racing](https://racing-gpt-6.1-sol.biel.dev.br/) | [Source — archived here](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/source/) |
-| **GPT-6 Astra (V3.4)** | [Play racing](https://racing-gpt-6-astra.biel.dev.br/) (HTTP 404 on Nov 5) | [Source — archived here](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) |
-| **Opus 5.5 (V3.4)** | [Play racing](https://racing-opus-5.5.biel.dev.br/) (HTTP 404 on Nov 5) | [Source — archived here](./benchmarks/racing/runs/opus-5.5-v3.4/source/) |
+| **Gemini 3.8 Flash (V3.4)** | [Play racing](https://racing-gemini-3.8-flash.biel.dev.br/) | [Gemini 3.8 Flash](https://github.com/bielxdh3/gemini-3.8) |
+| **GPT-6.1 Sol (V3.4)** | [Play racing](https://racing-gpt-6.1-sol.biel.dev.br/) | [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/source/) |
+| **GPT-6 Astra (V3.4)** | [Play racing](https://racing-gpt-6-astra.biel.dev.br/) | [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) |
+| **Opus 5.5 (V3.4)** | [Play racing](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./benchmarks/racing/runs/opus-5.5-v3.4/source/) |
 
 **V3.4 inputs:** [Racing prompt](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md) · [14 reference images](./benchmarks/racing/prompts/racing-v3.4/refs/). **Source provenance:** [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md) · [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/SOURCE-PROVENANCE.md) · [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra-v3.4/SOURCE-PROVENANCE.md) · [Opus 5.5](./benchmarks/racing/runs/opus-5.5-v3.4/SOURCE-PROVENANCE.md).
 
-**GPT-6 Astra V3.4:** The [upstream report](https://github.com/bielxdh3/6-astra/blob/daf0099699a0e8201b8bc4f1dca6909f92700b3b/verification/REPORT.md) records 33/34 automated checks passed, but the **overall benchmark failed** (High preset below 60 FPS); visual gates P2–P4 were not demonstrated as passed. The owner-provided game URL returned HTTP 404 on November 5, 2026.
+**GPT-6 Astra V3.4:** The [upstream report](https://github.com/bielxdh3/6-astra/blob/daf0099699a0e8201b8bc4f1dca6909f92700b3b/verification/REPORT.md) records 33/34 automated checks passed, but the **overall benchmark failed** (High preset below 60 FPS); visual gates P2–P4 were not demonstrated as passed.
 
 **Racing V2.6 archive:** [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/), [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) and [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra/source/).
 
@@ -95,7 +95,7 @@ PROMPT → MODEL RUN → PROJECT SNAPSHOT / PINNED SOURCE → EVIDENCE → PROVE
 
 ## Benchmark 002 — Racing-bench
 
-**[V3.4 prompt](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md)** · [14 visual references](./benchmarks/racing/prompts/racing-v3.4/refs/). Play [Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br/) or [GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br/); the owner also provided an [Astra V3.4 game URL](https://racing-gpt-6-astra.biel.dev.br/) (returned HTTP 404 on November 5). The [Opus 5.5 game URL](https://racing-opus-5.5.biel.dev.br/) was provided by the owner but returned HTTP 404 on November 5, 2026; its [source archive](./benchmarks/racing/runs/opus-5.5-v3.4/source/) is preserved. Inspect the [GPT-6 Astra V3.4 archive](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) and [Racing source archive](./benchmarks/racing/README.md).
+**[V3.4 prompt](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md)** · [14 visual references](./benchmarks/racing/prompts/racing-v3.4/refs/). Play [Gemini 3.8 Flash](https://racing-gemini-3.8-flash.biel.dev.br/) or [GPT-6.1 Sol](https://racing-gpt-6.1-sol.biel.dev.br/); the owner also provided an [Astra V3.4 game URL](https://racing-gpt-6-astra.biel.dev.br/). The [Opus 5.5 game URL](https://racing-opus-5.5.biel.dev.br/) was provided by the owner; its [source archive](./benchmarks/racing/runs/opus-5.5-v3.4/source/) is preserved. Inspect the [GPT-6 Astra V3.4 archive](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) and [Racing source archive](./benchmarks/racing/README.md).
 
 Previous prompts: [V3.3](./benchmarks/racing/prompts/racing-v3.3.md), [V3.2](./benchmarks/racing/prompts/racing-v3.2.md), [V3.1](./benchmarks/racing/prompts/racing-v3.1.md) and [V2.6](./benchmarks/racing/prompts/racing-v2.6.md).
 
@@ -117,7 +117,7 @@ The historical archive path `benchmarks/solar-system/` is preserved to keep exis
 | **Gemini 3.8 Flash** | Git `8f1992b88c…` | Current | Archived |
 | **GPT-6.1 Sol** | Git `1ab34b18cb…` | Current | Archived |
 | **GPT-6 Astra** | Git `daf0099699…` | Current | Archived |
-| **Opus 5.5** | Git `e75f298d49…` | Current | Archived; owner-provided site (HTTP 404) |
+| **Opus 5.5** | Git `e75f298d49…` | Current | Archived; owner-provided site |
 
 Archive details and hashes are recorded in [Racing-bench](./benchmarks/racing/README.md).
 
