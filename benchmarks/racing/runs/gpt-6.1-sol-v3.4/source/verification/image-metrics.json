@@ -1,0 +1,74 @@
+{
+  "s2": {
+    "skyFraction": 0.2633463541666667,
+    "meanLuminance": 0.34482995875092864,
+    "luminanceStdDev": 0.23727733678327498,
+    "largestQuantizedColorFraction": 0.20716820987654322,
+    "method": "256x144 geometric sky mask; Rec.709 weights over sRGB pixels; 16-level/channel color bins",
+    "pass": true
+  },
+  "s8": {
+    "skyFraction": 0.4239366319444444,
+    "meanLuminance": 0.4653969582486194,
+    "luminanceStdDev": 0.24137704599248222,
+    "largestQuantizedColorFraction": 0.04814043209876543,
+    "method": "256x144 geometric sky mask; Rec.709 weights over sRGB pixels; 16-level/channel color bins",
+    "pass": true
+  },
+  "s1": {
+    "skyFraction": 0.4196234809027778,
+    "meanLuminance": 0.41938770291696326,
+    "luminanceStdDev": 0.24383968106414364,
+    "largestQuantizedColorFraction": 0.06439043209876544,
+    "method": "256x144 geometric sky mask; Rec.709 weights over sRGB pixels; 16-level/channel color bins",
+    "pass": true
+  },
+  "s3": {
+    "skyFraction": 0.4730902777777778,
+    "meanLuminance": 0.576378025030176,
+    "luminanceStdDev": 0.1765628715381655,
+    "largestQuantizedColorFraction": 0.09341049382716049,
+    "method": "256x144 geometric sky mask; Rec.709 weights over sRGB pixels; 16-level/channel color bins",
+    "pass": true
+  },
+  "s4": {
+    "skyFraction": 0.3725043402777778,
+    "meanLuminance": 0.43456910933189863,
+    "luminanceStdDev": 0.26877946690007504,
+    "largestQuantizedColorFraction": 0.0698996913580247,
+    "method": "256x144 geometric sky mask; Rec.709 weights over sRGB pixels; 16-level/channel color bins",
+    "pass": true
+  },
+  "s9": {
+    "skyFraction": 0.4112141927083333,
+    "meanLuminance": 0.37823428003503673,
+    "luminanceStdDev": 0.25976309625001676,
+    "largestQuantizedColorFraction": 0.1304320987654321,
+    "method": "256x144 geometric sky mask; Rec.709 weights over sRGB pixels; 16-level/channel color bins",
+    "pass": true
+  },
+  "s5": {
+    "skyFraction": 0.3324924045138889,
+    "meanLuminance": 0.362999104750682,
+    "luminanceStdDev": 0.2325572013073616,
+    "largestQuantizedColorFraction": 0.10297067901234568,
+    "method": "256x144 geometric sky mask; Rec.709 weights over sRGB pixels; 16-level/channel color bins",
+    "pass": true
+  },
+  "s6": {
+    "skyFraction": 0.3987901475694444,
+    "meanLuminance": 0.3504417143608751,
+    "luminanceStdDev": 0.2588469522857761,
+    "largestQuantizedColorFraction": 0.14721450617283952,
+    "method": "256x144 geometric sky mask; Rec.709 weights over sRGB pixels; 16-level/channel color bins",
+    "pass": true
+  },
+  "s7": {
+    "skyFraction": 0.3800184461805556,
+    "meanLuminance": 0.34858356920243133,
+    "luminanceStdDev": 0.2562737654486473,
+    "largestQuantizedColorFraction": 0.148070987654321,
+    "method": "256x144 geometric sky mask; Rec.709 weights over sRGB pixels; 16-level/channel color bins",
+    "pass": true
+  }
+}

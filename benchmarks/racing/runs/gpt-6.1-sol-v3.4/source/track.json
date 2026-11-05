@@ -1,0 +1,20 @@
+{
+  "name": "Costa Dorada", "seed": 3704, "width": 11.4,
+  "description": "Circuito mediterrâneo fictício. Uma unidade é um metro.",
+  "points": [
+    [-350,3,-520,0],[-350,3,-320,0],[-350,3,-80,0],[-344,5,150,1],
+    [-300,18,320,3],[-160,38,350,-3],[-120,52,500,3],
+    [50,62,510,2],[180,58,350,1],[225,53,150,0],
+    [240,48,-80,-1],[220,40,-300,-2],[120,26,-490,2],
+    [-50,12,-610,1],[-230,4,-620,0]
+  ],
+  "zones": [
+    {"id":1,"name":"Riviera","start":0,"end":0.285},
+    {"id":2,"name":"Capo Aureo","start":0.285,"end":0.515},
+    {"id":3,"name":"Bellavista","start":0.515,"end":0.735},
+    {"id":4,"name":"Bosco Verde","start":0.735,"end":1}
+  ],
+  "bridge": {"from":0.846,"to":0.876},
+  "landmark": {"at":0.624,"offset":-28},
+  "checkpoints": 24
+}
