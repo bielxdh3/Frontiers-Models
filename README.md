@@ -46,34 +46,26 @@ Orbitarium includes **five current references**. Gemini 4 Argon and GPT-6.1 Sol 
 ## How it fits together
 
 ```text
-          ┌──────────────────────┐   ┌──────────────────────┐
-          │ Benchmark prompts    │   │ Model project runs   │
-          │ original inputs      │   │ sources / snapshots  │
-          └──────────┬───────────┘   └──────────┬───────────┘
-                     │                          │
-                     └────────────┬─────────────┘
-                                  │
-                       ┌──────────▼───────────┐
-                       │   Frontier Models    │
-                       │ RUNS.json · 2        │
-                       │ current · historical │
-                       └──────┬────────┬──────┘
-                              │        │
-                snapshots     │        │ source evidence
-                              │        │
-                    ┌─────────▼───┐ ┌──▼──────────────────┐
-                    │  Snapshots  │ │ Provenance records  │
-                    │ runs/       │ │ commits · ZIP hashes│
-                    │ model files │ │ prompt provenance   │
-                    └─────────────┘ └──┬──────────────────┘
-                                       │ published references
-                         ┌─────────────▼───────────┐
-                         │ Live project URLs       │
-                         │ SHA-256 verification    │
-                         └─────────────────────────┘
+FRONTIER MODELS                         2 benchmarks · 7 current runs
+│
+├── RACING-BENCH (V3.4)                 2 current runs
+│   ├── inputs      racing-v3.4/ · 14 visual references
+│   ├── current     Gemini 3.8 Flash · GPT-6.1 Sol
+│   └── history     V2.6 runs + earlier prompts
+│
+├── ORBITARIUM-BENCH (Frontier V2)      5 current references
+│   ├── inputs      frontier-v2.md
+│   ├── current     Sol · Astra · Grok · Fable · Argon
+│   └── history     earlier and non-frontier runs
+│
+└── ARCHIVE CONVENTIONS (per benchmark)
+    ├── RUNS.json   current / historical index + live URLs
+    ├── prompts/    original benchmark inputs
+    ├── runs/       source snapshots or commit-pinned records
+    └── provenance commits · SHA-256 manifests · prompt status
 ```
 
-The registry connects archived inputs, independent project runs, source evidence, and public references. A pinned source is not necessarily a local snapshot, and prompts with unverified provenance are kept distinct. See [repository architecture](./docs/REPOSITORY-ARCHITECTURE.md).
+Each benchmark has its own prompts, current runs and history, indexed in `RUNS.json`. Source snapshots, commit pins and provenance stay separate from public links. See [repository architecture](./docs/REPOSITORY-ARCHITECTURE.md).
 
 ## 🗂️ Non-frontier or outdated models
 

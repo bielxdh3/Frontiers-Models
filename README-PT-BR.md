@@ -46,34 +46,26 @@ O Orbitarium reúne **cinco referências atuais**. O Gemini 4 Argon e o GPT-6.1 
 ## Como se organiza
 
 ```text
-          ┌──────────────────────┐   ┌──────────────────────┐
-          │ Prompts do benchmark │   │ Projetos dos modelos │
-          │ entradas originais   │   │ fontes / snapshots   │
-          └──────────┬───────────┘   └──────────┬───────────┘
-                     │                          │
-                     └────────────┬─────────────┘
-                                  │
-                       ┌──────────▼───────────┐
-                       │   Frontier Models    │
-                       │ RUNS.json · 2        │
-                       │ atuais · históricos  │
-                       └──────┬────────┬──────┘
-                              │        │
-                arquivos      │        │ dados de origem
-                              │        │
-                    ┌─────────▼───┐ ┌──▼──────────────────┐
-                    │  Snapshots  │ │ Proveniência        │
-                    │ runs/       │ │ commits · hashes ZIP│
-                    │ originais   │ │ status dos prompts  │
-                    └─────────────┘ └──┬──────────────────┘
-                                      │ links e verificações
-                         ┌────────────▼────────────┐
-                         │ Links dos projetos      │
-                         │ Checagens SHA-256       │
-                         └─────────────────────────┘
+FRONTIER MODELS                         2 benchmarks · 7 execuções atuais
+│
+├── RACING-BENCH (V3.4)                 2 execuções atuais
+│   ├── entradas    racing-v3.4/ · 14 referências visuais
+│   ├── atuais      Gemini 3.8 Flash · GPT-6.1 Sol
+│   └── histórico   execuções V2.6 + prompts anteriores
+│
+├── ORBITARIUM-BENCH (Frontier V2)      5 referências atuais
+│   ├── entradas    frontier-v2.md
+│   ├── atuais      Sol · Astra · Grok · Fable · Argon
+│   └── histórico   execuções antigas e não frontier
+│
+└── ORGANIZAÇÃO DO ACERVO (por benchmark)
+    ├── RUNS.json   índice atual / histórico + links
+    ├── prompts/    entradas originais
+    ├── runs/       snapshots de código ou fontes fixadas
+    └── proveniência commits · manifests SHA-256 · status dos prompts
 ```
 
-O registro conecta prompts arquivados, projetos independentes, evidências de origem e referências públicas. Uma fonte fixada não significa necessariamente que exista um snapshot local, e prompts sem origem verificada permanecem distintos. Veja a [arquitetura do repositório](./docs/REPOSITORY-ARCHITECTURE.md).
+Cada benchmark mantém seus próprios prompts, execuções atuais e histórico, registrados em `RUNS.json`. Snapshots, commits de origem e proveniência ficam separados dos links públicos. Veja a [arquitetura do repositório](./docs/REPOSITORY-ARCHITECTURE.md).
 
 ## 🗂️ Modelos non-frontier ou desatualizados
 
