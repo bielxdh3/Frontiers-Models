@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 650" role="img" aria-labelledby="title desc">
   <title id="title">Frontier Models — Racing and Orbitarium benchmark collection</title>
-  <desc id="desc">Two benchmarks. Racing-bench V3.4 current: Gemini 3.8 Flash, GPT-6.1 Sol, GPT-6 Astra, Opus 5.5. Orbitarium current: GPT-6.1 Sol, GPT-6 Astra, Grok 4.7, Fable 5.1, Gemini 4 Argon.</desc>
+  <desc id="desc">9 current runs across two benchmarks: 4 Racing V3.4 (Gemini 3.8 Flash, GPT-6.1 Sol, GPT-6 Astra, Opus 5.5) and 5 Orbitarium (GPT-6.1 Sol, GPT-6 Astra, Grok 4.7, Fable 5.1, Gemini 4 Argon).</desc>
   <defs>
     <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#080f1d"/>
@@ -38,6 +38,11 @@
     <text x="66" y="313" font-size="88" font-weight="800" letter-spacing="-4" fill="#f1f6fd">MODELS</text>
     <rect x="73" y="345" width="108" height="5" rx="2.5" fill="#ffb76b"/>
     <rect x="181" y="345" width="116" height="5" rx="2.5" fill="#85e4eb"/>
+    <g data-role="current-run-count" aria-label="9 current runs: 4 Racing and 5 Orbitarium">
+      <text x="69" y="448" font-size="68" font-weight="800" letter-spacing="-2" fill="#f1f6fd">09</text>
+      <text x="188" y="412" font-size="21" font-weight="700" fill="#b7cbe1">CURRENT RUNS</text>
+      <text x="188" y="442" font-size="17" font-weight="600" fill="#85e4eb">4 Racing · 5 Orbitarium</text>
+    </g>
     <g data-benchmark="racing">
       <rect x="613" y="51" width="775" height="280" rx="22" fill="url(#race)" stroke="#7d5565" stroke-opacity=".8"/>
       <path d="M649 67H929" stroke="#fdaf6d" stroke-width="3" stroke-linecap="round"/>

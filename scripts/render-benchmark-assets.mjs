@@ -19,6 +19,7 @@ const racingRuns = racing.current_arena.map(id => {
   if (!run) throw new Error('Missing current Racing run: ' + id);
   return run;
 });
+const currentRunCount = racingRuns.length + orbitRuns.length;
 if (orbitRuns.length !== 5 || new Set(orbitRuns.map(run => run.id)).size !== 5 ||
     !orbitRuns.some(run => run.model === 'Gemini 4 Argon') ||
     orbitRuns.some(run => run.model === 'Gemini 3.8 Flash') ||
@@ -59,7 +60,7 @@ const orbitBadges = orbitRuns.map((run, i) =>
 
 const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 650" role="img" aria-labelledby="title desc">
   <title id="title">Frontier Models — Racing and Orbitarium benchmark collection</title>
-  <desc id="desc">Two benchmarks. Racing-bench V3.4 current: ${escape(racingRuns.map(run => run.model).join(', '))}. Orbitarium current: ${escape(orbitRuns.map(run => run.model).join(', '))}.</desc>
+  <desc id="desc">${currentRunCount} current runs across two benchmarks: ${racingRuns.length} Racing V3.4 (${escape(racingRuns.map(run => run.model).join(', '))}) and ${orbitRuns.length} Orbitarium (${escape(orbitRuns.map(run => run.model).join(', '))}).</desc>
   <defs>
     <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#080f1d"/>
@@ -97,6 +98,11 @@ const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 650" rol
     <text x="66" y="313" font-size="88" font-weight="800" letter-spacing="-4" fill="#f1f6fd">MODELS</text>
     <rect x="73" y="345" width="108" height="5" rx="2.5" fill="#ffb76b"/>
     <rect x="181" y="345" width="116" height="5" rx="2.5" fill="#85e4eb"/>
+    <g data-role="current-run-count" aria-label="${currentRunCount} current runs: ${racingRuns.length} Racing and ${orbitRuns.length} Orbitarium">
+      <text x="69" y="448" font-size="68" font-weight="800" letter-spacing="-2" fill="#f1f6fd">${String(currentRunCount).padStart(2, '0')}</text>
+      <text x="188" y="412" font-size="21" font-weight="700" fill="#b7cbe1">CURRENT RUNS</text>
+      <text x="188" y="442" font-size="17" font-weight="600" fill="#85e4eb">${racingRuns.length} Racing · ${orbitRuns.length} Orbitarium</text>
+    </g>
     <g data-benchmark="racing">
       <rect x="613" y="51" width="775" height="280" rx="22" fill="url(#race)" stroke="#7d5565" stroke-opacity=".8"/>
       <path d="M649 67H929" stroke="#fdaf6d" stroke-width="3" stroke-linecap="round"/>

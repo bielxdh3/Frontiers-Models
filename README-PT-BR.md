@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — coleção de benchmarks independentes Racing e Orbitarium com cinco execuções atuais do Orbitarium" width="100%" />
+<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — coleção de benchmarks independentes Racing e Orbitarium com 9 execuções atuais (4 Racing e 5 Orbitarium)" width="100%" />
 
 <br/>
 
 [![Benchmark](https://img.shields.io/badge/benchmark-frontier%20models-7C3AED?style=flat)](./benchmarks)
 [![Benchmarks](https://img.shields.io/badge/benchmarks-2-2563EB?style=flat)](./docs/REPOSITORY-ARCHITECTURE.md)
-[![Execuções atuais](https://img.shields.io/badge/execu%C3%A7%C3%B5es%20atuais-8-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
+[![Execuções atuais](https://img.shields.io/badge/execu%C3%A7%C3%B5es%20atuais-9-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
 
 # Frontier Models
 
@@ -73,7 +73,7 @@ Cada benchmark mantém seus próprios prompts, execuções atuais e histórico, 
 
 ## 🗂️ Modelos non-frontier ou desatualizados
 
-Estas execuções **do Orbitarium** continuam visíveis como referência, mas ficam separadas da arena atual desse benchmark. O Racing-bench V3.4 destaca Gemini 3.8 Flash, GPT-6.1 Sol e GPT-6 Astra como execuções atuais independentes; os três projetos V2.6 continuam arquivados como legado.
+Estas execuções **do Orbitarium** continuam visíveis como referência, mas ficam separadas da arena atual desse benchmark. O Racing-bench V3.4 destaca Gemini 3.8 Flash, GPT-6.1 Sol, GPT-6 Astra e Opus 5.5 como execuções atuais independentes; os três projetos V2.6 continuam arquivados como legado.
 
 | Modelo | Classificação | Projeto / fonte | Proveniência |
 | --- | --- | --- | --- |

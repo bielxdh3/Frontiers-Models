@@ -12,12 +12,20 @@ const racing = JSON.parse(readFileSync(resolve(root, 'benchmarks/racing/RUNS.jso
 const orbitById = new Map(orbit.runs.map(run => [run.id, run]));
 const models = benchmark => [...svg.matchAll(new RegExp('<g data-role="run" data-benchmark="' + benchmark + '" data-model="([^"]+)"', 'g'))].map(([, id]) => id);
 
-test('hero presents a clean collection of two benchmarks with no microcopy or orbital diagram', () => {
+test('hero presents two benchmarks and one accurate current-run total without an orbital diagram', () => {
   assert.match(svg, /<title id="title">Frontier Models — Racing and Orbitarium benchmark collection<\/title>/);
   assert.match(svg, /viewBox="0 0 1440 650"/);
-  assert.doesNotMatch(svg, /BENCHMARK COLLECTION|02 CURRENT RUNS|05 CURRENT REFERENCES|OPEN PROJECT ARCHIVE|CURRENT RUNS|<text[^>]*>CURRENT<\/text>/);
+  assert.doesNotMatch(svg, /BENCHMARK COLLECTION|02 CURRENT RUNS|05 CURRENT REFERENCES|OPEN PROJECT ARCHIVE|<text[^>]*>CURRENT<\/text>/);
   assert.doesNotMatch(svg, /BENCHMARK 002|BENCHMARK 001|GAMEPLAY ENGINEERING|PRODUCT &amp; SIMULATION|data-role="collection-counts"|HISTORICAL \/ NON-FRONTIER/);
-  assert.doesNotMatch(svg, /<text[^>]*font-size="1[0-5]"/);
+  const count = racing.current_arena.length + orbit.current_arena.length;
+  assert.equal(count, 9);
+  assert.match(svg, /data-role="current-run-count"/);
+  assert.match(svg, new RegExp('>' + String(count).padStart(2, '0') + '<\\/text>'));
+  assert.match(svg, new RegExp('>' + racing.current_arena.length + ' Racing · ' + orbit.current_arena.length + ' Orbitarium<\\/text>'));
+  assert.match(svg, /CURRENT RUNS<\/text>/);
+  assert.match(svg, /aria-label="9 current runs: 4 Racing and 5 Orbitarium"/);
+  assert.match(readFileSync(resolve(root, 'README.md'), 'utf8'), /current%20runs-9-DB2777/);
+  assert.match(readFileSync(resolve(root, 'README-PT-BR.md'), 'utf8'), /atuais-9-DB2777/);
   assert.match(svg, />FRONTIER<\/text>/);
   assert.match(svg, />MODELS<\/text>/);
   assert.doesNotMatch(svg, /data-role="orbit"|data-role="planet"|data-role="sun"|<ellipse\b/);
