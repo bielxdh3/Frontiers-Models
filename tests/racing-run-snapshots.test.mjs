@@ -64,7 +64,7 @@ for (const run of registry.runs.filter(run =>
 test('Gemini 3.8 Flash V3.4: all 188 upstream Git-tracked blobs archived byte-exactly', () => {
   const run = registry.runs.find(run => run.id === 'gemini-3.8-v3.4');
   assert.ok(run, 'current Gemini V3.4 entry');
-  assert.deepEqual(registry.current_arena, [run.id]);
+  assert.ok(registry.current_arena.includes(run.id));
   assert.equal(run.archival_status, 'complete-tracked-git-snapshot-lfs-pointer-no-history-bundle');
   const manifest = JSON.parse(readFileSync(resolve(racing, run.manifest), 'utf8'));
   assert.equal(manifest.source_commit, run.source_commit);
@@ -104,3 +104,41 @@ test('Gemini 3.8 Flash V3.4: all 188 upstream Git-tracked blobs archived byte-ex
 });
 
 function requireSeparator() { return process.platform === 'win32' ? '\\' : '/'; }
+
+// This run is a separate V3.4 snapshot; never overwrite the historical GPT-6.1 Sol V2.6 archive.
+test('GPT-6.1 Sol V3.4: all 104 upstream Git-tracked blobs archived byte-exactly', () => {
+  const run = registry.runs.find(run => run.id === 'gpt-6.1-sol-v3.4');
+  assert.ok(run && registry.current_arena.includes(run.id));
+  assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
+  assert.equal(run.git_bundle, null);
+  assert.equal(run.source_commit, '1ab34b18cbe30145a161b78674ce1b682a9750d0');
+  const manifest = JSON.parse(readFileSync(resolve(racing, run.manifest), 'utf8'));
+  assert.equal(manifest.source_commit, run.source_commit);
+  assert.equal(manifest.source_tree, run.source_tree);
+  assert.equal(manifest.source_repository, run.source_repository);
+  assert.equal(manifest.file_count, 104);
+  assert.equal(manifest.total_bytes, 142958723);
+  assert.equal(run.source_file_count, manifest.file_count);
+  assert.equal(run.source_bytes, manifest.total_bytes);
+  assert.deepEqual(manifest.lfs_pointer_paths, []);
+  const sourceDir = resolve(racing, run.archive_path);
+  const paths = new Set();
+  let totalBytes = 0;
+  for (const entry of manifest.files) {
+    assert.match(entry.path, /^(?!\/)(?!.*(?:^|\/)\.\.(?:\/|$))[\w./+@() -]+$/, entry.path);
+    assert.equal(entry.mode, '100644', entry.path);
+    assert.ok(!paths.has(entry.path), 'duplicate ' + entry.path);
+    paths.add(entry.path);
+    const filePath = resolve(sourceDir, ...entry.path.split('/'));
+    assert.ok(filePath.startsWith(sourceDir + requireSeparator()), entry.path);
+    assert.ok(lstatSync(filePath).isFile(), entry.path);
+    const bytes = readFileSync(filePath);
+    assert.equal(bytes.length, entry.bytes, entry.path);
+    assert.equal(sha256(bytes), entry.sha256, entry.path);
+    assert.equal(gitBlob(bytes), entry.git_blob_sha1, entry.path);
+    totalBytes += bytes.length;
+  }
+  assert.equal(paths.size, 104);
+  assert.equal(totalBytes, 142958723);
+  assert.deepEqual(walk(sourceDir), [...paths].sort());
+});

@@ -170,6 +170,29 @@
       "source_file_count": 188,
       "source_bytes": 196549258,
       "git_bundle": null
+    },
+    {
+      "id": "gpt-6.1-sol-v3.4",
+      "model": "GPT-6.1 Sol",
+      "live_url": "https://racing-gpt-6.1-sol.biel.dev.br/",
+      "site_url": "https://racing-gpt-6.1-sol.biel.dev.br/",
+      "site_status": "owner-provided-url-reachability-not-independently-verified",
+      "source_repository": "https://github.com/bielxdh3/6.1racinsol",
+      "source_branch": "main",
+      "source_commit": "1ab34b18cbe30145a161b78674ce1b682a9750d0",
+      "source_tree": "c86b059a73f6902a68fdcd84cde1141dbccf2885",
+      "source_prompt_blob": "9ee30c035cf39ef6a09569936c78950622a9d645",
+      "prompt": "prompts/racing-v3.4/racing-v3.4.md",
+      "prompt_association": "same V3.4 prompt blob as archived spec; owner-reported execution, original delivery not independently verified",
+      "provenance": "runs/gpt-6.1-sol-v3.4/SOURCE-PROVENANCE.md",
+      "archival_status": "complete-tracked-git-snapshot-no-history-bundle",
+      "gameplay_verification": "not-independently-verified",
+      "display_status": "current-archived-source-owner-provided-site",
+      "archive_path": "runs/gpt-6.1-sol-v3.4/source",
+      "manifest": "runs/gpt-6.1-sol-v3.4/SOURCE-FILES.json",
+      "source_file_count": 104,
+      "source_bytes": 142958723,
+      "git_bundle": null
     }
   ],
   "current_prompt": "racing-v3.4",
@@ -179,6 +202,7 @@
     "gpt-6-astra"
   ],
   "current_arena": [
-    "gemini-3.8-v3.4"
+    "gemini-3.8-v3.4",
+    "gpt-6.1-sol-v3.4"
   ]
 }

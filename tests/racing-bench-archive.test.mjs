@@ -25,7 +25,7 @@ test('Racing-bench V2.6 prompt is archived verbatim', () => {
 });
 
 test('Racing-bench source runs have provenance records, without claiming gameplay verification', () => {
-  assert.deepEqual(registry.runs.map(r => r.id).sort(), ['gemini-3.8-flash', 'gpt-6-astra', 'gpt-6.1-sol', 'gemini-3.8-v3.4'].sort());
+  assert.deepEqual(registry.runs.map(r => r.id).sort(), ['gemini-3.8-flash', 'gpt-6-astra', 'gpt-6.1-sol', 'gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4'].sort());
   for (const run of registry.runs) {
     assert.equal(run.gameplay_verification, 'not-independently-verified');
     assert.ok(run.source_commit);
@@ -35,9 +35,15 @@ test('Racing-bench source runs have provenance records, without claiming gamepla
       assert.ok(run.manifest);
       assert.ok(run.git_bundle);
     } else {
-      assert.deepEqual(registry.current_arena, [run.id]);
-      assert.equal(run.live_url, 'https://racing-gemini-3.8-flash.biel.dev.br/');
-      assert.equal(run.archival_status, 'complete-tracked-git-snapshot-lfs-pointer-no-history-bundle');
+      assert.ok(registry.current_arena.includes(run.id));
+      if (run.id === 'gemini-3.8-v3.4') {
+        assert.equal(run.live_url, 'https://racing-gemini-3.8-flash.biel.dev.br/');
+        assert.equal(run.archival_status, 'complete-tracked-git-snapshot-lfs-pointer-no-history-bundle');
+      } else {
+        assert.equal(run.id, 'gpt-6.1-sol-v3.4');
+        assert.equal(run.live_url, 'https://racing-gpt-6.1-sol.biel.dev.br/');
+        assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
+      }
       assert.ok(run.manifest);
       assert.equal(run.git_bundle, null);
       assert.ok(run.provenance);
@@ -147,7 +153,7 @@ test('Racing V3.4 prompt and 14 reference assets are present and pinned', () => 
   const refDir=resolve(root,'benchmarks/racing',p.reference_directory);
   assert.ok(existsSync(refDir));
   assert.equal(readdirSync(refDir).filter(x=>x.endsWith('.jpg')).length,14);
-  assert.deepEqual(registry.current_arena,['gemini-3.8-v3.4']);
+  assert.deepEqual(registry.current_arena,['gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4']);
 });
 
 test('Racing V3.3 Gemini-review corrections preserve real frozen-world and evidence invariants', () => {

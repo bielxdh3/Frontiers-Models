@@ -9,8 +9,9 @@ The [V3.4 prompt](./prompts/racing-v3.4/racing-v3.4.md) and its [14 reference im
 | Current model | Play | Source |
 | --- | --- | --- |
 | **Gemini 3.8 Flash (V3.4)** | [Play racing](https://racing-gemini-3.8-flash.biel.dev.br/) | [Source — gemini-3.8](https://github.com/bielxdh3/gemini-3.8) |
+| **GPT-6.1 Sol (V3.4)** | [Play racing](https://racing-gpt-6.1-sol.biel.dev.br/) | [Source — 6.1racinsol](https://github.com/bielxdh3/6.1racinsol) |
 
-The site returned HTTP 200 on 2026-11-02; gameplay remains unverified. [Source provenance](./runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md) pins the exact source commit. All 188 Git-tracked files are archived here with hashes (the external Git LFS video is not bundled). V3.3 remains unchanged and frozen as a historical prompt; V3.2 and V3.1 are also archived.
+The Gemini site returned HTTP 200 on 2026-11-02; gameplay remains unverified. GPT-6.1 Sol's site URL was provided by the owner and has not yet been independently tested. [Source provenance](./runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md) pins the exact source commit. All 188 Git-tracked files are archived here with hashes (the external Git LFS video is not bundled). V3.3 remains unchanged and frozen as a historical prompt; V3.2 and V3.1 are also archived.
 
 ## Historical source archives — Racing V2.6
 

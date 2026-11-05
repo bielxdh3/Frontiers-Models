@@ -9,8 +9,9 @@ O [prompt V3.4](./prompts/racing-v3.4/racing-v3.4.md), junto às [14 imagens de 
 | Modelo atual | Jogar | Código-fonte |
 | --- | --- | --- |
 | **Gemini 3.8 Flash (V3.4)** | [Jogar](https://racing-gemini-3.8-flash.biel.dev.br/) | [Source — gemini-3.8](https://github.com/bielxdh3/gemini-3.8) |
+| **GPT-6.1 Sol (V3.4)** | [Jogar](https://racing-gpt-6.1-sol.biel.dev.br/) | [Source — 6.1racinsol](https://github.com/bielxdh3/6.1racinsol) |
 
-O site respondeu HTTP 200 em 02/11/2026; a jogabilidade ainda não foi verificada. A [proveniência](./runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md) fixa o commit exato. Os 188 arquivos Git estão arquivados aqui com hashes (o vídeo externo LFS não está incluído). A V3.3 permanece congelada e intacta no histórico; a V3.2 e a V3.1 também.
+O site do Gemini respondeu HTTP 200 em 02/11/2026; a jogabilidade ainda não foi verificada. O endereço do site do GPT-6.1 Sol foi fornecido pelo proprietário e ainda não foi testado de forma independente. A [proveniência](./runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md) fixa o commit exato. Os 188 arquivos Git estão arquivados aqui com hashes (o vídeo externo LFS não está incluído). A V3.3 permanece congelada e intacta no histórico; a V3.2 e a V3.1 também.
 
 ## Histórico arquivado — Racing V2.6
 

@@ -25,9 +25,9 @@ test('all seven canonical Orbitarium sites retain their original links', () => {
   }
 });
 
-test('Racing V3.4 Gemini is current with source and working site links, old three archived', () => {
+test('Racing V3.4 Gemini and GPT-6.1 Sol are current with source and site links; old three archived', () => {
   assert.equal(racing.current_prompt, 'racing-v3.4');
-  assert.deepEqual(racing.current_arena, ['gemini-3.8-v3.4']);
+  assert.deepEqual(racing.current_arena, ['gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4']);
   assert.deepEqual(racing.legacy_runs, ['gpt-6.1-sol', 'gemini-3.8-flash', 'gpt-6-astra']);
   const current = racing.runs.find(run => run.id === racing.current_arena[0]);
   assert.equal(current.model, 'Gemini 3.8 Flash');
@@ -36,6 +36,13 @@ test('Racing V3.4 Gemini is current with source and working site links, old thre
   assert.equal(current.site_url, 'https://racing-gemini-3.8-flash.biel.dev.br/');
   assert.match(current.site_status, /http-200/);
   assert.equal(current.live_url, 'https://racing-gemini-3.8-flash.biel.dev.br/');
+  const sol = racing.runs.find(run => run.id === 'gpt-6.1-sol-v3.4');
+  assert.equal(sol.model, 'GPT-6.1 Sol');
+  assert.equal(sol.source_repository, 'https://github.com/bielxdh3/6.1racinsol');
+  assert.equal(sol.source_commit, '1ab34b18cbe30145a161b78674ce1b682a9750d0');
+  assert.equal(sol.live_url, 'https://racing-gpt-6.1-sol.biel.dev.br/');
+  assert.equal(sol.site_url, sol.live_url);
+  assert.match(sol.site_status, /not-independently-verified/);
   for (const run of racing.runs.filter(run => racing.legacy_runs.includes(run.id))) {
     assert.equal(run.live_url, null);
     assert.equal(run.display_status, 'legacy-archived');
@@ -49,7 +56,7 @@ test('Racing V3.4 Gemini is current with source and working site links, old thre
     assert.match(s, /\[Source — gemini-3\.8\]\(https:\/\/github\.com\/bielxdh3\/gemini-3\.8\)/);
     assert.doesNotMatch(s, /HTTP 404/);
     for (const run of racing.runs) assert.ok(s.includes(run.model));
-    assert.doesNotMatch(s, /https:\/\/racing-(?:gpt-6\.1-sol|gpt-6-astra)\.biel\.dev\.br/);
+    assert.doesNotMatch(s, /https:\/\/racing-gpt-6-astra\.biel\.dev\.br/);
   }
 });
 
