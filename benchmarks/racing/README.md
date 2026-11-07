@@ -8,7 +8,7 @@ The [V3.4 prompt](./prompts/racing-v3.4/racing-v3.4.md) and its [14 reference im
 
 | Current model | Play | Source |
 | --- | --- | --- |
-| **Gemini 3.8 Flash (V3.4)** | [Play racing](https://racing-gemini-3.8-flash.biel.dev.br/) | [Gemini 3.8 Flash](https://github.com/bielxdh3/gemini-3.8) |
+| **Gemini 3.8 Flash (V3.4)** | [Play racing](https://racing-gemini-3.8-flash.biel.dev.br/) | [Gemini 3.8 Flash](./runs/gemini-3.8-v3.4/source/) |
 | **GPT-6.1 Sol (V3.4)** | [Play racing](https://racing-gpt-6.1-sol.biel.dev.br/) | [GPT-6.1 Sol](./runs/gpt-6.1-sol-v3.4/source/) |
 | **GPT-6 Astra (V3.4)** | [Play racing](https://racing-gpt-6-astra.biel.dev.br/) | [GPT-6 Astra](./runs/gpt-6-astra-v3.4/source/) |
 | **Opus 5.5 (V3.4)** | [Play racing](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./runs/opus-5.5-v3.4/source/) |
