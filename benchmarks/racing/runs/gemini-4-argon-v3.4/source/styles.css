@@ -1,0 +1,527 @@
+:root {
+  --gold: #f5a638;
+  --gold-bright: #ffd07b;
+  --coral: #e75a3c;
+  --ink: #0f141c;
+  --panel: rgba(14, 19, 28, 0.78);
+  --panel-strong: rgba(12, 16, 24, 0.90);
+  --stroke: rgba(255, 224, 178, 0.18);
+  --text: #f7f4ee;
+  --muted: #b9b4aa;
+  --font-ui: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-num: 'Bahnschrift', 'Segoe UI Semibold', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #0b0f16;
+  color: var(--text);
+  font-family: var(--font-ui);
+}
+
+#game-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  z-index: 20;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Loading Screen (Section 11: Real Progress) */
+#loading-screen {
+  background: radial-gradient(circle at 65% 38%, #2d1d18 0%, #121621 58%, #090c12 100%);
+  z-index: 100;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.brand-kicker {
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: var(--gold-bright);
+  font-weight: 700;
+}
+
+.brand-title {
+  font-family: var(--font-num);
+  font-size: 52px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #fff7e8 0%, #ffc76b 55%, #ef7b45 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.progress-track {
+  width: min(460px, 82vw);
+  height: 8px;
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid var(--stroke);
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--coral), var(--gold), var(--gold-bright));
+  transition: width 0.12s ease-out;
+}
+
+#loading-status {
+  font-size: 13px;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+}
+
+/* Cards & Menus */
+.glass-card {
+  background: var(--panel);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--stroke);
+  border-radius: 16px;
+  padding: 30px 34px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.55);
+}
+
+#menu-screen {
+  justify-content: flex-start;
+  padding-left: min(7vw, 90px);
+  background: linear-gradient(90deg, rgba(8, 11, 17, 0.72) 0%, rgba(8, 11, 17, 0.22) 48%, rgba(8, 11, 17, 0.0) 100%);
+}
+
+.menu-card {
+  width: min(440px, 88vw);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.menu-subtitle {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.btn-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.btn {
+  appearance: none;
+  border: 1px solid var(--stroke);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  font-family: var(--font-num);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 13px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.12s ease, background 0.15s ease, border-color 0.15s ease;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn:hover, .btn:focus-visible {
+  background: rgba(245, 166, 56, 0.20);
+  border-color: var(--gold);
+  transform: translateX(3px);
+  outline: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #e7633b 0%, #f5a638 100%);
+  color: #121318;
+  border-color: rgba(255, 232, 190, 0.55);
+}
+
+.btn-primary:hover, .btn-primary:focus-visible {
+  background: linear-gradient(135deg, #f07148 0%, #ffb74d 100%);
+  color: #0d0f14;
+}
+
+/* Garage Screen (Carro girando na luz do pôr do sol) */
+#garage-screen {
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 36px 52px;
+  background: linear-gradient(0deg, rgba(9, 12, 18, 0.80) 0%, rgba(9, 12, 18, 0.0) 46%);
+}
+
+.garage-panel {
+  width: min(460px, 90vw);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.segmented-row {
+  display: flex;
+  gap: 8px;
+}
+
+.seg-btn {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 9px;
+  border: 1px solid var(--stroke);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  font-family: var(--font-num);
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.seg-btn.active {
+  background: rgba(245, 166, 56, 0.26);
+  border-color: var(--gold-bright);
+  color: #fff;
+}
+
+.swatch-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.color-swatch {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.28);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-num);
+  font-size: 12px;
+  font-weight: 800;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.85);
+}
+
+.color-swatch.active {
+  border-color: #fff;
+  box-shadow: 0 0 0 3px var(--gold);
+  transform: scale(1.08);
+}
+
+/* Race Setup / Settings Card */
+.setup-card {
+  width: min(520px, 92vw);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.field-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.slider-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.slider-row input[type="range"] {
+  flex: 1;
+  accent-color: var(--gold);
+}
+
+/* Grid Intro & 3-2-1 Countdown */
+#intro-banner {
+  position: fixed;
+  left: 48px;
+  bottom: 48px;
+  z-index: 18;
+  pointer-events: none;
+}
+
+#countdown-overlay {
+  pointer-events: none;
+  z-index: 25;
+}
+
+#countdown-text {
+  font-family: var(--font-num);
+  font-size: 118px;
+  font-weight: 900;
+  color: #fff6e5;
+  text-shadow: 0 10px 36px rgba(0, 0, 0, 0.72), 0 0 28px rgba(245, 166, 56, 0.55);
+  letter-spacing: 0.04em;
+}
+
+/* Discrete Commercial Gameplay HUD (Section 10) */
+#hud {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 12;
+}
+
+.hud-top-left {
+  position: absolute;
+  top: 22px;
+  left: 26px;
+  display: flex;
+  gap: 14px;
+  align-items: stretch;
+}
+
+.hud-pill {
+  background: rgba(12, 16, 23, 0.68);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 226, 182, 0.16);
+  border-radius: 11px;
+  padding: 9px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hud-label {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.hud-big {
+  font-family: var(--font-num);
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.hud-big small {
+  font-size: 15px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.hud-top-right {
+  position: absolute;
+  top: 22px;
+  right: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+}
+
+.hud-time-row {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.hud-time-val {
+  font-family: var(--font-num);
+  font-size: 20px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.hud-bottom-left {
+  position: absolute;
+  bottom: 24px;
+  left: 26px;
+  width: 164px;
+  height: 164px;
+  background: rgba(12, 16, 23, 0.62);
+  border: 1px solid rgba(255, 226, 182, 0.16);
+  border-radius: 14px;
+  padding: 8px;
+}
+
+#minimap-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hud-bottom-right {
+  position: absolute;
+  bottom: 24px;
+  right: 26px;
+  background: rgba(12, 16, 23, 0.72);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 226, 182, 0.18);
+  border-radius: 14px;
+  padding: 12px 18px;
+  min-width: 215px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.speed-gear-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.speed-num {
+  font-family: var(--font-num);
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 0.95;
+  font-variant-numeric: tabular-nums;
+}
+
+.speed-unit {
+  font-size: 12px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.gear-badge {
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  background: rgba(245, 166, 56, 0.22);
+  border: 1px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-num);
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--gold-bright);
+}
+
+.rpm-bar-bg {
+  width: 100%;
+  height: 7px;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+}
+
+.rpm-bar-fill {
+  height: 100%;
+  width: 15%;
+  background: linear-gradient(90deg, #5fd38d 0%, #f5a638 68%, #ef473a 100%);
+}
+
+/* Results Table */
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0;
+  font-family: var(--font-num);
+}
+
+.results-table th, .results-table td {
+  padding: 9px 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.results-table tr.is-player {
+  background: rgba(245, 166, 56, 0.18);
+  color: var(--gold-bright);
+  font-weight: 700;
+}
+
+.controls-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 18px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.controls-grid strong {
+  color: var(--text);
+}
+
+.ui-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.btn, .seg-btn, .color-swatch {
+  min-height: 44px;
+}
+
+.color-swatch {
+  width: 44px;
+  height: 44px;
+}
+
+.btn:focus-visible, .seg-btn:focus-visible, .color-swatch:focus-visible {
+  outline: 2px solid var(--gold-bright);
+  outline-offset: 2px;
+}
+
+.hud-alert {
+  border-color: rgba(239, 68, 68, 0.72);
+  background: rgba(68, 14, 14, 0.82);
+}
+
+.hud-alert-text {
+  font-family: var(--font-num);
+  font-size: 18px;
+  font-weight: 800;
+  color: #fecaca;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn, .progress-fill, .color-swatch {
+    transition: none !important;
+  }
+}

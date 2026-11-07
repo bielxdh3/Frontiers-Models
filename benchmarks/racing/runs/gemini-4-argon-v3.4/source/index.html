@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Costa Dourada — Corrida Costeira ao Pôr do Sol</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./vendor/three/build/three.module.js",
+      "three/addons/": "./vendor/three/addons/"
+    }
+  }
+  </script>
+</head>
+<body>
+  <canvas id="game-canvas"></canvas>
+
+  <!-- Section 11: Real Progress Loading Screen -->
+  <div id="loading-screen" class="overlay">
+    <div class="brand-kicker">Circuito Costeiro Mediterrâneo</div>
+    <h1 class="brand-title">Costa Dourada</h1>
+    <div class="progress-track">
+      <div id="loading-bar" class="progress-fill"></div>
+    </div>
+    <div id="loading-status">Inicializando mundo e shaders...</div>
+  </div>
+
+  <!-- 1. Main Menu (Live track in background) -->
+  <div id="menu-screen" class="overlay hidden">
+    <div class="glass-card menu-card">
+      <div class="brand-kicker">Golden Hour Circuit · 3,02 km</div>
+      <h1 class="brand-title" style="font-size: 40px;">Costa Dourada</h1>
+      <p class="menu-subtitle">Dispute da orla marítima às falésias, vila costeira e bosque de pinheiros contra 5 adversários.</p>
+      <div class="btn-stack">
+        <button id="btn-menu-garage" class="btn btn-primary">
+          <span>Correr · Escolher Carro</span>
+          <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button id="btn-menu-settings" class="btn">
+          <span>Opções e Controles</span>
+          <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2.8v2.4M12 18.8v2.4M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M2.8 12h2.4M18.8 12h2.4M4.9 19.1l1.7-1.7M17.4 6.6l1.7-1.7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Garage (2 cars, 6 colors/numbers, rotating in sunset light) -->
+  <div id="garage-screen" class="overlay hidden">
+    <div class="glass-card garage-panel">
+      <div class="brand-kicker">Garagem ao Pôr do Sol</div>
+      <h2 id="garage-car-title" style="font-family: var(--font-num); font-size: 28px;">Solare GT</h2>
+      <p id="garage-car-desc" class="menu-subtitle">Cupê GT baixo de linhas fluidas, aerodinâmica equilibrada e timbre grave.</p>
+
+      <div class="field-group">
+        <div class="field-label">Modelo</div>
+        <div class="segmented-row">
+          <button id="btn-car-gt" class="seg-btn active" data-car="gt">Solare GT (Cupê)</button>
+          <button id="btn-car-hatch" class="seg-btn" data-car="hatch">Vento RS (Hatch)</button>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <div class="field-label">Pintura e Número</div>
+        <div id="livery-swatches" class="swatch-row"></div>
+      </div>
+
+      <div class="segmented-row" style="margin-top: 6px;">
+        <button id="btn-garage-back" class="btn" style="flex: 0.7;"><span>← Menu</span></button>
+        <button id="btn-garage-next" class="btn btn-primary" style="flex: 1.3;"><span>Configurar Corrida</span><span>→</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Race Configuration (Laps 3/6, Difficulty, Quality) -->
+  <div id="config-screen" class="overlay hidden">
+    <div class="glass-card setup-card">
+      <div class="brand-kicker">Preparação de Largada</div>
+      <h2 style="font-family: var(--font-num); font-size: 28px;">Configuração da Corrida</h2>
+
+      <div class="field-group">
+        <div class="field-label">Voltas</div>
+        <div class="segmented-row" id="cfg-laps-group">
+          <button class="seg-btn active" data-laps="3">3 Voltas</button>
+          <button class="seg-btn" data-laps="6">6 Voltas</button>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <div class="field-label">Dificuldade (5 IAs)</div>
+        <div class="segmented-row" id="cfg-diff-group">
+          <button class="seg-btn" data-diff="easy">Fácil</button>
+          <button class="seg-btn active" data-diff="normal">Normal</button>
+          <button class="seg-btn" data-diff="hard">Difícil</button>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <div class="field-label">Qualidade Gráfica</div>
+        <div class="segmented-row" id="cfg-quality-group">
+          <button class="seg-btn" data-quality="low">Baixa</button>
+          <button class="seg-btn active" data-quality="high">Alta</button>
+        </div>
+      </div>
+
+      <div class="segmented-row" style="margin-top: 8px;">
+        <button id="btn-config-back" class="btn" style="flex: 0.7;"><span>← Garagem</span></button>
+        <button id="btn-start-race" class="btn btn-primary" style="flex: 1.3;">
+          <span>Ir para o Grid</span>
+          <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4m0 0h13l-2.5 4L18 12H5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Settings Modal (Quality, Volumes, Controls — accessible from Menu or Pause) -->
+  <div id="settings-screen" class="overlay hidden" style="background: rgba(6, 9, 14, 0.65);">
+    <div class="glass-card setup-card">
+      <div class="brand-kicker">Configurações</div>
+      <h2 style="font-family: var(--font-num); font-size: 26px;">Qualidade, Áudio e Controles</h2>
+
+      <div class="field-group">
+        <div class="field-label">Qualidade Gráfica</div>
+        <div class="segmented-row" id="opt-quality-group">
+          <button class="seg-btn" data-quality="low">Baixa</button>
+          <button class="seg-btn active" data-quality="high">Alta</button>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <div class="field-label">Volume Master</div>
+        <div class="slider-row">
+          <input id="vol-master" type="range" min="0" max="100" value="85" />
+          <span id="vol-master-val">85%</span>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <div class="field-label">Volume Efeitos e Motor</div>
+        <div class="slider-row">
+          <input id="vol-sfx" type="range" min="0" max="100" value="90" />
+          <span id="vol-sfx-val">90%</span>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <div class="field-label">Volume Música</div>
+        <div class="slider-row">
+          <input id="vol-music" type="range" min="0" max="100" value="40" />
+          <span id="vol-music-val">40%</span>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <div class="field-label">Controles (Teclado e Gamepad)</div>
+        <div class="controls-grid">
+          <div><strong>W / ↑ / RT</strong> Acelerar</div>
+          <div><strong>S / ↓ / LT</strong> Frear / Ré</div>
+          <div><strong>A D / ← → / Stick</strong> Esterçar</div>
+          <div><strong>Espaço / (A)</strong> Freio de mão</div>
+          <div><strong>C / (Y)</strong> Câmera (Perseguição/Capô)</div>
+          <div><strong>R / (X)</strong> Reposicionar na pista</div>
+          <div><strong>Esc / P / Start</strong> Pausar</div>
+        </div>
+      </div>
+
+      <button id="btn-settings-close" class="btn btn-primary"><span>Voltar</span><span>✓</span></button>
+    </div>
+  </div>
+
+  <!-- 4. Grid Presentation Banner (~5s) -->
+  <div id="intro-banner" class="glass-card hidden" style="padding: 18px 26px;">
+    <div class="brand-kicker">Grid de Largada · Orla</div>
+    <div id="intro-title" style="font-family: var(--font-num); font-size: 26px; font-weight: 800;">Circuito Costa Dourada · 3 Voltas</div>
+    <div id="intro-sub" style="font-size: 13px; color: var(--muted); margin-top: 3px;">6 carros no grid · Pôr do sol seco</div>
+  </div>
+
+  <!-- 5. 3-2-1 Countdown -->
+  <div id="countdown-overlay" class="overlay hidden">
+    <div id="countdown-text">3</div>
+  </div>
+
+  <!-- 6. Gameplay HUD -->
+  <div id="hud" class="hidden">
+    <div class="hud-top-left">
+      <div class="hud-pill">
+        <span class="hud-label">Posição</span>
+        <span class="hud-big"><span id="hud-pos">5</span><small>/6</small></span>
+      </div>
+      <div class="hud-pill">
+        <span class="hud-label">Volta</span>
+        <span class="hud-big"><span id="hud-lap">1</span><small>/<span id="hud-laps-total">3</span></small></span>
+      </div>
+      <div id="hud-wrongway" class="hud-pill hud-alert hidden">
+        <span class="hud-label">Alerta</span>
+        <span class="hud-alert-text">Sentido Contrário</span>
+      </div>
+    </div>
+
+    <div class="hud-top-right">
+      <div class="hud-pill" style="align-items: flex-end;">
+        <div class="hud-time-row">
+          <span class="hud-label">Atual</span>
+          <span id="hud-time-cur" class="hud-time-val">00:00.00</span>
+        </div>
+        <div class="hud-time-row">
+          <span class="hud-label">Melhor</span>
+          <span id="hud-time-best" class="hud-time-val" style="color: var(--gold-bright);">--:--.--</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hud-bottom-left">
+      <canvas id="minimap-canvas" width="220" height="220"></canvas>
+    </div>
+
+    <div class="hud-bottom-right">
+      <div class="speed-gear-row">
+        <div>
+          <div id="hud-speed" class="speed-num">0</div>
+          <div class="speed-unit">km/h</div>
+        </div>
+        <div id="hud-gear" class="gear-badge">1</div>
+      </div>
+      <div class="rpm-bar-bg">
+        <div id="hud-rpm-fill" class="rpm-bar-fill"></div>
+      </div>
+      <div style="display: flex; justify-content: space-between; font-size: 11px; color: var(--muted); font-family: var(--font-num);">
+        <span id="hud-rpm-text">950 RPM</span>
+        <span id="hud-cam-label">PERSEGUIÇÃO</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pause Menu -->
+  <div id="pause-screen" class="overlay hidden" style="background: rgba(6, 9, 14, 0.65);">
+    <div class="glass-card menu-card">
+      <div class="brand-kicker">Jogo Pausado</div>
+      <h2 style="font-family: var(--font-num); font-size: 32px;">Pausa</h2>
+      <div class="btn-stack">
+        <button id="btn-pause-resume" class="btn btn-primary"><span>Continuar</span><span>▶</span></button>
+        <button id="btn-pause-restart" class="btn"><span>Reiniciar Corrida</span><span>↻</span></button>
+        <button id="btn-pause-settings" class="btn">
+          <span>Configurações</span>
+          <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2.8v2.4M12 18.8v2.4M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M2.8 12h2.4M18.8 12h2.4M4.9 19.1l1.7-1.7M17.4 6.6l1.7-1.7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <button id="btn-pause-menu" class="btn"><span>Menu Principal</span><span>←</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. Results Screen -->
+  <div id="results-screen" class="overlay hidden" style="background: rgba(6, 9, 14, 0.68);">
+    <div class="glass-card setup-card" style="width: min(620px, 94vw);">
+      <div class="brand-kicker">Bandeirada Final</div>
+      <h2 id="results-headline" style="font-family: var(--font-num); font-size: 32px;">Resultado da Corrida</h2>
+      <table class="results-table">
+        <thead>
+          <tr>
+            <th>Pos</th>
+            <th>Piloto</th>
+            <th>Carro</th>
+            <th>Melhor Volta</th>
+            <th>Tempo Total</th>
+          </tr>
+        </thead>
+        <tbody id="results-tbody"></tbody>
+      </table>
+      <div class="segmented-row" style="margin-top: 8px;">
+        <button id="btn-results-menu" class="btn" style="flex: 0.8;"><span>Menu Principal</span></button>
+        <button id="btn-results-again" class="btn btn-primary" style="flex: 1.2;">
+          <span>Correr de Novo</span>
+          <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4m0 0h13l-2.5 4L18 12H5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "costa-dourada-racing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Mediterranean Golden-Hour Coastal 3D Racing Game — Racing-bench V3.4",
+  "scripts": {
+    "prepare-vendor": "node scripts/prepare-vendor.mjs",
+    "postinstall": "node scripts/prepare-vendor.mjs",
+    "serve": "node scripts/server.mjs",
+    "start": "node scripts/server.mjs",
+    "verify": "node scripts/verify.mjs"
+  },
+  "dependencies": {
+    "three": "^0.175.0"
+  },
+  "devDependencies": {
+    "playwright": "1.64.1",
+    "sharp": "^0.34.1"
+  }
+}

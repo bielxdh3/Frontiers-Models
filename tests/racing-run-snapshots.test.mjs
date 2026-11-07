@@ -232,3 +232,48 @@ test('Opus 5.5 V3.4: all 2,100 upstream Git blobs archived byte-exactly with own
   assert.match(report, /134\.9/);
   assert.match(report, /não medida/);
 });
+
+test('Gemini 4 Argon V3.4: 450 exact source blobs archived locally without original repository link', () => {
+  const run = registry.runs.find(x => x.id === 'gemini-4-argon-v3.4');
+  assert.ok(run && registry.current_arena.includes(run.id));
+  assert.equal(run.source_commit, '88632a836928ac314ab0e26b492d5360382b980f');
+  assert.equal(run.source_tree, '22f7d5a2fae93ea3e92d67a37a4ea23d0bb6e5d8');
+  assert.equal(run.source_repository, null);
+  assert.equal(run.source_file_count, 450);
+  assert.equal(run.source_bytes, 382941704);
+  assert.equal(run.git_bundle, null);
+  assert.equal(run.live_url, 'https://racing-gemini-4-argon.biel.dev.br/');
+  const manifest = JSON.parse(readFileSync(resolve(racing, run.manifest), 'utf8'));
+  assert.equal(manifest.source_commit, run.source_commit);
+  assert.equal(manifest.source_tree, run.source_tree);
+  assert.equal(manifest.source_repository, null);
+  assert.equal(manifest.file_count, 450);
+  assert.equal(manifest.total_bytes, 382941704);
+  assert.equal(manifest.files.length, 450);
+  assert.deepEqual(manifest.lfs_pointer_paths, []);
+  assert.equal(manifest.repository_bundle, null);
+  const dir = resolve(racing, run.archive_path);
+  const paths = new Set();
+  let total = 0;
+  for (const entry of manifest.files) {
+    assert.ok(!entry.path.startsWith('/') && !entry.path.includes('\\') &&
+      entry.path.split('/').every(part => part !== '' && part !== '.' && part !== '..'),
+      'unsafe source path: ' + entry.path);
+    assert.ok(!paths.has(entry.path), 'duplicate source path: ' + entry.path);
+    paths.add(entry.path);
+    assert.ok(['100644', '100755'].includes(entry.mode), entry.path);
+    const p = resolve(dir, ...entry.path.split('/'));
+    assert.ok(p.startsWith(dir + requireSeparator()), entry.path);
+    assert.ok(lstatSync(p).isFile(), entry.path);
+    const data = readFileSync(p);
+    assert.equal(data.length, entry.bytes, entry.path);
+    assert.equal(sha256(data), entry.sha256, entry.path);
+    assert.equal(gitBlob(data), entry.git_blob_sha1, entry.path);
+    total += data.length;
+  }
+  assert.equal(total, 382941704);
+  assert.deepEqual(walk(dir), [...paths].sort());
+  const provenance = readFileSync(resolve(racing, run.provenance), 'utf8');
+  assert.ok(!provenance.includes('github.com/bielxdh3/4argon'));
+  assert.ok(provenance.includes('[Gemini 4 Argon source](./source/)'));
+});

@@ -25,7 +25,7 @@ test('Racing-bench V2.6 prompt is archived verbatim', () => {
 });
 
 test('Racing-bench source runs have provenance records, without claiming gameplay verification', () => {
-  assert.deepEqual(registry.runs.map(r => r.id).sort(), ['gemini-3.8-flash', 'gpt-6-astra', 'gpt-6.1-sol', 'gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4'].sort());
+  assert.deepEqual(registry.runs.map(r => r.id).sort(), ['gemini-3.8-flash', 'gpt-6-astra', 'gpt-6.1-sol', 'gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4'].sort());
   for (const run of registry.runs) {
     assert.equal(run.gameplay_verification, 'not-independently-verified');
     assert.ok(run.source_commit);
@@ -47,6 +47,11 @@ test('Racing-bench source runs have provenance records, without claiming gamepla
         assert.equal(run.live_url, 'https://racing-gpt-6-astra.biel.dev.br/', 'owner-provided Astra game URL');
         assert.match(run.site_status, /http-404-on-2026-11-05/);
         assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
+      } else if (run.id === 'gemini-4-argon-v3.4') {
+        assert.equal(run.source_repository, null);
+        assert.equal(run.live_url, 'https://racing-gemini-4-argon.biel.dev.br/');
+        assert.equal(run.source_file_count, 450);
+        assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
       } else {
         assert.equal(run.id, 'opus-5.5-v3.4');
         assert.equal(run.live_url, 'https://racing-opus-5.5.biel.dev.br/', 'owner-provided Opus URL');
@@ -62,21 +67,23 @@ test('Racing-bench source runs have provenance records, without claiming gamepla
   }
 });
 
-test('every Racing-bench V2.6 execution requires the separate operational tool addendum', () => {
+test('every Racing-bench execution can use the exact timeless operational tool addendum', () => {
   const record = registry.execution_addendum;
   assert.ok(record);
-  assert.equal(record.required_with, 'racing-v2.6');
+  assert.equal(record.required_with, 'racing-bench-any-version');
   assert.equal(record.path, 'EXECUTION-ADDENDUM.md');
   const content = file('benchmarks/racing/' + record.path);
   const canonical = Buffer.from(content.toString('utf8').replace(/\r\n/g, '\n'));
   assert.equal(canonical.length, record.bytes);
   assert.equal(canonical.toString('utf8').split('\n').length - 1, record.lines);
   assert.equal(createHash('sha256').update(canonical).digest('hex'), record.sha256);
-  assert.match(canonical.toString('utf8'), /both complete documents together/i);
-  assert.match(canonical.toString('utf8'), /Playwright or browser DevTools/);
-  assert.match(canonical.toString('utf8'), /No delegation/);
-  assert.match(text('benchmarks/racing/README.md'), /required \*\*BOTH\*\*/);
-  assert.match(text('benchmarks/racing/README-PT-BR.md'), /\*\*OS DOIS\*\*/);
+  assert.equal(canonical.toString('utf8').trim().split('\n').length, 3);
+  assert.doesNotMatch(canonical.toString('utf8'), /V2\.6|V3\.4|^#/m);
+  assert.match(canonical.toString('utf8'), /^You are authorized to use skills and tools needed/m);
+  assert.match(canonical.toString('utf8'), /Playwright, DevTools, run builds/);
+  assert.match(canonical.toString('utf8'), /delegating implementation to other AI agents/);
+  assert.match(text('benchmarks/racing/README.md'), /EXECUTION-ADDENDUM\.md/);
+  assert.match(text('benchmarks/racing/README-PT-BR.md'), /EXECUTION-ADDENDUM\.md/);
   assert.match(text('benchmarks/racing/prompts/README.md'), /For historical V2\.6 reproduction, supply \*\*both\*\*/);
 });
 
@@ -164,7 +171,7 @@ test('Racing V3.4 prompt and 14 reference assets are present and pinned', () => 
   const refDir=resolve(root,'benchmarks/racing',p.reference_directory);
   assert.ok(existsSync(refDir));
   assert.equal(readdirSync(refDir).filter(x=>x.endsWith('.jpg')).length,14);
-  assert.deepEqual(registry.current_arena,['gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4']);
+  assert.deepEqual(registry.current_arena,['gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4']);
 });
 
 test('Racing V3.3 Gemini-review corrections preserve real frozen-world and evidence invariants', () => {

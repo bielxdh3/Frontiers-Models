@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
@@ -28,7 +29,9 @@ test('Orbitarium-bench is the canonical public benchmark name', () => {
 test('legacy archive paths and exact prompt integrity remain unchanged', () => {
   const promptPath = 'benchmarks/solar-system/prompts/frontier-v2.md';
   assert.ok(existsSync(resolve(root, promptPath)));
-  assert.ok(existsSync(resolve(root, 'benchmarks/solar-system/runs')));
+  assert.ok(existsSync(resolve(root, 'benchmarks/solar-system/runs')) ||
+    /^040000 tree /m.test(execFileSync('git', ['-C', root, 'ls-tree', 'HEAD', 'benchmarks/solar-system/runs'], { encoding: 'utf8' })),
+    'Orbitarium archived source tree exists in the tracked Git snapshot');
   const digest = createHash('sha256').update(read(promptPath).replace(/\r\n/g, '\n')).digest('hex');
   assert.equal(digest, registry.prompts['frontier-v2'].sha256);
 });
@@ -43,14 +46,16 @@ test('Racing V3.4 appears first with new Gemini and the old three retained in hi
     assert.match(section, /racing-v3\.4\.md/);
     assert.match(section, /gemini-3\.8-v3\.4/);
     assert.match(section, /https:\/\/racing-gemini-3\.8-flash\.biel\.dev\.br\//);
-    assert.match(section, /https:\/\/github\.com\/bielxdh3\/gemini-3\.8/);
+    assert.match(section, /gemini-3\.8-v3\.4\/source\//);
     assert.match(section, /https:\/\/racing-gpt-6-astra\.biel\.dev\.br\//);
     assert.match(section, /https:\/\/racing-gpt-6\.1-sol\.biel\.dev\.br\//);
     assert.match(section, /gpt-6-astra-v3\.4\/source\//);
     assert.match(section, /opus-5\.5-v3\.4\/source\//);
     assert.match(section, /https:\/\/racing-opus-5\.5\.biel\.dev\.br\//);
+    assert.match(section, /https:\/\/racing-gemini-4-argon\.biel\.dev\.br\//);
+    assert.match(section, /gemini-4-argon-v3\.4\/source\//);
     assert.doesNotMatch(section, /HTTP 404|Source — archived here|Código — arquivado aqui|Source — gemini-3\.8/);
-    assert.match(section, /33\/34/);
+    assert.doesNotMatch(section, /33\/34/, 'QA annotations belong in run reports, not README');
     assert.doesNotMatch(section, /https:\/\/racing-gemini-3\.8-flash-old\.biel/);
     for (const name of ['GPT-6.1 Sol', 'Gemini 3.8 Flash', 'GPT-6 Astra', 'Opus 5.5']) assert.ok(section.includes(name));
     assert.ok(s.indexOf('## Benchmark 002 — Racing-bench') < s.indexOf('## Benchmark 001 — Orbitarium-bench'));

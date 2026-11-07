@@ -1,0 +1,37 @@
+[2026-11-07T13:00:23.684Z] === Racing-bench V3.4 Automated Verification Suite (Costa Dourada) ===
+[2026-11-07T13:00:23.709Z] Build hygiene check passed: 0 files from refs/ inside project directory.
+[2026-11-07T13:00:23.768Z] External reference images directory: C:\Users\bielx\.gemini\antigravity\brain\f5e8d750-f09c-43f5-a089-8f647bb417b9\scratch\racing-v3.4\refs
+[2026-11-07T13:00:23.774Z] Offline static server listening at http://127.0.0.1:62567
+[2026-11-07T13:00:33.109Z] Hardware & Runtime: GPU="ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)" | CPU="AMD Ryzen 7 5700G with Radeon Graphics" | Browser="Chromium 156.0.8078.4" | Res=1920x1080
+[2026-11-07T13:00:33.109Z] Running Section 13.1 Test 8: Runtime Scene-Graph & Audio Sample Audit...
+[2026-11-07T13:00:33.141Z] Test 8 scene-stats.json saved -> passed=true | minCarTris=51816 | houses=128 | minProps/100m=76 | boxes=0 | flatColors=0 | lowResTex=0
+[2026-11-07T13:00:33.141Z] Running Section 13.3 Performance Benchmark in Z3 Village with 5 AIs (Alta & Baixa)...
+[2026-11-07T13:00:37.122Z]   Preset [HIGH] in Z3 -> avgFps=60 | 1% low=59.5 (157 frames)
+[2026-11-07T13:00:40.715Z]   Preset [LOW] in Z3 -> avgFps=60 | 1% low=59.5 (157 frames)
+[2026-11-07T13:00:40.721Z] Capturing mandatory 1920x1080 screenshots S1–S12, measuring per-shot FPS, running Test 7 sanity & generating comparisons...
+[2026-11-07T13:00:42.902Z]   [S1] s1-reta-orla.png (s1-reta-orla-60fps.png) -> sky=0.4858 meanLum=0.5345 stdLum=0.2424 maxCol=0.0692 passed=true
+[2026-11-07T13:00:44.687Z]   [S2] s2-grid-3-4.png (s2-grid-3-4-60fps.png) -> sky=0.4846 meanLum=0.5045 stdLum=0.2377 maxCol=0.0726 passed=true
+[2026-11-07T13:00:46.691Z]   [S3] s3-praia-espuma.png (s3-praia-espuma-60fps.png) -> sky=0.5539 meanLum=0.6185 stdLum=0.2604 maxCol=0.112 passed=true
+[2026-11-07T13:00:48.520Z]   [S4] s4-falesia-mirante.png (s4-falesia-mirante-60fps.png) -> sky=0.5356 meanLum=0.4998 stdLum=0.2148 maxCol=0.0571 passed=true
+[2026-11-07T13:00:50.869Z]   [S5] s5-vila-rua.png (s5-vila-rua-60fps.png) -> sky=0.4082 meanLum=0.4521 stdLum=0.2322 maxCol=0.0616 passed=true
+[2026-11-07T13:00:52.996Z]   [S6] s6-bosque-luz.png (s6-bosque-luz-60fps.png) -> sky=0.4084 meanLum=0.4666 stdLum=0.2366 maxCol=0.0984 passed=true
+[2026-11-07T13:00:54.784Z]   [S7] s7-ponte-ou-tunel.png (s7-ponte-ou-tunel-60fps.png) -> sky=0.4565 meanLum=0.5314 stdLum=0.2648 maxCol=0.0629 passed=true
+[2026-11-07T13:00:56.946Z]   [S8] s8-disputa.png (s8-disputa-60fps.png) -> sky=0.3795 meanLum=0.43 stdLum=0.2103 maxCol=0.1289 passed=true
+[2026-11-07T13:00:58.163Z]   [S9] s9-close-pista.png (s9-close-pista-60fps.png) -> sky=0.6214 meanLum=0.5924 stdLum=0.213 maxCol=0.0826 passed=true
+[2026-11-07T13:00:59.424Z]   [S10] s10-baixa-vila.png (s10-baixa-vila-60fps.png) -> sky=0.3636 meanLum=0.4301 stdLum=0.2307 maxCol=0.0601 passed=true
+[2026-11-07T13:01:00.665Z]   [S11] s11-escala.png (s11-escala-60fps.png) -> sky=0.303 meanLum=0.4308 stdLum=0.2199 maxCol=0.0992 passed=true
+[2026-11-07T13:01:01.981Z]   [S12] s12-mapa.png (s12-mapa-60fps.png) -> sky=0.0834 meanLum=0.3319 stdLum=0.1061 maxCol=0.2287 passed=false
+[2026-11-07T13:01:01.981Z] Running Section 13.1 Test 9: Full-Lap 25 m Chase-Camera Sweep across entire circuit...
+[2026-11-07T13:02:27.512Z] Test 9 Sweep completed: 121 frames + sweep-sheet.png -> allPassed=true
+[2026-11-07T13:02:27.512Z] Recording 1 complete real-time lap in Alta (chase camera, 5 AIs, HUD, synchronized Web Audio) -> volta.webm + audio-volta.wav...
+[2026-11-07T13:04:27.689Z]   Real-time Lap 1 completed in 119.6s wall-clock (simTime=119.6s). Finalizing streams...
+[2026-11-07T13:04:28.286Z]   Saved volta.webm (50.14 MB) and audio-volta.wav (20.28 MB) | maxPeakDbfs=-4.35 dBFS | maxVoices=13
+[2026-11-07T13:04:28.287Z] Running Section 13.1 Test 1: UI Journey (Menu -> Garage -> Config -> 3 Laps w/ 5 AIs -> Results -> Race Again)...
+[2026-11-07T13:04:34.269Z] Test 1 (3 Laps) -> screen=results laps=3 pos=P3 best=111.55s overtakes=4 integrityErr=0 camClips=0
+[2026-11-07T13:04:34.477Z] Running Section 13.1 Test 3: Pause/Resume, Mid-Race Restart x 3, Audio Voice Count & Heap Stability...
+[2026-11-07T13:04:34.566Z] Test 3 -> baselineVoices=59 after3Restarts=[59,59,59] menuVoices=0 heapDelta=0MB
+[2026-11-07T13:04:34.566Z] Running Section 13.1 Test 4: Sequential Checkpoints Anti-Cut Verification...
+[2026-11-07T13:04:34.607Z] Test 4 (Anti-Cut) -> sAfterCross=3017.1m completedLapsAfterCut=0
+[2026-11-07T13:04:34.607Z] Running Section 13.1 Test 2: Full 6-Lap Race Journey with 5 AIs...
+[2026-11-07T13:04:42.747Z] Test 2 (6 Laps) -> screen=results laps=6 pos=P3 total=687.87s overtakes=5 integrityErr=0 camClips=0
+[2026-11-07T13:04:42.748Z] === ALL RACING-BENCH V3.4 VERIFICATION GATES & TESTS PASSED (EXIT 0) ===

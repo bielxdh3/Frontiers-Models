@@ -18,23 +18,23 @@ test('hero presents two benchmarks and one accurate current-run total without an
   assert.doesNotMatch(svg, /BENCHMARK COLLECTION|02 CURRENT RUNS|05 CURRENT REFERENCES|OPEN PROJECT ARCHIVE|<text[^>]*>CURRENT<\/text>/);
   assert.doesNotMatch(svg, /BENCHMARK 002|BENCHMARK 001|GAMEPLAY ENGINEERING|PRODUCT &amp; SIMULATION|data-role="collection-counts"|HISTORICAL \/ NON-FRONTIER/);
   const count = racing.current_arena.length + orbit.current_arena.length;
-  assert.equal(count, 9);
+  assert.equal(count, 10);
   assert.match(svg, /data-role="current-run-count"/);
   assert.match(svg, new RegExp('>' + String(count).padStart(2, '0') + '<\\/text>'));
   assert.match(svg, new RegExp('>' + racing.current_arena.length + ' Racing · ' + orbit.current_arena.length + ' Orbitarium<\\/text>'));
   assert.match(svg, /CURRENT RUNS<\/text>/);
-  assert.match(svg, /aria-label="9 current runs: 4 Racing and 5 Orbitarium"/);
-  assert.match(readFileSync(resolve(root, 'README.md'), 'utf8'), /current%20runs-9-DB2777/);
-  assert.match(readFileSync(resolve(root, 'README-PT-BR.md'), 'utf8'), /atuais-9-DB2777/);
+  assert.match(svg, /aria-label="10 current runs: 5 Racing and 5 Orbitarium"/);
+  assert.match(readFileSync(resolve(root, 'README.md'), 'utf8'), /current%20runs-10-DB2777/);
+  assert.match(readFileSync(resolve(root, 'README-PT-BR.md'), 'utf8'), /atuais-10-DB2777/);
   assert.match(svg, />FRONTIER<\/text>/);
   assert.match(svg, />MODELS<\/text>/);
   assert.doesNotMatch(svg, /data-role="orbit"|data-role="planet"|data-role="sun"|<ellipse\b/);
   assert.doesNotMatch(renderer, /orbitSpecs|orbitRings|orbitCenter/);
 });
 
-test('Racing first: all four V3.4 current source runs are in the hero', () => {
+test('Racing first: all five V3.4 current source runs are in the hero', () => {
   assert.deepEqual(models('racing'), racing.current_arena);
-  assert.deepEqual(models('racing'), ['gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4']);
+  assert.deepEqual(models('racing'), ['gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4']);
   const entries = racing.runs;
   for (const id of models('racing')) {
     const run = entries.find(run => run.id === id);
@@ -60,21 +60,27 @@ test('Orbitarium second: all five current references preserved in registry order
   }
 });
 
-test('all nine visible run badges stay inside their benchmark panels, without overlap', () => {
+test('all ten visible run badges stay inside their benchmark panels, without overlap', () => {
   const racingBadges = [...svg.matchAll(/<g data-role="run" data-benchmark="racing" data-model="[^"]+">\s*<rect x="([\d.]+)" y="([\d.]+)" width="([\d.]+)" height="56"/g)]
     .map(([, x, y, w]) => ({ x: Number(x), y: Number(y), w: Number(w) }));
   const orbitBadges = [...svg.matchAll(/<g data-role="run" data-benchmark="orbitarium" data-model="[^"]+">\s*<rect x="([\d.]+)" y="([\d.]+)" width="([\d.]+)" height="56"/g)]
     .map(([, x, y, w]) => ({ x: Number(x), y: Number(y), w: Number(w) }));
-  assert.equal(racingBadges.length, 4);
+  assert.equal(racingBadges.length, 5);
   assert.equal(orbitBadges.length, 5);
   for (const b of racingBadges) {
     assert.ok(b.x >= 613 && b.x + b.w <= 1388 && b.y >= 51 && b.y + 56 <= 331);
   }
   assert.equal(racingBadges[0].y, racingBadges[1].y);
-  assert.equal(racingBadges[2].y, racingBadges[3].y);
-  assert.ok(racingBadges[2].y >= racingBadges[0].y + 56);
-  assert.ok(racingBadges[0].x + racingBadges[0].w < racingBadges[1].x);
-  assert.ok(racingBadges[2].x + racingBadges[2].w < racingBadges[3].x);
+  assert.equal(racingBadges[1].y, racingBadges[2].y);
+  assert.equal(racingBadges[3].y, racingBadges[4].y);
+  assert.ok(racingBadges[3].y >= racingBadges[0].y + 56);
+  for (let i=0;i<racingBadges.length;i++) {
+    for (let j=i+1;j<racingBadges.length;j++) {
+      const a=racingBadges[i],b=racingBadges[j];
+      assert.ok(a.x+a.w<=b.x || b.x+b.w<=a.x || a.y+56<=b.y || b.y+56<=a.y,
+        'Racing badges must not overlap');
+    }
+  }
   for (const b of orbitBadges) {
     assert.ok(b.x >= 613 && b.x + b.w <= 1388 && b.y >= 345 && b.y + 56 <= 615);
   }
@@ -87,7 +93,7 @@ test('current-run SVG does not include Orbitarium historical/non-frontier IDs', 
     if (current.has(run.id)) continue;
     assert.ok(!orbitariumIds.includes(run.id), 'non-frontier run in current SVG: ' + run.id);
   }
-  assert.equal(models('orbitarium').length + models('racing').length, 9);
+  assert.equal(models('orbitarium').length + models('racing').length, 10);
 });
 
 test('hero is deterministic, source-driven and free of AI rankings', () => {

@@ -1,0 +1,76 @@
+{
+  "timestamp": "2026-11-07T13:04:42.747Z",
+  "wavFile": "audio-volta.wav",
+  "wavSizeMb": 20.28,
+  "sampleRate": 44100,
+  "maxPeakLinear": 0.6062,
+  "maxPeakDbfs": -4.35,
+  "withinMinus1DbfsLimit": true,
+  "maxSimultaneousVoices": 13,
+  "baselineVoiceNodes": 59,
+  "voiceNodesAfter3Restarts": [
+    59,
+    59,
+    59
+  ],
+  "voicesReturnToInitialAfter3Restarts": true,
+  "keyTimestamps": {
+    "gear_shift": {
+      "type": "gear_shift",
+      "time": 1.22,
+      "gear": 2,
+      "rpm": 6208,
+      "wavSec": 1.22,
+      "mmss": "00:01",
+      "seconds": 1.22
+    },
+    "tire_squeal": {
+      "type": "tire_squeal",
+      "time": 25.74,
+      "slip": 0.55,
+      "wavSec": 25.74,
+      "mmss": "00:25",
+      "seconds": 25.74
+    },
+    "collision": {
+      "type": "collision",
+      "time": 1.77,
+      "force": 0.18,
+      "wavSec": 1.77,
+      "mmss": "00:01",
+      "seconds": 1.77
+    },
+    "bridge_roll": {
+      "type": "bridge_roll",
+      "time": 97.78,
+      "s": 2388.4,
+      "wavSec": 97.77,
+      "mmss": "01:37",
+      "seconds": 97.77
+    },
+    "ai_pass": {
+      "type": "ai_pass",
+      "time": 4.01,
+      "ai": "R. Navarro",
+      "distM": 7.8,
+      "wavSec": 4.01,
+      "mmss": "00:04",
+      "seconds": 4.01
+    }
+  },
+  "engineSampleAudit": {
+    "currentlyPlaying": true,
+    "usesAudioBuffers": true,
+    "rpmBandCount": 5,
+    "hasDecelLayer": true,
+    "loadedSampleCount": 20,
+    "playerModelTimbre": "gt",
+    "bandDurationsSec": [
+      2.219,
+      1.805,
+      1.684,
+      1.624,
+      1.416
+    ]
+  }
+}

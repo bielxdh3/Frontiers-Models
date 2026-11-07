@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
@@ -9,9 +10,9 @@ const read = path => readFileSync(resolve(root, path), 'utf8');
 
 for (const [path, arenaHeading, title, archivedHeading, labels] of [
   ['README.md', '## ⚔️ Current benchmark runs', '## How it fits together',
-    '## 🗂️ Non-frontier or outdated models', ['4 current runs', '5 current references', 'ARCHIVE CONVENTIONS']],
+    '## 🗂️ Non-frontier or outdated models', ['5 current runs', '5 current references', 'ARCHIVE CONVENTIONS']],
   ['README-PT-BR.md', '## ⚔️ Execuções atuais por benchmark', '## Como se organiza',
-    '## 🗂️ Modelos non-frontier ou desatualizados', ['4 execuções atuais', '5 referências atuais', 'ORGANIZAÇÃO DO ACERVO']],
+    '## 🗂️ Modelos non-frontier ou desatualizados', ['5 execuções atuais', '5 referências atuais', 'ORGANIZAÇÃO DO ACERVO']],
 ]) {
   test(path + ': benchmark-specific repository map sits between current and historical runs', () => {
     const content = read(path);
@@ -33,7 +34,7 @@ for (const [path, arenaHeading, title, archivedHeading, labels] of [
     assert.ok(racing > 0 && orbitarium > racing && archive > orbitarium,
       'two benchmark branches followed by shared archive conventions');
     for (const required of [
-      '2 benchmarks', ...labels.slice(0, 2), 'Gemini 3.8 Flash', 'GPT-6.1 Sol', 'GPT-6 Astra', 'Opus 5.5',
+      '2 benchmarks', ...labels.slice(0, 2), 'Gemini 3.8 Flash', 'GPT-6.1 Sol', 'GPT-6 Astra', 'Opus 5.5', 'Gemini 4 Argon',
       'V2.6', 'frontier-v2.md', 'racing-v3.4/', '14', 'RUNS.json', 'prompts/',
       'runs/', 'SHA-256',
     ]) {
@@ -56,7 +57,9 @@ test('paths referenced by the architecture diagram are present', () => {
     'scripts/verify-argon-archive.mjs',
     'scripts/verify-sol-archive.mjs',
   ]) {
-    assert.ok(existsSync(resolve(root, path)), path);
+    assert.ok(existsSync(resolve(root, path)) ||
+      /^040000 tree |^100644 blob /m.test(execFileSync('git', ['-C', root, 'ls-tree', 'HEAD', path], {encoding:'utf8'})),
+      path);
   }
   assert.equal(existsSync(resolve(root, 'assets/repo-commit-history.gif')), false);
 });

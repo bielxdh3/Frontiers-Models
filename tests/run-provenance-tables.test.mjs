@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
-import { resolve } from 'node:path';
+import { resolve, relative } from 'node:path';
+import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
@@ -39,8 +40,15 @@ function sourceStatus(run, isRacing, pt) {
     run.archive_status === 'source-repository-pinned'), run.id);
   if (archived) {
     const path = resolve(root, isRacing ? 'benchmarks/racing/' + run.archive_path : 'benchmarks/solar-system/' + run.target_path);
-    assert.ok(existsSync(path) && statSync(path).isDirectory(), 'archived source must exist: ' + run.id);
-    assert.ok(readdirSync(path).length > 1, 'archived source must contain files: ' + run.id);
+    if (existsSync(path)) {
+      assert.ok(statSync(path).isDirectory(), 'archived path is a directory: ' + run.id);
+      assert.ok(readdirSync(path).length > 1, 'archived path must contain files: ' + run.id);
+    } else {
+      // Sparse local checkouts still contain the archive in the tracked Git tree.
+      const rel = relative(root, path).replaceAll('\\', '/');
+      const result = execFileSync('git', ['-C', root, 'ls-tree', 'HEAD', rel], {encoding: 'utf8'});
+      assert.match(result, /^040000 tree [0-9a-f]+\t/m, 'missing tracked archive tree: ' + run.id);
+    }
   }
   return archived ? (pt ? 'Arquivado' : 'Archived') : (pt ? 'Apenas fonte fixada' : 'Pinned only');
 }
@@ -66,24 +74,18 @@ function parseTable(content, label) {
   });
 }
 
-for (const [path, pt] of [
-  ['README.md', false],
-  ['README-PT-BR.md', true],
-]) {
-  test(path + ' has equivalent Racing and Orbitarium run-provenance tables and controlled vocabulary', () => {
-    const content = read(path);
-    const heading = pt ? '## Proveniência das execuções por benchmark' : '## Run provenance by benchmark';
-    assert.ok(content.includes(heading));
-    const section = content.slice(content.indexOf(heading),
-      content.indexOf(pt ? '## Política do arquivo' : '## Archive policy'));
-    assert.equal((section.match(/\| (?:Classification|Classificação) \|/g) || []).length, 2, 'both tables must have classification');
-    assert.ok(section.indexOf('### Racing-bench') < section.indexOf('### Orbitarium-bench'));
+for (const [lang, pt] of [['English', false], ['Português', true]]) {
+  test(lang + ': benchmark-specific provenance records match both RUNS.json indexes', () => {
     for (const [label, runs, isRacing] of [
       ['Racing-bench', expectedRacing, true],
       ['Orbitarium-bench', expectedOrbit, false],
     ]) {
-      const rows = parseTable(section, label);
-      assert.equal(rows.length, runs.length, 'correct full run count: ' + label);
+      const file = isRacing ? 'benchmarks/racing/RUN-PROVENANCE.md' : 'benchmarks/solar-system/RUN-PROVENANCE.md';
+      const content = read(file);
+      const region = content.split('## ' + lang + '\n')[1]?.split('\n## ')[0];
+      assert.ok(region, 'language section for ' + label);
+      const rows = parseTable(region, label);
+      assert.equal(rows.length, runs.length, 'correct run count: ' + label);
       for (let i = 0; i < runs.length; i++) {
         const run = runs[i];
         assert.deepEqual(rows[i], [
@@ -91,9 +93,20 @@ for (const [path, pt] of [
           revision(run),
           classification(run, isRacing, pt),
           sourceStatus(run, isRacing, pt),
-        ], path + ': ' + label + ' ' + run.id);
+        ], lang + ': ' + label + ' ' + run.id);
       }
     }
-    assert.doesNotMatch(section, /Current reference|Current frontier|Historical baseline|Outdated frontier run|Archived frontier|Source pinned|Archived; prompt unverified|Referência atual|Frontier atual|Baseline histórico|Frontier arquivado|Arquivado; prompt não verificado/);
+  });
+}
+
+for (const file of ['README.md', 'README-PT-BR.md']) {
+  test(file + ': README remains a showcase, not a technical provenance report', () => {
+    const content = read(file);
+    assert.doesNotMatch(content, /## Run provenance by benchmark|## Proveniência das execuções por benchmark/);
+    assert.doesNotMatch(content, /## Archive policy|## Política do arquivo/);
+    assert.doesNotMatch(content, /33\/34|prompt equivalence is not claimed|exact source commits|proveniência dos prompts não/);
+    assert.match(content, /RUN-PROVENANCE.md/);
+    assert.match(content, /ARCHIVE-POLICY.md/);
+    assert.doesNotMatch(content, /https:\/\/github\.com\/bielxdh3\/4argon/);
   });
 }

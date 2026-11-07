@@ -1,0 +1,143 @@
+{
+  "timestamp": "2026-11-07T13:04:42.748Z",
+  "allTestsPassed": true,
+  "hardware": {
+    "cpu": "AMD Ryzen 7 5700G with Radeon Graphics",
+    "cpuLogicalCores": 16,
+    "totalMemoryGb": 31.9,
+    "platform": "win32 10.0.26300 (x64)",
+    "nodeVersion": "v24.14.1",
+    "browserVersion": "Chromium 156.0.8078.4",
+    "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "gpuVendor": "Google Inc. (NVIDIA)",
+    "webglVersion": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "resolution": "1920x1080"
+  },
+  "tests": {
+    "test1_journey3Laps": {
+      "passed": true,
+      "countdownCheck": {
+        "movedDuringCountdownM": 0,
+        "falseStartBogApplied": true
+      },
+      "finishedScreen": "results",
+      "completedLaps": 3,
+      "position": 3,
+      "bestLapSec": 111.55,
+      "totalTimeSec": 347.57,
+      "aiOvertakes": 4,
+      "maxAiOffTrackSec": 0,
+      "maxAiStoppedSec": 0,
+      "integrityViolations": 0,
+      "cameraClipViolations": 0,
+      "resultsRowCount": 6,
+      "hasProjectedApproxSymbol": true,
+      "standings": [
+        "1º M. Costa #11 Vento RS 01:54.18 05:44.69",
+        "2º R. Navarro #27 Vento RS 01:53.34 05:46.35",
+        "3º Você #04 Solare GT 01:51.55 05:47.56",
+        "4º L. Bellini #19 Solare GT 01:56.93 ≈ 05:53.44",
+        "5º T. Lindqvist #84 Vento RS 01:56.35 ≈ 05:53.67",
+        "6º S. Moreau #58 Solare GT 01:57.05 ≈ 05:54.67"
+      ]
+    },
+    "test2_journey6Laps": {
+      "passed": true,
+      "finishedScreen": "results",
+      "completedLaps": 6,
+      "position": 3,
+      "bestLapSec": 111.52,
+      "totalTimeSec": 687.87,
+      "aiOvertakes": 5,
+      "maxAiOffTrackSec": 0,
+      "maxAiStoppedSec": 0,
+      "integrityViolations": 0,
+      "cameraClipViolations": 0
+    },
+    "test3_pauseRestartHeapAudio": {
+      "passed": true,
+      "pausedOk": true,
+      "resumedOk": true,
+      "baselineVoiceNodes": 59,
+      "voiceNodesAfterRestarts": [
+        59,
+        59,
+        59
+      ],
+      "voicesIdenticalAfter3Restarts": true,
+      "heapDeltaMb": 0,
+      "heapStable": true,
+      "menuScreen": "menu",
+      "menuVoiceNodes": 0
+    },
+    "test4_antiCut": {
+      "passed": true,
+      "sAfterCrossingLine": 3017.1,
+      "completedLapsAfterCut": 0,
+      "nextRequiredCheckpoint": 1,
+      "antiCutPassed": true
+    },
+    "test5_aiBehavior": {
+      "passed": true,
+      "maxAiOffTrackSec": 0,
+      "maxAiStoppedSec": 0,
+      "totalAiOvertakes": 9
+    },
+    "test6_worldAndPhysicsIntegrity": {
+      "passed": true,
+      "validateWorldErrors": 0,
+      "carBelowTerrainOrColliderPenetrations": 0,
+      "cameraInsideGeometryEvents": 0
+    },
+    "test7_imageSanityS1toS9": {
+      "passed": true,
+      "checkedScreenshots": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "S9"
+      ]
+    },
+    "test8_sceneGraphAudit": {
+      "passed": true,
+      "checks": {
+        "carsTrianglesAtLeast15000": true,
+        "carsMaterialsAtLeast6": true,
+        "zeroBoxMeshesNearTrack": true,
+        "zeroFlatColorMaterialsNearTrack": true,
+        "houseCountAtLeast25": true,
+        "houseVariationsAtLeast5": true,
+        "floraSpeciesAtLeast4": true,
+        "propsPer100mAtLeast12": true,
+        "texturesMeetMinResolution": true,
+        "playerEngineUsesAudioBuffers": true
+      }
+    },
+    "test9_cameraSweep25m": {
+      "passed": true,
+      "totalFrames": 121,
+      "contactSheet": "sweep-sheet.png"
+    },
+    "section13_2_masterAudio": {
+      "passed": true,
+      "file": "audio-volta.wav",
+      "maxPeakDbfs": -4.35,
+      "maxSimultaneousVoices": 13
+    },
+    "section13_0_rule4_video": {
+      "passed": true,
+      "file": "volta.webm",
+      "sizeMb": 50.14
+    },
+    "offlineAndZeroErrors": {
+      "passed": true,
+      "externalRequests": 0,
+      "consoleErrors": 0
+    }
+  }
+}

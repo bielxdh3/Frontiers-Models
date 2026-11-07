@@ -1,0 +1,328 @@
+{
+  "timestamp": "2026-11-07T13:00:33.136Z",
+  "passed": true,
+  "checks": {
+    "carsTrianglesAtLeast15000": true,
+    "carsMaterialsAtLeast6": true,
+    "zeroBoxMeshesNearTrack": true,
+    "zeroFlatColorMaterialsNearTrack": true,
+    "houseCountAtLeast25": true,
+    "houseVariationsAtLeast5": true,
+    "floraSpeciesAtLeast4": true,
+    "propsPer100mAtLeast12": true,
+    "texturesMeetMinResolution": true,
+    "playerEngineUsesAudioBuffers": true
+  },
+  "track": {
+    "name": "Circuito Costa Dourada",
+    "totalLengthM": 3019.02,
+    "checkpointCount": 16,
+    "elevationGainZ2M": 42.6,
+    "bridgeSpanM": 94,
+    "bridgeMaxDropM": 17.51
+  },
+  "sceneTotals": {
+    "visibleMeshObjects": 936,
+    "totalRenderedTriangles": 3099090
+  },
+  "cars": {
+    "gridCount": 6,
+    "minTrianglesLod0": 51816,
+    "minDistinctMaterials": 13,
+    "models": [
+      {
+        "name": "Car_gt_04",
+        "modelId": "gt",
+        "triangles": 53464,
+        "materials": 14
+      },
+      {
+        "name": "Car_hatch_11",
+        "modelId": "hatch",
+        "triangles": 51816,
+        "materials": 13
+      },
+      {
+        "name": "Car_gt_19",
+        "modelId": "gt",
+        "triangles": 53464,
+        "materials": 14
+      },
+      {
+        "name": "Car_hatch_27",
+        "modelId": "hatch",
+        "triangles": 51816,
+        "materials": 13
+      },
+      {
+        "name": "Car_gt_58",
+        "modelId": "gt",
+        "triangles": 53464,
+        "materials": 14
+      },
+      {
+        "name": "Car_hatch_84",
+        "modelId": "hatch",
+        "triangles": 51816,
+        "materials": 13
+      }
+    ]
+  },
+  "villageAndProps": {
+    "houseCount": 128,
+    "totalVillageHouses": 128,
+    "houseVariations": 6,
+    "houseVariationIds": [
+      "townhouse_2f",
+      "villa_3f",
+      "merchant_3f",
+      "stepped_3f",
+      "stone_cottage_2f",
+      "taverna_2f"
+    ],
+    "hasLandmarkChurch": true,
+    "floraSpeciesCount": 4,
+    "floraSpecies": [
+      "flora_olive",
+      "flora_palm",
+      "flora_pine",
+      "flora_shrub"
+    ],
+    "minPropsPer100m": 76,
+    "propDensityBins": [
+      {
+        "bin": 0,
+        "rangeM": "0..100",
+        "count": 159,
+        "per100m": 159
+      },
+      {
+        "bin": 1,
+        "rangeM": "100..200",
+        "count": 213,
+        "per100m": 213
+      },
+      {
+        "bin": 2,
+        "rangeM": "200..300",
+        "count": 205,
+        "per100m": 205
+      },
+      {
+        "bin": 3,
+        "rangeM": "300..400",
+        "count": 168,
+        "per100m": 168
+      },
+      {
+        "bin": 4,
+        "rangeM": "400..500",
+        "count": 106,
+        "per100m": 106
+      },
+      {
+        "bin": 5,
+        "rangeM": "500..600",
+        "count": 87,
+        "per100m": 87
+      },
+      {
+        "bin": 6,
+        "rangeM": "600..700",
+        "count": 90,
+        "per100m": 90
+      },
+      {
+        "bin": 7,
+        "rangeM": "700..800",
+        "count": 106,
+        "per100m": 106
+      },
+      {
+        "bin": 8,
+        "rangeM": "800..900",
+        "count": 108,
+        "per100m": 108
+      },
+      {
+        "bin": 9,
+        "rangeM": "900..1000",
+        "count": 101,
+        "per100m": 101
+      },
+      {
+        "bin": 10,
+        "rangeM": "1000..1100",
+        "count": 104,
+        "per100m": 104
+      },
+      {
+        "bin": 11,
+        "rangeM": "1100..1200",
+        "count": 103,
+        "per100m": 103
+      },
+      {
+        "bin": 12,
+        "rangeM": "1200..1300",
+        "count": 100,
+        "per100m": 100
+      },
+      {
+        "bin": 13,
+        "rangeM": "1300..1400",
+        "count": 80,
+        "per100m": 80
+      },
+      {
+        "bin": 14,
+        "rangeM": "1400..1500",
+        "count": 82,
+        "per100m": 82
+      },
+      {
+        "bin": 15,
+        "rangeM": "1500..1600",
+        "count": 76,
+        "per100m": 76
+      },
+      {
+        "bin": 16,
+        "rangeM": "1600..1700",
+        "count": 78,
+        "per100m": 78
+      },
+      {
+        "bin": 17,
+        "rangeM": "1700..1800",
+        "count": 86,
+        "per100m": 86
+      },
+      {
+        "bin": 18,
+        "rangeM": "1800..1900",
+        "count": 81,
+        "per100m": 81
+      },
+      {
+        "bin": 19,
+        "rangeM": "1900..2000",
+        "count": 82,
+        "per100m": 82
+      },
+      {
+        "bin": 20,
+        "rangeM": "2000..2100",
+        "count": 148,
+        "per100m": 148
+      },
+      {
+        "bin": 21,
+        "rangeM": "2100..2200",
+        "count": 205,
+        "per100m": 205
+      },
+      {
+        "bin": 22,
+        "rangeM": "2200..2300",
+        "count": 212,
+        "per100m": 212
+      },
+      {
+        "bin": 23,
+        "rangeM": "2300..2400",
+        "count": 199,
+        "per100m": 199
+      },
+      {
+        "bin": 24,
+        "rangeM": "2400..2500",
+        "count": 190,
+        "per100m": 190
+      },
+      {
+        "bin": 25,
+        "rangeM": "2500..2600",
+        "count": 214,
+        "per100m": 214
+      },
+      {
+        "bin": 26,
+        "rangeM": "2600..2700",
+        "count": 175,
+        "per100m": 175
+      },
+      {
+        "bin": 27,
+        "rangeM": "2700..2800",
+        "count": 131,
+        "per100m": 131
+      },
+      {
+        "bin": 28,
+        "rangeM": "2800..2900",
+        "count": 110,
+        "per100m": 110
+      },
+      {
+        "bin": 29,
+        "rangeM": "2900..3019",
+        "count": 185,
+        "per100m": 155.4
+      }
+    ]
+  },
+  "detectors": {
+    "boxViolationsCount": 0,
+    "boxViolations": [],
+    "flatColorViolationsCount": 0,
+    "flatColorViolations": [],
+    "lowResTextureViolationsCount": 0,
+    "lowResTextureViolations": []
+  },
+  "audioEngineAudit": {
+    "currentlyPlaying": true,
+    "usesAudioBuffers": true,
+    "rpmBandCount": 5,
+    "hasDecelLayer": true,
+    "loadedSampleCount": 20,
+    "playerModelTimbre": "gt",
+    "bandDurationsSec": [
+      2.219,
+      1.805,
+      1.684,
+      1.624,
+      1.416
+    ]
+  },
+  "worldValidation": {
+    "valid": true,
+    "errorCount": 0,
+    "errors": [],
+    "metrics": {
+      "trackLengthM": 3019.02,
+      "maxTerrainAboveRoadM": -0.0006,
+      "maxEdgeGapM": 0.1335,
+      "maxBankDeg": 6.13,
+      "maxGradePct": 8.15,
+      "minCurveRadiusM": 31.54,
+      "minExclusionClearanceM": 3.16,
+      "maxObjectGroundDeltaM": 0.24,
+      "placedObjectCount": 3984,
+      "buildingCount": 129,
+      "housesWithin30m": 128,
+      "houseVariationsCount": 6,
+      "floraSpeciesCount": 4,
+      "floraSpecies": [
+        "flora_olive",
+        "flora_palm",
+        "flora_pine",
+        "flora_shrub"
+      ],
+      "minPropsPer100m": 76,
+      "bridgeMaxRavineDropM": 17.51,
+      "overlappingBuildingPairs": 0,
+      "checkpointCount": 16
+    }
+  }
+}

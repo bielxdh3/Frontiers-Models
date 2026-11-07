@@ -25,9 +25,9 @@ test('all seven canonical Orbitarium sites retain their original links', () => {
   }
 });
 
-test('Racing V3.4 includes Gemini, Sol, Astra and owner-provided Opus URL with 404 disclosure', () => {
+test('Racing V3.4 adds Argon with owner-provided live URL and preserved local source', () => {
   assert.equal(racing.current_prompt, 'racing-v3.4');
-  assert.deepEqual(racing.current_arena, ['gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4']);
+  assert.deepEqual(racing.current_arena, ['gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4']);
   assert.deepEqual(racing.legacy_runs, ['gpt-6.1-sol', 'gemini-3.8-flash', 'gpt-6-astra']);
   const current = racing.runs.find(run => run.id === racing.current_arena[0]);
   assert.equal(current.model, 'Gemini 3.8 Flash');
@@ -65,6 +65,14 @@ test('Racing V3.4 includes Gemini, Sol, Astra and owner-provided Opus URL with 4
   assert.match(opus.site_status, /owner-provided-url-http-404-on-2026-11-05/);
   assert.match(opus.site_status, /gameplay-not-independently-verified/);
   assert.equal(opus.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
+  const argon = racing.runs.find(run => run.id === 'gemini-4-argon-v3.4');
+  assert.equal(argon.model, 'Gemini 4 Argon');
+  assert.equal(argon.source_repository, null, 'never link the source repository for new runs');
+  assert.equal(argon.source_commit, '88632a836928ac314ab0e26b492d5360382b980f');
+  assert.equal(argon.source_file_count, 450);
+  assert.equal(argon.live_url, 'https://racing-gemini-4-argon.biel.dev.br/');
+  assert.equal(argon.site_url, argon.live_url);
+  assert.equal(argon.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
   for (const run of racing.runs.filter(run => racing.legacy_runs.includes(run.id))) {
     assert.equal(run.live_url, null);
     assert.equal(run.display_status, 'legacy-archived');
@@ -75,7 +83,10 @@ test('Racing V3.4 includes Gemini, Sol, Astra and owner-provided Opus URL with 4
     assert.match(s, /racing-v3\.1\.md/);
     assert.match(s, /racing-v3\.4/);
     assert.match(s, /racing-gemini-3\.8-flash\.biel\.dev\.br/);
-    assert.ok(s.includes('[Gemini 3.8 Flash](https://github.com/bielxdh3/gemini-3.8)'), path + ' must label Gemini source by model');
+    const localGemini = path.startsWith('benchmarks/racing/')
+      ? './runs/gemini-3.8-v3.4/source/'
+      : './benchmarks/racing/runs/gemini-3.8-v3.4/source/';
+    assert.ok(s.includes('[Gemini 3.8 Flash](' + localGemini + ')'), path + ' must use internal Gemini archived source');
     const localSolSource = path.startsWith('benchmarks/racing/')
       ? './runs/gpt-6.1-sol-v3.4/source/'
       : './benchmarks/racing/runs/gpt-6.1-sol-v3.4/source/';
@@ -88,6 +99,12 @@ test('Racing V3.4 includes Gemini, Sol, Astra and owner-provided Opus URL with 4
       ? './runs/opus-5.5-v3.4/source/'
       : './benchmarks/racing/runs/opus-5.5-v3.4/source/';
     assert.ok(s.includes('[Opus 5.5](' + localOpusSource + ')'), path + ' must label Opus source by model');
+    const localArgon = path.startsWith('benchmarks/racing/')
+      ? './runs/gemini-4-argon-v3.4/source/'
+      : './benchmarks/racing/runs/gemini-4-argon-v3.4/source/';
+    assert.ok(s.includes('[Gemini 4 Argon](' + localArgon + ')'), 'Argon must link archived source only');
+    assert.ok(s.includes('https://racing-gemini-4-argon.biel.dev.br/'), 'Argon must link owner-provided live URL');
+    assert.ok(!s.includes('https://github.com/bielxdh3/4argon'), 'never link original Argon repository');
     assert.ok(s.includes('](https://racing-opus-5.5.biel.dev.br/)'), path + ' must contain owner-provided Opus URL');
     assert.ok(s.includes('](https://racing-gpt-6-astra.biel.dev.br/)'), path + ' Astra site link');
     assert.doesNotMatch(s, /HTTP 404|Source — archived here|Código — arquivado aqui|Source — gemini-3\.8/, path + ' must present clean links without status annotations or generic source labels');

@@ -1,0 +1,27 @@
+{
+  "hardware": {
+    "cpu": "AMD Ryzen 7 5700G with Radeon Graphics",
+    "cpuLogicalCores": 16,
+    "totalMemoryGb": 31.9,
+    "platform": "win32 10.0.26300 (x64)",
+    "nodeVersion": "v24.14.1",
+    "browserVersion": "Chromium 156.0.8078.4",
+    "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "gpuVendor": "Google Inc. (NVIDIA)",
+    "webglVersion": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "resolution": "1920x1080"
+  },
+  "zone": "Z3 (Vila Costeira com 5 IAs)",
+  "presets": {
+    "high": {
+      "avgFps": 60,
+      "onePercentLowFps": 59.5,
+      "sampleCount": 157
+    },
+    "low": {
+      "avgFps": 60,
+      "onePercentLowFps": 59.5,
+      "sampleCount": 157
+    }
+  }
+}
