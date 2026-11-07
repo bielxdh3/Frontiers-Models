@@ -68,17 +68,17 @@ FRONTIER MODELS                         2 benchmarks · 10 current runs
 
 Browse [repository architecture](./docs/REPOSITORY-ARCHITECTURE.md) and the benchmark folders.
 
-## 🗂️ Non-frontier or outdated models
+## 🗂️ Other Orbitarium projects
 
-These **Orbitarium** runs stay visible for reference but are separated from that benchmark's current arena. Racing-bench V3.4 features Gemini 3.8 Flash, GPT-6.1 Sol, GPT-6 Astra, Opus 5.5 and Gemini 4 Argon; the three V2.6 projects remain legacy archives.
+Earlier runs and references outside the current arena.
 
-| Model | Classification | Project / source | Provenance |
+| Model | Category | Website | Source / record |
 | --- | --- | --- | --- |
-| ☀️ **GPT-5.6 Sol V1** | Historical baseline | Site removed | [Archive V1](./benchmarks/solar-system/runs/gpt-5.6-sun-max/original/) |
-| ☀️ **GPT-5.6 Sol V2** | Outdated frontier run | [Open Sol V2](https://orbitarium-gpt-5.6-sol-v2.biel.dev.br) | [Archive V2](./benchmarks/solar-system/runs/gpt-5.6-sun-max/rebuild/) |
-| 🌙 **GPT-5.6 Luna** | Non-frontier | [Open Luna](https://orbitarium-gpt-5.6-luna.biel.dev.br) | [Run record](./benchmarks/solar-system/RUNS.json) |
-| 𝕏 **Grok 4.6** | Archived frontier run | [Open Grok 4.6](https://grok-4-6-solar-system.vercel.app) | [`runs/grok-4.6/frontier-v2`](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) |
-| ◈ **Gemini 3.8 Flash** | Archived Frontier V2 | [Open Gemini 3.8 Flash](https://orbitarium-gemini-3.8-flash.biel.dev.br) | [`source-pinned reference`](./benchmarks/solar-system/GEMINI-3.8-FLASH-PROVENANCE.md) |
+| ☀️ **GPT-5.6 Sol V1** | Historical | — | [Code](./benchmarks/solar-system/runs/gpt-5.6-sun-max/original/) |
+| ☀️ **GPT-5.6 Sol V2** | Outdated | [Open](https://orbitarium-gpt-5.6-sol-v2.biel.dev.br) | [Code](./benchmarks/solar-system/runs/gpt-5.6-sun-max/rebuild/) |
+| 🌙 **GPT-5.6 Luna** | Non-frontier | [Open](https://orbitarium-gpt-5.6-luna.biel.dev.br) | [Record](./benchmarks/solar-system/RUN-PROVENANCE.md) |
+| 𝕏 **Grok 4.6** | Archived | [Open](https://grok-4-6-solar-system.vercel.app) | [Code](./benchmarks/solar-system/runs/grok-4.6/frontier-v2/) |
+| ◈ **Gemini 3.8 Flash** | Archived | [Open](https://orbitarium-gemini-3.8-flash.biel.dev.br) | [Record](./benchmarks/solar-system/GEMINI-3.8-FLASH-PROVENANCE.md) |
 
 ## What is Frontier Models?
 
