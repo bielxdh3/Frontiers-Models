@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — coleção de benchmarks independentes Racing e Orbitarium com 11 execuções atuais (6 Racing e 5 Orbitarium)" width="100%" />
+<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — coleção de benchmarks independentes Racing e Orbitarium com 10 execuções atuais (5 Racing e 5 Orbitarium)" width="100%" />
 
 <br/>
 
 [![Benchmark](https://img.shields.io/badge/benchmark-frontier%20models-7C3AED?style=flat)](./benchmarks)
 [![Benchmarks](https://img.shields.io/badge/benchmarks-2-2563EB?style=flat)](./docs/REPOSITORY-ARCHITECTURE.md)
-[![Execuções atuais](https://img.shields.io/badge/execu%C3%A7%C3%B5es%20atuais-11-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
+[![Execuções atuais](https://img.shields.io/badge/execu%C3%A7%C3%B5es%20atuais-10-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
 
 # Frontier Models
 
@@ -24,7 +24,6 @@
 
 | Modelo atual | Jogar | Código-fonte |
 | --- | --- | --- |
-| **Gemini 3.8 Flash (V3.4)** | [Jogar](https://racing-gemini-3.8-flash.biel.dev.br/) | [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-v3.4/source/) |
 | **GPT-6.1 Sol (V3.4)** | [Jogar](https://racing-gpt-6.1-sol.biel.dev.br/) | [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/source/) |
 | **GPT-6 Astra (V3.4)** | [Jogar](https://racing-gpt-6-astra.biel.dev.br/) | [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) |
 | **Opus 5.5 (V3.4)** | [Jogar](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./benchmarks/racing/runs/opus-5.5-v3.4/source/) |
@@ -33,7 +32,7 @@
 
 **Entradas V3.4:** [Prompt](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md) · [14 imagens](./benchmarks/racing/prompts/racing-v3.4/refs/) · [Anexo operacional](./benchmarks/racing/EXECUTION-ADDENDUM.md).
 
-**Arquivo Racing V2.6:** [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol/source/), [Gemini 3.8 Flash](./benchmarks/racing/runs/gemini-3.8-flash/source/) e [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra/source/).
+**Arquivo Racing V2.6:** [Execuções históricas e código](./benchmarks/racing/README-PT-BR.md).
 
 ### Orbitarium-bench — referências atuais
 
@@ -48,11 +47,11 @@
 ## Como se organiza
 
 ```text
-FRONTIER MODELS                         2 benchmarks · 11 execuções atuais
+FRONTIER MODELS                         2 benchmarks · 10 execuções atuais
 │
-├── RACING-BENCH (V3.4)                 6 execuções atuais
+├── RACING-BENCH (V3.4)                 5 execuções atuais
 │   ├── entradas    racing-v3.4/ · 14 referências visuais
-│   ├── atuais      Gemini 3.8 Flash · GPT-6.1 Sol · GPT-6 Astra · Opus 5.5 · Gemini 4 Argon · Sonnet 5.5
+│   ├── atuais      GPT-6.1 Sol · GPT-6 Astra · Opus 5.5 · Gemini 4 Argon · Sonnet 5.5
 │   └── histórico   execuções V2.6 + prompts anteriores
 │
 ├── ORBITARIUM-BENCH (Frontier V2)      5 referências atuais
@@ -68,6 +67,12 @@ FRONTIER MODELS                         2 benchmarks · 11 execuções atuais
 ```
 
 Explore a [arquitetura do repositório](./docs/REPOSITORY-ARCHITECTURE.md) e as pastas dos benchmarks.
+
+## 🗂️ Racing não frontier
+
+| Modelo | Categoria | Site | Código-fonte |
+| --- | --- | --- | --- |
+| ◈ **Gemini 3.8 Flash (V3.4)** | Não frontier | [Abrir](https://racing-gemini-3.8-flash.biel.dev.br/) | [Código](./benchmarks/racing/runs/gemini-3.8-v3.4/source/) |
 
 ## 🗂️ Outros projetos do Orbitarium
 

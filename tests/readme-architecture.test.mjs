@@ -10,9 +10,9 @@ const read = path => readFileSync(resolve(root, path), 'utf8');
 
 for (const [path, arenaHeading, title, archivedHeading, labels] of [
   ['README.md', '## ⚔️ Current benchmark runs', '## How it fits together',
-    '## 🗂️ Other Orbitarium projects', ['6 current runs', '5 current references', 'ARCHIVE CONVENTIONS']],
+    '## 🗂️ Other Orbitarium projects', ['5 current runs', '5 current references', 'ARCHIVE CONVENTIONS']],
   ['README-PT-BR.md', '## ⚔️ Execuções atuais por benchmark', '## Como se organiza',
-    '## 🗂️ Outros projetos do Orbitarium', ['6 execuções atuais', '5 referências atuais', 'ORGANIZAÇÃO DO ACERVO']],
+    '## 🗂️ Outros projetos do Orbitarium', ['5 execuções atuais', '5 referências atuais', 'ORGANIZAÇÃO DO ACERVO']],
 ]) {
   test(path + ': benchmark-specific repository map sits between current and historical runs', () => {
     const content = read(path);
@@ -34,12 +34,13 @@ for (const [path, arenaHeading, title, archivedHeading, labels] of [
     assert.ok(racing > 0 && orbitarium > racing && archive > orbitarium,
       'two benchmark branches followed by shared archive conventions');
     for (const required of [
-      '2 benchmarks', ...labels.slice(0, 2), 'Gemini 3.8 Flash', 'GPT-6.1 Sol', 'GPT-6 Astra', 'Opus 5.5', 'Gemini 4 Argon', 'Sonnet 5.5',
+      '2 benchmarks', ...labels.slice(0, 2), 'GPT-6.1 Sol', 'GPT-6 Astra', 'Opus 5.5', 'Gemini 4 Argon', 'Sonnet 5.5',
       'V2.6', 'frontier-v2.md', 'racing-v3.4/', '14', 'RUNS.json', 'prompts/',
       'runs/', 'SHA-256',
     ]) {
       assert.ok(drawing.includes(required), 'missing ' + required);
     }
+    assert.ok(!drawing.includes('Gemini 3.8 Flash'), 'Non-frontier model must not be listed in the current diagram');
     assert.match(drawing, /├── RACING-BENCH/);
     assert.match(drawing, /├── ORBITARIUM-BENCH/);
     assert.match(drawing, /└── (?:ARCHIVE CONVENTIONS|ORGANIZAÇÃO DO ACERVO)/);

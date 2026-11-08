@@ -15,7 +15,11 @@ const expectedOrbit = [
   ...orbit.runs.filter(run => !currentOrbit.has(run.id) && run.role !== 'non-frontier-run'),
   ...orbit.runs.filter(run => run.role === 'non-frontier-run'),
 ];
-const expectedRacing = racing.runs;
+const expectedRacing = [
+  ...racing.legacy_runs.map(id => racing.runs.find(run => run.id === id)),
+  ...racing.current_arena.map(id => racing.runs.find(run => run.id === id)),
+  ...racing.non_frontier_runs.map(id => racing.runs.find(run => run.id === id)),
+];
 
 function displayName(run) {
   if (run.id === 'gpt-5.6-sun-max-original') return 'GPT-5.6 Sol V1';
@@ -24,7 +28,10 @@ function displayName(run) {
 }
 
 function classification(run, isRacing, pt) {
-  if (isRacing) return racing.current_arena.includes(run.id) ? (pt ? 'Atual' : 'Current') : (pt ? 'Legado' : 'Legacy');
+  if (isRacing) {
+    if (racing.non_frontier_runs.includes(run.id)) return 'Non-frontier';
+    return racing.current_arena.includes(run.id) ? (pt ? 'Atual' : 'Current') : (pt ? 'Legado' : 'Legacy');
+  }
   if (currentOrbit.has(run.id)) return pt ? 'Atual' : 'Current';
   if (run.role === 'non-frontier-run') return 'Non-frontier';
   return pt ? 'Histórico' : 'Historical';

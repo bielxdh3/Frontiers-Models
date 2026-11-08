@@ -8,7 +8,6 @@ The [V3.4 prompt](./prompts/racing-v3.4/racing-v3.4.md) and its [14 reference im
 
 | Current model | Play | Source |
 | --- | --- | --- |
-| **Gemini 3.8 Flash (V3.4)** | [Play racing](https://racing-gemini-3.8-flash.biel.dev.br/) | [Gemini 3.8 Flash](./runs/gemini-3.8-v3.4/source/) |
 | **GPT-6.1 Sol (V3.4)** | [Play racing](https://racing-gpt-6.1-sol.biel.dev.br/) | [GPT-6.1 Sol](./runs/gpt-6.1-sol-v3.4/source/) |
 | **GPT-6 Astra (V3.4)** | [Play racing](https://racing-gpt-6-astra.biel.dev.br/) | [GPT-6 Astra](./runs/gpt-6-astra-v3.4/source/) |
 | **Opus 5.5 (V3.4)** | [Play racing](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./runs/opus-5.5-v3.4/source/) |
@@ -26,3 +25,9 @@ The [V3.4 prompt](./prompts/racing-v3.4/racing-v3.4.md) and its [14 reference im
 | **GPT-6 Astra** | [Source](./runs/gpt-6-astra/source/) | [Provenance](./runs/gpt-6-astra/SOURCE-PROVENANCE.md) | [Bundle](./runs/gpt-6-astra/SOURCE-REPOSITORY.bundle) |
 
 For historical V2.6 reproduction, the [original prompt](./prompts/racing-v2.6.md) and [operational execution addendum](./EXECUTION-ADDENDUM.md) are required **BOTH** together. Prompts [V3.1](./prompts/racing-v3.1.md), [V3.2](./prompts/racing-v3.2.md) and [V3.3](./prompts/racing-v3.3.md) are preserved byte-for-byte.
+
+## Non-frontier Racing
+
+| Model | Category | Website | Source code |
+| --- | --- | --- | --- |
+| **Gemini 3.8 Flash (V3.4)** | Non-frontier | [Open](https://racing-gemini-3.8-flash.biel.dev.br/) | [Code](./runs/gemini-3.8-v3.4/source/) |

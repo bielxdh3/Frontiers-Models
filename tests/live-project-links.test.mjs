@@ -27,10 +27,14 @@ test('all seven canonical Orbitarium sites retain their original links', () => {
 
 test('Racing V3.4 includes Argon and Sonnet with archived source and owner-provided URLs', () => {
   assert.equal(racing.current_prompt, 'racing-v3.4');
-  assert.deepEqual(racing.current_arena, ['gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'sonnet-5.5-v3.4']);
+  assert.deepEqual(racing.current_arena, ['gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'sonnet-5.5-v3.4']);
   assert.deepEqual(racing.legacy_runs, ['gpt-6.1-sol', 'gemini-3.8-flash', 'gpt-6-astra']);
-  const current = racing.runs.find(run => run.id === racing.current_arena[0]);
+  assert.deepEqual(racing.non_frontier_runs, ['gemini-3.8-v3.4']);
+  const current = racing.runs.find(run => run.id === 'gemini-3.8-v3.4');
   assert.equal(current.model, 'Gemini 3.8 Flash');
+  assert.equal(current.role, 'non-frontier-run');
+  assert.equal(current.display_status, 'non-frontier-archived-source-site-live');
+  assert.ok(!racing.current_arena.includes(current.id));
   assert.equal(current.source_commit, '8f1992b88c3771edae825f7ecc52f1499844cb0b');
   assert.equal(current.source_repository, 'https://github.com/bielxdh3/gemini-3.8');
   assert.equal(current.site_url, 'https://racing-gemini-3.8-flash.biel.dev.br/');
@@ -97,7 +101,8 @@ test('Racing V3.4 includes Argon and Sonnet with archived source and owner-provi
     const localGemini = path.startsWith('benchmarks/racing/')
       ? './runs/gemini-3.8-v3.4/source/'
       : './benchmarks/racing/runs/gemini-3.8-v3.4/source/';
-    assert.ok(s.includes('[Gemini 3.8 Flash](' + localGemini + ')'), path + ' must use internal Gemini archived source');
+    assert.ok(s.includes('[Code](' + localGemini + ')') || s.includes('[Código](' + localGemini + ')'), path + ' must use the archived Gemini Non-frontier source');
+    assert.ok(s.includes('Non-frontier') || s.includes('Não frontier'), path + ' must classify Gemini as Non-frontier');
     const localSolSource = path.startsWith('benchmarks/racing/')
       ? './runs/gpt-6.1-sol-v3.4/source/'
       : './benchmarks/racing/runs/gpt-6.1-sol-v3.4/source/';
