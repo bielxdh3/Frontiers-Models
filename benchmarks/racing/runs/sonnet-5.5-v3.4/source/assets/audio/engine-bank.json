@@ -1,0 +1,124 @@
+{
+ "sources": [
+  "Freesound 496171 (CC0) editboy23 - Import car revs on Chassis Dyno with Turbo",
+  "Freesound 181460 (CC0) erik90 - car rev.wav"
+ ],
+ "cars": {
+  "turbo": [
+   {
+    "file": "assets/audio/engine/turbo-053-181460.wav",
+    "f0": 52.91,
+    "dur": 0.7937,
+    "src": "181460",
+    "acf": 0.95,
+    "bytes": 70052
+   },
+   {
+    "file": "assets/audio/engine/turbo-069-181460.wav",
+    "f0": 69.33,
+    "dur": 0.7933,
+    "src": "181460",
+    "acf": 0.96,
+    "bytes": 70016
+   },
+   {
+    "file": "assets/audio/engine/turbo-084-181460.wav",
+    "f0": 84.37,
+    "dur": 0.7941,
+    "src": "181460",
+    "acf": 0.95,
+    "bytes": 70082
+   },
+   {
+    "file": "assets/audio/engine/turbo-086-181460.wav",
+    "f0": 85.81,
+    "dur": 0.8041,
+    "src": "181460",
+    "acf": 0.95,
+    "bytes": 70968
+   },
+   {
+    "file": "assets/audio/engine/turbo-162-496171.wav",
+    "f0": 161.78,
+    "dur": 0.7974,
+    "src": "496171",
+    "acf": 0.88,
+    "bytes": 70372
+   },
+   {
+    "file": "assets/audio/engine/turbo-175-496171.wav",
+    "f0": 175.0,
+    "dur": 0.8,
+    "src": "496171",
+    "acf": 0.66,
+    "bytes": 70602
+   },
+   {
+    "file": "assets/audio/engine/turbo-210-496171.wav",
+    "f0": 209.6,
+    "dur": 0.8015,
+    "src": "496171",
+    "acf": 0.82,
+    "bytes": 70740
+   }
+  ],
+  "v8": [
+   {
+    "file": "assets/audio/engine/v8-053-181460.wav",
+    "f0": 52.91,
+    "dur": 0.7937,
+    "src": "181460",
+    "acf": 0.95,
+    "bytes": 70052
+   },
+   {
+    "file": "assets/audio/engine/v8-069-181460.wav",
+    "f0": 69.33,
+    "dur": 0.7933,
+    "src": "181460",
+    "acf": 0.96,
+    "bytes": 70016
+   },
+   {
+    "file": "assets/audio/engine/v8-084-181460.wav",
+    "f0": 84.37,
+    "dur": 0.7941,
+    "src": "181460",
+    "acf": 0.95,
+    "bytes": 70082
+   },
+   {
+    "file": "assets/audio/engine/v8-086-181460.wav",
+    "f0": 85.81,
+    "dur": 0.8041,
+    "src": "181460",
+    "acf": 0.95,
+    "bytes": 70968
+   },
+   {
+    "file": "assets/audio/engine/v8-107-496171.wav",
+    "f0": 106.77,
+    "dur": 1.2081,
+    "src": "496171",
+    "acf": 0.88,
+    "bytes": 106600
+   },
+   {
+    "file": "assets/audio/engine/v8-116-496171.wav",
+    "f0": 115.5,
+    "dur": 1.2121,
+    "src": "496171",
+    "acf": 0.66,
+    "bytes": 106950
+   },
+   {
+    "file": "assets/audio/engine/v8-138-496171.wav",
+    "f0": 138.33,
+    "dur": 1.2144,
+    "src": "496171",
+    "acf": 0.82,
+    "bytes": 107158
+   }
+  ]
+ }
+}

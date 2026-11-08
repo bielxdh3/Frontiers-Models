@@ -1,0 +1,58 @@
+[
+ {
+  "quality": "high",
+  "seconds": 15,
+  "loadMs": 12888,
+  "perf": {
+   "frames": 1844,
+   "avgFps": 122.8,
+   "low1Fps": 83.1,
+   "p50ms": 8.08,
+   "p99ms": 11.1,
+   "maxMs": 16.6
+  },
+  "render": {
+   "calls": 1269,
+   "tris": 4431473,
+   "geometries": 605,
+   "textures": 63,
+   "programs": 74
+  },
+  "zoneS": 2357.964828903428,
+  "kmh": 176.4436369259551,
+  "pixelRatio": 1,
+  "canvas": [
+   1920,
+   1080
+  ],
+  "errors": []
+ },
+ {
+  "quality": "low",
+  "seconds": 15,
+  "loadMs": 11418,
+  "perf": {
+   "frames": 2617,
+   "avgFps": 174.3,
+   "low1Fps": 125.8,
+   "p50ms": 5.66,
+   "p99ms": 7.44,
+   "maxMs": 9.3
+  },
+  "render": {
+   "calls": 816,
+   "tris": 3192611,
+   "geometries": 602,
+   "textures": 61,
+   "programs": 73
+  },
+  "zoneS": 2357.556384053513,
+  "kmh": 176.4218569799923,
+  "pixelRatio": 0.75,
+  "canvas": [
+   1440,
+   810
+  ],
+  "errors": []
+ }
+]

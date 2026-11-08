@@ -1,0 +1,5 @@
+PASS crossing-the-line-without-checkpoints-gives-no-lap {"laps":0,"events":[{"t":8.966666666666798,"car":0,"type":"line-no-lap","cp":1}],"cpNext":1}
+PASS shortcut-jump-is-not-credited {"before":256,"after":257,"lost":true}
+PASS legitimate-lap-counts {"laps":1,"times":[116.69166666670833]}
+
+--- console ---

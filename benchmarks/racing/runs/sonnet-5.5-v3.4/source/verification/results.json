@@ -1,0 +1,4888 @@
+{
+ "meta": {
+  "hardware": {
+   "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+   "gpuVendor": "Google Inc. (NVIDIA)",
+   "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/150.0.0.0 Safari/537.36",
+   "cores": 16,
+   "mem": 32,
+   "dpr": 1,
+   "screen": [
+    1920,
+    1080
+   ],
+   "cpu": "AMD Ryzen 7 5700G with Radeon Graphics",
+   "cpuThreads": 16,
+   "ramGB": 31.9,
+   "os": "Windows_NT 10.0.26300 x64",
+   "node": "v24.14.1"
+  },
+  "browser": "chrome 150.0.7871.127",
+  "loadMsHigh": 12746,
+  "date": "2026-11-07 18:54:19 UTC",
+  "minutes": 11.4,
+  "partialRuns": [
+   "shots",
+   "shots"
+  ]
+ },
+ "tests": {
+  "journey3": {
+   "tag": "3laps",
+   "laps": 3,
+   "car": "gt",
+   "checks": {
+    "menu-shown-with-live-background": {
+     "pass": true,
+     "detail": "demo race with 6 cars behind the menu"
+    },
+    "car-selected": {
+     "pass": true,
+     "detail": {
+      "name": "Veloce GT"
+     }
+    },
+    "grid-presentation-lists-6-cars": {
+     "pass": true,
+     "detail": 6
+    },
+    "countdown-3-2-1-go": {
+     "pass": true,
+     "detail": [
+      "3",
+      "2",
+      "1",
+      "VAI!"
+     ]
+    },
+    "race-with-5-ai": {
+     "pass": true,
+     "detail": {
+      "state": "racing",
+      "n": 6,
+      "ai": 5
+     }
+    },
+    "keyboard-input-moves-the-car": {
+     "pass": true,
+     "detail": 73.36
+    },
+    "reached-results-screen": {
+     "pass": true,
+     "detail": 332.86
+    },
+    "results-table-6-rows": {
+     "pass": true,
+     "detail": 6
+    },
+    "player-completed-all-laps": {
+     "pass": true,
+     "detail": {
+      "laps": 3,
+      "lapTimes": [
+       117.58,
+       103.74,
+       103.06
+      ]
+     }
+    },
+    "others-without-finish-show-approximate-time": {
+     "pass": true,
+     "detail": [
+      "05:27.250",
+      "≈ 05:35.429",
+      "≈ 05:36.579",
+      "≈ 05:40.322",
+      "≈ 05:46.239",
+      "≈ 05:47.445"
+     ]
+    },
+    "no-car-under-terrain": {
+     "pass": true,
+     "detail": 0
+    },
+    "no-collider-crossing": {
+     "pass": true,
+     "detail": {
+      "crossings": 0,
+      "maxPenetrationM": 0.042
+     }
+    },
+    "no-car-fell-out-of-world": {
+     "pass": true,
+     "detail": 0
+    },
+    "camera-never-inside-geometry": {
+     "pass": true,
+     "detail": {
+      "frames": 4040,
+      "violations": 0,
+      "minClearanceM": 1.52
+     }
+    },
+    "ai-never-stuck-or-off-road-over-5s": {
+     "pass": true,
+     "detail": {
+      "aiStuckEvents": 0,
+      "longestStuckOrOffSeconds": 0
+     }
+    },
+    "at-least-one-overtake-between-ais": {
+     "pass": true,
+     "detail": 8
+    },
+    "race-again-starts-clean": {
+     "pass": true,
+     "detail": {
+      "t": 0,
+      "laps": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "n": 6,
+      "state": "grid"
+     }
+    },
+    "second-race-runs": {
+     "pass": true,
+     "detail": {
+      "t": 15.07,
+      "positions": [
+       4,
+       2,
+       1,
+       3,
+       5,
+       6
+      ]
+     }
+    },
+    "no-console-errors": {
+     "pass": true,
+     "detail": []
+    }
+   },
+   "ok": true,
+   "results": {
+    "rows": [
+     [
+      "1",
+      "Você",
+      "Veloce GT",
+      "05:27.250",
+      "01:43.058"
+     ],
+     [
+      "2",
+      "Rafael Duarte",
+      "Veloce GT",
+      "≈ 05:35.429",
+      "01:51.325"
+     ],
+     [
+      "3",
+      "Inês Barros",
+      "Pulse RS",
+      "≈ 05:36.579",
+      "01:52.367"
+     ],
+     [
+      "4",
+      "Luca Marchetti",
+      "Veloce GT",
+      "≈ 05:40.322",
+      "01:53.725"
+     ],
+     [
+      "5",
+      "Théo Lambert",
+      "Veloce GT",
+      "≈ 05:46.239",
+      "01:56.500"
+     ],
+     [
+      "6",
+      "Maya Costa",
+      "Pulse RS",
+      "≈ 05:47.445",
+      "01:55.142"
+     ]
+    ],
+    "shown": true,
+    "player": [
+     117.57500000004194,
+     103.74166666658517,
+     103.0583333332396
+    ],
+    "laps": 3,
+    "finished": true,
+    "finishTime": 327.2499999998667,
+    "projected": [
+     [
+      "Você",
+      true,
+      327.2499999998667
+     ],
+     [
+      "Rafael Duarte",
+      false,
+      336.32470036818444
+     ],
+     [
+      "Inês Barros",
+      false,
+      337.443508399871
+     ],
+     [
+      "Luca Marchetti",
+      false,
+      340.66915035353145
+     ],
+     [
+      "Maya Costa",
+      false,
+      347.9938866587939
+     ],
+     [
+      "Théo Lambert",
+      false,
+      347.0122163807088
+     ]
+    ]
+   },
+   "finalSnapshot": {
+    "state": "results",
+    "raceState": "finished",
+    "t": 332.86,
+    "laps": 3,
+    "stats": {
+     "underTerrain": 0,
+     "aiStuck": 0,
+     "overtakesAI": 8,
+     "maxVoices": 0,
+     "wallHits": 0,
+     "colliderCross": 0,
+     "maxWallPen": 0.04228485666267545,
+     "maxAirborne": 0,
+     "fellOut": 0
+    },
+    "resets": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "log": [],
+    "cars": [
+     {
+      "id": 0,
+      "name": "Você",
+      "pos": 1,
+      "lap": 3,
+      "s": 223.88,
+      "lat": -0.01,
+      "kmh": 160.18,
+      "finished": true,
+      "finishTime": 327.25,
+      "best": 103.06,
+      "onRoad": true,
+      "stuck": 0,
+      "projected": 327.25
+     },
+     {
+      "id": 1,
+      "name": "Rafael Duarte",
+      "pos": 2,
+      "lap": 2,
+      "s": 2922.73,
+      "lat": 1.48,
+      "kmh": 73.56,
+      "finished": false,
+      "finishTime": 0,
+      "best": 111.32,
+      "onRoad": true,
+      "stuck": 0,
+      "projected": 336.3
+     },
+     {
+      "id": 2,
+      "name": "Inês Barros",
+      "pos": 3,
+      "lap": 2,
+      "s": 2882.73,
+      "lat": 3.51,
+      "kmh": 71.77,
+      "finished": false,
+      "finishTime": 0,
+      "best": 112.37,
+      "onRoad": true,
+      "stuck": 0,
+      "projected": 337.42
+     },
+     {
+      "id": 3,
+      "name": "Luca Marchetti",
+      "pos": 4,
+      "lap": 2,
+      "s": 2768.33,
+      "lat": 1.35,
+      "kmh": 107.66,
+      "finished": false,
+      "finishTime": 0,
+      "best": 113.72,
+      "onRoad": true,
+      "stuck": 0,
+      "projected": 340.66
+     },
+     {
+      "id": 4,
+      "name": "Maya Costa",
+      "pos": 6,
+      "lap": 2,
+      "s": 2517.97,
+      "lat": 4.43,
+      "kmh": 80.4,
+      "finished": false,
+      "finishTime": 0,
+      "best": 115.14,
+      "onRoad": true,
+      "stuck": 0,
+      "projected": 347.97
+     },
+     {
+      "id": 5,
+      "name": "Théo Lambert",
+      "pos": 5,
+      "lap": 2,
+      "s": 2551.05,
+      "lat": 2.61,
+      "kmh": 76.58,
+      "finished": false,
+      "finishTime": 0,
+      "best": 116.5,
+      "onRoad": true,
+      "stuck": 0,
+      "projected": 346.99
+     }
+    ]
+   },
+   "integrity": {
+    "stats": {
+     "underTerrain": 0,
+     "aiStuck": 0,
+     "overtakesAI": 8,
+     "maxVoices": 0,
+     "wallHits": 0,
+     "colliderCross": 0,
+     "maxWallPen": 0.04228485666267545,
+     "maxAirborne": 0,
+     "fellOut": 0
+    },
+    "log": [],
+    "cam": {
+     "frames": 4040,
+     "violations": 0,
+     "minClear": 1.5150698930762925,
+     "log": []
+    },
+    "maxStuck": 0,
+    "resets": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "events": [
+     {
+      "t": 7.441666666666826,
+      "car": 5,
+      "passed": 4,
+      "type": "overtake",
+      "ai": true
+     },
+     {
+      "t": 58.09166666666401,
+      "car": 1,
+      "passed": 2,
+      "type": "overtake",
+      "ai": true
+     },
+     {
+      "t": 60.03333333333057,
+      "car": 2,
+      "passed": 1,
+      "type": "overtake",
+      "ai": true
+     },
+     {
+      "t": 124.65000000004527,
+      "car": 1,
+      "passed": 2,
+      "type": "overtake",
+      "ai": true
+     },
+     {
+      "t": 138.30000000003855,
+      "car": 2,
+      "passed": 1,
+      "type": "overtake",
+      "ai": true
+     },
+     {
+      "t": 138.34166666670518,
+      "car": 1,
+      "passed": 2,
+      "type": "overtake",
+      "ai": true
+     },
+     {
+      "t": 138.36666666670516,
+      "car": 2,
+      "passed": 1,
+      "type": "overtake",
+      "ai": true
+     },
+     {
+      "t": 155.39166666668967,
+      "car": 1,
+      "passed": 2,
+      "type": "overtake",
+      "ai": true
+     }
+    ]
+   },
+   "consoleErrors": [],
+   "consoleLogLines": 0,
+   "logFile": "journey-3laps.log"
+  },
+  "journey6": {
+   "tag": "6laps",
+   "laps": 6,
+   "car": "hatch",
+   "checks": {
+    "menu-shown-with-live-background": {
+     "pass": true,
+     "detail": "demo race with 6 cars behind the menu"
+    },
+    "car-selected": {
+     "pass": true,
+     "detail": {
+      "name": "Pulse RS"
+     }
+    },
+    "grid-presentation-lists-6-cars": {
+     "pass": true,
+     "detail": 6
+    },
+    "countdown-3-2-1-go": {
+     "pass": true,
+     "detail": [
+      "3",
+      "2",
+      "1",
+      "VAI!"
+     ]
+    },
+    "race-with-5-ai": {
+     "pass": true,
+     "detail": {
+      "state": "racing",
+      "n": 6,
+      "ai": 5
+     }
+    },
+    "keyboard-input-moves-the-car": {
+     "pass": true,
+     "detail": 90.36
+    },
+    "reached-results-screen": {
+     "pass": true,
+     "detail": 636.15
+    },
+    "results-table-6-rows": {
+     "pass": true,
+     "detail": 6
+    },
+    "player-completed-all-laps": {
+     "pass": true,
+     "detail": {
+      "laps": 6,
+      "lapTimes": [
+       108.82,
+       103.47,
+       103.47,
+       103.47,
+       103.41,
+       103.42
+      ]
+     }
+    },
+    "others-without-finish-show-approximate-time": {
+     "pass": true,
+     "detail": [
+      "10:28.533",
+      "≈ 11:13.278",
+      "≈ 11:18.738",
+      "≈ 11:19.206",
+      "≈ 11:30.445",
+      "≈ 11:30.597"
+     ]
+    },
+    "no-car-under-terrain": {
+     "pass": true,
+     "detail": 0
+    },
+    "no-collider-crossing": {
+     "pass": true,
+     "detail": {
+      "crossings": 0,
+      "maxPenetrationM": 0.06
+     }
+    },
+    "no-car-fell-out-of-world": {
+     "pass": true,
+     "detail": 0
+    },
+    "camera-never-inside-geometry": {
+     "pass": true,
+     "detail": {
+      "frames": 7084,
+      "violations": 0,
+      "minClearanceM": 1.55
+     }
+    },
+    "ai-never-stuck-or-off-road-over-5s": {
+     "pass": true,
+     "detail": {
+      "aiStuckEvents": 0,
+      "longestStuckOrOffSeconds": 1.85
+     }
+    },
+    "at-least-one-overtake-between-ais": {
+     "pass": true,
+     "detail": 11
+    },
+    "race-again-starts-clean": {
+     "pass": true,
+     "detail": {
+      "t": 0,
+      "laps": [
+       0,
+       0,
+       0,
+       0,
+       0,
+       0
+      ],
+      "n": 6,
+      "state": "grid"
+     }
+    },
+    "second-race-runs": {
+     "pass": true,
+     "detail": {
+      "t": 15.1,
+      "positions": [
+       3,
+       2,
+       1,
+       5,
+       4,
+       6
+      ]
+     }
+    },
+    "no-console-errors": {
+     "pass": true,
+     "detail": []
+    }
+   },
+   "ok": true,
+   "results": {
+    "rows": [
+     [
+      "1",
+      "Você",
+      "Pulse RS",
+      "10:28.533",
+      "01:43.408"
+     ],
+     [
+      "2",
+      "Inês Barros",
+      "Pulse RS",
+      "≈ 11:13.278",
+      "01:52.133"
+     ],
+     [
+      "3",
+      "Rafael Duarte",
+      "Veloce GT",
+      "≈ 11:18.738",
+      "01:51.100"
+     ],
+     [
+      "4",
+      "Luca Marchetti",
+      "Veloce GT",
+      "≈ 11:19.206",
+      "01:53.500"
+     ],
+     [
+      "5",
+      "Théo Lambert",
+      "Veloce GT",
+      "≈ 11:30.445",
+      "01:56.500"
+     ],
+     [
+      "6",
+      "Maya Costa",
+      "Pulse RS",
+      "≈ 11:30.597",
+      "01:55.150"
+     ]
+    ],
+    "shown": true,
+    "player": [
+     108.8166666667013,
+     103.4749999999344,
+     103.47499999990589,
+     103.47499999990589,
+     103.40833333323934,
+     103.42499999990594
+    ],
+    "laps": 6,
+    "finished": true,
+    "finishTime": 628.5333333329261,
+    "projected": [
+     [
+      "Você",
+      true,
+      628.5333333329261
+     ],
+     [
+      "Rafael Duarte",
+      false,
+      681.0550939597324
+     ],
+     [
+      "Inês Barros",
+      false,
+      673.2868026471722
+     ],
+     [
+      "Luca Marchetti",
+      false,
+      681.5934358602939
+     ],
+     [
+      "Maya Costa",
+      false,
+      693.0658312986042
+     ],
+     [
+      "Théo Lambert",
+      false,
+      692.8772760909807
+     ]
+    ]
+   },
+   "finalSnapshot": {
+    "state": "results",
+    "raceState": "finished",
+    "t": 636.15,
+    "laps": 6,
+    "stats": {
+     "underTerrain": 0,
+     "aiStuck": 0,
+     "overtakesAI": 11,
+     "maxVoices": 0,
+     "wallHits": 0,
+     "colliderCross": 0,
+     "maxWallPen": 0.05974651631695771,
+     "maxAirborne": 0,
+     "fellOut": 0
+    },
+    "resets": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "log": [],
+    "cars": [
+     {
+      "id": 0,
+      "name": "Você",
+      "pos": 1,
+      "lap": 6,
+      "s": 313.55,
+      "lat": 0.01,
+      "kmh": 167.48,
+      "finished": true,
+      "finishTime": 628.53,
+      "best": 103.41,
+      "onRoad": true,
+      "stuck": 0,
+      "projected": 628.53
+     },
+     {
+      "id": 1,
+      "name": "Rafael Duarte",
+      "pos": 3,
+      "lap": 5,
+      "s": 1641.88,
+      "lat": 1.29,
+      "kmh": 52.62,
+      "finished": false,
+      "finishTime": 0,
+      "best": 111.1,
+      "onRoad": true,
+      "stuck": 0,
+      "projected": 681.02
+     },
+     {
+      "id": 2,
+      "name": "Inês Barros",
+      "pos": 2,
+      "lap": 5,
+      "s": 1870.68,
+      "lat": -1.72,
+      "kmh": 123.09,
+      "finished": false,
+      "finishTime": 0,
+      "best": 112.13,
+      "onRoad": true,
+      "stuck": 0,
+      "projected": 673.29
+     },
+     {
+      "id": 3,
+      "name": "Luca Marchetti",
+      "pos": 4,
+      "lap": 5,
+      "s": 1626.18,
+      "lat": 1.61,
+      "kmh": 49.38,
+      "finished": false,
+      "finishTime": 0,
+      "best": 113.5,
+      "onRoad": true,
+      "stuck": 0,
+      "projected": 681.56
+     },
+     {
+      "id": 4,
+      "name": "Maya Costa",
+      "pos": 6,
+      "lap": 5,
+      "s": 1296.48,
+      "lat": -3.4,
+      "kmh": 57.26,
+      "finished": false,
+      "finishTime": 0,
+      "best": 115.15,
+      "onRoad": true,
+      "stuck": 0,
+      "projected": 693.04
+     },
+     {
+      "id": 5,
+      "name": "Théo Lambert",
+      "pos": 5,
+      "lap": 5,
+      "s": 1301.75,
+      "lat": -1.49,
+      "kmh": 61.07,
+      "finished": false,
+      "finishTime": 0,
+      "best": 116.5,
+      "onRoad": true,
+      "stuck": 0,
+      "projected": 692.85
+     }
+    ]
+   },
+   "integrity": {
+    "stats": {
+     "underTerrain": 0,
+     "aiStuck": 0,
+     "overtakesAI": 11,
+     "maxVoices": 0,
+     "wallHits": 0,
+     "colliderCross": 0,
+     "maxWallPen": 0.05974651631695771,
+     "maxAirborne": 0,
+     "fellOut": 0
+    },
+    "log": [],
+    "cam": {
+     "frames": 7084,
+     "violations": 0,
+     "minClear": 1.5482519002404551,
+     "log": []
+    },
+    "maxStuck": 1.8499999999999959,
+    "resets": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "events": [
+     {
+      "t": 8.400000000000164,
+      "car": 3,
+      "passed": 1,
+      "type": "overtake",
+      "ai": true
+     },
+     {
+      "t": 9.275000000000114,
+      "car": 5,
+      "passed": 4,
+      "type": "overtake",
+      "ai": true
+     },
+     {
+      "t": 9.491666666666768,
+      "car": 5,
+      "passed": 1,
+      "type": "overtake",
+      "ai": true
+     },
+     {
+      "t": 14.27499999999983,
+      "car": 4,
+      "passed": 1,
+      "type": "overtake",
+      "ai": true
+     },
+     {
+      "t": 189.7333333333251,
+      "car": 1,
+      "passed": 4,
+      "type": "overtake",
+      "ai": true
+     },
+     {
+      "t": 267.6499999999209,
+      "car": 1,
+      "passed": 5,
+      "type": "overtake",
+      "ai": true
+     },
+     {
+      "t": 584.1333333329665,
+      "car": 1,
+      "passed": 3,
+      "type": "overtake",
+      "ai": true
+     },
+     {
+      "t": 598.933333332953,
+      "car": 3,
+      "passed": 1,
+      "type": "overtake",
+      "ai": true
+     },
+     {
+      "t": 598.9416666662863,
+      "car": 1,
+      "passed": 3,
+      "type": "overtake",
+      "ai": true
+     },
+     {
+      "t": 598.9999999996196,
+      "car": 3,
+      "passed": 1,
+      "type": "overtake",
+      "ai": true
+     },
+     {
+      "t": 601.7666666662838,
+      "car": 1,
+      "passed": 3,
+      "type": "overtake",
+      "ai": true
+     }
+    ]
+   },
+   "consoleErrors": [],
+   "consoleLogLines": 0,
+   "logFile": "journey-6laps.log"
+  },
+  "pause": {
+   "checks": {
+    "pause-freezes-the-race": {
+     "pass": true,
+     "detail": {
+      "t1": 2.52,
+      "t2": 2.52
+     }
+    },
+    "pause-muffles-audio": {
+     "pass": true,
+     "detail": {
+      "shown": true,
+      "paused": true,
+      "gain": 0.1599999964237213,
+      "lp": 420
+     }
+    },
+    "resume-continues": {
+     "pass": true,
+     "detail": {
+      "before": 2.52,
+      "after": 4.02
+     }
+    },
+    "restart-1-clean-state": {
+     "pass": true,
+     "detail": {
+      "t": 0
+     }
+    },
+    "restart-2-clean-state": {
+     "pass": true,
+     "detail": {
+      "t": 0
+     }
+    },
+    "restart-3-clean-state": {
+     "pass": true,
+     "detail": {
+      "t": 0
+     }
+    },
+    "heap-stable-after-3-restarts": {
+     "pass": true,
+     "detail": {
+      "baselineMB": 682.1,
+      "afterMB": [
+       660.5,
+       679.7,
+       662.2
+      ]
+     }
+    },
+    "gpu-objects-stable-after-3-restarts": {
+     "pass": true,
+     "detail": {
+      "base": {
+       "calls": 1328,
+       "tris": 6439401,
+       "geometries": 573,
+       "textures": 63,
+       "programs": 73
+      },
+      "after": {
+       "calls": 1371,
+       "tris": 6447837,
+       "geometries": 574,
+       "textures": 63,
+       "programs": 73
+      }
+     }
+    },
+    "audio-sources-and-voices-return-to-initial-value": {
+     "pass": true,
+     "detail": {
+      "base": {
+       "liveSources": 58,
+       "voices": 18,
+       "shots": 6,
+       "raceVoices": 6,
+       "aiVoices": 5,
+       "ctx": "running",
+       "stats": {
+        "voices": 18,
+        "aiVoices": 5,
+        "maxVoices": 25,
+        "maxAiVoices": 5,
+        "peak": 0.524874746799469,
+        "peakDb": -5.5988864371680025,
+        "gainReductionDb": 0,
+        "liveSources": 58,
+        "shots": 6,
+        "ctxState": "running"
+       },
+       "limiter": "worklet-lookahead"
+      },
+      "afterThird": {
+       "liveSources": 58,
+       "voices": 35,
+       "shots": 23,
+       "raceVoices": 6,
+       "aiVoices": 5,
+       "ctx": "running",
+       "stats": {
+        "voices": 35,
+        "aiVoices": 5,
+        "maxVoices": 36,
+        "maxAiVoices": 5,
+        "peak": 0.5553051829338074,
+        "peakDb": -5.109365460530729,
+        "gainReductionDb": 0,
+        "liveSources": 58,
+        "shots": 23,
+        "ctxState": "running"
+       },
+       "limiter": "worklet-lookahead"
+      },
+      "all": [
+       58,
+       58,
+       58
+      ]
+     }
+    },
+    "back-to-menu-without-old-race": {
+     "pass": true,
+     "detail": {
+      "race": false,
+      "demo": true,
+      "hud": false,
+      "audio": {
+       "liveSources": 60,
+       "voices": 24,
+       "shots": 14,
+       "raceVoices": 6,
+       "aiVoices": 5,
+       "ctx": "running",
+       "stats": {
+        "voices": 24,
+        "aiVoices": 5,
+        "maxVoices": 37,
+        "maxAiVoices": 5,
+        "peak": 0.5553051829338074,
+        "peakDb": -5.109365460530729,
+        "gainReductionDb": 0,
+        "liveSources": 60,
+        "shots": 14,
+        "ctxState": "running"
+       },
+       "limiter": "worklet-lookahead"
+      }
+     }
+    },
+    "menu-audio-voices-sane": {
+     "pass": true,
+     "detail": {
+      "liveSources": 60,
+      "voices": 24,
+      "shots": 14,
+      "raceVoices": 6,
+      "aiVoices": 5,
+      "ctx": "running",
+      "stats": {
+       "voices": 24,
+       "aiVoices": 5,
+       "maxVoices": 37,
+       "maxAiVoices": 5,
+       "peak": 0.5553051829338074,
+       "peakDb": -5.109365460530729,
+       "gainReductionDb": 0,
+       "liveSources": 60,
+       "shots": 14,
+       "ctxState": "running"
+      },
+      "limiter": "worklet-lookahead"
+     }
+    },
+    "no-console-errors": {
+     "pass": true,
+     "detail": []
+    }
+   },
+   "ok": true,
+   "baseline": {
+    "heap": {
+     "used": 682053207,
+     "total": 751577747
+    },
+    "info": {
+     "calls": 1328,
+     "tris": 6439401,
+     "geometries": 573,
+     "textures": 63,
+     "programs": 73
+    },
+    "audio": {
+     "liveSources": 58,
+     "voices": 18,
+     "shots": 6,
+     "raceVoices": 6,
+     "aiVoices": 5,
+     "ctx": "running",
+     "stats": {
+      "voices": 18,
+      "aiVoices": 5,
+      "maxVoices": 25,
+      "maxAiVoices": 5,
+      "peak": 0.524874746799469,
+      "peakDb": -5.5988864371680025,
+      "gainReductionDb": 0,
+      "liveSources": 58,
+      "shots": 6,
+      "ctxState": "running"
+     },
+     "limiter": "worklet-lookahead"
+    }
+   },
+   "afterRestarts": [
+    {
+     "heap": {
+      "used": 660508909,
+      "total": 722899893
+     },
+     "info": {
+      "calls": 1374,
+      "tris": 6448257,
+      "geometries": 574,
+      "textures": 63,
+      "programs": 73
+     },
+     "audio": {
+      "liveSources": 58,
+      "voices": 28,
+      "shots": 16,
+      "raceVoices": 6,
+      "aiVoices": 5,
+      "ctx": "running",
+      "stats": {
+       "voices": 28,
+       "aiVoices": 5,
+       "maxVoices": 29,
+       "maxAiVoices": 5,
+       "peak": 0.524874746799469,
+       "peakDb": -5.5988864371680025,
+       "gainReductionDb": 0,
+       "liveSources": 58,
+       "shots": 16,
+       "ctxState": "running"
+      },
+      "limiter": "worklet-lookahead"
+     }
+    },
+    {
+     "heap": {
+      "used": 679663397,
+      "total": 744800893
+     },
+     "info": {
+      "calls": 1372,
+      "tris": 6452957,
+      "geometries": 574,
+      "textures": 63,
+      "programs": 73
+     },
+     "audio": {
+      "liveSources": 58,
+      "voices": 33,
+      "shots": 21,
+      "raceVoices": 6,
+      "aiVoices": 5,
+      "ctx": "running",
+      "stats": {
+       "voices": 33,
+       "aiVoices": 5,
+       "maxVoices": 34,
+       "maxAiVoices": 5,
+       "peak": 0.5553051829338074,
+       "peakDb": -5.109365460530729,
+       "gainReductionDb": 0,
+       "liveSources": 58,
+       "shots": 21,
+       "ctxState": "running"
+      },
+      "limiter": "worklet-lookahead"
+     }
+    },
+    {
+     "heap": {
+      "used": 662249676,
+      "total": 726045672
+     },
+     "info": {
+      "calls": 1371,
+      "tris": 6447837,
+      "geometries": 574,
+      "textures": 63,
+      "programs": 73
+     },
+     "audio": {
+      "liveSources": 58,
+      "voices": 35,
+      "shots": 23,
+      "raceVoices": 6,
+      "aiVoices": 5,
+      "ctx": "running",
+      "stats": {
+       "voices": 35,
+       "aiVoices": 5,
+       "maxVoices": 36,
+       "maxAiVoices": 5,
+       "peak": 0.5553051829338074,
+       "peakDb": -5.109365460530729,
+       "gainReductionDb": 0,
+       "liveSources": 58,
+       "shots": 23,
+       "ctxState": "running"
+      },
+      "limiter": "worklet-lookahead"
+     }
+    }
+   ],
+   "consoleErrors": [],
+   "logFile": "pause-restart.log"
+  },
+  "anticut": {
+   "checks": {
+    "crossing-the-line-without-checkpoints-gives-no-lap": {
+     "pass": true,
+     "detail": {
+      "laps": 0,
+      "events": [
+       {
+        "t": 8.966666666666798,
+        "car": 0,
+        "type": "line-no-lap",
+        "cp": 1
+       }
+      ],
+      "cpNext": 1
+     }
+    },
+    "shortcut-jump-is-not-credited": {
+     "pass": true,
+     "detail": {
+      "before": 256,
+      "after": 257,
+      "lost": true
+     }
+    },
+    "legitimate-lap-counts": {
+     "pass": true,
+     "detail": {
+      "laps": 1,
+      "times": [
+       116.69166666670833
+      ]
+     }
+    }
+   },
+   "ok": true,
+   "consoleErrors": [],
+   "logFile": "anticut.log"
+  },
+  "volta": {
+   "checks": {
+    "full-lap-completed-in-real-time": {
+     "pass": true,
+     "detail": {
+      "state": "finished",
+      "s": 1.1361614588998987,
+      "laps": 1,
+      "t": 130.70000000004546,
+      "kmh": 122.61479298327616,
+      "fin": true
+     }
+    },
+    "master-peak-at-or-below-minus-1-dbfs": {
+     "pass": true,
+     "detail": {
+      "peakLinear": 0.546173095703125,
+      "peakDbfs": -5.25,
+      "seconds": 138.8
+     }
+    },
+    "events-logged-shift-skid-impact-bridge": {
+     "pass": true,
+     "detail": {
+      "shifts": 53,
+      "skids": 8,
+      "impacts": 8,
+      "bridge": 2,
+      "aiPass": 10
+     }
+    },
+    "max-ai-voices-at-most-5": {
+     "pass": true,
+     "detail": {
+      "maxAiVoices": 5,
+      "maxVoicesTotal": 27
+     }
+    },
+    "player-engine-uses-audio-buffers": {
+     "pass": true,
+     "detail": {
+      "kind": "v8",
+      "bufferSources": 7,
+      "buffersBound": 7,
+      "bands": [
+       {
+        "f0": 52.91,
+        "file": "assets/audio/engine/v8-053-181460.wav"
+       },
+       {
+        "f0": 69.33,
+        "file": "assets/audio/engine/v8-069-181460.wav"
+       },
+       {
+        "f0": 84.37,
+        "file": "assets/audio/engine/v8-084-181460.wav"
+       },
+       {
+        "f0": 85.81,
+        "file": "assets/audio/engine/v8-086-181460.wav"
+       },
+       {
+        "f0": 106.77,
+        "file": "assets/audio/engine/v8-107-496171.wav"
+       },
+       {
+        "f0": 115.5,
+        "file": "assets/audio/engine/v8-116-496171.wav"
+       },
+       {
+        "f0": 138.33,
+        "file": "assets/audio/engine/v8-138-496171.wav"
+       }
+      ]
+     }
+    },
+    "video-recorded-with-audio-track": {
+     "pass": true,
+     "detail": {
+      "bytes": 32502216,
+      "mime": "video/webm;codecs=vp9,opus",
+      "frames": 3536,
+      "seconds": 139
+     }
+    },
+    "no-console-errors": {
+     "pass": true,
+     "detail": []
+    }
+   },
+   "ok": true,
+   "audioInit": {
+    "state": "running",
+    "sampleRate": 48000,
+    "limiter": "worklet-lookahead",
+    "failed": null
+   },
+   "audioRec": {
+    "frames": 6664320,
+    "seconds": 138.84,
+    "sampleRate": 48000,
+    "peakLinear": 0.5461917519569397,
+    "peakDbfs": -5.253097248577264,
+    "rmsDbfs": -20.535546652101424,
+    "bytes": 26657324
+   },
+   "video": {
+    "bytes": 32502216,
+    "mime": "video/webm;codecs=vp9,opus",
+    "frames": 3536,
+    "seconds": 139
+   },
+   "fileMeasured": {
+    "peakLinear": 0.546173095703125,
+    "peakDbfs": -5.25,
+    "seconds": 138.8
+   },
+   "events": [
+    {
+     "type": "ai-pass",
+     "ct": 1.981,
+     "rt": 1.429,
+     "race": 0,
+     "ai": "Inês Barros",
+     "dir": "player-overtakes",
+     "dist": 1.5
+    },
+    {
+     "type": "ai-pass",
+     "ct": 2.101,
+     "rt": 1.549,
+     "race": 0,
+     "ai": "Rafael Duarte",
+     "dir": "player-overtakes",
+     "dist": 6.9
+    },
+    {
+     "type": "ai-pass",
+     "ct": 3.221,
+     "rt": 2.669,
+     "race": 0,
+     "ai": "Luca Marchetti",
+     "dir": "player-overtakes",
+     "dist": 4.8
+    },
+    {
+     "type": "ai-pass",
+     "ct": 3.221,
+     "rt": 2.669,
+     "race": 0,
+     "ai": "Théo Lambert",
+     "dir": "player-overtakes",
+     "dist": 11.1
+    },
+    {
+     "type": "ai-pass",
+     "ct": 3.221,
+     "rt": 2.669,
+     "race": 0,
+     "ai": "Maya Costa",
+     "dir": "player-overtakes",
+     "dist": 12.2
+    },
+    {
+     "type": "shift",
+     "ct": 8.992,
+     "rt": 8.44,
+     "race": 0.32,
+     "dir": "up",
+     "gear": 2,
+     "rpm": 9623
+    },
+    {
+     "type": "shift",
+     "ct": 9.211,
+     "rt": 8.659,
+     "race": 0.53,
+     "dir": "up",
+     "gear": 3,
+     "rpm": 14780
+    },
+    {
+     "type": "shift",
+     "ct": 9.461,
+     "rt": 8.909,
+     "race": 0.78,
+     "dir": "down",
+     "gear": 2,
+     "rpm": 4086
+    },
+    {
+     "type": "shift",
+     "ct": 9.621,
+     "rt": 9.069,
+     "race": 0.95,
+     "dir": "down",
+     "gear": 1,
+     "rpm": 1324
+    },
+    {
+     "type": "ai-pass",
+     "ct": 9.992,
+     "rt": 9.44,
+     "race": 1.32,
+     "ai": "Maya Costa",
+     "dir": "ai-overtakes",
+     "dist": 4.5
+    },
+    {
+     "type": "shift",
+     "ct": 10.141,
+     "rt": 9.589,
+     "race": 1.47,
+     "dir": "up",
+     "gear": 2,
+     "rpm": 8151
+    },
+    {
+     "type": "shift",
+     "ct": 10.36,
+     "rt": 9.808,
+     "race": 1.68,
+     "dir": "down",
+     "gear": 1,
+     "rpm": 1996
+    },
+    {
+     "type": "impact",
+     "ct": 10.461,
+     "rt": 9.909,
+     "race": 1.78,
+     "level": 0.34,
+     "body": true,
+     "kmh": 7
+    },
+    {
+     "type": "ai-pass",
+     "ct": 10.651,
+     "rt": 10.099,
+     "race": 1.97,
+     "ai": "Théo Lambert",
+     "dir": "ai-overtakes",
+     "dist": 2.1
+    },
+    {
+     "type": "skid",
+     "ct": 11.021,
+     "rt": 10.469,
+     "race": 2.35,
+     "slip": 0.85,
+     "kmh": 17
+    },
+    {
+     "type": "shift",
+     "ct": 12.472,
+     "rt": 11.92,
+     "race": 3.8,
+     "dir": "up",
+     "gear": 2,
+     "rpm": 6887
+    },
+    {
+     "type": "skid",
+     "ct": 12.712,
+     "rt": 12.16,
+     "race": 4.03,
+     "slip": 0.54,
+     "kmh": 53
+    },
+    {
+     "type": "shift",
+     "ct": 13.931,
+     "rt": 13.379,
+     "race": 5.26,
+     "dir": "up",
+     "gear": 3,
+     "rpm": 7220
+    },
+    {
+     "type": "shift",
+     "ct": 15.891,
+     "rt": 15.339,
+     "race": 7.22,
+     "dir": "up",
+     "gear": 4,
+     "rpm": 7215
+    },
+    {
+     "type": "shift",
+     "ct": 18.701,
+     "rt": 18.149,
+     "race": 10.03,
+     "dir": "up",
+     "gear": 5,
+     "rpm": 7215
+    },
+    {
+     "type": "skid",
+     "ct": 24.621,
+     "rt": 24.069,
+     "race": 15.95,
+     "slip": 0.54,
+     "kmh": 175
+    },
+    {
+     "type": "shift",
+     "ct": 24.821,
+     "rt": 24.269,
+     "race": 16.15,
+     "dir": "down",
+     "gear": 4,
+     "rpm": 3004
+    },
+    {
+     "type": "shift",
+     "ct": 24.981,
+     "rt": 24.429,
+     "race": 16.31,
+     "dir": "down",
+     "gear": 3,
+     "rpm": 1229
+    },
+    {
+     "type": "shift",
+     "ct": 25.152,
+     "rt": 24.6,
+     "race": 16.47,
+     "dir": "down",
+     "gear": 2,
+     "rpm": 923
+    },
+    {
+     "type": "ai-pass",
+     "ct": 25.2,
+     "rt": 24.648,
+     "race": 16.52,
+     "ai": "Théo Lambert",
+     "dir": "player-overtakes",
+     "dist": 3.8
+    },
+    {
+     "type": "shift",
+     "ct": 25.32,
+     "rt": 24.768,
+     "race": 16.65,
+     "dir": "down",
+     "gear": 1,
+     "rpm": 901
+    },
+    {
+     "type": "scrape",
+     "ct": 25.821,
+     "rt": 25.269,
+     "race": 17.15,
+     "level": 0.8
+    },
+    {
+     "type": "impact",
+     "ct": 25.821,
+     "rt": 25.269,
+     "race": 17.15,
+     "level": 0.19,
+     "body": true,
+     "kmh": 138
+    },
+    {
+     "type": "ai-pass",
+     "ct": 26.131,
+     "rt": 25.579,
+     "race": 17.46,
+     "ai": "Maya Costa",
+     "dir": "player-overtakes",
+     "dist": 12.5
+    },
+    {
+     "type": "shift",
+     "ct": 26.432,
+     "rt": 25.88,
+     "race": 17.76,
+     "dir": "up",
+     "gear": 2,
+     "rpm": 7371
+    },
+    {
+     "type": "shift",
+     "ct": 26.651,
+     "rt": 26.099,
+     "race": 17.97,
+     "dir": "up",
+     "gear": 3,
+     "rpm": 8642
+    },
+    {
+     "type": "shift",
+     "ct": 27.2,
+     "rt": 26.648,
+     "race": 18.52,
+     "dir": "down",
+     "gear": 2,
+     "rpm": 2774
+    },
+    {
+     "type": "shift",
+     "ct": 27.371,
+     "rt": 26.819,
+     "race": 18.7,
+     "dir": "down",
+     "gear": 1,
+     "rpm": 3406
+    },
+    {
+     "type": "scrape",
+     "ct": 27.6,
+     "rt": 27.048,
+     "race": 18.92,
+     "level": 0.62
+    },
+    {
+     "type": "impact",
+     "ct": 27.6,
+     "rt": 27.048,
+     "race": 18.92,
+     "level": 0.19,
+     "body": true,
+     "kmh": 82
+    },
+    {
+     "type": "shift",
+     "ct": 27.832,
+     "rt": 27.28,
+     "race": 19.16,
+     "dir": "up",
+     "gear": 2,
+     "rpm": 7436
+    },
+    {
+     "type": "skid",
+     "ct": 28.392,
+     "rt": 27.84,
+     "race": 19.72,
+     "slip": 0.54,
+     "kmh": 74
+    },
+    {
+     "type": "shift",
+     "ct": 28.632,
+     "rt": 28.08,
+     "race": 19.96,
+     "dir": "up",
+     "gear": 3,
+     "rpm": 7229
+    },
+    {
+     "type": "shift",
+     "ct": 31.211,
+     "rt": 30.659,
+     "race": 22.53,
+     "dir": "up",
+     "gear": 4,
+     "rpm": 7219
+    },
+    {
+     "type": "shift",
+     "ct": 34.731,
+     "rt": 34.179,
+     "race": 26.06,
+     "dir": "down",
+     "gear": 3,
+     "rpm": 4068
+    },
+    {
+     "type": "shift",
+     "ct": 35.581,
+     "rt": 35.029,
+     "race": 26.91,
+     "dir": "down",
+     "gear": 2,
+     "rpm": 4039
+    },
+    {
+     "type": "shift",
+     "ct": 45.512,
+     "rt": 44.96,
+     "race": 36.83,
+     "dir": "up",
+     "gear": 3,
+     "rpm": 7219
+    },
+    {
+     "type": "impact",
+     "ct": 45.781,
+     "rt": 45.229,
+     "race": 37.11,
+     "level": 0.12,
+     "body": true,
+     "kmh": 84
+    },
+    {
+     "type": "shift",
+     "ct": 48.432,
+     "rt": 47.88,
+     "race": 39.76,
+     "dir": "up",
+     "gear": 4,
+     "rpm": 7216
+    },
+    {
+     "type": "skid",
+     "ct": 48.691,
+     "rt": 48.139,
+     "race": 40.02,
+     "slip": 0.53,
+     "kmh": 113
+    },
+    {
+     "type": "scrape",
+     "ct": 49.112,
+     "rt": 48.56,
+     "race": 40.43,
+     "level": 0.66
+    },
+    {
+     "type": "impact",
+     "ct": 49.112,
+     "rt": 48.56,
+     "race": 40.43,
+     "level": 0.73,
+     "body": true,
+     "kmh": 100
+    },
+    {
+     "type": "impact",
+     "ct": 49.432,
+     "rt": 48.88,
+     "race": 40.76,
+     "level": 0.55,
+     "body": true,
+     "kmh": 95
+    },
+    {
+     "type": "skid",
+     "ct": 50.419,
+     "rt": 49.867,
+     "race": 41.73,
+     "slip": 1,
+     "kmh": 102
+    },
+    {
+     "type": "scrape",
+     "ct": 51.581,
+     "rt": 51.029,
+     "race": 42.91,
+     "level": 0.41
+    },
+    {
+     "type": "impact",
+     "ct": 51.581,
+     "rt": 51.029,
+     "race": 42.91,
+     "level": 1,
+     "body": true,
+     "kmh": 65
+    },
+    {
+     "type": "shift",
+     "ct": 51.632,
+     "rt": 51.08,
+     "race": 42.96,
+     "dir": "down",
+     "gear": 3,
+     "rpm": 3462
+    },
+    {
+     "type": "shift",
+     "ct": 51.8,
+     "rt": 51.248,
+     "race": 43.12,
+     "dir": "down",
+     "gear": 2,
+     "rpm": 1454
+    },
+    {
+     "type": "ai-pass",
+     "ct": 51.851,
+     "rt": 51.299,
+     "race": 43.17,
+     "ai": "Théo Lambert",
+     "dir": "player-overtakes",
+     "dist": 10.9
+    },
+    {
+     "type": "shift",
+     "ct": 52.101,
+     "rt": 51.549,
+     "race": 43.42,
+     "dir": "down",
+     "gear": 1,
+     "rpm": 2979
+    },
+    {
+     "type": "shift",
+     "ct": 55.48,
+     "rt": 54.928,
+     "race": 46.81,
+     "dir": "up",
+     "gear": 2,
+     "rpm": 46552
+    },
+    {
+     "type": "shift",
+     "ct": 55.691,
+     "rt": 55.139,
+     "race": 47.02,
+     "dir": "up",
+     "gear": 3,
+     "rpm": 94743
+    },
+    {
+     "type": "shift",
+     "ct": 55.912,
+     "rt": 55.36,
+     "race": 47.23,
+     "dir": "up",
+     "gear": 4,
+     "rpm": 67699
+    },
+    {
+     "type": "shift",
+     "ct": 56.131,
+     "rt": 55.579,
+     "race": 47.46,
+     "dir": "up",
+     "gear": 5,
+     "rpm": 47933
+    },
+    {
+     "type": "shift",
+     "ct": 56.341,
+     "rt": 55.789,
+     "race": 47.67,
+     "dir": "up",
+     "gear": 6,
+     "rpm": 36414
+    },
+    {
+     "type": "shift",
+     "ct": 58.192,
+     "rt": 57.64,
+     "race": 49.52,
+     "dir": "down",
+     "gear": 5,
+     "rpm": 3147
+    },
+    {
+     "type": "shift",
+     "ct": 58.36,
+     "rt": 57.808,
+     "race": 49.68,
+     "dir": "down",
+     "gear": 4,
+     "rpm": 1345
+    },
+    {
+     "type": "shift",
+     "ct": 58.531,
+     "rt": 57.979,
+     "race": 49.86,
+     "dir": "down",
+     "gear": 3,
+     "rpm": 928
+    },
+    {
+     "type": "shift",
+     "ct": 58.691,
+     "rt": 58.139,
+     "race": 50.02,
+     "dir": "down",
+     "gear": 2,
+     "rpm": 934
+    },
+    {
+     "type": "shift",
+     "ct": 58.861,
+     "rt": 58.309,
+     "race": 50.18,
+     "dir": "down",
+     "gear": 1,
+     "rpm": 902
+    },
+    {
+     "type": "shift",
+     "ct": 59.792,
+     "rt": 59.24,
+     "race": 51.12,
+     "dir": "up",
+     "gear": 2,
+     "rpm": 242891
+    },
+    {
+     "type": "shift",
+     "ct": 60.011,
+     "rt": 59.459,
+     "race": 51.33,
+     "dir": "up",
+     "gear": 3,
+     "rpm": 640446
+    },
+    {
+     "type": "shift",
+     "ct": 60.232,
+     "rt": 59.68,
+     "race": 51.56,
+     "dir": "up",
+     "gear": 4,
+     "rpm": 473971
+    },
+    {
+     "type": "skid",
+     "ct": 60.381,
+     "rt": 59.829,
+     "race": 51.71,
+     "slip": 1,
+     "kmh": 17
+    },
+    {
+     "type": "shift",
+     "ct": 60.44,
+     "rt": 59.888,
+     "race": 51.77,
+     "dir": "up",
+     "gear": 5,
+     "rpm": 378498
+    },
+    {
+     "type": "shift",
+     "ct": 60.661,
+     "rt": 60.109,
+     "race": 51.98,
+     "dir": "up",
+     "gear": 6,
+     "rpm": 302301
+    },
+    {
+     "type": "scrape",
+     "ct": 61.971,
+     "rt": 61.419,
+     "race": 53.29,
+     "level": 0.16
+    },
+    {
+     "type": "impact",
+     "ct": 61.971,
+     "rt": 61.419,
+     "race": 53.29,
+     "level": 0.64,
+     "body": true,
+     "kmh": 6
+    },
+    {
+     "type": "skid",
+     "ct": 67.712,
+     "rt": 67.16,
+     "race": 59.03,
+     "slip": 1,
+     "kmh": 17
+    },
+    {
+     "type": "shift",
+     "ct": 78.731,
+     "rt": 78.179,
+     "race": 70.06,
+     "dir": "down",
+     "gear": 5,
+     "rpm": 2978
+    },
+    {
+     "type": "shift",
+     "ct": 78.901,
+     "rt": 78.349,
+     "race": 70.23,
+     "dir": "down",
+     "gear": 4,
+     "rpm": 2291
+    },
+    {
+     "type": "shift",
+     "ct": 87.291,
+     "rt": 86.739,
+     "race": 78.62,
+     "dir": "down",
+     "gear": 3,
+     "rpm": 3793
+    },
+    {
+     "type": "shift",
+     "ct": 88.072,
+     "rt": 87.52,
+     "race": 79.39,
+     "dir": "down",
+     "gear": 2,
+     "rpm": 3703
+    },
+    {
+     "type": "shift",
+     "ct": 97.84,
+     "rt": 97.288,
+     "race": 89.17,
+     "dir": "up",
+     "gear": 3,
+     "rpm": 7219
+    },
+    {
+     "type": "shift",
+     "ct": 100.856,
+     "rt": 100.304,
+     "race": 92.18,
+     "dir": "up",
+     "gear": 4,
+     "rpm": 7217
+    },
+    {
+     "type": "shift",
+     "ct": 108.973,
+     "rt": 108.421,
+     "race": 100.3,
+     "dir": "up",
+     "gear": 5,
+     "rpm": 7217
+    },
+    {
+     "type": "bridge-enter",
+     "ct": 115.12,
+     "rt": 114.568,
+     "race": 106.45,
+     "kmh": 176
+    },
+    {
+     "type": "shift",
+     "ct": 117.981,
+     "rt": 117.429,
+     "race": 109.32,
+     "dir": "down",
+     "gear": 4,
+     "rpm": 4077
+    },
+    {
+     "type": "bridge-exit",
+     "ct": 118.221,
+     "rt": 117.669,
+     "race": 109.55,
+     "kmh": 107
+    },
+    {
+     "type": "shift",
+     "ct": 129.661,
+     "rt": 129.109,
+     "race": 120.99,
+     "dir": "down",
+     "gear": 3,
+     "rpm": 4077
+    },
+    {
+     "type": "shift",
+     "ct": 138.781,
+     "rt": 138.229,
+     "race": 130.11,
+     "dir": "up",
+     "gear": 4,
+     "rpm": 7215
+    }
+   ],
+   "stats": {
+    "voices": 7,
+    "aiVoices": 0,
+    "maxVoices": 27,
+    "maxAiVoices": 5,
+    "peak": 0.5461917519569397,
+    "peakDb": -5.253097248577264,
+    "gainReductionDb": 0,
+    "liveSources": 58,
+    "shots": 0,
+    "ctxState": "running"
+   },
+   "audit": {
+    "engineIsSampled": true,
+    "playerEngine": {
+     "kind": "v8",
+     "bufferSources": 7,
+     "buffersBound": 7,
+     "bands": [
+      {
+       "f0": 52.91,
+       "file": "assets/audio/engine/v8-053-181460.wav"
+      },
+      {
+       "f0": 69.33,
+       "file": "assets/audio/engine/v8-069-181460.wav"
+      },
+      {
+       "f0": 84.37,
+       "file": "assets/audio/engine/v8-084-181460.wav"
+      },
+      {
+       "f0": 85.81,
+       "file": "assets/audio/engine/v8-086-181460.wav"
+      },
+      {
+       "f0": 106.77,
+       "file": "assets/audio/engine/v8-107-496171.wav"
+      },
+      {
+       "f0": 115.5,
+       "file": "assets/audio/engine/v8-116-496171.wav"
+      },
+      {
+       "f0": 138.33,
+       "file": "assets/audio/engine/v8-138-496171.wav"
+      }
+     ]
+    },
+    "kinds": {
+     "turbo": {
+      "loops": 7,
+      "bands": [
+       {
+        "file": "assets/audio/engine/turbo-053-181460.wav",
+        "f0": 52.91,
+        "seconds": 0.794,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.95
+       },
+       {
+        "file": "assets/audio/engine/turbo-069-181460.wav",
+        "f0": 69.33,
+        "seconds": 0.793,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.96
+       },
+       {
+        "file": "assets/audio/engine/turbo-084-181460.wav",
+        "f0": 84.37,
+        "seconds": 0.794,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.95
+       },
+       {
+        "file": "assets/audio/engine/turbo-086-181460.wav",
+        "f0": 85.81,
+        "seconds": 0.804,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.95
+       },
+       {
+        "file": "assets/audio/engine/turbo-162-496171.wav",
+        "f0": 161.78,
+        "seconds": 0.797,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.88
+       },
+       {
+        "file": "assets/audio/engine/turbo-175-496171.wav",
+        "f0": 175,
+        "seconds": 0.8,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.66
+       },
+       {
+        "file": "assets/audio/engine/turbo-210-496171.wav",
+        "f0": 209.6,
+        "seconds": 0.802,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.82
+       }
+      ],
+      "sources": [
+       "181460",
+       "496171"
+      ]
+     },
+     "v8": {
+      "loops": 7,
+      "bands": [
+       {
+        "file": "assets/audio/engine/v8-053-181460.wav",
+        "f0": 52.91,
+        "seconds": 0.794,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.95
+       },
+       {
+        "file": "assets/audio/engine/v8-069-181460.wav",
+        "f0": 69.33,
+        "seconds": 0.793,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.96
+       },
+       {
+        "file": "assets/audio/engine/v8-084-181460.wav",
+        "f0": 84.37,
+        "seconds": 0.794,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.95
+       },
+       {
+        "file": "assets/audio/engine/v8-086-181460.wav",
+        "f0": 85.81,
+        "seconds": 0.804,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.95
+       },
+       {
+        "file": "assets/audio/engine/v8-107-496171.wav",
+        "f0": 106.77,
+        "seconds": 1.208,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.88
+       },
+       {
+        "file": "assets/audio/engine/v8-116-496171.wav",
+        "f0": 115.5,
+        "seconds": 1.212,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.66
+       },
+       {
+        "file": "assets/audio/engine/v8-138-496171.wav",
+        "f0": 138.33,
+        "seconds": 1.214,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.82
+       }
+      ],
+      "sources": [
+       "181460",
+       "496171"
+      ]
+     }
+    },
+    "oscillatorsInEnginePath": 0,
+    "limiter": "worklet-lookahead",
+    "contextRate": 48000
+   },
+   "lapTimes": [
+    126.43333333337881
+   ],
+   "instants": {
+    "shift": [
+     "00:08.4",
+     "00:08.7",
+     "00:08.9",
+     "00:09.1",
+     "00:09.6",
+     "00:09.8",
+     "00:11.9",
+     "00:13.4",
+     "00:15.3",
+     "00:18.1",
+     "00:24.3",
+     "00:24.4",
+     "00:24.6",
+     "00:24.8",
+     "00:25.9",
+     "00:26.1",
+     "00:26.6",
+     "00:26.8",
+     "00:27.3",
+     "00:28.1",
+     "00:30.7",
+     "00:34.2",
+     "00:35.0",
+     "00:45.0",
+     "00:47.9",
+     "00:51.1",
+     "00:51.2",
+     "00:51.5",
+     "00:54.9",
+     "00:55.1",
+     "00:55.4",
+     "00:55.6",
+     "00:55.8",
+     "00:57.6",
+     "00:57.8",
+     "00:58.0",
+     "00:58.1",
+     "00:58.3",
+     "00:59.2",
+     "00:59.5",
+     "00:59.7",
+     "00:59.9",
+     "01:00.1",
+     "01:18.2",
+     "01:18.3",
+     "01:26.7",
+     "01:27.5",
+     "01:37.3",
+     "01:40.3",
+     "01:48.4",
+     "01:57.4",
+     "02:09.1",
+     "02:18.2"
+    ],
+    "skid": [
+     "00:10.5",
+     "00:12.2",
+     "00:24.1",
+     "00:27.8",
+     "00:48.1",
+     "00:49.9",
+     "00:59.8",
+     "01:07.2"
+    ],
+    "impact": [
+     "00:09.9",
+     "00:25.3",
+     "00:27.0",
+     "00:45.2",
+     "00:48.6",
+     "00:48.9",
+     "00:51.0",
+     "01:01.4"
+    ],
+    "scrape": [
+     "00:25.3",
+     "00:27.0",
+     "00:48.6",
+     "00:51.0",
+     "01:01.4"
+    ],
+    "bridge": [
+     "bridge-enter@01:54.6",
+     "bridge-exit@01:57.7"
+    ],
+    "aiPass": [
+     "00:01.4 player-overtakes",
+     "00:01.5 player-overtakes",
+     "00:02.7 player-overtakes",
+     "00:02.7 player-overtakes",
+     "00:02.7 player-overtakes",
+     "00:09.4 ai-overtakes",
+     "00:10.1 ai-overtakes",
+     "00:24.6 player-overtakes",
+     "00:25.6 player-overtakes",
+     "00:51.3 player-overtakes"
+    ]
+   },
+   "consoleErrors": [],
+   "logFile": "audio-volta.log"
+  }
+ },
+ "audit": {
+  "audit": {
+   "generatedBy": "src/game/audit.js (reads the live scene graph)",
+   "cars": {
+    "gt": {
+     "name": "Veloce GT",
+     "trianglesLOD0": 84016,
+     "reportedByModel": 62000,
+     "meshes": 27,
+     "distinctMaterialsUsed": 11,
+     "materialNames": [
+      "paint-clearcoat",
+      "glass",
+      "chrome",
+      "plate",
+      "plastic-matte",
+      "accent-paint",
+      "interior-dark",
+      "rubber",
+      "rim-metal",
+      "brake-disc",
+      "caliper"
+     ],
+     "definedMaterials": 13,
+     "clearcoatPaint": true
+    },
+    "hatch": {
+     "name": "Pulse RS",
+     "trianglesLOD0": 81224,
+     "reportedByModel": 61608,
+     "meshes": 25,
+     "distinctMaterialsUsed": 10,
+     "materialNames": [
+      "paint-clearcoat",
+      "glass",
+      "chrome",
+      "plate",
+      "accent-paint",
+      "interior-dark",
+      "rubber",
+      "rim-metal",
+      "brake-disc",
+      "caliper"
+     ],
+     "definedMaterials": 13,
+     "clearcoatPaint": true
+    },
+    "pass": true
+   },
+   "boxDetector": {
+    "nearMeshesChecked": 936,
+    "offenders": [],
+    "count": 0,
+    "pass": true
+   },
+   "flatColour": {
+    "offenders": [],
+    "count": 0,
+    "pass": true
+   },
+   "counts": {
+    "houses": 97,
+    "housesWithin30mOfRoad": 86,
+    "housesWithin30mInVillage": 80,
+    "houseVariants": 8,
+    "houseVariantsExpected": ">= 5",
+    "vegetationSpecies": 5,
+    "species": {
+     "pine": 648,
+     "olive": 358,
+     "palm": 28,
+     "grass": 851,
+     "shrub": 954
+    },
+    "treesTotal": 1034,
+    "propsPerHundredMetres": {
+     "min": 16,
+     "mean": 34.9,
+     "perBin": [
+      45,
+      50,
+      46,
+      51,
+      45,
+      42,
+      46,
+      40,
+      38,
+      23,
+      25,
+      28,
+      33,
+      23,
+      22,
+      40,
+      30,
+      23,
+      33,
+      42,
+      35,
+      52,
+      29,
+      20,
+      16,
+      36,
+      34,
+      21,
+      30,
+      48,
+      24
+     ]
+    },
+    "propKinds": {
+     "lamp": 74,
+     "bollard": 295,
+     "parasol": 35,
+     "bench": 36,
+     "rock": 187,
+     "sandfence": 98,
+     "board": 8,
+     "lounger": 15,
+     "bin": 23,
+     "chevron": 69,
+     "fence": 66,
+     "hay": 9,
+     "delineator": 82,
+     "tyres": 2,
+     "warn": 20,
+     "planter": 18,
+     "cafe": 5,
+     "cairn": 7,
+     "lamp-bridge": 20,
+     "mirante": 1
+    },
+    "propKindCount": 20,
+    "groundPlantsPerHundredMetres": {
+     "min": 9,
+     "mean": 56.7
+    },
+    "viewpoint": {
+     "x": -275,
+     "z": -265.2,
+     "y": 52.8,
+     "s": 1576,
+     "deckTop": 1.42
+    },
+    "bridge": {
+     "s0": 2368.4,
+     "s1": 2488.4
+    },
+    "pass": true
+   },
+   "textures": {
+    "textureArrays": [
+     {
+      "layers": 9,
+      "size": 1024,
+      "first": "coast_sand_03"
+     },
+     {
+      "layers": 2,
+      "size": 2048,
+      "first": "asphalt_02"
+     },
+     {
+      "layers": 17,
+      "size": 1024,
+      "first": "painted_plaster_wall"
+     }
+    ],
+    "asphaltArraySize": 2048,
+    "minArraySize": 1024,
+    "ordinaryMapsNearRoad": 31,
+    "smallerThan1024sq": [],
+    "minOrdinaryMap": [
+     1024,
+     1024
+    ],
+    "notes": "array-driven materials carry a small placeholder map only so that material.map exists; their shaders sample the arrays above",
+    "pass": true,
+    "smallRealMaps": []
+   },
+   "audio": {
+    "engineIsSampled": true,
+    "playerEngine": {
+     "kind": "v8",
+     "bufferSources": 7,
+     "buffersBound": 7,
+     "bands": [
+      {
+       "f0": 52.91,
+       "file": "assets/audio/engine/v8-053-181460.wav"
+      },
+      {
+       "f0": 69.33,
+       "file": "assets/audio/engine/v8-069-181460.wav"
+      },
+      {
+       "f0": 84.37,
+       "file": "assets/audio/engine/v8-084-181460.wav"
+      },
+      {
+       "f0": 85.81,
+       "file": "assets/audio/engine/v8-086-181460.wav"
+      },
+      {
+       "f0": 106.77,
+       "file": "assets/audio/engine/v8-107-496171.wav"
+      },
+      {
+       "f0": 115.5,
+       "file": "assets/audio/engine/v8-116-496171.wav"
+      },
+      {
+       "f0": 138.33,
+       "file": "assets/audio/engine/v8-138-496171.wav"
+      }
+     ]
+    },
+    "kinds": {
+     "turbo": {
+      "loops": 7,
+      "bands": [
+       {
+        "file": "assets/audio/engine/turbo-053-181460.wav",
+        "f0": 52.91,
+        "seconds": 0.794,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.95
+       },
+       {
+        "file": "assets/audio/engine/turbo-069-181460.wav",
+        "f0": 69.33,
+        "seconds": 0.793,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.96
+       },
+       {
+        "file": "assets/audio/engine/turbo-084-181460.wav",
+        "f0": 84.37,
+        "seconds": 0.794,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.95
+       },
+       {
+        "file": "assets/audio/engine/turbo-086-181460.wav",
+        "f0": 85.81,
+        "seconds": 0.804,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.95
+       },
+       {
+        "file": "assets/audio/engine/turbo-162-496171.wav",
+        "f0": 161.78,
+        "seconds": 0.797,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.88
+       },
+       {
+        "file": "assets/audio/engine/turbo-175-496171.wav",
+        "f0": 175,
+        "seconds": 0.8,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.66
+       },
+       {
+        "file": "assets/audio/engine/turbo-210-496171.wav",
+        "f0": 209.6,
+        "seconds": 0.802,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.82
+       }
+      ],
+      "sources": [
+       "181460",
+       "496171"
+      ]
+     },
+     "v8": {
+      "loops": 7,
+      "bands": [
+       {
+        "file": "assets/audio/engine/v8-053-181460.wav",
+        "f0": 52.91,
+        "seconds": 0.794,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.95
+       },
+       {
+        "file": "assets/audio/engine/v8-069-181460.wav",
+        "f0": 69.33,
+        "seconds": 0.793,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.96
+       },
+       {
+        "file": "assets/audio/engine/v8-084-181460.wav",
+        "f0": 84.37,
+        "seconds": 0.794,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.95
+       },
+       {
+        "file": "assets/audio/engine/v8-086-181460.wav",
+        "f0": 85.81,
+        "seconds": 0.804,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.95
+       },
+       {
+        "file": "assets/audio/engine/v8-107-496171.wav",
+        "f0": 106.77,
+        "seconds": 1.208,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.88
+       },
+       {
+        "file": "assets/audio/engine/v8-116-496171.wav",
+        "f0": 115.5,
+        "seconds": 1.212,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.66
+       },
+       {
+        "file": "assets/audio/engine/v8-138-496171.wav",
+        "f0": 138.33,
+        "seconds": 1.214,
+        "channels": 1,
+        "sampleRate": 44100,
+        "acf": 0.82
+       }
+      ],
+      "sources": [
+       "181460",
+       "496171"
+      ]
+     }
+    },
+    "oscillatorsInEnginePath": 0,
+    "limiter": "worklet-lookahead",
+    "contextRate": 48000,
+    "pass": true
+   },
+   "renderer": {
+    "sceneMeshes": 1408,
+    "sceneTrianglesSubmitted": 3204211
+   },
+   "notes": [],
+   "pass": true
+  },
+  "validate": {
+   "ok": true,
+   "errors": [],
+   "stats": {
+    "maxBankDeg": 5.47,
+    "maxGradePct": 9.86,
+    "minRadiusM": 30.9,
+    "lengthM": 3047.5,
+    "worstTerrainAboveRoad": -0.0372,
+    "worstEdgeGap": 0.0688,
+    "objects": 4033,
+    "exclusionViolations": 0,
+    "floatBury": 0,
+    "houseOverlaps": 0,
+    "checkpoints": 12
+   }
+  },
+  "errors": []
+ },
+ "shots": [
+  {
+   "id": "s1",
+   "file": "s1-reta-orla.png",
+   "fileWithFps": "s1-reta-orla-fps100.png",
+   "fps": 100,
+   "skyPct": 23.4,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5374,
+    "lumStd": 0.2113,
+    "maxColourShare": 0.0196
+   },
+   "camera": {
+    "pos": [
+     566.27,
+     5.37,
+     4.31
+    ],
+    "fov": 68.74,
+    "mode": "chase",
+    "violations": 0,
+    "minClear": 1.99
+   },
+   "render": {
+    "calls": 3061,
+    "tris": 12769361,
+    "geometries": 571,
+    "textures": 63,
+    "programs": 77
+   },
+   "sceneInfo": null,
+   "shore": null,
+   "title": "Reta da orla em velocidade, sol à frente",
+   "refs": [
+    "01",
+    "02"
+   ],
+   "quality": "high"
+  },
+  {
+   "id": "s2",
+   "file": "s2-grid-3-4.png",
+   "fileWithFps": "s2-grid-3-4-fps100.png",
+   "fps": 100,
+   "skyPct": 29.1,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4585,
+    "lumStd": 0.1391,
+    "maxColourShare": 0.0418
+   },
+   "camera": {
+    "pos": [
+     517.41,
+     3.53,
+     0.4
+    ],
+    "fov": 34,
+    "mode": "grid",
+    "violations": 0,
+    "minClear": 1.99
+   },
+   "render": {
+    "calls": 2165,
+    "tris": 7998727,
+    "geometries": 585,
+    "textures": 63,
+    "programs": 77
+   },
+   "sceneInfo": null,
+   "shore": null,
+   "title": "Carro no grid, 3/4 frontal baixa (sem HUD)",
+   "refs": [
+    "11"
+   ],
+   "quality": "high"
+  },
+  {
+   "id": "s3",
+   "file": "s3-praia-espuma.png",
+   "fileWithFps": "s3-praia-espuma-fps99.png",
+   "fps": 99,
+   "skyPct": 48.6,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5259,
+    "lumStd": 0.1335,
+    "maxColourShare": 0.0231
+   },
+   "camera": {
+    "pos": [
+     211.96,
+     1.44,
+     32
+    ],
+    "fov": 54,
+    "mode": "chase",
+    "violations": 0,
+    "minClear": 1.99
+   },
+   "render": {
+    "calls": 1397,
+    "tris": 6914433,
+    "geometries": 622,
+    "textures": 63,
+    "programs": 78
+   },
+   "sceneInfo": null,
+   "shore": {
+    "s": 288,
+    "rocks": 12,
+    "d": 25.8
+   },
+   "title": "Câmera baixa: areia molhada, espuma, rochas",
+   "refs": [
+    "02",
+    "04"
+   ],
+   "quality": "high"
+  },
+  {
+   "id": "s4",
+   "file": "s4-falesia-mirante.png",
+   "fileWithFps": "s4-falesia-mirante-fps100.png",
+   "fps": 100,
+   "skyPct": 30.9,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4995,
+    "lumStd": 0.1766,
+    "maxColourShare": 0.0118
+   },
+   "camera": {
+    "pos": [
+     -275.54,
+     56.03,
+     -262.66
+    ],
+    "fov": 64,
+    "mode": "chase",
+    "violations": 0,
+    "minClear": 1.99
+   },
+   "render": {
+    "calls": 2295,
+    "tris": 12713539,
+    "geometries": 652,
+    "textures": 64,
+    "programs": 79
+   },
+   "sceneInfo": null,
+   "shore": {
+    "s": 288,
+    "rocks": 12,
+    "d": 25.8
+   },
+   "title": "Serpentina com o mar abaixo (do mirante)",
+   "refs": [
+    "02"
+   ],
+   "quality": "high"
+  },
+  {
+   "id": "s5",
+   "file": "s5-vila-rua.png",
+   "fileWithFps": "s5-vila-rua-fps100.png",
+   "fps": 100,
+   "skyPct": 40.2,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4787,
+    "lumStd": 0.1588,
+    "maxColourShare": 0.0305
+   },
+   "camera": {
+    "pos": [
+     -196.41,
+     58.01,
+     -306.12
+    ],
+    "fov": 62,
+    "mode": "chase",
+    "violations": 0,
+    "minClear": 0.75
+   },
+   "render": {
+    "calls": 3051,
+    "tris": 12764571,
+    "geometries": 694,
+    "textures": 64,
+    "programs": 79
+   },
+   "sceneInfo": null,
+   "shore": {
+    "s": 288,
+    "rocks": 12,
+    "d": 25.8
+   },
+   "title": "Rua da vila com o marco visível",
+   "refs": [
+    "05",
+    "06",
+    "07"
+   ],
+   "quality": "high"
+  },
+  {
+   "id": "s6",
+   "file": "s6-bosque-luz.png",
+   "fileWithFps": "s6-bosque-luz-fps93.png",
+   "fps": 93,
+   "skyPct": 27.9,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4479,
+    "lumStd": 0.1602,
+    "maxColourShare": 0.0147
+   },
+   "camera": {
+    "pos": [
+     688.83,
+     16.36,
+     -173.16
+    ],
+    "fov": 69.42,
+    "mode": "chase",
+    "violations": 0,
+    "minClear": 0.75
+   },
+   "render": {
+    "calls": 2301,
+    "tris": 9153527,
+    "geometries": 694,
+    "textures": 64,
+    "programs": 79
+   },
+   "sceneInfo": null,
+   "shore": {
+    "s": 288,
+    "rocks": 12,
+    "d": 25.8
+   },
+   "title": "Bosque com sol rasante",
+   "refs": [
+    "08",
+    "10"
+   ],
+   "quality": "high"
+  },
+  {
+   "id": "s7",
+   "file": "s7-ponte-ou-tunel.png",
+   "fileWithFps": "s7-ponte-ou-tunel-fps100.png",
+   "fps": 100,
+   "skyPct": 35.3,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.429,
+    "lumStd": 0.1227,
+    "maxColourShare": 0.0248
+   },
+   "camera": {
+    "pos": [
+     467.87,
+     34.07,
+     -349.6
+    ],
+    "fov": 66,
+    "mode": "chase",
+    "violations": 0,
+    "minClear": 0.75
+   },
+   "render": {
+    "calls": 2293,
+    "tris": 9244305,
+    "geometries": 694,
+    "textures": 64,
+    "programs": 79
+   },
+   "sceneInfo": null,
+   "shore": {
+    "s": 288,
+    "rocks": 12,
+    "d": 25.8
+   },
+   "title": "Entrada da ponte ligada ao terreno",
+   "refs": [
+    "14"
+   ],
+   "quality": "high"
+  },
+  {
+   "id": "s8",
+   "file": "s8-disputa.png",
+   "fileWithFps": "s8-disputa-fps100.png",
+   "fps": 100,
+   "skyPct": 30.1,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4827,
+    "lumStd": 0.1628,
+    "maxColourShare": 0.0163
+   },
+   "camera": {
+    "pos": [
+     689,
+     8.26,
+     -66.69
+    ],
+    "fov": 67.32,
+    "mode": "chase",
+    "violations": 0,
+    "minClear": 0.75
+   },
+   "render": {
+    "calls": 1839,
+    "tris": 8432299,
+    "geometries": 708,
+    "textures": 64,
+    "programs": 79
+   },
+   "sceneInfo": null,
+   "shore": {
+    "s": 288,
+    "rocks": 12,
+    "d": 25.8
+   },
+   "title": "Jogador lado a lado com 2+ IAs",
+   "refs": [
+    "09",
+    "13"
+   ],
+   "quality": "high"
+  },
+  {
+   "id": "s9",
+   "file": "s9-close-pista.png",
+   "fileWithFps": "s9-close-pista-fps100.png",
+   "fps": 100,
+   "skyPct": 40.7,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4547,
+    "lumStd": 0.141,
+    "maxColourShare": 0.0247
+   },
+   "camera": {
+    "pos": [
+     -12.08,
+     33.63,
+     -154.93
+    ],
+    "fov": 62,
+    "mode": "chase",
+    "violations": 0,
+    "minClear": 0.75
+   },
+   "render": {
+    "calls": 3227,
+    "tris": 13551687,
+    "geometries": 708,
+    "textures": 64,
+    "programs": 79
+   },
+   "sceneInfo": null,
+   "shore": {
+    "s": 288,
+    "rocks": 12,
+    "d": 25.8
+   },
+   "title": "Close de asfalto, zebra e guardrail",
+   "refs": [],
+   "quality": "high"
+  },
+  {
+   "id": "s10",
+   "file": "s10-baixa-vila.png",
+   "fileWithFps": "s10-baixa-vila-fps100.png",
+   "fps": 100,
+   "skyPct": 40.2,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4765,
+    "lumStd": 0.1572,
+    "maxColourShare": 0.0322
+   },
+   "camera": {
+    "pos": [
+     -196.4,
+     58.01,
+     -306.12
+    ],
+    "fov": 62,
+    "mode": "chase",
+    "violations": 0,
+    "minClear": 0.75
+   },
+   "render": {
+    "calls": 1923,
+    "tris": 9195401,
+    "geometries": 611,
+    "textures": 61,
+    "programs": 76
+   },
+   "sceneInfo": null,
+   "shore": null,
+   "title": "Posição de S5 em Baixa",
+   "refs": [],
+   "quality": "low"
+  },
+  {
+   "id": "s11",
+   "file": "s11-escala.png",
+   "fileWithFps": "s11-escala-fps100.png",
+   "fps": 100,
+   "skyPct": 21.4,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4112,
+    "lumStd": 0.1613,
+    "maxColourShare": 0.0275
+   },
+   "camera": {
+    "pos": [
+     -127.99,
+     55.55,
+     -312.39
+    ],
+    "fov": 46,
+    "mode": "chase",
+    "violations": 0,
+    "minClear": 0.75
+   },
+   "render": {
+    "calls": 2137,
+    "tris": 11335657,
+    "geometries": 708,
+    "textures": 64,
+    "programs": 79
+   },
+   "sceneInfo": {
+    "house": {
+     "x": -126.8350685421147,
+     "z": -293.2815292225827,
+     "variant": 6,
+     "W": 6,
+     "D": 5.6
+    },
+    "dist": 7.2
+   },
+   "shore": {
+    "s": 288,
+    "rocks": 12,
+    "d": 25.8
+   },
+   "title": "Carro parado ao lado de uma casa com porta",
+   "refs": [],
+   "quality": "high"
+  },
+  {
+   "id": "s12",
+   "file": "s12-mapa.png",
+   "fileWithFps": "s12-mapa-fps99.png",
+   "fps": 99,
+   "skyPct": 0,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4678,
+    "lumStd": 0.0852,
+    "maxColourShare": 0.0257
+   },
+   "camera": {
+    "pos": [
+     185.06,
+     877.59,
+     -161.3
+    ],
+    "fov": 40,
+    "mode": "chase",
+    "violations": 0,
+    "minClear": 0.75
+   },
+   "render": {
+    "calls": 1859,
+    "tris": 6039509,
+    "geometries": 708,
+    "textures": 64,
+    "programs": 108
+   },
+   "sceneInfo": null,
+   "shore": {
+    "s": 288,
+    "rocks": 12,
+    "d": 25.8
+   },
+   "title": "Vista de cima da volta inteira",
+   "refs": [],
+   "quality": "high"
+  }
+ ],
+ "imageMetrics": [
+  {
+   "id": "s1",
+   "file": "s1-reta-orla.png",
+   "fpsAtCapture": 100,
+   "skyPct": 23.4,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5374,
+    "lumStd": 0.2113,
+    "maxColourShare": 0.0196
+   },
+   "pass": true
+  },
+  {
+   "id": "s2",
+   "file": "s2-grid-3-4.png",
+   "fpsAtCapture": 100,
+   "skyPct": 29.1,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4585,
+    "lumStd": 0.1391,
+    "maxColourShare": 0.0418
+   },
+   "pass": true
+  },
+  {
+   "id": "s3",
+   "file": "s3-praia-espuma.png",
+   "fpsAtCapture": 99,
+   "skyPct": 48.6,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5259,
+    "lumStd": 0.1335,
+    "maxColourShare": 0.0231
+   },
+   "pass": true
+  },
+  {
+   "id": "s4",
+   "file": "s4-falesia-mirante.png",
+   "fpsAtCapture": 100,
+   "skyPct": 30.9,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4995,
+    "lumStd": 0.1766,
+    "maxColourShare": 0.0118
+   },
+   "pass": true
+  },
+  {
+   "id": "s5",
+   "file": "s5-vila-rua.png",
+   "fpsAtCapture": 100,
+   "skyPct": 40.2,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4787,
+    "lumStd": 0.1588,
+    "maxColourShare": 0.0305
+   },
+   "pass": true
+  },
+  {
+   "id": "s6",
+   "file": "s6-bosque-luz.png",
+   "fpsAtCapture": 93,
+   "skyPct": 27.9,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4479,
+    "lumStd": 0.1602,
+    "maxColourShare": 0.0147
+   },
+   "pass": true
+  },
+  {
+   "id": "s7",
+   "file": "s7-ponte-ou-tunel.png",
+   "fpsAtCapture": 100,
+   "skyPct": 35.3,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.429,
+    "lumStd": 0.1227,
+    "maxColourShare": 0.0248
+   },
+   "pass": true
+  },
+  {
+   "id": "s8",
+   "file": "s8-disputa.png",
+   "fpsAtCapture": 100,
+   "skyPct": 30.1,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4827,
+    "lumStd": 0.1628,
+    "maxColourShare": 0.0163
+   },
+   "pass": true
+  },
+  {
+   "id": "s9",
+   "file": "s9-close-pista.png",
+   "fpsAtCapture": 100,
+   "skyPct": 40.7,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4547,
+    "lumStd": 0.141,
+    "maxColourShare": 0.0247
+   },
+   "pass": true
+  }
+ ],
+ "sweep": {
+  "step": 25,
+  "count": 122,
+  "failures": 0,
+  "failingAt": [],
+  "rows": [
+   {
+    "s": 0,
+    "file": "sweep-0000m.png",
+    "skyPct": 27.2,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5719,
+    "lumStd": 0.2022,
+    "maxColourShare": 0.0119,
+    "pass": true
+   },
+   {
+    "s": 25,
+    "file": "sweep-0025m.png",
+    "skyPct": 26.1,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5764,
+    "lumStd": 0.1995,
+    "maxColourShare": 0.0122,
+    "pass": true
+   },
+   {
+    "s": 50,
+    "file": "sweep-0050m.png",
+    "skyPct": 26.6,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5736,
+    "lumStd": 0.2022,
+    "maxColourShare": 0.0123,
+    "pass": true
+   },
+   {
+    "s": 75,
+    "file": "sweep-0075m.png",
+    "skyPct": 27.2,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5663,
+    "lumStd": 0.2025,
+    "maxColourShare": 0.0124,
+    "pass": true
+   },
+   {
+    "s": 100,
+    "file": "sweep-0100m.png",
+    "skyPct": 26.9,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5674,
+    "lumStd": 0.2,
+    "maxColourShare": 0.0124,
+    "pass": true
+   },
+   {
+    "s": 125,
+    "file": "sweep-0125m.png",
+    "skyPct": 26.6,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5727,
+    "lumStd": 0.2027,
+    "maxColourShare": 0.0128,
+    "pass": true
+   },
+   {
+    "s": 150,
+    "file": "sweep-0150m.png",
+    "skyPct": 27.6,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5607,
+    "lumStd": 0.2126,
+    "maxColourShare": 0.0129,
+    "pass": true
+   },
+   {
+    "s": 175,
+    "file": "sweep-0175m.png",
+    "skyPct": 27.5,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.57,
+    "lumStd": 0.2057,
+    "maxColourShare": 0.013,
+    "pass": true
+   },
+   {
+    "s": 200,
+    "file": "sweep-0200m.png",
+    "skyPct": 27.6,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5789,
+    "lumStd": 0.1997,
+    "maxColourShare": 0.0122,
+    "pass": true
+   },
+   {
+    "s": 225,
+    "file": "sweep-0225m.png",
+    "skyPct": 26.7,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5767,
+    "lumStd": 0.2002,
+    "maxColourShare": 0.013,
+    "pass": true
+   },
+   {
+    "s": 250,
+    "file": "sweep-0250m.png",
+    "skyPct": 25.7,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5789,
+    "lumStd": 0.2015,
+    "maxColourShare": 0.0131,
+    "pass": true
+   },
+   {
+    "s": 275,
+    "file": "sweep-0275m.png",
+    "skyPct": 26.9,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.575,
+    "lumStd": 0.2026,
+    "maxColourShare": 0.0134,
+    "pass": true
+   },
+   {
+    "s": 300,
+    "file": "sweep-0300m.png",
+    "skyPct": 24.3,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.561,
+    "lumStd": 0.2087,
+    "maxColourShare": 0.0135,
+    "pass": true
+   },
+   {
+    "s": 325,
+    "file": "sweep-0325m.png",
+    "skyPct": 25.8,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5613,
+    "lumStd": 0.2086,
+    "maxColourShare": 0.0129,
+    "pass": true
+   },
+   {
+    "s": 350,
+    "file": "sweep-0350m.png",
+    "skyPct": 24.9,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5669,
+    "lumStd": 0.2067,
+    "maxColourShare": 0.0138,
+    "pass": true
+   },
+   {
+    "s": 375,
+    "file": "sweep-0375m.png",
+    "skyPct": 24.9,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5678,
+    "lumStd": 0.2092,
+    "maxColourShare": 0.0134,
+    "pass": true
+   },
+   {
+    "s": 400,
+    "file": "sweep-0400m.png",
+    "skyPct": 26.1,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5749,
+    "lumStd": 0.2075,
+    "maxColourShare": 0.0138,
+    "pass": true
+   },
+   {
+    "s": 425,
+    "file": "sweep-0425m.png",
+    "skyPct": 27.5,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5805,
+    "lumStd": 0.2024,
+    "maxColourShare": 0.0131,
+    "pass": true
+   },
+   {
+    "s": 450,
+    "file": "sweep-0450m.png",
+    "skyPct": 27.5,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5777,
+    "lumStd": 0.2025,
+    "maxColourShare": 0.0136,
+    "pass": true
+   },
+   {
+    "s": 475,
+    "file": "sweep-0475m.png",
+    "skyPct": 26.7,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5677,
+    "lumStd": 0.2103,
+    "maxColourShare": 0.0129,
+    "pass": true
+   },
+   {
+    "s": 500,
+    "file": "sweep-0500m.png",
+    "skyPct": 25.5,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5685,
+    "lumStd": 0.2101,
+    "maxColourShare": 0.0142,
+    "pass": true
+   },
+   {
+    "s": 525,
+    "file": "sweep-0525m.png",
+    "skyPct": 27.5,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5773,
+    "lumStd": 0.2068,
+    "maxColourShare": 0.0141,
+    "pass": true
+   },
+   {
+    "s": 550,
+    "file": "sweep-0550m.png",
+    "skyPct": 27.7,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5713,
+    "lumStd": 0.2066,
+    "maxColourShare": 0.0128,
+    "pass": true
+   },
+   {
+    "s": 575,
+    "file": "sweep-0575m.png",
+    "skyPct": 25.5,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5746,
+    "lumStd": 0.2024,
+    "maxColourShare": 0.0123,
+    "pass": true
+   },
+   {
+    "s": 600,
+    "file": "sweep-0600m.png",
+    "skyPct": 27.5,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5721,
+    "lumStd": 0.1991,
+    "maxColourShare": 0.0118,
+    "pass": true
+   },
+   {
+    "s": 625,
+    "file": "sweep-0625m.png",
+    "skyPct": 25.3,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5707,
+    "lumStd": 0.1998,
+    "maxColourShare": 0.0165,
+    "pass": true
+   },
+   {
+    "s": 650,
+    "file": "sweep-0650m.png",
+    "skyPct": 27.2,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.565,
+    "lumStd": 0.2055,
+    "maxColourShare": 0.0114,
+    "pass": true
+   },
+   {
+    "s": 675,
+    "file": "sweep-0675m.png",
+    "skyPct": 25.1,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5614,
+    "lumStd": 0.2021,
+    "maxColourShare": 0.0112,
+    "pass": true
+   },
+   {
+    "s": 700,
+    "file": "sweep-0700m.png",
+    "skyPct": 24.4,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5529,
+    "lumStd": 0.2059,
+    "maxColourShare": 0.0111,
+    "pass": true
+   },
+   {
+    "s": 725,
+    "file": "sweep-0725m.png",
+    "skyPct": 25.9,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5521,
+    "lumStd": 0.2064,
+    "maxColourShare": 0.0107,
+    "pass": true
+   },
+   {
+    "s": 750,
+    "file": "sweep-0750m.png",
+    "skyPct": 29.3,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5422,
+    "lumStd": 0.2066,
+    "maxColourShare": 0.0102,
+    "pass": true
+   },
+   {
+    "s": 775,
+    "file": "sweep-0775m.png",
+    "skyPct": 32.9,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5683,
+    "lumStd": 0.2015,
+    "maxColourShare": 0.0115,
+    "pass": true
+   },
+   {
+    "s": 800,
+    "file": "sweep-0800m.png",
+    "skyPct": 29.3,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4944,
+    "lumStd": 0.1976,
+    "maxColourShare": 0.0174,
+    "pass": true
+   },
+   {
+    "s": 825,
+    "file": "sweep-0825m.png",
+    "skyPct": 23.8,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4256,
+    "lumStd": 0.1517,
+    "maxColourShare": 0.0193,
+    "pass": true
+   },
+   {
+    "s": 850,
+    "file": "sweep-0850m.png",
+    "skyPct": 17.3,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4199,
+    "lumStd": 0.1393,
+    "maxColourShare": 0.0204,
+    "pass": true
+   },
+   {
+    "s": 875,
+    "file": "sweep-0875m.png",
+    "skyPct": 15.7,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4164,
+    "lumStd": 0.1423,
+    "maxColourShare": 0.0179,
+    "pass": true
+   },
+   {
+    "s": 900,
+    "file": "sweep-0900m.png",
+    "skyPct": 19.2,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4431,
+    "lumStd": 0.141,
+    "maxColourShare": 0.0153,
+    "pass": true
+   },
+   {
+    "s": 925,
+    "file": "sweep-0925m.png",
+    "skyPct": 21.5,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4368,
+    "lumStd": 0.1317,
+    "maxColourShare": 0.02,
+    "pass": true
+   },
+   {
+    "s": 950,
+    "file": "sweep-0950m.png",
+    "skyPct": 19.4,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4327,
+    "lumStd": 0.1414,
+    "maxColourShare": 0.0177,
+    "pass": true
+   },
+   {
+    "s": 975,
+    "file": "sweep-0975m.png",
+    "skyPct": 21.6,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.442,
+    "lumStd": 0.1334,
+    "maxColourShare": 0.019,
+    "pass": true
+   },
+   {
+    "s": 1000,
+    "file": "sweep-1000m.png",
+    "skyPct": 22.9,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4468,
+    "lumStd": 0.131,
+    "maxColourShare": 0.0202,
+    "pass": true
+   },
+   {
+    "s": 1025,
+    "file": "sweep-1025m.png",
+    "skyPct": 21,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4368,
+    "lumStd": 0.1365,
+    "maxColourShare": 0.0218,
+    "pass": true
+   },
+   {
+    "s": 1050,
+    "file": "sweep-1050m.png",
+    "skyPct": 20.7,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4359,
+    "lumStd": 0.1364,
+    "maxColourShare": 0.0206,
+    "pass": true
+   },
+   {
+    "s": 1075,
+    "file": "sweep-1075m.png",
+    "skyPct": 23.7,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4484,
+    "lumStd": 0.133,
+    "maxColourShare": 0.0211,
+    "pass": true
+   },
+   {
+    "s": 1100,
+    "file": "sweep-1100m.png",
+    "skyPct": 23.2,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4486,
+    "lumStd": 0.137,
+    "maxColourShare": 0.0219,
+    "pass": true
+   },
+   {
+    "s": 1125,
+    "file": "sweep-1125m.png",
+    "skyPct": 21.5,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4495,
+    "lumStd": 0.1496,
+    "maxColourShare": 0.0203,
+    "pass": true
+   },
+   {
+    "s": 1150,
+    "file": "sweep-1150m.png",
+    "skyPct": 24.7,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4561,
+    "lumStd": 0.1462,
+    "maxColourShare": 0.024,
+    "pass": true
+   },
+   {
+    "s": 1175,
+    "file": "sweep-1175m.png",
+    "skyPct": 25.9,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4625,
+    "lumStd": 0.1502,
+    "maxColourShare": 0.0207,
+    "pass": true
+   },
+   {
+    "s": 1200,
+    "file": "sweep-1200m.png",
+    "skyPct": 21.1,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4489,
+    "lumStd": 0.1508,
+    "maxColourShare": 0.0155,
+    "pass": true
+   },
+   {
+    "s": 1225,
+    "file": "sweep-1225m.png",
+    "skyPct": 16.3,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4255,
+    "lumStd": 0.1395,
+    "maxColourShare": 0.0189,
+    "pass": true
+   },
+   {
+    "s": 1250,
+    "file": "sweep-1250m.png",
+    "skyPct": 16.2,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4609,
+    "lumStd": 0.1612,
+    "maxColourShare": 0.0158,
+    "pass": true
+   },
+   {
+    "s": 1275,
+    "file": "sweep-1275m.png",
+    "skyPct": 20.4,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5184,
+    "lumStd": 0.2125,
+    "maxColourShare": 0.0086,
+    "pass": true
+   },
+   {
+    "s": 1300,
+    "file": "sweep-1300m.png",
+    "skyPct": 21.4,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5035,
+    "lumStd": 0.2061,
+    "maxColourShare": 0.0097,
+    "pass": true
+   },
+   {
+    "s": 1325,
+    "file": "sweep-1325m.png",
+    "skyPct": 23.2,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5332,
+    "lumStd": 0.2093,
+    "maxColourShare": 0.0083,
+    "pass": true
+   },
+   {
+    "s": 1350,
+    "file": "sweep-1350m.png",
+    "skyPct": 25,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5509,
+    "lumStd": 0.2126,
+    "maxColourShare": 0.0083,
+    "pass": true
+   },
+   {
+    "s": 1375,
+    "file": "sweep-1375m.png",
+    "skyPct": 24.1,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5486,
+    "lumStd": 0.2006,
+    "maxColourShare": 0.0099,
+    "pass": true
+   },
+   {
+    "s": 1400,
+    "file": "sweep-1400m.png",
+    "skyPct": 22.4,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5332,
+    "lumStd": 0.2063,
+    "maxColourShare": 0.0107,
+    "pass": true
+   },
+   {
+    "s": 1425,
+    "file": "sweep-1425m.png",
+    "skyPct": 23.3,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5427,
+    "lumStd": 0.2095,
+    "maxColourShare": 0.0102,
+    "pass": true
+   },
+   {
+    "s": 1450,
+    "file": "sweep-1450m.png",
+    "skyPct": 22.9,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5511,
+    "lumStd": 0.2096,
+    "maxColourShare": 0.0112,
+    "pass": true
+   },
+   {
+    "s": 1475,
+    "file": "sweep-1475m.png",
+    "skyPct": 24.7,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.53,
+    "lumStd": 0.2226,
+    "maxColourShare": 0.0099,
+    "pass": true
+   },
+   {
+    "s": 1500,
+    "file": "sweep-1500m.png",
+    "skyPct": 26.6,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5411,
+    "lumStd": 0.2064,
+    "maxColourShare": 0.0105,
+    "pass": true
+   },
+   {
+    "s": 1525,
+    "file": "sweep-1525m.png",
+    "skyPct": 31.4,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5597,
+    "lumStd": 0.2051,
+    "maxColourShare": 0.0108,
+    "pass": true
+   },
+   {
+    "s": 1550,
+    "file": "sweep-1550m.png",
+    "skyPct": 26.3,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4423,
+    "lumStd": 0.1768,
+    "maxColourShare": 0.0215,
+    "pass": true
+   },
+   {
+    "s": 1575,
+    "file": "sweep-1575m.png",
+    "skyPct": 22.3,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4111,
+    "lumStd": 0.1408,
+    "maxColourShare": 0.0233,
+    "pass": true
+   },
+   {
+    "s": 1600,
+    "file": "sweep-1600m.png",
+    "skyPct": 24.6,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4112,
+    "lumStd": 0.137,
+    "maxColourShare": 0.0242,
+    "pass": true
+   },
+   {
+    "s": 1625,
+    "file": "sweep-1625m.png",
+    "skyPct": 21,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4561,
+    "lumStd": 0.151,
+    "maxColourShare": 0.019,
+    "pass": true
+   },
+   {
+    "s": 1650,
+    "file": "sweep-1650m.png",
+    "skyPct": 14.4,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4372,
+    "lumStd": 0.1535,
+    "maxColourShare": 0.0236,
+    "pass": true
+   },
+   {
+    "s": 1675,
+    "file": "sweep-1675m.png",
+    "skyPct": 15.3,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4188,
+    "lumStd": 0.1504,
+    "maxColourShare": 0.0207,
+    "pass": true
+   },
+   {
+    "s": 1700,
+    "file": "sweep-1700m.png",
+    "skyPct": 19.8,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4208,
+    "lumStd": 0.161,
+    "maxColourShare": 0.0207,
+    "pass": true
+   },
+   {
+    "s": 1725,
+    "file": "sweep-1725m.png",
+    "skyPct": 17.5,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4507,
+    "lumStd": 0.1554,
+    "maxColourShare": 0.0164,
+    "pass": true
+   },
+   {
+    "s": 1750,
+    "file": "sweep-1750m.png",
+    "skyPct": 12.1,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4283,
+    "lumStd": 0.1711,
+    "maxColourShare": 0.0198,
+    "pass": true
+   },
+   {
+    "s": 1775,
+    "file": "sweep-1775m.png",
+    "skyPct": 15.6,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4437,
+    "lumStd": 0.1631,
+    "maxColourShare": 0.0194,
+    "pass": true
+   },
+   {
+    "s": 1800,
+    "file": "sweep-1800m.png",
+    "skyPct": 16,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4312,
+    "lumStd": 0.1654,
+    "maxColourShare": 0.0169,
+    "pass": true
+   },
+   {
+    "s": 1825,
+    "file": "sweep-1825m.png",
+    "skyPct": 18.3,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4437,
+    "lumStd": 0.1642,
+    "maxColourShare": 0.0129,
+    "pass": true
+   },
+   {
+    "s": 1850,
+    "file": "sweep-1850m.png",
+    "skyPct": 20.8,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4529,
+    "lumStd": 0.1617,
+    "maxColourShare": 0.0124,
+    "pass": true
+   },
+   {
+    "s": 1875,
+    "file": "sweep-1875m.png",
+    "skyPct": 18.3,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4757,
+    "lumStd": 0.1731,
+    "maxColourShare": 0.0296,
+    "pass": true
+   },
+   {
+    "s": 1900,
+    "file": "sweep-1900m.png",
+    "skyPct": 24.5,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4523,
+    "lumStd": 0.1567,
+    "maxColourShare": 0.0228,
+    "pass": true
+   },
+   {
+    "s": 1925,
+    "file": "sweep-1925m.png",
+    "skyPct": 22.2,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4537,
+    "lumStd": 0.1573,
+    "maxColourShare": 0.0182,
+    "pass": true
+   },
+   {
+    "s": 1950,
+    "file": "sweep-1950m.png",
+    "skyPct": 21.4,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4539,
+    "lumStd": 0.161,
+    "maxColourShare": 0.0193,
+    "pass": true
+   },
+   {
+    "s": 1975,
+    "file": "sweep-1975m.png",
+    "skyPct": 19.7,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4404,
+    "lumStd": 0.1581,
+    "maxColourShare": 0.0198,
+    "pass": true
+   },
+   {
+    "s": 2000,
+    "file": "sweep-2000m.png",
+    "skyPct": 22.7,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4531,
+    "lumStd": 0.1494,
+    "maxColourShare": 0.0206,
+    "pass": true
+   },
+   {
+    "s": 2025,
+    "file": "sweep-2025m.png",
+    "skyPct": 20.1,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4542,
+    "lumStd": 0.1571,
+    "maxColourShare": 0.022,
+    "pass": true
+   },
+   {
+    "s": 2050,
+    "file": "sweep-2050m.png",
+    "skyPct": 17.1,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4373,
+    "lumStd": 0.1555,
+    "maxColourShare": 0.0219,
+    "pass": true
+   },
+   {
+    "s": 2075,
+    "file": "sweep-2075m.png",
+    "skyPct": 16.9,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4312,
+    "lumStd": 0.1529,
+    "maxColourShare": 0.0195,
+    "pass": true
+   },
+   {
+    "s": 2100,
+    "file": "sweep-2100m.png",
+    "skyPct": 21.8,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4357,
+    "lumStd": 0.1483,
+    "maxColourShare": 0.0124,
+    "pass": true
+   },
+   {
+    "s": 2125,
+    "file": "sweep-2125m.png",
+    "skyPct": 26.7,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4081,
+    "lumStd": 0.1441,
+    "maxColourShare": 0.0352,
+    "pass": true
+   },
+   {
+    "s": 2150,
+    "file": "sweep-2150m.png",
+    "skyPct": 28.1,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.407,
+    "lumStd": 0.1389,
+    "maxColourShare": 0.0356,
+    "pass": true
+   },
+   {
+    "s": 2175,
+    "file": "sweep-2175m.png",
+    "skyPct": 29.8,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4252,
+    "lumStd": 0.1359,
+    "maxColourShare": 0.0198,
+    "pass": true
+   },
+   {
+    "s": 2200,
+    "file": "sweep-2200m.png",
+    "skyPct": 28.4,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4437,
+    "lumStd": 0.1397,
+    "maxColourShare": 0.014,
+    "pass": true
+   },
+   {
+    "s": 2225,
+    "file": "sweep-2225m.png",
+    "skyPct": 25.7,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4145,
+    "lumStd": 0.1461,
+    "maxColourShare": 0.0251,
+    "pass": true
+   },
+   {
+    "s": 2250,
+    "file": "sweep-2250m.png",
+    "skyPct": 26.7,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4295,
+    "lumStd": 0.1425,
+    "maxColourShare": 0.0175,
+    "pass": true
+   },
+   {
+    "s": 2275,
+    "file": "sweep-2275m.png",
+    "skyPct": 29.3,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4456,
+    "lumStd": 0.1329,
+    "maxColourShare": 0.0163,
+    "pass": true
+   },
+   {
+    "s": 2300,
+    "file": "sweep-2300m.png",
+    "skyPct": 27.5,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4367,
+    "lumStd": 0.1414,
+    "maxColourShare": 0.0159,
+    "pass": true
+   },
+   {
+    "s": 2325,
+    "file": "sweep-2325m.png",
+    "skyPct": 29.5,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4325,
+    "lumStd": 0.1338,
+    "maxColourShare": 0.0171,
+    "pass": true
+   },
+   {
+    "s": 2350,
+    "file": "sweep-2350m.png",
+    "skyPct": 30.8,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4337,
+    "lumStd": 0.1347,
+    "maxColourShare": 0.018,
+    "pass": true
+   },
+   {
+    "s": 2375,
+    "file": "sweep-2375m.png",
+    "skyPct": 30,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.3992,
+    "lumStd": 0.1382,
+    "maxColourShare": 0.0357,
+    "pass": true
+   },
+   {
+    "s": 2400,
+    "file": "sweep-2400m.png",
+    "skyPct": 29.8,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4076,
+    "lumStd": 0.1327,
+    "maxColourShare": 0.0208,
+    "pass": true
+   },
+   {
+    "s": 2425,
+    "file": "sweep-2425m.png",
+    "skyPct": 29.5,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4182,
+    "lumStd": 0.1351,
+    "maxColourShare": 0.0167,
+    "pass": true
+   },
+   {
+    "s": 2450,
+    "file": "sweep-2450m.png",
+    "skyPct": 26.8,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4253,
+    "lumStd": 0.1364,
+    "maxColourShare": 0.0154,
+    "pass": true
+   },
+   {
+    "s": 2475,
+    "file": "sweep-2475m.png",
+    "skyPct": 23.9,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4187,
+    "lumStd": 0.1447,
+    "maxColourShare": 0.0127,
+    "pass": true
+   },
+   {
+    "s": 2500,
+    "file": "sweep-2500m.png",
+    "skyPct": 25.1,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4366,
+    "lumStd": 0.1464,
+    "maxColourShare": 0.0131,
+    "pass": true
+   },
+   {
+    "s": 2525,
+    "file": "sweep-2525m.png",
+    "skyPct": 25.4,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4467,
+    "lumStd": 0.1473,
+    "maxColourShare": 0.0148,
+    "pass": true
+   },
+   {
+    "s": 2550,
+    "file": "sweep-2550m.png",
+    "skyPct": 20.9,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4162,
+    "lumStd": 0.1574,
+    "maxColourShare": 0.0169,
+    "pass": true
+   },
+   {
+    "s": 2575,
+    "file": "sweep-2575m.png",
+    "skyPct": 25.2,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4233,
+    "lumStd": 0.151,
+    "maxColourShare": 0.0176,
+    "pass": true
+   },
+   {
+    "s": 2600,
+    "file": "sweep-2600m.png",
+    "skyPct": 26.5,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4202,
+    "lumStd": 0.1502,
+    "maxColourShare": 0.0231,
+    "pass": true
+   },
+   {
+    "s": 2625,
+    "file": "sweep-2625m.png",
+    "skyPct": 26.9,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4341,
+    "lumStd": 0.155,
+    "maxColourShare": 0.0239,
+    "pass": true
+   },
+   {
+    "s": 2650,
+    "file": "sweep-2650m.png",
+    "skyPct": 26.5,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4334,
+    "lumStd": 0.1688,
+    "maxColourShare": 0.015,
+    "pass": true
+   },
+   {
+    "s": 2675,
+    "file": "sweep-2675m.png",
+    "skyPct": 27.1,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4442,
+    "lumStd": 0.157,
+    "maxColourShare": 0.0131,
+    "pass": true
+   },
+   {
+    "s": 2700,
+    "file": "sweep-2700m.png",
+    "skyPct": 25.4,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4407,
+    "lumStd": 0.1653,
+    "maxColourShare": 0.0156,
+    "pass": true
+   },
+   {
+    "s": 2725,
+    "file": "sweep-2725m.png",
+    "skyPct": 27.3,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4443,
+    "lumStd": 0.1676,
+    "maxColourShare": 0.0151,
+    "pass": true
+   },
+   {
+    "s": 2750,
+    "file": "sweep-2750m.png",
+    "skyPct": 27.1,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4485,
+    "lumStd": 0.1606,
+    "maxColourShare": 0.015,
+    "pass": true
+   },
+   {
+    "s": 2775,
+    "file": "sweep-2775m.png",
+    "skyPct": 30.2,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4853,
+    "lumStd": 0.1527,
+    "maxColourShare": 0.013,
+    "pass": true
+   },
+   {
+    "s": 2800,
+    "file": "sweep-2800m.png",
+    "skyPct": 29.6,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4985,
+    "lumStd": 0.1483,
+    "maxColourShare": 0.0129,
+    "pass": true
+   },
+   {
+    "s": 2825,
+    "file": "sweep-2825m.png",
+    "skyPct": 31.8,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5325,
+    "lumStd": 0.1686,
+    "maxColourShare": 0.0097,
+    "pass": true
+   },
+   {
+    "s": 2850,
+    "file": "sweep-2850m.png",
+    "skyPct": 32.9,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5888,
+    "lumStd": 0.1925,
+    "maxColourShare": 0.0172,
+    "pass": true
+   },
+   {
+    "s": 2875,
+    "file": "sweep-2875m.png",
+    "skyPct": 31.8,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5914,
+    "lumStd": 0.19,
+    "maxColourShare": 0.0153,
+    "pass": true
+   },
+   {
+    "s": 2900,
+    "file": "sweep-2900m.png",
+    "skyPct": 29.7,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5817,
+    "lumStd": 0.1937,
+    "maxColourShare": 0.0118,
+    "pass": true
+   },
+   {
+    "s": 2925,
+    "file": "sweep-2925m.png",
+    "skyPct": 25.8,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5705,
+    "lumStd": 0.2083,
+    "maxColourShare": 0.0124,
+    "pass": true
+   },
+   {
+    "s": 2950,
+    "file": "sweep-2950m.png",
+    "skyPct": 25.3,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5704,
+    "lumStd": 0.2079,
+    "maxColourShare": 0.0129,
+    "pass": true
+   },
+   {
+    "s": 2975,
+    "file": "sweep-2975m.png",
+    "skyPct": 26.8,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5679,
+    "lumStd": 0.2021,
+    "maxColourShare": 0.013,
+    "pass": true
+   },
+   {
+    "s": 3000,
+    "file": "sweep-3000m.png",
+    "skyPct": 26.6,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5583,
+    "lumStd": 0.2065,
+    "maxColourShare": 0.0119,
+    "pass": true
+   },
+   {
+    "s": 3025,
+    "file": "sweep-3025m.png",
+    "skyPct": 24.4,
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5606,
+    "lumStd": 0.2047,
+    "maxColourShare": 0.0104,
+    "pass": true
+   }
+  ],
+  "errors": []
+ },
+ "perf": [
+  {
+   "quality": "high",
+   "seconds": 15,
+   "loadMs": 12888,
+   "perf": {
+    "frames": 1844,
+    "avgFps": 122.8,
+    "low1Fps": 83.1,
+    "p50ms": 8.08,
+    "p99ms": 11.1,
+    "maxMs": 16.6
+   },
+   "render": {
+    "calls": 1269,
+    "tris": 4431473,
+    "geometries": 605,
+    "textures": 63,
+    "programs": 74
+   },
+   "zoneS": 2357.964828903428,
+   "kmh": 176.4436369259551,
+   "pixelRatio": 1,
+   "canvas": [
+    1920,
+    1080
+   ],
+   "errors": []
+  },
+  {
+   "quality": "low",
+   "seconds": 15,
+   "loadMs": 11418,
+   "perf": {
+    "frames": 2617,
+    "avgFps": 174.3,
+    "low1Fps": 125.8,
+    "p50ms": 5.66,
+    "p99ms": 7.44,
+    "maxMs": 9.3
+   },
+   "render": {
+    "calls": 816,
+    "tris": 3192611,
+    "geometries": 602,
+    "textures": 61,
+    "programs": 73
+   },
+   "zoneS": 2357.556384053513,
+   "kmh": 176.4218569799923,
+   "pixelRatio": 0.75,
+   "canvas": [
+    1440,
+    810
+   ],
+   "errors": []
+  }
+ ]
+}

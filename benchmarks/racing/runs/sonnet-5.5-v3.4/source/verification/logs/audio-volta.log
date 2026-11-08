@@ -1,0 +1,14 @@
+[18:44:14.455] racing started
+[18:44:31.665] scripted skid (handbrake + steering) at s=440
+[18:44:54.745] scripted wall contact at s=1015
+[18:46:25.162] PASS full-lap-completed-in-real-time {"state":"finished","s":1.1361614588998987,"laps":1,"t":130.70000000004546,"kmh":122.61479298327616,"fin":true}
+[18:46:25.327] audio rec {"frames":6664320,"seconds":138.84,"sampleRate":48000,"peakLinear":0.5461917519569397,"peakDbfs":-5.253097248577264,"rmsDbfs":-20.535546652101424,"bytes":26657324}
+[18:46:25.327] video rec {"bytes":32502216,"mime":"video/webm;codecs=vp9,opus","frames":3536,"seconds":139}
+[18:46:27.016] PASS master-peak-at-or-below-minus-1-dbfs {"peakLinear":0.546173095703125,"peakDbfs":-5.25,"seconds":138.8}
+[18:46:27.030] PASS events-logged-shift-skid-impact-bridge {"shifts":53,"skids":8,"impacts":8,"bridge":2,"aiPass":10}
+[18:46:27.030] PASS max-ai-voices-at-most-5 {"maxAiVoices":5,"maxVoicesTotal":27}
+[18:46:27.030] PASS player-engine-uses-audio-buffers {"kind":"v8","bufferSources":7,"buffersBound":7,"bands":[{"f0":52.91,"file":"assets/audio/engine/v8-053-181460.wav"},{"f0":69.33,"file":"assets/audio/engine/v8-069-181460.wav"},{"f0":84.37,"file":"assets/audio/engine/v8-084-181460.wav"},{"f0":85.81,"file":"assets/audio/engine/v8-086-181460.wav"},{"f0":106.77,"file":"assets/audio/engine/v8-107-496171.wav"},{"f0":115.5,"file":"assets/audio/engine/v8-116-496171.wav"},{"f0":138.33,"file":"assets/audio/engine/v8-138-496171.wav"}]}
+[18:46:27.030] PASS video-recorded-with-audio-track {"bytes":32502216,"mime":"video/webm;codecs=vp9,opus","frames":3536,"seconds":139}
+[18:46:27.030] PASS no-console-errors []
+
+--- console ---

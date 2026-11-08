@@ -1,4 +1,4 @@
-"""Count physical source lines for the five archived Racing V3.4 projects.
+"""Count physical source lines for the six archived Racing V3.4 projects.
 
 Uses pinned Git blob IDs from SOURCE-FILES.json; works with sparse checkouts.
 Counts nonempty final lines. Own-source excludes archived dependencies,

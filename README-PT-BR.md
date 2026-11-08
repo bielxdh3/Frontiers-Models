@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — coleção de benchmarks independentes Racing e Orbitarium com 10 execuções atuais (5 Racing e 5 Orbitarium)" width="100%" />
+<img src="./assets/frontier-models-hero-v7.svg" alt="Frontier Models — coleção de benchmarks independentes Racing e Orbitarium com 11 execuções atuais (6 Racing e 5 Orbitarium)" width="100%" />
 
 <br/>
 
 [![Benchmark](https://img.shields.io/badge/benchmark-frontier%20models-7C3AED?style=flat)](./benchmarks)
 [![Benchmarks](https://img.shields.io/badge/benchmarks-2-2563EB?style=flat)](./docs/REPOSITORY-ARCHITECTURE.md)
-[![Execuções atuais](https://img.shields.io/badge/execu%C3%A7%C3%B5es%20atuais-10-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
+[![Execuções atuais](https://img.shields.io/badge/execu%C3%A7%C3%B5es%20atuais-11-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
 
 # Frontier Models
 
@@ -29,6 +29,7 @@
 | **GPT-6 Astra (V3.4)** | [Jogar](https://racing-gpt-6-astra.biel.dev.br/) | [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) |
 | **Opus 5.5 (V3.4)** | [Jogar](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./benchmarks/racing/runs/opus-5.5-v3.4/source/) |
 | **Gemini 4 Argon (V3.4)** | [Jogar](https://racing-gemini-4-argon.biel.dev.br/) | [Gemini 4 Argon](./benchmarks/racing/runs/gemini-4-argon-v3.4/source/) |
+| **Sonnet 5.5 (V3.4)** | [Jogar](https://racing-sonnet-5.5.biel.dev.br/) | [Sonnet 5.5](./benchmarks/racing/runs/sonnet-5.5-v3.4/source/) |
 
 **Entradas V3.4:** [Prompt](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md) · [14 imagens](./benchmarks/racing/prompts/racing-v3.4/refs/) · [Anexo operacional](./benchmarks/racing/EXECUTION-ADDENDUM.md).
 
@@ -47,11 +48,11 @@
 ## Como se organiza
 
 ```text
-FRONTIER MODELS                         2 benchmarks · 10 execuções atuais
+FRONTIER MODELS                         2 benchmarks · 11 execuções atuais
 │
-├── RACING-BENCH (V3.4)                 5 execuções atuais
+├── RACING-BENCH (V3.4)                 6 execuções atuais
 │   ├── entradas    racing-v3.4/ · 14 referências visuais
-│   ├── atuais      Gemini 3.8 Flash · GPT-6.1 Sol · GPT-6 Astra · Opus 5.5 · Gemini 4 Argon
+│   ├── atuais      Gemini 3.8 Flash · GPT-6.1 Sol · GPT-6 Astra · Opus 5.5 · Gemini 4 Argon · Sonnet 5.5
 │   └── histórico   execuções V2.6 + prompts anteriores
 │
 ├── ORBITARIUM-BENCH (Frontier V2)      5 referências atuais

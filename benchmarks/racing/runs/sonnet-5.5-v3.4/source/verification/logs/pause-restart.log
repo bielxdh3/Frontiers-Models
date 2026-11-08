@@ -1,0 +1,15 @@
+PASS pause-freezes-the-race {"t1":2.52,"t2":2.52}
+PASS pause-muffles-audio {"shown":true,"paused":true,"gain":0.1599999964237213,"lp":420}
+PASS resume-continues {"before":2.52,"after":4.02}
+baseline {"heap":{"used":682053207,"total":751577747},"info":{"calls":1328,"tris":6439401,"geometries":573,"textures":63,"programs":73},"audio":{"liveSources":58,"voices":18,"shots":6,"raceVoices":6,"aiVoices":5,"ctx":"running","stats":{"voices":18,"aiVoices":5,"maxVoices":25,"maxAiVoices":5,"peak":0.524874746799469,"peakDb":-5.5988864371680025,"gainReductionDb":0,"liveSources":58,"shots":6,"ctxState":"running"},"limiter":"worklet-lookahead"}}
+PASS restart-1-clean-state {"t":0}
+PASS restart-2-clean-state {"t":0}
+PASS restart-3-clean-state {"t":0}
+PASS heap-stable-after-3-restarts {"baselineMB":682.1,"afterMB":[660.5,679.7,662.2]}
+PASS gpu-objects-stable-after-3-restarts {"base":{"calls":1328,"tris":6439401,"geometries":573,"textures":63,"programs":73},"after":{"calls":1371,"tris":6447837,"geometries":574,"textures":63,"programs":73}}
+PASS audio-sources-and-voices-return-to-initial-value {"base":{"liveSources":58,"voices":18,"shots":6,"raceVoices":6,"aiVoices":5,"ctx":"running","stats":{"voices":18,"aiVoices":5,"maxVoices":25,"maxAiVoices":5,"peak":0.524874746799469,"peakDb":-5.5988864371680025,"gainReductionDb":0,"liveSources":58,"shots":6,"ctxState":"running"},"limiter":"worklet-lookahead"},"afterThird":{"liveSources":58,"voices":35,"shots":23,"raceVoices":6,"aiVoices":5,"ctx":"running","stats":{"voices":35,"aiVoices":5,"maxVoices":36,"maxAiVoices":5,"peak":0.5553051829338074,"peakDb":-5.109365460530729,"gainReductionDb":0,"liveSources":58,"shots":23,"ctxState":"running"},"limiter":"worklet-lookahead"},"all":[58,58,58]}
+PASS back-to-menu-without-old-race {"race":false,"demo":true,"hud":false,"audio":{"liveSources":60,"voices":24,"shots":14,"raceVoices":6,"aiVoices":5,"ctx":"running","stats":{"voices":24,"aiVoices":5,"maxVoices":37,"maxAiVoices":5,"peak":0.5553051829338074,"peakDb":-5.109365460530729,"gainReductionDb":0,"liveSources":60,"shots":14,"ctxState":"running"},"limiter":"worklet-lookahead"}}
+PASS menu-audio-voices-sane {"liveSources":60,"voices":24,"shots":14,"raceVoices":6,"aiVoices":5,"ctx":"running","stats":{"voices":24,"aiVoices":5,"maxVoices":37,"maxAiVoices":5,"peak":0.5553051829338074,"peakDb":-5.109365460530729,"gainReductionDb":0,"liveSources":60,"shots":14,"ctxState":"running"},"limiter":"worklet-lookahead"}
+PASS no-console-errors []
+
+--- console ---

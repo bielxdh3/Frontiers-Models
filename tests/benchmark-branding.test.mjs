@@ -54,10 +54,12 @@ test('Racing V3.4 appears first with new Gemini and the old three retained in hi
     assert.match(section, /https:\/\/racing-opus-5\.5\.biel\.dev\.br\//);
     assert.match(section, /https:\/\/racing-gemini-4-argon\.biel\.dev\.br\//);
     assert.match(section, /gemini-4-argon-v3\.4\/source\//);
+    assert.match(section, /sonnet-5\.5-v3\.4\/source\//);
+    assert.match(section, /racing-sonnet-5\.5\.biel\.dev\.br\//);
     assert.doesNotMatch(section, /HTTP 404|Source — archived here|Código — arquivado aqui|Source — gemini-3\.8/);
     assert.doesNotMatch(section, /33\/34/, 'QA annotations belong in run reports, not README');
     assert.doesNotMatch(section, /https:\/\/racing-gemini-3\.8-flash-old\.biel/);
-    for (const name of ['GPT-6.1 Sol', 'Gemini 3.8 Flash', 'GPT-6 Astra', 'Opus 5.5']) assert.ok(section.includes(name));
+    for (const name of ['GPT-6.1 Sol', 'Gemini 3.8 Flash', 'GPT-6 Astra', 'Opus 5.5', 'Sonnet 5.5']) assert.ok(section.includes(name));
     assert.ok(s.indexOf('## Benchmark 002 — Racing-bench') < s.indexOf('## Benchmark 001 — Orbitarium-bench'));
   }
 });

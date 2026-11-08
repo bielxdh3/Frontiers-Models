@@ -1,0 +1,413 @@
+{
+ "wasteland_clouds_puresky": {
+  "id": "wasteland_clouds_puresky",
+  "kind": "hdri",
+  "res": "4k",
+  "url": "https://polyhaven.com/a/wasteland_clouds_puresky",
+  "license": "CC0 1.0",
+  "authors": {
+   "Jarod Guest": "Sky Edits",
+   "Sergej Majboroda": "Original"
+  },
+  "files": {
+   "hdr": "wasteland_clouds_puresky_4k.hdr"
+  }
+ },
+ "asphalt_02": {
+  "id": "asphalt_02",
+  "kind": "texture",
+  "res": "2k",
+  "url": "https://polyhaven.com/a/asphalt_02",
+  "license": "CC0 1.0",
+  "authors": {
+   "Rob Tuytel": "All"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "asphalt_pit_lane": {
+  "id": "asphalt_pit_lane",
+  "kind": "texture",
+  "res": "2k",
+  "url": "https://polyhaven.com/a/asphalt_pit_lane",
+  "license": "CC0 1.0",
+  "authors": {
+   "Dimitrios Savva": "All"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "coast_sand_03": {
+  "id": "coast_sand_03",
+  "kind": "texture",
+  "res": "2k",
+  "url": "https://polyhaven.com/a/coast_sand_03",
+  "license": "CC0 1.0",
+  "authors": {
+   "Rob Tuytel": "All"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "marble_cliff_01": {
+  "id": "marble_cliff_01",
+  "kind": "texture",
+  "res": "2k",
+  "url": "https://polyhaven.com/a/marble_cliff_01",
+  "license": "CC0 1.0",
+  "authors": {
+   "Amal Kumar": "All"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "damp_beach_sand": {
+  "id": "damp_beach_sand",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/damp_beach_sand",
+  "license": "CC0 1.0",
+  "authors": {
+   "Dimitrios Savva": "All"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "cliff_side": {
+  "id": "cliff_side",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/cliff_side",
+  "license": "CC0 1.0",
+  "authors": {
+   "James Ray Cock": "Photography",
+   "Jenelle van Heerden": "Processing",
+   "Dario Barresi": "Photography"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "seaside_rock": {
+  "id": "seaside_rock",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/seaside_rock",
+  "license": "CC0 1.0",
+  "authors": {
+   "Dimitrios Savva": "All"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "grass_ground": {
+  "id": "grass_ground",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/grass_ground",
+  "license": "CC0 1.0",
+  "authors": {
+   "Charlotte Baglioni": "All"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "dry_ground_rocks": {
+  "id": "dry_ground_rocks",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/dry_ground_rocks",
+  "license": "CC0 1.0",
+  "authors": {
+   "Rob Tuytel": "All"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "forest_leaves_04": {
+  "id": "forest_leaves_04",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/forest_leaves_04",
+  "license": "CC0 1.0",
+  "authors": {
+   "Rob Tuytel": "All"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "gravelly_sand": {
+  "id": "gravelly_sand",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/gravelly_sand",
+  "license": "CC0 1.0",
+  "authors": {
+   "Dario Barresi": "All"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "painted_plaster_wall": {
+  "id": "painted_plaster_wall",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/painted_plaster_wall",
+  "license": "CC0 1.0",
+  "authors": {
+   "Amal Kumar": "All"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "yellow_plaster": {
+  "id": "yellow_plaster",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/yellow_plaster",
+  "license": "CC0 1.0",
+  "authors": {
+   "Rob Tuytel": "All"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "red_plaster_weathered": {
+  "id": "red_plaster_weathered",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/red_plaster_weathered",
+  "license": "CC0 1.0",
+  "authors": {
+   "Amal Kumar": "All"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "blue_plaster_weathered": {
+  "id": "blue_plaster_weathered",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/blue_plaster_weathered",
+  "license": "CC0 1.0",
+  "authors": {
+   "Amal Kumar": "All"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "clay_roof_tiles_03": {
+  "id": "clay_roof_tiles_03",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/clay_roof_tiles_03",
+  "license": "CC0 1.0",
+  "authors": {
+   "Amal Kumar": "All"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "clay_roof_tiles_02": {
+  "id": "clay_roof_tiles_02",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/clay_roof_tiles_02",
+  "license": "CC0 1.0",
+  "authors": {
+   "Amal Kumar": "All"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "stone_wall": {
+  "id": "stone_wall",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/stone_wall",
+  "license": "CC0 1.0",
+  "authors": {
+   "Dario Barresi": "Processing",
+   "Charlotte Baglioni": "Photography"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "rustic_stone_wall": {
+  "id": "rustic_stone_wall",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/rustic_stone_wall",
+  "license": "CC0 1.0",
+  "authors": {
+   "Dimitrios Savva": "All"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "cobblestone_floor_01": {
+  "id": "cobblestone_floor_01",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/cobblestone_floor_01",
+  "license": "CC0 1.0",
+  "authors": {
+   "Rob Tuytel": "All"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "concrete_wall_007": {
+  "id": "concrete_wall_007",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/concrete_wall_007",
+  "license": "CC0 1.0",
+  "authors": {
+   "Dario Barresi": "Processing",
+   "Rico Cilliers": "Tiling",
+   "Charlotte Baglioni": "Photography"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "pine_bark": {
+  "id": "pine_bark",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/pine_bark",
+  "license": "CC0 1.0",
+  "authors": {
+   "Dimitrios Savva": "All"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "palm_tree_bark": {
+  "id": "palm_tree_bark",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/palm_tree_bark",
+  "license": "CC0 1.0",
+  "authors": {
+   "Dimitrios Savva": "Photography",
+   "Rico Cilliers": "Processing"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "bark_brown_02": {
+  "id": "bark_brown_02",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/bark_brown_02",
+  "license": "CC0 1.0",
+  "authors": {
+   "Rob Tuytel": "All"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "wood_shutter": {
+  "id": "wood_shutter",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/wood_shutter",
+  "license": "CC0 1.0",
+  "authors": {
+   "Dimitrios Savva": "All"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ },
+ "wooden_planks": {
+  "id": "wooden_planks",
+  "kind": "texture",
+  "res": "1k",
+  "url": "https://polyhaven.com/a/wooden_planks",
+  "license": "CC0 1.0",
+  "authors": {
+   "Dario Barresi": "Processing",
+   "Charlotte Baglioni": "Photography"
+  },
+  "files": {
+   "diff": "diff.jpg",
+   "nor": "nor.jpg",
+   "arm": "arm.jpg"
+  }
+ }
+}
