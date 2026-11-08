@@ -34,12 +34,17 @@ test('Racing-bench source runs have provenance records, without claiming gamepla
       assert.equal(run.display_status, 'legacy-archived');
       assert.ok(run.manifest);
       assert.ok(run.git_bundle);
+    } else if (registry.non_frontier_runs.includes(run.id)) {
+      assert.equal(run.id, 'gemini-3.8-v3.4');
+      assert.equal(run.role, 'non-frontier-run');
+      assert.equal(run.display_status, 'non-frontier-archived-source-site-live');
+      assert.ok(!registry.current_arena.includes(run.id));
+      assert.equal(run.live_url, 'https://racing-gemini-3.8-flash.biel.dev.br/');
+      assert.equal(run.archival_status, 'complete-tracked-git-snapshot-lfs-pointer-no-history-bundle');
+      assert.ok(run.manifest && run.provenance);
     } else {
       assert.ok(registry.current_arena.includes(run.id));
-      if (run.id === 'gemini-3.8-v3.4') {
-        assert.equal(run.live_url, 'https://racing-gemini-3.8-flash.biel.dev.br/');
-        assert.equal(run.archival_status, 'complete-tracked-git-snapshot-lfs-pointer-no-history-bundle');
-      } else if (run.id === 'gpt-6.1-sol-v3.4') {
+      if (run.id === 'gpt-6.1-sol-v3.4') {
         assert.equal(run.live_url, 'https://racing-gpt-6.1-sol.biel.dev.br/');
         assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
       } else if (run.id === 'gpt-6-astra-v3.4') {
@@ -176,7 +181,7 @@ test('Racing V3.4 prompt and 14 reference assets are present and pinned', () => 
   const refDir=resolve(root,'benchmarks/racing',p.reference_directory);
   assert.ok(existsSync(refDir));
   assert.equal(readdirSync(refDir).filter(x=>x.endsWith('.jpg')).length,14);
-  assert.deepEqual(registry.current_arena,['gemini-3.8-v3.4', 'gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'sonnet-5.5-v3.4']);
+  assert.deepEqual(registry.current_arena,['gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'sonnet-5.5-v3.4']);
 });
 
 test('Racing V3.3 Gemini-review corrections preserve real frozen-world and evidence invariants', () => {

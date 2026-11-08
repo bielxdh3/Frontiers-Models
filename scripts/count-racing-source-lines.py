@@ -1,4 +1,4 @@
-"""Count physical source lines for the six archived Racing V3.4 projects.
+"""Count physical source lines for current and Non-frontier Racing V3.4 archives.
 
 Uses pinned Git blob IDs from SOURCE-FILES.json; works with sparse checkouts.
 Counts nonempty final lines. Own-source excludes archived dependencies,
@@ -104,7 +104,7 @@ def count(run: dict) -> dict:
 if __name__ == "__main__":
     catalog = json.loads((ROOT / "benchmarks/racing/RUNS.json").read_text(encoding="utf-8"))
     indexed = {run["id"]: run for run in catalog["runs"]}
-    results = [count(indexed[name]) for name in catalog["current_arena"]]
+    results = [count(indexed[name]) for name in [*catalog["current_arena"], *catalog.get("non_frontier_runs", [])]]
     print(json.dumps({
         "method": "Pinned Git blobs, physical lines (blank/comment lines included); own-code excludes vendored, generated, verification, media and data artifacts; JSON/lockfiles excluded from code",
         "runs": results,

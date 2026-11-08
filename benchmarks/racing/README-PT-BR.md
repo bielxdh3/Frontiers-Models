@@ -8,7 +8,6 @@ O [prompt V3.4](./prompts/racing-v3.4/racing-v3.4.md), junto às [14 imagens de 
 
 | Modelo atual | Jogar | Código-fonte |
 | --- | --- | --- |
-| **Gemini 3.8 Flash (V3.4)** | [Jogar](https://racing-gemini-3.8-flash.biel.dev.br/) | [Gemini 3.8 Flash](./runs/gemini-3.8-v3.4/source/) |
 | **GPT-6.1 Sol (V3.4)** | [Jogar](https://racing-gpt-6.1-sol.biel.dev.br/) | [GPT-6.1 Sol](./runs/gpt-6.1-sol-v3.4/source/) |
 | **GPT-6 Astra (V3.4)** | [Jogar](https://racing-gpt-6-astra.biel.dev.br/) | [GPT-6 Astra](./runs/gpt-6-astra-v3.4/source/) |
 | **Opus 5.5 (V3.4)** | [Jogar](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./runs/opus-5.5-v3.4/source/) |
@@ -26,3 +25,9 @@ O [prompt V3.4](./prompts/racing-v3.4/racing-v3.4.md), junto às [14 imagens de 
 | **GPT-6 Astra** | [Código](./runs/gpt-6-astra/source/) | [Proveniência](./runs/gpt-6-astra/SOURCE-PROVENANCE.md) | [Bundle](./runs/gpt-6-astra/SOURCE-REPOSITORY.bundle) |
 
 Para reproduzir a V2.6, forneça **OS DOIS** documentos: o [prompt original](./prompts/racing-v2.6.md) e o [adendo operacional atemporal](./EXECUTION-ADDENDUM.md). Os prompts [V3.1](./prompts/racing-v3.1.md), [V3.2](./prompts/racing-v3.2.md) e [V3.3](./prompts/racing-v3.3.md) permanecem intactos.
+
+## Racing não frontier
+
+| Modelo | Categoria | Site | Código-fonte |
+| --- | --- | --- | --- |
+| **Gemini 3.8 Flash (V3.4)** | Não frontier | [Abrir](https://racing-gemini-3.8-flash.biel.dev.br/) | [Código](./runs/gemini-3.8-v3.4/source/) |

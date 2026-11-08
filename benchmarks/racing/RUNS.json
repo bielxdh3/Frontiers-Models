@@ -167,13 +167,14 @@
       "provenance": "runs/gemini-3.8-v3.4/SOURCE-PROVENANCE.md",
       "archival_status": "complete-tracked-git-snapshot-lfs-pointer-no-history-bundle",
       "gameplay_verification": "not-independently-verified",
-      "display_status": "current-archived-source-site-live",
+      "display_status": "non-frontier-archived-source-site-live",
       "site_url": "https://racing-gemini-3.8-flash.biel.dev.br/",
       "archive_path": "runs/gemini-3.8-v3.4/source",
       "manifest": "runs/gemini-3.8-v3.4/SOURCE-FILES.json",
       "source_file_count": 188,
       "source_bytes": 196549258,
-      "git_bundle": null
+      "git_bundle": null,
+      "role": "non-frontier-run"
     },
     {
       "id": "gpt-6.1-sol-v3.4",
@@ -322,11 +323,13 @@
     "gpt-6-astra"
   ],
   "current_arena": [
-    "gemini-3.8-v3.4",
     "gpt-6.1-sol-v3.4",
     "gpt-6-astra-v3.4",
     "opus-5.5-v3.4",
     "gemini-4-argon-v3.4",
     "sonnet-5.5-v3.4"
+  ],
+  "non_frontier_runs": [
+    "gemini-3.8-v3.4"
   ]
 }

@@ -25,14 +25,14 @@ test('Gemini 4 Argon replaces Gemini 3.8 in arena but preserves historical recor
   assert.equal(argon.live_url, 'https://orbitarium-gemini-4-argon.biel.dev.br');
 });
 
-test('collection SVG shows Argon in Orbitarium and Gemini 3.8 only in Racing', () => {
+test('collection SVG shows current Argon but excludes Non-frontier Gemini 3.8', () => {
   assert.ok(hero.includes('Gemini 4 Argon'));
-  assert.ok(hero.includes('Gemini 3.8 Flash'));
-  assert.ok(hero.includes('data-benchmark="racing" data-model="gemini-3.8-v3.4"'));
+  assert.ok(!hero.includes('Gemini 3.8 Flash'));
+  assert.ok(!hero.includes('data-benchmark="racing" data-model="gemini-3.8-v3.4"'));
   assert.ok(hero.includes('data-benchmark="orbitarium" data-model="gemini-4-argon-source"'));
   assert.ok(!hero.includes('data-benchmark="orbitarium" data-model="gemini-3.8-flash-high-frontier-v2"'));
   assert.equal([...hero.matchAll(/data-role="run" data-benchmark="orbitarium"/g)].length, 5);
-  assert.equal([...hero.matchAll(/data-role="run" data-benchmark="racing"/g)].length, 6);
+  assert.equal([...hero.matchAll(/data-role="run" data-benchmark="racing"/g)].length, 5);
   assert.equal(existsSync(resolve(root, 'assets/frontier-v2-scores-v6.svg')), false);
 });
 

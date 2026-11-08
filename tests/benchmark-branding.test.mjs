@@ -36,7 +36,7 @@ test('legacy archive paths and exact prompt integrity remain unchanged', () => {
   assert.equal(digest, registry.prompts['frontier-v2'].sha256);
 });
 
-test('Racing V3.4 appears first with new Gemini and the old three retained in history', () => {
+test('Racing current section excludes Gemini 3.8 while its archive remains discoverable', () => {
   for (const path of ['README.md', 'README-PT-BR.md']) {
     const s = read(path);
     const first = s.indexOf('### Racing-bench V3.4');
@@ -44,9 +44,9 @@ test('Racing V3.4 appears first with new Gemini and the old three retained in hi
     assert.ok(first >= 0 && first < second);
     const section = s.slice(first, second);
     assert.match(section, /racing-v3\.4\.md/);
-    assert.match(section, /gemini-3\.8-v3\.4/);
-    assert.match(section, /https:\/\/racing-gemini-3\.8-flash\.biel\.dev\.br\//);
-    assert.match(section, /gemini-3\.8-v3\.4\/source\//);
+    assert.doesNotMatch(section, /gemini-3\.8-v3\.4/);
+    assert.doesNotMatch(section, /https:\/\/racing-gemini-3\.8-flash\.biel\.dev\.br\//);
+    assert.doesNotMatch(section, /gemini-3\.8-v3\.4\/source\//);
     assert.match(section, /https:\/\/racing-gpt-6-astra\.biel\.dev\.br\//);
     assert.match(section, /https:\/\/racing-gpt-6\.1-sol\.biel\.dev\.br\//);
     assert.match(section, /gpt-6-astra-v3\.4\/source\//);
@@ -59,7 +59,7 @@ test('Racing V3.4 appears first with new Gemini and the old three retained in hi
     assert.doesNotMatch(section, /HTTP 404|Source — archived here|Código — arquivado aqui|Source — gemini-3\.8/);
     assert.doesNotMatch(section, /33\/34/, 'QA annotations belong in run reports, not README');
     assert.doesNotMatch(section, /https:\/\/racing-gemini-3\.8-flash-old\.biel/);
-    for (const name of ['GPT-6.1 Sol', 'Gemini 3.8 Flash', 'GPT-6 Astra', 'Opus 5.5', 'Sonnet 5.5']) assert.ok(section.includes(name));
+    for (const name of ['GPT-6.1 Sol', 'GPT-6 Astra', 'Opus 5.5', 'Sonnet 5.5']) assert.ok(section.includes(name));
     assert.ok(s.indexOf('## Benchmark 002 — Racing-bench') < s.indexOf('## Benchmark 001 — Orbitarium-bench'));
   }
 });

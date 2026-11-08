@@ -61,10 +61,11 @@ for (const run of registry.runs.filter(run =>
   });
 }
 
-test('Gemini 3.8 Flash V3.4: all 188 upstream Git-tracked blobs archived byte-exactly', () => {
+test('Non-frontier Gemini 3.8 Flash V3.4: all 188 upstream Git-tracked blobs archived byte-exactly', () => {
   const run = registry.runs.find(run => run.id === 'gemini-3.8-v3.4');
-  assert.ok(run, 'current Gemini V3.4 entry');
-  assert.ok(registry.current_arena.includes(run.id));
+  assert.ok(run, 'archived Gemini V3.4 entry');
+  assert.ok(registry.non_frontier_runs.includes(run.id));
+  assert.ok(!registry.current_arena.includes(run.id));
   assert.equal(run.archival_status, 'complete-tracked-git-snapshot-lfs-pointer-no-history-bundle');
   const manifest = JSON.parse(readFileSync(resolve(racing, run.manifest), 'utf8'));
   assert.equal(manifest.source_commit, run.source_commit);
