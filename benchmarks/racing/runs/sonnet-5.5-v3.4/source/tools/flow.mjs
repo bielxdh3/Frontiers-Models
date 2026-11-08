@@ -1,0 +1,32 @@
+// Dev tool: drive the real UI with real mouse clicks and capture console errors + a screenshot per stage.
+// node tools/flow.mjs [--q "?fps=1"] [--out shots/flow] [--w 1920 --h 1080]
+import { chromium } from 'playwright';
+import fs from 'node:fs';
+import { startServer } from '../scripts/serve.mjs';
+const args = Object.fromEntries(process.argv.slice(2).reduce((a, x, i, arr) => (x.startsWith('--') ? a.concat([[x.slice(2), (arr[i + 1] && !arr[i + 1].startsWith('--')) ? arr[i + 1] : true]]) : a), []));
+const W = +(args.w || 1920), H = +(args.h || 1080), port = +(args.port || 8143), out = args.out || 'shots/flow';
+fs.mkdirSync(out, { recursive: true });
+const srv = await startServer(port, { quiet: true });
+const browser = await chromium.launch({ channel: 'chrome', headless: true, args: ['--use-angle=d3d11', '--ignore-gpu-blocklist', '--enable-gpu-rasterization', '--enable-precise-memory-info'] });
+const page = await (await browser.newContext({ viewport: { width: W, height: H }, deviceScaleFactor: 1 })).newPage();
+const logs = [];
+page.on('console', (m) => { if (m.type() === 'error' || m.type() === 'warning' || args.verbose) logs.push(`[${m.type()}] ${m.text().slice(0, 300)}`); });
+page.on('pageerror', (e) => logs.push('[pageerror] ' + String(e.stack || e).slice(0, 700)));
+await page.goto(`http://127.0.0.1:${port}/index.html${args.q || '?fps=1'}`);
+await page.waitForFunction(() => window.__RACING__ && (window.__RACING__.ready === true || window.__RACING__.errors.length), null, { timeout: 150000 });
+const st = () => page.evaluate(() => ({ state: __RACING__.state, fps: +__RACING__.fps.toFixed(1), t: __RACING__.race ? +__RACING__.race.t.toFixed(1) : null, audio: { ...__RACING__.audioSnapshot(), stats: undefined }, music: __RACING__.audio.music && __RACING__.audio.music.name, errs: __RACING__.errors }));
+const shot = async (name, wait = 500) => { await page.waitForTimeout(wait); await page.screenshot({ path: `${out}/${name}.png` }); console.log(name, JSON.stringify(await st())); };
+await shot('01-menu', 2500);
+await page.click('#btn-play'); await shot('02-garage', 1800);
+await page.keyboard.press('ArrowRight'); await shot('03-garage-hatch', 1500);
+await page.keyboard.press('ArrowLeft'); await page.click('#g-ok'); await shot('04-setup', 800);
+await page.click('#s-go'); await shot('05-grid', 2200);
+await shot('06-grid2', 2600);
+await shot('07-countdown', 1200);
+await shot('08-go', 2200);
+await page.keyboard.down('ArrowUp'); await shot('09-race-a', 3500); await shot('10-race-b', 3000);
+await page.keyboard.up('ArrowUp');
+await page.keyboard.press('Escape'); await shot('11-pause', 700);
+await page.keyboard.press('Escape'); await shot('12-resume', 700);
+for (const l of logs.slice(0, 40)) console.log(l);
+await browser.close(); srv.close();

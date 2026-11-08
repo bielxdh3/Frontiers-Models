@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Costa Dourada — Corrida</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="./src/ui/style.css">
+<style>
+  html, body { margin: 0; height: 100%; background: #0b0d12; overflow: hidden; font-family: system-ui, "Segoe UI", sans-serif; color: #fff; }
+  #game { position: fixed; inset: 0; width: 100%; height: 100%; display: block; }
+  #loading { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: radial-gradient(ellipse at 50% 70%, #3a2a1c 0%, #0b0d12 70%); z-index: 50; }
+  #loading h1 { font-size: 34px; letter-spacing: 6px; margin: 0 0 6px; font-weight: 700; }
+  #loading p { margin: 0 0 22px; opacity: .7; letter-spacing: 2px; }
+  #loadbar { width: 320px; height: 6px; background: #ffffff22; border-radius: 3px; overflow: hidden; }
+  #loadfill { width: 0%; height: 100%; background: linear-gradient(90deg, #ffb347, #ff6a3d); transition: width .15s; }
+  #loadmsg { margin-top: 12px; font-size: 13px; opacity: .75; min-height: 18px; }
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="loading"><h1>COSTA DOURADA</h1><p>PÔR DO SOL · 5 RIVAIS</p><div id="loadbar"><div id="loadfill"></div></div><div id="loadmsg">Iniciando…</div></div>
+<div id="ui"></div>
+<script type="importmap">
+{ "imports": { "three": "./lib/three/three.module.js", "three/addons/": "./lib/three/addons/" } }
+</script>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>

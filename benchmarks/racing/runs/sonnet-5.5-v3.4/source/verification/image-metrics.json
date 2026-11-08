@@ -1,0 +1,144 @@
+{
+ "definition": {
+  "sky": "share of the frame where only the sky is visible (in-game mask pass: scene re-rendered with a black override material over a white clear)",
+  "luminance": "sRGB Rec.709 luma of the screenshot, 0..1",
+  "maxColourShare": "share of the frame taken by the most frequent colour at 5 bits/channel"
+ },
+ "limits": {
+  "skyMinPct": 10,
+  "lumMean": [
+   0.25,
+   0.75
+  ],
+  "lumStdMin": 0.12,
+  "maxColourShareMax": 0.3
+ },
+ "shots": [
+  {
+   "id": "s1",
+   "file": "s1-reta-orla.png",
+   "fpsAtCapture": 100,
+   "skyPct": 23.4,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5374,
+    "lumStd": 0.2113,
+    "maxColourShare": 0.0196
+   },
+   "pass": true
+  },
+  {
+   "id": "s2",
+   "file": "s2-grid-3-4.png",
+   "fpsAtCapture": 100,
+   "skyPct": 29.1,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4585,
+    "lumStd": 0.1391,
+    "maxColourShare": 0.0418
+   },
+   "pass": true
+  },
+  {
+   "id": "s3",
+   "file": "s3-praia-espuma.png",
+   "fpsAtCapture": 99,
+   "skyPct": 48.6,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.5259,
+    "lumStd": 0.1335,
+    "maxColourShare": 0.0231
+   },
+   "pass": true
+  },
+  {
+   "id": "s4",
+   "file": "s4-falesia-mirante.png",
+   "fpsAtCapture": 100,
+   "skyPct": 30.9,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4995,
+    "lumStd": 0.1766,
+    "maxColourShare": 0.0118
+   },
+   "pass": true
+  },
+  {
+   "id": "s5",
+   "file": "s5-vila-rua.png",
+   "fpsAtCapture": 100,
+   "skyPct": 40.2,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4787,
+    "lumStd": 0.1588,
+    "maxColourShare": 0.0305
+   },
+   "pass": true
+  },
+  {
+   "id": "s6",
+   "file": "s6-bosque-luz.png",
+   "fpsAtCapture": 93,
+   "skyPct": 27.9,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4479,
+    "lumStd": 0.1602,
+    "maxColourShare": 0.0147
+   },
+   "pass": true
+  },
+  {
+   "id": "s7",
+   "file": "s7-ponte-ou-tunel.png",
+   "fpsAtCapture": 100,
+   "skyPct": 35.3,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.429,
+    "lumStd": 0.1227,
+    "maxColourShare": 0.0248
+   },
+   "pass": true
+  },
+  {
+   "id": "s8",
+   "file": "s8-disputa.png",
+   "fpsAtCapture": 100,
+   "skyPct": 30.1,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4827,
+    "lumStd": 0.1628,
+    "maxColourShare": 0.0163
+   },
+   "pass": true
+  },
+  {
+   "id": "s9",
+   "file": "s9-close-pista.png",
+   "fpsAtCapture": 100,
+   "skyPct": 40.7,
+   "metrics": {
+    "width": 1920,
+    "height": 1080,
+    "lumMean": 0.4547,
+    "lumStd": 0.141,
+    "maxColourShare": 0.0247
+   },
+   "pass": true
+  }
+ ]
+}

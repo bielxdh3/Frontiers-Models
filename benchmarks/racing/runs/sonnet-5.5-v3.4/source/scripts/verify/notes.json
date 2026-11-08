@@ -1,0 +1,152 @@
+{
+  "declared_failures": [
+    "Spec 5.6 — ambient occlusion in the junctions (wall/road, wall/house, car/ground) is NOT implemented: there is no SSAO and no baked AO; only the texture AO channel and the projected contact shadow under each car. Visible in S5/S9/S11.",
+    "Spec 5.6 — lens flare is NOT implemented; the sun is a clamped HDRI disc plus bloom, so the sun disc is not crisply visible in S1 (the sun-facing shots burn out in the glare). S4 and S8 were framed with the sun outside the picture: that is a composition choice, not a fix.",
+    "Spec 5.1 — the two cars are continuous curved procedural bodies (> 15 k triangles, 10–11 materials) but their design is stylised and far from the commercial references: bulbous nose, no mirrors/handles/vents/wing struts, tyres without sidewall detail.",
+    "Spec 4 (Z4) — 'Bosque' is a pine-and-olive slope with a bridge, not a dense forest; S6 does not read as woodland the way refs 08/10 do.",
+    "Spec 4 (Z1) — rocks standing in the water are few and small in frame (S3): 4 boulder variants with an animated white-water ring each; the beach has no dune vegetation tufts or puddles in that view.",
+    "Spec 5.6 — motion blur is a speed-driven radial blur (car and HUD excluded), much weaker than refs 01/06/13; there is no depth of field.",
+    "Spec 13.3 — the Low preset was not run on an integrated GPU; only this desktop was measured."
+  ],
+  "gates": {
+    "P1": "Terrain outside the corridor is a generated height-field: slopes are smooth, there are no hand-modelled cliff faces, and the ravine under the viaduct is a plain eroded slope (S7).",
+    "P2": "The car bodies are procedural (swept cross-sections + analytic lamp / grille / panel-gap shader). Continuous curved surfaces, but proportions are stylised; clearcoat reflections come from a 2048×1024 environment so they are softer than a real probe. S2 does not match ref 11 in detail, wing, vents or light.",
+    "P3": "Z1 has sea with waves, foam, wet sand and rocks with white-water rings, but no AO at wall/road junctions, no lens flare and only a mild radial motion blur. The rocks are four displaced-icosahedron variants.",
+    "P4": "Vegetation is alpha-card foliage with 5 species and a few variants each. The viaduct is a deck + piers + abutments (no arches, no tunnel). The village has 80 houses near the road and a church whose spire is visible in S5 but small.",
+    "P5": "The test autopilot is the same driver code as the AIs; scripted skid / wall-contact manoeuvres are used only inside the audio lap to provoke those sounds. All 13.1 / 13.2 checks pass in this run.",
+    "P6": "Performance was measured on one desktop GPU (RTX 3070 Ti) with the frame-rate limiter off; the Low preset was never run on an integrated GPU."
+  },
+  "shots": {
+    "s1": {
+      "differences": [
+        "Ref 01 streaks the road and the roadside with strong anamorphic motion blur and a dusty bloom that lifts the shadows; ours is almost sharp at 103 km/h (only a faint radial blur at the frame edges, with the car and HUD masked), so the speed feeling is much weaker.",
+        "Ref 01 silhouettes tall dark palms against a blown-out sunset with warm rim light; ours has small, front-lit mid-green palms and umbrella pines, and the sun is only a bright patch behind the start gantry (no visible disc, no god-rays).",
+        "Ref 01's hero car has reflective paint, decals, a big wing and detailed tail lamps; ours is a rounded orange GT seen from behind with a plain paint, a small wing and no decals, mirrors or exhaust detail.",
+        "Ref 01/02 have dense dust, scrub and pebbles beside the road; the right side of ours is a smooth dune slope with sparse grass tufts and a stone wall, and the left shows only a sliver of sea."
+      ],
+      "veto": "No car under the ground or floating; the road is textured (cracks, rubber line, worn edge) not a flat grey band; sea and sky are present (sky 23 %); shadows of poles and walls are clearly visible; no solid-colour area; no pop-in seen; the sun-side of the frame (top-left) is burnt out by glare and the sun disc itself is not visible; the dune slope on the right is the emptiest stretch ('trecho vazio' is borderline) and the palms/pines repeat a few variants.",
+      "below_target": "speed feeling (blur), sun disc and rays, roadside density, car detail."
+    },
+    "s2": {
+      "differences": [
+        "Ref 11 is a wide-body Supra with a carbon wing on struts, side vents, LED tail lamps and a plate; ours is a smooth bubble GT: no wing struts, vents or mirrors in view, one continuous orange paint with a mesh grille and a chrome frame as the only front detail.",
+        "Ref 11 sits in a ruined hangar with volumetric rays, dust and hard sun/shadow contrast; ours stands on an open street with soft sunset light, no volumetrics and a plain grid-box marking.",
+        "Ref 11's wheels are deep-dish with big calipers and low-profile tyres with sidewall branding; ours has 10-spoke rims, discs and calipers but round, thick tyres with no sidewall text.",
+        "Ref 11's surroundings are rich (tyre stack, vines, rust, a second car in shadow); ours has a repeated line of palms/pines and a second car of the same design in the background."
+      ],
+      "veto": "Not a car of boxes (curved body, rounded arches), glass is tinted with sky reflection and an interior (not flat black), the contact shadow is present, no floating/sunken wheels, shadows are visible; the weakness is the stylised proportions, not a veto item.",
+      "below_target": "car design, reflections resolution, background richness; no HUD by design."
+    },
+    "s3": {
+      "differences": [
+        "Ref 04 has dune fences, rippled sand, wet reflective patches and tufts of dune grass; ours is a pebbly wet-sand texture with a smooth foam band and no vegetation, puddles or fence in this frame (the 98 sand-fence pieces are elsewhere on the beach).",
+        "Ref 02 has big detailed rock faces and pebbles; ours has only four small boulders standing 15–25 m out in the surf, each with a faint white ring, so the 'rochas com espuma' read weakly.",
+        "Ref 02's sea is turquoise in the shallows with a bay and mountains; ours is pale foam into flat blue with little depth colour change in view and only a haze-grey hill on the horizon.",
+        "Ref 02/04 contain cars and dust; the AIs and the player are off-frame in ours (placed behind the camera line), so no cars are visible here."
+      ],
+      "veto": "Sea is not flat or foam-less (animated shore foam and rings around rocks), wet sand is darker, the sky is large (48 %), shadows are minimal because the frame is mostly sand/sea; no solid-colour area but the sand texture repeats across the lower half of the frame (texture repetition borderline).",
+      "below_target": "rock size/number in frame, beach life (fences, tufts), no cars in the frame, sea colour depth."
+    },
+    "s4": {
+      "differences": [
+        "Ref 02 shows a tall stratified rock face on the left and a sweeping beach below; ours looks down from a stone terrace onto a smooth orange-beige slope: the cliff has no rock strata, only terrain texture.",
+        "Ref 02 scatters cacti, shrubs and boulders; ours is dominated by one large olive tree in the left third of the frame, with a few shrubs, chevron signs and a wooden fence.",
+        "Ref 02's sea is a curved bay with surf and mountains; ours is a straight, calm horizon under a warm haze with no coastline shape and no surf visible from this height.",
+        "The ref's hero truck fills the frame and throws dust; our cars are small on the serpentine below (kerb, chevrons and guard-rail are readable, the white hatch is the only car in frame and raises no dust)."
+      ],
+      "veto": "Road has kerb stripes, chevrons and a guard-rail (not a grey band); the sea and a large sky (31 %) are visible; nothing floats; the sun was deliberately kept out of the frame so there is no burnt-out area; the stone terrace in the foreground repeats one tile.",
+      "below_target": "cliff geometry, vegetation variety, coastline shape, car scale/dust."
+    },
+    "s5": {
+      "differences": [
+        "Ref 05 puts a large adobe church with a bell gable, people and vehicles on a plaza; ours shows the church only as a small red-roofed spire between the houses ahead, with no plaza activity or people.",
+        "Ref 06 has stone cottages with chimneys, climbing plants and overhanging trees under strong motion blur; ours has plaster houses with shutters, balconies and flower boxes but clean facades, no climbing plants and few street trees.",
+        "Ref 07 shows grimy plaster up close; ours uses 1k plaster tiles that look clean in the shade and have no ambient occlusion where wall meets pavement.",
+        "The player's car sits small at the bottom of the frame and the asphalt takes about a third of the image (cracks vary it, but it is a large repeated surface)."
+      ],
+      "veto": "Houses have roofs with eaves, windows with recess and shutters, doors and balconies (not cubes); the street is open sky (sky 39 %); no objects through the road; texture repetition on the asphalt is acceptable but visible; no pop-in seen.",
+      "below_target": "landmark prominence, facade grime/vegetation, AO, people/activity."
+    },
+    "s6": {
+      "differences": [
+        "Ref 10 has dense tall pines with volumetric rays, dust and orange leaf litter; ours is a wide-spaced line of umbrella pines on a dune slope under a bright sky, with no rays or dust, so it does not read as a forest.",
+        "Ref 08 has lush undergrowth (ferns, broad leaves) and haze depth; ours has sparse grass tufts and shrubs on dry orange-brown ground.",
+        "Ref 08's road is a dusty dirt track with tyre marks and dust clouds behind the cars; ours is clean asphalt with no dust from the cars.",
+        "Ref 10's low sun comes through the trunks and rim-lights the leaves; ours has side light and long shadows on the road but the canopy is not translucent."
+      ],
+      "veto": "Not an enclosed corridor (sky 28 %), tree variants are visible but not identical in line, shadows are visible; the density of trees is the weakness.",
+      "below_target": "forest density, undergrowth, dust, translucent foliage."
+    },
+    "s7": {
+      "differences": [
+        "Ref 14 is a large concrete overpass over a rocky desert valley with cliff outcrops; ours is a five-pier deck viaduct over a bare, smoothly eroded ravine with no rock outcrops.",
+        "The deck-to-terrain joint in ours is a stone abutment wall at the left plus the slope; the terrain texture repeats a dotted orange pattern on the ravine floor, unlike the varied rock and gravel of the ref.",
+        "Ref 14 shows vehicles on the structure and on the road below; ours has the cars before the entrance (off-frame) and no traffic under the bridge.",
+        "Ref 14 has railings, joints and cable/lamp details on the deck; ours has a plain parapet with lamp posts and a flat concrete underside."
+      ],
+      "veto": "The bridge is anchored to the terrain (abutments and piers go below ground), nothing floats, sky is large (35 %); the ravine floor is a plain slope and the only repeated pattern is the ground texture.",
+      "below_target": "structure detail (no arches), terrain richness, traffic."
+    },
+    "s8": {
+      "differences": [
+        "Ref 13 shows three distinct cars at close three-quarter-front range under heavy motion blur; ours shows four sharp cars from behind on a bend, with only a faint blur at the frame edges, so only tail lamps and wings are visible.",
+        "Ref 09/13 cars are different makes with real grilles, lights, mirrors and decals; ours repeat the two procedural designs (blue GT, orange and red hatch/GT) with plain paint and no mirrors or decals.",
+        "Ref 09 sprays dust and leaves around the pack; ours has almost no particles in this frame (light tyre smoke only when sliding).",
+        "The ref's pack sits in rich surroundings (autumn trees, houses); ours shows the sea front with a wall, a lamp post and a few palms, and the asphalt fills the lower half of the frame."
+      ],
+      "veto": "Cars are side by side on the road with contact shadows and visible side light; nothing floats or clips; the sky is open (31 %); no burnt-out area in this framing (the sun is outside the frame).",
+      "below_target": "car variety and detail, motion blur, dust, background richness."
+    },
+    "s9": {
+      "differences": [
+        "Against a commercial close-up (e.g. refs 02/04 road edges) ours has a clean red/white kerb, a cracked asphalt tile and a guard-rail, but no tyre marks, debris, sand drift or gravel on the kerb.",
+        "The stone wall beside the kerb repeats the same 1k stone tile and has no moss, stains or AO at its base.",
+        "Guard-rail is a swept metal profile with posts and reflectors but no bolts, overlaps or dents.",
+        "The distant car is small and the foreground has no car, so there is no sense of speed."
+      ],
+      "veto": "Asphalt is textured with paint lines and a worn edge (not a flat band); kerb and guard-rail are present; no solid-colour area.",
+      "below_target": "surface wear details, AO, foreground subject."
+    },
+    "s10": {
+      "differences": [
+        "Same camera and cars as S5 in the Low preset: internal resolution is 0.75×, so edges (power poles, balcony rails, roof tiles) are softer than in S5.",
+        "No MSAA in Low: roof edges and window frames show more stair-stepping than S5.",
+        "Shadows use 2 cascades at 1024 px, so shadow edges on the facades are blockier and the far shadows fade earlier; motion blur and AO are off (the latter is off in both).",
+        "Textures, house forms and road detail are unchanged — Low does not turn into flat blocks."
+      ],
+      "veto": "Same assessment as S5: not blocks, open sky, textured surfaces.",
+      "below_target": "not tested on an integrated GPU."
+    },
+    "s11": {
+      "differences": [
+        "In a commercial scale shot the wall base would have AO, stains and plants; ours has clean plaster down to the pavement with no contact darkening.",
+        "The house door (2.1 m) and the three storeys (~3 m each) are readable against the 4.55 m car, but the car has no mirrors or door handles visible from the side, unlike the refs' cars.",
+        "The windows are recessed with shutters but have no curtains, glass reflection variety or interior.",
+        "The car's tyres are not squashed by load and the wheel arches are generous, so the car looks lighter than a real coupé next to a real wall."
+      ],
+      "veto": "Car and house are plausible in scale, with shadows; the street wall behind the car is the same stone tile as elsewhere.",
+      "below_target": "AO, wall grime, car side detail."
+    },
+    "s12": {
+      "differences": [
+        "From above the terrain texture shows a dotted/tiled pattern and blotchy dirt patches that a commercial map would hide with macro variation.",
+        "The white rings around the sea rocks look like bubbles from this height.",
+        "The track is a thin ribbon without start-line, sector or zone markers; the HUD is hidden by design.",
+        "Houses are tiny red/white specks and the forest is scattered green dots; no landmarks are labelled."
+      ],
+      "veto": "The whole lap is visible in one frame (Orla at the bottom, serpentine on the left, village top, bridge top right).",
+      "below_target": "map readability and terrain macro variation."
+    }
+  },
+  "limitations": [
+    "Single machine: every number in this report comes from one desktop (RTX 3070 Ti, Ryzen 7 5700G, headless Chrome). The ≥ 60 FPS target for an integrated GPU in the Low preset is unverified.",
+    "The cars are procedural and stylised; they are not at the level of the commercial references (nose shape, arch edges, mirror/handle details, interior).",
+    "No screen-space ambient occlusion, no lens flare; motion blur is a radial blur driven by speed with the player's car and the HUD excluded. Contact shadows under the cars are projected blobs.",
+    "The circuit has a bridge, not a tunnel; the bridge changes the rolling sound and opens a reverb send.",
+    "The AIs are slower than the test autopilot (Normal difficulty ≈ 113–117 s laps vs ≈ 103 s) and there is no rubber-banding; Hard uses the same limits as the autopilot.",
+    "Music is two CC0 tracks (menu/garage/setup and results); nothing plays during the race. The engine loops come from two CC0 recordings, so the two timbres share raw material (pitched / filtered differently).",
+    "Shadow shimmer, pop-in of vegetation LODs and the 'bloom estourado' veto are judged by eye on the screenshots and video; there is no automatic detector for them.",
+    "The quality switch reloads the page (it re-creates the renderer, shadow maps and post chain), it does not hot-swap presets.",
+    "Measured FPS depends on the machine: the verifier turns the browser frame-rate limiter off for the performance step, other steps run at the display cadence (≈ 100 Hz here), so the FPS in screenshot file names is capped by it."
+  ]
+}

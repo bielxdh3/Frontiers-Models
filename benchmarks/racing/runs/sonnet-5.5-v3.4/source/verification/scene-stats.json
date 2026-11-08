@@ -1,0 +1,381 @@
+{
+ "sceneAudit": {
+  "generatedBy": "src/game/audit.js (reads the live scene graph)",
+  "cars": {
+   "gt": {
+    "name": "Veloce GT",
+    "trianglesLOD0": 84016,
+    "reportedByModel": 62000,
+    "meshes": 27,
+    "distinctMaterialsUsed": 11,
+    "materialNames": [
+     "paint-clearcoat",
+     "glass",
+     "chrome",
+     "plate",
+     "plastic-matte",
+     "accent-paint",
+     "interior-dark",
+     "rubber",
+     "rim-metal",
+     "brake-disc",
+     "caliper"
+    ],
+    "definedMaterials": 13,
+    "clearcoatPaint": true
+   },
+   "hatch": {
+    "name": "Pulse RS",
+    "trianglesLOD0": 81224,
+    "reportedByModel": 61608,
+    "meshes": 25,
+    "distinctMaterialsUsed": 10,
+    "materialNames": [
+     "paint-clearcoat",
+     "glass",
+     "chrome",
+     "plate",
+     "accent-paint",
+     "interior-dark",
+     "rubber",
+     "rim-metal",
+     "brake-disc",
+     "caliper"
+    ],
+    "definedMaterials": 13,
+    "clearcoatPaint": true
+   },
+   "pass": true
+  },
+  "boxDetector": {
+   "nearMeshesChecked": 936,
+   "offenders": [],
+   "count": 0,
+   "pass": true
+  },
+  "flatColour": {
+   "offenders": [],
+   "count": 0,
+   "pass": true
+  },
+  "counts": {
+   "houses": 97,
+   "housesWithin30mOfRoad": 86,
+   "housesWithin30mInVillage": 80,
+   "houseVariants": 8,
+   "houseVariantsExpected": ">= 5",
+   "vegetationSpecies": 5,
+   "species": {
+    "pine": 648,
+    "olive": 358,
+    "palm": 28,
+    "grass": 851,
+    "shrub": 954
+   },
+   "treesTotal": 1034,
+   "propsPerHundredMetres": {
+    "min": 16,
+    "mean": 34.9,
+    "perBin": [
+     45,
+     50,
+     46,
+     51,
+     45,
+     42,
+     46,
+     40,
+     38,
+     23,
+     25,
+     28,
+     33,
+     23,
+     22,
+     40,
+     30,
+     23,
+     33,
+     42,
+     35,
+     52,
+     29,
+     20,
+     16,
+     36,
+     34,
+     21,
+     30,
+     48,
+     24
+    ]
+   },
+   "propKinds": {
+    "lamp": 74,
+    "bollard": 295,
+    "parasol": 35,
+    "bench": 36,
+    "rock": 187,
+    "sandfence": 98,
+    "board": 8,
+    "lounger": 15,
+    "bin": 23,
+    "chevron": 69,
+    "fence": 66,
+    "hay": 9,
+    "delineator": 82,
+    "tyres": 2,
+    "warn": 20,
+    "planter": 18,
+    "cafe": 5,
+    "cairn": 7,
+    "lamp-bridge": 20,
+    "mirante": 1
+   },
+   "propKindCount": 20,
+   "groundPlantsPerHundredMetres": {
+    "min": 9,
+    "mean": 56.7
+   },
+   "viewpoint": {
+    "x": -275,
+    "z": -265.2,
+    "y": 52.8,
+    "s": 1576,
+    "deckTop": 1.42
+   },
+   "bridge": {
+    "s0": 2368.4,
+    "s1": 2488.4
+   },
+   "pass": true
+  },
+  "textures": {
+   "textureArrays": [
+    {
+     "layers": 9,
+     "size": 1024,
+     "first": "coast_sand_03"
+    },
+    {
+     "layers": 2,
+     "size": 2048,
+     "first": "asphalt_02"
+    },
+    {
+     "layers": 17,
+     "size": 1024,
+     "first": "painted_plaster_wall"
+    }
+   ],
+   "asphaltArraySize": 2048,
+   "minArraySize": 1024,
+   "ordinaryMapsNearRoad": 31,
+   "smallerThan1024sq": [],
+   "minOrdinaryMap": [
+    1024,
+    1024
+   ],
+   "notes": "array-driven materials carry a small placeholder map only so that material.map exists; their shaders sample the arrays above",
+   "pass": true,
+   "smallRealMaps": []
+  },
+  "audio": {
+   "engineIsSampled": true,
+   "playerEngine": {
+    "kind": "v8",
+    "bufferSources": 7,
+    "buffersBound": 7,
+    "bands": [
+     {
+      "f0": 52.91,
+      "file": "assets/audio/engine/v8-053-181460.wav"
+     },
+     {
+      "f0": 69.33,
+      "file": "assets/audio/engine/v8-069-181460.wav"
+     },
+     {
+      "f0": 84.37,
+      "file": "assets/audio/engine/v8-084-181460.wav"
+     },
+     {
+      "f0": 85.81,
+      "file": "assets/audio/engine/v8-086-181460.wav"
+     },
+     {
+      "f0": 106.77,
+      "file": "assets/audio/engine/v8-107-496171.wav"
+     },
+     {
+      "f0": 115.5,
+      "file": "assets/audio/engine/v8-116-496171.wav"
+     },
+     {
+      "f0": 138.33,
+      "file": "assets/audio/engine/v8-138-496171.wav"
+     }
+    ]
+   },
+   "kinds": {
+    "turbo": {
+     "loops": 7,
+     "bands": [
+      {
+       "file": "assets/audio/engine/turbo-053-181460.wav",
+       "f0": 52.91,
+       "seconds": 0.794,
+       "channels": 1,
+       "sampleRate": 44100,
+       "acf": 0.95
+      },
+      {
+       "file": "assets/audio/engine/turbo-069-181460.wav",
+       "f0": 69.33,
+       "seconds": 0.793,
+       "channels": 1,
+       "sampleRate": 44100,
+       "acf": 0.96
+      },
+      {
+       "file": "assets/audio/engine/turbo-084-181460.wav",
+       "f0": 84.37,
+       "seconds": 0.794,
+       "channels": 1,
+       "sampleRate": 44100,
+       "acf": 0.95
+      },
+      {
+       "file": "assets/audio/engine/turbo-086-181460.wav",
+       "f0": 85.81,
+       "seconds": 0.804,
+       "channels": 1,
+       "sampleRate": 44100,
+       "acf": 0.95
+      },
+      {
+       "file": "assets/audio/engine/turbo-162-496171.wav",
+       "f0": 161.78,
+       "seconds": 0.797,
+       "channels": 1,
+       "sampleRate": 44100,
+       "acf": 0.88
+      },
+      {
+       "file": "assets/audio/engine/turbo-175-496171.wav",
+       "f0": 175,
+       "seconds": 0.8,
+       "channels": 1,
+       "sampleRate": 44100,
+       "acf": 0.66
+      },
+      {
+       "file": "assets/audio/engine/turbo-210-496171.wav",
+       "f0": 209.6,
+       "seconds": 0.802,
+       "channels": 1,
+       "sampleRate": 44100,
+       "acf": 0.82
+      }
+     ],
+     "sources": [
+      "181460",
+      "496171"
+     ]
+    },
+    "v8": {
+     "loops": 7,
+     "bands": [
+      {
+       "file": "assets/audio/engine/v8-053-181460.wav",
+       "f0": 52.91,
+       "seconds": 0.794,
+       "channels": 1,
+       "sampleRate": 44100,
+       "acf": 0.95
+      },
+      {
+       "file": "assets/audio/engine/v8-069-181460.wav",
+       "f0": 69.33,
+       "seconds": 0.793,
+       "channels": 1,
+       "sampleRate": 44100,
+       "acf": 0.96
+      },
+      {
+       "file": "assets/audio/engine/v8-084-181460.wav",
+       "f0": 84.37,
+       "seconds": 0.794,
+       "channels": 1,
+       "sampleRate": 44100,
+       "acf": 0.95
+      },
+      {
+       "file": "assets/audio/engine/v8-086-181460.wav",
+       "f0": 85.81,
+       "seconds": 0.804,
+       "channels": 1,
+       "sampleRate": 44100,
+       "acf": 0.95
+      },
+      {
+       "file": "assets/audio/engine/v8-107-496171.wav",
+       "f0": 106.77,
+       "seconds": 1.208,
+       "channels": 1,
+       "sampleRate": 44100,
+       "acf": 0.88
+      },
+      {
+       "file": "assets/audio/engine/v8-116-496171.wav",
+       "f0": 115.5,
+       "seconds": 1.212,
+       "channels": 1,
+       "sampleRate": 44100,
+       "acf": 0.66
+      },
+      {
+       "file": "assets/audio/engine/v8-138-496171.wav",
+       "f0": 138.33,
+       "seconds": 1.214,
+       "channels": 1,
+       "sampleRate": 44100,
+       "acf": 0.82
+      }
+     ],
+     "sources": [
+      "181460",
+      "496171"
+     ]
+    }
+   },
+   "oscillatorsInEnginePath": 0,
+   "limiter": "worklet-lookahead",
+   "contextRate": 48000,
+   "pass": true
+  },
+  "renderer": {
+   "sceneMeshes": 1408,
+   "sceneTrianglesSubmitted": 3204211
+  },
+  "notes": [],
+  "pass": true
+ },
+ "validateWorld": {
+  "ok": true,
+  "errors": [],
+  "stats": {
+   "maxBankDeg": 5.47,
+   "maxGradePct": 9.86,
+   "minRadiusM": 30.9,
+   "lengthM": 3047.5,
+   "worstTerrainAboveRoad": -0.0372,
+   "worstEdgeGap": 0.0688,
+   "objects": 4033,
+   "exclusionViolations": 0,
+   "floatBury": 0,
+   "houseOverlaps": 0,
+   "checkpoints": 12
+  }
+ }
+}

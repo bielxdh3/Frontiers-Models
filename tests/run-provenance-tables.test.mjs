@@ -6,7 +6,7 @@ import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
-const read = path => readFileSync(resolve(root, path), 'utf8');
+const read = path => readFileSync(resolve(root, path), 'utf8').replace(/\r\n/g, '\n');
 const orbit = JSON.parse(read('benchmarks/solar-system/RUNS.json'));
 const racing = JSON.parse(read('benchmarks/racing/RUNS.json'));
 const currentOrbit = new Set(orbit.current_arena);

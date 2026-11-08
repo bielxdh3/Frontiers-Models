@@ -1,0 +1,35 @@
+[0.0s] PASS menu-shown-with-live-background "demo race with 6 cars behind the menu"
+[0.4s] garage
+[1.0s] PASS car-selected {"name":"Pulse RS"}
+[1.3s] grid presentation
+[1.3s] PASS grid-presentation-lists-6-cars 6
+[9.7s] PASS countdown-3-2-1-go ["3","2","1","VAI!"]
+[9.7s] PASS race-with-5-ai {"state":"racing","n":6,"ai":5}
+[14.0s] PASS keyboard-input-moves-the-car 90.36
+[14.7s] t=60.03 racing Você:P2 L0 Rafael:P6 L0 Inês:P1 L0 Luca:P3 L0 Maya:P5 L0 Théo:P4 L0
+[15.3s] t=120.7 racing Você:P1 L1 Rafael:P6 L0 Inês:P2 L1 Luca:P3 L1 Maya:P5 L0 Théo:P4 L1
+[16.0s] t=181.33 racing Você:P1 L1 Rafael:P6 L1 Inês:P2 L1 Luca:P3 L1 Maya:P5 L1 Théo:P4 L1
+[16.6s] t=241.97 racing Você:P1 L2 Rafael:P5 L2 Inês:P2 L2 Luca:P3 L2 Maya:P6 L2 Théo:P4 L2
+[17.2s] t=302.62 racing Você:P1 L2 Rafael:P4 L2 Inês:P2 L2 Luca:P3 L2 Maya:P6 L2 Théo:P5 L2
+[17.9s] t=363.27 racing Você:P1 L3 Rafael:P4 L3 Inês:P2 L3 Luca:P3 L3 Maya:P6 L3 Théo:P5 L3
+[18.5s] t=423.9 racing Você:P1 L4 Rafael:P4 L3 Inês:P2 L3 Luca:P3 L3 Maya:P6 L3 Théo:P5 L3
+[19.2s] t=484.55 racing Você:P1 L4 Rafael:P4 L4 Inês:P2 L4 Luca:P3 L4 Maya:P6 L4 Théo:P5 L4
+[19.8s] t=545.18 racing Você:P1 L5 Rafael:P4 L4 Inês:P2 L4 Luca:P3 L4 Maya:P6 L4 Théo:P5 L4
+[20.4s] t=605.82 racing Você:P1 L5 Rafael:P3 L5 Inês:P2 L5 Luca:P4 L5 Maya:P6 L5 Théo:P5 L5
+[20.7s] t=631.1 finished Você:P1 L6 Rafael:P3 L5 Inês:P2 L5 Luca:P4 L5 Maya:P6 L5 Théo:P5 L5
+[20.8s] t=636.15 results Você:P1 L6 Rafael:P3 L5 Inês:P2 L5 Luca:P4 L5 Maya:P6 L5 Théo:P5 L5
+[20.8s] PASS reached-results-screen 636.15
+[20.8s] PASS results-table-6-rows 6
+[20.8s] PASS player-completed-all-laps {"laps":6,"lapTimes":[108.82,103.47,103.47,103.47,103.41,103.42]}
+[20.8s] PASS others-without-finish-show-approximate-time ["10:28.533","≈ 11:13.278","≈ 11:18.738","≈ 11:19.206","≈ 11:30.445","≈ 11:30.597"]
+[21.0s] PASS no-car-under-terrain 0
+[21.0s] PASS no-collider-crossing {"crossings":0,"maxPenetrationM":0.06}
+[21.0s] PASS no-car-fell-out-of-world 0
+[21.0s] PASS camera-never-inside-geometry {"frames":7084,"violations":0,"minClearanceM":1.55}
+[21.0s] PASS ai-never-stuck-or-off-road-over-5s {"aiStuckEvents":0,"longestStuckOrOffSeconds":1.85}
+[21.0s] PASS at-least-one-overtake-between-ais 11
+[21.3s] PASS race-again-starts-clean {"t":0,"laps":[0,0,0,0,0,0],"n":6,"state":"grid"}
+[21.5s] PASS second-race-runs {"t":15.1,"positions":[3,2,1,5,4,6]}
+[21.5s] PASS no-console-errors []
+
+--- console ---

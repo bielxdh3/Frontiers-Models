@@ -1,0 +1,30 @@
+[0.0s] PASS menu-shown-with-live-background "demo race with 6 cars behind the menu"
+[0.4s] garage
+[0.9s] PASS car-selected {"name":"Veloce GT"}
+[1.3s] grid presentation
+[1.3s] PASS grid-presentation-lists-6-cars 6
+[9.5s] PASS countdown-3-2-1-go ["3","2","1","VAI!"]
+[9.5s] PASS race-with-5-ai {"state":"racing","n":6,"ai":5}
+[13.8s] PASS keyboard-input-moves-the-car 73.36
+[14.6s] t=65.05 racing Você:P6 L0 Rafael:P2 L0 Inês:P1 L0 Luca:P3 L0 Maya:P5 L0 Théo:P4 L0
+[15.3s] t=125.7 racing Você:P4 L1 Rafael:P1 L1 Inês:P2 L1 Luca:P3 L1 Maya:P6 L1 Théo:P5 L1
+[15.9s] t=186.33 racing Você:P2 L1 Rafael:P1 L1 Inês:P3 L1 Luca:P4 L1 Maya:P6 L1 Théo:P5 L1
+[16.5s] t=246.97 racing Você:P1 L2 Rafael:P2 L2 Inês:P3 L2 Luca:P4 L2 Maya:P6 L2 Théo:P5 L2
+[17.2s] t=307.61 racing Você:P1 L2 Rafael:P2 L2 Inês:P3 L2 Luca:P4 L2 Maya:P6 L2 Théo:P5 L2
+[17.4s] t=327.81 finished Você:P1 L3 Rafael:P2 L2 Inês:P3 L2 Luca:P4 L2 Maya:P6 L2 Théo:P5 L2
+[17.5s] t=332.86 results Você:P1 L3 Rafael:P2 L2 Inês:P3 L2 Luca:P4 L2 Maya:P6 L2 Théo:P5 L2
+[17.5s] PASS reached-results-screen 332.86
+[17.5s] PASS results-table-6-rows 6
+[17.5s] PASS player-completed-all-laps {"laps":3,"lapTimes":[117.58,103.74,103.06]}
+[17.5s] PASS others-without-finish-show-approximate-time ["05:27.250","≈ 05:35.429","≈ 05:36.579","≈ 05:40.322","≈ 05:46.239","≈ 05:47.445"]
+[17.7s] PASS no-car-under-terrain 0
+[17.7s] PASS no-collider-crossing {"crossings":0,"maxPenetrationM":0.042}
+[17.7s] PASS no-car-fell-out-of-world 0
+[17.7s] PASS camera-never-inside-geometry {"frames":4040,"violations":0,"minClearanceM":1.52}
+[17.7s] PASS ai-never-stuck-or-off-road-over-5s {"aiStuckEvents":0,"longestStuckOrOffSeconds":0}
+[17.7s] PASS at-least-one-overtake-between-ais 8
+[17.9s] PASS race-again-starts-clean {"t":0,"laps":[0,0,0,0,0,0],"n":6,"state":"grid"}
+[18.1s] PASS second-race-runs {"t":15.07,"positions":[4,2,1,3,5,6]}
+[18.1s] PASS no-console-errors []
+
+--- console ---
