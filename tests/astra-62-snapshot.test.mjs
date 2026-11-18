@@ -3,9 +3,13 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {execFileSync} from 'node:child_process';
 const root='benchmarks/racing/';
-test('GPT Astra 6.2 snapshot tree and manifest are pinned to the original commit', () => {
+test('GPT-6.2 Astra snapshot tree and manifest are pinned to the original commit', () => {
  const registry=JSON.parse(readFileSync(root+'RUNS.json'));
  const r=registry.runs.find(x=>x.id==='gpt-astra-6.2-v3.4.1');
+ assert.equal(r.model,'GPT-6.2 Astra');
+ assert.equal(r.display_label,'GPT-6.2 Astra (V3.4.1)');
+ assert.equal(r.live_url,'https://racing-gpt-6.2-astra.biel.dev.br/');
+ assert.equal(r.site_url,r.live_url);
  const m=JSON.parse(readFileSync(root+r.manifest));
  assert.equal(r.source_commit,'8f1ff2b06cf9734f0f1b4663eeb53f4d72c723f6');
  assert.equal(r.source_tree,'27478d849c8be81be707bda2036917357a2e39a5');

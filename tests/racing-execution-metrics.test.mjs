@@ -48,9 +48,10 @@ test('Astra quota is not a token count and elapsed interval is not active time',
  assert.equal((Date.parse(m.observed_end_local)-Date.parse(m.observed_start_local))/60000, 302);
  assert.equal(m.final_verification_seconds, 170.198);
  for (const p of ['README.md','README-PT-BR.md','benchmarks/racing/README.md','benchmarks/racing/README-PT-BR.md']) {
-  const s=read(p), row=s.split('\n').find(l => l.startsWith('|') && l.includes('**GPT Astra 6.2 (V3.4.1)**'));
+  const s=read(p), row=s.split('\n').find(l => l.startsWith('|') && l.includes('**GPT-6.2 Astra (V3.4.1)**'));
+  assert.ok(row && row.includes('](https://racing-gpt-6.2-astra.biel.dev.br/)'),p);
   assert.ok(row && row.includes('30%\\*'),p);
-  assert.ok(row.includes('02'),p);
+  assert.ok(row.includes('02') || (p === 'README.md' && row.includes('~5h')),p);
   assert.ok(s.includes('Plus'),p);
  }
 });

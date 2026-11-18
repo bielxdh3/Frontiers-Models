@@ -11,7 +11,7 @@
 | **GPT-6 Astra** | Git `0c615e8dc3…` | Legacy | Archived |
 | **GPT-6.1 Sol** | Git `1ab34b18cb…` | Current | Archived |
 | **GPT-6 Astra** | Git `daf0099699…` | Current | Archived |
-| **GPT Astra 6.2** | Git `8f1ff2b06c…` | Current | Archived |
+| **GPT-6.2 Astra** | Git `8f1ff2b06c…` | Current | Archived |
 | **Opus 5.5** | Git `e75f298d49…` | Current | Archived |
 | **Gemini 4 Argon** | Git `88632a8369…` | Current | Archived |
 | **Fable 5.2** | Git `6de1bddaae…` | Current | Archived |
@@ -32,7 +32,7 @@ Exact source hashes and project copies are indexed by [RUNS.json](./RUNS.json) a
 | **GPT-6 Astra** | Git `0c615e8dc3…` | Legado | Arquivado |
 | **GPT-6.1 Sol** | Git `1ab34b18cb…` | Atual | Arquivado |
 | **GPT-6 Astra** | Git `daf0099699…` | Atual | Arquivado |
-| **GPT Astra 6.2** | Git `8f1ff2b06c…` | Atual | Arquivado |
+| **GPT-6.2 Astra** | Git `8f1ff2b06c…` | Atual | Arquivado |
 | **Opus 5.5** | Git `e75f298d49…` | Atual | Arquivado |
 | **Gemini 4 Argon** | Git `88632a8369…` | Atual | Arquivado |
 | **Fable 5.2** | Git `6de1bddaae…` | Atual | Arquivado |

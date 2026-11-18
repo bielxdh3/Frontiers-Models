@@ -1,6 +1,6 @@
 {
   "format": "git-blob-byte-exact-v1",
-  "model": "GPT Astra 6.2 (V3.4.1)",
+  "model": "GPT-6.2 Astra (V3.4.1)",
   "source_repository": null,
   "source_branch": "main",
   "source_commit": "8f1ff2b06cf9734f0f1b4663eeb53f4d72c723f6",

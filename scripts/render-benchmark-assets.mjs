@@ -27,7 +27,8 @@ if (orbitRuns.length !== 5 || new Set(orbitRuns.map(run => run.id)).size !== 5 |
     racingRuns[0].id !== 'gpt-6.1-sol-v3.4' ||
     racingRuns[1].id !== 'gpt-6-astra-v3.4' ||
     racingRuns[2].id !== 'gpt-astra-6.2-v3.4.1' ||
-    racingRuns[2].live_url !== null ||
+    racingRuns[2].live_url !== 'https://racing-gpt-6.2-astra.biel.dev.br/' ||
+    racingRuns[2].site_url !== 'https://racing-gpt-6.2-astra.biel.dev.br/' ||
     racingRuns[3].id !== 'opus-5.5-v3.4' ||
     racingRuns[3].live_url !== 'https://racing-opus-5.5.biel.dev.br/' ||
     racingRuns[3].site_url !== 'https://racing-opus-5.5.biel.dev.br/' ||

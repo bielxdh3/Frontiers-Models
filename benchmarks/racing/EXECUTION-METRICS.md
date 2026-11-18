@@ -26,7 +26,7 @@ Starting with **V3.4.1**, record token usage and execution time when evidence is
 
 Source: owner-supplied summary of local Claude Code session usage records, scoped to November 17–18 through delivery. Active time is estimated from message gaps using different idle thresholds. The exact counters are transcribed from that summary, not independently audited against raw logs. Haiku 5.5 and Sonnet 5.5 usage and post-benchmark conversations are excluded; the scoped total already excludes them, so no second subtraction is performed. The separate rounded Claude Code usage report dated November 18 at 12:25 UTC has a different reporting scope, includes post-benchmark model usage, and does not reconcile to the scoped totals; it is not added to or subtracted from this record. Its API and wall timers and cost estimate are not benchmark-wide measurements. Earlier V3.4 runs have no execution metrics recorded here.
 
-### GPT Astra 6.2 (V3.4.1)
+### GPT-6.2 Astra (V3.4.1)
 
 | Measurement | Reported value |
 | --- | ---: |
@@ -65,7 +65,7 @@ A partir da **V3.4.1**, registrar tokens e tempo de execução quando houver evi
 Fonte: resumo fornecido pelo mantenedor dos registros locais de uso do Claude Code, limitado aos dias 17 e 18 de novembro até a entrega. O tempo ativo foi estimado por intervalos entre mensagens, com diferentes limiares de ociosidade. Os contadores foram transcritos do resumo, sem auditoria independente dos logs brutos. Haiku 5.5, Sonnet 5.5 e conversas pós-benchmark foram excluídos; o total delimitado já os exclui, portanto não há segundo desconto. O relatório separado e arredondado do Claude Code de 18/11 às 12:25 UTC tem outro escopo, inclui uso de modelos após o benchmark e não reconcilia com os totais delimitados; não foi somado nem subtraído. Seus contadores de tempo de API, sessão e estimativa de custo não representam a execução integral. Não constam métricas das execuções antigas V3.4.
 
 
-### GPT Astra 6.2 (V3.4.1)
+### GPT-6.2 Astra (V3.4.1)
 
 | Medida | Valor informado |
 | --- | ---: |

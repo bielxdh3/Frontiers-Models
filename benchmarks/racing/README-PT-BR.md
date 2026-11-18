@@ -10,7 +10,7 @@ O [prompt V3.4](./prompts/racing-v3.4/racing-v3.4.md), junto às [14 imagens de 
 | --- | --- | --- | ---: | ---: |
 | ☀️ **GPT-6.1 Sol** | [Jogar](https://racing-gpt-6.1-sol.biel.dev.br/) | [GPT-6.1 Sol](./runs/gpt-6.1-sol-v3.4/source/) | — | — |
 | ✦ **GPT-6 Astra** | [Jogar](https://racing-gpt-6-astra.biel.dev.br/) | [GPT-6 Astra](./runs/gpt-6-astra-v3.4/source/) | — | — |
-| ✦ **GPT Astra 6.2 (V3.4.1)** | — | [GPT Astra 6.2 (V3.4.1)](./runs/gpt-astra-6.2-v3.4.1/source/) | 30%\* | 5 h 02 min\* |
+| ✦ **GPT-6.2 Astra (V3.4.1)** | [Jogar](https://racing-gpt-6.2-astra.biel.dev.br/) | [GPT-6.2 Astra (V3.4.1)](./runs/gpt-astra-6.2-v3.4.1/source/) | 30%\* | 5 h 02 min\* |
 | ♬ **Opus 5.5** | [Jogar](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./runs/opus-5.5-v3.4/source/) | — | — |
 | ✧ **Fable 5.2 (V3.4.1)** | [Jogar](https://racing-fable-5.2.biel.dev.br/) | [Fable 5.2 (V3.4.1)](./runs/fable-5.2-v3.4.1/source/) | ~475,74 M | ~11 h |
 | ◈ **Gemini 4 Argon** | [Jogar](https://racing-gemini-4-argon.biel.dev.br/) | [Gemini 4 Argon](./runs/gemini-4-argon-v3.4/source/) | — | — |
@@ -18,7 +18,7 @@ O [prompt V3.4](./prompts/racing-v3.4/racing-v3.4.md), junto às [14 imagens de 
 
 *Desde a V3.4.1: tokens totais (incluindo cache) e tempo ativo estimado de execução, quando disponíveis. — = não registrado. [Métricas e limitações](./EXECUTION-METRICS.md).*
 
-\* GPT Astra 6.2: 30% da cota semanal do Plus (informado pelo mantenedor; sem contagem de tokens). 5 h 02 min = intervalo decorrido observado, não tempo ativo comprovado.
+\* GPT-6.2 Astra: 30% da cota semanal do Plus (informado pelo mantenedor; sem contagem de tokens). 5 h 02 min = intervalo decorrido observado, não tempo ativo comprovado.
 
 [Prompt V3.4.1](./prompts/racing-v3.4/racing-v3.4.1.md) · [Anexo operacional](./EXECUTION-ADDENDUM.md) · [Métricas de código](./SOURCE-METRICS.md) · [Registros e proveniência](./RUN-PROVENANCE.md) · [Prompts anteriores](./prompts/README.md).
 
