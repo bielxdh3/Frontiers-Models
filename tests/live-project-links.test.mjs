@@ -30,9 +30,9 @@ test('all five remaining canonical Orbitarium sites retain their original links'
 
 test('Racing V3.4 includes Argon and Sonnet with archived source and owner-provided URLs', () => {
   assert.equal(racing.current_prompt, 'racing-v3.4');
-  assert.deepEqual(racing.current_arena, ['gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'gpt-astra-6.2-v3.4.1', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'fable-5.2-v3.4.1', 'gemini-4-hydrogen-v3.4']);
+  assert.deepEqual(racing.current_arena, ['gpt-6.1-sol-v3.4', 'gpt-astra-6.2-v3.4.1', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'fable-5.2-v3.4.1', 'gemini-4-hydrogen-v3.4']);
   assert.deepEqual(racing.legacy_runs, ['gpt-6.1-sol', 'gemini-3.8-flash', 'gpt-6-astra']);
-  assert.deepEqual(racing.non_frontier_runs, ['gemini-3.8-v3.4', 'sonnet-5.5-v3.4']);
+  assert.deepEqual(racing.non_frontier_runs, ['gemini-3.8-v3.4', 'sonnet-5.5-v3.4', 'gpt-6-astra-v3.4']);
   const current = racing.runs.find(run => run.id === 'gemini-3.8-v3.4');
   assert.equal(current.model, 'Gemini 3.8 Flash');
   assert.equal(current.role, 'non-frontier-run');

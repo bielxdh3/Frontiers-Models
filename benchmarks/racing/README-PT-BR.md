@@ -9,7 +9,6 @@ O [prompt V3.4](./prompts/racing-v3.4/racing-v3.4.md), junto às [14 imagens de 
 | Modelo atual | Jogar | Código-fonte | Tokens | Tempo |
 | --- | --- | --- | ---: | ---: |
 | ☀️ **GPT-6.1 Sol** | [Jogar](https://racing-gpt-6.1-sol.biel.dev.br/) | [GPT-6.1 Sol](./runs/gpt-6.1-sol-v3.4/source/) | — | — |
-| ✦ **GPT-6 Astra** | [Jogar](https://racing-gpt-6-astra.biel.dev.br/) | [GPT-6 Astra](./runs/gpt-6-astra-v3.4/source/) | — | — |
 | ✦ **GPT-6.2 Astra (V3.4.1)** | [Jogar](https://racing-gpt-6.2-astra.biel.dev.br/) | [GPT-6.2 Astra (V3.4.1)](./runs/gpt-astra-6.2-v3.4.1/source/) | 30%\* | 5 h 02 min\* |
 | ♬ **Opus 5.5** | [Jogar](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./runs/opus-5.5-v3.4/source/) | — | — |
 | ✧ **Fable 5.2 (V3.4.1)** | [Jogar](https://racing-fable-5.2.biel.dev.br/) | [Fable 5.2 (V3.4.1)](./runs/fable-5.2-v3.4.1/source/) | ~475,74 M | ~11 h |
@@ -38,3 +37,4 @@ Para reproduzir a V2.6, forneça **OS DOIS** documentos: o [prompt original](./p
 | --- | --- | --- | --- |
 | ◈ **Gemini 3.8 Flash** | Não frontier | Deleted | [Código](./runs/gemini-3.8-v3.4/source/) |
 | ✧ **Sonnet 5.5** | Não frontier | [Jogar](https://racing-sonnet-5.5.biel.dev.br/) | [Sonnet 5.5](./runs/sonnet-5.5-v3.4/source/) |
+| ✦ **GPT-6 Astra** | Não frontier | [Jogar](https://racing-gpt-6-astra.biel.dev.br/) | [GPT-6 Astra](./runs/gpt-6-astra-v3.4/source/) |

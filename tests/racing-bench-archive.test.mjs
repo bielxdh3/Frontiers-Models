@@ -44,6 +44,13 @@ test('Racing-bench source runs have provenance records, without claiming gamepla
         assert.equal(run.site_url, null);
         assert.match(run.site_status, /owner-reported-deleted-2026-11-16/);
         assert.equal(run.archival_status, 'complete-tracked-git-snapshot-lfs-pointer-no-history-bundle');
+      } else if (run.id === 'gpt-6-astra-v3.4') {
+        assert.equal(run.display_status, 'non-frontier-archived-source-site-owner-provided');
+        assert.equal(run.source_file_count, 1183);
+        assert.equal(run.site_url, run.live_url);
+        assert.equal(run.live_url, 'https://racing-gpt-6-astra.biel.dev.br/', 'owner-provided Astra game URL');
+        assert.match(run.site_status, /http-404-on-2026-11-05/);
+        assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
       } else {
         assert.equal(run.id, 'sonnet-5.5-v3.4');
         assert.equal(run.display_status, 'non-frontier-archived-source-site-owner-provided');
@@ -56,11 +63,6 @@ test('Racing-bench source runs have provenance records, without claiming gamepla
       assert.ok(registry.current_arena.includes(run.id));
       if (run.id === 'gpt-6.1-sol-v3.4') {
         assert.equal(run.live_url, 'https://racing-gpt-6.1-sol.biel.dev.br/');
-        assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
-      } else if (run.id === 'gpt-6-astra-v3.4') {
-        assert.equal(run.id, 'gpt-6-astra-v3.4');
-        assert.equal(run.live_url, 'https://racing-gpt-6-astra.biel.dev.br/', 'owner-provided Astra game URL');
-        assert.match(run.site_status, /http-404-on-2026-11-05/);
         assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');
       } else if (run.id === 'gpt-astra-6.2-v3.4.1') {
         assert.equal(run.source_repository, null);
@@ -207,7 +209,7 @@ test('Racing V3.4 prompt and 14 reference assets are present and pinned', () => 
   const refDir=resolve(root,'benchmarks/racing',p.reference_directory);
   assert.ok(existsSync(refDir));
   assert.equal(readdirSync(refDir).filter(x=>x.endsWith('.jpg')).length,14);
-  assert.deepEqual(registry.current_arena,['gpt-6.1-sol-v3.4', 'gpt-6-astra-v3.4', 'gpt-astra-6.2-v3.4.1', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'fable-5.2-v3.4.1', 'gemini-4-hydrogen-v3.4']);
+  assert.deepEqual(registry.current_arena,['gpt-6.1-sol-v3.4', 'gpt-astra-6.2-v3.4.1', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'fable-5.2-v3.4.1', 'gemini-4-hydrogen-v3.4']);
 });
 
 test('Racing V3.4.1 candidate pins continuous urban/forest density without rewriting V3.4', () => {

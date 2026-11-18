@@ -19,40 +19,38 @@ const racingRuns = racing.current_arena.map(id => {
   if (!run) throw new Error('Missing current Racing run: ' + id);
   return run;
 });
-// Keep the older Racing Astra in the archive and tables, but feature only its successor in the hero.
-const racingHeroRuns = racingRuns.filter(run => run.id !== 'gpt-6-astra-v3.4');
-const currentRunCount = racingHeroRuns.length + orbitRuns.length;
+const currentRunCount = racingRuns.length + orbitRuns.length;
 if (orbitRuns.length !== 5 || new Set(orbitRuns.map(run => run.id)).size !== 5 ||
     !orbitRuns.some(run => run.model === 'Gemini 4 Argon') ||
     orbitRuns.some(run => run.model === 'Gemini 3.8 Flash') ||
-    racingRuns.length !== 7 ||
+    racingRuns.length !== 6 ||
     racingRuns[0].id !== 'gpt-6.1-sol-v3.4' ||
-    racingRuns[1].id !== 'gpt-6-astra-v3.4' ||
-    racingRuns[2].id !== 'gpt-astra-6.2-v3.4.1' ||
-    racingRuns[2].live_url !== 'https://racing-gpt-6.2-astra.biel.dev.br/' ||
-    racingRuns[2].site_url !== 'https://racing-gpt-6.2-astra.biel.dev.br/' ||
-    racingRuns[3].id !== 'opus-5.5-v3.4' ||
-    racingRuns[3].live_url !== 'https://racing-opus-5.5.biel.dev.br/' ||
-    racingRuns[3].site_url !== 'https://racing-opus-5.5.biel.dev.br/' ||
-    racingRuns[4].id !== 'gemini-4-argon-v3.4' ||
-    racingRuns[4].live_url !== 'https://racing-gemini-4-argon.biel.dev.br/' ||
-    racingRuns[5].id !== 'fable-5.2-v3.4.1' ||
-    racingRuns[5].display_label !== 'Fable 5.2 (V3.4.1)' ||
-    racingRuns[5].live_url !== 'https://racing-fable-5.2.biel.dev.br/' ||
-    racingRuns[5].site_url !== 'https://racing-fable-5.2.biel.dev.br/' ||
-    racingRuns[6].id !== 'gemini-4-hydrogen-v3.4' ||
-    racingRuns[6].live_url !== 'https://racing-gemini-4-hydrogen.biel.dev.br/' ||
-    racingRuns[6].site_url !== 'https://racing-gemini-4-hydrogen.biel.dev.br/' ||
-    racing.non_frontier_runs?.length !== 2 ||
+    racingRuns[1].id !== 'gpt-astra-6.2-v3.4.1' ||
+    racingRuns[1].live_url !== 'https://racing-gpt-6.2-astra.biel.dev.br/' ||
+    racingRuns[1].site_url !== 'https://racing-gpt-6.2-astra.biel.dev.br/' ||
+    racingRuns[2].id !== 'opus-5.5-v3.4' ||
+    racingRuns[2].live_url !== 'https://racing-opus-5.5.biel.dev.br/' ||
+    racingRuns[2].site_url !== 'https://racing-opus-5.5.biel.dev.br/' ||
+    racingRuns[3].id !== 'gemini-4-argon-v3.4' ||
+    racingRuns[3].live_url !== 'https://racing-gemini-4-argon.biel.dev.br/' ||
+    racingRuns[4].id !== 'fable-5.2-v3.4.1' ||
+    racingRuns[4].display_label !== 'Fable 5.2 (V3.4.1)' ||
+    racingRuns[4].live_url !== 'https://racing-fable-5.2.biel.dev.br/' ||
+    racingRuns[4].site_url !== 'https://racing-fable-5.2.biel.dev.br/' ||
+    racingRuns[5].id !== 'gemini-4-hydrogen-v3.4' ||
+    racingRuns[5].live_url !== 'https://racing-gemini-4-hydrogen.biel.dev.br/' ||
+    racingRuns[5].site_url !== 'https://racing-gemini-4-hydrogen.biel.dev.br/' ||
+    racing.non_frontier_runs?.length !== 3 ||
     racing.non_frontier_runs[0] !== 'gemini-3.8-v3.4' ||
     racing.non_frontier_runs[1] !== 'sonnet-5.5-v3.4' ||
+    racing.non_frontier_runs[2] !== 'gpt-6-astra-v3.4' ||
     racingRuns.some(run => racing.non_frontier_runs.includes(run.id)) ||
     racing.current_prompt !== 'racing-v3.4' ||
     racing.legacy_runs.length !== 3 || racing.legacy_runs.some(id => racing.current_arena.includes(id)) ||
     orbitRuns.some(run => !run.live_url?.startsWith('https://')) ||
     racingRuns.some(run => !run.display_status.startsWith('current-') ||
       (run.live_url !== null && !run.live_url?.startsWith('https://')))) {
-  throw new Error('Hero expects seven current Racing sources and five current Orbitarium references; supplied game URLs must be valid');
+  throw new Error('Hero expects six current Racing sources and five current Orbitarium references; supplied game URLs must be valid');
 }
 
 const escape = value => String(value).replaceAll('&', '&amp;')
@@ -67,7 +65,7 @@ function badge({ run, x, y, width, accent, benchmark }) {
   </g>`;
 }
 
-const racingBadges = racingHeroRuns.map((run, i) =>
+const racingBadges = racingRuns.map((run, i) =>
   badge({ run, x: i < 3 ? 650 + i * 239 : 650 + (i - 3) * 239, y: i < 3 ? 173 : 235, width: 225,
     accent: ['#facc6b', '#b5b2ff', '#ff99cc', '#8df0a4', '#f4a1ed', '#78dad1'][i], benchmark: 'racing' })
 ).join('\n    ');
@@ -78,7 +76,7 @@ const orbitBadges = orbitRuns.map((run, i) =>
 
 const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 650" role="img" aria-labelledby="title desc">
   <title id="title">Frontier Models — Racing and Orbitarium benchmark collection</title>
-  <desc id="desc">${currentRunCount} featured runs across two benchmarks: ${racingHeroRuns.length} Racing (${escape(racingHeroRuns.map(run => run.model).join(', '))}) and ${orbitRuns.length} Orbitarium (${escape(orbitRuns.map(run => run.model).join(', '))}).</desc>
+  <desc id="desc">${currentRunCount} featured runs across two benchmarks: ${racingRuns.length} Racing (${escape(racingRuns.map(run => run.model).join(', '))}) and ${orbitRuns.length} Orbitarium (${escape(orbitRuns.map(run => run.model).join(', '))}).</desc>
   <defs>
     <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#080f1d"/>
@@ -116,10 +114,10 @@ const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 650" rol
     <text x="66" y="313" font-size="88" font-weight="800" letter-spacing="-4" fill="#f1f6fd">MODELS</text>
     <rect x="73" y="345" width="108" height="5" rx="2.5" fill="#ffb76b"/>
     <rect x="181" y="345" width="116" height="5" rx="2.5" fill="#85e4eb"/>
-    <g data-role="current-run-count" aria-label="${currentRunCount} featured runs: ${racingHeroRuns.length} Racing and ${orbitRuns.length} Orbitarium">
+    <g data-role="current-run-count" aria-label="${currentRunCount} featured runs: ${racingRuns.length} Racing and ${orbitRuns.length} Orbitarium">
       <text x="69" y="448" font-size="68" font-weight="800" letter-spacing="-2" fill="#f1f6fd">${String(currentRunCount).padStart(2, '0')}</text>
       <text x="188" y="412" font-size="21" font-weight="700" fill="#b7cbe1">FEATURED RUNS</text>
-      <text x="188" y="442" font-size="17" font-weight="600" fill="#85e4eb">${racingHeroRuns.length} Racing · ${orbitRuns.length} Orbitarium</text>
+      <text x="188" y="442" font-size="17" font-weight="600" fill="#85e4eb">${racingRuns.length} Racing · ${orbitRuns.length} Orbitarium</text>
     </g>
     <g data-benchmark="racing">
       <rect x="613" y="51" width="775" height="280" rx="22" fill="url(#race)" stroke="#7d5565" stroke-opacity=".8"/>
@@ -150,4 +148,4 @@ const hero = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 650" rol
 </svg>
 `;
 writeFileSync(resolve(archive, 'frontier-models-hero-v7.svg'), hero);
-console.log(`Rendered Frontier Models collection hero: Racing featured ${racingHeroRuns.length} + Orbitarium current ${orbitRuns.length}.`);
+console.log(`Rendered Frontier Models collection hero: Racing featured ${racingRuns.length} + Orbitarium current ${orbitRuns.length}.`);

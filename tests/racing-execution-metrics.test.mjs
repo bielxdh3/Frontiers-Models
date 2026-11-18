@@ -34,7 +34,7 @@ test('both README languages show Fable execution metrics and unknown prior value
     assert.match(s, /\| (?:Time|Tempo) \|/);
     assert.doesNotMatch(row, /15\s*h\s*33/);
     assert.match(s, /EXECUTION-METRICS\.md/);
-    const other=s.split('\n').find(l=>l.startsWith('|') && l.includes('**GPT-6 Astra**'));
+    const other=s.split('\n').find(l=>l.startsWith('|') && l.includes('**GPT-6.1 Sol**') && l.includes('gpt-6.1-sol-v3.4/source/'));
     assert.match(other, /\| — \| — \|$/);
   }
 });

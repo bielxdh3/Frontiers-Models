@@ -47,9 +47,9 @@ test('Racing current section excludes Gemini 3.8 while its archive remains disco
     assert.doesNotMatch(section, /gemini-3\.8-v3\.4/);
     assert.doesNotMatch(section, /https:\/\/racing-gemini-3\.8-flash\.biel\.dev\.br\//);
     assert.doesNotMatch(section, /gemini-3\.8-v3\.4\/source\//);
-    assert.match(section, /https:\/\/racing-gpt-6-astra\.biel\.dev\.br\//);
+    assert.doesNotMatch(section, /https:\/\/racing-gpt-6-astra\.biel\.dev\.br\//);
     assert.match(section, /https:\/\/racing-gpt-6\.1-sol\.biel\.dev\.br\//);
-    assert.match(section, /gpt-6-astra-v3\.4\/source\//);
+    assert.doesNotMatch(section, /gpt-6-astra-v3\.4\/source\//);
     assert.match(section, /opus-5\.5-v3\.4\/source\//);
     assert.match(section, /https:\/\/racing-opus-5\.5\.biel\.dev\.br\//);
     assert.match(section, /https:\/\/racing-gemini-4-argon\.biel\.dev\.br\//);
@@ -59,7 +59,7 @@ test('Racing current section excludes Gemini 3.8 while its archive remains disco
     assert.doesNotMatch(section, /HTTP 404|Source — archived here|Código — arquivado aqui|Source — gemini-3\.8/);
     assert.doesNotMatch(section, /33\/34/, 'QA annotations belong in run reports, not README');
     assert.doesNotMatch(section, /https:\/\/racing-gemini-3\.8-flash-old\.biel/);
-    for (const name of ['GPT-6.1 Sol', 'GPT-6 Astra', 'Opus 5.5', 'Fable 5.2 (V3.4.1)']) assert.ok(section.includes(name));
+    for (const name of ['GPT-6.1 Sol', 'GPT-6.2 Astra', 'Opus 5.5', 'Fable 5.2 (V3.4.1)']) assert.ok(section.includes(name));
     assert.ok(s.indexOf('## Benchmark 002 — Racing-bench') < s.indexOf('## Benchmark 001 — Orbitarium-bench'));
   }
 });

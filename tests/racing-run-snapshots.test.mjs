@@ -146,7 +146,7 @@ test('GPT-6.1 Sol V3.4: all 104 upstream Git-tracked blobs archived byte-exactly
 
 test('GPT-6 Astra V3.4: all 1,183 upstream Git blobs archived with byte-exact provenance', () => {
   const run = registry.runs.find(run => run.id === 'gpt-6-astra-v3.4');
-  assert.ok(run && registry.current_arena.includes(run.id));
+  assert.ok(run && registry.non_frontier_runs.includes(run.id) && !registry.current_arena.includes(run.id));
   assert.equal(run.source_commit, 'daf0099699a0e8201b8bc4f1dca6909f92700b3b');
   assert.equal(run.source_tree, 'b115486c104e25041bf2116865de91b6c4a31132');
   assert.equal(run.archival_status, 'complete-tracked-git-snapshot-no-history-bundle');

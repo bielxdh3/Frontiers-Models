@@ -6,7 +6,7 @@
 
 [![Benchmark](https://img.shields.io/badge/benchmark-frontier%20models-7C3AED?style=flat)](./benchmarks)
 [![Benchmarks](https://img.shields.io/badge/benchmarks-2-2563EB?style=flat)](./docs/REPOSITORY-ARCHITECTURE.md)
-[![Execuções atuais](https://img.shields.io/badge/execu%C3%A7%C3%B5es%20atuais-12-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
+[![Execuções atuais](https://img.shields.io/badge/execu%C3%A7%C3%B5es%20atuais-11-DB2777?style=flat)](./benchmarks/racing/RUNS.json)
 
 # Frontier Models
 
@@ -27,7 +27,6 @@
 | Modelo atual | Jogar | Código-fonte | Tokens | Tempo |
 | --- | --- | --- | ---: | ---: |
 | ☀️ **GPT-6.1 Sol** | [Jogar](https://racing-gpt-6.1-sol.biel.dev.br/) | [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/source/) | — | — |
-| ✦ **GPT-6 Astra** | [Jogar](https://racing-gpt-6-astra.biel.dev.br/) | [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) | — | — |
 | ✦ **GPT-6.2 Astra (V3.4.1)** | [Jogar](https://racing-gpt-6.2-astra.biel.dev.br/) | [GPT-6.2 Astra (V3.4.1)](./benchmarks/racing/runs/gpt-astra-6.2-v3.4.1/source/) | 30%\* | 5 h 02 min\* |
 | ♬ **Opus 5.5** | [Jogar](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./benchmarks/racing/runs/opus-5.5-v3.4/source/) | — | — |
 | ✧ **Fable 5.2 (V3.4.1)** | [Jogar](https://racing-fable-5.2.biel.dev.br/) | [Fable 5.2 (V3.4.1)](./benchmarks/racing/runs/fable-5.2-v3.4.1/source/) | ~475,74 M | ~11 h |
@@ -57,11 +56,11 @@
 ## Como se organiza
 
 ```text
-FRONTIER MODELS                         2 benchmarks · 12 execuções atuais
+FRONTIER MODELS                         2 benchmarks · 11 execuções atuais
 │
-├── RACING-BENCH (V3.4 / V3.4.1)                 7 execuções atuais
+├── RACING-BENCH (V3.4 / V3.4.1)                 6 execuções atuais
 │   ├── entradas    racing-v3.4/ · 14 referências visuais
-│   ├── atuais      GPT-6.1 Sol · GPT-6 Astra · GPT-6.2 Astra (V3.4.1) · Opus 5.5 · Gemini 4 Argon · Fable 5.2 (V3.4.1) · Gemini 4 Hydrogen
+│   ├── atuais      GPT-6.1 Sol · GPT-6.2 Astra (V3.4.1) · Opus 5.5 · Gemini 4 Argon · Fable 5.2 (V3.4.1) · Gemini 4 Hydrogen
 │   └── histórico   execuções V2.6 + prompts anteriores
 │
 ├── ORBITARIUM-BENCH (Frontier V2)      5 referências atuais
@@ -84,6 +83,7 @@ Explore a [arquitetura do repositório](./docs/REPOSITORY-ARCHITECTURE.md) e as 
 | --- | --- | --- | --- |
 | ◈ **Gemini 3.8 Flash** | Não frontier | Deleted | [Código](./benchmarks/racing/runs/gemini-3.8-v3.4/source/) |
 | ✧ **Sonnet 5.5** | Não frontier | [Jogar](https://racing-sonnet-5.5.biel.dev.br/) | [Sonnet 5.5](./benchmarks/racing/runs/sonnet-5.5-v3.4/source/) |
+| ✦ **GPT-6 Astra** | Não frontier | [Jogar](https://racing-gpt-6-astra.biel.dev.br/) | [GPT-6 Astra](./benchmarks/racing/runs/gpt-6-astra-v3.4/source/) |
 
 ## 🗂️ Outros projetos do Orbitarium
 

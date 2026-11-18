@@ -17,7 +17,7 @@ test('hero presents two benchmarks and one accurate featured-run total without a
   assert.match(svg, /viewBox="0 0 1440 650"/);
   assert.doesNotMatch(svg, /BENCHMARK COLLECTION|02 CURRENT RUNS|05 CURRENT REFERENCES|OPEN PROJECT ARCHIVE|<text[^>]*>CURRENT<\/text>/);
   assert.doesNotMatch(svg, /BENCHMARK 002|BENCHMARK 001|GAMEPLAY ENGINEERING|PRODUCT &amp; SIMULATION|data-role="collection-counts"|HISTORICAL \/ NON-FRONTIER/);
-  const featuredRacing = racing.current_arena.filter(id => id !== 'gpt-6-astra-v3.4');
+  const featuredRacing = racing.current_arena;
   const count = featuredRacing.length + orbit.current_arena.length;
   assert.equal(count, 11);
   assert.match(svg, /data-role="current-run-count"/);
@@ -25,17 +25,18 @@ test('hero presents two benchmarks and one accurate featured-run total without a
   assert.match(svg, new RegExp('>' + featuredRacing.length + ' Racing · ' + orbit.current_arena.length + ' Orbitarium<\\/text>'));
   assert.match(svg, /FEATURED RUNS<\/text>/);
   assert.match(svg, /aria-label="11 featured runs: 6 Racing and 5 Orbitarium"/);
-  assert.match(readFileSync(resolve(root, 'README.md'), 'utf8'), /current%20runs-12-DB2777/);
-  assert.match(readFileSync(resolve(root, 'README-PT-BR.md'), 'utf8'), /atuais-12-DB2777/);
+  assert.match(readFileSync(resolve(root, 'README.md'), 'utf8'), /current%20runs-11-DB2777/);
+  assert.match(readFileSync(resolve(root, 'README-PT-BR.md'), 'utf8'), /atuais-11-DB2777/);
   assert.match(svg, />FRONTIER<\/text>/);
   assert.match(svg, />MODELS<\/text>/);
   assert.doesNotMatch(svg, /data-role="orbit"|data-role="planet"|data-role="sun"|<ellipse\b/);
   assert.doesNotMatch(renderer, /orbitSpecs|orbitRings|orbitCenter/);
 });
 
-test('Racing first: six featured runs exclude only the superseded Racing Astra', () => {
-  assert.deepEqual(models('racing'), racing.current_arena.filter(id => id !== 'gpt-6-astra-v3.4'));
-  assert.ok(racing.current_arena.includes('gpt-6-astra-v3.4'));
+test('Racing first: six current runs exclude the non-frontier Racing Astra', () => {
+  assert.deepEqual(models('racing'), racing.current_arena);
+  assert.ok(racing.non_frontier_runs.includes('gpt-6-astra-v3.4'));
+  assert.ok(!racing.current_arena.includes('gpt-6-astra-v3.4'));
   assert.deepEqual(models('racing'), ['gpt-6.1-sol-v3.4', 'gpt-astra-6.2-v3.4.1', 'opus-5.5-v3.4', 'gemini-4-argon-v3.4', 'fable-5.2-v3.4.1', 'gemini-4-hydrogen-v3.4']);
   const entries = racing.runs;
   for (const id of models('racing')) {
