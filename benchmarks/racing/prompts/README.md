@@ -4,6 +4,7 @@
 
 | Prompt | Status | UTF-8 bytes | Lines | SHA-256 |
 | --- | --- | ---: | ---: | --- |
+| [racing_bench_v3_5.md](./racing-v3.5/racing_bench_v3_5.md) | **V3.5 — Desktop Visual Fidelity Edition; upcoming runs; 14 packaged references** | **37,890** | **462** | `03cbd8233695ebeb77d2e5819d1e80edb84f153d6ddbdf4919e9cb8ec1bae07b` |
 | [racing-v3.4.1.md](./racing-v3.4/racing-v3.4.1.md) | **Candidate — coherent village / diverse flora + verified review fixes; shares 14 V3.4 refs** | **37,497** | **437** | `113137d261d58188e42b18ecfd7efabbc002209ad0fb0dedd36cd65f4ad985fe` |
 | **[racing-v3.4.md](./racing-v3.4/racing-v3.4.md)** | **Current, race-first + 14 visual references** | **25,790** | **406** | `faee98a423dde53686d63b3d8df89ebfb930e69f6f0322866fc526c06415e867` |
 | [racing-v3.3.md](./racing-v3.3.md) | Historical, frozen; G1–G13 | **269,102** | **1,263** | `4e532514d322f59d70912285b292a2fae569a516bb9581c5c8f60036fe99dcd7` |
@@ -12,6 +13,8 @@
 | [racing-v2.6.md](./racing-v2.6.md) | Legacy, archived verbatim | 80,309 | 429 | `8dc65f23a8eaa35a06a7833a7929763fd16aa3cde2ff563561bffac7d7d69248` |
 
 **V3.4.1 is **proposed only** in this PR: it retains V3.4's race scope and 14 reference JPGs, adding reproducible per-segment scenery-density requirements. Existing V3.4 runs and their exact input remain unchanged; `current_prompt` stays V3.4 until an explicit promotion.
+
+For V3.5, provide only the new prompt and its 14 packaged JPGs, as the prompt specifies. The current registry and earlier run associations remain unchanged until the new runs are integrated.
 
 For every new V3.4 run, provide its complete standalone prompt, all 14 JPG visual references, and the three-paragraph [version-independent operational companion](../EXECUTION-ADDENDUM.md).** Do not supply unrelated context, earlier implementations or model output.
 
