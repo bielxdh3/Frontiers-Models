@@ -27,7 +27,7 @@
 | Current model | Play | Source code | Tokens | Time |
 | --- | --- | --- | ---: | ---: |
 | ☀️ **GPT-6.1 Sol** | [Play racing](https://racing-gpt-6.1-sol.biel.dev.br/) | [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/source/) | — | — |
-| ✦ **GPT-6.2 Astra (V3.4.1)** | [Play racing](https://racing-gpt-6.2-astra.biel.dev.br/) | [GPT-6.2 Astra (V3.4.1)](./benchmarks/racing/runs/gpt-astra-6.2-v3.4.1/source/) | 30%\* | ~5h |
+| ✦ **GPT-6.2 Astra (V3.4.1)** | [Play racing](https://racing-gpt-6.2-astra.biel.dev.br/) | [GPT-6.2 Astra (V3.4.1)](./benchmarks/racing/runs/gpt-astra-6.2-v3.4.1/source/) | 21.55%\* | ~5h |
 | ♬ **Opus 5.5** | [Play racing](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./benchmarks/racing/runs/opus-5.5-v3.4/source/) | — | — |
 | ✧ **Fable 5.2 (V3.4.1)** | [Play racing](https://racing-fable-5.2.biel.dev.br/) | [Fable 5.2 (V3.4.1)](./benchmarks/racing/runs/fable-5.2-v3.4.1/source/) | ~475.74M | ~11h |
 | ◈ **Gemini 4 Argon** | [Play racing](https://racing-gemini-4-argon.biel.dev.br/) | [Gemini 4 Argon](./benchmarks/racing/runs/gemini-4-argon-v3.4/source/) | — | — |
@@ -35,11 +35,13 @@
 
 *Since V3.4.1: total tokens (including cache) and estimated active execution time, when available. — = not recorded. [Metrics and limitations](./benchmarks/racing/EXECUTION-METRICS.md).*
 
-\* GPT-6.2 Astra: 30% of the Plus weekly quota.
+\* GPT-6.2 Astra: 21.55% of the Plus weekly quota (whole chat; 98% Astra model share).
 
 **V3.4 inputs:** [Racing prompt](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md) · [14 reference images](./benchmarks/racing/prompts/racing-v3.4/refs/) · [Operational addendum](./benchmarks/racing/EXECUTION-ADDENDUM.md).
 
 **Fable 5.2 input:** [V3.4.1](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.1.md).
+
+**Upcoming runs — V3.5:** [Prompt](./benchmarks/racing/prompts/racing-v3.5/racing_bench_v3_5.md) · [14 references](./benchmarks/racing/prompts/racing-v3.5/refs/). No V3.5 results recorded yet.
 
 **Racing V2.6 archive:** [Historical runs and source](./benchmarks/racing/README.md).
 

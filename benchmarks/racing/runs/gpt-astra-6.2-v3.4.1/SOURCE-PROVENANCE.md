@@ -5,7 +5,7 @@
 - Complete original Git-tracked snapshot: **2,394 files / 515,565,667 bytes** under [GPT-6.2 Astra source](./source/). [SOURCE-FILES.json](./SOURCE-FILES.json) records Git SHA-1 and SHA-256 for every blob. No history bundle or LFS pointers.
 - V3.4.1 association is owner-reported; exact prompt and reference delivery not independently verified.
 - Owner-provided gameplay URL: [https://racing-gpt-6.2-astra.biel.dev.br/](https://racing-gpt-6.2-astra.biel.dev.br/). Reachability has not been independently verified. Gameplay and hardware claims have not been independently reproduced.
-- [Execution metrics](../../EXECUTION-METRICS.md): owner-reported 30% of the Plus weekly quota; no reliable token count. Observed elapsed interval 5h02m, not verified active time. The archived [verification/run.json](./source/verification/run.json) records the final verification's 170.198-second duration.
+- [Execution metrics](../../EXECUTION-METRICS.md): 21.55% of the Plus weekly quota (whole chat, owner-supplied usage screenshot; Astra 98% model share); no reliable token count. Observed elapsed interval 5h02m, not verified active time. The archived [verification/run.json](./source/verification/run.json) records the final verification's 170.198-second duration.
 - Original asset attribution is preserved in [ASSET-LICENSES.md](./source/ASSET-LICENSES.md).
 
 Original tracked source files are preserved exactly; metadata is outside the snapshot.

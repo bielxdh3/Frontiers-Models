@@ -30,13 +30,16 @@ Source: owner-supplied summary of local Claude Code session usage records, scope
 
 | Measurement | Reported value |
 | --- | ---: |
-| Weekly Plus quota used | 30% (owner-reported) |
+| Weekly Plus quota used (entire chat) | 21.55% (usage screenshot) |
+| Five-hour quota used (entire chat) | 137.9% |
+| Model share | Astra 98%; Terra 1%; Luna 1% |
+| Credits used | 0 |
 | Reliable token count | Unavailable |
 | Active execution time | Unknown |
 | Observed elapsed interval | 5h 02m (08:21 to 13:23, Cuiabá UTC-4, 2026-11-18) |
 | Final verification | 2m 50s |
 
-The elapsed interval is between the owner-reported creation of track.json and the final verification finish, not the entire run or an active-time estimate. Work may precede or follow these markers. The archived [run.json](./runs/gpt-astra-6.2-v3.4.1/source/verification/run.json) records final verification start 17:20:36.162 UTC and finish 17:23:26.360 UTC (170.198 seconds). Quota percentage is a subscription-specific proxy, not a token count and not comparable directly with tokens or other plans.
+The elapsed interval is between the owner-reported creation of track.json and the final verification finish, not the entire run or an active-time estimate. Work may precede or follow these markers. The archived [run.json](./runs/gpt-astra-6.2-v3.4.1/source/verification/run.json) records final verification start 17:20:36.162 UTC and finish 17:23:26.360 UTC (170.198 seconds). The screenshot reports whole-chat quotas and model shares; no exact model-only quota can be derived from those fields. Quota percentage is a subscription-specific proxy, not a token count and not comparable directly with tokens or other plans.
 
 ## Português
 
@@ -69,10 +72,13 @@ Fonte: resumo fornecido pelo mantenedor dos registros locais de uso do Claude Co
 
 | Medida | Valor informado |
 | --- | ---: |
-| Cota semanal Plus consumida | 30% (informado pelo mantenedor) |
+| Cota semanal Plus consumida (chat completo) | 21,55% (print de uso) |
+| Cota de 5 horas consumida (chat completo) | 137,9% |
+| Participação dos modelos | Astra 98%; Terra 1%; Luna 1% |
+| Créditos usados | 0 |
 | Contagem confiável de tokens | Indisponível |
 | Tempo ativo | Desconhecido |
 | Intervalo decorrido observado | 5 h 02 min (08h21 a 13h23, Cuiabá UTC-4, 18/11/2026) |
 | Verificação final | 2 min 50 s |
 
-O intervalo vai da criação de track.json informada pelo mantenedor ao término da verificação final; pode haver trabalho antes ou depois. Não representa tempo ativo nem duração total exata. O [run.json](./runs/gpt-astra-6.2-v3.4.1/source/verification/run.json) arquivado registra a verificação de 17:20:36.162 UTC a 17:23:26.360 UTC (170,198 s). Percentual de cota é uma medida alternativa específica da assinatura, não equivale a tokens nem permite comparação direta entre planos.
+O intervalo vai da criação de track.json informada pelo mantenedor ao término da verificação final; pode haver trabalho antes ou depois. Não representa tempo ativo nem duração total exata. O [run.json](./runs/gpt-astra-6.2-v3.4.1/source/verification/run.json) arquivado registra a verificação de 17:20:36.162 UTC a 17:23:26.360 UTC (170,198 s). O print informa cotas do chat completo e participação dos modelos; não permite atribuir cota exata apenas ao Astra. Percentual de cota é uma medida alternativa específica da assinatura, não equivale a tokens nem permite comparação direta entre planos.

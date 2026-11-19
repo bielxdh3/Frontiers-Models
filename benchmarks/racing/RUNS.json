@@ -94,6 +94,17 @@
       "attachment_purpose": "narrow operational tools-only clarification",
       "attachment_sha256": "3df727c4c471b02f8c83ea85af616b7c0316e84763af48a2d98f3498149e5963",
       "attachment_bytes": 699
+    },
+    "racing-v3.5": {
+      "path": "prompts/racing-v3.5/racing_bench_v3_5.md",
+      "status": "next-version-for-upcoming-runs",
+      "sha256": "03cbd8233695ebeb77d2e5819d1e80edb84f153d6ddbdf4919e9cb8ec1bae07b",
+      "bytes": 37890,
+      "lines": 462,
+      "source_filename": "racing_bench_v3_5.md",
+      "reference_directory": "prompts/racing-v3.5/refs",
+      "reference_images": 14,
+      "required_input": "prompt-plus-14-visual-references"
     }
   },
   "execution_addendum": {
@@ -271,10 +282,10 @@
         "scope": "benchmark-only",
         "client": "Codex (ChatGPT Plus subscription)",
         "tokens": null,
-        "weekly_quota_percent": 30,
+        "weekly_quota_percent": 21.55,
         "quota_period": "weekly",
         "quota_plan": "Plus",
-        "quota_source": "owner-reported",
+        "quota_source": "owner-supplied ChatGPT usage screenshot",
         "active_minutes_estimate": null,
         "observed_elapsed_minutes": 302,
         "observed_start_local": "2026-11-18T08:21:00-04:00",
@@ -284,7 +295,15 @@
         "final_verification_seconds": 170.198,
         "final_verification_source": "source/verification/run.json",
         "primary_time_metric": "active_minutes_estimate",
-        "details": "EXECUTION-METRICS.md"
+        "details": "EXECUTION-METRICS.md",
+        "quota_scope": "whole benchmark chat; includes minor other-model use",
+        "five_hour_quota_percent": 137.9,
+        "reported_model_usage_share_percent": {
+          "GPT-6 Astra": 98,
+          "GPT-6.1 Terra": 1,
+          "GPT-6 Luna": 1
+        },
+        "credits_used": 0
       }
     },
     {

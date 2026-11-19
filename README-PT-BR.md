@@ -27,7 +27,7 @@
 | Modelo atual | Jogar | Código-fonte | Tokens | Tempo |
 | --- | --- | --- | ---: | ---: |
 | ☀️ **GPT-6.1 Sol** | [Jogar](https://racing-gpt-6.1-sol.biel.dev.br/) | [GPT-6.1 Sol](./benchmarks/racing/runs/gpt-6.1-sol-v3.4/source/) | — | — |
-| ✦ **GPT-6.2 Astra (V3.4.1)** | [Jogar](https://racing-gpt-6.2-astra.biel.dev.br/) | [GPT-6.2 Astra (V3.4.1)](./benchmarks/racing/runs/gpt-astra-6.2-v3.4.1/source/) | 30%\* | 5 h 02 min\* |
+| ✦ **GPT-6.2 Astra (V3.4.1)** | [Jogar](https://racing-gpt-6.2-astra.biel.dev.br/) | [GPT-6.2 Astra (V3.4.1)](./benchmarks/racing/runs/gpt-astra-6.2-v3.4.1/source/) | 21,55%\* | 5 h 02 min\* |
 | ♬ **Opus 5.5** | [Jogar](https://racing-opus-5.5.biel.dev.br/) | [Opus 5.5](./benchmarks/racing/runs/opus-5.5-v3.4/source/) | — | — |
 | ✧ **Fable 5.2 (V3.4.1)** | [Jogar](https://racing-fable-5.2.biel.dev.br/) | [Fable 5.2 (V3.4.1)](./benchmarks/racing/runs/fable-5.2-v3.4.1/source/) | ~475,74 M | ~11 h |
 | ◈ **Gemini 4 Argon** | [Jogar](https://racing-gemini-4-argon.biel.dev.br/) | [Gemini 4 Argon](./benchmarks/racing/runs/gemini-4-argon-v3.4/source/) | — | — |
@@ -35,11 +35,13 @@
 
 *Desde a V3.4.1: tokens totais (incluindo cache) e tempo ativo estimado de execução, quando disponíveis. — = não registrado. [Métricas e limitações](./benchmarks/racing/EXECUTION-METRICS.md).*
 
-\* GPT-6.2 Astra: 30% da cota semanal do Plus (informado pelo mantenedor; sem contagem de tokens). 5 h 02 min = intervalo decorrido observado, não tempo ativo comprovado.
+\* GPT-6.2 Astra: 21,55% da cota semanal do Plus (chat completo; 98% de participação do Astra) (informado pelo mantenedor; sem contagem de tokens). 5 h 02 min = intervalo decorrido observado, não tempo ativo comprovado.
 
 **Entradas V3.4:** [Prompt](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.md) · [14 imagens](./benchmarks/racing/prompts/racing-v3.4/refs/) · [Anexo operacional](./benchmarks/racing/EXECUTION-ADDENDUM.md).
 
 **Entrada do Fable 5.2:** [V3.4.1](./benchmarks/racing/prompts/racing-v3.4/racing-v3.4.1.md).
+
+**Próximas execuções — V3.5:** [Prompt](./benchmarks/racing/prompts/racing-v3.5/racing_bench_v3_5.md) · [14 referências](./benchmarks/racing/prompts/racing-v3.5/refs/). Sem resultados V3.5 registrados ainda.
 
 **Arquivo Racing V2.6:** [Execuções históricas e código](./benchmarks/racing/README-PT-BR.md).
 
